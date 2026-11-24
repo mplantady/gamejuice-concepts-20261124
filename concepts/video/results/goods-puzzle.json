@@ -1,13 +1,13 @@
 {
   "slug": "goods-puzzle",
-  "attempt": "kling-v3",
+  "attempt": "minimax-h3-fast",
   "status": "failed",
-  "model": "video-kling-v3-i2v-pro",
+  "model": "video-minimax-h3-fast",
   "input_image": "images/goods-puzzle-combined.png",
-  "prompt_file": "video/requests/goods-puzzle-kling-v3.json",
+  "prompt_file": "video/requests/goods-puzzle-minimax-h3-fast.json",
   "error": "ContentBlocked",
   "details": [
-    "The request references the trademarked brand and game title Goods Puzzle: Sort Challenge."
+    "The prompt references the specific game title Goods Puzzle: Sort Challenge."
   ],
   "prior_attempts": [
     {
@@ -54,6 +54,18 @@
       "error": "ContentBlocked",
       "details": [
         "The prompt references the specific game title Goods Puzzle: Sort Challenge."
+      ]
+    },
+    {
+      "slug": "goods-puzzle",
+      "attempt": "kling-v3",
+      "status": "failed",
+      "model": "video-kling-v3-i2v-pro",
+      "input_image": "images/goods-puzzle-combined.png",
+      "prompt_file": "video/requests/goods-puzzle-kling-v3.json",
+      "error": "ContentBlocked",
+      "details": [
+        "The request references the trademarked brand and game title Goods Puzzle: Sort Challenge."
       ]
     }
   ]

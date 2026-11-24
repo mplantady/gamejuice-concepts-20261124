@@ -1,13 +1,13 @@
 {
   "slug": "meowdoku",
-  "attempt": "kling-v3",
+  "attempt": "minimax-h3-fast",
   "status": "failed",
-  "model": "video-kling-v3-i2v-pro",
+  "model": "video-minimax-h3-fast",
   "input_image": "images/meowdoku-combined.png",
-  "prompt_file": "video/requests/meowdoku-kling-v3.json",
+  "prompt_file": "video/requests/meowdoku-minimax-h3-fast.json",
   "error": "ContentBlocked",
   "details": [
-    "The prompt references the specific trademarked game title Meowdoku."
+    "The prompt references the specific game brand 'Meowdoku!', which is protected intellectual property."
   ],
   "prior_attempts": [
     {
@@ -54,6 +54,18 @@
       "error": "ContentBlocked",
       "details": [
         "The prompt references the specific game brand 'Meowdoku!', which is protected intellectual property."
+      ]
+    },
+    {
+      "slug": "meowdoku",
+      "attempt": "kling-v3",
+      "status": "failed",
+      "model": "video-kling-v3-i2v-pro",
+      "input_image": "images/meowdoku-combined.png",
+      "prompt_file": "video/requests/meowdoku-kling-v3.json",
+      "error": "ContentBlocked",
+      "details": [
+        "The prompt references the specific trademarked game title Meowdoku."
       ]
     }
   ]

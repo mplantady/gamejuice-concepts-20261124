@@ -1,13 +1,13 @@
 {
   "slug": "vita-mahjong",
-  "attempt": "kling-v3",
+  "attempt": "minimax-h3-fast",
   "status": "failed",
-  "model": "video-kling-v3-i2v-pro",
+  "model": "video-minimax-h3-fast",
   "input_image": "images/vita-mahjong-combined.png",
-  "prompt_file": "video/requests/vita-mahjong-kling-v3.json",
+  "prompt_file": "video/requests/vita-mahjong-minimax-h3-fast.json",
   "error": "ContentBlocked",
   "details": [
-    "The prompt references the specific brand and game title Vita Mahjong."
+    "The prompt and image reference the mobile game Vita Mahjong, a specific trademarked brand."
   ],
   "prior_attempts": [
     {
@@ -54,6 +54,18 @@
       "error": "ContentBlocked",
       "details": [
         "The prompt and image reference the branded game 'Vita Mahjong'."
+      ]
+    },
+    {
+      "slug": "vita-mahjong",
+      "attempt": "kling-v3",
+      "status": "failed",
+      "model": "video-kling-v3-i2v-pro",
+      "input_image": "images/vita-mahjong-combined.png",
+      "prompt_file": "video/requests/vita-mahjong-kling-v3.json",
+      "error": "ContentBlocked",
+      "details": [
+        "The prompt references the specific brand and game title Vita Mahjong."
       ]
     }
   ]

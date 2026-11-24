@@ -10,7 +10,41 @@
   "audio": true,
   "input_image": "images/solitaire-associations-combined.png",
   "prompt_file": "video/requests/solitaire-associations-gemini-omni.json",
-  "review": "Generated concept; visual and audio review pending.",
+  "review": {
+    "status": "reviewed_with_material_fidelity_issue",
+    "summary": "Both intended card transfers and the 190→188 move countdown are recognizable, but the destination slot and final category artwork/counters drift. Useful visual concept; not an exact two-move gameplay reference.",
+    "method": "Visually inspected frames at 0, 2, 3, 4.5, 6, 7, 8, 9, 10 and 11.9 seconds against the combined image and verified plan. Sampled-frame review, not continuous audiovisual playback.",
+    "first_frame_layout": "Preserves the broad five-foundation/five-column layout, starting cards, Level 1, Moves 190, deck, sound icon and Download button. Minor font/logo rendering drift is visible; pixel-exact fidelity is not claimed.",
+    "action_sequence": "Family is visibly lifted from tableau column 2, then Sister from column 1 is dragged onto Family. Family lands in the third/central crown slot rather than the specified second slot. Another empty crown slot can be legal under the source rule, but this deviates from the planned exact route.",
+    "revealed_cards": "A pink Peony illustration appears in column 2 after Family moves; a white Lily appears in column 1 after Sister moves, as planned. The clip adds 0/8 labels to both flower cards. After Sister reaches Family, Lily artwork is also copied onto the Family card, falsely suggesting the flower belongs to that category.",
+    "counters_and_ui": "Moves correctly displays 190, then 189 by 4.5s, then 188 by 8s. Family remains 0/8 after move one. At 9–11.9s it shows a new 1/8 near the bottom while incorrectly retaining 0/8 at the top, so the requested clean 0/8→1/8 update fails. Level 1 and Download stay stable; no extra draw, reward or victory screen is visible.",
+    "vfx_and_camera": "Locked full-board composition and readable drag trajectories support cause and effect. Gold trails and the landing sparkle ring add visible feedback without hiding the settled cards, although the ring spreads across adjacent slots. At 11.9s two ghosted hand shapes appear near the sound icon/first crown, an unrequested input artifact without a confirmed further move.",
+    "audio": {
+      "stream_present": true,
+      "codec": "aac",
+      "channels": 2,
+      "sample_rate_hz": 48000,
+      "listened": false,
+      "note": "Audio stream presence verified only; voiceover wording, mix and synchronization were not assessed."
+    },
+    "limitations": [
+      "Sampled frames do not establish all intermediate motion or card continuity.",
+      "Do not treat the copied flower artwork or contradictory category counters as verified game behavior."
+    ],
+    "frames_directory": "video/checks/solitaire-associations-gemini-omni",
+    "reviewed_timestamps_seconds": [
+      0,
+      2,
+      3,
+      4.5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11.9
+    ]
+  },
   "prior_attempts": [
     {
       "slug": "solitaire-associations",
