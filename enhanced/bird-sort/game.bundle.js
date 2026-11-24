@@ -211,6 +211,55 @@ const clamp = (value, low = 0, high = 1) => Math.max(low, Math.min(high, value))
 const smooth = value => { const x = clamp(value); return x * x * (3 - 2 * x); };
 const lerp = (a, b, amount) => a + (b - a) * amount;
 
+
+// Shared by the interactive renderer and the twelve-second guided demonstration.
+// Coordinates/times match the approved video generator's TRANSFERS and TAPS.
+const BIRD_VIDEO_DEMO = Object.freeze({
+  durationMs: 12000,
+  taps: [
+    { atMs: 1050, x: 596, y: 581 }, { atMs: 1480, x: 344, y: 839 },
+    { atMs: 4220, x: 654, y: 577 }, { atMs: 4650, x: 306, y: 156 },
+    { atMs: 7460, x: 778, y: 594 }, { atMs: 7900, x: 853, y: 826 },
+  ],
+  steps: [
+    { fromId: 'R3', toId: 'L4', sourceTapMs: 1050, destinationTapMs: 1480, flightStartMs: 1800, flightEndMs: 3700, arc: -100, audioVariant: 0,
+      paths: [{ fromIndex: 4, from: { x: 617, y: 646 }, to: { x: 344, y: 875 } }] },
+    { fromId: 'R3', toId: 'L1', sourceTapMs: 4220, destinationTapMs: 4650, flightStartMs: 4950, flightEndMs: 6850, arc: -85, audioVariant: 1,
+      paths: [{ fromIndex: 3, from: { x: 657, y: 644 }, to: { x: 306, y: 194 } }] },
+    { fromId: 'R3', toId: 'R4', sourceTapMs: 7460, destinationTapMs: 7900, flightStartMs: 8200, flightEndMs: 9920, arc: -65, audioVariant: 2,
+      paths: [{ fromIndex: 2, from: { x: 742, y: 638 }, to: { x: 816, y: 859 } }, { fromIndex: 1, from: { x: 820, y: 638 }, to: { x: 897, y: 859 } }] },
+  ],
+});
+
+function sampleBirdMotion(spec, timeMs) {
+  const { from, to, startMs, endMs, arc } = spec;
+  if (timeMs < startMs) {
+    const anticipation = Math.exp(-(((timeMs - (startMs - 100)) / 75) ** 2));
+    return { x: from.x, y: from.y, scaleX: 1 + 0.065 * anticipation, scaleY: 1 - 0.09 * anticipation, facing: spec.sourceFacing, flying: false, phase: 'anticipation' };
+  }
+  if (timeMs <= endMs) {
+    const u = (timeMs - startMs) / (endMs - startMs), travel = smooth(u);
+    return { x: lerp(from.x, to.x, travel), y: lerp(from.y, to.y, travel) + arc * Math.sin(Math.PI * u), scaleX: 1, scaleY: 1,
+      facing: u < 0.45 ? spec.sourceFacing : spec.destinationFacing, flying: true, phase: 'flight' };
+  }
+  const age = (timeMs - endMs) / 1000, squash = 0.06 * Math.exp(-(((age - 0.035) / 0.055) ** 2));
+  return { x: to.x, y: to.y - 9 * Math.exp(-age * 7) * Math.sin(age * 20), scaleX: 1 + squash, scaleY: 1 - squash, facing: spec.destinationFacing, flying: false, phase: 'settle' };
+}
+
+function sampleDemoHand(timeMs) {
+  let point = { x: 592, y: 646 }, alpha = timeMs > 1650 ? 0 : 1;
+  for (let i = 0; i < BIRD_VIDEO_DEMO.taps.length; i++) {
+    const tap = BIRD_VIDEO_DEMO.taps[i], previous = i ? BIRD_VIDEO_DEMO.taps[i - 1] : { x: 592, y: 646 };
+    if (timeMs >= tap.atMs - 350 && timeMs <= tap.atMs + 170) {
+      const u = smooth((timeMs - (tap.atMs - 350)) / 280);
+      point = { x: lerp(previous.x, tap.x, u), y: lerp(previous.y, tap.y, u) };
+      alpha = 1;
+      break;
+    }
+  }
+  return { ...point, alpha, scale: .82 };
+}
+
 function copyState(state) {
   return { ...state, branches: Object.fromEntries(Object.entries(state?.branches || {}).map(([id, birds]) => [id, birds.map(bird => ({ ...bird }))])) };
 }
@@ -260,9 +309,14 @@ async function createRenderer({ canvas, manifest = globalThis.BirdSortAssets, as
   const base = new URL(assetBase, document.baseURI);
   const urlFor = file => new URL(file, base).href;
   const backgroundPromise = loadImage(urlFor(manifest.background));
-  const speciesEntries = await Promise.all(Object.entries(manifest.species).map(async ([id, spec]) => [String(id), { ...spec, image: await loadImage(urlFor(spec.file)), colors: wingPalette(spec) }]));
+  const speciesEntries = await Promise.all(Object.entries(manifest.species).map(async ([id, spec]) => {
+    const animation = spec.animation ? { ...spec.animation, image: await loadImage(urlFor(spec.animation.file)) } : null;
+    return [String(id), { ...spec, image: await loadImage(urlFor(spec.file)), animation, colors: wingPalette(spec) }];
+  }));
   const sprites = new Map(speciesEntries);
+  const instances = new Map(await Promise.all(Object.entries(manifest.instances || {}).map(async ([id, spec]) => [id, { ...spec, image: await loadImage(urlFor(spec.file)) }])));
   const background = await backgroundPromise;
+  const openingImage = manifest.openingImage ? await loadImage(urlFor(manifest.openingImage)) : null;
   const hand = manifest.hand ? { ...manifest.hand, image: await loadImage(urlFor(manifest.hand.file)) } : null;
   const branchList = manifest.branches.map(branch => ({ ...branch, slots: branch.slots.map(point => ({ ...point })) }));
   const branchMap = new Map(branchList.map(branch => [branch.id, branch]));
@@ -273,8 +327,10 @@ async function createRenderer({ canvas, manifest = globalThis.BirdSortAssets, as
   let selectedId = null, hoveredId = null, hint = null, focusId = orderedBranches[0]?.id;
   let animation = null, dirty = true, destroyed = false, pointer = null, raf = 0;
   let backingScale = 1, offsetX = 0, offsetY = 0, cssScale = 1, cssOffsetX = 0, cssOffsetY = 0;
-  let soundEnabled = true, audioContext = null, master = null, soundNodes = new Set();
-  let lastDpr = 0, selectionAt = 0, invalidAt = -Infinity;
+  let soundEnabled = true, audioActivated = false, demoTimeline = null;
+  const soundNodes = new Set(), lastLandings = new Map();
+  let lastDpr = 0, invalidAt = -Infinity;
+  let activeActorIds = new Set();
 
   canvas.width = width;
   canvas.height = height;
@@ -299,83 +355,94 @@ async function createRenderer({ canvas, manifest = globalThis.BirdSortAssets, as
     dirty = true;
   }
 
-  function unlockAudio() {
-    if (!soundEnabled || destroyed) return;
-    if (!audioContext) {
-      const Audio = window.AudioContext || window.webkitAudioContext;
-      if (!Audio) return;
-      try { audioContext = new Audio(); master = audioContext.createGain(); master.gain.value = 0.28; master.connect(audioContext.destination); } catch { return; }
-    }
-    if (audioContext.state === 'suspended') audioContext.resume().catch(() => {});
+  const audioSpec = manifest.audio || {};
+  function makeAudio(file, loop = false) {
+    const audio = new Audio(urlFor(file)); audio.preload = 'auto'; audio.volume = 1; audio.loop = loop; return audio;
   }
-
-  function tone(frequency, duration, volume, pan = 0, bend = 1, delay = 0, type = 'sine') {
-    if (!soundEnabled || !audioContext || audioContext.state !== 'running') return;
-    const start = audioContext.currentTime + delay, oscillator = audioContext.createOscillator(), gain = audioContext.createGain();
-    oscillator.type = type;
-    oscillator.frequency.setValueAtTime(frequency, start);
-    oscillator.frequency.exponentialRampToValueAtTime(Math.max(30, frequency * bend), start + duration);
-    gain.gain.setValueAtTime(0, start); gain.gain.linearRampToValueAtTime(volume, start + 0.008); gain.gain.exponentialRampToValueAtTime(0.0001, start + duration);
-    oscillator.connect(gain);
-    const panner = audioContext.createStereoPanner?.();
-    if (panner) { panner.pan.value = clamp(pan, -1, 1); gain.connect(panner); panner.connect(master); } else gain.connect(master);
-    soundNodes.add(oscillator);
-    oscillator.onended = () => { oscillator.disconnect(); gain.disconnect(); panner?.disconnect(); soundNodes.delete(oscillator); };
-    oscillator.start(start); oscillator.stop(start + duration + 0.02);
+  const audioBank = {
+    tap: makeAudio(audioSpec.tap || 'audio/tap.wav'),
+    flutters: (audioSpec.flutters || ['audio/flutter-1.wav', 'audio/flutter-2.wav', 'audio/flutter-3.wav']).map(file => makeAudio(file)),
+    landings: (audioSpec.landings || ['audio/landing-1.wav', 'audio/landing-2.wav', 'audio/landing-3.wav']).map(file => makeAudio(file)),
+    music: makeAudio(audioSpec.musicBed || 'audio/music-bed.wav', true),
+  };
+  function playMusic() {
+    if (!soundEnabled || !audioActivated || demoTimeline || destroyed || !audioBank.music.paused) return;
+    audioBank.music.play().catch(() => {});
   }
-
-  function flutter(duration, pan = 0) {
-    if (!soundEnabled || !audioContext || audioContext.state !== 'running') return;
-    const rate = audioContext.sampleRate, buffer = audioContext.createBuffer(1, Math.ceil(rate * duration), rate), samples = buffer.getChannelData(0);
-    let previous = 0;
-    for (let i = 0; i < samples.length; i++) {
-      const t = i / rate, u = i / samples.length;
-      previous = previous * 0.72 + (Math.random() * 2 - 1) * 0.28;
-      samples[i] = previous * (0.15 + 0.85 * Math.sin(t * Math.PI * 15) ** 2) * Math.sin(u * Math.PI) * 0.18;
-    }
-    const source = audioContext.createBufferSource(), gain = audioContext.createGain(), panner = audioContext.createStereoPanner?.();
-    source.buffer = buffer; gain.gain.value = 0.25; source.connect(gain);
-    if (panner) { panner.pan.value = clamp(pan, -1, 1); gain.connect(panner); panner.connect(master); } else gain.connect(master);
-    soundNodes.add(source); source.onended = () => { source.disconnect(); gain.disconnect(); panner?.disconnect(); soundNodes.delete(source); };
-    source.start();
+  function unlockAudio() { audioActivated = true; playMusic(); }
+  function playCue(kind, variant = 0) {
+    if (!soundEnabled || !audioActivated || demoTimeline || destroyed) return;
+    const template = kind === 'tap' ? audioBank.tap : audioBank[kind]?.[variant];
+    if (!template) return;
+    const audio = template.cloneNode(true); audio.volume = 1; soundNodes.add(audio);
+    const ended = () => { soundNodes.delete(audio); audio.removeEventListener('ended', ended); };
+    audio.addEventListener('ended', ended); audio.play().catch(ended);
   }
-
-  function stopSounds() {
-    for (const node of soundNodes) { try { node.stop(); } catch {} }
+  function stopSounds(includeMusic = false) {
+    for (const audio of soundNodes) { audio.pause(); audio.currentTime = 0; }
     soundNodes.clear();
+    if (includeMusic) { audioBank.music.pause(); audioBank.music.currentTime = 0; }
   }
-
-  function spriteInfo(bird) {
-    const sprite = sprites.get(String(bird.species));
-    if (!sprite) throw new Error(`Missing artwork for bird species ${bird.species}`);
-    return sprite;
+  function sourceInstance(bird, branchId, index) {
+    const instance = instances.get(bird.id);
+    return instance && instance.sourceBranch === branchId && instance.sourceIndex === index ? instance : null;
   }
-
-  function drawWing(sprite, point, facing, clock, strength = 1) {
-    const imageWidth = sprite.width || sprite.image.width, imageHeight = sprite.height || sprite.image.height;
-    const anchor = sprite.anchor || [imageWidth / 2, imageHeight * 0.8];
-    const side = facing === 'left' ? 1 : -1;
-    const length = Math.min(46, imageWidth * 0.48) * strength;
-    const flap = Math.sin(clock * 0.034), baseY = point.y - Math.min(anchor[1] * 0.48, imageHeight * 0.43);
-    context.save(); context.translate(point.x, baseY); context.scale(side, 1);
-    context.beginPath(); context.moveTo(-3, 0); context.quadraticCurveTo(length * 0.28, -14 - flap * 10, length, -26 - flap * 24); context.lineTo(length * 0.94, -5 - flap * 14); context.lineTo(length * 0.65, 6); context.lineTo(length * 0.24, 10); context.closePath();
-    context.fillStyle = sprite.colors[0]; context.fill(); context.strokeStyle = '#242633'; context.lineWidth = 2.4; context.lineJoin = 'round'; context.stroke();
-    context.beginPath(); context.moveTo(-3, 0); context.lineTo(length * 0.94, -5 - flap * 14); context.lineTo(length * 0.65, 6); context.lineTo(length * 0.24, 10); context.closePath(); context.fillStyle = sprite.colors[1]; context.fill();
-    context.restore();
+  function birdFoot(bird, branch, index) {
+    const instance = sourceInstance(bird, branch.id, index);
+    const override = demoTimeline?.sourcePoses.get(bird.id);
+    if (override && override.branchId === branch.id && override.index === index) return override.point;
+    return instance?.sourceFoot || branch.slots[index];
   }
-
+  function spriteInfo(bird, options = {}) {
+    const species = sprites.get(String(bird.species));
+    if (!species) throw new Error(`Missing artwork for bird species ${bird.species}`);
+    if (options.flying || options.forceSpecies) return species;
+    const instance = instances.get(bird.id);
+    const contextIntact = instance && (instance.sourceRequires || []).every(id => {
+      const donor = instances.get(id);
+      return donor && !activeActorIds.has(id) && state.branches[donor.sourceBranch]?.[donor.sourceIndex]?.id === id;
+    });
+    if (instance && contextIntact && (!instance.sourceOnly || sourceInstance(bird, options.branchId, options.index))) return { ...instance, colors: species.colors };
+    return species;
+  }
+  function drawWing(sprite, bird, point, clock) {
+    // Only a source-video fallback. A declared atlas replaces the whole bird.
+    const red = bird.species === 0, length = red ? 26 : 32, pulse = Math.sin(clock / 1000 * 22);
+    const x = point.x + 8, y = point.y - (red ? 42 : 57);
+    const points = [[x,y],[x+length*.4,y-5-pulse*9],[x+length,y-24-pulse*18],[x+length*.93,y-4-pulse*10],[x+length*.66,y+5],[x+length*.3,y+8]];
+    context.save(); context.beginPath(); points.forEach(([px,py],i) => i ? context.lineTo(px,py) : context.moveTo(px,py)); context.closePath(); context.fillStyle = sprite.colors[0]; context.fill(); context.lineWidth = 3; context.strokeStyle = '#211e27'; context.stroke();
+    context.beginPath(); [points[0],points[3],points[4],points[5]].forEach(([px,py],i) => i ? context.lineTo(px,py) : context.moveTo(px,py)); context.closePath(); context.fillStyle = sprite.colors[1]; context.fill(); context.restore();
+  }
   function drawBird(bird, point, facing, options = {}) {
-    const sprite = spriteInfo(bird), imageWidth = sprite.width || sprite.image.width, imageHeight = sprite.height || sprite.image.height;
-    const anchor = sprite.anchor || [imageWidth / 2, imageHeight * 0.8];
-    const mirror = (sprite.facing || 'right') !== facing;
-    if (options.flying) drawWing(sprite, point, facing, options.clock, options.wingStrength || 1);
-    context.save(); context.translate(point.x, point.y); context.rotate(options.rotation || 0); context.scale((mirror ? -1 : 1) * (options.scaleX || 1), options.scaleY || 1);
+    const sprite = spriteInfo(bird, options), animation = options.flying ? sprites.get(String(bird.species)).animation : null;
+    const imageWidth = animation?.frameWidth || sprite.width || sprite.image.width, imageHeight = animation?.frameHeight || sprite.height || sprite.image.height;
+    const anchor = animation?.anchor || sprite.anchor || [imageWidth / 2, imageHeight * .8];
+    const displayScale = animation?.displayScale ?? sprite.scale ?? 1;
+    const mirror = (animation?.facing || sprite.facing || 'right') !== facing;
+    if (options.flying && !animation) drawWing(sprite, bird, point, options.clock);
+    context.save(); context.translate(point.x, point.y); context.scale((mirror ? -1 : 1) * (options.scaleX ?? 1) * displayScale, (options.scaleY ?? 1) * displayScale);
     if (options.alpha !== undefined) context.globalAlpha *= options.alpha;
-    if (options.selected || options.hovered) { context.shadowColor = options.selected ? '#fff2b5' : '#d8eef0'; context.shadowBlur = options.selected ? 7 : 3; }
-    context.drawImage(sprite.image, -anchor[0], -anchor[1], imageWidth, imageHeight);
+    if (!sprite.nativePatch && !demoTimeline && (options.selected || options.hovered)) { context.shadowColor = options.selected ? '#fff2b5' : '#d8eef0'; context.shadowBlur = options.selected ? 5 : 2; }
+    if (animation) {
+      const count = animation.frames, cycle = animation.cycleMs || Math.PI * 2 / 22 * 1000;
+      const frame = ((Math.floor(options.clock / cycle * count) % count) + count) % count;
+      const sx = (frame % animation.columns) * imageWidth, sy = Math.floor(frame / animation.columns) * imageHeight;
+      context.drawImage(animation.image, sx, sy, imageWidth, imageHeight, -anchor[0], -anchor[1], imageWidth, imageHeight);
+    } else context.drawImage(sprite.image, -anchor[0], -anchor[1], imageWidth, imageHeight);
     context.restore();
   }
-
+  function drawLanding(point, ageMs) {
+    if (ageMs < 0 || ageMs >= 320) return;
+    const u = ageMs / 320, radius = 15 + 10 * u;
+    context.save(); context.strokeStyle = `rgba(255,232,169,${210 / 255 * (1-u)})`; context.lineWidth = 2;
+    for (const degrees of [-155,-115,-65,-25]) { const angle = degrees * Math.PI / 180; context.beginPath(); context.moveTo(point.x + Math.cos(angle)*radius, point.y + Math.sin(angle)*radius); context.lineTo(point.x + Math.cos(angle)*(radius+6), point.y + Math.sin(angle)*(radius+6)); context.stroke(); }
+    context.restore();
+  }
+  function drawTap(point, ageMs) {
+    if (ageMs < 0 || ageMs >= 270) return;
+    const u = ageMs / 270, radius = 10 + 14 * u;
+    context.save(); context.strokeStyle = `rgba(255,235,171,${220 / 255 * (1-u)})`; context.lineWidth = 3; context.beginPath(); context.arc(point.x, point.y, radius, 0, Math.PI * 2); context.stroke(); context.restore();
+  }
   function drawBurst(point, age, seed = 0, large = false) {
     const duration = large ? 420 : 300;
     if (age < 0 || age > duration) return;
@@ -400,95 +467,73 @@ async function createRenderer({ canvas, manifest = globalThis.BirdSortAssets, as
     context.beginPath(); context.ellipse(point.x, point.y - 12, radius, radius * 0.48, 0, 0, Math.PI * 2); context.stroke(); context.restore();
   }
 
+  function drawHand(point, alpha = 1, scale = .82) {
+    if (!hand || alpha <= 0) return;
+    context.save(); context.globalAlpha = alpha; context.translate(point.x, point.y); context.scale(scale, scale); context.drawImage(hand.image, -21, -14, hand.width || hand.image.width, hand.height || hand.image.height); context.restore();
+  }
   function drawHint(now) {
-    if (!hint || animation) return;
-    drawBranchCue(hint.fromId, '#fff0ad', 0.62, now);
-    drawBranchCue(hint.toId, '#9df0d3', 0.48, now + 200);
-    if (!hand) return;
+    if (!hint || animation || demoTimeline) return;
+    drawBranchCue(hint.fromId, '#fff0ad', .5, now); drawBranchCue(hint.toId, '#9df0d3', .4, now + 200);
     const source = branchMap.get(hint.fromId), destination = branchMap.get(hint.toId);
     if (!source || !destination) return;
-    const sourceBirds = state.branches[hint.fromId] || [], destinationBirds = state.branches[hint.toId] || [];
-    const from = source.slots[Math.max(0, sourceBirds.length - 1)], to = destination.slots[Math.min(destinationBirds.length, destination.slots.length - 1)];
-    const cycle = (now - hint.startedAt) % 3600, transition = smooth((cycle - 1300) / 650);
-    let alpha = cycle > 3050 ? 1 - smooth((cycle - 3050) / 450) : smooth(cycle / 260);
-    const point = { x: lerp(from.x, to.x, transition), y: lerp(from.y - 65, to.y - 20, transition) + Math.sin(now / 180) * 2 };
-    const anchor = hand.anchor || [hand.width * 0.17, hand.height * 0.1], scale = hand.scale || 0.72;
-    context.save(); context.globalAlpha = alpha * 0.94; context.translate(point.x, point.y); context.scale(scale, scale); context.drawImage(hand.image, -anchor[0], -anchor[1], hand.width || hand.image.width, hand.height || hand.image.height); context.restore();
+    const birds = state.branches[hint.fromId] || [], targetBirds = state.branches[hint.toId] || [];
+    const from = birds.length ? birdFoot(birds.at(-1), source, birds.length-1) : source.slots[0], to = destination.slots[Math.min(targetBirds.length,4)];
+    const elapsed = (now-hint.startedAt) % 2500, travel = smooth((elapsed-700)/280), alpha = elapsed > 1600 ? 1-smooth((elapsed-1600)/270) : smooth(elapsed/180);
+    drawHand({x:lerp(from.x,to.x,travel),y:lerp(from.y-65,to.y-25,travel)},alpha);
   }
-
+  function drawDemo(timeMs) {
+    if (!demoTimeline) return;
+    if (canvas.dataset) canvas.dataset.demoTime = (Math.max(0,timeMs)/1000).toFixed(3);
+    for (const tap of BIRD_VIDEO_DEMO.taps) drawTap(tap,timeMs-tap.atMs);
+    const handPose = sampleDemoHand(timeMs);
+    drawHand(handPose, handPose.alpha, handPose.scale);
+    if (openingImage) {
+      // The video keeps its illustrative download icon during the demo only.
+      context.drawImage(openingImage,845,1580,95,93,845,1580,95,93);
+      if (timeMs<950) {context.save();context.globalAlpha=1-smooth((timeMs-700)/250);context.drawImage(openingImage,0,0,width,height);context.restore();}
+    }
+  }
   function drawFrame(now) {
-    context.setTransform(1, 0, 0, 1, 0, 0); context.fillStyle = '#101622'; context.fillRect(0, 0, canvas.width, canvas.height);
-    context.setTransform(backingScale, 0, 0, backingScale, offsetX, offsetY);
-    context.imageSmoothingEnabled = true; context.imageSmoothingQuality = 'high'; context.drawImage(background, 0, 0, width, height);
-    const current = animation, age = current ? now - current.startedAt : 0;
-    const departing = current && current.cleared.length && age >= current.departAt;
-    const hiddenIds = new Set(current?.actors.map(actor => actor.bird.id) || []);
-    if (departing) for (const group of current.cleared) for (const bird of group.birds) hiddenIds.add(bird.id);
-    const selectedBirds = new Set(endGroup(state.branches[selectedId] || []).map(bird => bird.id));
-    for (const branch of orderedBranches) {
-      const birds = state.branches[branch.id] || [];
-      birds.forEach((bird, index) => {
-        if (hiddenIds.has(bird.id)) return;
-        const slot = branch.slots[index]; if (!slot) return;
-        const selected = !current && branch.id === selectedId && selectedBirds.has(bird.id);
-        const lift = selected ? 7 + Math.sin((now - selectionAt) / 190) * 1.5 : 0;
-        const shake = now - invalidAt < 270 && branch.id === selectedId ? Math.sin((now - invalidAt) / 25) * 4 * (1 - (now - invalidAt) / 270) : 0;
-        drawBird(bird, { x: slot.x + shake, y: slot.y - lift }, branch.facing, { selected, hovered: !current && branch.id === hoveredId });
+    context.setTransform(1,0,0,1,0,0);context.fillStyle='#101622';context.fillRect(0,0,canvas.width,canvas.height);context.setTransform(backingScale,0,0,backingScale,offsetX,offsetY);
+    context.imageSmoothingEnabled=true;context.imageSmoothingQuality='high';context.drawImage(background,0,0,width,height);
+    for (const [id, landing] of lastLandings) if (now - landing.at >= 1500) lastLandings.delete(id);
+    const current=animation,time=current?current.clock():0,departing=current&&current.cleared.length&&time>=current.departAt;
+    const hiddenIds=new Set(current?.actors.map(actor=>actor.bird.id)||[]);
+    if(departing)for(const group of current.cleared)for(const bird of group.birds)hiddenIds.add(bird.id);
+    activeActorIds = hiddenIds;
+    const selectedBirds=new Set(endGroup(state.branches[selectedId]||[]).map(bird=>bird.id));
+    for(const branch of orderedBranches){(state.branches[branch.id]||[]).forEach((bird,index)=>{
+      if(hiddenIds.has(bird.id))return;
+      const slot=birdFoot(bird,branch,index);if(!slot)return;
+      const selected=!current&&!demoTimeline&&branch.id===selectedId&&selectedBirds.has(bird.id);
+      const landing=lastLandings.get(bird.id),age=landing?now-landing.at:Infinity;
+      const pose=landing&&age<1500?sampleBirdMotion({...landing.spec,startMs:-1,endMs:0},age):{x:slot.x,y:slot.y,scaleX:1,scaleY:1};
+      const shake=!demoTimeline&&now-invalidAt<270&&branch.id===selectedId?Math.sin((now-invalidAt)/25)*4*(1-(now-invalidAt)/270):0;
+      drawBird(bird,{x:pose.x+shake,y:pose.y},branch.facing,{scaleX:pose.scaleX,scaleY:pose.scaleY,selected,hovered:!current&&!demoTimeline&&branch.id===hoveredId,branchId:branch.id,index,forceSpecies:Boolean(demoTimeline?.sourcePoses.has(bird.id))||Boolean(landing)||Boolean(shake)});
+    });}
+    if(current&&!departing){
+      current.actors.forEach((actor,index)=>{
+        const pose=sampleBirdMotion(actor,time);drawBird(actor.bird,pose,pose.facing,{scaleX:pose.scaleX,scaleY:pose.scaleY,flying:pose.flying,clock:time,forceSpecies:true,branchId:actor.fromId,index:actor.fromIndex});
+        drawLanding(actor.to,time-actor.endMs);
+        if(time>=actor.endMs&&!actor.landed){actor.landed=true;lastLandings.set(actor.bird.id,{at:now-(time-actor.endMs),spec:actor});}
       });
+      if(time>=current.firstFlight&&!current.flightSound){current.flightSound=true;if(!current.suppressAudio)playCue('flutters',current.audioVariant);}
+      if(time>=current.lastLanding&&!current.landingSound){current.landingSound=true;if(!current.suppressAudio)playCue('landings',current.audioVariant);}
     }
-    if (current && !departing) {
-      current.actors.forEach((actor, index) => {
-        const local = age - actor.delay, t = clamp((local - current.anticipation) / current.flight);
-        const flying = local >= current.anticipation && t < 1;
-        let point = { ...actor.from }, scaleX = 1, scaleY = 1, rotation = 0, facing = actor.sourceFacing;
-        if (local < current.anticipation) {
-          const amount = Math.sin(clamp(local / current.anticipation) * Math.PI);
-          scaleX = 1 + amount * 0.06; scaleY = 1 - amount * 0.09;
-        } else if (t < 1) {
-          const travel = smooth(t), arc = Math.min(112, 58 + Math.hypot(actor.to.x - actor.from.x, actor.to.y - actor.from.y) * 0.07);
-          point = { x: lerp(actor.from.x, actor.to.x, travel), y: lerp(actor.from.y, actor.to.y, travel) - Math.sin(t * Math.PI) * arc + Math.sin(local / 45) * 1.6 };
-          rotation = Math.sign(actor.to.x - actor.from.x) * Math.sin(t * Math.PI) * 0.075;
-          facing = t < 0.68 ? actor.sourceFacing : actor.destinationFacing;
-          scaleX = 1 - Math.exp(-(((t - 0.68) / 0.055) ** 2)) * 0.10;
-        } else {
-          const landing = local - current.anticipation - current.flight, bounce = -8 * Math.exp(-landing / 115) * Math.sin(landing / 40);
-          point = { x: actor.to.x, y: actor.to.y + bounce }; facing = actor.destinationFacing;
-          const squash = Math.exp(-(((landing - 35) / 55) ** 2)) * 0.06; scaleX = 1 + squash; scaleY = 1 - squash;
-          drawBurst(actor.to, landing, index);
-          if (!actor.landed) { actor.landed = true; tone(1060 + index * 110, 0.16, 0.1, actor.to.x / width * 1.4 - 0.7, 1.4); tone(650 + index * 90, 0.2, 0.055, 0, 1, 0.055); }
-        }
-        if (flying && !actor.launched) { actor.launched = true; flutter(current.flight / 1000, actor.from.x / width * 1.4 - 0.7); }
-        drawBird(actor.bird, point, facing, { scaleX, scaleY, rotation, flying, clock: local + index * 23 });
-      });
-    }
-    if (departing) {
-      current.cleared.forEach(group => {
-        const branch = branchMap.get(group.branchId);
-        group.birds.forEach((bird, index) => {
-          const local = age - current.departAt - index * 80, u = clamp(local / 1050), slot = branch.slots[index];
-          if (!slot || u >= 1) return;
-          const travel = smooth(u), targetX = lerp(slot.x, width / 2, 0.48);
-          const point = { x: lerp(slot.x, targetX, travel), y: lerp(slot.y, -230, travel) - Math.sin(u * Math.PI) * 35 };
-          drawBurst(slot, local, index, true);
-          drawBird(bird, point, branch.facing, { flying: local > 0, clock: local + index * 29, rotation: Math.sin(u * Math.PI) * (branch.facing === 'left' ? -0.05 : 0.05) });
-        });
-      });
-      if (!current.departSound) { current.departSound = true; flutter(1.05); [660, 825, 990].forEach((frequency, i) => tone(frequency, 0.28, 0.08, 0, 1.1, i * 0.07)); }
-    }
-    if (!current) {
-      if (hoveredId) drawBranchCue(hoveredId, '#f5dfa7', 0.28, now);
-      if (document.activeElement === canvas && focusId) drawBranchCue(focusId, '#d8f5ec', 0.65, now);
-      drawHint(now);
-    }
-    if (current && age >= current.totalDuration) {
-      const after = current.afterState, resolve = current.resolve; animation = null; state = copyState(after); selectedId = state.selected || null; dirty = true; resolve({ cancelled: false });
-    }
+    if(departing){current.cleared.forEach(group=>{const branch=branchMap.get(group.branchId);group.birds.forEach((bird,index)=>{
+      const local=time-current.departAt-index*80,u=clamp(local/1050),slot=branch.slots[index];if(!slot||u>=1)return;
+      const travel=smooth(u),point={x:lerp(slot.x,lerp(slot.x,width/2,.48),travel),y:lerp(slot.y,-230,travel)-Math.sin(u*Math.PI)*35};
+      drawBurst(slot,local,index,true);drawBird(bird,point,branch.facing,{flying:local>0,clock:time,forceSpecies:true});
+    });});if(!current.departSound){current.departSound=true;if(!current.suppressAudio)playCue('flutters',current.audioVariant);}}
+    if(!current&&!demoTimeline){if(hoveredId)drawBranchCue(hoveredId,'#f5dfa7',.28,now);if(document.activeElement===canvas&&focusId)drawBranchCue(focusId,'#d8f5ec',.65,now);drawHint(now);}
+    if(demoTimeline)drawDemo(demoTimeline.clock());
+    if(current&&time>=current.endTime){const after=current.afterState,resolve=current.resolve;animation=null;state=copyState(after);selectedId=state.selected||null;dirty=true;resolve({cancelled:false});}
   }
 
   function tick(now) {
     if (destroyed) return;
     if ((window.devicePixelRatio || 1) !== lastDpr) resize();
-    if (dirty || animation || selectedId || hint || hoveredId || document.activeElement === canvas) { dirty = false; drawFrame(now); }
+    if (dirty || animation || demoTimeline || lastLandings.size || selectedId || hint || hoveredId || document.activeElement === canvas) { dirty = false; drawFrame(now); }
     raf = requestAnimationFrame(tick);
   }
 
@@ -554,66 +599,65 @@ async function createRenderer({ canvas, manifest = globalThis.BirdSortAssets, as
   resize(); raf = requestAnimationFrame(tick);
 
   function cancelAnimation() {
+    lastLandings.clear(); stopSounds();
     if (!animation) return;
-    const pending = animation; animation = null; state = copyState(pending.afterState); selectedId = state.selected || null; stopSounds(); dirty = true; pending.resolve({ cancelled: true });
+    const pending=animation;animation=null;state=copyState(pending.afterState);selectedId=state.selected||null;dirty=true;pending.resolve({cancelled:true});
   }
 
   return {
     setState(nextState) {
-      cancelAnimation();
-      const previousSelection = selectedId;
-      state = copyState(nextState); selectedId = state.selected || null;
-      if (selectedId && selectedId !== previousSelection) {
-        selectionAt = performance.now();
-        tone(1050, 0.075, 0.075, selectedId.startsWith('L') ? -0.2 : 0.2, 1.1);
-      }
-      dirty = true;
+      if(animation)cancelAnimation();
+      if (JSON.stringify(state.branches) !== JSON.stringify(nextState.branches)) lastLandings.clear();
+      state=copyState(nextState);selectedId=state.selected||null;dirty=true;
     },
-    animate(event, beforeState, afterState) {
-      cancelAnimation();
-      if (destroyed) return Promise.resolve({ cancelled: true });
-      if (event?.type !== 'move') {
-        const previousSelection = selectedId;
-        state = copyState(afterState); selectedId = state.selected || null; dirty = true;
-        if (event?.type === 'invalid') { invalidAt = performance.now(); tone(240, 0.09, 0.075, 0, 0.8); }
-        else if (selectedId && selectedId !== previousSelection) { selectionAt = performance.now(); tone(1050, 0.075, 0.075, 0, 1.1); }
-        return Promise.resolve({ cancelled: false });
+    animate(event,beforeState,afterState,config={}) {
+      cancelAnimation();if(destroyed)return Promise.resolve({cancelled:true});
+      if(event?.type!=='move'){
+        state=copyState(afterState);selectedId=state.selected||null;dirty=true;
+        if(event?.type==='invalid')invalidAt=performance.now();
+        if(!config.suppressAudio)playCue('tap');
+        return Promise.resolve({cancelled:false});
       }
-      const from = branchMap.get(event.fromId), to = branchMap.get(event.toId);
-      if (!from || !to) throw new Error('Move refers to an unknown branch.');
-      state = copyState(beforeState); selectedId = null; hoveredId = null; hint = null;
-      const birds = event.birds || endGroup(state.branches[event.fromId]);
-      const fromIndices = event.fromIndices || birds.map((_, i) => state.branches[event.fromId].length - 1 - i);
-      const toIndices = event.toIndices || birds.map((_, i) => state.branches[event.toId].length + i);
-      const actors = birds.map((bird, index) => {
-        const sourceSlot = from.slots[fromIndices[index]], targetSlot = to.slots[toIndices[index]];
-        if (!sourceSlot || !targetSlot) throw new Error('Move exceeds the branch slot count.');
-        return { bird: { ...bird }, from: { ...sourceSlot }, to: { ...targetSlot }, sourceFacing: from.facing, destinationFacing: to.facing, delay: index * 80, landed: false, launched: false };
+      const from=branchMap.get(event.fromId),to=branchMap.get(event.toId);if(!from||!to)throw new Error('Move refers to an unknown branch.');
+      state=copyState(beforeState);selectedId=null;hoveredId=null;hint=null;
+      const step=config.demoStep==null?null:BIRD_VIDEO_DEMO.steps[config.demoStep];
+      const startedAt=performance.now(),clock=step?(config.clock||demoTimeline?.clock):()=>performance.now()-startedAt;
+      if(step&&!clock)throw new Error('An exact demo move requires its timeline clock.');
+      const birds=event.birds||endGroup(state.branches[event.fromId]).reverse();
+      const fromIndices=event.fromIndices||birds.map((_,i)=>state.branches[event.fromId].length-1-i),toIndices=event.toIndices||birds.map((_,i)=>state.branches[event.toId].length+i);
+      const startMs=step?.flightStartMs??(config.anticipationMs??300),duration=step?step.flightEndMs-step.flightStartMs:(config.flightMs??(event.species===0?1720:1900));
+      const arc=step?.arc??config.arc??(event.species===9?-100:event.species===4?-85:event.species===0?-65:-85),stagger=step?0:(config.staggerMs??0);
+      const actors=birds.map((bird,index)=>{
+        const path=step?.paths.find(item=>item.fromIndex===fromIndices[index]);
+        const sourceSlot=path?.from||birdFoot(bird,from,fromIndices[index]),targetSlot=path?.to||to.slots[toIndices[index]];
+        if(!sourceSlot||!targetSlot)throw new Error('Move exceeds branch capacity.');
+        return{bird:{...bird},fromId:event.fromId,fromIndex:fromIndices[index],toId:event.toId,toIndex:toIndices[index],from:{...sourceSlot},to:{...targetSlot},startMs:startMs+index*stagger,endMs:startMs+duration+index*stagger,arc,sourceFacing:from.facing,destinationFacing:to.facing,landed:false};
       });
-      const anticipation = 140, flight = 1260, settle = 320, latestLanding = anticipation + flight + Math.max(0, actors.length - 1) * 80;
-      const cleared = (event.cleared || []).map(group => ({ ...group, birds: group.birds.map(bird => ({ ...bird })) }));
-      const departAt = latestLanding + settle + 900;
-      const totalDuration = cleared.length ? departAt + 1050 + 4 * 80 : latestLanding + settle;
-      if (navigator.userActivation?.isActive) unlockAudio();
-      tone(850, 0.065, 0.065, from.slots[0].x / width - 0.5, 1.12);
-      return new Promise(resolve => { animation = { event, actors, beforeState: copyState(beforeState), afterState: copyState(afterState), cleared, startedAt: performance.now(), anticipation, flight, departAt, totalDuration, resolve, departSound: false }; dirty = true; });
+      const cleared=(event.cleared||[]).map(group=>({...group,birds:group.birds.map(bird=>({...bird}))}));
+      const firstFlight=Math.min(...actors.map(actor=>actor.startMs)),lastLanding=Math.max(...actors.map(actor=>actor.endMs)),settle=config.settleMs??400,departAt=lastLanding+settle+900,endTime=cleared.length?departAt+1050+320:lastLanding+settle;
+      const suppressAudio=Boolean(step||config.suppressAudio),audioVariant=step?.audioVariant??(event.species===4?1:event.species===0?2:0);
+      if(!suppressAudio)playCue('tap');
+      return new Promise(resolve=>{animation={event,actors,afterState:copyState(afterState),cleared,startedAt,clock,firstFlight,lastLanding,departAt,endTime,resolve,suppressAudio,audioVariant,flightSound:false,landingSound:false,departSound:false};dirty=true;});
     },
-    setSelected(id) {
-      const next = branchMap.has(id) ? id : null;
-      if (next !== selectedId) { selectedId = next; selectionAt = performance.now(); if (next) tone(1050, 0.075, 0.075, next.startsWith('L') ? -0.2 : 0.2, 1.1); }
-      dirty = true;
+    setSelected(id) { selectedId=branchMap.has(id)?id:null;dirty=true; },
+    setHint(value) {hint=value&&branchMap.has(value.fromId)&&branchMap.has(value.toId)?{...value,startedAt:performance.now()}:null;dirty=true;},
+    setDemoTimeline(value) {
+      stopSounds(true);lastLandings.clear();
+      if(value){const sourcePoses=new Map();for(const step of BIRD_VIDEO_DEMO.steps)for(const path of step.paths){const bird=state.branches[step.fromId]?.[path.fromIndex];if(bird)sourcePoses.set(bird.id,{branchId:step.fromId,index:path.fromIndex,point:{...path.from}});}demoTimeline={...value,sourcePoses};}
+      else{demoTimeline=null;if(canvas.dataset)delete canvas.dataset.demoTime;playMusic();}
+      dirty=true;
     },
-    setHint(value) { hint = value && branchMap.has(value.fromId) && branchMap.has(value.toId) ? { ...value, startedAt: performance.now() } : null; dirty = true; },
-    setSound(enabled) { soundEnabled = Boolean(enabled); if (master) master.gain.setTargetAtTime(soundEnabled ? 0.28 : 0, audioContext.currentTime, 0.03); if (soundEnabled && navigator.userActivation?.isActive) unlockAudio(); },
+    setSound(enabled) {soundEnabled=Boolean(enabled);if(!soundEnabled){stopSounds();audioBank.music.pause();}else if(navigator.userActivation?.isActive){unlockAudio();}else playMusic();},
     cancelAnimation,
-    getDebugState() { return { ready: true, busy: Boolean(animation), selectedId, hoveredId, hint: hint ? { fromId: hint.fromId, toId: hint.toId } : null, state: copyState(state), drawnBirds: Object.values(state.branches).reduce((sum, birds) => sum + birds.length, 0), logicalSize: [width, height], backingSize: [canvas.width, canvas.height], soundEnabled, audioState: audioContext?.state || 'not-started', animation: animation ? { fromId: animation.event.fromId, toId: animation.event.toId, count: animation.actors.length, clears: animation.cleared.map(group => group.branchId), durationMs: animation.totalDuration } : null }; },
-    destroy() { if (destroyed) return; cancelAnimation(); destroyed = true; cancelAnimationFrame(raf); observer?.disconnect(); window.removeEventListener('resize', resize); listeners.forEach(([name, callback]) => canvas.removeEventListener(name, callback)); document.removeEventListener('pointerdown', unlockAudio, true); document.removeEventListener('keydown', unlockAudio, true); stopSounds(); audioContext?.close().catch(() => {}); }
+    getDebugState() {return {ready:true,busy:Boolean(animation),selectedId,hoveredId,hint:hint?{fromId:hint.fromId,toId:hint.toId}:null,state:copyState(state),drawnBirds:Object.values(state.branches).reduce((sum,birds)=>sum+birds.length,0),logicalSize:[width,height],backingSize:[canvas.width,canvas.height],soundEnabled,audioState:audioActivated?'activated':'not-started',demoTimeMs:demoTimeline?.clock()??null,animatedSpecies:[...sprites].filter(([,sprite])=>sprite.animation).map(([id])=>id),animation:animation?{fromId:animation.event.fromId,toId:animation.event.toId,count:animation.actors.length,clears:animation.cleared.map(group=>group.branchId),firstFlightMs:animation.firstFlight,lastLandingMs:animation.lastLanding,endTimeMs:animation.endTime,actors:animation.actors.map(actor=>({birdId:actor.bird.id,fromIndex:actor.fromIndex,toIndex:actor.toIndex,from:actor.from,to:actor.to,startMs:actor.startMs,endMs:actor.endMs,arc:actor.arc,pose:sampleBirdMotion(actor,animation.clock())}))}:null};},
+    destroy() {if(destroyed)return;cancelAnimation();destroyed=true;cancelAnimationFrame(raf);observer?.disconnect();window.removeEventListener('resize',resize);listeners.forEach(([name,callback])=>canvas.removeEventListener(name,callback));document.removeEventListener('pointerdown',unlockAudio,true);document.removeEventListener('keydown',unlockAudio,true);stopSounds(true);}
+
   };
 }
 
-return {createRenderer};
+return {BIRD_VIDEO_DEMO, sampleBirdMotion, sampleDemoHand, createRenderer};
 })();
-const {createRenderer} = Renderer;
+const {createRenderer, BIRD_VIDEO_DEMO} = Renderer;
 
 const $ = id => document.getElementById(id);
 const manifest = window.BirdSortAssets;
@@ -624,9 +668,11 @@ let demoPlaying = false;
 let generation = 0;
 let soundEnabled = true;
 try { soundEnabled = localStorage.getItem('gamejuice-bird-sound') !== 'off'; } catch {}
-const voice = new Audio('./assets/' + (manifest?.audio?.demoNarration || 'demo-narration.wav'));
-voice.preload = 'metadata';
-voice.volume = .8;
+// The approved video mix contains its narration, music and effects already.
+// Its playback clock also drives the demonstration, so visuals cannot drift.
+const demoAudio = new Audio('./assets/' + (manifest?.audio?.demoPremix || 'audio/demo-premix.wav'));
+demoAudio.preload = 'auto';
+demoAudio.volume = 1;
 const branchButtons = new Map();
 const wait = ms => new Promise(resolve => setTimeout(resolve, Math.max(0, ms)));
 const branchName = id => `${id[0] === 'L' ? 'Left' : 'Right'} branch ${id.slice(1)}`;
@@ -667,12 +713,12 @@ function messageFor(event) {
   return 'Choose a branch, then a matching bird or an empty branch.';
 }
 
-async function accept(result, before, token = generation) {
+async function accept(result, before, token = generation, animationOptions = {}) {
   state = result.state;
   const event = result.event;
   renderer.setHint(null);
   if (event?.type !== 'move') {
-    renderer.animate(event, before, state).catch(error => console.error('Bird feedback:', error));
+    renderer.animate(event, before, state, animationOptions).catch(error => console.error('Bird feedback:', error));
     renderer.setSelected(state.selected);
     say(messageFor(event));
     sync();
@@ -683,7 +729,7 @@ async function accept(result, before, token = generation) {
   say(event.count > 1 ? 'A little flock, on the move…' : 'Coming in to land…');
   sync();
   try {
-    await renderer.animate(event, before, state);
+    await renderer.animate(event, before, state, animationOptions);
   } catch (error) {
     console.error('Bird animation:', error);
   }
@@ -709,8 +755,9 @@ async function chooseBranch(id) {
 function stopDemo() {
   demoPlaying = false;
   generation++;
-  voice.pause();
-  voice.currentTime = 0;
+  demoAudio.pause();
+  demoAudio.currentTime = 0;
+  renderer?.setDemoTimeline(null);
   renderer?.cancelAnimation();
   busy = false;
   renderer?.setState(state);
@@ -724,8 +771,9 @@ function restart(announce = true) {
   generation++;
   demoPlaying = false;
   busy = false;
-  voice.pause();
-  voice.currentTime = 0;
+  demoAudio.pause();
+  demoAudio.currentTime = 0;
+  renderer?.setDemoTimeline(null);
   renderer?.cancelAnimation();
   const reset = Engine.reset(state);
   state = reset.state || reset;
@@ -743,29 +791,47 @@ async function watchDemo() {
   restart(false);
   demoPlaying = true;
   const token = generation;
-  const start = performance.now();
+  let fallbackStartedAt = performance.now(), audioClock = true;
+  const clock = () => {
+    if (audioClock && demoAudio.error) {
+      fallbackStartedAt = performance.now() - demoAudio.currentTime * 1000;
+      audioClock = false;
+    }
+    if (audioClock && demoAudio.ended) return BIRD_VIDEO_DEMO.durationMs;
+    return audioClock ? Math.min(BIRD_VIDEO_DEMO.durationMs, demoAudio.currentTime * 1000) : Math.min(BIRD_VIDEO_DEMO.durationMs, performance.now() - fallbackStartedAt);
+  };
+  renderer.setDemoTimeline({ clock });
   renderer.setSound(soundEnabled);
-  if (soundEnabled) { voice.currentTime = 0; voice.play().catch(() => {}); }
+  demoAudio.muted = !soundEnabled;
+  demoAudio.currentTime = 0;
+  // Invoke play directly from the click. Muting keeps the same clock/timeline.
+  const playing = demoAudio.play();
   say('Watch three moves, then carry on playing.');
   sync();
-  const steps = [
-    {fromId: 'R3', toId: 'L4', at: 1050, gap: 430},
-    {fromId: 'R3', toId: 'L1', at: 4220, gap: 430},
-    {fromId: 'R3', toId: 'R4', at: 7460, gap: 440},
-  ];
-  for (const step of steps) {
-    await wait(step.at - (performance.now() - start));
-    if (!demoPlaying || token !== generation) return;
-    renderer.setSelected(step.fromId);
-    renderer.setHint({fromId: step.fromId, toId: step.toId});
-    say(`${branchName(step.fromId)} → ${branchName(step.toId)}.`);
-    await wait(step.gap);
-    if (!demoPlaying || token !== generation) return;
-    const before = state;
-    await accept(Engine.move(state, step.fromId, step.toId), before, token);
-    if (token !== generation) return;
+  try { await playing; } catch {
+    audioClock = false;
+    fallbackStartedAt = performance.now();
   }
+  if (!demoPlaying || token !== generation) return;
+  const until = async timeMs => {
+    while (demoPlaying && token === generation && clock() < timeMs) {
+      await wait(Math.min(24, Math.max(4, timeMs - clock())));
+    }
+    return demoPlaying && token === generation;
+  };
+  for (const [index, step] of BIRD_VIDEO_DEMO.steps.entries()) {
+    if (!await until(step.sourceTapMs)) return;
+    renderer.setSelected(step.fromId);
+    say(`${branchName(step.fromId)} → ${branchName(step.toId)}.`);
+    if (!await until(step.destinationTapMs)) return;
+    const before = state;
+    await accept(Engine.move(state, step.fromId, step.toId), before, token, { demoStep: index, clock, suppressAudio: true });
+    if (!demoPlaying || token !== generation) return;
+  }
+  if (!await until(BIRD_VIDEO_DEMO.durationMs)) return;
   demoPlaying = false;
+  demoAudio.pause();
+  renderer.setDemoTimeline(null);
   renderer.setSelected(null);
   renderer.setHint(null);
   say('Your turn. The same rules work on every branch.');
@@ -820,7 +886,7 @@ async function start() {
   $('sound').addEventListener('click', () => {
     soundEnabled = !soundEnabled;
     renderer.setSound(soundEnabled);
-    voice.muted = !soundEnabled;
+    demoAudio.muted = !soundEnabled;
     try { localStorage.setItem('gamejuice-bird-sound', soundEnabled ? 'on' : 'off'); } catch {}
     sync();
   });
@@ -830,7 +896,7 @@ async function start() {
   document.addEventListener('keydown', event => {
     if (event.key === 'Escape' && demoPlaying) stopDemo();
   });
-  window.addEventListener('pagehide', () => { voice.pause(); renderer.setSound(false); });
+  window.addEventListener('pagehide', () => { if (demoPlaying) stopDemo(); demoAudio.pause(); renderer.setSound(false); });
   sync();
 }
 start().catch(error => {

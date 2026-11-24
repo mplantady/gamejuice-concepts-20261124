@@ -2,7 +2,8 @@
   "version": 1,
   "width": 940,
   "height": 1673,
-  "background": "background.png",
+  "background": "background-native.png",
+  "openingImage": "background-opening.png",
   "branches": [
     {
       "id": "L1",
@@ -10,16 +11,16 @@
       "capacity": 5,
       "slots": [
         {
-          "x": 48,
+          "x": 50,
+          "y": 189
+        },
+        {
+          "x": 132,
           "y": 190
         },
         {
-          "x": 126,
-          "y": 190
-        },
-        {
-          "x": 204,
-          "y": 191
+          "x": 210,
+          "y": 193
         },
         {
           "x": 306,
@@ -38,23 +39,23 @@
       "slots": [
         {
           "x": 897,
-          "y": 187
+          "y": 181
         },
         {
-          "x": 820,
-          "y": 187
+          "x": 819,
+          "y": 181
         },
         {
-          "x": 743,
-          "y": 188
+          "x": 738,
+          "y": 191
         },
         {
-          "x": 666,
-          "y": 190
+          "x": 660,
+          "y": 192
         },
         {
-          "x": 590,
-          "y": 195
+          "x": 595,
+          "y": 180
         }
       ]
     },
@@ -64,24 +65,24 @@
       "capacity": 5,
       "slots": [
         {
-          "x": 48,
-          "y": 412
+          "x": 50,
+          "y": 414
         },
         {
           "x": 126,
-          "y": 412
+          "y": 410
         },
         {
-          "x": 204,
-          "y": 413
-        },
-        {
-          "x": 280,
+          "x": 203,
           "y": 415
         },
         {
-          "x": 354,
-          "y": 420
+          "x": 274,
+          "y": 422
+        },
+        {
+          "x": 350,
+          "y": 413
         }
       ]
     },
@@ -91,16 +92,16 @@
       "capacity": 5,
       "slots": [
         {
-          "x": 897,
+          "x": 904,
           "y": 411
         },
         {
-          "x": 820,
-          "y": 411
+          "x": 819,
+          "y": 409
         },
         {
-          "x": 743,
-          "y": 412
+          "x": 740,
+          "y": 411
         },
         {
           "x": 666,
@@ -118,20 +119,20 @@
       "capacity": 5,
       "slots": [
         {
-          "x": 48,
-          "y": 643
+          "x": 50,
+          "y": 647
         },
         {
-          "x": 126,
-          "y": 643
+          "x": 128,
+          "y": 641
         },
         {
           "x": 204,
-          "y": 644
+          "y": 646
         },
         {
-          "x": 280,
-          "y": 646
+          "x": 279,
+          "y": 642
         },
         {
           "x": 354,
@@ -145,24 +146,24 @@
       "capacity": 5,
       "slots": [
         {
-          "x": 897,
-          "y": 641
+          "x": 903,
+          "y": 640
         },
         {
           "x": 820,
-          "y": 641
+          "y": 638
         },
         {
-          "x": 743,
-          "y": 642
+          "x": 742,
+          "y": 638
         },
         {
-          "x": 666,
+          "x": 657,
           "y": 644
         },
         {
-          "x": 590,
-          "y": 649
+          "x": 617,
+          "y": 646
         }
       ]
     },
@@ -172,16 +173,16 @@
       "capacity": 5,
       "slots": [
         {
-          "x": 48,
-          "y": 872
+          "x": 49,
+          "y": 865
         },
         {
-          "x": 126,
-          "y": 872
+          "x": 124,
+          "y": 870
         },
         {
-          "x": 204,
-          "y": 873
+          "x": 196,
+          "y": 865
         },
         {
           "x": 269,
@@ -226,12 +227,12 @@
       "capacity": 5,
       "slots": [
         {
-          "x": 48,
+          "x": 49,
           "y": 1097
         },
         {
-          "x": 126,
-          "y": 1097
+          "x": 133,
+          "y": 1095
         },
         {
           "x": 204,
@@ -254,15 +255,15 @@
       "slots": [
         {
           "x": 897,
-          "y": 1094
+          "y": 1091
         },
         {
-          "x": 820,
-          "y": 1094
+          "x": 811,
+          "y": 1096
         },
         {
-          "x": 743,
-          "y": 1095
+          "x": 733,
+          "y": 1094
         },
         {
           "x": 666,
@@ -280,16 +281,16 @@
       "capacity": 5,
       "slots": [
         {
-          "x": 48,
-          "y": 1320
+          "x": 52,
+          "y": 1324
         },
         {
-          "x": 126,
-          "y": 1320
+          "x": 129,
+          "y": 1307
         },
         {
-          "x": 204,
-          "y": 1321
+          "x": 207,
+          "y": 1317
         },
         {
           "x": 280,
@@ -307,7 +308,7 @@
       "capacity": 5,
       "slots": [
         {
-          "x": 897,
+          "x": 903,
           "y": 1320
         },
         {
@@ -315,16 +316,16 @@
           "y": 1320
         },
         {
-          "x": 743,
-          "y": 1321
+          "x": 739,
+          "y": 1324
         },
         {
-          "x": 666,
+          "x": 668,
+          "y": 1324
+        },
+        {
+          "x": 594,
           "y": 1323
-        },
-        {
-          "x": 590,
-          "y": 1328
         }
       ]
     },
@@ -334,19 +335,19 @@
       "capacity": 5,
       "slots": [
         {
-          "x": 48,
-          "y": 1543
+          "x": 50,
+          "y": 1550
         },
         {
-          "x": 126,
-          "y": 1543
+          "x": 128,
+          "y": 1536
         },
         {
-          "x": 204,
-          "y": 1544
+          "x": 205,
+          "y": 1552
         },
         {
-          "x": 280,
+          "x": 281,
           "y": 1546
         },
         {
@@ -361,16 +362,16 @@
       "capacity": 5,
       "slots": [
         {
-          "x": 897,
-          "y": 1539
+          "x": 891,
+          "y": 1535
         },
         {
-          "x": 820,
-          "y": 1539
+          "x": 807,
+          "y": 1550
         },
         {
-          "x": 743,
-          "y": 1540
+          "x": 740,
+          "y": 1536
         },
         {
           "x": 666,
@@ -394,7 +395,23 @@
         83
       ],
       "facing": "left",
-      "scale": 1
+      "scale": 1,
+      "animation": {
+        "file": "animations/processed/0-red-yellow-sheet-v1/atlas.png",
+        "gif": "animations/processed/0-red-yellow-sheet-v1/flight.gif",
+        "columns": 4,
+        "rows": 2,
+        "frames": 8,
+        "frameWidth": 256,
+        "frameHeight": 320,
+        "anchor": [
+          132.2467952058364,
+          236.229857903459
+        ],
+        "cycleMs": 285.59933214452667,
+        "facing": "right",
+        "displayScale": 0.454721821388488
+      }
     },
     "1": {
       "name": "brown-owl",
@@ -406,7 +423,23 @@
         119
       ],
       "facing": "left",
-      "scale": 1
+      "scale": 1,
+      "animation": {
+        "file": "animations/processed/1-brown-owl-sheet-v1/atlas.png",
+        "gif": "animations/processed/1-brown-owl-sheet-v1/flight.gif",
+        "columns": 4,
+        "rows": 2,
+        "frames": 8,
+        "frameWidth": 256,
+        "frameHeight": 320,
+        "anchor": [
+          140.9297196261682,
+          219.7220663092496
+        ],
+        "cycleMs": 285.59933214452667,
+        "facing": "right",
+        "displayScale": 0.7648251768955207
+      }
     },
     "2": {
       "name": "blue-crested",
@@ -418,7 +451,23 @@
         109
       ],
       "facing": "left",
-      "scale": 1
+      "scale": 1,
+      "animation": {
+        "file": "animations/processed/2-blue-crested-sheet-v1/atlas.png",
+        "gif": "animations/processed/2-blue-crested-sheet-v1/flight.gif",
+        "columns": 4,
+        "rows": 2,
+        "frames": 8,
+        "frameWidth": 256,
+        "frameHeight": 320,
+        "anchor": [
+          122.75639313957072,
+          217.67961165048544
+        ],
+        "cycleMs": 285.59933214452667,
+        "facing": "left",
+        "displayScale": 0.5843971631205673
+      }
     },
     "3": {
       "name": "purple-crow",
@@ -430,7 +479,23 @@
         108
       ],
       "facing": "right",
-      "scale": 1
+      "scale": 1,
+      "animation": {
+        "file": "animations/processed/3-purple-crow-sheet-v1/atlas.png",
+        "gif": "animations/processed/3-purple-crow-sheet-v1/flight.gif",
+        "columns": 4,
+        "rows": 2,
+        "frames": 8,
+        "frameWidth": 256,
+        "frameHeight": 320,
+        "anchor": [
+          130.05497665732958,
+          222.72440338722095
+        ],
+        "cycleMs": 285.59933214452667,
+        "facing": "right",
+        "displayScale": 0.7168214844109262
+      }
     },
     "4": {
       "name": "orange-crested",
@@ -442,7 +507,23 @@
         137
       ],
       "facing": "right",
-      "scale": 1
+      "scale": 1,
+      "animation": {
+        "file": "animations/processed/4-orange-crested-sheet-v1/atlas.png",
+        "gif": "animations/processed/4-orange-crested-sheet-v1/flight.gif",
+        "columns": 4,
+        "rows": 2,
+        "frames": 8,
+        "frameWidth": 256,
+        "frameHeight": 320,
+        "anchor": [
+          132.95085517411098,
+          254.01839611372142
+        ],
+        "cycleMs": 285.59933214452667,
+        "facing": "right",
+        "displayScale": 0.6052149604781184
+      }
     },
     "5": {
       "name": "green-crested",
@@ -454,7 +535,23 @@
         126
       ],
       "facing": "left",
-      "scale": 1
+      "scale": 1,
+      "animation": {
+        "file": "animations/processed/5-green-crested-sheet-v1/atlas.png",
+        "gif": "animations/processed/5-green-crested-sheet-v1/flight.gif",
+        "columns": 4,
+        "rows": 2,
+        "frames": 8,
+        "frameWidth": 256,
+        "frameHeight": 320,
+        "anchor": [
+          128.35935198821795,
+          239.51781472684087
+        ],
+        "cycleMs": 285.59933214452667,
+        "facing": "right",
+        "displayScale": 0.6192314763743334
+      }
     },
     "6": {
       "name": "gray-large-beak",
@@ -466,7 +563,23 @@
         127
       ],
       "facing": "right",
-      "scale": 1
+      "scale": 1,
+      "animation": {
+        "file": "animations/processed/6-gray-large-beak-sheet-v1/atlas.png",
+        "gif": "animations/processed/6-gray-large-beak-sheet-v1/flight.gif",
+        "columns": 4,
+        "rows": 2,
+        "frames": 8,
+        "frameWidth": 256,
+        "frameHeight": 320,
+        "anchor": [
+          112.50167375886527,
+          233.65985699693567
+        ],
+        "cycleMs": 285.59933214452667,
+        "facing": "right",
+        "displayScale": 0.7372913267227312
+      }
     },
     "7": {
       "name": "pink-crested",
@@ -478,7 +591,23 @@
         118
       ],
       "facing": "left",
-      "scale": 1
+      "scale": 1,
+      "animation": {
+        "file": "animations/processed/7-pink-crested-sheet-v1/atlas.png",
+        "gif": "animations/processed/7-pink-crested-sheet-v1/flight.gif",
+        "columns": 4,
+        "rows": 2,
+        "frames": 8,
+        "frameWidth": 256,
+        "frameHeight": 320,
+        "anchor": [
+          113.81734380334585,
+          234.58291880954388
+        ],
+        "cycleMs": 285.59933214452667,
+        "facing": "left",
+        "displayScale": 0.5928425051232069
+      }
     },
     "8": {
       "name": "black-white-toucan",
@@ -490,7 +619,23 @@
         119
       ],
       "facing": "right",
-      "scale": 1
+      "scale": 1,
+      "animation": {
+        "file": "animations/processed/8-black-white-toucan-sheet-v1/atlas.png",
+        "gif": "animations/processed/8-black-white-toucan-sheet-v1/flight.gif",
+        "columns": 4,
+        "rows": 2,
+        "frames": 8,
+        "frameWidth": 256,
+        "frameHeight": 320,
+        "anchor": [
+          117.26930506266564,
+          228.0291568163909
+        ],
+        "cycleMs": 285.59933214452667,
+        "facing": "right",
+        "displayScale": 0.6919302071973827
+      }
     },
     "9": {
       "name": "blue-yellow-macaw",
@@ -502,7 +647,1183 @@
         120
       ],
       "facing": "right",
-      "scale": 1
+      "scale": 1,
+      "animation": {
+        "file": "animations/processed/9-macaw-sheet-v1/atlas.png",
+        "gif": "animations/processed/9-macaw-sheet-v1/flight.gif",
+        "columns": 4,
+        "rows": 2,
+        "frames": 8,
+        "frameWidth": 256,
+        "frameHeight": 320,
+        "anchor": [
+          129.57733807291828,
+          219.1527777777778
+        ],
+        "cycleMs": 285.59933214452667,
+        "facing": "right",
+        "displayScale": 0.7691394658753709
+      }
+    }
+  },
+  "instances": {
+    "bird-0": {
+      "file": "sprites/instances/bird-0.png",
+      "width": 113,
+      "height": 143,
+      "anchor": [
+        50,
+        119
+      ],
+      "facing": "right",
+      "scale": 1,
+      "sourceBranch": "L1",
+      "sourceIndex": 0,
+      "sourceFoot": {
+        "x": 50,
+        "y": 189
+      },
+      "sourceOnly": true,
+      "nativePatch": true,
+      "species": 8,
+      "sourceRequires": [
+        "bird-1",
+        "bird-2"
+      ]
+    },
+    "bird-1": {
+      "file": "sprites/instances/bird-1.png",
+      "width": 93,
+      "height": 140,
+      "anchor": [
+        51,
+        118
+      ],
+      "facing": "right",
+      "scale": 1,
+      "sourceBranch": "L1",
+      "sourceIndex": 1,
+      "sourceFoot": {
+        "x": 132,
+        "y": 190
+      },
+      "sourceOnly": true,
+      "nativePatch": true,
+      "species": 2,
+      "sourceRequires": [
+        "bird-2"
+      ]
+    },
+    "bird-2": {
+      "file": "sprites/instances/bird-2.png",
+      "width": 131,
+      "height": 173,
+      "anchor": [
+        70,
+        149
+      ],
+      "facing": "right",
+      "scale": 1,
+      "sourceBranch": "L1",
+      "sourceIndex": 2,
+      "sourceFoot": {
+        "x": 210,
+        "y": 193
+      },
+      "sourceOnly": true,
+      "nativePatch": true,
+      "species": 4,
+      "sourceRequires": []
+    },
+    "bird-3": {
+      "file": "sprites/instances/bird-3.png",
+      "width": 90,
+      "height": 115,
+      "anchor": [
+        47,
+        94
+      ],
+      "facing": "left",
+      "scale": 1,
+      "sourceBranch": "R1",
+      "sourceIndex": 0,
+      "sourceFoot": {
+        "x": 897,
+        "y": 181
+      },
+      "sourceOnly": true,
+      "nativePatch": true,
+      "species": 0,
+      "sourceRequires": [
+        "bird-4",
+        "bird-5",
+        "bird-6",
+        "bird-7"
+      ]
+    },
+    "bird-4": {
+      "file": "sprites/instances/bird-4.png",
+      "width": 87,
+      "height": 115,
+      "anchor": [
+        51,
+        93
+      ],
+      "facing": "left",
+      "scale": 1,
+      "sourceBranch": "R1",
+      "sourceIndex": 1,
+      "sourceFoot": {
+        "x": 819,
+        "y": 181
+      },
+      "sourceOnly": true,
+      "nativePatch": true,
+      "species": 0,
+      "sourceRequires": [
+        "bird-5",
+        "bird-6",
+        "bird-7"
+      ]
+    },
+    "bird-5": {
+      "file": "sprites/instances/bird-5.png",
+      "width": 127,
+      "height": 174,
+      "anchor": [
+        49,
+        146
+      ],
+      "facing": "left",
+      "scale": 1,
+      "sourceBranch": "R1",
+      "sourceIndex": 2,
+      "sourceFoot": {
+        "x": 738,
+        "y": 191
+      },
+      "sourceOnly": true,
+      "nativePatch": true,
+      "species": 4,
+      "sourceRequires": [
+        "bird-6",
+        "bird-7"
+      ]
+    },
+    "bird-6": {
+      "file": "sprites/instances/bird-6.png",
+      "width": 123,
+      "height": 178,
+      "anchor": [
+        43,
+        150
+      ],
+      "facing": "left",
+      "scale": 1,
+      "sourceBranch": "R1",
+      "sourceIndex": 3,
+      "sourceFoot": {
+        "x": 660,
+        "y": 192
+      },
+      "sourceOnly": true,
+      "nativePatch": true,
+      "species": 4,
+      "sourceRequires": [
+        "bird-7"
+      ]
+    },
+    "bird-7": {
+      "file": "sprites/instances/bird-7.png",
+      "width": 119,
+      "height": 157,
+      "anchor": [
+        72,
+        139
+      ],
+      "facing": "left",
+      "scale": 1,
+      "sourceBranch": "R1",
+      "sourceIndex": 4,
+      "sourceFoot": {
+        "x": 595,
+        "y": 180
+      },
+      "sourceOnly": true,
+      "nativePatch": true,
+      "species": 5,
+      "sourceRequires": []
+    },
+    "bird-8": {
+      "file": "sprites/instances/bird-8.png",
+      "width": 101,
+      "height": 158,
+      "anchor": [
+        50,
+        137
+      ],
+      "facing": "right",
+      "scale": 1,
+      "sourceBranch": "L2",
+      "sourceIndex": 0,
+      "sourceFoot": {
+        "x": 50,
+        "y": 414
+      },
+      "sourceOnly": true,
+      "nativePatch": true,
+      "species": 1,
+      "sourceRequires": [
+        "bird-9",
+        "bird-10",
+        "bird-11",
+        "bird-12"
+      ]
+    },
+    "bird-9": {
+      "file": "sprites/instances/bird-9.png",
+      "width": 119,
+      "height": 157,
+      "anchor": [
+        68,
+        133
+      ],
+      "facing": "right",
+      "scale": 1,
+      "sourceBranch": "L2",
+      "sourceIndex": 1,
+      "sourceFoot": {
+        "x": 126,
+        "y": 410
+      },
+      "sourceOnly": true,
+      "nativePatch": true,
+      "species": 7,
+      "sourceRequires": [
+        "bird-10",
+        "bird-11",
+        "bird-12"
+      ]
+    },
+    "bird-10": {
+      "file": "sprites/instances/bird-10.png",
+      "width": 127,
+      "height": 164,
+      "anchor": [
+        61,
+        139
+      ],
+      "facing": "right",
+      "scale": 1,
+      "sourceBranch": "L2",
+      "sourceIndex": 2,
+      "sourceFoot": {
+        "x": 203,
+        "y": 415
+      },
+      "sourceOnly": true,
+      "nativePatch": true,
+      "species": 6,
+      "sourceRequires": [
+        "bird-11",
+        "bird-12"
+      ]
+    },
+    "bird-11": {
+      "file": "sprites/instances/bird-11.png",
+      "width": 94,
+      "height": 138,
+      "anchor": [
+        52,
+        117
+      ],
+      "facing": "right",
+      "scale": 1,
+      "sourceBranch": "L2",
+      "sourceIndex": 3,
+      "sourceFoot": {
+        "x": 274,
+        "y": 422
+      },
+      "sourceOnly": true,
+      "nativePatch": true,
+      "species": 2,
+      "sourceRequires": [
+        "bird-12"
+      ]
+    },
+    "bird-12": {
+      "file": "sprites/instances/bird-12.png",
+      "width": 141,
+      "height": 164,
+      "anchor": [
+        57,
+        138
+      ],
+      "facing": "right",
+      "scale": 1,
+      "sourceBranch": "L2",
+      "sourceIndex": 4,
+      "sourceFoot": {
+        "x": 350,
+        "y": 413
+      },
+      "sourceOnly": true,
+      "nativePatch": true,
+      "species": 6,
+      "sourceRequires": []
+    },
+    "bird-13": {
+      "file": "sprites/instances/bird-13.png",
+      "width": 95,
+      "height": 198,
+      "anchor": [
+        59,
+        129
+      ],
+      "facing": "left",
+      "scale": 1,
+      "sourceBranch": "R2",
+      "sourceIndex": 0,
+      "sourceFoot": {
+        "x": 904,
+        "y": 411
+      },
+      "sourceOnly": true,
+      "nativePatch": true,
+      "species": 9,
+      "sourceRequires": [
+        "bird-14",
+        "bird-15"
+      ]
+    },
+    "bird-14": {
+      "file": "sprites/instances/bird-14.png",
+      "width": 128,
+      "height": 158,
+      "anchor": [
+        61,
+        133
+      ],
+      "facing": "left",
+      "scale": 1,
+      "sourceBranch": "R2",
+      "sourceIndex": 1,
+      "sourceFoot": {
+        "x": 819,
+        "y": 409
+      },
+      "sourceOnly": true,
+      "nativePatch": true,
+      "species": 7,
+      "sourceRequires": [
+        "bird-15"
+      ]
+    },
+    "bird-15": {
+      "file": "sprites/instances/bird-15.png",
+      "width": 131,
+      "height": 153,
+      "anchor": [
+        65,
+        131
+      ],
+      "facing": "left",
+      "scale": 1,
+      "sourceBranch": "R2",
+      "sourceIndex": 2,
+      "sourceFoot": {
+        "x": 740,
+        "y": 411
+      },
+      "sourceOnly": true,
+      "nativePatch": true,
+      "species": 7,
+      "sourceRequires": []
+    },
+    "bird-16": {
+      "file": "sprites/instances/bird-16.png",
+      "width": 97,
+      "height": 145,
+      "anchor": [
+        50,
+        119
+      ],
+      "facing": "right",
+      "scale": 1,
+      "sourceBranch": "L3",
+      "sourceIndex": 0,
+      "sourceFoot": {
+        "x": 50,
+        "y": 647
+      },
+      "sourceOnly": true,
+      "nativePatch": true,
+      "species": 2,
+      "sourceRequires": [
+        "bird-17",
+        "bird-18",
+        "bird-19"
+      ]
+    },
+    "bird-17": {
+      "file": "sprites/instances/bird-17.png",
+      "width": 127,
+      "height": 158,
+      "anchor": [
+        65,
+        131
+      ],
+      "facing": "right",
+      "scale": 1,
+      "sourceBranch": "L3",
+      "sourceIndex": 1,
+      "sourceFoot": {
+        "x": 128,
+        "y": 641
+      },
+      "sourceOnly": true,
+      "nativePatch": true,
+      "species": 7,
+      "sourceRequires": [
+        "bird-18",
+        "bird-19"
+      ]
+    },
+    "bird-18": {
+      "file": "sprites/instances/bird-18.png",
+      "width": 111,
+      "height": 137,
+      "anchor": [
+        55,
+        111
+      ],
+      "facing": "right",
+      "scale": 1,
+      "sourceBranch": "L3",
+      "sourceIndex": 2,
+      "sourceFoot": {
+        "x": 204,
+        "y": 646
+      },
+      "sourceOnly": true,
+      "nativePatch": true,
+      "species": 8,
+      "sourceRequires": [
+        "bird-19"
+      ]
+    },
+    "bird-19": {
+      "file": "sprites/instances/bird-19.png",
+      "width": 148,
+      "height": 144,
+      "anchor": [
+        72,
+        119
+      ],
+      "facing": "right",
+      "scale": 1,
+      "sourceBranch": "L3",
+      "sourceIndex": 3,
+      "sourceFoot": {
+        "x": 279,
+        "y": 642
+      },
+      "sourceOnly": true,
+      "nativePatch": true,
+      "species": 3,
+      "sourceRequires": []
+    },
+    "bird-20": {
+      "file": "sprites/instances/bird-20.png",
+      "width": 88,
+      "height": 184,
+      "anchor": [
+        51,
+        113
+      ],
+      "facing": "left",
+      "scale": 1,
+      "sourceBranch": "R3",
+      "sourceIndex": 0,
+      "sourceFoot": {
+        "x": 903,
+        "y": 640
+      },
+      "sourceOnly": true,
+      "nativePatch": true,
+      "species": 9,
+      "sourceRequires": []
+    },
+    "bird-21": {
+      "file": "sprites/instances/bird-21.png",
+      "width": 156,
+      "height": 214,
+      "anchor": [
+        36,
+        130
+      ],
+      "facing": "left",
+      "scale": 1,
+      "sourceBranch": "R3",
+      "sourceIndex": 1,
+      "sourceFoot": {
+        "x": 820,
+        "y": 638
+      },
+      "sourceOnly": true,
+      "nativePatch": true,
+      "species": 0,
+      "sourceRequires": [
+        "bird-22",
+        "bird-23",
+        "bird-24"
+      ]
+    },
+    "bird-22": {
+      "file": "sprites/instances/bird-22.png",
+      "width": 105,
+      "height": 116,
+      "anchor": [
+        46,
+        95
+      ],
+      "facing": "left",
+      "scale": 1,
+      "sourceBranch": "R3",
+      "sourceIndex": 2,
+      "sourceFoot": {
+        "x": 742,
+        "y": 638
+      },
+      "sourceOnly": true,
+      "nativePatch": true,
+      "species": 0,
+      "sourceRequires": [
+        "bird-23",
+        "bird-24"
+      ]
+    },
+    "bird-23": {
+      "file": "sprites/instances/bird-23.png",
+      "width": 134,
+      "height": 182,
+      "anchor": [
+        53,
+        149
+      ],
+      "facing": "left",
+      "scale": 1,
+      "sourceBranch": "R3",
+      "sourceIndex": 3,
+      "sourceFoot": {
+        "x": 657,
+        "y": 644
+      },
+      "sourceOnly": true,
+      "nativePatch": true,
+      "species": 4,
+      "sourceRequires": [
+        "bird-24"
+      ]
+    },
+    "bird-24": {
+      "file": "sprites/instances/bird-24.png",
+      "width": 101,
+      "height": 159,
+      "anchor": [
+        70,
+        134
+      ],
+      "facing": "left",
+      "scale": 1,
+      "sourceBranch": "R3",
+      "sourceIndex": 4,
+      "sourceFoot": {
+        "x": 617,
+        "y": 646
+      },
+      "sourceOnly": true,
+      "nativePatch": true,
+      "species": 9,
+      "sourceRequires": []
+    },
+    "bird-25": {
+      "file": "sprites/instances/bird-25.png",
+      "width": 101,
+      "height": 164,
+      "anchor": [
+        49,
+        136
+      ],
+      "facing": "right",
+      "scale": 1,
+      "sourceBranch": "L4",
+      "sourceIndex": 0,
+      "sourceFoot": {
+        "x": 49,
+        "y": 865
+      },
+      "sourceOnly": true,
+      "nativePatch": true,
+      "species": 7,
+      "sourceRequires": [
+        "bird-26",
+        "bird-27",
+        "bird-28"
+      ]
+    },
+    "bird-26": {
+      "file": "sprites/instances/bird-26.png",
+      "width": 126,
+      "height": 176,
+      "anchor": [
+        60,
+        150
+      ],
+      "facing": "right",
+      "scale": 1,
+      "sourceBranch": "L4",
+      "sourceIndex": 1,
+      "sourceFoot": {
+        "x": 124,
+        "y": 870
+      },
+      "sourceOnly": true,
+      "nativePatch": true,
+      "species": 4,
+      "sourceRequires": [
+        "bird-27",
+        "bird-28"
+      ]
+    },
+    "bird-27": {
+      "file": "sprites/instances/bird-27.png",
+      "width": 106,
+      "height": 150,
+      "anchor": [
+        64,
+        121
+      ],
+      "facing": "right",
+      "scale": 1,
+      "sourceBranch": "L4",
+      "sourceIndex": 2,
+      "sourceFoot": {
+        "x": 196,
+        "y": 865
+      },
+      "sourceOnly": true,
+      "nativePatch": true,
+      "species": 3,
+      "sourceRequires": [
+        "bird-28"
+      ]
+    },
+    "bird-28": {
+      "file": "sprites/instances/bird-28.png",
+      "width": 111,
+      "height": 202,
+      "anchor": [
+        57,
+        130
+      ],
+      "facing": "right",
+      "scale": 1,
+      "sourceBranch": "L4",
+      "sourceIndex": 3,
+      "sourceFoot": {
+        "x": 269,
+        "y": 872
+      },
+      "sourceOnly": true,
+      "nativePatch": true,
+      "species": 9,
+      "sourceRequires": []
+    },
+    "bird-29": {
+      "file": "sprites/instances/bird-29.png",
+      "width": 100,
+      "height": 160,
+      "anchor": [
+        49,
+        137
+      ],
+      "facing": "right",
+      "scale": 1,
+      "sourceBranch": "L5",
+      "sourceIndex": 0,
+      "sourceFoot": {
+        "x": 49,
+        "y": 1097
+      },
+      "sourceOnly": true,
+      "nativePatch": true,
+      "species": 1,
+      "sourceRequires": [
+        "bird-30",
+        "bird-31"
+      ]
+    },
+    "bird-30": {
+      "file": "sprites/instances/bird-30.png",
+      "width": 91,
+      "height": 155,
+      "anchor": [
+        48,
+        131
+      ],
+      "facing": "right",
+      "scale": 1,
+      "sourceBranch": "L5",
+      "sourceIndex": 1,
+      "sourceFoot": {
+        "x": 133,
+        "y": 1095
+      },
+      "sourceOnly": true,
+      "nativePatch": true,
+      "species": 1,
+      "sourceRequires": [
+        "bird-31"
+      ]
+    },
+    "bird-31": {
+      "file": "sprites/instances/bird-31.png",
+      "width": 130,
+      "height": 145,
+      "anchor": [
+        55,
+        119
+      ],
+      "facing": "right",
+      "scale": 1,
+      "sourceBranch": "L5",
+      "sourceIndex": 2,
+      "sourceFoot": {
+        "x": 204,
+        "y": 1098
+      },
+      "sourceOnly": true,
+      "nativePatch": true,
+      "species": 8,
+      "sourceRequires": []
+    },
+    "bird-32": {
+      "file": "sprites/instances/bird-32.png",
+      "width": 93,
+      "height": 121,
+      "anchor": [
+        50,
+        95
+      ],
+      "facing": "left",
+      "scale": 1,
+      "sourceBranch": "R5",
+      "sourceIndex": 0,
+      "sourceFoot": {
+        "x": 897,
+        "y": 1091
+      },
+      "sourceOnly": true,
+      "nativePatch": true,
+      "species": 0,
+      "sourceRequires": [
+        "bird-33",
+        "bird-34"
+      ]
+    },
+    "bird-33": {
+      "file": "sprites/instances/bird-33.png",
+      "width": 117,
+      "height": 167,
+      "anchor": [
+        48,
+        141
+      ],
+      "facing": "left",
+      "scale": 1,
+      "sourceBranch": "R5",
+      "sourceIndex": 1,
+      "sourceFoot": {
+        "x": 811,
+        "y": 1096
+      },
+      "sourceOnly": true,
+      "nativePatch": true,
+      "species": 6,
+      "sourceRequires": [
+        "bird-34"
+      ]
+    },
+    "bird-34": {
+      "file": "sprites/instances/bird-34.png",
+      "width": 106,
+      "height": 161,
+      "anchor": [
+        46,
+        134
+      ],
+      "facing": "left",
+      "scale": 1,
+      "sourceBranch": "R5",
+      "sourceIndex": 2,
+      "sourceFoot": {
+        "x": 733,
+        "y": 1094
+      },
+      "sourceOnly": true,
+      "nativePatch": true,
+      "species": 1,
+      "sourceRequires": []
+    },
+    "bird-35": {
+      "file": "sprites/instances/bird-35.png",
+      "width": 108,
+      "height": 169,
+      "anchor": [
+        52,
+        141
+      ],
+      "facing": "right",
+      "scale": 1,
+      "sourceBranch": "L6",
+      "sourceIndex": 0,
+      "sourceFoot": {
+        "x": 52,
+        "y": 1324
+      },
+      "sourceOnly": true,
+      "nativePatch": true,
+      "species": 6,
+      "sourceRequires": [
+        "bird-36",
+        "bird-37"
+      ]
+    },
+    "bird-36": {
+      "file": "sprites/instances/bird-36.png",
+      "width": 109,
+      "height": 167,
+      "anchor": [
+        62,
+        144
+      ],
+      "facing": "right",
+      "scale": 1,
+      "sourceBranch": "L6",
+      "sourceIndex": 1,
+      "sourceFoot": {
+        "x": 129,
+        "y": 1307
+      },
+      "sourceOnly": true,
+      "nativePatch": true,
+      "species": 5,
+      "sourceRequires": [
+        "bird-37"
+      ]
+    },
+    "bird-37": {
+      "file": "sprites/instances/bird-37.png",
+      "width": 117,
+      "height": 212,
+      "anchor": [
+        67,
+        126
+      ],
+      "facing": "right",
+      "scale": 1,
+      "sourceBranch": "L6",
+      "sourceIndex": 2,
+      "sourceFoot": {
+        "x": 207,
+        "y": 1317
+      },
+      "sourceOnly": true,
+      "nativePatch": true,
+      "species": 9,
+      "sourceRequires": []
+    },
+    "bird-38": {
+      "file": "sprites/instances/bird-38.png",
+      "width": 82,
+      "height": 149,
+      "anchor": [
+        45,
+        117
+      ],
+      "facing": "left",
+      "scale": 1,
+      "sourceBranch": "R6",
+      "sourceIndex": 0,
+      "sourceFoot": {
+        "x": 903,
+        "y": 1320
+      },
+      "sourceOnly": true,
+      "nativePatch": true,
+      "species": 3,
+      "sourceRequires": [
+        "bird-39",
+        "bird-40",
+        "bird-41",
+        "bird-42"
+      ]
+    },
+    "bird-39": {
+      "file": "sprites/instances/bird-39.png",
+      "width": 102,
+      "height": 147,
+      "anchor": [
+        54,
+        115
+      ],
+      "facing": "left",
+      "scale": 1,
+      "sourceBranch": "R6",
+      "sourceIndex": 1,
+      "sourceFoot": {
+        "x": 820,
+        "y": 1320
+      },
+      "sourceOnly": true,
+      "nativePatch": true,
+      "species": 3,
+      "sourceRequires": [
+        "bird-40",
+        "bird-41",
+        "bird-42"
+      ]
+    },
+    "bird-40": {
+      "file": "sprites/instances/bird-40.png",
+      "width": 112,
+      "height": 165,
+      "anchor": [
+        49,
+        139
+      ],
+      "facing": "left",
+      "scale": 1,
+      "sourceBranch": "R6",
+      "sourceIndex": 2,
+      "sourceFoot": {
+        "x": 739,
+        "y": 1324
+      },
+      "sourceOnly": true,
+      "nativePatch": true,
+      "species": 6,
+      "sourceRequires": [
+        "bird-41",
+        "bird-42"
+      ]
+    },
+    "bird-41": {
+      "file": "sprites/instances/bird-41.png",
+      "width": 108,
+      "height": 156,
+      "anchor": [
+        51,
+        131
+      ],
+      "facing": "left",
+      "scale": 1,
+      "sourceBranch": "R6",
+      "sourceIndex": 3,
+      "sourceFoot": {
+        "x": 668,
+        "y": 1324
+      },
+      "sourceOnly": true,
+      "nativePatch": true,
+      "species": 1,
+      "sourceRequires": [
+        "bird-42"
+      ]
+    },
+    "bird-42": {
+      "file": "sprites/instances/bird-42.png",
+      "width": 121,
+      "height": 139,
+      "anchor": [
+        74,
+        108
+      ],
+      "facing": "left",
+      "scale": 1,
+      "sourceBranch": "R6",
+      "sourceIndex": 4,
+      "sourceFoot": {
+        "x": 594,
+        "y": 1323
+      },
+      "sourceOnly": true,
+      "nativePatch": true,
+      "species": 8,
+      "sourceRequires": []
+    },
+    "bird-43": {
+      "file": "sprites/instances/bird-43.png",
+      "width": 102,
+      "height": 145,
+      "anchor": [
+        50,
+        117
+      ],
+      "facing": "right",
+      "scale": 1,
+      "sourceBranch": "L7",
+      "sourceIndex": 0,
+      "sourceFoot": {
+        "x": 50,
+        "y": 1550
+      },
+      "sourceOnly": true,
+      "nativePatch": true,
+      "species": 2,
+      "sourceRequires": [
+        "bird-44",
+        "bird-45",
+        "bird-46"
+      ]
+    },
+    "bird-44": {
+      "file": "sprites/instances/bird-44.png",
+      "width": 112,
+      "height": 164,
+      "anchor": [
+        58,
+        144
+      ],
+      "facing": "right",
+      "scale": 1,
+      "sourceBranch": "L7",
+      "sourceIndex": 1,
+      "sourceFoot": {
+        "x": 128,
+        "y": 1536
+      },
+      "sourceOnly": true,
+      "nativePatch": true,
+      "species": 5,
+      "sourceRequires": [
+        "bird-45",
+        "bird-46"
+      ]
+    },
+    "bird-45": {
+      "file": "sprites/instances/bird-45.png",
+      "width": 127,
+      "height": 140,
+      "anchor": [
+        70,
+        114
+      ],
+      "facing": "right",
+      "scale": 1,
+      "sourceBranch": "L7",
+      "sourceIndex": 2,
+      "sourceFoot": {
+        "x": 205,
+        "y": 1552
+      },
+      "sourceOnly": true,
+      "nativePatch": true,
+      "species": 8,
+      "sourceRequires": [
+        "bird-46"
+      ]
+    },
+    "bird-46": {
+      "file": "sprites/instances/bird-46.png",
+      "width": 140,
+      "height": 139,
+      "anchor": [
+        67,
+        115
+      ],
+      "facing": "right",
+      "scale": 1,
+      "sourceBranch": "L7",
+      "sourceIndex": 3,
+      "sourceFoot": {
+        "x": 281,
+        "y": 1546
+      },
+      "sourceOnly": true,
+      "nativePatch": true,
+      "species": 3,
+      "sourceRequires": []
+    },
+    "bird-47": {
+      "file": "sprites/instances/bird-47.png",
+      "width": 101,
+      "height": 162,
+      "anchor": [
+        52,
+        137
+      ],
+      "facing": "left",
+      "scale": 1,
+      "sourceBranch": "R7",
+      "sourceIndex": 0,
+      "sourceFoot": {
+        "x": 891,
+        "y": 1535
+      },
+      "sourceOnly": true,
+      "nativePatch": true,
+      "species": 5,
+      "sourceRequires": [
+        "bird-48",
+        "bird-49"
+      ]
+    },
+    "bird-48": {
+      "file": "sprites/instances/bird-48.png",
+      "width": 98,
+      "height": 142,
+      "anchor": [
+        45,
+        119
+      ],
+      "facing": "left",
+      "scale": 1,
+      "sourceBranch": "R7",
+      "sourceIndex": 1,
+      "sourceFoot": {
+        "x": 807,
+        "y": 1550
+      },
+      "sourceOnly": true,
+      "nativePatch": true,
+      "species": 2,
+      "sourceRequires": [
+        "bird-49"
+      ]
+    },
+    "bird-49": {
+      "file": "sprites/instances/bird-49.png",
+      "width": 131,
+      "height": 165,
+      "anchor": [
+        70,
+        144
+      ],
+      "facing": "left",
+      "scale": 1,
+      "sourceBranch": "R7",
+      "sourceIndex": 2,
+      "sourceFoot": {
+        "x": 740,
+        "y": 1536
+      },
+      "sourceOnly": true,
+      "nativePatch": true,
+      "species": 5,
+      "sourceRequires": []
     }
   },
   "hand": {
@@ -515,6 +1836,18 @@
     ]
   },
   "audio": {
-    "demoNarration": "demo-narration.wav"
+    "demoPremix": "audio/demo-premix.wav",
+    "musicBed": "audio/music-bed.wav",
+    "tap": "audio/tap.wav",
+    "flutters": [
+      "audio/flutter-1.wav",
+      "audio/flutter-2.wav",
+      "audio/flutter-3.wav"
+    ],
+    "landings": [
+      "audio/landing-1.wav",
+      "audio/landing-2.wav",
+      "audio/landing-3.wav"
+    ]
   }
 }
