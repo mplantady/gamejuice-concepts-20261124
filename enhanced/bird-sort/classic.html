@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#171a29">
+  <title>Bird Sort · Play the concept</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="../../concepts/index.html?round=faithful">Game<span>Juice</span></a>
+    <a class="back" href="../../concepts/index.html?round=faithful#bird-sort">← Concept gallery</a>
+  </header>
+  <main class="game-layout">
+    <section class="scene-wrap" aria-label="Bird Sort game">
+      <div class="scene" id="scene">
+        <canvas id="game" width="940" height="1673" aria-label="Bird Sort forest. Use the branch buttons to play."></canvas>
+        <div class="branch-controls" id="branch-controls" aria-label="Choose a branch"></div>
+        <div class="loading" id="loading"><span class="loading-bird">✦</span><p>Waking up the forest…</p></div>
+      </div>
+    </section>
+    <aside class="play-panel">
+      <div class="intro"><p class="eyebrow">PLAY THE CONCEPT</p><h1>Bird Sort</h1><p class="description">A little order.<br>A lot of personality.</p></div>
+      <div class="stats" aria-label="Game progress"><div><strong id="moves">0</strong><span>moves</span></div><div><strong><span id="flocks">0</span><small> / 10</small></strong><span>flocks together</span></div></div>
+      <p class="status" id="status" role="status" aria-live="polite">Choose a branch, then a matching bird or an empty branch.</p>
+      <div class="controls">
+        <button id="hint" type="button"><span aria-hidden="true">✧</span> Hint</button>
+        <button id="undo" type="button" disabled><span aria-hidden="true">↶</span> Undo</button>
+        <button id="sound" type="button" aria-pressed="true"><span aria-hidden="true">♫</span> <span id="sound-label">Sound on</span></button>
+        <button id="restart" type="button"><span aria-hidden="true">↻</span> Restart</button>
+        <button id="demo" type="button" class="demo"><span aria-hidden="true">▷</span> <span id="demo-label">Watch the moves</span></button>
+      </div>
+      <p class="how-to">Move the birds at a branch’s tip. Make a flock of five matching birds and watch them fly home.</p>
+      <a class="comparison-link" href="../../concepts/faithful/video/comparisons/bird-sort/">Compare with the original ↗</a>
+      <br><a class="comparison-link" style="margin-top:8px" href="review/index.html">Compare with Concept Video ↗</a>
+      <br><a class="comparison-link" style="margin-top:8px" href="flight/">Explore all 10 flight animations ↗</a>
+      <details class="help"><summary>How to play</summary><p>Choose a branch, then an empty branch or one with the same bird at its tip. Matching birds travel together when there’s room. A branch holds five birds. Clear all ten flocks to finish.</p><p>Use Tab and Enter to choose branches with a keyboard. Undo and Restart are always free.</p></details>
+    </aside>
+  </main>
+  <dialog id="win" aria-labelledby="win-title"><div class="win-star" aria-hidden="true">✦</div><p class="eyebrow">TEN HAPPY FLOCKS</p><h2 id="win-title">Beautifully sorted.</h2><p id="win-description">Every bird has found its flock.</p><button id="play-again" type="button">Play again</button><button id="keep-looking" type="button" class="quiet">Enjoy the forest</button></dialog>
+  <noscript>This game needs JavaScript to animate and move the birds.</noscript>
+  <script src="assets/manifest.js"></script>
+  <script src="game.bundle.js"></script>
+</body>
+</html>
