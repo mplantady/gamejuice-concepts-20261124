@@ -10,7 +10,51 @@
   "audio": true,
   "input_image": "images/bird-sort-combined.png",
   "prompt_file": "video/requests/bird-sort-minimax-h3.json",
-  "review": "Generated concept; visual and audio review pending.",
+  "review": {
+    "status": "reviewed",
+    "verdict": "The sampled frames preserve all three planned transfers and final bird counts. Usable visual concept with oversized selection effects and minor artwork drift; audio content remains unreviewed.",
+    "method": "Inspected 13 extracted frames against the combined reference image and the archived-rule evidence in plans/bird-sort.json. This was representative frame inspection, not continuous playback or listening.",
+    "sample_times_seconds": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11.5,
+      12
+    ],
+    "frame_directory": "video/checks/bird-sort-minimax-h3",
+    "first_frame_layout": "The opening frame retains all seven left/right branch rows, their initial bird groups, tutorial hand, moon/background composition and lower-right download icon from the combined image.",
+    "gameplay_fidelity": [
+      "R3 to L4: one blue-and-yellow macaw is in flight at 2s and settled by 3s. L4 has five mixed birds, including its two macaws, and does not clear.",
+      "R3 to L1: one orange-crested bird is in flight at 5s and settled by 6s. L1 has four birds with two adjacent orange-crested birds; R3 retains its two red-and-yellow birds and far macaw.",
+      "R3 to R4: exactly two red-and-yellow birds are in flight together at 8s and seated on R4 by 9s. The far macaw remains alone on R3. This final state holds through 12s.",
+      "No branch clearing, duplicated or missing birds, reward, score or success overlay is apparent in the inspected states. Unrelated groups retain their counts and identities. Final precise perch-slot coordinates have not been independently compared with an original-game replay."
+    ],
+    "effects_and_readability": "Wingbeat poses and source/destination hand cues make the transfers readable. The large double gold tap rings at 1s, 2s, 4s and 7s spill over adjacent birds and partially wash out the selected group, especially the 4s orange bird and 7s red pair. Reduce their radius and brightness. Sampled frames do not establish every brief landing sparkle, sound sync or exact easing.",
+    "ui_and_camera": "The full portrait board and download icon stay in view, without cuts or material camera drift in sampled frames. Some birds subtly change pose, size or feather details during idle/landing animation; the newly moved orange bird briefly appears smaller at 6s before settling. No new persistent UI appears.",
+    "audio": {
+      "stream_present": true,
+      "codec": "aac",
+      "sample_rate_hz": 32000,
+      "channels": 2,
+      "content_reviewed": false,
+      "note": "AAC stream presence verified only. Voiceover wording, music, effects, quality and synchronization were not listened to or validated."
+    },
+    "technical_note": "Actual clip is 1440×2560 portrait, 12.250s; this differs from the 1080p / 12s target.",
+    "recommended_adjustments": [
+      "Keep selection glow tight to the legal moving group so neighboring birds remain distinct.",
+      "Keep bird proportions stable through takeoff and landing.",
+      "Listen to the rendered audio before approving narration and effect timing."
+    ],
+    "limitations": "Representative frames support the visible transfer sequence and final counts but do not prove frame-by-frame continuity, exact interaction behavior or audio content. No paid call or retry was performed."
+  },
   "prior_attempts": [
     {
       "slug": "bird-sort",

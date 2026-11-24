@@ -1,7 +1,7 @@
 {
   "version": "v1",
   "created": "2026-11-24",
-  "updated": "24 Nov 2026, 10:23",
+  "updated": "24 Nov 2026, 10:35",
   "games": [
     {
       "slug": "bird-sort",
@@ -92,7 +92,51 @@
         "audio": true,
         "input_image": "images/bird-sort-combined.png",
         "prompt_file": "video/requests/bird-sort-minimax-h3.json",
-        "review": "Generated concept; visual and audio review pending.",
+        "review": {
+          "status": "reviewed",
+          "verdict": "The sampled frames preserve all three planned transfers and final bird counts. Usable visual concept with oversized selection effects and minor artwork drift; audio content remains unreviewed.",
+          "method": "Inspected 13 extracted frames against the combined reference image and the archived-rule evidence in plans/bird-sort.json. This was representative frame inspection, not continuous playback or listening.",
+          "sample_times_seconds": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11.5,
+            12
+          ],
+          "frame_directory": "video/checks/bird-sort-minimax-h3",
+          "first_frame_layout": "The opening frame retains all seven left/right branch rows, their initial bird groups, tutorial hand, moon/background composition and lower-right download icon from the combined image.",
+          "gameplay_fidelity": [
+            "R3 to L4: one blue-and-yellow macaw is in flight at 2s and settled by 3s. L4 has five mixed birds, including its two macaws, and does not clear.",
+            "R3 to L1: one orange-crested bird is in flight at 5s and settled by 6s. L1 has four birds with two adjacent orange-crested birds; R3 retains its two red-and-yellow birds and far macaw.",
+            "R3 to R4: exactly two red-and-yellow birds are in flight together at 8s and seated on R4 by 9s. The far macaw remains alone on R3. This final state holds through 12s.",
+            "No branch clearing, duplicated or missing birds, reward, score or success overlay is apparent in the inspected states. Unrelated groups retain their counts and identities. Final precise perch-slot coordinates have not been independently compared with an original-game replay."
+          ],
+          "effects_and_readability": "Wingbeat poses and source/destination hand cues make the transfers readable. The large double gold tap rings at 1s, 2s, 4s and 7s spill over adjacent birds and partially wash out the selected group, especially the 4s orange bird and 7s red pair. Reduce their radius and brightness. Sampled frames do not establish every brief landing sparkle, sound sync or exact easing.",
+          "ui_and_camera": "The full portrait board and download icon stay in view, without cuts or material camera drift in sampled frames. Some birds subtly change pose, size or feather details during idle/landing animation; the newly moved orange bird briefly appears smaller at 6s before settling. No new persistent UI appears.",
+          "audio": {
+            "stream_present": true,
+            "codec": "aac",
+            "sample_rate_hz": 32000,
+            "channels": 2,
+            "content_reviewed": false,
+            "note": "AAC stream presence verified only. Voiceover wording, music, effects, quality and synchronization were not listened to or validated."
+          },
+          "technical_note": "Actual clip is 1440×2560 portrait, 12.250s; this differs from the 1080p / 12s target.",
+          "recommended_adjustments": [
+            "Keep selection glow tight to the legal moving group so neighboring birds remain distinct.",
+            "Keep bird proportions stable through takeoff and landing.",
+            "Listen to the rendered audio before approving narration and effect timing."
+          ],
+          "limitations": "Representative frames support the visible transfer sequence and final counts but do not prove frame-by-frame continuity, exact interaction behavior or audio content. No paid call or retry was performed."
+        },
         "prior_attempts": [
           {
             "slug": "bird-sort",
@@ -119,7 +163,8 @@
         ],
         "prompt_available": true
       },
-      "video_failure": null
+      "video_failure": null,
+      "comparison_video": "video/comparisons/bird-sort/index.html"
     },
     {
       "slug": "draft-showdown",
@@ -245,7 +290,8 @@
         },
         "prompt_available": true
       },
-      "video_failure": null
+      "video_failure": null,
+      "comparison_video": null
     },
     {
       "slug": "goods-puzzle",
@@ -324,15 +370,119 @@
       },
       "reference_state": "Original opening/tutorial state",
       "reference_available": true,
-      "video": null,
-      "video_failure": {
-        "blocked": true,
-        "error": "ContentBlocked",
-        "models": "Seedance 2.5, Kling 4, MiniMax H3, Gemini Omni 1.2 Flash, Kling 3 Pro, MiniMax H3 Fast",
-        "reason": "The prompt references the specific game title Goods Puzzle: Sort Challenge.",
-        "result_file": "video/results/goods-puzzle.json",
-        "charged_points": null
-      }
+      "video": {
+        "slug": "goods-puzzle",
+        "status": "generated",
+        "model": "local-motion-mockup",
+        "method": "local_animation",
+        "file": "video/clips/goods-puzzle-local-motion-v1.mp4",
+        "width": 1080,
+        "height": 1920,
+        "duration": 12.0,
+        "audio": true,
+        "input_image": "images/goods-puzzle-combined.png",
+        "prompt_file": "video/requests/goods-puzzle-local-motion.json",
+        "review": {
+          "reviewed": true,
+          "status": "Local motion mockup — four encoded frames reviewed",
+          "method": "Deterministic screenshot compositing and FFmpeg; no model-generated video.",
+          "layout": "Seven-row shelf and headline retained. One row-four fruit match is animated.",
+          "fidelity_limits": [
+            "Uses the saved polished screenshot and existing source-game SOLD OUT artwork; no AI model generation.",
+            "The baked tutorial hand/ghost is isolated and animated. Covered central shelf areas are reconstructed from matching visible polished products; this is a compositing approximation, not a new game render.",
+            "One fruit carton moves from row-four center middle to row-four left middle. Exactly three cartons clear; other goods remain fixed.",
+            "Camera remains fixed; small localized particles and deterministic motion illustrate the planned interaction.",
+            "Existing Samantha system voice reads the exact two plan sentences; original synthesized tones, swishes and music support the timing.",
+            "Rebuilt central shelf areas have minor crop-edge/shadow seams, and the extracted tutorial hand has a visible wrist cutoff. This illustrates one legal interaction; it is not a pixel-identical gameplay recording."
+          ],
+          "audio": "Exact plan narration with installed Samantha voice plus synthesized SFX/music.",
+          "recognizable_game": true,
+          "visual_change": "One FRUIT carton is dragged into the two-carton shelf; the exact three-carton group clears and the existing source-game SOLD OUT graphic appears.",
+          "text": "The headline, FRUIT labels and other readable product labels remain recognizable. A small LOCAL MOTION MOCKUP footer identifies this composited animation.",
+          "frames_reviewed_seconds": [
+            3.8,
+            6.8,
+            8.6,
+            11.5
+          ],
+          "audio_validation": "Verified H.264 1080×1920 video, 12.000 seconds, AAC stereo at 48 kHz. Exact-plan narration synthesized with the installed Samantha voice; no model audio generation."
+        },
+        "prior_attempts": [
+          {
+            "slug": "goods-puzzle",
+            "status": "failed",
+            "model": "video-seedance-2-5",
+            "input_image": "images/goods-puzzle-combined.png",
+            "error": "ContentBlocked",
+            "details": [
+              "The prompt references the specific trademarked mobile game title Goods Puzzle: Sort Challenge."
+            ]
+          },
+          {
+            "slug": "goods-puzzle",
+            "attempt": "fallback",
+            "status": "failed",
+            "model": "video-kling-v4-i2v",
+            "input_image": "images/goods-puzzle-combined.png",
+            "prompt_file": "video/requests/goods-puzzle-kling-v4.json",
+            "error": "ContentBlocked",
+            "details": [
+              "The prompt references the trademarked game title Goods Puzzle: Sort Challenge."
+            ]
+          },
+          {
+            "slug": "goods-puzzle",
+            "attempt": "minimax-h3",
+            "status": "failed",
+            "model": "video-minimax-h3",
+            "input_image": "images/goods-puzzle-combined.png",
+            "prompt_file": "video/requests/goods-puzzle-minimax-h3.json",
+            "error": "ContentBlocked",
+            "details": [
+              "The prompt references the trademarked mobile game title Goods Puzzle: Sort Challenge."
+            ]
+          },
+          {
+            "slug": "goods-puzzle",
+            "attempt": "gemini-omni",
+            "status": "failed",
+            "model": "video-gemini-omni-1-2-flash",
+            "input_image": "images/goods-puzzle-combined.png",
+            "prompt_file": "video/requests/goods-puzzle-gemini-omni.json",
+            "error": "ContentBlocked",
+            "details": [
+              "The prompt references the specific game title Goods Puzzle: Sort Challenge."
+            ]
+          },
+          {
+            "slug": "goods-puzzle",
+            "attempt": "kling-v3",
+            "status": "failed",
+            "model": "video-kling-v3-i2v-pro",
+            "input_image": "images/goods-puzzle-combined.png",
+            "prompt_file": "video/requests/goods-puzzle-kling-v3.json",
+            "error": "ContentBlocked",
+            "details": [
+              "The request references the trademarked brand and game title Goods Puzzle: Sort Challenge."
+            ]
+          },
+          {
+            "slug": "goods-puzzle",
+            "attempt": "minimax-h3-fast",
+            "status": "failed",
+            "model": "video-minimax-h3-fast",
+            "input_image": "images/goods-puzzle-combined.png",
+            "prompt_file": "video/requests/goods-puzzle-minimax-h3-fast.json",
+            "error": "ContentBlocked",
+            "details": [
+              "The prompt references the specific game title Goods Puzzle: Sort Challenge."
+            ]
+          }
+        ],
+        "prompt_available": true
+      },
+      "video_failure": null,
+      "comparison_video": null
     },
     {
       "slug": "cat-merge",
@@ -458,7 +608,8 @@
         },
         "prompt_available": true
       },
-      "video_failure": null
+      "video_failure": null,
+      "comparison_video": null
     },
     {
       "slug": "woofdoku",
@@ -588,7 +739,8 @@
         },
         "prompt_available": true
       },
-      "video_failure": null
+      "video_failure": null,
+      "comparison_video": null
     },
     {
       "slug": "solitaire-associations",
@@ -752,7 +904,8 @@
         ],
         "prompt_available": true
       },
-      "video_failure": null
+      "video_failure": null,
+      "comparison_video": null
     },
     {
       "slug": "mahjong-rumble",
@@ -881,7 +1034,8 @@
         },
         "prompt_available": true
       },
-      "video_failure": null
+      "video_failure": null,
+      "comparison_video": null
     },
     {
       "slug": "rotate-rings",
@@ -1030,7 +1184,8 @@
         ],
         "prompt_available": true
       },
-      "video_failure": null
+      "video_failure": null,
+      "comparison_video": null
     },
     {
       "slug": "block-crush",
@@ -1158,7 +1313,8 @@
         },
         "prompt_available": true
       },
-      "video_failure": null
+      "video_failure": null,
+      "comparison_video": null
     },
     {
       "slug": "royal-smash",
@@ -1289,7 +1445,8 @@
         },
         "prompt_available": true
       },
-      "video_failure": null
+      "video_failure": null,
+      "comparison_video": null
     },
     {
       "slug": "vita-mahjong",
@@ -1368,15 +1525,148 @@
       },
       "reference_state": "Original opening/tutorial state",
       "reference_available": true,
-      "video": null,
-      "video_failure": {
-        "blocked": true,
-        "error": "ContentBlocked",
-        "models": "Seedance 2.5, Kling 4, MiniMax H3, Gemini Omni 1.2 Flash, Kling 3 Pro, MiniMax H3 Fast",
-        "reason": "The prompt and image reference the mobile game Vita Mahjong, a specific trademarked brand.",
-        "result_file": "video/results/vita-mahjong.json",
-        "charged_points": null
-      }
+      "video": {
+        "slug": "vita-mahjong",
+        "attempt": "local-motion",
+        "status": "generated",
+        "model": "local-motion-mockup",
+        "method": "local_animation",
+        "file": "video/clips/vita-mahjong-local-motion-v1.mp4",
+        "width": 1080,
+        "height": 1920,
+        "duration": 12.0,
+        "audio": true,
+        "input_image": "images/vita-mahjong-combined.png",
+        "prompt_file": "video/requests/vita-mahjong-local-motion.json",
+        "review": {
+          "status": "reviewed_local_motion_mockup",
+          "reviewed_at": "2026-11-24T15:34:15.989380+00:00",
+          "summary": "Locally animated motion study follows the verified single left slide, vertical green triple, one lock release, first gravity, female-character horizontal cascade, and second gravity. The resulting board retains the planned survivor identities without replenishment or a win.",
+          "method": "Deterministic cropped-image animation, not a recorded playthrough or an AI-generated video. The clip is explicitly labeled LOCAL MOTION MOCKUP.",
+          "frames_reviewed_seconds": [
+            0,
+            3,
+            5.1,
+            7.3,
+            10.8
+          ],
+          "frame_files": [
+            "video/checks/vita-mahjong-local-motion/frame-0s.jpg",
+            "video/checks/vita-mahjong-local-motion/frame-3s.jpg",
+            "video/checks/vita-mahjong-local-motion/frame-5.1s.jpg",
+            "video/checks/vita-mahjong-local-motion/frame-7.3s.jpg",
+            "video/checks/vita-mahjong-local-motion/frame-10.8s.jpg"
+          ],
+          "first_frame": "The full Polished Image board, four locks, tutorial glove and Play Free CTA remain visible. Only the small provenance label is added in the empty top margin; the image is uniformly fitted into 1080×1920.",
+          "input_causality": "The glove fades out before input. A touch ring follows the green 發 tile left along row 5 into the single adjacent empty cell, with no vertical drag.",
+          "first_clear": "At 5.1s the three green tiles at r4–r6 c5 and only the lock across r4c4–r4c5 are gone. The other three locks remain.",
+          "cascade_and_survivors": "At 7.3s the source r3c5 female tile has joined the two female tiles at r6c6/r6c7. At 10.8s all three have cleared. The final affected area contains two red 中 in c5 at r5/r6; c6 two-dot, wreath, female, wreath at r3–r6; c7 two-dot, two-dot, wreath, green 發, female at r2–r6. No new tiles or extra clears appear.",
+          "vfx_and_camera": "Small aligned outlines, short rings and sparse particles keep the cleared cells readable. Fixed camera preserves the full board and CTA. Effect timing is stored in the request record.",
+          "ui": "Preserves the actual Polished Image green board and Play Free CTA. No new counters, scores, rewards or victory UI are added.",
+          "audio": "FFprobe confirms AAC stereo, 48 kHz, 12 seconds. Narration was generated from the plan using installed generic macOS Samantha; original procedural SFX/music were mixed locally. PCM was non-silent with peak 0.560 and RMS 0.070. Audio was not listened to during this review.",
+          "fidelity_limitations": [
+            "Locally animated mockup, not an engine recording or a model-generated video.",
+            "Covered background is approximated from the same screenshot; occluded tile art uses identical-symbol donors.",
+            "Retains the Polished Image green board and Play Free CTA, which differ from the original playable screenshot.",
+            "Timing and effects are a design study; no implementation or playable interaction is included.",
+            "The screenshot glove and removable lock hide parts of several tiles. Matching same-image symbol donors reconstruct them; exact per-tile painted texture and bevel edges therefore differ slightly.",
+            "The newly exposed green board is reconstructed from sampled source colors and texture, so its lighting/texture is smoother and small seams can remain around the edited region.",
+            "Sampled frames and deterministic state maps were checked; this does not validate a game-engine implementation."
+          ],
+          "validation": {
+            "duration_seconds": 12,
+            "width": 1080,
+            "height": 1920,
+            "video_codec": "h264",
+            "audio_codec": "aac",
+            "audio_channels": 2,
+            "audio_sample_rate": 48000,
+            "first_clear_tiles": 3,
+            "second_clear_tiles": 3,
+            "remaining_animated_tiles": 11,
+            "locks_released": 1,
+            "remaining_locks": 3,
+            "source_sha256_verified": true,
+            "video_sha256_verified": true,
+            "prior_attempts_preserved": 6
+          }
+        },
+        "prior_attempts": [
+          {
+            "slug": "vita-mahjong",
+            "status": "failed",
+            "model": "video-seedance-2-5",
+            "input_image": "images/vita-mahjong-combined.png",
+            "error": "ContentBlocked",
+            "details": [
+              "The request references the specific branded mobile game title Vita Mahjong."
+            ]
+          },
+          {
+            "slug": "vita-mahjong",
+            "attempt": "fallback",
+            "status": "failed",
+            "model": "video-kling-v4-i2v",
+            "input_image": "images/vita-mahjong-combined.png",
+            "prompt_file": "video/requests/vita-mahjong-kling-v4.json",
+            "error": "ContentBlocked",
+            "details": [
+              "The prompt references the specific brand name Vita Mahjong."
+            ]
+          },
+          {
+            "slug": "vita-mahjong",
+            "attempt": "minimax-h3",
+            "status": "failed",
+            "model": "video-minimax-h3",
+            "input_image": "images/vita-mahjong-combined.png",
+            "prompt_file": "video/requests/vita-mahjong-minimax-h3.json",
+            "error": "ContentBlocked",
+            "details": [
+              "The prompt and image reference the specific game title Vita Mahjong."
+            ]
+          },
+          {
+            "slug": "vita-mahjong",
+            "attempt": "gemini-omni",
+            "status": "failed",
+            "model": "video-gemini-omni-1-2-flash",
+            "input_image": "images/vita-mahjong-combined.png",
+            "prompt_file": "video/requests/vita-mahjong-gemini-omni.json",
+            "error": "ContentBlocked",
+            "details": [
+              "The prompt and image reference the branded game 'Vita Mahjong'."
+            ]
+          },
+          {
+            "slug": "vita-mahjong",
+            "attempt": "kling-v3",
+            "status": "failed",
+            "model": "video-kling-v3-i2v-pro",
+            "input_image": "images/vita-mahjong-combined.png",
+            "prompt_file": "video/requests/vita-mahjong-kling-v3.json",
+            "error": "ContentBlocked",
+            "details": [
+              "The prompt references the specific brand and game title Vita Mahjong."
+            ]
+          },
+          {
+            "slug": "vita-mahjong",
+            "attempt": "minimax-h3-fast",
+            "status": "failed",
+            "model": "video-minimax-h3-fast",
+            "input_image": "images/vita-mahjong-combined.png",
+            "prompt_file": "video/requests/vita-mahjong-minimax-h3-fast.json",
+            "error": "ContentBlocked",
+            "details": [
+              "The prompt and image reference the mobile game Vita Mahjong, a specific trademarked brand."
+            ]
+          }
+        ],
+        "prompt_available": true
+      },
+      "video_failure": null,
+      "comparison_video": null
     },
     {
       "slug": "meowdoku",
@@ -1455,20 +1745,132 @@
       },
       "reference_state": "Original opening/tutorial state",
       "reference_available": true,
-      "video": null,
-      "video_failure": {
-        "blocked": true,
-        "error": "ContentBlocked",
-        "models": "Seedance 2.5, Kling 4, MiniMax H3, Gemini Omni 1.2 Flash, Kling 3 Pro, MiniMax H3 Fast",
-        "reason": "The prompt references the specific game brand 'Meowdoku!', which is protected intellectual property.",
-        "result_file": "video/results/meowdoku.json",
-        "charged_points": null
-      }
+      "video": {
+        "slug": "meowdoku",
+        "attempt": "local-motion-v1",
+        "status": "generated",
+        "model": "local-motion-mockup",
+        "method": "local_animation",
+        "file": "video/clips/meowdoku-local-motion-v1.mp4",
+        "width": 1080,
+        "height": 1920,
+        "duration": 12.0,
+        "audio": true,
+        "input_image": "images/meowdoku-combined.png",
+        "prompt_file": "video/requests/meowdoku-local-motion.json",
+        "review": {
+          "status": "reviewed",
+          "verdict": "Local motion mockup complete: one guided cat placement, stable board/UI, 1/8 counter and three fish. This is a deterministic animation over the polished still, not generated video, captured gameplay or a Unity implementation.",
+          "method": "Inspected four frames extracted from the final MP4 at 0, 4.1, 6 and 11.5 seconds against the combined image and plan; also reviewed pre-encode reveal previews and the programmed gesture timing.",
+          "frame_directory": "video/checks/meowdoku-local-motion",
+          "sample_times_seconds": [
+            0,
+            4.1,
+            6,
+            11.5
+          ],
+          "gameplay_fidelity": "The only added gameplay cat is centered in singleton purple r1c6. The counter changes once from 0/8 to 1/8; all three fish remain. No additional cats, crosses, recolored regions, rewards, victory screen or later tutorial state are introduced. The existing hand uses two programmed taps at 4.05s and 4.35s, then rests below/right.",
+          "layout_and_effects": "The complete 8×8 grid, original text/rule cards, lives, Download button and framing remain stable. The local cat pop, small input ripples and brief paw sparkles stay near r1c6. Existing baked glow remains visible after transient effects settle. Some green tile texture under the hand and the purple fill were locally reconstructed, so that originally occluded area is an approximation.",
+          "audio": {
+            "stream_present": true,
+            "codec": "aac",
+            "sample_rate_hz": 48000,
+            "channels": 2,
+            "non_silent": true,
+            "peak_amplitude": 0.24329,
+            "rms_amplitude": 0.0132,
+            "content_listened": false,
+            "narration_present": false,
+            "note": "Original synthesized taps, pop, mew-like tone, chime and quiet plucked music. Installed macOS speech voices produced empty audio, so narration was omitted with parent approval. AAC decoded and non-silence checked; not listened to."
+          },
+          "technical_note": "1080×1920 portrait, 30fps, 12.000 seconds, H.264 video and stereo AAC. No paid model call; zero points charged.",
+          "limitations": [
+            "This illustrates one legal state transition; it does not run the original game or validate live Unity behavior.",
+            "The hidden background, glove mask, static cat sprite and new counter digit are local composites; no new AI-generated artwork was used.",
+            "Audio content and subjective sound balance were not listened to."
+          ]
+        },
+        "prior_attempts": [
+          {
+            "slug": "meowdoku",
+            "status": "failed",
+            "model": "video-seedance-2-5",
+            "input_image": "images/meowdoku-combined.png",
+            "error": "ContentBlocked",
+            "details": [
+              "The prompt and image reference the mobile game title Meowdoku."
+            ]
+          },
+          {
+            "slug": "meowdoku",
+            "attempt": "fallback",
+            "status": "failed",
+            "model": "video-kling-v4-i2v",
+            "input_image": "images/meowdoku-combined.png",
+            "prompt_file": "video/requests/meowdoku-kling-v4.json",
+            "error": "ContentBlocked",
+            "details": [
+              "The prompt references the specific trademarked game title Meowdoku."
+            ]
+          },
+          {
+            "slug": "meowdoku",
+            "attempt": "minimax-h3",
+            "status": "failed",
+            "model": "video-minimax-h3",
+            "input_image": "images/meowdoku-combined.png",
+            "prompt_file": "video/requests/meowdoku-minimax-h3.json",
+            "error": "ContentBlocked",
+            "details": [
+              "The user prompt and image reference the specific game brand 'Meowdoku'."
+            ]
+          },
+          {
+            "slug": "meowdoku",
+            "attempt": "gemini-omni",
+            "status": "failed",
+            "model": "video-gemini-omni-1-2-flash",
+            "input_image": "images/meowdoku-combined.png",
+            "prompt_file": "video/requests/meowdoku-gemini-omni.json",
+            "error": "ContentBlocked",
+            "details": [
+              "The prompt references the specific game brand 'Meowdoku!', which is protected intellectual property."
+            ]
+          },
+          {
+            "slug": "meowdoku",
+            "attempt": "kling-v3",
+            "status": "failed",
+            "model": "video-kling-v3-i2v-pro",
+            "input_image": "images/meowdoku-combined.png",
+            "prompt_file": "video/requests/meowdoku-kling-v3.json",
+            "error": "ContentBlocked",
+            "details": [
+              "The prompt references the specific trademarked game title Meowdoku."
+            ]
+          },
+          {
+            "slug": "meowdoku",
+            "attempt": "minimax-h3-fast",
+            "status": "failed",
+            "model": "video-minimax-h3-fast",
+            "input_image": "images/meowdoku-combined.png",
+            "prompt_file": "video/requests/meowdoku-minimax-h3-fast.json",
+            "error": "ContentBlocked",
+            "details": [
+              "The prompt references the specific game brand 'Meowdoku!', which is protected intellectual property."
+            ]
+          }
+        ],
+        "prompt_available": true
+      },
+      "video_failure": null,
+      "comparison_video": null
     }
   ],
   "ready": 48,
   "total": 48,
-  "video_ready": 9,
-  "video_blocked": 3,
+  "video_ready": 12,
+  "video_blocked": 0,
   "video_failed": 0
 }

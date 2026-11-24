@@ -1,14 +1,48 @@
 {
   "slug": "meowdoku",
-  "attempt": "minimax-h3-fast",
-  "status": "failed",
-  "model": "video-minimax-h3-fast",
+  "attempt": "local-motion-v1",
+  "status": "generated",
+  "model": "local-motion-mockup",
+  "method": "local_animation",
+  "file": "video/clips/meowdoku-local-motion-v1.mp4",
+  "width": 1080,
+  "height": 1920,
+  "duration": 12.0,
+  "audio": true,
   "input_image": "images/meowdoku-combined.png",
-  "prompt_file": "video/requests/meowdoku-minimax-h3-fast.json",
-  "error": "ContentBlocked",
-  "details": [
-    "The prompt references the specific game brand 'Meowdoku!', which is protected intellectual property."
-  ],
+  "prompt_file": "video/requests/meowdoku-local-motion.json",
+  "review": {
+    "status": "reviewed",
+    "verdict": "Local motion mockup complete: one guided cat placement, stable board/UI, 1/8 counter and three fish. This is a deterministic animation over the polished still, not generated video, captured gameplay or a Unity implementation.",
+    "method": "Inspected four frames extracted from the final MP4 at 0, 4.1, 6 and 11.5 seconds against the combined image and plan; also reviewed pre-encode reveal previews and the programmed gesture timing.",
+    "frame_directory": "video/checks/meowdoku-local-motion",
+    "sample_times_seconds": [
+      0,
+      4.1,
+      6,
+      11.5
+    ],
+    "gameplay_fidelity": "The only added gameplay cat is centered in singleton purple r1c6. The counter changes once from 0/8 to 1/8; all three fish remain. No additional cats, crosses, recolored regions, rewards, victory screen or later tutorial state are introduced. The existing hand uses two programmed taps at 4.05s and 4.35s, then rests below/right.",
+    "layout_and_effects": "The complete 8×8 grid, original text/rule cards, lives, Download button and framing remain stable. The local cat pop, small input ripples and brief paw sparkles stay near r1c6. Existing baked glow remains visible after transient effects settle. Some green tile texture under the hand and the purple fill were locally reconstructed, so that originally occluded area is an approximation.",
+    "audio": {
+      "stream_present": true,
+      "codec": "aac",
+      "sample_rate_hz": 48000,
+      "channels": 2,
+      "non_silent": true,
+      "peak_amplitude": 0.24329,
+      "rms_amplitude": 0.0132,
+      "content_listened": false,
+      "narration_present": false,
+      "note": "Original synthesized taps, pop, mew-like tone, chime and quiet plucked music. Installed macOS speech voices produced empty audio, so narration was omitted with parent approval. AAC decoded and non-silence checked; not listened to."
+    },
+    "technical_note": "1080×1920 portrait, 30fps, 12.000 seconds, H.264 video and stereo AAC. No paid model call; zero points charged.",
+    "limitations": [
+      "This illustrates one legal state transition; it does not run the original game or validate live Unity behavior.",
+      "The hidden background, glove mask, static cat sprite and new counter digit are local composites; no new AI-generated artwork was used.",
+      "Audio content and subjective sound balance were not listened to."
+    ]
+  },
   "prior_attempts": [
     {
       "slug": "meowdoku",
@@ -66,6 +100,18 @@
       "error": "ContentBlocked",
       "details": [
         "The prompt references the specific trademarked game title Meowdoku."
+      ]
+    },
+    {
+      "slug": "meowdoku",
+      "attempt": "minimax-h3-fast",
+      "status": "failed",
+      "model": "video-minimax-h3-fast",
+      "input_image": "images/meowdoku-combined.png",
+      "prompt_file": "video/requests/meowdoku-minimax-h3-fast.json",
+      "error": "ContentBlocked",
+      "details": [
+        "The prompt references the specific game brand 'Meowdoku!', which is protected intellectual property."
       ]
     }
   ]

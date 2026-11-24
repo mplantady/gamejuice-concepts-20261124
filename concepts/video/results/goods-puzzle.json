@@ -1,14 +1,40 @@
 {
   "slug": "goods-puzzle",
-  "attempt": "minimax-h3-fast",
-  "status": "failed",
-  "model": "video-minimax-h3-fast",
+  "status": "generated",
+  "model": "local-motion-mockup",
+  "method": "local_animation",
+  "file": "video/clips/goods-puzzle-local-motion-v1.mp4",
+  "width": 1080,
+  "height": 1920,
+  "duration": 12.0,
+  "audio": true,
   "input_image": "images/goods-puzzle-combined.png",
-  "prompt_file": "video/requests/goods-puzzle-minimax-h3-fast.json",
-  "error": "ContentBlocked",
-  "details": [
-    "The prompt references the specific game title Goods Puzzle: Sort Challenge."
-  ],
+  "prompt_file": "video/requests/goods-puzzle-local-motion.json",
+  "review": {
+    "reviewed": true,
+    "status": "Local motion mockup — four encoded frames reviewed",
+    "method": "Deterministic screenshot compositing and FFmpeg; no model-generated video.",
+    "layout": "Seven-row shelf and headline retained. One row-four fruit match is animated.",
+    "fidelity_limits": [
+      "Uses the saved polished screenshot and existing source-game SOLD OUT artwork; no AI model generation.",
+      "The baked tutorial hand/ghost is isolated and animated. Covered central shelf areas are reconstructed from matching visible polished products; this is a compositing approximation, not a new game render.",
+      "One fruit carton moves from row-four center middle to row-four left middle. Exactly three cartons clear; other goods remain fixed.",
+      "Camera remains fixed; small localized particles and deterministic motion illustrate the planned interaction.",
+      "Existing Samantha system voice reads the exact two plan sentences; original synthesized tones, swishes and music support the timing.",
+      "Rebuilt central shelf areas have minor crop-edge/shadow seams, and the extracted tutorial hand has a visible wrist cutoff. This illustrates one legal interaction; it is not a pixel-identical gameplay recording."
+    ],
+    "audio": "Exact plan narration with installed Samantha voice plus synthesized SFX/music.",
+    "recognizable_game": true,
+    "visual_change": "One FRUIT carton is dragged into the two-carton shelf; the exact three-carton group clears and the existing source-game SOLD OUT graphic appears.",
+    "text": "The headline, FRUIT labels and other readable product labels remain recognizable. A small LOCAL MOTION MOCKUP footer identifies this composited animation.",
+    "frames_reviewed_seconds": [
+      3.8,
+      6.8,
+      8.6,
+      11.5
+    ],
+    "audio_validation": "Verified H.264 1080×1920 video, 12.000 seconds, AAC stereo at 48 kHz. Exact-plan narration synthesized with the installed Samantha voice; no model audio generation."
+  },
   "prior_attempts": [
     {
       "slug": "goods-puzzle",
@@ -66,6 +92,18 @@
       "error": "ContentBlocked",
       "details": [
         "The request references the trademarked brand and game title Goods Puzzle: Sort Challenge."
+      ]
+    },
+    {
+      "slug": "goods-puzzle",
+      "attempt": "minimax-h3-fast",
+      "status": "failed",
+      "model": "video-minimax-h3-fast",
+      "input_image": "images/goods-puzzle-combined.png",
+      "prompt_file": "video/requests/goods-puzzle-minimax-h3-fast.json",
+      "error": "ContentBlocked",
+      "details": [
+        "The prompt references the specific game title Goods Puzzle: Sort Challenge."
       ]
     }
   ]

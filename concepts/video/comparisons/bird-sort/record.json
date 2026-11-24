@@ -1,0 +1,17 @@
+{
+  "title": "Bird Sort — Original playable + Concept Video",
+  "file": "video/clips/bird-sort-side-by-side-v1.mp4",
+  "method": "recorded_original_and_ai_concept_side_by_side",
+  "duration": 12.266667,
+  "width": 1600,
+  "height": 1512,
+  "audio": true,
+  "original_capture_details": "Captured at 30 fps from the unchanged archived original playable canvas at 780 × 1388 using MediaRecorder while clicking the three transfers in the browser. Beginning trimmed by 10.5s; final frame held briefly. No original-game artwork, rules, or animation was regenerated.",
+  "actions": [
+    "R3 to L4: one blue-and-yellow macaw",
+    "R3 to L1: one orange-crested bird",
+    "R3 to R4: two red-and-yellow birds"
+  ],
+  "audio_source": "Existing MiniMax H3 Concept Video only; the original capture is silent.",
+  "review": "The original capture shows the three legal transfers with L4 at five mixed birds, L1 at four, R3 at one macaw and R4 at two red-and-yellow birds. Both clips retain the whole board. Transfer timing is aligned approximately; each retains its own animation."
+}

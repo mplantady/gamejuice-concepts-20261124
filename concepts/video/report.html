@@ -1,4 +1,48 @@
-<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>GameJuice · Concept Video review</title><style>body{margin:0;background:#0b1018;color:#edf3f5;font:15px/1.65 system-ui,sans-serif}main{max-width:1050px;margin:auto;padding:36px 24px}a{color:#75e0c4}h1{font-size:32px;line-height:1.2}h2{font-size:19px;margin:0 0 12px}article{border:1px solid #273342;background:#121b26;border-radius:12px;padding:23px;margin:20px 0}p,pre{color:#acb9c5}pre{white-space:pre-wrap;font:13px/1.65 system-ui;overflow-wrap:anywhere}strong{color:#b6a2f2}</style><main><a href="../index.html">← Concept gallery</a><h1>Concept Video review</h1><p>9 available · 3 provider blocked · 0 other failures. Videos are visual concepts; review their motion and gameplay fidelity before implementation.</p><article><h2><a href="../index.html#bird-sort">Bird Sort 2 Color Puzzle Game</a></h2><strong>Concept Video available</strong><p>MiniMax H3 · 12.2 seconds · 1440 × 2560</p><p><a href="clips/bird-sort-minimax-h3-v1.mp4">Open video ↗</a></p><pre>Generated concept; visual and audio review pending.</pre><a href="results/bird-sort.json">Review record ↗</a></article><article><h2><a href="../index.html#draft-showdown">Draft Showdown</a></h2><strong>Concept Video available</strong><p>Seedance 2.5 · 12.1 seconds · 1078 × 1920</p><p><a href="clips/draft-showdown-seedance-v1.mp4">Open video ↗</a></p><pre>{
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>GameJuice · Concept Video review</title><style>body{margin:0;background:#0b1018;color:#edf3f5;font:15px/1.65 system-ui,sans-serif}main{max-width:1050px;margin:auto;padding:36px 24px}a{color:#75e0c4}h1{font-size:32px;line-height:1.2}h2{font-size:19px;margin:0 0 12px}article{border:1px solid #273342;background:#121b26;border-radius:12px;padding:23px;margin:20px 0}p,pre{color:#acb9c5}pre{white-space:pre-wrap;font:13px/1.65 system-ui;overflow-wrap:anywhere}strong{color:#b6a2f2}</style><main><a href="../index.html">← Concept gallery</a><h1>Concept Video review</h1><p>12 available · 0 provider blocked · 0 other failures. Videos are visual concepts; review their motion and gameplay fidelity before implementation.</p><article><h2><a href="../index.html#bird-sort">Bird Sort 2 Color Puzzle Game</a></h2><strong>Concept Video available</strong><p>MiniMax H3 · 12.2 seconds · 1440 × 2560</p><p><a href="clips/bird-sort-minimax-h3-v1.mp4">Open video ↗</a></p><pre>{
+  &quot;status&quot;: &quot;reviewed&quot;,
+  &quot;verdict&quot;: &quot;The sampled frames preserve all three planned transfers and final bird counts. Usable visual concept with oversized selection effects and minor artwork drift; audio content remains unreviewed.&quot;,
+  &quot;method&quot;: &quot;Inspected 13 extracted frames against the combined reference image and the archived-rule evidence in plans/bird-sort.json. This was representative frame inspection, not continuous playback or listening.&quot;,
+  &quot;sample_times_seconds&quot;: [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11.5,
+    12
+  ],
+  &quot;frame_directory&quot;: &quot;video/checks/bird-sort-minimax-h3&quot;,
+  &quot;first_frame_layout&quot;: &quot;The opening frame retains all seven left/right branch rows, their initial bird groups, tutorial hand, moon/background composition and lower-right download icon from the combined image.&quot;,
+  &quot;gameplay_fidelity&quot;: [
+    &quot;R3 to L4: one blue-and-yellow macaw is in flight at 2s and settled by 3s. L4 has five mixed birds, including its two macaws, and does not clear.&quot;,
+    &quot;R3 to L1: one orange-crested bird is in flight at 5s and settled by 6s. L1 has four birds with two adjacent orange-crested birds; R3 retains its two red-and-yellow birds and far macaw.&quot;,
+    &quot;R3 to R4: exactly two red-and-yellow birds are in flight together at 8s and seated on R4 by 9s. The far macaw remains alone on R3. This final state holds through 12s.&quot;,
+    &quot;No branch clearing, duplicated or missing birds, reward, score or success overlay is apparent in the inspected states. Unrelated groups retain their counts and identities. Final precise perch-slot coordinates have not been independently compared with an original-game replay.&quot;
+  ],
+  &quot;effects_and_readability&quot;: &quot;Wingbeat poses and source/destination hand cues make the transfers readable. The large double gold tap rings at 1s, 2s, 4s and 7s spill over adjacent birds and partially wash out the selected group, especially the 4s orange bird and 7s red pair. Reduce their radius and brightness. Sampled frames do not establish every brief landing sparkle, sound sync or exact easing.&quot;,
+  &quot;ui_and_camera&quot;: &quot;The full portrait board and download icon stay in view, without cuts or material camera drift in sampled frames. Some birds subtly change pose, size or feather details during idle/landing animation; the newly moved orange bird briefly appears smaller at 6s before settling. No new persistent UI appears.&quot;,
+  &quot;audio&quot;: {
+    &quot;stream_present&quot;: true,
+    &quot;codec&quot;: &quot;aac&quot;,
+    &quot;sample_rate_hz&quot;: 32000,
+    &quot;channels&quot;: 2,
+    &quot;content_reviewed&quot;: false,
+    &quot;note&quot;: &quot;AAC stream presence verified only. Voiceover wording, music, effects, quality and synchronization were not listened to or validated.&quot;
+  },
+  &quot;technical_note&quot;: &quot;Actual clip is 1440×2560 portrait, 12.250s; this differs from the 1080p / 12s target.&quot;,
+  &quot;recommended_adjustments&quot;: [
+    &quot;Keep selection glow tight to the legal moving group so neighboring birds remain distinct.&quot;,
+    &quot;Keep bird proportions stable through takeoff and landing.&quot;,
+    &quot;Listen to the rendered audio before approving narration and effect timing.&quot;
+  ],
+  &quot;limitations&quot;: &quot;Representative frames support the visible transfer sequence and final counts but do not prove frame-by-frame continuity, exact interaction behavior or audio content. No paid call or retry was performed.&quot;
+}</pre><a href="results/bird-sort.json">Review record ↗</a></article><article><h2><a href="../index.html#draft-showdown">Draft Showdown</a></h2><strong>Concept Video available</strong><p>Seedance 2.5 · 12.1 seconds · 1078 × 1920</p><p><a href="clips/draft-showdown-seedance-v1.mp4">Open video ↗</a></p><pre>{
   &quot;status&quot;: &quot;reviewed_with_framing_issue&quot;,
   &quot;summary&quot;: &quot;The +5 Geese selection resolves into exactly five recognizable geese with a readable deployment payoff and no invented battle result. The main deviation is an excessive mid-clip zoom that crops the HUD before returning to the full view.&quot;,
   &quot;method&quot;: &quot;Visually inspected extracted frames at 0, 2, 4, 5, 6, 7, 8, 10 and 11.9 seconds against the combined image and verified first-choice plan. Sampled-frame review, not continuous audiovisual playback.&quot;,
@@ -31,7 +75,31 @@
     10,
     11.9
   ]
-}</pre><a href="results/draft-showdown.json">Review record ↗</a></article><article><h2><a href="../index.html#goods-puzzle">Goods Puzzle: Sort Challenge™</a></h2><strong>Provider blocked</strong><p>Seedance 2.5, Kling 4, MiniMax H3, Gemini Omni 1.2 Flash, Kling 3 Pro, MiniMax H3 Fast</p><p>The prompt references the specific game title Goods Puzzle: Sort Challenge.</p><a href="results/goods-puzzle.json">Review record ↗</a></article><article><h2><a href="../index.html#cat-merge">Cat Merge:Pet Game</a></h2><strong>Concept Video available</strong><p>Seedance 2.5 · 12.0 seconds · 1078 × 1920</p><p><a href="clips/cat-merge-seedance-v1.mp4">Open video ↗</a></p><pre>{
+}</pre><a href="results/draft-showdown.json">Review record ↗</a></article><article><h2><a href="../index.html#goods-puzzle">Goods Puzzle: Sort Challenge™</a></h2><strong>Concept Video available</strong><p>Local Motion Mockup · 12.0 seconds · 1080 × 1920</p><p><a href="clips/goods-puzzle-local-motion-v1.mp4">Open video ↗</a></p><pre>{
+  &quot;reviewed&quot;: true,
+  &quot;status&quot;: &quot;Local motion mockup — four encoded frames reviewed&quot;,
+  &quot;method&quot;: &quot;Deterministic screenshot compositing and FFmpeg; no model-generated video.&quot;,
+  &quot;layout&quot;: &quot;Seven-row shelf and headline retained. One row-four fruit match is animated.&quot;,
+  &quot;fidelity_limits&quot;: [
+    &quot;Uses the saved polished screenshot and existing source-game SOLD OUT artwork; no AI model generation.&quot;,
+    &quot;The baked tutorial hand/ghost is isolated and animated. Covered central shelf areas are reconstructed from matching visible polished products; this is a compositing approximation, not a new game render.&quot;,
+    &quot;One fruit carton moves from row-four center middle to row-four left middle. Exactly three cartons clear; other goods remain fixed.&quot;,
+    &quot;Camera remains fixed; small localized particles and deterministic motion illustrate the planned interaction.&quot;,
+    &quot;Existing Samantha system voice reads the exact two plan sentences; original synthesized tones, swishes and music support the timing.&quot;,
+    &quot;Rebuilt central shelf areas have minor crop-edge/shadow seams, and the extracted tutorial hand has a visible wrist cutoff. This illustrates one legal interaction; it is not a pixel-identical gameplay recording.&quot;
+  ],
+  &quot;audio&quot;: &quot;Exact plan narration with installed Samantha voice plus synthesized SFX/music.&quot;,
+  &quot;recognizable_game&quot;: true,
+  &quot;visual_change&quot;: &quot;One FRUIT carton is dragged into the two-carton shelf; the exact three-carton group clears and the existing source-game SOLD OUT graphic appears.&quot;,
+  &quot;text&quot;: &quot;The headline, FRUIT labels and other readable product labels remain recognizable. A small LOCAL MOTION MOCKUP footer identifies this composited animation.&quot;,
+  &quot;frames_reviewed_seconds&quot;: [
+    3.8,
+    6.8,
+    8.6,
+    11.5
+  ],
+  &quot;audio_validation&quot;: &quot;Verified H.264 1080×1920 video, 12.000 seconds, AAC stereo at 48 kHz. Exact-plan narration synthesized with the installed Samantha voice; no model audio generation.&quot;
+}</pre><a href="results/goods-puzzle.json">Review record ↗</a></article><article><h2><a href="../index.html#cat-merge">Cat Merge:Pet Game</a></h2><strong>Concept Video available</strong><p>Seedance 2.5 · 12.0 seconds · 1078 × 1920</p><p><a href="clips/cat-merge-seedance-v1.mp4">Open video ↗</a></p><pre>{
   &quot;status&quot;: &quot;reviewed_with_material_fidelity_issue&quot;,
   &quot;summary&quot;: &quot;Clear aim-and-drop setup and stable UI, but the merge invents a large full-body white cat instead of the existing head-only next tier. Useful motion/VFX concept; not an exact gameplay reference.&quot;,
   &quot;method&quot;: &quot;Visually inspected extracted frames at 0, 2, 4, 6, 8, 9, 10, 11 and 11.9 seconds against the combined image and verified plan. This is sampled-frame review, not continuous audiovisual playback.&quot;,
@@ -280,4 +348,87 @@
     &quot;Use rigid piece motion without beam bending or tower reassembly; remove the added aiming line and decrement Balls at launch.&quot;
   ],
   &quot;limitations&quot;: &quot;Representative visual sampling reveals clear state/geometry mismatches but does not validate every intermediate frame or audio. No retry or paid call was made.&quot;
-}</pre><a href="results/royal-smash.json">Review record ↗</a></article><article><h2><a href="../index.html#vita-mahjong">Vita Mahjong</a></h2><strong>Provider blocked</strong><p>Seedance 2.5, Kling 4, MiniMax H3, Gemini Omni 1.2 Flash, Kling 3 Pro, MiniMax H3 Fast</p><p>The prompt and image reference the mobile game Vita Mahjong, a specific trademarked brand.</p><a href="results/vita-mahjong.json">Review record ↗</a></article><article><h2><a href="../index.html#meowdoku">Meowdoku!</a></h2><strong>Provider blocked</strong><p>Seedance 2.5, Kling 4, MiniMax H3, Gemini Omni 1.2 Flash, Kling 3 Pro, MiniMax H3 Fast</p><p>The prompt references the specific game brand &#x27;Meowdoku!&#x27;, which is protected intellectual property.</p><a href="results/meowdoku.json">Review record ↗</a></article></main></html>
+}</pre><a href="results/royal-smash.json">Review record ↗</a></article><article><h2><a href="../index.html#vita-mahjong">Vita Mahjong</a></h2><strong>Concept Video available</strong><p>Local Motion Mockup · 12.0 seconds · 1080 × 1920</p><p><a href="clips/vita-mahjong-local-motion-v1.mp4">Open video ↗</a></p><pre>{
+  &quot;status&quot;: &quot;reviewed_local_motion_mockup&quot;,
+  &quot;reviewed_at&quot;: &quot;2026-11-24T15:34:15.989380+00:00&quot;,
+  &quot;summary&quot;: &quot;Locally animated motion study follows the verified single left slide, vertical green triple, one lock release, first gravity, female-character horizontal cascade, and second gravity. The resulting board retains the planned survivor identities without replenishment or a win.&quot;,
+  &quot;method&quot;: &quot;Deterministic cropped-image animation, not a recorded playthrough or an AI-generated video. The clip is explicitly labeled LOCAL MOTION MOCKUP.&quot;,
+  &quot;frames_reviewed_seconds&quot;: [
+    0,
+    3,
+    5.1,
+    7.3,
+    10.8
+  ],
+  &quot;frame_files&quot;: [
+    &quot;video/checks/vita-mahjong-local-motion/frame-0s.jpg&quot;,
+    &quot;video/checks/vita-mahjong-local-motion/frame-3s.jpg&quot;,
+    &quot;video/checks/vita-mahjong-local-motion/frame-5.1s.jpg&quot;,
+    &quot;video/checks/vita-mahjong-local-motion/frame-7.3s.jpg&quot;,
+    &quot;video/checks/vita-mahjong-local-motion/frame-10.8s.jpg&quot;
+  ],
+  &quot;first_frame&quot;: &quot;The full Polished Image board, four locks, tutorial glove and Play Free CTA remain visible. Only the small provenance label is added in the empty top margin; the image is uniformly fitted into 1080×1920.&quot;,
+  &quot;input_causality&quot;: &quot;The glove fades out before input. A touch ring follows the green 發 tile left along row 5 into the single adjacent empty cell, with no vertical drag.&quot;,
+  &quot;first_clear&quot;: &quot;At 5.1s the three green tiles at r4–r6 c5 and only the lock across r4c4–r4c5 are gone. The other three locks remain.&quot;,
+  &quot;cascade_and_survivors&quot;: &quot;At 7.3s the source r3c5 female tile has joined the two female tiles at r6c6/r6c7. At 10.8s all three have cleared. The final affected area contains two red 中 in c5 at r5/r6; c6 two-dot, wreath, female, wreath at r3–r6; c7 two-dot, two-dot, wreath, green 發, female at r2–r6. No new tiles or extra clears appear.&quot;,
+  &quot;vfx_and_camera&quot;: &quot;Small aligned outlines, short rings and sparse particles keep the cleared cells readable. Fixed camera preserves the full board and CTA. Effect timing is stored in the request record.&quot;,
+  &quot;ui&quot;: &quot;Preserves the actual Polished Image green board and Play Free CTA. No new counters, scores, rewards or victory UI are added.&quot;,
+  &quot;audio&quot;: &quot;FFprobe confirms AAC stereo, 48 kHz, 12 seconds. Narration was generated from the plan using installed generic macOS Samantha; original procedural SFX/music were mixed locally. PCM was non-silent with peak 0.560 and RMS 0.070. Audio was not listened to during this review.&quot;,
+  &quot;fidelity_limitations&quot;: [
+    &quot;Locally animated mockup, not an engine recording or a model-generated video.&quot;,
+    &quot;Covered background is approximated from the same screenshot; occluded tile art uses identical-symbol donors.&quot;,
+    &quot;Retains the Polished Image green board and Play Free CTA, which differ from the original playable screenshot.&quot;,
+    &quot;Timing and effects are a design study; no implementation or playable interaction is included.&quot;,
+    &quot;The screenshot glove and removable lock hide parts of several tiles. Matching same-image symbol donors reconstruct them; exact per-tile painted texture and bevel edges therefore differ slightly.&quot;,
+    &quot;The newly exposed green board is reconstructed from sampled source colors and texture, so its lighting/texture is smoother and small seams can remain around the edited region.&quot;,
+    &quot;Sampled frames and deterministic state maps were checked; this does not validate a game-engine implementation.&quot;
+  ],
+  &quot;validation&quot;: {
+    &quot;duration_seconds&quot;: 12,
+    &quot;width&quot;: 1080,
+    &quot;height&quot;: 1920,
+    &quot;video_codec&quot;: &quot;h264&quot;,
+    &quot;audio_codec&quot;: &quot;aac&quot;,
+    &quot;audio_channels&quot;: 2,
+    &quot;audio_sample_rate&quot;: 48000,
+    &quot;first_clear_tiles&quot;: 3,
+    &quot;second_clear_tiles&quot;: 3,
+    &quot;remaining_animated_tiles&quot;: 11,
+    &quot;locks_released&quot;: 1,
+    &quot;remaining_locks&quot;: 3,
+    &quot;source_sha256_verified&quot;: true,
+    &quot;video_sha256_verified&quot;: true,
+    &quot;prior_attempts_preserved&quot;: 6
+  }
+}</pre><a href="results/vita-mahjong.json">Review record ↗</a></article><article><h2><a href="../index.html#meowdoku">Meowdoku!</a></h2><strong>Concept Video available</strong><p>Local Motion Mockup · 12.0 seconds · 1080 × 1920</p><p><a href="clips/meowdoku-local-motion-v1.mp4">Open video ↗</a></p><pre>{
+  &quot;status&quot;: &quot;reviewed&quot;,
+  &quot;verdict&quot;: &quot;Local motion mockup complete: one guided cat placement, stable board/UI, 1/8 counter and three fish. This is a deterministic animation over the polished still, not generated video, captured gameplay or a Unity implementation.&quot;,
+  &quot;method&quot;: &quot;Inspected four frames extracted from the final MP4 at 0, 4.1, 6 and 11.5 seconds against the combined image and plan; also reviewed pre-encode reveal previews and the programmed gesture timing.&quot;,
+  &quot;frame_directory&quot;: &quot;video/checks/meowdoku-local-motion&quot;,
+  &quot;sample_times_seconds&quot;: [
+    0,
+    4.1,
+    6,
+    11.5
+  ],
+  &quot;gameplay_fidelity&quot;: &quot;The only added gameplay cat is centered in singleton purple r1c6. The counter changes once from 0/8 to 1/8; all three fish remain. No additional cats, crosses, recolored regions, rewards, victory screen or later tutorial state are introduced. The existing hand uses two programmed taps at 4.05s and 4.35s, then rests below/right.&quot;,
+  &quot;layout_and_effects&quot;: &quot;The complete 8×8 grid, original text/rule cards, lives, Download button and framing remain stable. The local cat pop, small input ripples and brief paw sparkles stay near r1c6. Existing baked glow remains visible after transient effects settle. Some green tile texture under the hand and the purple fill were locally reconstructed, so that originally occluded area is an approximation.&quot;,
+  &quot;audio&quot;: {
+    &quot;stream_present&quot;: true,
+    &quot;codec&quot;: &quot;aac&quot;,
+    &quot;sample_rate_hz&quot;: 48000,
+    &quot;channels&quot;: 2,
+    &quot;non_silent&quot;: true,
+    &quot;peak_amplitude&quot;: 0.24329,
+    &quot;rms_amplitude&quot;: 0.0132,
+    &quot;content_listened&quot;: false,
+    &quot;narration_present&quot;: false,
+    &quot;note&quot;: &quot;Original synthesized taps, pop, mew-like tone, chime and quiet plucked music. Installed macOS speech voices produced empty audio, so narration was omitted with parent approval. AAC decoded and non-silence checked; not listened to.&quot;
+  },
+  &quot;technical_note&quot;: &quot;1080×1920 portrait, 30fps, 12.000 seconds, H.264 video and stereo AAC. No paid model call; zero points charged.&quot;,
+  &quot;limitations&quot;: [
+    &quot;This illustrates one legal state transition; it does not run the original game or validate live Unity behavior.&quot;,
+    &quot;The hidden background, glove mask, static cat sprite and new counter digit are local composites; no new AI-generated artwork was used.&quot;,
+    &quot;Audio content and subjective sound balance were not listened to.&quot;
+  ]
+}</pre><a href="results/meowdoku.json">Review record ↗</a></article></main></html>

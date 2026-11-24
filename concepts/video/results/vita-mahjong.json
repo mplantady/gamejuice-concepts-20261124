@@ -1,14 +1,69 @@
 {
   "slug": "vita-mahjong",
-  "attempt": "minimax-h3-fast",
-  "status": "failed",
-  "model": "video-minimax-h3-fast",
+  "attempt": "local-motion",
+  "status": "generated",
+  "model": "local-motion-mockup",
+  "method": "local_animation",
+  "file": "video/clips/vita-mahjong-local-motion-v1.mp4",
+  "width": 1080,
+  "height": 1920,
+  "duration": 12.0,
+  "audio": true,
   "input_image": "images/vita-mahjong-combined.png",
-  "prompt_file": "video/requests/vita-mahjong-minimax-h3-fast.json",
-  "error": "ContentBlocked",
-  "details": [
-    "The prompt and image reference the mobile game Vita Mahjong, a specific trademarked brand."
-  ],
+  "prompt_file": "video/requests/vita-mahjong-local-motion.json",
+  "review": {
+    "status": "reviewed_local_motion_mockup",
+    "reviewed_at": "2026-11-24T15:34:15.989380+00:00",
+    "summary": "Locally animated motion study follows the verified single left slide, vertical green triple, one lock release, first gravity, female-character horizontal cascade, and second gravity. The resulting board retains the planned survivor identities without replenishment or a win.",
+    "method": "Deterministic cropped-image animation, not a recorded playthrough or an AI-generated video. The clip is explicitly labeled LOCAL MOTION MOCKUP.",
+    "frames_reviewed_seconds": [
+      0,
+      3,
+      5.1,
+      7.3,
+      10.8
+    ],
+    "frame_files": [
+      "video/checks/vita-mahjong-local-motion/frame-0s.jpg",
+      "video/checks/vita-mahjong-local-motion/frame-3s.jpg",
+      "video/checks/vita-mahjong-local-motion/frame-5.1s.jpg",
+      "video/checks/vita-mahjong-local-motion/frame-7.3s.jpg",
+      "video/checks/vita-mahjong-local-motion/frame-10.8s.jpg"
+    ],
+    "first_frame": "The full Polished Image board, four locks, tutorial glove and Play Free CTA remain visible. Only the small provenance label is added in the empty top margin; the image is uniformly fitted into 1080×1920.",
+    "input_causality": "The glove fades out before input. A touch ring follows the green 發 tile left along row 5 into the single adjacent empty cell, with no vertical drag.",
+    "first_clear": "At 5.1s the three green tiles at r4–r6 c5 and only the lock across r4c4–r4c5 are gone. The other three locks remain.",
+    "cascade_and_survivors": "At 7.3s the source r3c5 female tile has joined the two female tiles at r6c6/r6c7. At 10.8s all three have cleared. The final affected area contains two red 中 in c5 at r5/r6; c6 two-dot, wreath, female, wreath at r3–r6; c7 two-dot, two-dot, wreath, green 發, female at r2–r6. No new tiles or extra clears appear.",
+    "vfx_and_camera": "Small aligned outlines, short rings and sparse particles keep the cleared cells readable. Fixed camera preserves the full board and CTA. Effect timing is stored in the request record.",
+    "ui": "Preserves the actual Polished Image green board and Play Free CTA. No new counters, scores, rewards or victory UI are added.",
+    "audio": "FFprobe confirms AAC stereo, 48 kHz, 12 seconds. Narration was generated from the plan using installed generic macOS Samantha; original procedural SFX/music were mixed locally. PCM was non-silent with peak 0.560 and RMS 0.070. Audio was not listened to during this review.",
+    "fidelity_limitations": [
+      "Locally animated mockup, not an engine recording or a model-generated video.",
+      "Covered background is approximated from the same screenshot; occluded tile art uses identical-symbol donors.",
+      "Retains the Polished Image green board and Play Free CTA, which differ from the original playable screenshot.",
+      "Timing and effects are a design study; no implementation or playable interaction is included.",
+      "The screenshot glove and removable lock hide parts of several tiles. Matching same-image symbol donors reconstruct them; exact per-tile painted texture and bevel edges therefore differ slightly.",
+      "The newly exposed green board is reconstructed from sampled source colors and texture, so its lighting/texture is smoother and small seams can remain around the edited region.",
+      "Sampled frames and deterministic state maps were checked; this does not validate a game-engine implementation."
+    ],
+    "validation": {
+      "duration_seconds": 12,
+      "width": 1080,
+      "height": 1920,
+      "video_codec": "h264",
+      "audio_codec": "aac",
+      "audio_channels": 2,
+      "audio_sample_rate": 48000,
+      "first_clear_tiles": 3,
+      "second_clear_tiles": 3,
+      "remaining_animated_tiles": 11,
+      "locks_released": 1,
+      "remaining_locks": 3,
+      "source_sha256_verified": true,
+      "video_sha256_verified": true,
+      "prior_attempts_preserved": 6
+    }
+  },
   "prior_attempts": [
     {
       "slug": "vita-mahjong",
@@ -66,6 +121,18 @@
       "error": "ContentBlocked",
       "details": [
         "The prompt references the specific brand and game title Vita Mahjong."
+      ]
+    },
+    {
+      "slug": "vita-mahjong",
+      "attempt": "minimax-h3-fast",
+      "status": "failed",
+      "model": "video-minimax-h3-fast",
+      "input_image": "images/vita-mahjong-combined.png",
+      "prompt_file": "video/requests/vita-mahjong-minimax-h3-fast.json",
+      "error": "ContentBlocked",
+      "details": [
+        "The prompt and image reference the mobile game Vita Mahjong, a specific trademarked brand."
       ]
     }
   ]
