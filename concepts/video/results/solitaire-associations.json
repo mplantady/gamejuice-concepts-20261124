@@ -50,35 +50,33 @@
       "slug": "solitaire-associations",
       "status": "failed",
       "model": "video-seedance-2-5",
-      "input_image": "images/solitaire-associations-combined.png",
       "error": "ContentBlocked",
       "details": [
         "The request explicitly references the specific game title Solitaire Associations Journey."
-      ]
+      ],
+      "archive_location": "Local archive only"
     },
     {
       "slug": "solitaire-associations",
       "attempt": "fallback",
       "status": "failed",
       "model": "video-kling-v4-i2v",
-      "input_image": "images/solitaire-associations-combined.png",
-      "prompt_file": "video/requests/solitaire-associations-kling-v4.json",
       "error": "ContentBlocked",
       "details": [
         "The user prompt references the trademarked game title Solitaire Associations Journey."
-      ]
+      ],
+      "archive_location": "Local archive only"
     },
     {
       "slug": "solitaire-associations",
       "attempt": "minimax-h3",
       "status": "failed",
       "model": "video-minimax-h3",
-      "input_image": "images/solitaire-associations-combined.png",
-      "prompt_file": "video/requests/solitaire-associations-minimax-h3.json",
       "error": "ContentBlocked",
       "details": [
         "The prompt and image reference the proprietary mobile game Solitaire Associations Journey."
-      ]
+      ],
+      "archive_location": "Local archive only"
     }
   ]
 }

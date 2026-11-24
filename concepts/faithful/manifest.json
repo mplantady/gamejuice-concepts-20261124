@@ -1,0 +1,260 @@
+{
+  "round": "faithful",
+  "label": "Style faithful · Pass 3",
+  "shared_prompt": "faithful/shared-image-prompt.txt",
+  "games": [
+    {
+      "slug": "bird-sort",
+      "name": "Bird Sort 2 Color Puzzle Game",
+      "image": "faithful/images/bird-sort-faithful-v1.png",
+      "prompt_file": "faithful/requests/bird-sort-faithful-v1.json",
+      "prompt": "Use case: precise-object-edit. Create a premium-quality polish of this exact mobile game screenshot while preserving its OWN visual style. The input is the original game, not an inspiration board. Keep the same art direction, rendering technique, degree of flatness or dimensionality, line language, palette, character identity, material vocabulary, lighting direction, shadow treatment and visual simplicity. Flat art stays flat. Shaded or dimensional art retains its existing shading and depth. Do not impose anime, Ghibli, painterly, toy, glossy 3D or any other replacement style.\n\nImprove execution within that established language: beautifully controlled silhouettes and curves, accurate consistent contours, crisp small-screen icons, more intentional color/value separation, cohesive asset finish, cleaner readable typography, polished spacing and alignment INSIDE existing UI footprints. Refine existing lighting and material rendering only where the source already uses them. Do not add shadows to unshaded elements or flatten shaded elements. Do not add decorative scenery, foliage, patterns, frames, props or panels. Keep quiet areas quiet. The result should look like the same game's best production build.\n\nThe largest quality leap will come later from animation, VFX and audio. This still image should be an exceptionally clear, faithful foundation for that motion, not a redesign. Preserve the exact frozen game state: every piece count, identity, color, order, occupied/empty cell, link, stack, symbol, number and visible word. Preserve functional hitbox footprints, board geometry, camera perspective, composition, tutorial cue, logos and disclosure text. Do not add/remove pieces or UI; do not invent a reward, victory or new mechanic. Keep original text verbatim. Return one full-bleed portrait screen at the input aspect ratio, no comparison panels, border or captions.\n\nGAME-SPECIFIC STYLE AND STATE: Retain the original rounded cartoon bird design with its bold simple silhouettes, big eyes, small selective cel shading and existing dusk-gradient forest. Keep all50 birds in exactspecies/order across7pairedbranchrows, R4empty. No anime redrawing, no ornamental feathers or flowers; sharpen the original character appeal and species distinction. Same crescent, hand, branches and downloadicon.",
+      "reference_image": "references/bird-sort.jpg",
+      "reference_available": true,
+      "review": {
+        "status": "reviewed",
+        "visual_change": "Sharper cartoon silhouettes, expressive eyes and clearer colors, retaining the original cel shading and dusk gradient.",
+        "layout": "Seven paired branch rows, all50 birds in the same species/order, emptyR4, tutorialhand, crescent and downloadicon are retained.",
+        "drift": "Contours and proportions are refined; branches are smoother and birds slightly fuller within their original groups."
+      },
+      "result_status": "generated",
+      "available": true
+    },
+    {
+      "slug": "draft-showdown",
+      "name": "Draft Showdown",
+      "image": "faithful/images/draft-showdown-faithful-v1.png",
+      "prompt_file": "faithful/requests/draft-showdown-faithful-v1.json",
+      "prompt": "Use case: precise-object-edit. Create a premium-quality polish of this exact mobile game screenshot while preserving its OWN visual style. The input is the original game, not an inspiration board. Keep the same art direction, rendering technique, degree of flatness or dimensionality, line language, palette, character identity, material vocabulary, lighting direction, shadow treatment and visual simplicity. Flat art stays flat. Shaded or dimensional art retains its existing shading and depth. Do not impose anime, Ghibli, painterly, toy, glossy 3D or any other replacement style.\n\nImprove execution within that established language: beautifully controlled silhouettes and curves, accurate consistent contours, crisp small-screen icons, more intentional color/value separation, cohesive asset finish, cleaner readable typography, polished spacing and alignment INSIDE existing UI footprints. Refine existing lighting and material rendering only where the source already uses them. Do not add shadows to unshaded elements or flatten shaded elements. Do not add decorative scenery, foliage, patterns, frames, props or panels. Keep quiet areas quiet. The result should look like the same game's best production build.\n\nThe largest quality leap will come later from animation, VFX and audio. This still image should be an exceptionally clear, faithful foundation for that motion, not a redesign. Preserve the exact frozen game state: every piece count, identity, color, order, occupied/empty cell, link, stack, symbol, number and visible word. Preserve functional hitbox footprints, board geometry, camera perspective, composition, tutorial cue, logos and disclosure text. Do not add/remove pieces or UI; do not invent a reward, victory or new mechanic. Keep original text verbatim. Return one full-bleed portrait screen at the input aspect ratio, no comparison panels, border or captions.\n\nGAME-SPECIFIC STYLE AND STATE: Keep the existing soft shaded2D cartoon arena and rounded golden rewardcards, visible cardbevels/contactshadows and gently painted crowd. Do not convert to ink illustration or sketch. Preserve Player54399 VS WIZARD,3hearts each, Choose a card!,+3Knights,+5Geese,1/3,exactcards andhand. Refine the existing cartoon assets and UIfinish only.",
+      "reference_image": "references/draft-showdown.jpg",
+      "reference_available": true,
+      "review": {
+        "status": "reviewed",
+        "visual_change": "Crisper shaded cartoon cards, UI typography, icons and arena crowd. The original gold gradients, bevels and contact shadows remain.",
+        "layout": "Player54399, WIZARD, three hearts each, +3Knights, +5Geese,1/3, card positions and pointer are retained.",
+        "drift": "Some existing glow and shadow accents are stronger; card corners are cleaner. No new gameplay elements."
+      },
+      "result_status": "generated",
+      "available": true
+    },
+    {
+      "slug": "goods-puzzle",
+      "name": "Goods Puzzle: Sort Challenge™",
+      "image": "faithful/images/goods-puzzle-faithful-v1.png",
+      "prompt_file": "faithful/requests/goods-puzzle-faithful-v1.json",
+      "prompt": "Use case: precise-object-edit. Create a premium-quality polish of this exact mobile game screenshot while preserving its OWN visual style. The input is the original game, not an inspiration board. Keep the same art direction, rendering technique, degree of flatness or dimensionality, line language, palette, character identity, material vocabulary, lighting direction, shadow treatment and visual simplicity. Flat art stays flat. Shaded or dimensional art retains its existing shading and depth. Do not impose anime, Ghibli, painterly, toy, glossy 3D or any other replacement style.\n\nImprove execution within that established language: beautifully controlled silhouettes and curves, accurate consistent contours, crisp small-screen icons, more intentional color/value separation, cohesive asset finish, cleaner readable typography, polished spacing and alignment INSIDE existing UI footprints. Refine existing lighting and material rendering only where the source already uses them. Do not add shadows to unshaded elements or flatten shaded elements. Do not add decorative scenery, foliage, patterns, frames, props or panels. Keep quiet areas quiet. The result should look like the same game's best production build.\n\nThe largest quality leap will come later from animation, VFX and audio. This still image should be an exceptionally clear, faithful foundation for that motion, not a redesign. Preserve the exact frozen game state: every piece count, identity, color, order, occupied/empty cell, link, stack, symbol, number and visible word. Preserve functional hitbox footprints, board geometry, camera perspective, composition, tutorial cue, logos and disclosure text. Do not add/remove pieces or UI; do not invent a reward, victory or new mechanic. Keep original text verbatim. Return one full-bleed portrait screen at the input aspect ratio, no comparison panels, border or captions.\n\n\nGAME-SPECIFIC LOCK: Preserve the soft dimensional toy-product rendering, pastel pink goods, subtle highlights/contact shadows, wooden 7-row by 3-column shelf and dark shelf backing. Refine the existing rounded materials without converting them to outline cartoons. Keep every product type/count/position, the row-four translucent carton drag ghost and human hand, and the exact headline “Stop playing easy game!”. Product packaging stays in its source footprint; no new item or cleared cell.",
+      "reference_image": "references/goods-puzzle.jpg",
+      "reference_available": true,
+      "review": {
+        "status": "reviewed_with_minor_drift",
+        "summary": "Preserves the native soft dimensional toy-product style, seven-by-three shelf, rounded pink goods and human tutorial hand. Product silhouettes, surface finish and labels are clearer.",
+        "gameplay_layout": "Visible product identities and arrangement, row-four drag ghost and headline retained. Dense objects under the hand are only partly verifiable from the still; no intentional state change.",
+        "style_fidelity": "Much closer to original than the flat pass: wood depth, contact shadows and toy highlights retained. Material rendering is a little more pronounced and shelf outlines/crispness strengthened.",
+        "limitations": [
+          "Tiny package labels are approximate; source logos/letterforms are not pixel-identical.",
+          "Hand and product contours are regenerated rather than exact source masks."
+        ]
+      },
+      "result_status": "generated",
+      "available": true
+    },
+    {
+      "slug": "cat-merge",
+      "name": "Cat Merge:Pet Game",
+      "image": "faithful/images/cat-merge-faithful-v1.png",
+      "prompt_file": "faithful/requests/cat-merge-faithful-v1.json",
+      "prompt": "Use case: precise-object-edit. Create a premium-quality polish of this exact mobile game screenshot while preserving its OWN visual style. The input is the original game, not an inspiration board. Keep the same art direction, rendering technique, degree of flatness or dimensionality, line language, palette, character identity, material vocabulary, lighting direction, shadow treatment and visual simplicity. Flat art stays flat. Shaded or dimensional art retains its existing shading and depth. Do not impose anime, Ghibli, painterly, toy, glossy 3D or any other replacement style.\n\nImprove execution within that established language: beautifully controlled silhouettes and curves, accurate consistent contours, crisp small-screen icons, more intentional color/value separation, cohesive asset finish, cleaner readable typography, polished spacing and alignment INSIDE existing UI footprints. Refine existing lighting and material rendering only where the source already uses them. Do not add shadows to unshaded elements or flatten shaded elements. Do not add decorative scenery, foliage, patterns, frames, props or panels. Keep quiet areas quiet. The result should look like the same game's best production build.\n\nThe largest quality leap will come later from animation, VFX and audio. This still image should be an exceptionally clear, faithful foundation for that motion, not a redesign. Preserve the exact frozen game state: every piece count, identity, color, order, occupied/empty cell, link, stack, symbol, number and visible word. Preserve functional hitbox footprints, board geometry, camera perspective, composition, tutorial cue, logos and disclosure text. Do not add/remove pieces or UI; do not invent a reward, victory or new mechanic. Keep original text verbatim. Return one full-bleed portrait screen at the input aspect ratio, no comparison panels, border or captions.\n\n\nGAME-SPECIFIC LOCK: Preserve the simple 2D outlined kawaii cat faces, warm cream paw-pattern background and brick container. The source cats use simple soft fills; retain that restrained finish rather than adding sculpture, detailed fur, anime styling or new shadows. Preserve one suspended brown/white smiling cat and exactly four pile cats: white upper-left, brown/white upper-right under the glove, calico lower-left, black lower-right. Preserve 5000, RECEIVE, the original hand position, and the visible lower disclosure fragment. No drop, merge, new cat or reward in this still.",
+      "reference_image": "references/cat-merge.jpg",
+      "reference_available": true,
+      "review": {
+        "status": "reviewed_with_minor_drift",
+        "summary": "Preserves the outlined kawaii faces, cream paw backdrop, brick container, glossy blue RECEIVE button and dimensional glove. One suspended cat and four pile cats retain their identities.",
+        "gameplay_layout": "5000 and RECEIVE unchanged, white/brown upper pair and calico/black lower pair retained, original visible disclosure fragment present. No drop or fusion.",
+        "style_fidelity": "Same simple 2D cat language, with crisper curves and softer fills. Button/glove keep original shaded finish. Small extra face glints and somewhat larger/lighter paw shapes are minor embellishments.",
+        "limitations": [
+          "Some eye/mouth proportions and paw-pattern scale differ slightly.",
+          "Bottom disclosure remains the original cropped fragment rather than an invented complete sentence."
+        ]
+      },
+      "result_status": "generated",
+      "available": true
+    },
+    {
+      "slug": "woofdoku",
+      "name": "Woofdoku: Cozy Logic Game",
+      "image": "faithful/images/woofdoku-faithful-v1.png",
+      "prompt_file": "faithful/requests/woofdoku-faithful-v1.json",
+      "prompt": "Use case: precise-object-edit. Create a premium-quality polish of this exact mobile game screenshot while preserving its OWN visual style. The input is the original game, not an inspiration board. Keep the same art direction, rendering technique, degree of flatness or dimensionality, line language, palette, character identity, material vocabulary, lighting direction, shadow treatment and visual simplicity. Flat art stays flat. Shaded or dimensional art retains its existing shading and depth. Do not impose anime, Ghibli, painterly, toy, glossy 3D or any other replacement style.\n\nImprove execution within that established language: beautifully controlled silhouettes and curves, accurate consistent contours, crisp small-screen icons, more intentional color/value separation, cohesive asset finish, cleaner readable typography, polished spacing and alignment INSIDE existing UI footprints. Refine existing lighting and material rendering only where the source already uses them. Do not add shadows to unshaded elements or flatten shaded elements. Do not add decorative scenery, foliage, patterns, frames, props or panels. Keep quiet areas quiet. The result should look like the same game's best production build.\n\nThe largest quality leap will come later from animation, VFX and audio. This still image should be an exceptionally clear, faithful foundation for that motion, not a redesign. Preserve the exact frozen game state: every piece count, identity, color, order, occupied/empty cell, link, stack, symbol, number and visible word. Preserve functional hitbox footprints, board geometry, camera perspective, composition, tutorial cue, logos and disclosure text. Do not add/remove pieces or UI; do not invent a reward, victory or new mechanic. Keep original text verbatim. Return one full-bleed portrait screen at the input aspect ratio, no comparison panels, border or captions.\n\nGAME-SPECIFIC INVARIANTS — Woofdoku: preserve the original mostly flat pastel 6×6 grid and white rounded panels with their existing subtle soft depth, original shaded glove/bones/dog icon and simple blue background/lower scenery. Keep every region boundary, all 36 empty cells, yellow r1c2 double-click target, 0/6, three bones, exact Double-click cue and all three rule diagrams/text. Do not replace the original rounded casual type or dog identity with hand-drawn outlines. No new halo or board dog.",
+      "reference_image": "references/woofdoku.jpg",
+      "reference_available": true,
+      "review": {
+        "status": "reviewed_with_limitations",
+        "native_style": "Retains the source pastel flat board, white rounded panels, soft existing panel depth, shaded glove/bones/dog and simple blue setting. The thick ink contours and cream recoloring of the abandoned flat experiment are absent.",
+        "state_fidelity": "6×6 regions, yellow r1c2 hint, no board dog, 0/6, three bones, Double-click and all three rules remain.",
+        "quality_gain": "Clearer small icons and lettering, smoother native-style UI shapes and more resolved glove rendering.",
+        "limitations": [
+          "Soft shading and background tonal variation are somewhat stronger than the low-resolution original.",
+          "Small rule-diagram details, dog facial details and lower decorative grass/bowl details are approximations; no exact pixel or ornament-count claim.",
+          "Still reference only; no animation/game-feel improvement is established by this image."
+        ],
+        "visual_change": "Cleaner pastel cells, readable rule icons and refined UI keep the original flat board and softly shaded pointer.",
+        "layout": "The6×6 board regions, singleton target,0/6 counter and three bones remain.",
+        "drift": "Small icon and glove details are redrawn. Existing selective UI depth is preserved."
+      },
+      "result_status": "generated",
+      "available": true
+    },
+    {
+      "slug": "solitaire-associations",
+      "name": "Solitaire Associations Journey",
+      "image": "faithful/images/solitaire-associations-faithful-v1.png",
+      "prompt_file": "faithful/requests/solitaire-associations-faithful-v1.json",
+      "prompt": "Use case: precise-object-edit. Create a premium-quality polish of this exact mobile game screenshot while preserving its OWN visual style. The input is the original game, not an inspiration board. Keep the same art direction, rendering technique, degree of flatness or dimensionality, line language, palette, character identity, material vocabulary, lighting direction, shadow treatment and visual simplicity. Flat art stays flat. Shaded or dimensional art retains its existing shading and depth. Do not impose anime, Ghibli, painterly, toy, glossy 3D or any other replacement style.\n\nImprove execution within that established language: beautifully controlled silhouettes and curves, accurate consistent contours, crisp small-screen icons, more intentional color/value separation, cohesive asset finish, cleaner readable typography, polished spacing and alignment INSIDE existing UI footprints. Refine existing lighting and material rendering only where the source already uses them. Do not add shadows to unshaded elements or flatten shaded elements. Do not add decorative scenery, foliage, patterns, frames, props or panels. Keep quiet areas quiet. The result should look like the same game's best production build.\n\nThe largest quality leap will come later from animation, VFX and audio. This still image should be an exceptionally clear, faithful foundation for that motion, not a redesign. Preserve the exact frozen game state: every piece count, identity, color, order, occupied/empty cell, link, stack, symbol, number and visible word. Preserve functional hitbox footprints, board geometry, camera perspective, composition, tutorial cue, logos and disclosure text. Do not add/remove pieces or UI; do not invent a reward, victory or new mechanic. Keep original text verbatim. Return one full-bleed portrait screen at the input aspect ratio, no comparison panels, border or captions.\n\n\nGAME-SPECIFIC LOCK: Preserve the understated 2D purple tabletop, cream/yellow cards, subtle card-edge depth, simple original typography and symbols. Do not add illustrated scenery, ornaments, ornate frames or new illustrations except refining the same small existing cat icon. Lock five crown slots, exact stack sizes and spacing, Moves 190, Level 1, Family 0/8, Sister, Aunt, Ketchup, cat card, deck back, speaker and Download. Preserve all covered card layers and gold Family category card state; no move or counter update.",
+      "reference_image": "references/solitaire-associations.jpg",
+      "reference_available": true,
+      "review": {
+        "status": "reviewed_with_minor_drift",
+        "summary": "Preserves the quiet purple card-table style, simple card geometry, subtle edge depth and original categories/words. Typography and card edges are more legible.",
+        "gameplay_layout": "Five crown slots, covered-card stack counts, Moves190, Level1, Family0/8, Sister/Aunt/Ketchup/cat faces, speaker/deck/Download retained. No move or counter update.",
+        "style_fidelity": "Remains restrained 2D card UI. Slightly stronger backdrop tonal variation, softer card faces and refined small cat icon; no scenery or ornate theme introduced.",
+        "limitations": [
+          "Fine typography, crown proportions and icon drawing are regenerated, not pixel-identical."
+        ]
+      },
+      "result_status": "generated",
+      "available": true
+    },
+    {
+      "slug": "mahjong-rumble",
+      "name": "Mahjong Rumble: Win Real Cash",
+      "image": "faithful/images/mahjong-rumble-faithful-v1.png",
+      "prompt_file": "faithful/requests/mahjong-rumble-faithful-v1.json",
+      "prompt": "Use case: precise-object-edit. Create a premium-quality polish of this exact mobile game screenshot while preserving its OWN visual style. The input is the original game, not an inspiration board. Keep the same art direction, rendering technique, degree of flatness or dimensionality, line language, palette, character identity, material vocabulary, lighting direction, shadow treatment and visual simplicity. Flat art stays flat. Shaded or dimensional art retains its existing shading and depth. Do not impose anime, Ghibli, painterly, toy, glossy 3D or any other replacement style.\n\nImprove execution within that established language: beautifully controlled silhouettes and curves, accurate consistent contours, crisp small-screen icons, more intentional color/value separation, cohesive asset finish, cleaner readable typography, polished spacing and alignment INSIDE existing UI footprints. Refine existing lighting and material rendering only where the source already uses them. Do not add shadows to unshaded elements or flatten shaded elements. Do not add decorative scenery, foliage, patterns, frames, props or panels. Keep quiet areas quiet. The result should look like the same game's best production build.\n\nThe largest quality leap will come later from animation, VFX and audio. This still image should be an exceptionally clear, faithful foundation for that motion, not a redesign. Preserve the exact frozen game state: every piece count, identity, color, order, occupied/empty cell, link, stack, symbol, number and visible word. Preserve functional hitbox footprints, board geometry, camera perspective, composition, tutorial cue, logos and disclosure text. Do not add/remove pieces or UI; do not invent a reward, victory or new mechanic. Keep original text verbatim. Return one full-bleed portrait screen at the input aspect ratio, no comparison panels, border or captions.\n\n\nGAME-SPECIFIC LOCK: Preserve the original dark green tabletop, slightly shaded rounded ivory tiles, authentic simple colored mahjong symbols and dimensional human tutorial hand. Preserve the tutorial dimming layer: the three indicated bird tiles remain bright and the surrounding board remains dimmer. Keep all visible and partially cropped rows, exact symbols and occupied positions, Level 1, Winnings $0.00, Match 0, “Match three identical tiles!”, and the entire two-line footer disclosure verbatim. No tile selection, match, refill, winnings change or CTA addition in this still.",
+      "reference_image": "references/mahjong-rumble.jpg",
+      "reference_available": true,
+      "review": {
+        "status": "reviewed_with_minor_drift",
+        "summary": "Preserves dark green table, softly shaded ivory tile depth, original symbols, dimensional hand and dim tutorial state with exactly three bright bird targets.",
+        "gameplay_layout": "Visible/cropped rows and symbol positions retained. Level1/Winnings$0.00/Match0, tutorial text and both disclosure lines intact; no match, refill or CTA added.",
+        "style_fidelity": "Much closer to native presentation than flat pass. Slightly stronger edge finish and more legible HUD while retaining dim background tiles.",
+        "limitations": [
+          "HUD text is brighter than the source dim-overlay capture.",
+          "Symbol strokes, hand shape and tile corners are cleaner but approximate."
+        ]
+      },
+      "result_status": "generated",
+      "available": true
+    },
+    {
+      "slug": "rotate-rings",
+      "name": "Rotate Rings",
+      "image": "faithful/images/rotate-rings-faithful-v1.png",
+      "prompt_file": "faithful/requests/rotate-rings-faithful-v1.json",
+      "prompt": "Use case: precise-object-edit. Create a premium-quality polish of this exact mobile game screenshot while preserving its OWN visual style. The input is the original game, not an inspiration board. Keep the same art direction, rendering technique, degree of flatness or dimensionality, line language, palette, character identity, material vocabulary, lighting direction, shadow treatment and visual simplicity. Flat art stays flat. Shaded or dimensional art retains its existing shading and depth. Do not impose anime, Ghibli, painterly, toy, glossy 3D or any other replacement style.\n\nImprove execution within that established language: beautifully controlled silhouettes and curves, accurate consistent contours, crisp small-screen icons, more intentional color/value separation, cohesive asset finish, cleaner readable typography, polished spacing and alignment INSIDE existing UI footprints. Refine existing lighting and material rendering only where the source already uses them. Do not add shadows to unshaded elements or flatten shaded elements. Do not add decorative scenery, foliage, patterns, frames, props or panels. Keep quiet areas quiet. The result should look like the same game's best production build.\n\nThe largest quality leap will come later from animation, VFX and audio. This still image should be an exceptionally clear, faithful foundation for that motion, not a redesign. Preserve the exact frozen game state: every piece count, identity, color, order, occupied/empty cell, link, stack, symbol, number and visible word. Preserve functional hitbox footprints, board geometry, camera perspective, composition, tutorial cue, logos and disclosure text. Do not add/remove pieces or UI; do not invent a reward, victory or new mechanic. Keep original text verbatim. Return one full-bleed portrait screen at the input aspect ratio, no comparison panels, border or captions.\n\nGAME-SPECIFIC STYLE AND STATE: Preserve the original shaded bronze/copper rings, warm metallic highlights, agedpatina, actual3Ddepth and continuous tan background. Improve smooth geometry and readable material craftsmanship without adding scenery or ornament. Keep exact12rings, everygap and6couplers, overlapsandorientations, handandarrow atfarleftthirdrow. Retain headlineOnly \"LEFT-BRAINED\" can untie all the rings, IQ=90, FREE TO PLAY,Install. No flattening, no goldjewelryrestyle, no newlinks.",
+      "reference_image": "references/rotate-rings.jpg",
+      "reference_available": true,
+      "review": {
+        "status": "reviewed",
+        "visual_change": "Smoother bronze and copper geometry, controlled metallic highlights and aged patina preserve the original dimensional finish.",
+        "layout": "The12-ring network, gaps, couplers, overlaps, IQ90 and existing CTA remain.",
+        "drift": "Specular highlights are stronger than the source; concept geometry is redrawn rather than rendered by the original game."
+      },
+      "result_status": "generated",
+      "available": true
+    },
+    {
+      "slug": "block-crush",
+      "name": "Block Crush!",
+      "image": "faithful/images/block-crush-faithful-v1.png",
+      "prompt_file": "faithful/requests/block-crush-faithful-v1.json",
+      "prompt": "Use case: precise-object-edit. Create a premium-quality polish of this exact mobile game screenshot while preserving its OWN visual style. The input is the original game, not an inspiration board. Keep the same art direction, rendering technique, degree of flatness or dimensionality, line language, palette, character identity, material vocabulary, lighting direction, shadow treatment and visual simplicity. Flat art stays flat. Shaded or dimensional art retains its existing shading and depth. Do not impose anime, Ghibli, painterly, toy, glossy 3D or any other replacement style.\n\nImprove execution within that established language: beautifully controlled silhouettes and curves, accurate consistent contours, crisp small-screen icons, more intentional color/value separation, cohesive asset finish, cleaner readable typography, polished spacing and alignment INSIDE existing UI footprints. Refine existing lighting and material rendering only where the source already uses them. Do not add shadows to unshaded elements or flatten shaded elements. Do not add decorative scenery, foliage, patterns, frames, props or panels. Keep quiet areas quiet. The result should look like the same game's best production build.\n\nThe largest quality leap will come later from animation, VFX and audio. This still image should be an exceptionally clear, faithful foundation for that motion, not a redesign. Preserve the exact frozen game state: every piece count, identity, color, order, occupied/empty cell, link, stack, symbol, number and visible word. Preserve functional hitbox footprints, board geometry, camera perspective, composition, tutorial cue, logos and disclosure text. Do not add/remove pieces or UI; do not invent a reward, victory or new mechanic. Keep original text verbatim. Return one full-bleed portrait screen at the input aspect ratio, no comparison panels, border or captions.\n\nGAME-SPECIFIC INVARIANTS — Block Crush: preserve the original shaded golden tile bevels, gem volume, soft cast/contact shadows, brown board and softly rendered existing foliage. Retain the exact 8×8 grid, 14 prefilled tiles and symbols, target labels 18/26/10 and settings. Keep all three tray shapes: left nine-cell square with top-middle heart; middle eight-cell irregular green-collectible shape; right nine-cell square with top-right heart. Do not flatten shaded tiles, add black contour styling, redesign foliage or fill any new board cell.",
+      "reference_image": "references/block-crush.jpg",
+      "reference_available": true,
+      "review": {
+        "status": "reviewed_with_limitations",
+        "native_style": "Preserves shaded golden tile bevels, dimensional gems, soft contact shadows, brown board and softly rendered foliage. This restores the original material language instead of converting it to inked flat art.",
+        "state_fidelity": "8×8 grid and 14 occupied starting cells retained; 18/26/10, settings, left/right nine-cell squares and central eight-cell green shape remain in the correct arrangement. Hearts remain top-middle on left and top-right on right.",
+        "quality_gain": "Sharper original-material bevels, clean gem silhouettes, more legible targets and cleaner consistent grid edges.",
+        "limitations": [
+          "Lighting contrast and bevel clarity are stronger than the small original capture.",
+          "Flower/leaf micro-shapes and some lower vine silhouettes differ despite the same general foliage layout.",
+          "Still reference only; no placement, clearing, score change or motion claim."
+        ],
+        "visual_change": "Sharper golden tile bevels, jewel symbols and garden details retain the original shaded puzzle style.",
+        "layout": "The8×8 board, initial14 occupied cells, three tray pieces and target counts remain.",
+        "drift": "Surface contrast and small foliage details are refined; the original dimensional treatment remains."
+      },
+      "result_status": "generated",
+      "available": true
+    },
+    {
+      "slug": "royal-smash",
+      "name": "Royal Smash! - Physics Puzzle",
+      "image": "faithful/images/royal-smash-faithful-v1.png",
+      "prompt_file": "faithful/requests/royal-smash-faithful-v1.json",
+      "prompt": "Use case: precise-object-edit. Create a premium-quality polish of this exact mobile game screenshot while preserving its OWN visual style. The input is the original game, not an inspiration board. Keep the same art direction, rendering technique, degree of flatness or dimensionality, line language, palette, character identity, material vocabulary, lighting direction, shadow treatment and visual simplicity. Flat art stays flat. Shaded or dimensional art retains its existing shading and depth. Do not impose anime, Ghibli, painterly, toy, glossy 3D or any other replacement style.\n\nImprove execution within that established language: beautifully controlled silhouettes and curves, accurate consistent contours, crisp small-screen icons, more intentional color/value separation, cohesive asset finish, cleaner readable typography, polished spacing and alignment INSIDE existing UI footprints. Refine existing lighting and material rendering only where the source already uses them. Do not add shadows to unshaded elements or flatten shaded elements. Do not add decorative scenery, foliage, patterns, frames, props or panels. Keep quiet areas quiet. The result should look like the same game's best production build.\n\nThe largest quality leap will come later from animation, VFX and audio. This still image should be an exceptionally clear, faithful foundation for that motion, not a redesign. Preserve the exact frozen game state: every piece count, identity, color, order, occupied/empty cell, link, stack, symbol, number and visible word. Preserve functional hitbox footprints, board geometry, camera perspective, composition, tutorial cue, logos and disclosure text. Do not add/remove pieces or UI; do not invent a reward, victory or new mechanic. Keep original text verbatim. Return one full-bleed portrait screen at the input aspect ratio, no comparison panels, border or captions.\n\nGAME-SPECIFIC STYLE AND STATE: Keep the original high-key shaded3D casualgame look: opaque blue canpieces withwhitewaves, glossy toy-like cannon, softsunlight andreflections, dimensional tropicalocean. Improve material/light finesse and crispmodeling within that samecasualstyle; keep cheerfulsoftforms, notphotorealorflatillustration. Exactpieceinventoryandstacktopology, cannonperspective, handtarget, Balls20andPlayNow. No addedsceneprops, flora or modifiedstack.",
+      "reference_image": "references/royal-smash.jpg",
+      "reference_available": true,
+      "review": {
+        "status": "reviewed",
+        "visual_change": "Refined casual3D surfaces and cheerful tropical lighting retain the original game’s shaded appearance.",
+        "layout": "The stack topology, blue wave pieces, cannon, HUD and pointer remain.",
+        "drift": "This is a visual concept; exact runtime geometry and material behavior are not verified."
+      },
+      "result_status": "generated",
+      "available": true
+    },
+    {
+      "slug": "vita-mahjong",
+      "name": "Vita Mahjong",
+      "image": "faithful/images/vita-mahjong-faithful-v1.png",
+      "prompt_file": "faithful/requests/vita-mahjong-faithful-v1.json",
+      "prompt": "Use case: precise-object-edit. Create a premium-quality polish of this exact mobile game screenshot while preserving its OWN visual style. The input is the original game, not an inspiration board. Keep the same art direction, rendering technique, degree of flatness or dimensionality, line language, palette, character identity, material vocabulary, lighting direction, shadow treatment and visual simplicity. Flat art stays flat. Shaded or dimensional art retains its existing shading and depth. Do not impose anime, Ghibli, painterly, toy, glossy 3D or any other replacement style.\n\nImprove execution within that established language: beautifully controlled silhouettes and curves, accurate consistent contours, crisp small-screen icons, more intentional color/value separation, cohesive asset finish, cleaner readable typography, polished spacing and alignment INSIDE existing UI footprints. Refine existing lighting and material rendering only where the source already uses them. Do not add shadows to unshaded elements or flatten shaded elements. Do not add decorative scenery, foliage, patterns, frames, props or panels. Keep quiet areas quiet. The result should look like the same game's best production build.\n\nThe largest quality leap will come later from animation, VFX and audio. This still image should be an exceptionally clear, faithful foundation for that motion, not a redesign. Preserve the exact frozen game state: every piece count, identity, color, order, occupied/empty cell, link, stack, symbol, number and visible word. Preserve functional hitbox footprints, board geometry, camera perspective, composition, tutorial cue, logos and disclosure text. Do not add/remove pieces or UI; do not invent a reward, victory or new mechanic. Keep original text verbatim. Return one full-bleed portrait screen at the input aspect ratio, no comparison panels, border or captions.\n\nGAME-SPECIFIC INVARIANTS — Vita Mahjong: retain the original ivory tile faces, dimensional golden undersides and existing soft shading; the source flat printed tile symbols and simplified character portraits remain in their native style. Preserve the 12×7 board, all holes, four purple locks, exact visible tile identities including distinct flower families, glove and green Play Free CTA. Keep all tile counts, symbol positions and Chinese glyphs fixed. Do not change characters to anime or remove the existing depth of the tiles.",
+      "reference_image": "references/vita-mahjong.jpg",
+      "reference_available": true,
+      "review": {
+        "status": "reviewed_with_limitations",
+        "native_style": "Restores the original ivory faces, dimensional golden undersides, existing soft shading and simplified printed symbol/character style. The new image is materially closer to the source than the flat ink-drawn experiment.",
+        "state_fidelity": "12×7 geometry and visible tile identities, nine holes, four purple locks, tutorial glove and Play Free retained. Distinct wreath, rosette, five-petal and orchid families remain distinguishable.",
+        "quality_gain": "Crisper glyphs and symbol edges, more resolved native character portraits, consistent ivory/gold tile finish and legible original CTA.",
+        "limitations": [
+          "Golden undersides, symbol highlights and CTA contrast are somewhat stronger than the small original capture.",
+          "Character facial details and fine floral ornament are redrawn approximations, with no exact pixel-fidelity claim.",
+          "Still reference only; original-rule timing and actual playable behavior are separate."
+        ],
+        "visual_change": "Crisper ivory tile faces, gold undersides and character symbols retain the original shaded mahjong style.",
+        "layout": "Board arrangement, four purple locks, symbol families, tutorial pointer and PlayFree remain.",
+        "drift": "Small painted details differ from the source; the tile depth and original visual language remain."
+      },
+      "result_status": "generated",
+      "available": true
+    },
+    {
+      "slug": "meowdoku",
+      "name": "Meowdoku!",
+      "image": "faithful/images/meowdoku-faithful-v1.png",
+      "prompt_file": "faithful/requests/meowdoku-faithful-v1.json",
+      "prompt": "Use case: precise-object-edit. Create a premium-quality polish of this exact mobile game screenshot while preserving its OWN visual style. The input is the original game, not an inspiration board. Keep the same art direction, rendering technique, degree of flatness or dimensionality, line language, palette, character identity, material vocabulary, lighting direction, shadow treatment and visual simplicity. Flat art stays flat. Shaded or dimensional art retains its existing shading and depth. Do not impose anime, Ghibli, painterly, toy, glossy 3D or any other replacement style.\n\nImprove execution within that established language: beautifully controlled silhouettes and curves, accurate consistent contours, crisp small-screen icons, more intentional color/value separation, cohesive asset finish, cleaner readable typography, polished spacing and alignment INSIDE existing UI footprints. Refine existing lighting and material rendering only where the source already uses them. Do not add shadows to unshaded elements or flatten shaded elements. Do not add decorative scenery, foliage, patterns, frames, props or panels. Keep quiet areas quiet. The result should look like the same game's best production build.\n\nThe largest quality leap will come later from animation, VFX and audio. This still image should be an exceptionally clear, faithful foundation for that motion, not a redesign. Preserve the exact frozen game state: every piece count, identity, color, order, occupied/empty cell, link, stack, symbol, number and visible word. Preserve functional hitbox footprints, board geometry, camera perspective, composition, tutorial cue, logos and disclosure text. Do not add/remove pieces or UI; do not invent a reward, victory or new mechanic. Keep original text verbatim. Return one full-bleed portrait screen at the input aspect ratio, no comparison panels, border or captions.\n\nGAME-SPECIFIC INVARIANTS — Meowdoku: preserve the original understated mostly flat colored 8×8 board and simple compact UI, existing tutorial dimming, softly shaded glove, original luminous target ring and the source’s existing button shadow. Keep singleton purple r1c6, every region boundary, 0/8, three fish, logo, all three rule cards, Double-tap instruction, Download and © Oakever Games exactly. Do not replace the small original cat icon with a large illustrated mascot, add contours or change relative UI scale. No board cat yet.",
+      "reference_image": "references/meowdoku.jpg",
+      "reference_available": true,
+      "review": {
+        "status": "reviewed_with_limitations",
+        "native_style": "Retains the original mostly flat compact interface and colored board, with selectively shaded glove/fish, luminous tutorial ring, dimmed backdrop and existing button depth. No new inked panel borders or feature-animation restyle.",
+        "state_fidelity": "8×8 region layout, singleton purple r1c6, no placed cat, 0/8, three fish, three rules, Double-tap instruction, logo, Download and © Oakever Games retained.",
+        "quality_gain": "Clearer text and fish, smoother native glove and improved small-screen separation without new scenery.",
+        "limitations": [
+          "Cat facial detail and its exact footprint vary slightly; the original small HUD role is retained.",
+          "The dimmed backdrop and controls are a little brighter/more resolved than the original low-resolution screenshot.",
+          "Still reference only; no cat placement or game-feel claim is made."
+        ],
+        "visual_change": "Cleaner pastel regions, UI spacing and small icons retain the original restrained board and softly shaded glove.",
+        "layout": "The8×8 regions, singleton target,0/8, three fish, rule cards and attribution remain.",
+        "drift": "Minor line and icon details are redrawn; the tutorial dimming and selective UI depth remain."
+      },
+      "result_status": "generated",
+      "available": true
+    }
+  ],
+  "images_ready": 12,
+  "videos_ready": 12
+}

@@ -1,0 +1,5 @@
+{
+  "prompt": "Restore the exact selected flat-image Player54399 label at its fixed HUD position throughout the existing AI video. Keep every other visual state and the complete original audio. Do not change the five-geese deployment or selection pulse.",
+  "audio": "Original AAC packets copied unchanged.",
+  "method": "ai_video_with_local_ui_correction"
+}

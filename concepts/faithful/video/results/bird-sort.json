@@ -1,0 +1,84 @@
+{
+  "slug": "bird-sort",
+  "attempt": "local-motion-v1",
+  "status": "generated",
+  "model": "local-motion-mockup",
+  "method": "local_animation",
+  "file": "faithful/video/clips/bird-sort-local-motion-v1.mp4",
+  "width": 1080,
+  "height": 1920,
+  "duration": 12.0,
+  "audio": true,
+  "input_image": "faithful/images/bird-sort-faithful-v1.png",
+  "prompt_file": "faithful/video/requests/bird-sort-local-motion.json",
+  "review": {
+    "status": "reviewed_local_motion_mockup",
+    "reviewed": true,
+    "summary": "A controlled, style-faithful three-transfer motion concept. Encoded frames retain the full portrait board and the correct partial end state with all 50 birds. This is local presentation animation, not recorded gameplay or a Unity implementation.",
+    "gameplay": [
+      "R3→L4: exactly one blue/yellow macaw; L4 has five mixed birds and does not clear.",
+      "R3→L1: exactly one orange-crested bird; L1 has four.",
+      "R3→R4: exactly two red/yellow birds move together to the outer-right positions; R3 retains its far macaw.",
+      "No additional transfer, score change, branch clear, success overlay or victory reward."
+    ],
+    "final_inventory": {
+      "L1": 4,
+      "R1": 5,
+      "L2": 5,
+      "R2": 3,
+      "L3": 4,
+      "R3": 1,
+      "L4": 5,
+      "R4": 2,
+      "L5": 3,
+      "R5": 3,
+      "L6": 3,
+      "R6": 5,
+      "L7": 4,
+      "R7": 3,
+      "total": 50
+    },
+    "style": "Original cartoon outlines, cel shading, species colors and dusk gradient remain. No full-scene restyle, added light beams, bloom or camera crop.",
+    "motion": "Anticipation, curved readable travel, short articulated two-tone wing accents, contact ticks and a small landing settle. Only the four transferred birds are separately animated; the final state holds quietly.",
+    "drift": "Moving poses are isolated/reconstructed from matching species in the selected still. Small cutout contour and proportion differences remain. Previously hidden R3 sky, trunks and perch are reconstructed locally; its perch reuses the same source-image art from empty R4. These are presentation-layer approximations, not extracted original animation assets.",
+    "layout": "Seven paired branch rows, original moon/stars/forest, full footer and download icon remain visible. Unrelated birds are kept as source pixels.",
+    "audio_review": "AAC stereo, 48 kHz verified. Exact plan narration was synthesized with the installed Samantha voice (4.783 seconds), mixed with original generated taps, flutter, landing chirps and quiet plucked music. Timing follows the programmed contact times; audio was not independently auditioned.",
+    "encoded_frames_reviewed": [
+      0,
+      2.6,
+      4.0,
+      6.0,
+      9.0,
+      11.7
+    ],
+    "checks": {
+      "contact_sheet": "faithful/video/checks/bird-sort-local-motion/encoded-contact.jpg",
+      "probe": "faithful/video/checks/bird-sort-local-motion/probe.json"
+    },
+    "verification_scope": "Six decoded frames and deterministic transfer definitions checked, plus dimensions, duration and audio codec. Not an exhaustive frame-by-frame playthrough."
+  },
+  "prior_attempts": [
+    {
+      "slug": "bird-sort",
+      "attempt": "gemini-omni-v1",
+      "status": "generated",
+      "model": "video-gemini-omni-1-2-flash",
+      "width": 1080,
+      "height": 1920,
+      "duration": 12.032,
+      "audio": true,
+      "review": {
+        "status": "reviewed_requires_gameplay_correction",
+        "summary": "Original cartoon style is recognizable and flight is expressive, but the generated transfers violate the recorded destinations and inventory. Replace with a controlled motion mockup.",
+        "findings": [
+          "Firstmacaw lands onemptyR4insteadL4.",
+          "Orangebird departs fromanunrelatedupperbranch; laterred/yellowbirds duplicateormovefromwrongrows.",
+          "Multiple extra airbornebirds andbrightlightbeams appear, making the sequenceunfaithfultothegame.",
+          "Fullboard remainsvisible andsourcecartoonstyle broadlyretained."
+        ],
+        "audio_review": "Audio stream present; not independently auditioned."
+      },
+      "archive_location": "Local archive only"
+    }
+  ]
+}

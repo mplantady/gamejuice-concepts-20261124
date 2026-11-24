@@ -1,0 +1,83 @@
+{
+  "slug": "meowdoku",
+  "attempt": "local-motion",
+  "status": "generated",
+  "model": "local-motion-mockup",
+  "method": "local_animation",
+  "file": "flat/video/clips/meowdoku-local-motion-v1.mp4",
+  "width": 1080,
+  "height": 1920,
+  "duration": 12.0,
+  "audio": true,
+  "input_image": "flat/images/meowdoku-flat-v1.png",
+  "prompt_file": "flat/video/requests/meowdoku-local-motion.json",
+  "review": {
+    "status": "reviewed_local_mockup",
+    "verdict": "One legal placement and one counter update verified in encoded samples; full board, rules and attribution retained.",
+    "sampled_seconds": [
+      0,
+      4.1,
+      4.65,
+      11.5
+    ],
+    "first_frame": "Full approved flat source including 8×8 board, singleton purple target, source glove, 0/8, three fish, rule cards, Download and © Oakever Games is visible.",
+    "action_and_causality": "Two coded taps at 4.05 and 4.35 seconds target purple r1c6. Exactly one source-art cat appears at 4.42 seconds and the counter changes once from 0/8 to 1/8; the hand retreats to reveal the cell.",
+    "final_state": "One cat sits inside singleton purple r1c6, 1/8 remains, three fish remain, and all other board regions stay empty. No second placement, crosses, lost life, reward or win is shown.",
+    "visual_effects": "Two crisp opaque input circles and three brief tiny paw ticks provide flat feedback. No new glow, shadow, bevel, light effect or camera motion. The moving hand briefly overlaps the cat during the placement then rests below/right.",
+    "ui_and_identity": "Original cat art is reused from the HUD. Existing /8 stays unchanged; only the first digit is locally replaced. The rule text, board geometry, Download and © Oakever Games remain readable and fixed.",
+    "limitations": [
+      "This is a deterministic still-image motion mockup, not engine gameplay or a model-generated video.",
+      "The area hidden by the original hand is locally reconstructed with matching green source cells and a flat purple/cream target. Minor cutout/target-edge differences remain around that repaired area.",
+      "The inserted cat reuses the HUD artwork and the new numeral uses a close local font; exact original runtime sprites/font are not available.",
+      "Existing approved-image fill variance is retained. Visual review used four encoded samples plus source comparison and coded timing; audio was not auditioned."
+    ],
+    "reviewed_at": "2026-11-24T16:39:33.297238+00:00",
+    "frames": [
+      "flat/video/checks/meowdoku-local-motion/frame-0s.jpg",
+      "flat/video/checks/meowdoku-local-motion/frame-4.1s.jpg",
+      "flat/video/checks/meowdoku-local-motion/frame-4.65s.jpg",
+      "flat/video/checks/meowdoku-local-motion/frame-11.5s.jpg"
+    ],
+    "audio": "AAC stereo 48 kHz, 12 seconds, non-silent signal and zero clipped decoded samples verified; narration and synthesized effects are in the generated soundtrack. Not listened to.",
+    "technical": {
+      "video": [
+        {
+          "codec_type": "video",
+          "codec_name": "h264",
+          "width": 1080,
+          "height": 1920,
+          "r_frame_rate": "30/1",
+          "duration": "12.000000",
+          "nb_frames": "360",
+          "sample_rate": null,
+          "channels": null
+        },
+        {
+          "codec_type": "audio",
+          "codec_name": "aac",
+          "width": null,
+          "height": null,
+          "r_frame_rate": "0/0",
+          "duration": "12.000000",
+          "nb_frames": "564",
+          "sample_rate": "48000",
+          "channels": 2
+        }
+      ],
+      "audio_analysis": {
+        "channels": 2,
+        "sample_rate": 48000,
+        "frames": 576512,
+        "peak": 0.38909912109375,
+        "rms": 0.04779565521456605,
+        "clipped_samples": 0
+      },
+      "file_sha256_matches": true,
+      "source_sha256_matches": true,
+      "request_sha256_matches": true,
+      "full_decode_errors": 0,
+      "audio_listened": false
+    },
+    "technical_review_file": "flat/video/checks/meowdoku-local-motion/technical-review.json"
+  }
+}

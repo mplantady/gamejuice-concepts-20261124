@@ -1,0 +1,124 @@
+{
+  "slug": "mahjong-rumble",
+  "attempt": "local-motion-v1",
+  "status": "generated",
+  "model": "local-motion-mockup",
+  "method": "local_animation",
+  "file": "faithful/video/clips/mahjong-rumble-local-motion-v1.mp4",
+  "width": 1080,
+  "height": 1920,
+  "duration": 12.0,
+  "audio": true,
+  "input_image": "faithful/images/mahjong-rumble-faithful-v1.png",
+  "prompt_file": "faithful/video/requests/mahjong-rumble-local-motion.json",
+  "review": {
+    "status": "reviewed_local_motion_mockup",
+    "reviewed": true,
+    "summary": "Controlled, style-faithful first-triple demonstration with the correct tile identities, column drops and readable illustrative $21.00 result. Eight decoded frames and the deterministic state transition were checked. This is local presentation animation, not recorded gameplay or a Unity implementation.",
+    "gameplay": [
+      "Bottom-left bird selected at2.00s; row5 column2 at3.25s; row5 column3 at4.50s. The first two remain until the third input.",
+      "Only those three birds clear. Survivors above each vacancy fall one row in columns1–3; column4 stays in place.",
+      "Existing offscreen nine-dots, nine-dots and bird tiles enter columns1–3. The settled grid matches the verified original replay.",
+      "Level1 is retained; Match0→1; Winnings$0.00→$21.00 with the decimal preserved; green Play Now appears. No further match, victory or payout claim."
+    ],
+    "final_grid": [
+      [
+        "N",
+        "N",
+        "B",
+        "H"
+      ],
+      [
+        "G",
+        "F",
+        "H",
+        "B"
+      ],
+      [
+        "B",
+        "B",
+        "G",
+        "H"
+      ],
+      [
+        "F",
+        "N",
+        "F",
+        "N"
+      ],
+      [
+        "G",
+        "F",
+        "H",
+        "G"
+      ],
+      [
+        "F",
+        "F",
+        "H",
+        "N"
+      ]
+    ],
+    "symbol_key": {
+      "B": "bird",
+      "F": "red flower",
+      "G": "green 發",
+      "H": "H bamboo",
+      "N": "nine dots"
+    },
+    "visual_change": "Original ivory tile depth, edge shading, printed symbols, green table and dimensional tutorial hand are retained. A restrained green selection rim, compact gold clear accents, rigid column travel and small landing rebound add feedback.",
+    "drift": "Repeated tile donors reconstruct obscured artwork. Dim donor tiles are restored to the source bright-tile exposure; the flower donor bottom rim and hidden felt are repaired locally. HUD changing numerals and the source-supported green Play Now button are locally rendered approximations. No symbols are generated or swapped during the transition.",
+    "footer": "Both original disclosure lines remain source-image pixels, readable and uncropped. The encoded footer region is40.67dB PSNR against the scaled source, with differences from video compression only.",
+    "audio_review": "AAC stereo48kHz verified. Exact plan narration uses installed Samantha (5.457s), with original synthesized ceramic clicks, a restrained three-note match chord, column landing clacks and quiet plucked music ducked beneath speech. Audio was not independently auditioned.",
+    "encoded_frames_reviewed": [
+      0,
+      2.5,
+      3.8,
+      4.7,
+      5.5,
+      6.6,
+      7.6,
+      11.8
+    ],
+    "checks": {
+      "contact_sheet": "faithful/video/checks/mahjong-rumble-local-motion/encoded-contact.jpg",
+      "probe": "faithful/video/checks/mahjong-rumble-local-motion/probe.json"
+    },
+    "verification_scope": "Eight decoded frames, exact symbolic column simulation, file hashes, duration, dimensions and audio codec checked; not a full frame-by-frame engine playthrough."
+  },
+  "prior_attempts": [
+    {
+      "slug": "mahjong-rumble",
+      "attempt": "minimax-h3-v1",
+      "status": "failed",
+      "model": "video-minimax-h3",
+      "error": "ContentBlocked",
+      "details": [
+        "The prompt references the specific game title Mahjong Rumble."
+      ],
+      "archive_location": "Local archive only"
+    },
+    {
+      "slug": "mahjong-rumble",
+      "attempt": "kling-v3-v1",
+      "status": "generated",
+      "model": "video-kling-v3-i2v-pro",
+      "width": 1076,
+      "height": 1920,
+      "duration": 12.050998,
+      "audio": true,
+      "review": {
+        "status": "reviewed_requires_gameplay_correction",
+        "summary": "The generated clip changes tile identities and columns, and displays $2100 instead of the captured illustrative $21.00. It cannot serve as the selected gameplay concept.",
+        "findings": [
+          "Individual selected birds are replaced before the third selection.",
+          "The settled grid invents symbols and does not match the verified column drops.",
+          "The footer is distorted and the displayed amount loses its decimal point.",
+          "Native shaded tile style is recognizable, but the game state requires a controlled replacement."
+        ],
+        "audio_review": "Audio present; not independently auditioned."
+      },
+      "archive_location": "Local archive only"
+    }
+  ]
+}

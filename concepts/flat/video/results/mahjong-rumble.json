@@ -1,0 +1,47 @@
+{
+  "slug": "mahjong-rumble",
+  "attempt": "minimax-h3-v2",
+  "status": "generated",
+  "model": "video-minimax-h3",
+  "file": "flat/video/clips/mahjong-rumble-minimax-h3-v2.mp4",
+  "width": 1440,
+  "height": 2560,
+  "duration": 12.25,
+  "audio": true,
+  "input_image": "flat/images/mahjong-rumble-flat-v3.png",
+  "prompt_file": "flat/video/requests/mahjong-rumble-minimax-h3-v2.json",
+  "review": {
+    "status": "reviewed_experimental_concept",
+    "summary": "Three highlighted birds are selected and clear, Match0→1 and illustrative$21.00 appear. Originalflatpassart retained; gravity/finaltileidentities differ from verified originalplan.",
+    "limitations": [
+      "Experimentalflatstylepass supersededbyuserstyle-preservationdirection.",
+      "Columns do not settle intoexactverifiedsix-rowarrangement; notgameplayproof.",
+      "PlayNow appears; disclosure retained.",
+      "Audio stream present,notauditioned."
+    ]
+  },
+  "prior_attempts": [
+    {
+      "slug": "mahjong-rumble",
+      "attempt": "seedance-v1",
+      "status": "failed",
+      "model": "video-seedance-2-5",
+      "error": "ContentBlocked",
+      "details": [
+        "The user prompt references a specific trademarked game title 'Mahjong Rumble'."
+      ],
+      "archive_location": "Local archive only"
+    },
+    {
+      "slug": "mahjong-rumble",
+      "attempt": "gemini-omni-v1",
+      "status": "failed",
+      "model": "video-gemini-omni-1-2-flash",
+      "error": "ContentBlocked",
+      "details": [
+        "The prompt references the specific brand-associated title and game Mahjong Rumble."
+      ],
+      "archive_location": "Local archive only"
+    }
+  ]
+}

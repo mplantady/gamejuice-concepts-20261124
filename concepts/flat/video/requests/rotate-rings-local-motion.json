@@ -1,0 +1,14 @@
+{
+  "prompt": "12-second flat portrait local motion mockup. Exact opening hold. Rotate only the indicated far-left third-row ring 6 counterclockwise 120 degrees around its fixed center, from source -90 to +30 degrees. Release at its sole coupling. Keep the owner ring-10 connector and all other eleven rings and links stationary. Ring 6 escapes outward left/slightly down and fades. IQ90 becomes95; briefly show source Good then clear. Hold partial result. No victory. Short flat ink ticks, crisp unlock click and local swoosh, sparse original music. Local illustration compositing; not recorded gameplay or a rebuilt game. Ring 6 is reconstructed with a rigid solid-color contour matching its approved footprint; previously hidden background under the ring, hand and tutorial arrow is locally reconstructed. All other rings and connectors remain source pixels. Ring 6 rotates 120 degrees counterclockwise to the +30-degree source orientation, then escapes left and slightly down. Approved artwork has inherited tonal variation. Animation adds no glow, cast/contact shadows, gradients or global lighting. Original synthesized music and synchronized SFX; no narration.",
+  "duration": 12,
+  "resolution": "1080x1920",
+  "audio": "Original synthesized stereo music and SFX; no narration.",
+  "method": "local_animation",
+  "implementation_constraints": [
+    "Local illustration compositing; not recorded gameplay or a rebuilt game.",
+    "Ring 6 is reconstructed with a rigid solid-color contour matching its approved footprint; previously hidden background under the ring, hand and tutorial arrow is locally reconstructed.",
+    "All other rings and connectors remain source pixels. Ring 6 rotates 120 degrees counterclockwise to the +30-degree source orientation, then escapes left and slightly down.",
+    "Approved artwork has inherited tonal variation. Animation adds no glow, cast/contact shadows, gradients or global lighting.",
+    "Original synthesized music and synchronized SFX; no narration."
+  ]
+}

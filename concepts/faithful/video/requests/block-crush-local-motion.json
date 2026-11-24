@@ -1,0 +1,207 @@
+{
+  "prompt": "Create a 12-second portrait gameplay concept from the supplied polished reference. Preserve this game's existing visual language throughout: flat elements stay flat; shaded elements retain the same kind of shading, material, depth and lighting. Never convert the game to another illustration/rendering style. The reference is the exact opening layout and inventory. Keep every fixed HUD word, number, functional color, camera projection, board boundary and character identity, except the explicitly authorized state updates below.\n\nThe creative priority is a striking improvement in GAME FEEL through ANIMATION, VFX AND AUDIO. Direct a beautifully timed, readable demonstration of the supplied legal moves: a clear anticipation, decisive travel, a satisfying contact/snap, an expressive but controlled settle and a quiet final-state hold. Make each interaction feel authored and responsive. Character actions may include a short blink, wingbeat, ear flick or gentle squash within their existing footprint; rigid tiles/cards/rings/board pieces remain rigid. No new gameplay action, extra piece, refill, combo, victory or reward.\n\nVFX must speak the same visual language as the original. For flat artwork use short graphic strokes, opaque colored ticks and clean shape bursts. For shaded artwork use compact material-appropriate contact effects and existing-style highlights/soft particles. Do not introduce dimensional shadows, bloom or photoreal lighting to flat art. Do not flatten a shaded game. Localize accents to the actual touch, landing, merge or release; keep symbols legible and clear effects quickly. Keep the full screen and HUD visible. Board/puzzle cameras remain locked; an impact-heavy 3D game may have one extremely small recoil with immediate exact return, never a zoom, orbit or crop.\n\nAudio carries equal craft: a distinct input sound, short motion accent, crisp material-specific contact and brief rewarding resolution for each real event, with clear rhythmic spacing. Include the supplied concise mechanics narration, natural and intelligible, with original understated music ducked beneath it and no recognizable tune. Avoid a constant wall of sound or a victory fanfare for partial progress. Sync accents to visible contact frames. The result should feel substantially more responsive and satisfying while unmistakably remaining the same game.\n\nExecute only the following verified input/state sequence. Show each moved object continuously from its source to the correct destination. Preserve all unrelated pieces, slot counts, order, links, shadows and HUD values. Hold the exact specified partial result at the end. This is a look-and-feel proposal, not evidence of a Unity implementation.\n\nBlock Crush: exactly the three rigid placements listed below. Add 9, 9 and 8 cells, with no overlap, completed row/column, clear, target decrement or new tray. Preserve native gold shading and original symbols. Voiceover: Find the fit. Place each shape. Fill a row or column to clear it.",
+  "duration": 12,
+  "width": 1080,
+  "height": 1920,
+  "fps": 30,
+  "method": "local_motion",
+  "label": "Native-style local motion mockup; deterministic still animation, not engine gameplay.",
+  "timeline": [
+    {
+      "seconds": [
+        0,
+        1.5
+      ],
+      "action": "Hold the complete approved native-style starting image: 14 board cells, three trays, 18/26/10."
+    },
+    {
+      "seconds": [
+        1.5,
+        3.75
+      ],
+      "action": "Left rigid 3×3 tray with top-middle heart moves to rows6–8/columns1–3, all nine cells land together."
+    },
+    {
+      "seconds": [
+        4.25,
+        6.5
+      ],
+      "action": "Right rigid 3×3 tray with top-right heart moves to rows1–3/columns6–8, all nine cells land together."
+    },
+    {
+      "seconds": [
+        7,
+        9.25
+      ],
+      "action": "Middle rigid eight-cell green piece moves to r3c5; r4c3,c4,c5; r5c4,c5,c6; r6c4. No rotation."
+    },
+    {
+      "seconds": [
+        9.25,
+        12
+      ],
+      "action": "Hold the third placement instant, 40 occupied cells and empty old trays; before any next tray deal. No full row/column, clear, target decrement or reward."
+    }
+  ],
+  "state_checks": {
+    "initial_occupied": 14,
+    "placements": [
+      [
+        [
+          6,
+          1
+        ],
+        [
+          6,
+          2
+        ],
+        [
+          6,
+          3
+        ],
+        [
+          7,
+          1
+        ],
+        [
+          7,
+          2
+        ],
+        [
+          7,
+          3
+        ],
+        [
+          8,
+          1
+        ],
+        [
+          8,
+          2
+        ],
+        [
+          8,
+          3
+        ]
+      ],
+      [
+        [
+          1,
+          6
+        ],
+        [
+          1,
+          7
+        ],
+        [
+          1,
+          8
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          2,
+          7
+        ],
+        [
+          2,
+          8
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          3,
+          7
+        ],
+        [
+          3,
+          8
+        ]
+      ],
+      [
+        [
+          3,
+          5
+        ],
+        [
+          4,
+          3
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          5,
+          4
+        ],
+        [
+          5,
+          5
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          4
+        ]
+      ]
+    ],
+    "states_after_placements": [
+      {
+        "occupied_cells": 23,
+        "cleared_rows": [],
+        "cleared_columns": []
+      },
+      {
+        "occupied_cells": 32,
+        "cleared_rows": [],
+        "cleared_columns": []
+      },
+      {
+        "occupied_cells": 40,
+        "cleared_rows": [],
+        "cleared_columns": []
+      }
+    ],
+    "added_cells": 26,
+    "final_occupied": 40,
+    "targets_before": [
+      18,
+      26,
+      10
+    ],
+    "targets_after": [
+      18,
+      26,
+      10
+    ],
+    "replacement_tray_dealt": false
+  },
+  "limitations": [
+    "Deterministic still-image motion mockup; not captured engine gameplay or an implemented playable.",
+    "Tray artwork is cropped and uniformly scaled to board-cell size; small bevel/crop-edge differences from original board tile art remain.",
+    "Quiet brown backing hidden by the original tray pieces is approximated from source shading samples.",
+    "The ending intentionally holds at the third snap before the runtime next-tray deal. No completed line or collection is implied."
+  ],
+  "voiceover": "Find the fit. Place each shape. Fill a row or column to clear it.",
+  "narration": [
+    {
+      "file": "voice-full.aiff",
+      "start": 0.65,
+      "text": "Find the fit. Place each shape. Fill a row or column to clear it.",
+      "duration": 3.9140208333333333,
+      "voice": "Installed generic macOS Samantha"
+    }
+  ]
+}

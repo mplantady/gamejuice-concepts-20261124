@@ -1,0 +1,22 @@
+{
+  "slug": "block-crush",
+  "attempt": "seedance-v1",
+  "status": "generated",
+  "model": "video-seedance-2-5",
+  "file": "flat/video/clips/block-crush-seedance-v1.mp4",
+  "width": 1078,
+  "height": 1920,
+  "duration": 12.064,
+  "audio": true,
+  "input_image": "flat/images/block-crush-flat-v2.png",
+  "prompt_file": "flat/video/requests/block-crush-seedance-v1.json",
+  "review": {
+    "status": "reviewed_archived_experiment",
+    "summary": "This superseded flat-style experiment changes the middle piece geometry and invents partial-cell placements. It is retained for comparison, not selected for implementation.",
+    "limitations": [
+      "The board-wide glow and piece subdivision depart from the flat motion direction.",
+      "The user subsequently requested original-style preservation; the selected corrected pass is Style faithful · Pass3.",
+      "Audio stream is present; not auditioned."
+    ]
+  }
+}

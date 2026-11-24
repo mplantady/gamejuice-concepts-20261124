@@ -1,0 +1,63 @@
+{
+  "slug": "rotate-rings",
+  "attempt": "local-motion-v1",
+  "status": "generated",
+  "model": "local-motion-mockup",
+  "method": "local_animation",
+  "file": "faithful/video/clips/rotate-rings-local-motion-v1.mp4",
+  "width": 1080,
+  "height": 1920,
+  "duration": 12.0,
+  "audio": true,
+  "input_image": "faithful/images/rotate-rings-faithful-v1.png",
+  "prompt_file": "faithful/video/requests/rotate-rings-local-motion.json",
+  "review": {
+    "reviewed": true,
+    "status": "reviewed_local_mockup",
+    "summary": "Correct ring6 fixed-center120-degree counterclockwise rotation to absolute+30-degree release. Its opening aligns with the lower-right coupling; only ring6 escapes left/down. All other eleven rings and links remain stationary. IQ90→95 and brief Good clear into the final partial-result hold.",
+    "visual_review": "Six encoded frames at0,3.3,5.05,6.1,7.4,11.5 seconds compared with the selected native image and source plan. Full headline/footer retained, no extra ring removal or endcard.",
+    "native_style": "Moving ring retains metallic copper shading using cross-sectional colors sampled from unobstructed source arcs. Fixed copper/bronze/wood rings keep their original source pixels. Small local release ticks and synchronized metallic sounds emphasize the one unlock.",
+    "audio_review": "Exact mechanics narration generated with installed Samantha voice and mixed with original synthesized music, input/friction ticks, unlock click, release swoosh and brief chime. AAC stereo, non-silence and peak levels verified; audio was not independently listened to.",
+    "audio_audit": {
+      "absolute_peak": 0.5835311412811279,
+      "rms": 0.08615973591804504,
+      "listened": false
+    },
+    "fidelity_accepted": true,
+    "limitations": [
+      "The moving ring uses a rigid reconstructed contour and sampled shading, so it is a local rendering approximation rather than an extracted3D mesh or original gameplay capture.",
+      "Hidden background/tutorial coverage and pointer cutout are locally reconstructed. Minor edge/patch differences remain at full size.",
+      "This is a presentation mockup, not a rebuilt Unity game."
+    ],
+    "checks": [
+      "faithful/video/checks/rotate-rings-local-motion/contact.jpg",
+      "faithful/video/checks/rotate-rings-local-motion/encoded-5.05.jpg",
+      "faithful/video/checks/rotate-rings-local-motion/encoded-11.5.jpg"
+    ]
+  },
+  "prior_attempts": [
+    {
+      "slug": "rotate-rings",
+      "attempt": "seedance-v1",
+      "status": "generated",
+      "model": "video-seedance-2-5",
+      "width": 1078,
+      "height": 1920,
+      "duration": 12.064,
+      "audio": true,
+      "review": {
+        "reviewed": true,
+        "status": "reviewed_with_major_fidelity_issues",
+        "summary": "Correct ring6 is removed and IQ95/eleven-ring final state is shown, but the release motion does not align its gap with the actual coupling.",
+        "visual_review": "Six encoded frames and target closeups show the gap oscillating near left/top-left; at release the ring passes its closed section through the lower-right coupling. The target center also drifts before release. Other ring centers remain broadly stable and metallic style is preserved.",
+        "fidelity_accepted": false,
+        "audio_review": "Audio stream confirmed; not listened to.",
+        "checks": [
+          "faithful/video/checks/rotate-rings-native-review/contact.jpg",
+          "faithful/video/checks/rotate-rings-native-review/ring-close.jpg"
+        ]
+      },
+      "archive_location": "Local archive only"
+    }
+  ]
+}

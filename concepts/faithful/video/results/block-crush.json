@@ -1,0 +1,96 @@
+{
+  "slug": "block-crush",
+  "attempt": "local-motion",
+  "status": "generated",
+  "model": "local-motion-mockup",
+  "method": "local_motion",
+  "file": "faithful/video/clips/block-crush-local-motion-v1.mp4",
+  "width": 1080,
+  "height": 1920,
+  "duration": 12.0,
+  "audio": true,
+  "input_image": "faithful/images/block-crush-faithful-v1.png",
+  "prompt_file": "faithful/video/requests/block-crush-local-motion.json",
+  "review": {
+    "status": "reviewed_with_limitations",
+    "reviewed_at": "2026-11-24T17:05:52.221889+00:00",
+    "summary": "The three rigid native-gold placements occupy the exact prescribed footprints; 14 starting cells become 23, 32 and 40 with no full row or column.",
+    "sampled_seconds": [
+      0,
+      3.95,
+      6.7,
+      11.5
+    ],
+    "first_frame": "Full faithful source retained, with 14 starting board cells, all three trays, existing native shading/foliage, settings and 18/26/10.",
+    "state_fidelity": "Left 3×3 lands at r6–r8/c1–c3, heart at r6c2. Right 3×3 lands at r1–r3/c6–c8, heart at r1c8. Middle eight-cell shape lands at r3c5; r4c3,c4,c5; r5c4,c5,c6; r6c4. Groups remain rigid, with no rotation or occupied-cell overlap.",
+    "final_state": "Exactly 26 new cells, 40 occupied total. All eight green collectibles, both new hearts and every initial collectible remain in their expected cells. Targets stay 18/26/10. No row/column clears, next tray, collection flight, reward or win.",
+    "game_feel": "Short pickup anticipation, continuous grouped motion, precise cell snap, brief small native-gold contact strokes, separate pickup/placement sounds and concise mechanics narration. Full camera/HUD remain fixed.",
+    "native_style": "Existing golden bevels, shaded gems and native foliage remain. Source tray crops are scaled to the correct board size; no flat restyle or broad light ripple.",
+    "limitations": [
+      "Local still-image animation, not original-engine gameplay or an implemented playable.",
+      "Small tray-to-board crop/bevel differences remain because the saved small tray tiles are enlarged.",
+      "Brown background formerly hidden by trays is reconstructed from observed source shading and blended at the edges.",
+      "The ending intentionally holds at the third snap before the runtime next-tray deal. Audio was not auditioned."
+    ],
+    "audio_review": "AAC stereo 48 kHz, 12 seconds; non-silent narration/effects and zero clipped decoded samples verified. Not listened to.",
+    "technical": {
+      "duration": 12.0,
+      "width": 1080,
+      "height": 1920,
+      "fps": "30/1",
+      "video_codec": "h264",
+      "audio_codec": "aac",
+      "audio_duration": 12.0,
+      "video_frames": 360,
+      "audio": {
+        "channels": 2,
+        "sample_rate": 48000,
+        "decoded_peak": 0.4278564453125,
+        "decoded_rms": 0.0432976498858999,
+        "clipped_samples": 0
+      },
+      "full_decode_errors": 0,
+      "audio_listened": false,
+      "file_sha256_matches": true,
+      "input_sha256_matches": true,
+      "request_sha256_matches": true
+    },
+    "paid_attempt_preservation": "Paid Seedance clip, immutable result, quote/log data and before-local archive remain. Prior charge is 1,149 points; this local clip charged zero.",
+    "frames": [
+      "faithful/video/checks/block-crush-local-motion/frame-0s.jpg",
+      "faithful/video/checks/block-crush-local-motion/frame-3.95s.jpg",
+      "faithful/video/checks/block-crush-local-motion/frame-6.7s.jpg",
+      "faithful/video/checks/block-crush-local-motion/frame-11.5s.jpg"
+    ]
+  },
+  "prior_attempts": [
+    {
+      "slug": "block-crush",
+      "attempt": "seedance-v1",
+      "status": "generated",
+      "model": "video-seedance-2-5",
+      "width": 1078,
+      "height": 1920,
+      "duration": 12.064,
+      "audio": true,
+      "review": {
+        "status": "rejected_state_fidelity",
+        "summary": "The middle green tray does not land as the required eight full-size board cells; the generated landing keeps an undersized subdivided cluster and adds a broad light ripple.",
+        "sampled_seconds": [
+          0,
+          3.9,
+          6.7,
+          9.5,
+          11.5
+        ],
+        "evidence": "faithful/video/checks/block-crush-seedance-review/contact.jpg",
+        "first_two_moves": "The left and right square placements look broadly consistent at sampled endpoints.",
+        "critical_failure": "At the third placement the eight-cell shape must fill r3c5; r4c3,c4,c5; r5c4,c5,c6; r6c4 with ordinary board-sized tiles. The generated smaller packed green cluster does not satisfy this footprint.",
+        "vfx": "The board-spanning light ripple masks the faulty third landing rather than keeping it locally readable.",
+        "audio_review": "Audio stream exists; not listened to.",
+        "preservation": "Paid clip, immutable attempt record and 1,149-point charge remain preserved; local replacement charges zero."
+      },
+      "archive_location": "Local archive only"
+    }
+  ]
+}

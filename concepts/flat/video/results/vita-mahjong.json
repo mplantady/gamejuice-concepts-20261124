@@ -1,0 +1,85 @@
+{
+  "slug": "vita-mahjong",
+  "attempt": "local-motion",
+  "status": "generated",
+  "model": "local-motion-mockup",
+  "method": "local_animation",
+  "file": "flat/video/clips/vita-mahjong-local-motion-v1.mp4",
+  "width": 1080,
+  "height": 1920,
+  "duration": 12.0,
+  "audio": true,
+  "input_image": "flat/images/vita-mahjong-flat-v2.png",
+  "prompt_file": "flat/video/requests/vita-mahjong-local-motion.json",
+  "review": {
+    "status": "reviewed_local_mockup",
+    "verdict": "Verified planned state sequence in encoded samples; approved flat artwork retained with disclosed local reconstruction.",
+    "sampled_seconds": [
+      0,
+      3,
+      5.1,
+      7.3,
+      10.8
+    ],
+    "first_frame": "Full approved flat board, four purple locks, tutorial glove and Play Free CTA are present. No camera crop or new overlay.",
+    "action_and_causality": "One touch ring follows green 發 r5c6 left into r5c5. The r4–r6c5 vertical triple clears; only its r4c4–r4c5 lock releases. First gravity creates the female r6c5–r6c7 triple, then exactly those three clear before the second gravity step.",
+    "final_state": "The animated region starts with 17 tiles and ends with 11 after two triples. Final c5 contains red 中 at r5/r6; c6 has two-dot, wreath, female, wreath at r3–r6; c7 has two-dot, two-dot, wreath, green 發, female at r2–r6. The three unrelated locks, remaining board and Play Free stay present; no replacement tiles, win or reward.",
+    "visual_effects": "Crisp flat input rings, outlines and small drawn ticks accompany motion. No additional drop shadow, glow, bevel, lighting change or camera shake was added. Tile silhouettes and thin ink contours remain readable.",
+    "ui_and_identity": "Fixed board geometry and original flat tile identity families retained. Same-symbol donors repair artwork previously hidden by the glove/lock; unlocked red tile uses a matching red-symbol donor.",
+    "limitations": [
+      "This is a deterministic still-image motion mockup, not engine gameplay or a model-generated video.",
+      "Vacated board uses a uniform source-matched green fill; the repaired background and occluded tile pixels are approximations.",
+      "Identical-symbol donor crops can differ in micro-detail from the original hidden tile; existing mild fill variation remains elsewhere.",
+      "Visual review used five encoded frame samples, source comparison and deterministic transition definitions; audio was not auditioned."
+    ],
+    "reviewed_at": "2026-11-24T16:39:33.292549+00:00",
+    "frames": [
+      "flat/video/checks/vita-mahjong-local-motion/frame-0s.jpg",
+      "flat/video/checks/vita-mahjong-local-motion/frame-3s.jpg",
+      "flat/video/checks/vita-mahjong-local-motion/frame-5.1s.jpg",
+      "flat/video/checks/vita-mahjong-local-motion/frame-7.3s.jpg",
+      "flat/video/checks/vita-mahjong-local-motion/frame-10.8s.jpg"
+    ],
+    "audio": "AAC stereo 48 kHz, 12 seconds, non-silent signal and zero clipped decoded samples verified; narration and synthesized effects are in the generated soundtrack. Not listened to.",
+    "technical": {
+      "video": [
+        {
+          "codec_type": "video",
+          "codec_name": "h264",
+          "width": 1080,
+          "height": 1920,
+          "r_frame_rate": "30/1",
+          "duration": "12.000000",
+          "nb_frames": "360",
+          "sample_rate": null,
+          "channels": null
+        },
+        {
+          "codec_type": "audio",
+          "codec_name": "aac",
+          "width": null,
+          "height": null,
+          "r_frame_rate": "0/0",
+          "duration": "12.000000",
+          "nb_frames": "564",
+          "sample_rate": "48000",
+          "channels": 2
+        }
+      ],
+      "audio_analysis": {
+        "channels": 2,
+        "sample_rate": 48000,
+        "frames": 576512,
+        "peak": 0.55987548828125,
+        "rms": 0.06975979890558506,
+        "clipped_samples": 0
+      },
+      "file_sha256_matches": true,
+      "source_sha256_matches": true,
+      "request_sha256_matches": true,
+      "full_decode_errors": 0,
+      "audio_listened": false
+    },
+    "technical_review_file": "flat/video/checks/vita-mahjong-local-motion/technical-review.json"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "slug": "royal-smash",
+  "attempt": "seedance-v1",
+  "status": "generated",
+  "model": "video-seedance-2-5",
+  "file": "flat/video/clips/royal-smash-seedance-v1.mp4",
+  "width": 1080,
+  "height": 1918,
+  "duration": 12.041667,
+  "audio": true,
+  "input_image": "flat/images/royal-smash-flat-v2.png",
+  "prompt_file": "flat/video/requests/royal-smash-seedance-v1.json",
+  "review": {
+    "status": "reviewed_concept_with_limitations",
+    "summary": "One shot and Balls 20→19 remain readable. The hand-drawn blue structure stays recognizable, with a partial result and no win overlay. The generated collapse differs from the verified original piece-by-piece outcome.",
+    "visual_review": "Four encoded samples inspected against the original plan. The camera and Play Now remain fixed; the upper cap and central section fall away. The final side arms/bottom beam/support remain, but the short bottom-center can and some lower side pieces are also removed. Thin sparks, impact smoke and water ripples are model stylization.",
+    "fidelity_limits": [
+      "Concept animation only; not a deterministic replay. The final lower-piece inventory is not exact.",
+      "Existing cel fill variance and perspective remain from the supplied image; impact effects are generated rather than fully flat vector strokes.",
+      "Only sampled frames were visually inspected. Audio stream verified but not listened to."
+    ],
+    "audio_review": "AAC stream present; narration/sound quality not independently auditioned."
+  }
+}

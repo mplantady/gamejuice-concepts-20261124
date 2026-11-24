@@ -1,0 +1,40 @@
+{
+  "slug": "cat-merge",
+  "attempt": "local-motion-v1",
+  "status": "generated",
+  "model": "local-motion-mockup",
+  "method": "local_animation",
+  "file": "faithful/video/clips/cat-merge-local-motion-v1.mp4",
+  "width": 1080,
+  "height": 1920,
+  "duration": 12.0,
+  "audio": true,
+  "input_image": "faithful/images/cat-merge-faithful-v1.png",
+  "prompt_file": "faithful/video/requests/cat-merge-local-motion.json",
+  "review": {
+    "reviewed": true,
+    "status": "reviewed_local_mockup",
+    "method": "Locally animated selected illustration and FFmpeg, preserving the original rendering style; no paid video model calls.",
+    "audio_review": "Exact mechanics narration generated with installed Samantha voice, mixed with original synthesized stereo music and event-synchronized SFX. AAC stream, non-silence and peak levels verified. Audio was not independently listened to.",
+    "narration": "Slide to aim, then release. Matching cats merge into the next larger cat.",
+    "checks": [
+      "faithful/video/checks/cat-merge-local-motion/contact.jpg",
+      "faithful/video/checks/cat-merge-local-motion/encoded-11.5.jpg"
+    ],
+    "audio_audit": {
+      "audio_samples": 1153024,
+      "absolute_peak": 0.6119691133499146,
+      "rms": 0.07664144039154053,
+      "listened": false
+    },
+    "fidelity_accepted": true,
+    "summary": "One horizontal aim and drop. Exactly two brown/white tier11 cats are replaced by one larger white tier12; the existing white, calico and black cats remain.5000, RECEIVE and lower disclosure stay fixed.",
+    "layout": "Opening chosen image retained. Six encoded frames at0,3.4,6.4,7.7,8.4,11.5 seconds inspected; no duplicated new cat, extra drop, chain or reward.",
+    "game_feel": "Original glove demonstrates aim, accelerating fall reaches one contact, local squash and fusion pop reveal the next tier, short graphic stars clear into a quiet partial-result hold. Native simple cat artwork and shaded UI/glove remain.",
+    "limitations": [
+      "The hidden background and lower brown cat face are locally reconstructed; the unobstructed suspended same-tier cat provides its replacement artwork.",
+      "Minor outline/cutout seams remain near the formerly occluded pile. The new white cat is intentionally held at the first fusion midpoint before later contacts; this is not a physically settled pile.",
+      "This is a presentation mockup, not gameplay recorded from the original or a rebuilt Unity game."
+    ]
+  }
+}

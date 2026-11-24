@@ -1,0 +1,227 @@
+{
+  "prompt": "Create a 12-second portrait gameplay concept from the supplied polished reference. Preserve this game's existing visual language throughout: flat elements stay flat; shaded elements retain the same kind of shading, material, depth and lighting. Never convert the game to another illustration/rendering style. The reference is the exact opening layout and inventory. Keep every fixed HUD word, number, functional color, camera projection, board boundary and character identity, except the explicitly authorized state updates below.\n\nThe creative priority is a striking improvement in GAME FEEL through ANIMATION, VFX AND AUDIO. Direct a beautifully timed, readable demonstration of the supplied legal moves: a clear anticipation, decisive travel, a satisfying contact/snap, an expressive but controlled settle and a quiet final-state hold. Make each interaction feel authored and responsive. Character actions may include a short blink, wingbeat, ear flick or gentle squash within their existing footprint; rigid tiles/cards/rings/board pieces remain rigid. No new gameplay action, extra piece, refill, combo, victory or reward.\n\nVFX must speak the same visual language as the original. For flat artwork use short graphic strokes, opaque colored ticks and clean shape bursts. For shaded artwork use compact material-appropriate contact effects and existing-style highlights/soft particles. Do not introduce dimensional shadows, bloom or photoreal lighting to flat art. Do not flatten a shaded game. Localize accents to the actual touch, landing, merge or release; keep symbols legible and clear effects quickly. Keep the full screen and HUD visible. Board/puzzle cameras remain locked; an impact-heavy 3D game may have one extremely small recoil with immediate exact return, never a zoom, orbit or crop.\n\nAudio carries equal craft: a distinct input sound, short motion accent, crisp material-specific contact and brief rewarding resolution for each real event, with clear rhythmic spacing. Include the supplied concise mechanics narration, natural and intelligible, with original understated music ducked beneath it and no recognizable tune. Avoid a constant wall of sound or a victory fanfare for partial progress. Sync accents to visible contact frames. The result should feel substantially more responsive and satisfying while unmistakably remaining the same game.\n\nExecute only the following verified input/state sequence. Show each moved object continuously from its source to the correct destination. Preserve all unrelated pieces, slot counts, order, links, shadows and HUD values. Hold the exact specified partial result at the end. This is a look-and-feel proposal, not evidence of a Unity implementation.\n\nVita Mahjong: one r5c6 to r5c5 slide; green vertical triple, one lock release, gravity, female horizontal triple, gravity. Preserve the exact survivor identities in this request. Voiceover: Slide to match three. Watch one move set off a satisfying chain.",
+  "duration": 12,
+  "resolution": "1080x1920",
+  "fps": 30,
+  "audio": "Installed generic Samantha narration; original synthesized ceramic clicks, jade/chord notes, lock tick, descending cascades and quiet music bed.",
+  "method": "local_animation",
+  "title": "Vita Mahjong — native-style local motion mockup",
+  "timeline": [
+    {
+      "seconds": [
+        0,
+        1.5
+      ],
+      "action": "Hold the exact approved faithful native-style image, full frame."
+    },
+    {
+      "seconds": [
+        1.5,
+        1.9
+      ],
+      "action": "Fade static tutorial glove into same-image reconstructed tiles."
+    },
+    {
+      "seconds": [
+        1.95,
+        3.2
+      ],
+      "action": "Touch ring follows the one legal input."
+    },
+    {
+      "seconds": [
+        2.25,
+        3.05
+      ],
+      "action": "Slide original r5c6 green 發 left to r5c5."
+    },
+    {
+      "seconds": [
+        3.25,
+        4.25
+      ],
+      "action": "Outline vertical green 發 r4c5, r5c5, r6c5."
+    },
+    {
+      "seconds": [
+        4.25,
+        4.55
+      ],
+      "action": "Clear exactly those three green tiles."
+    },
+    {
+      "seconds": [
+        4.3,
+        4.6
+      ],
+      "action": "Release only the purple lock spanning r4c4–r4c5."
+    },
+    {
+      "seconds": [
+        4.95,
+        5.85
+      ],
+      "action": "First gravity step",
+      "identity_destinations": {
+        "r3c5": [
+          6,
+          5
+        ],
+        "r2c5": [
+          5,
+          5
+        ],
+        "r1c5": [
+          4,
+          5
+        ],
+        "r4c6": [
+          5,
+          6
+        ],
+        "r3c6": [
+          4,
+          6
+        ],
+        "r2c6": [
+          3,
+          6
+        ],
+        "r1c6": [
+          2,
+          6
+        ]
+      }
+    },
+    {
+      "seconds": [
+        6.55,
+        7.25
+      ],
+      "action": "Outline female-character triple r6c5–r6c7."
+    },
+    {
+      "seconds": [
+        7.25,
+        7.6
+      ],
+      "action": "Clear exactly the three female-character tiles."
+    },
+    {
+      "seconds": [
+        8.15,
+        9.1
+      ],
+      "action": "Second gravity step",
+      "identity_destinations": {
+        "r2c5": [
+          6,
+          5
+        ],
+        "r1c5": [
+          5,
+          5
+        ],
+        "r4c6": [
+          6,
+          6
+        ],
+        "r3c6": [
+          5,
+          6
+        ],
+        "r2c6": [
+          4,
+          6
+        ],
+        "r1c6": [
+          3,
+          6
+        ],
+        "r5c7": [
+          6,
+          7
+        ],
+        "r4c7": [
+          5,
+          7
+        ],
+        "r3c7": [
+          4,
+          7
+        ],
+        "r2c7": [
+          3,
+          7
+        ],
+        "r1c7": [
+          2,
+          7
+        ]
+      }
+    },
+    {
+      "seconds": [
+        9.1,
+        12
+      ],
+      "action": "Hold settled board, with remaining three locks and Play Free CTA; no new tiles or win."
+    }
+  ],
+  "art_reconstruction": {
+    "method": "Crop approved faithful native-style tile art; same-symbol donors repair glove/lock occlusion; a smooth source-sampled shaded green backing appears behind vacated tiles. Existing tile shading and gold undersides remain; compact event-bound particles and outlines add feedback without a scene-wide lighting change.",
+    "donors": {
+      "r4c5": [
+        4,
+        7
+      ],
+      "r5c6": [
+        4,
+        7
+      ],
+      "r6c5": [
+        4,
+        7
+      ],
+      "r6c6": [
+        6,
+        7
+      ]
+    },
+    "unlocked_r4c4_donor": [
+      2,
+      5
+    ]
+  },
+  "state_checks": {
+    "animated_initial_tiles": 17,
+    "first_clear_count": 3,
+    "second_clear_count": 3,
+    "animated_survivors": 11,
+    "locks_released": 1,
+    "locks_retained": 3,
+    "replacement_tiles_spawned": 0,
+    "victory_or_rewards_added": false
+  },
+  "limitations": [
+    "Locally animated mockup, not an engine recording or a model-generated video.",
+    "Covered background is approximated from observed source green shading; occluded tile art uses identical-symbol donors.",
+    "Retains the approved faithful native-style image and Play Free CTA. Existing minor image fill variation is preserved outside reconstructed areas.",
+    "Timing and effects are a design study; no implementation or playable interaction is included."
+  ],
+  "voiceover": "Slide to match three. Watch one move set off a satisfying chain.",
+  "narration": [
+    {
+      "start": 0.65,
+      "duration": 1.2683541666666667,
+      "voice": "macOS Samantha",
+      "text": "Slide to match three."
+    },
+    {
+      "start": 5.55,
+      "duration": 2.568,
+      "voice": "macOS Samantha",
+      "text": "Watch one move set off a satisfying chain."
+    }
+  ]
+}

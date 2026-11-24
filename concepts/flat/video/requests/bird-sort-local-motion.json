@@ -1,0 +1,14 @@
+{
+  "prompt": "12-second portrait local flat motion. Exact approved opening. Move one blue/yellow macaw R3 to L4, making five mixed birds without clearing. Move one orange-crested bird R3 to L1, making four. Move exactly two red/yellow birds R3 to the outer-right two positions of empty R4, leaving the far macaw alone R3. All other branches, birds and footer fixed. Small flat wingbeats, anticipation, landing ticks, sparse original plucked music and synchronized taps/chirps. No added shadows, glow, score, extra move, clear or victory.",
+  "duration": 12,
+  "resolution": "1080x1920",
+  "audio": "Original synthesized stereo music and SFX; no narration.",
+  "method": "local_animation",
+  "limitations": [
+    "A deterministic still-image mockup, not recorded or playable gameplay.",
+    "R3 hidden sky/trunk/perch pixels are locally reconstructed; source/landing bird sprites reuse same-species artwork from the still.",
+    "R4 landing uses the recorded original outer-right positions rather than the earlier AI clip inner-left positions.",
+    "Audio is original synthesized music, taps, flutter and chirps; no narration or downloaded samples.",
+    "Approved first frame retained; later source/destination sprite positions are controlled locally. Encoded-frame review is saved separately."
+  ]
+}

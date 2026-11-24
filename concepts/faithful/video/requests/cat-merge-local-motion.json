@@ -1,0 +1,34 @@
+{
+  "prompt": "Create a 12-second portrait gameplay concept from the supplied polished reference. Preserve this game's existing visual language throughout: flat elements stay flat; shaded elements retain the same kind of shading, material, depth and lighting. Never convert the game to another illustration/rendering style. The reference is the exact opening layout and inventory. Keep every fixed HUD word, number, functional color, camera projection, board boundary and character identity, except the explicitly authorized state updates below.\n\nThe creative priority is a striking improvement in GAME FEEL through ANIMATION, VFX AND AUDIO. Direct a beautifully timed, readable demonstration of the supplied legal moves: a clear anticipation, decisive travel, a satisfying contact/snap, an expressive but controlled settle and a quiet final-state hold. Make each interaction feel authored and responsive. Character actions may include a short blink, wingbeat, ear flick or gentle squash within their existing footprint; rigid tiles/cards/rings/board pieces remain rigid. No new gameplay action, extra piece, refill, combo, victory or reward.\n\nVFX must speak the same visual language as the original. For flat artwork use short graphic strokes, opaque colored ticks and clean shape bursts. For shaded artwork use compact material-appropriate contact effects and existing-style highlights/soft particles. Do not introduce dimensional shadows, bloom or photoreal lighting to flat art. Do not flatten a shaded game. Localize accents to the actual touch, landing, merge or release; keep symbols legible and clear effects quickly. Keep the full screen and HUD visible. Board/puzzle cameras remain locked; an impact-heavy 3D game may have one extremely small recoil with immediate exact return, never a zoom, orbit or crop.\n\nAudio carries equal craft: a distinct input sound, short motion accent, crisp material-specific contact and brief rewarding resolution for each real event, with clear rhythmic spacing. Include the supplied concise mechanics narration, natural and intelligible, with original understated music ducked beneath it and no recognizable tune. Avoid a constant wall of sound or a victory fanfare for partial progress. Sync accents to visible contact frames. The result should feel substantially more responsive and satisfying while unmistakably remaining the same game.\n\nExecute only the following verified input/state sequence. Show each moved object continuously from its source to the correct destination. Preserve all unrelated pieces, slot counts, order, links, shadows and HUD values. Hold the exact specified partial result at the end. This is a look-and-feel proposal, not evidence of a Unity implementation.\n\nHold approved frame. Slide suspended tier-11 brown/white cat horizontally right above the matching upper-right pile cat, release and fall. On contact, replace exactly both tier11 cats with one larger white tier12, hold the first fusion before any later chain. Other three cats, walls and UI unchanged. Flat ink stars and short motion lines only, no glow or added shadow. Local compositing of the chosen style-preserving image, not recorded gameplay or a rebuilt game. Hidden cream background under the pointer and two moving brown cats is locally reconstructed. The obscured lower brown face reuses the matching suspended cat artwork. The initial four-cat pile has one white, one brown/white, one calico and one black cat. Only the two matching brown/white cats fuse into one larger white tier-12 cat; the three unrelated cats stay fixed. End freezes the first fusion before later contacts or possible chain reactions; it is not a settled physical outcome. Selected image tonal variation remains; no added shadows, glow, new reward or currency claim. Existing 5000, RECEIVE and lower disclaimer remain.",
+  "duration": 12,
+  "resolution": "1080x1920",
+  "audio": "Original synthesized stereo music and synchronized aim/drop/fusion SFX.",
+  "method": "local_animation",
+  "action_sequence": [
+    {
+      "seconds": "0–2",
+      "action": "Establish the reference's second-map state: score 5000, RECEIVE button, suspended brown-and-white smiling cat, and the four cats already in the brick container. Preserve their identities and arrangement."
+    },
+    {
+      "seconds": "2–5",
+      "action": "The existing hand demonstrates aiming by sliding the suspended brown-and-white cat slightly right, directly above the matching brown-and-white cat near the upper-right of the pile. Keep the motion horizontal until release."
+    },
+    {
+      "seconds": "5–9",
+      "action": "Release and show the falling cat descend under gravity in presentation slow motion. The two brown-and-white cats make contact, squash and merge once into the next tier, a single larger white cat matching the existing white-cat tier in the pile."
+    },
+    {
+      "seconds": "9–12",
+      "action": "Expand the first fusion instant into a brief cinematic freeze/slow-motion reveal of the new white cat with a compact ring of stars. End at this first merge before later pile contacts, a chain reaction, level completion or payout overlay. The visible 5000 counter remains unchanged in this excerpt."
+    }
+  ],
+  "implementation_constraints": [
+    "Local compositing of the chosen style-preserving image, not recorded gameplay or a rebuilt game.",
+    "Hidden cream background under the pointer and two moving brown cats is locally reconstructed. The obscured lower brown face reuses the matching suspended cat artwork.",
+    "The initial four-cat pile has one white, one brown/white, one calico and one black cat. Only the two matching brown/white cats fuse into one larger white tier-12 cat; the three unrelated cats stay fixed.",
+    "End freezes the first fusion before later contacts or possible chain reactions; it is not a settled physical outcome.",
+    "Selected image tonal variation remains; no added shadows, glow, new reward or currency claim. Existing 5000, RECEIVE and lower disclaimer remain."
+  ],
+  "narration": "Slide to aim, then release. Matching cats merge into the next larger cat.",
+  "voice": "Samantha (installed macOS voice)"
+}

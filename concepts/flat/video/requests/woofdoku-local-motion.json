@@ -1,0 +1,92 @@
+{
+  "duration": 12,
+  "width": 1080,
+  "height": 1920,
+  "fps": 30,
+  "method": "local_motion",
+  "label": "Flat local motion mockup; deterministic still animation, not engine gameplay.",
+  "timeline": [
+    {
+      "seconds": [
+        0,
+        1.7
+      ],
+      "action": "Hold the approved full flat frame, 0/6 and three bones."
+    },
+    {
+      "seconds": [
+        1.7,
+        3.55
+      ],
+      "action": "Keep the original tutorial glove on the yellow r1c2 target."
+    },
+    {
+      "seconds": [
+        3.55,
+        3.85
+      ],
+      "action": "Two separate contacts on the same legal yellow cell; no drag."
+    },
+    {
+      "seconds": [
+        3.92,
+        4.3
+      ],
+      "action": "Place exactly one original-art dog in r1c2; change 0/6 to 1/6 once. Retain all three bones."
+    },
+    {
+      "seconds": [
+        3.92,
+        5.15
+      ],
+      "action": "Existing glove retreats then fades; three compact opaque tick marks resolve without a halo."
+    },
+    {
+      "seconds": [
+        5.15,
+        12
+      ],
+      "action": "Hold one dog, 1/6, 36 unchanged color cells, three bones, original rules and Double-click text. No other placement or mark."
+    }
+  ],
+  "state_checks": {
+    "board_rows": 6,
+    "board_columns": 6,
+    "dog_destination": [
+      1,
+      2
+    ],
+    "initial_dogs": 0,
+    "final_dogs": 1,
+    "counter": [
+      "0/6",
+      "1/6"
+    ],
+    "bones_before": 3,
+    "bones_after": 3,
+    "extra_marks": 0
+  },
+  "limitations": [
+    "Local still-image motion study, not captured engine gameplay or a rebuilt playable.",
+    "The glove cutout and hidden tile pixels are reconstructed locally using source cell art and a solid yellow fill; minor edge differences may remain.",
+    "The placed dog reuses the approved HUD illustration. Only the first counter numeral is locally typeset with a close font.",
+    "Existing mild source fill variation remains. No new glow, shadow, bevel, radiating halo, camera movement, dog, exclusion mark, life loss or win is added."
+  ],
+  "voiceover": "Double-tap the yellow square to place your first dog. One dog in each row, column and color. Dogs cannot touch.",
+  "narration": [
+    {
+      "file": "voice-action.aiff",
+      "start": 0.45,
+      "text": "Double-tap the yellow square to place your first dog.",
+      "duration": 2.6645833333333333,
+      "voice": "Installed generic macOS Samantha"
+    },
+    {
+      "file": "voice-rules.aiff",
+      "start": 4.9,
+      "text": "One dog in each row, column and color. Dogs cannot touch.",
+      "duration": 3.8101666666666665,
+      "voice": "Installed generic macOS Samantha"
+    }
+  ]
+}

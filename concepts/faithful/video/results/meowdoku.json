@@ -1,0 +1,62 @@
+{
+  "slug": "meowdoku",
+  "attempt": "local-motion",
+  "status": "generated",
+  "model": "local-motion-mockup",
+  "method": "local_animation",
+  "file": "faithful/video/clips/meowdoku-local-motion-v1.mp4",
+  "width": 1080,
+  "height": 1920,
+  "duration": 12.0,
+  "audio": true,
+  "input_image": "faithful/images/meowdoku-faithful-v1.png",
+  "prompt_file": "faithful/video/requests/meowdoku-local-motion.json",
+  "review": {
+    "status": "reviewed_with_limitations",
+    "summary": "Exactly one r1c6 cat and 0/8 to 1/8 verified, with three fish and full original-style interface retained.",
+    "sampled_seconds": [
+      0,
+      4.65,
+      11.5
+    ],
+    "first_frame": "Complete faithful image retained, including source selective shading, tutorial glow, 0/8, three fish, all rule/instruction text, Download and © Oakever Games.",
+    "state_fidelity": "Two coded taps at 4.05 and 4.35 seconds precede one cat at 4.42 seconds. Only the first counter digit changes; final board has one r1c6 cat and no other mark. The source glove retreats then retires by 5.8 seconds; no life loss, reward or victory.",
+    "game_feel": "Distinct taps, small source-art cat pop/settle, brief local paw ticks and confirmation tones; final result is unobstructed and the camera stays fixed.",
+    "native_style": "Original shaded glove/fish, understated mostly flat board/UI, source CTA depth and tutorial rim are retained rather than converted to thick outlined cel art.",
+    "limitations": [
+      "Deterministic still-image local mockup, not engine gameplay or an AI video.",
+      "The previously hidden green cells and purple target are reconstructed; minor local color/edge seams remain.",
+      "The reconstructed tutorial rim is narrower and less soft than the initial source halo. The pointer silhouette and close-font first counter digit are approximate.",
+      "The inserted cat reuses the faithful HUD illustration. Audio presence and signal health were checked, but audio was not auditioned."
+    ],
+    "reviewed_at": "2026-11-24T17:00:40.189793+00:00",
+    "frames": [
+      "faithful/video/checks/meowdoku-local-motion/frame-0s.jpg",
+      "faithful/video/checks/meowdoku-local-motion/frame-4.65s.jpg",
+      "faithful/video/checks/meowdoku-local-motion/frame-11.5s.jpg"
+    ],
+    "audio_review": "AAC stereo 48 kHz, 12 seconds, non-silent narration/effects mix with zero clipped decoded samples; not listened to.",
+    "technical": {
+      "duration": 12.0,
+      "width": 1080,
+      "height": 1920,
+      "fps": "30/1",
+      "video_codec": "h264",
+      "audio_codec": "aac",
+      "audio_duration": 12.0,
+      "video_frames": 360,
+      "audio": {
+        "channels": 2,
+        "sample_rate": 48000,
+        "decoded_peak": 0.38909912109375,
+        "decoded_rms": 0.04779565521456605,
+        "clipped_samples": 0
+      },
+      "full_decode_errors": 0,
+      "audio_listened": false,
+      "file_sha256_matches": true,
+      "input_sha256_matches": true,
+      "request_sha256_matches": true
+    }
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "slug": "bird-sort",
+  "attempt": "local-motion-v1",
+  "status": "generated",
+  "model": "local-motion-mockup",
+  "method": "local_animation",
+  "file": "flat/video/clips/bird-sort-local-motion-v1.mp4",
+  "width": 1080,
+  "height": 1920,
+  "duration": 12.0,
+  "audio": true,
+  "input_image": "flat/images/bird-sort-flat-v3.png",
+  "prompt_file": "flat/video/requests/bird-sort-local-motion.json",
+  "review": {
+    "reviewed": true,
+    "status": "reviewed_local_mockup",
+    "summary": "The three verified transfers and final counts are correct: one macaw R3→L4 (five mixed birds, no clear); one orange R3→L1 (four birds); two red/yellow birds R3→R4 at the recorded outer-right perches. The far macaw remains alone on R3. No extra move, clear, score or win.",
+    "gameplay": "Exact source/destination sequence and counts controlled locally, including original recorded R4 landing positions. The unrelated birds and download footer remain fixed.",
+    "layout": "Opening is the approved still. Moving sprites reuse same-species artwork from this still. The previously hidden R3 background, trunks and perch are locally reconstructed; that exposed perch is more angular than the original.",
+    "flatness": "Only small flat wing shapes, input rings and landing ticks are added; no cast/drop/contact shadow or glow. Existing image gradients remain.",
+    "visual_review": "Seven preview frames and six encoded frames at 0,2.6,4.1,6,7.2,11.5 seconds inspected. Final count and perch assignment match the verified sequence.",
+    "audio_review": "AAC stereo stream confirmed. Original synthesized music, input taps, flutter and landing chirps; no narration. Audio was not listened to.",
+    "fidelity_accepted": true,
+    "limitations": [
+      "A deterministic still-image mockup, not recorded or playable gameplay.",
+      "R3 hidden sky/trunk/perch pixels are locally reconstructed; source/landing bird sprites reuse same-species artwork from the still.",
+      "R4 landing uses the recorded original outer-right positions rather than the earlier AI clip inner-left positions.",
+      "Audio is original synthesized music, taps, flutter and chirps; no narration or downloaded samples.",
+      "Approved first frame retained; later source/destination sprite positions are controlled locally. Encoded-frame review is saved separately.",
+      "Sprite isolation is approximate: a tiny blue edge fleck near the orange bird and slight cutout/reconstruction edges remain at full size. This is a local presentation mockup, not a game simulation."
+    ],
+    "checks": [
+      "flat/video/checks/bird-sort-local-motion/contact.jpg",
+      "flat/video/checks/bird-sort-local-motion/encoded-11.5.jpg"
+    ]
+  },
+  "prior_attempts": [
+    {
+      "slug": "bird-sort",
+      "attempt": "minimax-h3-v1",
+      "status": "failed",
+      "model": "video-minimax-h3",
+      "error": "ContentBlocked",
+      "details": [
+        "The prompt references the specific game title 'Bird Sort 2 Color Puzzle Game'."
+      ],
+      "archive_location": "Local archive only"
+    },
+    {
+      "slug": "bird-sort",
+      "attempt": "gemini-omni-v1",
+      "status": "generated",
+      "model": "video-gemini-omni-1-2-flash",
+      "width": 1080,
+      "height": 1920,
+      "duration": 12.032,
+      "audio": true,
+      "review": {
+        "status": "reviewed_with_major_fidelity_issues",
+        "visual_review": "Opening closely matches the approved flat artwork, but the verified three-transfer loop fails. The first macaw lands on empty R4 rather than L4; orange birds duplicate onto several unrelated branches; the red/yellow pair changes identity and disappears instead of occupying the recorded outer-right R4 perches. Final R4 contains orange+macaw, while L4 and L1 remain effectively unchanged. Large white stars and rings spill into unrelated areas. Branch network and download footer remain broadly stable; the game state is unusable as a faithful demonstration.",
+        "gameplay_fidelity": "fail",
+        "first_frame": "Close to approved source composition and bird arrangement.",
+        "flatness": "Mostly hand-drawn flat art retained; oversized white accents cover neighboring areas.",
+        "audio_review": "Canonical probe reports an AAC audio stream. Audio was not listened to.",
+        "frames_reviewed_seconds": [
+          0,
+          3,
+          5,
+          7,
+          9,
+          11.8
+        ],
+        "checks": "flat/video/checks/bird-sort-gemini-omni-v1",
+        "limitations": "Review based on representative extracted frames, not continuous playback. Exact intermediate counts are sometimes occluded, but the wrong destinations and duplicated orange identities are unambiguous."
+      },
+      "archive_location": "Local archive only"
+    }
+  ]
+}

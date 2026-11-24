@@ -1,0 +1,166 @@
+{
+  "prompt": "Preserve native shaded ivory tiles, functional symbols, green table, HUD and complete disclosure footer. Select exactly three bright bird tiles at 2.00 s (row6,col1),3.25 s(row5,col2),4.50 s(row5,col3). Keep selected birds until the third input. Clear only those three, then let survivors above fall one row within columns1,2,3; column4 stays fixed. Existing offscreen N,N,B enter at top. Show Match1, illustrative Winnings$21.00 with its decimal, green Play Now, no extra match or victory. Maintain tile rigidity, compact selection/clear effects and tactile ceramic sounds. Include exact mechanics narration.",
+  "duration": 12,
+  "resolution": "1080x1920",
+  "audio": "Original synthesized ceramic clicks, restrained three-note match chime, column landing clacks and quiet plucked music ducked beneath exact narration.",
+  "method": "local_animation",
+  "action_sequence": [
+    {
+      "start_seconds": 0,
+      "end_seconds": 2,
+      "input": "No input.",
+      "state": "Original four-column grid and highlighted bird triple; Level 1, Winnings $0.00, Match 0.",
+      "presentation": "Keep tutorial copy and footer fully readable. Show the three bird identities without changing symbols."
+    },
+    {
+      "start_seconds": 2,
+      "end_seconds": 3.25,
+      "input": "Tap the bottom-left highlighted bird at normalized frame position (0.231,0.742).",
+      "state": "One bird is selected; do not remove it yet.",
+      "presentation": "Short touch pulse and tile-local green rim, crisp ceramic click."
+    },
+    {
+      "start_seconds": 3.25,
+      "end_seconds": 4.5,
+      "input": "Tap the highlighted bird one row above, column 2, at normalized position (0.410,0.605).",
+      "state": "Two distinct matching birds are selected; no clearance yet.",
+      "presentation": "Second concise ceramic click and local rim light."
+    },
+    {
+      "start_seconds": 4.5,
+      "end_seconds": 6,
+      "input": "Tap the highlighted bird in that same row, column 3, at normalized position (0.590,0.605).",
+      "state": "The third identical tile completes the match. Those three tiles shrink/clear; tutorial text and hand disappear.",
+      "presentation": "A quick synchronized tile pulse, concentrated emerald/gold sparks and a clean three-tone match chord."
+    },
+    {
+      "start_seconds": 6,
+      "end_seconds": 8,
+      "input": "No input.",
+      "state": "Tiles above drop within their columns, with existing offscreen rows entering at the top. Match 0→1. Preserve the exact settled identities and ordering described in the final state.",
+      "presentation": "Short falling clacks and one contact rebound; preserve each surviving tile identity and order."
+    },
+    {
+      "start_seconds": 8,
+      "end_seconds": 10,
+      "input": "No input.",
+      "state": "The Winnings counter rolls from $0.00 to$21.00. A green rounded Play Now button appears centered below the board and above the disclosure footer.",
+      "presentation": "A brief local source-style reward-icon accent accompanies the counter; show a readable 21.00 result. No money shower or payout celebration."
+    },
+    {
+      "start_seconds": 10,
+      "end_seconds": 12,
+      "input": "No input.",
+      "state": "Hold Level 1, Winnings $21.00, Match 1, green Play Now and the footer. Final six visible rows, left→right and top→bottom: [nine dots, nine dots, bird, H bamboo] partly under the HUD; [green發, red flower, H bamboo, bird]; [bird, bird, green發, H bamboo]; [red flower, nine dots, red flower, nine dots]; [green發, red flower, H bamboo, green發]; [red flower, red flower, H bamboo, nine dots].",
+      "presentation": "Effects clear; footer remains intact. No win, withdrawal, real-world payout or level-complete overlay."
+    }
+  ],
+  "implementation_constraints": [
+    "Deterministic presentation animation from a still, not recorded original gameplay or a Unity implementation.",
+    "Tile symbols, ivory material and edge shading reuse source-image donor tiles. Dimmed donors are restored to the source bright-tile exposure.",
+    "The flower donor bottom rim, obscured table and initial hand area are reconstructed locally; HUD numerals and the source-supported Play Now button are rendered locally.",
+    "The illustrative $21.00 is the value verified in this original replay, not a guaranteed payout."
+  ],
+  "state_checks": {
+    "initial": [
+      [
+        "G",
+        "F",
+        "H",
+        "H"
+      ],
+      [
+        "B",
+        "B",
+        "G",
+        "B"
+      ],
+      [
+        "F",
+        "N",
+        "F",
+        "H"
+      ],
+      [
+        "G",
+        "F",
+        "H",
+        "N"
+      ],
+      [
+        "F",
+        "B",
+        "B",
+        "G"
+      ],
+      [
+        "B",
+        "F",
+        "H",
+        "N"
+      ]
+    ],
+    "selected": [
+      [
+        6,
+        1
+      ],
+      [
+        5,
+        2
+      ],
+      [
+        5,
+        3
+      ]
+    ],
+    "entrants": [
+      "N",
+      "N",
+      "B"
+    ],
+    "final": [
+      [
+        "N",
+        "N",
+        "B",
+        "H"
+      ],
+      [
+        "G",
+        "F",
+        "H",
+        "B"
+      ],
+      [
+        "B",
+        "B",
+        "G",
+        "H"
+      ],
+      [
+        "F",
+        "N",
+        "F",
+        "N"
+      ],
+      [
+        "G",
+        "F",
+        "H",
+        "G"
+      ],
+      [
+        "F",
+        "F",
+        "H",
+        "N"
+      ]
+    ],
+    "match": 1,
+    "winnings": "$21.00",
+    "level": 1
+  },
+  "voiceover": "Tap three identical tiles. The matched birds clear, and the tiles above drop into the gaps.",
+  "voice": "Samantha, installed macOS voice, rate155"
+}

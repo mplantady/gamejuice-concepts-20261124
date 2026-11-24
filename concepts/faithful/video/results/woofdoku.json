@@ -1,0 +1,22 @@
+{
+  "slug": "woofdoku",
+  "attempt": "seedance-v1",
+  "status": "generated",
+  "model": "video-seedance-2-5",
+  "file": "faithful/video/clips/woofdoku-seedance-v1.mp4",
+  "width": 1078,
+  "height": 1920,
+  "duration": 12.064,
+  "audio": true,
+  "input_image": "faithful/images/woofdoku-faithful-v1.png",
+  "prompt_file": "faithful/video/requests/woofdoku-seedance-v1.json",
+  "review": {
+    "status": "reviewed_concept",
+    "summary": "One legal dog placement atyellowr1c2 and0/6→1/6, withallthreebones retained. Originalpastel2Dboard andsoftUIdepth stay recognizable.",
+    "game_feel": "Shortselectionpulse, pointeranticipation andexpressive dogsettle; effects remainlocalized.",
+    "limitations": [
+      "The inserted dog is redrawn rather thananexactruntime sprite.",
+      "Camera/HUD remainstable in6sampledframes; audio presenceverifiedbutnotauditioned."
+    ]
+  }
+}

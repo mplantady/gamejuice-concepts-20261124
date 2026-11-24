@@ -1,0 +1,36 @@
+{
+  "slug": "draft-showdown",
+  "attempt": "gemini-omni-v1",
+  "status": "generated",
+  "model": "video-gemini-omni-1-2-flash",
+  "file": "faithful/video/clips/draft-showdown-gemini-omni-v1.mp4",
+  "width": 1080,
+  "height": 1920,
+  "duration": 12.032,
+  "audio": true,
+  "input_image": "faithful/images/draft-showdown-faithful-v1.png",
+  "prompt_file": "faithful/video/requests/draft-showdown-gemini-omni-v1.json",
+  "review": {
+    "status": "reviewed_concept_with_limitations",
+    "summary": "The right +5Geese card is selected once and five friendly geese are deployed. Player54399, WIZARD, all six hearts and1/3 remain. The existing shaded cartoon arena and golden card style are preserved.",
+    "game_feel": "Clear card anticipation and selection, expressive arrivals, feather accents, small landing settles and a readable five-unit hold.",
+    "fidelity_limits": [
+      "Generated geese gain helmet/plume details and redraw their poses during arrival; these are concept variations rather than exact original runtime sprites.",
+      "The left card disappears in smoke, with brighter selection accents than the source. No knights deploy, second choice or battle result is shown.",
+      "Six encoded samples were inspected. Audio is present; exact narration and sound quality were not independently auditioned."
+    ]
+  },
+  "prior_attempts": [
+    {
+      "slug": "draft-showdown",
+      "attempt": "seedance-v1",
+      "status": "failed",
+      "model": "video-seedance-2-5",
+      "error": "ContentBlocked",
+      "details": [
+        "The generated audio triggered copyright protection. Try adjusting your prompt to describe the audio in different terms, use alternative instruments or styles, or request original compositions instead of recreating recognizable music."
+      ],
+      "archive_location": "Local archive only"
+    }
+  ]
+}

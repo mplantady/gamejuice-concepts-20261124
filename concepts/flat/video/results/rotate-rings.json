@@ -1,0 +1,74 @@
+{
+  "slug": "rotate-rings",
+  "attempt": "local-motion-v1",
+  "status": "generated",
+  "model": "local-motion-mockup",
+  "method": "local_animation",
+  "file": "flat/video/clips/rotate-rings-local-motion-v1.mp4",
+  "width": 1080,
+  "height": 1920,
+  "duration": 12.0,
+  "audio": true,
+  "input_image": "flat/images/rotate-rings-flat-v2.png",
+  "prompt_file": "flat/video/requests/rotate-rings-local-motion.json",
+  "review": {
+    "reviewed": true,
+    "status": "reviewed_local_mockup",
+    "summary": "One correct ring-6 release. Fixed-center counterclockwise rotation aligns its opening with the stationary lower-right coupling; only ring 6 escapes left/down, leaving eleven rings and all links stationary. IQ90→95 and brief Good are shown, with no endcard.",
+    "gameplay": "Controlled 120-degree counterclockwise turn from the source -90-degree orientation to +30 degrees. The target center is fixed before escape; the one owner-ring connector stays in place.",
+    "layout": "Original headline, complete network and footer retained. All unrelated ring/link pixels are static.",
+    "flatness": "Target ring is redrawn as uniform cel color. Only short local ink ticks are added. No added glow, glints, shadows, camera movement or global lighting. Existing image tonal variation remains.",
+    "visual_review": "Six preview frames inspected around the motion; encoded frames at 3.3,7.4,11.5 seconds confirm rotation, Good/IQ95, and final eleven-ring state.",
+    "audio_review": "AAC stereo audio confirmed by probe. Original synthesized taps, friction ticks, unlock click, swoosh, chime and sparse music; no narration. Audio was not listened to.",
+    "fidelity_accepted": true,
+    "limitations": [
+      "Local illustration compositing; not recorded gameplay or a rebuilt game.",
+      "Ring 6 is reconstructed with a rigid solid-color contour matching its approved footprint; previously hidden background under the ring, hand and tutorial arrow is locally reconstructed.",
+      "All other rings and connectors remain source pixels. Ring 6 rotates 120 degrees counterclockwise to the +30-degree source orientation, then escapes left and slightly down.",
+      "Approved artwork has inherited tonal variation. Animation adds no glow, cast/contact shadows, gradients or global lighting.",
+      "Original synthesized music and synchronized SFX; no narration.",
+      "The target contour and hidden background are approximate local reconstructions; this is a presentation mockup, not runtime gameplay."
+    ],
+    "checks": [
+      "flat/video/checks/rotate-rings-local-motion/encoded-3.3.jpg",
+      "flat/video/checks/rotate-rings-local-motion/encoded-7.4.jpg",
+      "flat/video/checks/rotate-rings-local-motion/encoded-11.5.jpg"
+    ]
+  },
+  "prior_attempts": [
+    {
+      "slug": "rotate-rings",
+      "attempt": "seedance-v1",
+      "status": "generated",
+      "model": "video-seedance-2-5",
+      "width": 1078,
+      "height": 1920,
+      "duration": 12.064,
+      "audio": true,
+      "review": {
+        "slug": "rotate-rings",
+        "attempt": "seedance-v1",
+        "reviewed": true,
+        "status": "reviewed_with_issues",
+        "summary": "The video frees the wrong ring and introduces global luminous glints; it fails the verified interaction and strict flatness requirements.",
+        "gameplay": "The pointer leaves the specified far-left third-row ring and rotates the open ring immediately above it, at the left of the second ring row. That wrong ring exits by about 8s; the originally indicated far-left third-row ring remains. Thus the required ring-6 fixed-center 120-degree rotation and its one-coupling release are not demonstrated. IQ changes 90→95 and only one ring disappears, but those correct-looking values do not repair the wrong target.",
+        "layout": "Most network centers and the footer remain recognizable. The removed second-row ring leaves its two neighboring connectors visible; this is not the specified one-coupling ring-6 state. Some ring contours and gaps deform slightly during motion.",
+        "flatness": "Bright luminous star glints appear across nearly all connectors at 9s, far outside the local release event. These are new shading/glow effects. The starting still already has tonal ring variation; that inherited variation is distinct from the new glints.",
+        "text": "Headline and footer stay recognizable; IQ 95 and temporary Good are consistent with the planned reward text, but accompany the wrong ring.",
+        "recommendation": "Use deterministic ring rotation/removal if exact topology is required. A new prompt should give a stronger isolated ring-6 target reference and remove every legacy metal/glint/lighting presentation clause, yet model generation can still move the wrong ring.",
+        "visual_review": "Six encoded frames at 0, 3, 5, 7, 9 and 11.5 seconds compared with selected flat v2 and verified action plan.",
+        "audio_review": "Audio stream is present; not listened to or transcribed in this visual review. Exact narration and audio quality remain unverified.",
+        "fidelity_accepted": false,
+        "checks": [
+          "flat/video/checks/rotate-rings-review-01.jpg",
+          "flat/video/checks/rotate-rings-review-02.jpg",
+          "flat/video/checks/rotate-rings-review-03.jpg",
+          "flat/video/checks/rotate-rings-review-04.jpg",
+          "flat/video/checks/rotate-rings-review-05.jpg",
+          "flat/video/checks/rotate-rings-review-06.jpg"
+        ]
+      },
+      "archive_location": "Local archive only"
+    }
+  ]
+}

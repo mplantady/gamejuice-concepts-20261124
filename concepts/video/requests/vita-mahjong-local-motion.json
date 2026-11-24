@@ -1,5 +1,226 @@
 {
   "duration": 12,
   "resolution": "1080x1920",
-  "audio": "Installed generic Samantha narration; original synthesized ceramic clicks, jade/chord notes, lock tick, descending cascades and quiet music bed."
+  "fps": 30,
+  "audio": "Installed generic Samantha narration; original synthesized ceramic clicks, jade/chord notes, lock tick, descending cascades and quiet music bed.",
+  "method": "local_animation",
+  "title": "Vita Mahjong — local motion mockup",
+  "timeline": [
+    {
+      "seconds": [
+        0,
+        1.5
+      ],
+      "action": "Hold Polished Image; small local-mockup label in top margin."
+    },
+    {
+      "seconds": [
+        1.5,
+        1.9
+      ],
+      "action": "Fade static tutorial glove into same-image reconstructed tiles."
+    },
+    {
+      "seconds": [
+        1.95,
+        3.85
+      ],
+      "action": "Touch ring follows the one legal input."
+    },
+    {
+      "seconds": [
+        2.25,
+        3.65
+      ],
+      "action": "Slide original r5c6 green 發 left to r5c5."
+    },
+    {
+      "seconds": [
+        3.75,
+        4.45
+      ],
+      "action": "Outline vertical green 發 r4c5, r5c5, r6c5."
+    },
+    {
+      "seconds": [
+        4.45,
+        4.85
+      ],
+      "action": "Clear exactly those three green tiles."
+    },
+    {
+      "seconds": [
+        4.55,
+        4.9
+      ],
+      "action": "Release only the purple lock spanning r4c4–r4c5."
+    },
+    {
+      "seconds": [
+        5.3,
+        6.85
+      ],
+      "action": "First gravity step",
+      "identity_destinations": {
+        "r3c5": [
+          6,
+          5
+        ],
+        "r2c5": [
+          5,
+          5
+        ],
+        "r1c5": [
+          4,
+          5
+        ],
+        "r4c6": [
+          5,
+          6
+        ],
+        "r3c6": [
+          4,
+          6
+        ],
+        "r2c6": [
+          3,
+          6
+        ],
+        "r1c6": [
+          2,
+          6
+        ]
+      }
+    },
+    {
+      "seconds": [
+        7.5,
+        8.25
+      ],
+      "action": "Outline female-character triple r6c5–r6c7."
+    },
+    {
+      "seconds": [
+        8.25,
+        8.65
+      ],
+      "action": "Clear exactly the three female-character tiles."
+    },
+    {
+      "seconds": [
+        9.15,
+        10.4
+      ],
+      "action": "Second gravity step",
+      "identity_destinations": {
+        "r2c5": [
+          6,
+          5
+        ],
+        "r1c5": [
+          5,
+          5
+        ],
+        "r4c6": [
+          6,
+          6
+        ],
+        "r3c6": [
+          5,
+          6
+        ],
+        "r2c6": [
+          4,
+          6
+        ],
+        "r1c6": [
+          3,
+          6
+        ],
+        "r5c7": [
+          6,
+          7
+        ],
+        "r4c7": [
+          5,
+          7
+        ],
+        "r3c7": [
+          4,
+          7
+        ],
+        "r2c7": [
+          3,
+          7
+        ],
+        "r1c7": [
+          2,
+          7
+        ]
+      }
+    },
+    {
+      "seconds": [
+        10.4,
+        12
+      ],
+      "action": "Hold settled board, with remaining three locks and Play Free CTA; no new tiles or win."
+    }
+  ],
+  "art_reconstruction": {
+    "method": "Crop original tile art, reuse same-symbol donors for glove/lock occlusion, extend an unobstructed source green-board patch behind vacated tiles.",
+    "donors": {
+      "r4c5": [
+        4,
+        7
+      ],
+      "r5c6": [
+        4,
+        7
+      ],
+      "r6c5": [
+        4,
+        7
+      ],
+      "r6c6": [
+        6,
+        7
+      ]
+    },
+    "unlocked_r4c4_donor": [
+      2,
+      5
+    ]
+  },
+  "state_checks": {
+    "animated_initial_tiles": 17,
+    "first_clear_count": 3,
+    "second_clear_count": 3,
+    "animated_survivors": 11,
+    "locks_released": 1,
+    "locks_retained": 3,
+    "replacement_tiles_spawned": 0,
+    "victory_or_rewards_added": false
+  },
+  "limitations": [
+    "Locally animated mockup, not an engine recording or a model-generated video.",
+    "Covered background is approximated from the same screenshot; occluded tile art uses identical-symbol donors.",
+    "Retains the Polished Image green board and Play Free CTA, which differ from the original playable screenshot.",
+    "Timing and effects are a design study; no implementation or playable interaction is included."
+  ],
+  "voiceover": "Slide to match three. Watch one move set off a satisfying chain.",
+  "narration": [
+    {
+      "start": 0.65,
+      "duration": 1.2683541666666667,
+      "voice": "macOS Samantha",
+      "text": "Slide to match three."
+    },
+    {
+      "start": 5.55,
+      "duration": 2.568,
+      "voice": "macOS Samantha",
+      "text": "Watch one move set off a satisfying chain."
+    }
+  ]
 }

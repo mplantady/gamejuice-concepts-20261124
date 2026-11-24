@@ -1,0 +1,66 @@
+{
+  "slug": "draft-showdown",
+  "attempt": "corrected-v2",
+  "status": "generated",
+  "model": "video-seedance-2-5",
+  "method": "ai_video_with_local_ui_correction",
+  "file": "flat/video/clips/draft-showdown-corrected-v2.mp4",
+  "width": 1078,
+  "height": 1920,
+  "duration": 12.064,
+  "audio": true,
+  "input_image": "flat/images/draft-showdown-flat-v2.png",
+  "prompt_file": "flat/video/requests/draft-showdown-local-ui-correction-v2.json",
+  "review": {
+    "reviewed": true,
+    "status": "Reviewed AI video with local UI correction",
+    "summary": "The exact source Player54399 label replaces the generated wrong name. Selected-card motion, five-geese deployment, final hold and original audio are retained.",
+    "flatness": "The existing soft blue selection pulse remains, as accepted for this correction; it is not claimed to satisfy a mathematical opaque-only rule. The local correction adds no cast shadow or new lighting effect.",
+    "audio_review": "Original AAC payload copied exactly; ADTS SHA-256 matches the source. Stereo 32 kHz, original duration. Exact narration wording has not been independently listened to or transcribed.",
+    "gameplay": "The right +5 Geese choice resolves into exactly five white/blue geese. Both players retain three hearts and 1/3. No knights, second choice, battle result or reward is added.",
+    "text": "Player54399 is restored in its original HUD position throughout the clip. Corrected encoded frames at 3s and 11.5s were visually checked.",
+    "layout": "Only a small label rectangle is composited. The provider’s original 1078×1920 framing is retained, with no crop or global resize.",
+    "encoded_frames": [
+      "flat/video/checks/draft-showdown-ui-correction/encoded-02.jpg",
+      "flat/video/checks/draft-showdown-ui-correction/encoded-04.jpg"
+    ],
+    "technical_check": "12.064s ; 1078×1920 ; 289 H.264 frames at 24 fps. Original AAC audio packets unchanged.",
+    "additional_cost": "No generation or additional points charged; original Seedance charge remains in metadata."
+  },
+  "prior_attempts": [
+    {
+      "slug": "draft-showdown",
+      "attempt": "seedance-v1",
+      "status": "generated",
+      "model": "video-seedance-2-5",
+      "width": 1078,
+      "height": 1920,
+      "duration": 12.064,
+      "audio": true,
+      "review": {
+        "slug": "draft-showdown",
+        "attempt": "seedance-v1",
+        "reviewed": true,
+        "status": "reviewed_with_issues",
+        "summary": "The intended first draft choice is recognizable and ends with exactly five geese, but fixed player text changes and the selection effect adds a glow.",
+        "gameplay": "The right +5 Geese card is selected, the unselected knights dismiss, and five separate white/blue geese are visible at 7, 9 and 11.5 seconds. Both players retain three hearts; 1/3 remains visible. No second offer, battle outcome or reward is shown.",
+        "layout": "Locked portrait arena is largely retained. Deployed geese are large expressive illustrations; their runtime unit footprint has not been independently checked.",
+        "flatness": "Mostly flat outlined goose animation and solid impact stars. The selected card receives a visibly soft blue halo around 3s, contradicting the no-glow requirement. Existing fill variation from the source still should not be confused with a newly added cast shadow.",
+        "text": "Player54399 changes to Player54334 by 3s and remains wrong. WIZARD, three hearts per player and 1/3 are retained.",
+        "recommendation": "Useful motion reference, but not strict-fidelity accepted. Correct the stable player HUD with the source artwork and replace the soft selection halo with a solid ink outline before calling this final.",
+        "visual_review": "Six encoded frames at 0, 3, 5, 7, 9 and 11.5 seconds compared with selected flat v2 and verified action plan.",
+        "audio_review": "Audio stream is present; not listened to or transcribed in this visual review. Exact narration and audio quality remain unverified.",
+        "fidelity_accepted": false,
+        "checks": [
+          "flat/video/checks/draft-showdown-review-01.jpg",
+          "flat/video/checks/draft-showdown-review-02.jpg",
+          "flat/video/checks/draft-showdown-review-03.jpg",
+          "flat/video/checks/draft-showdown-review-04.jpg",
+          "flat/video/checks/draft-showdown-review-05.jpg",
+          "flat/video/checks/draft-showdown-review-06.jpg"
+        ]
+      },
+      "archive_location": "Local archive only"
+    }
+  ]
+}

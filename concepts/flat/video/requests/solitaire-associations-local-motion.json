@@ -1,0 +1,55 @@
+{
+  "prompt": "Render exactly two planar source-supported transfers from the selected flat image.\n[{\"start_seconds\": 0, \"end_seconds\": 2, \"input\": \"No input.\", \"state\": \"Level 1, Moves 190, five empty crown foundations and original five tableau columns.\"}, {\"start_seconds\": 2, \"end_seconds\": 4.5, \"input\": \"Drag the gold Family category card from tableau column 2 to the empty crown foundation directly above column 2; release.\", \"state\": \"Family occupies the crown foundation, still 0/8. Moves 190→189. Reveal the Peony flower illustration on the newly exposed card in tableau column 2.\"}, {\"start_seconds\": 4.5, \"end_seconds\": 5.5, \"input\": \"No input.\", \"state\": \"Hold Family 0/8 in the foundation and the newly exposed Peony icon below.\"}, {\"start_seconds\": 5.5, \"end_seconds\": 8, \"input\": \"Drag the exposed Sister card from tableau column 1 onto Family in the crown foundation; release.\", \"state\": \"Sister joins Family in the crown foundation. Family 0/8→1/8; Moves 189→188. Reveal the Lily flower illustration on the newly exposed card in tableau column 1.\"}, {\"start_seconds\": 8, \"end_seconds\": 10, \"input\": \"No input.\", \"state\": \"Show the two-move result: Peony exposed in column 2, Lily exposed in column 1, Family 1/8 in the second crown foundation.\"}, {\"start_seconds\": 10, \"end_seconds\": 12, \"input\": \"No input.\", \"state\": \"Hold Moves 188, Family 1/8 and the unchanged remaining tableau.\"}]\nExact narration: Move the gold Family card to a crown slot. Then collect a matching word: Sister belongs to Family.\nFamily is translated rigidly from column two to crown foundation two; Sister then moves rigidly from column one to that same Family foundation. No scaling, rotation, shadow, glow, bevel or camera movement is added.\nThe two removed top cards reduce the affected tableau columns from four visible cards to three: two back strips and one newly exposed flower face. Peony appears under Family; Lily appears under Sister.\nMoves is replaced in place: 190→189→188. The one Family counter is replaced in place: 0/8→1/8 only after Sister arrives. No added number appears on either flower.\nThe selected v3 source has slight fill variation. Existing art and local background patches retain that variation; animation effects are only solid ink lines.\nPeony and Lily illustrations are cropped from the prior AI video, whose flower identities were correct. All wrong destinations, counters, stack states and generated pointers from that video are discarded. Hidden faces are composited concept art, not a Unity runtime capture.\nNo new tutorial hand or pointer, HUD badge, victory, completion, draw or reward is added. The remaining tableau, footer and selected source layout remain fixed.",
+  "duration": 12,
+  "resolution": "1080x1920",
+  "audio": "Original synthesized paper swishes, two contact sounds, short partial-match chime and quiet music.",
+  "method": "local_animation",
+  "action_sequence": [
+    {
+      "start_seconds": 0,
+      "end_seconds": 2,
+      "input": "No input.",
+      "state": "Level 1, Moves 190, five empty crown foundations and original five tableau columns."
+    },
+    {
+      "start_seconds": 2,
+      "end_seconds": 4.5,
+      "input": "Drag the gold Family category card from tableau column 2 to the empty crown foundation directly above column 2; release.",
+      "state": "Family occupies the crown foundation, still 0/8. Moves 190→189. Reveal the Peony flower illustration on the newly exposed card in tableau column 2."
+    },
+    {
+      "start_seconds": 4.5,
+      "end_seconds": 5.5,
+      "input": "No input.",
+      "state": "Hold Family 0/8 in the foundation and the newly exposed Peony icon below."
+    },
+    {
+      "start_seconds": 5.5,
+      "end_seconds": 8,
+      "input": "Drag the exposed Sister card from tableau column 1 onto Family in the crown foundation; release.",
+      "state": "Sister joins Family in the crown foundation. Family 0/8→1/8; Moves 189→188. Reveal the Lily flower illustration on the newly exposed card in tableau column 1."
+    },
+    {
+      "start_seconds": 8,
+      "end_seconds": 10,
+      "input": "No input.",
+      "state": "Show the two-move result: Peony exposed in column 2, Lily exposed in column 1, Family 1/8 in the second crown foundation."
+    },
+    {
+      "start_seconds": 10,
+      "end_seconds": 12,
+      "input": "No input.",
+      "state": "Hold Moves 188, Family 1/8 and the unchanged remaining tableau."
+    }
+  ],
+  "implementation_constraints": [
+    "Family is translated rigidly from column two to crown foundation two; Sister then moves rigidly from column one to that same Family foundation. No scaling, rotation, shadow, glow, bevel or camera movement is added.",
+    "The two removed top cards reduce the affected tableau columns from four visible cards to three: two back strips and one newly exposed flower face. Peony appears under Family; Lily appears under Sister.",
+    "Moves is replaced in place: 190→189→188. The one Family counter is replaced in place: 0/8→1/8 only after Sister arrives. No added number appears on either flower.",
+    "The selected v3 source has slight fill variation. Existing art and local background patches retain that variation; animation effects are only solid ink lines.",
+    "Peony and Lily illustrations are cropped from the prior AI video, whose flower identities were correct. All wrong destinations, counters, stack states and generated pointers from that video are discarded. Hidden faces are composited concept art, not a Unity runtime capture.",
+    "No new tutorial hand or pointer, HUD badge, victory, completion, draw or reward is added. The remaining tableau, footer and selected source layout remain fixed."
+  ],
+  "narration": "Move the gold Family card to a crown slot. Then collect a matching word: Sister belongs to Family.",
+  "voice": "Samantha (installed macOS system voice)"
+}

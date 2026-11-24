@@ -1,0 +1,37 @@
+{
+  "prompt": "Flat-style local Goods Puzzle motion concept.\n0–2: Establish the complete saved flat shelf image. Resolve the tutorial ghost to the one physical source carton as the hand repositions.\n2–6: Anticipate and lift the center-cell FRUIT carton; drag it along a shallow arc into the left-cell middle slot, with a crisp ink destination cue and elastic snap.\n6–9: Settle exactly three FRUIT cartons, anticipate together, squash and pop with compact solid ink stars. Stamp the existing SOLD OUT state.\n9–12: Hold the single cleared cell and empty source slot with the other products unchanged. No victory or reward claim.\nNarration: Drag a matching item into an open slot. Three identical goods clear the shelf.\nConstraints:\nFinal selected flat image is goods-puzzle-flat-v2.png. Its small tonal variations are inherited; the animation adds no gradients, shading or glow.\nThe existing tutorial hand and translucent carton are isolated. Covered portions of central rows four to six are reconstructed from matching visible flat product art and source-verified hidden item types. This is a compositing approximation.\nA flat printed SOLD OUT marker represents the existing source-game cleared-cell state. No additional in-frame HUD labels are introduced.\nUses the final reviewed flat illustration; deterministic local compositing, without paid generation or a game-engine render.\nOne fruit carton moves into the vacant middle slot of row-four left. Exactly three cartons clear; no invented whole-level victory, currency or reward.\nFixed portrait camera. Cel-style anticipation, squash and snap; only solid ink accents, rings, sharp stars and impact lines. No added shadows, glow, gradients or light particles.\nThe exact plan narration is read by the installed Samantha voice with the same locally synthesized stereo music and synchronized original SFX.",
+  "duration": 12,
+  "resolution": "1080x1920",
+  "aspect_ratio": "9:16",
+  "audio": "Original locally synthesized stereo music and synchronized SFX.",
+  "method": "local_animation",
+  "action_sequence": [
+    {
+      "seconds": "0–2",
+      "action": "Establish the complete saved flat shelf image. Resolve the tutorial ghost to the one physical source carton as the hand repositions."
+    },
+    {
+      "seconds": "2–6",
+      "action": "Anticipate and lift the center-cell FRUIT carton; drag it along a shallow arc into the left-cell middle slot, with a crisp ink destination cue and elastic snap."
+    },
+    {
+      "seconds": "6–9",
+      "action": "Settle exactly three FRUIT cartons, anticipate together, squash and pop with compact solid ink stars. Stamp the existing SOLD OUT state."
+    },
+    {
+      "seconds": "9–12",
+      "action": "Hold the single cleared cell and empty source slot with the other products unchanged. No victory or reward claim."
+    }
+  ],
+  "implementation_constraints": [
+    "Final selected flat image is goods-puzzle-flat-v2.png. Its small tonal variations are inherited; the animation adds no gradients, shading or glow.",
+    "The existing tutorial hand and translucent carton are isolated. Covered portions of central rows four to six are reconstructed from matching visible flat product art and source-verified hidden item types. This is a compositing approximation.",
+    "A flat printed SOLD OUT marker represents the existing source-game cleared-cell state. No additional in-frame HUD labels are introduced.",
+    "Uses the final reviewed flat illustration; deterministic local compositing, without paid generation or a game-engine render.",
+    "One fruit carton moves into the vacant middle slot of row-four left. Exactly three cartons clear; no invented whole-level victory, currency or reward.",
+    "Fixed portrait camera. Cel-style anticipation, squash and snap; only solid ink accents, rings, sharp stars and impact lines. No added shadows, glow, gradients or light particles.",
+    "The exact plan narration is read by the installed Samantha voice with the same locally synthesized stereo music and synchronized original SFX."
+  ],
+  "narration": "Drag a matching item into an open slot. Three identical goods clear the shelf.",
+  "voice": "Samantha (installed macOS system voice)"
+}

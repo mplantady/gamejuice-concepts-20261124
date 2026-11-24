@@ -1,0 +1,48 @@
+{
+  "slug": "woofdoku",
+  "attempt": "local-motion",
+  "status": "generated",
+  "model": "local-motion-mockup",
+  "method": "local_motion",
+  "file": "flat/video/clips/woofdoku-local-motion-v1.mp4",
+  "width": 1080,
+  "height": 1920,
+  "duration": 12.0,
+  "audio": true,
+  "input_image": "flat/images/woofdoku-flat-v2.png",
+  "prompt_file": "flat/video/requests/woofdoku-local-motion.json",
+  "review": {
+    "status": "reviewed_archival_experiment",
+    "verdict": "One legal r1c2 dog, 0/6 to 1/6 and all three bones verified. Retained as an abandoned flat-direction experiment, not the new faithful-style deliverable.",
+    "sampled_seconds": [
+      4.2,
+      11.5
+    ],
+    "technical": "12-second 1080×1920 H.264, stereo AAC 48 kHz; full decode returned no errors. Audio not listened to.",
+    "limitations": [
+      "A small repair seam remains along the yellow/pink cell boundary after the original glove retreats.",
+      "Hand-mask edges and replacement first counter numeral are local approximations.",
+      "The user has superseded this flat art direction with original-style fidelity."
+    ],
+    "paid_attempt_preservation": "Original Seedance file, attempt record, archive and 1,149-point cost remain in prior_attempts. Local replacement charged zero."
+  },
+  "prior_attempts": [
+    {
+      "slug": "woofdoku",
+      "attempt": "seedance-v1",
+      "status": "generated",
+      "model": "video-seedance-2-5",
+      "width": 1078,
+      "height": 1920,
+      "duration": 12.041667,
+      "audio": true,
+      "review": {
+        "status": "superseded_for_flatness",
+        "verdict": "The paid Seedance clip shows the intended single placement but adds a large luminous radial halo, violating the approved no-glow flat direction.",
+        "evidence": "flat/checks/woofdoku-video-contact.jpg",
+        "audio_review": "Not listened to. Paid artifact and 1,149-point charge remain preserved."
+      },
+      "archive_location": "Local archive only"
+    }
+  ]
+}

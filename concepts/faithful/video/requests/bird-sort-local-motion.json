@@ -1,0 +1,78 @@
+{
+  "prompt": "12-second portrait style-faithful local motion. Preserve the selected image’s cartoon contours, cel shading, colors and dusk background. Exact approved opening. Move one blue/yellow macaw R3 to L4, making five mixed birds without clearing. Move one orange-crested bird R3 to L1, making four. Move exactly two red/yellow birds R3 to the outer-right two positions of empty R4, leaving the far macaw alone R3. Preserve all 50 birds. All unrelated branches, birds and footer fixed. Controlled anticipation, articulated two-tone wingbeats, legible arc travel, compact ink landing ticks, elastic settle, sparse original plucked music and synchronized taps/flutter/chirps. No light beams, bloom, new shadows, score, extra move, clear or victory. Exact plan narration is included using the installed Samantha voice.",
+  "duration": 12,
+  "resolution": "1080x1920",
+  "audio": "Original synthesized stereo music and SFX, ducked beneath exact plan narration.",
+  "method": "local_animation",
+  "action_sequence": [
+    {
+      "name": "macaw",
+      "source": [
+        617,
+        646
+      ],
+      "destination": [
+        344,
+        875
+      ],
+      "start": 1.8,
+      "end": 3.7,
+      "arc": -100,
+      "flip": true
+    },
+    {
+      "name": "orange",
+      "source": [
+        657,
+        644
+      ],
+      "destination": [
+        306,
+        194
+      ],
+      "start": 4.95,
+      "end": 6.85,
+      "arc": -85,
+      "flip": true
+    },
+    {
+      "name": "red1",
+      "source": [
+        742,
+        638
+      ],
+      "destination": [
+        816,
+        859
+      ],
+      "start": 8.2,
+      "end": 9.92,
+      "arc": -65,
+      "flip": false
+    },
+    {
+      "name": "red2",
+      "source": [
+        820,
+        638
+      ],
+      "destination": [
+        897,
+        859
+      ],
+      "start": 8.2,
+      "end": 9.92,
+      "arc": -65,
+      "flip": false
+    }
+  ],
+  "limitations": [
+    "A deterministic still-image mockup, not recorded or playable gameplay.",
+    "R3 hidden sky/trunk/perch pixels are locally reconstructed; source/landing bird sprites reuse same-species artwork from the still.",
+    "R4 landing uses the recorded original outer-right positions rather than the earlier AI clip inner-left positions.",
+    "Audio is original synthesized music, taps, flutter and chirps, plus the exact planned narration using installed Samantha; no downloaded samples.",
+    "Approved first frame retained; later source/destination sprite positions are controlled locally. Encoded-frame review is saved separately."
+  ],
+  "voiceover": "Tap a branch, then move its end birds onto matching birds—or an empty branch.",
+  "voice": "Samantha, installed macOS system voice, rate 170"
+}

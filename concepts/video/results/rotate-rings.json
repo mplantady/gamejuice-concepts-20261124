@@ -52,7 +52,6 @@
       "slug": "rotate-rings",
       "status": "failed",
       "model": "video-seedance-2-5",
-      "input_image": "images/rotate-rings-combined.png",
       "error": {
         "event": "error",
         "code": "COMMAND_FAILURE",
@@ -63,7 +62,8 @@
           "The generated audio was blocked due to copyright concerns. Try adjusting your prompt to request different music, instruments, or a different style that doesn't trigger copyright detection."
         ],
         "httpStatus": 200
-      }
+      },
+      "archive_location": "Local archive only"
     }
   ]
 }

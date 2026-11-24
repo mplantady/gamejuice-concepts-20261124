@@ -1,0 +1,70 @@
+{
+  "prompt": "Create a 12-second portrait gameplay concept from the supplied polished reference. Preserve this game's existing visual language throughout: flat elements stay flat; shaded elements retain the same kind of shading, material, depth and lighting. Never convert the game to another illustration/rendering style. The reference is the exact opening layout and inventory. Keep every fixed HUD word, number, functional color, camera projection, board boundary and character identity, except the explicitly authorized state updates below.\n\nThe creative priority is a striking improvement in GAME FEEL through ANIMATION, VFX AND AUDIO. Direct a beautifully timed, readable demonstration of the supplied legal moves: a clear anticipation, decisive travel, a satisfying contact/snap, an expressive but controlled settle and a quiet final-state hold. Make each interaction feel authored and responsive. Character actions may include a short blink, wingbeat, ear flick or gentle squash within their existing footprint; rigid tiles/cards/rings/board pieces remain rigid. No new gameplay action, extra piece, refill, combo, victory or reward.\n\nVFX must speak the same visual language as the original. For flat artwork use short graphic strokes, opaque colored ticks and clean shape bursts. For shaded artwork use compact material-appropriate contact effects and existing-style highlights/soft particles. Do not introduce dimensional shadows, bloom or photoreal lighting to flat art. Do not flatten a shaded game. Localize accents to the actual touch, landing, merge or release; keep symbols legible and clear effects quickly. Keep the full screen and HUD visible. Board/puzzle cameras remain locked; an impact-heavy 3D game may have one extremely small recoil with immediate exact return, never a zoom, orbit or crop.\n\nAudio carries equal craft: a distinct input sound, short motion accent, crisp material-specific contact and brief rewarding resolution for each real event, with clear rhythmic spacing. Include the supplied concise mechanics narration, natural and intelligible, with original understated music ducked beneath it and no recognizable tune. Avoid a constant wall of sound or a victory fanfare for partial progress. Sync accents to visible contact frames. The result should feel substantially more responsive and satisfying while unmistakably remaining the same game.\n\nExecute only the following verified input/state sequence. Show each moved object continuously from its source to the correct destination. Preserve all unrelated pieces, slot counts, order, links, shadows and HUD values. Hold the exact specified partial result at the end. This is a look-and-feel proposal, not evidence of a Unity implementation.\n\nMeowdoku: exactly two taps on singleton purple r1c6, exactly one cat and 0/8 to 1/8, all three fish retained. Keep every other region empty. Voiceover: Double-tap to place a cat. One per row, column, and color. Keep cats apart.",
+  "duration_seconds": 12,
+  "width": 1080,
+  "height": 1920,
+  "fps": 30,
+  "audio": "Two taps, pop, synthesized mew-like tone, confirmation chime and quiet plucked notes; narration at 2.35 and 5.35 seconds.",
+  "method": "local_animation",
+  "label": "Native-style local motion mockup; deterministic still animation, not an engine recording or AI video.",
+  "timeline": [
+    {
+      "seconds": [
+        0,
+        2.5
+      ],
+      "action": "Hold approved native-style reference exactly, including tutorial scrim and attribution."
+    },
+    {
+      "seconds": [
+        2.5,
+        4.05
+      ],
+      "action": "Subtle anticipation by the existing source glove; board stays fixed."
+    },
+    {
+      "seconds": [
+        4.05,
+        4.35
+      ],
+      "action": "Two distinct taps on singleton purple r1c6, with compact input circles."
+    },
+    {
+      "seconds": [
+        4.42,
+        4.82
+      ],
+      "action": "Exactly one source-art cat pops into r1c6; counter 0/8 becomes 1/8 once. Three fish retained."
+    },
+    {
+      "seconds": [
+        4.42,
+        5.22
+      ],
+      "action": "Existing glove rests below/right; three tiny opaque paw ticks resolve. The existing narrow tutorial rim is reconstructed; no new scene-wide light effect."
+    },
+    {
+      "seconds": [
+        5.4,
+        5.8
+      ],
+      "action": "Retire the tutorial glove so the complete board is unobstructed."
+    },
+    {
+      "seconds": [
+        5.8,
+        12
+      ],
+      "action": "Hold one cat, 1/8, all original regions, three fish, rule cards, Download and © Oakever Games. No further state changes."
+    }
+  ],
+  "limitations": [
+    "Local motion study, not playable Unity or a captured game trace.",
+    "Only the board area hidden by the original glove is reconstructed using matching green cell art and a reconstruction of the existing purple/luminous target.",
+    "The single cat is extracted from the approved HUD icon; hand/cat alpha contours and the first counter digit are reconstructed locally.",
+    "Existing selective glove/fish/UI shading is retained; reconstructed target rim and hidden pixels are approximate. No new shadow, scene-wide glow, bevel, rule glint, camera motion, extra cat, cross, life loss, reward or victory is added."
+  ],
+  "voiceover": "Double-tap to place a cat. One per row, column, and color. Keep cats apart.",
+  "voice": "Installed generic macOS Samantha",
+  "voiceover_rendered": true
+}

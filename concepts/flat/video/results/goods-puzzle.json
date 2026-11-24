@@ -1,0 +1,46 @@
+{
+  "slug": "goods-puzzle",
+  "status": "generated",
+  "model": "local-motion-mockup",
+  "method": "local_animation",
+  "file": "flat/video/clips/goods-puzzle-local-motion-v1.mp4",
+  "width": 1080,
+  "height": 1920,
+  "duration": 12.0,
+  "audio": true,
+  "input_image": "flat/images/goods-puzzle-flat-v2.png",
+  "prompt_file": "flat/video/requests/goods-puzzle-local-motion.json",
+  "review": {
+    "reviewed": true,
+    "status": "Reviewed flat local motion mockup",
+    "method": "Deterministic illustration compositing and FFmpeg; no model-generated video.",
+    "layout": "Seven-row shelf and headline retained. One row-four fruit match is animated.",
+    "fidelity_limits": [
+      "Final selected flat image is goods-puzzle-flat-v2.png. Its small tonal variations are inherited; the animation adds no gradients, shading or glow.",
+      "The existing tutorial hand and translucent carton are isolated. Covered portions of central rows four to six are reconstructed from matching visible flat product art and source-verified hidden item types. This is a compositing approximation.",
+      "A flat printed SOLD OUT marker represents the existing source-game cleared-cell state. No additional in-frame HUD labels are introduced.",
+      "Uses the final reviewed flat illustration; deterministic local compositing, without paid generation or a game-engine render.",
+      "One fruit carton moves into the vacant middle slot of row-four left. Exactly three cartons clear; no invented whole-level victory, currency or reward.",
+      "Fixed portrait camera. Cel-style anticipation, squash and snap; only solid ink accents, rings, sharp stars and impact lines. No added shadows, glow, gradients or light particles.",
+      "The exact plan narration is read by the installed Samantha voice with the same locally synthesized stereo music and synchronized original SFX.",
+      "The enlarged hand and restored hidden shelves use cutout compositing; minor edge and texture differences remain at close inspection. This is a motion-design mockup, not pixel-perfect gameplay footage or a Unity implementation."
+    ],
+    "audio": "Exact plan narration with installed Samantha voice plus synthesized SFX/music.",
+    "summary": "Five encoded frames were inspected: initial shelf, pickup/drag, three-carton match, flat ink pop, and the single SOLD OUT end state. The full shelf and headline stay visible; the source slot is empty after the move.",
+    "checks": [
+      "0.0s: selected flat source composition, seven rows and three shelf cells per row visible.",
+      "3.8s: one physical source carton follows the isolated tutorial hand toward the left vacant slot.",
+      "6.8s: exactly three FRUIT cartons occupy the destination cell; source shows cups, empty middle, and travel cup.",
+      "7.6s: the same three cartons shrink together, with localized solid rings/stars and no glow.",
+      "11.5s: one SOLD OUT cell, empty source slot, neighboring goods retained, no whole-level win.",
+      "FFprobe: 360 H.264 frames, 1080×1920, 30fps, 12.000 seconds; AAC stereo 48kHz audio."
+    ],
+    "encoded_frames": [
+      "flat/video/checks/goods-puzzle/encoded-01.jpg",
+      "flat/video/checks/goods-puzzle/encoded-02.jpg",
+      "flat/video/checks/goods-puzzle/encoded-03.jpg",
+      "flat/video/checks/goods-puzzle/encoded-04.jpg",
+      "flat/video/checks/goods-puzzle/encoded-05.jpg"
+    ]
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "slug": "goods-puzzle",
+  "status": "generated",
+  "model": "local-motion-mockup",
+  "method": "local_animation",
+  "file": "faithful/video/clips/goods-puzzle-local-motion-v1.mp4",
+  "width": 1080,
+  "height": 1920,
+  "duration": 12.0,
+  "audio": true,
+  "input_image": "faithful/images/goods-puzzle-faithful-v1.png",
+  "prompt_file": "faithful/video/requests/goods-puzzle-local-motion.json",
+  "review": {
+    "reviewed": true,
+    "status": "reviewed_local_mockup",
+    "method": "Locally animated selected illustration and FFmpeg, preserving the original rendering style; no paid video model calls.",
+    "audio_review": "Exact mechanics narration generated with installed Samantha voice, mixed with original synthesized stereo music and event-synchronized SFX. AAC stream, non-silence and peak levels verified. Audio was not independently listened to.",
+    "narration": "Drag a matching item into an open slot. Three identical goods clear the shelf.",
+    "checks": [
+      "faithful/video/checks/goods-puzzle-local-motion/contact.jpg",
+      "faithful/video/checks/goods-puzzle-local-motion/encoded-11.5.jpg"
+    ],
+    "audio_audit": {
+      "audio_samples": 1153024,
+      "absolute_peak": 0.6010084748268127,
+      "rms": 0.08198535442352295,
+      "listened": false
+    },
+    "fidelity_accepted": true,
+    "summary": "One continuous row-four center-to-left carton drag; exactly three FRUIT cartons snap together and clear into the source SOLD OUT marker. Source middle slot is empty, with cups and travel cup remaining. No further match or reward.",
+    "layout": "Seven-by-three shelf, headline and native shaded toy materials retained. Six encoded frames at0,2.7,4.5,6.8,8.6,11.5 seconds inspected.",
+    "game_feel": "Pickup anticipation, curved drag, restrained destination highlight, crisp snap, synchronized three-item pop, contained particles and stamp settle, with matching input/contact/chime/stamp sounds.",
+    "limitations": [
+      "The baked hand and ghost are separated locally. Hidden central shelf products and backing are reconstructed from matching source-image goods and source-verified types.",
+      "Some cloned product edges and shelf-floor patch seams remain visible at full size. The source SOLD OUT graphic is reused at its saved resolution.",
+      "This is a presentation mockup, not gameplay recorded from the original or a rebuilt Unity game."
+    ]
+  }
+}

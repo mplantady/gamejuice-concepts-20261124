@@ -1,1 +1,25 @@
-{}
+{
+  "duration_seconds": 12,
+  "width": 1080,
+  "height": 1920,
+  "fps": 30,
+  "method": "local_animation",
+  "label": "Local motion mockup — deterministic still-image animation, not AI video or gameplay recording",
+  "actual_instructions": [
+    "Hold the entire polished image until 2.5s. Keep the board, colors, rules, three fish and Download UI fixed.",
+    "Animate the existing hand with two distinct taps at 4.05s and 4.35s on the singleton purple r1c6.",
+    "At 4.42s reveal exactly one cat, reused from the existing HUD artwork, centered in r1c6. Change only 0 to 1 in 0/8.",
+    "Confine two input rings, warm glow and three tiny paw sparkles to the first placement. Let the same hand rest below/right after the reveal.",
+    "Briefly glint existing rule-card edges at 6s, 7.5s and 9s; preserve their text. End with one cat, 1/8 and three fish.",
+    "Locked camera, no extra cats, crosses, moves, life loss, reward or victory. Reconstruct only the background obscured by the existing hand from nearby same-colored tiles.",
+    "Use original synthesized taps, pop, mew-like tone, chime and quiet sparse plucked notes. Installed macOS voices returned empty files, so the rendered clip has no narration."
+  ],
+  "limitations": [
+    "This is a deterministic presentation over a still image, not playable Unity or captured game behavior.",
+    "A small area originally obscured by the hand is reconstructed; the new counter digit uses a local font.",
+    "The cat is existing illustration composited into the cell; no model-generated animation or new raster artwork was used."
+  ],
+  "planned_voiceover": "Double-tap to place a cat. One per row, column, and color. Keep cats apart.",
+  "voiceover_rendered": false,
+  "voiceover_limitation": "Installed macOS voices returned empty audio; parent approved SFX and music only."
+}

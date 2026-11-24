@@ -1,0 +1,36 @@
+{
+  "slug": "cat-merge",
+  "attempt": "minimax-h3-v1",
+  "status": "failed",
+  "model": "video-minimax-h3",
+  "input_image": "flat/images/cat-merge-flat-v2.png",
+  "prompt_file": "flat/video/requests/cat-merge-minimax-h3-v1.json",
+  "error": "ContentBlocked",
+  "details": [
+    "The prompt references the specific brand-related currency icon and style from Roblox in the top right corner."
+  ],
+  "prior_attempts": [
+    {
+      "slug": "cat-merge",
+      "attempt": "seedance-v1",
+      "status": "failed",
+      "model": "video-seedance-2-5",
+      "error": "ContentBlocked",
+      "details": [
+        "The prompt and image reference the Robux currency and Roblox iconography trademark."
+      ],
+      "archive_location": "Local archive only"
+    },
+    {
+      "slug": "cat-merge",
+      "attempt": "gemini-omni-v2",
+      "status": "failed",
+      "model": "video-gemini-omni-1-2-flash",
+      "error": "ContentBlocked",
+      "details": [
+        "The user prompt and image reference the Roblox currency icon and brand asset."
+      ],
+      "archive_location": "Local archive only"
+    }
+  ]
+}

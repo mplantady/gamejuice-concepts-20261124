@@ -1,0 +1,35 @@
+{
+  "prompt": "Create a 12-second portrait gameplay concept from the supplied polished reference. Preserve this game's existing visual language throughout: flat elements stay flat; shaded elements retain the same kind of shading, material, depth and lighting. Never convert the game to another illustration/rendering style. The reference is the exact opening layout and inventory. Keep every fixed HUD word, number, functional color, camera projection, board boundary and character identity, except the explicitly authorized state updates below.\n\nThe creative priority is a striking improvement in GAME FEEL through ANIMATION, VFX AND AUDIO. Direct a beautifully timed, readable demonstration of the supplied legal moves: a clear anticipation, decisive travel, a satisfying contact/snap, an expressive but controlled settle and a quiet final-state hold. Make each interaction feel authored and responsive. Character actions may include a short blink, wingbeat, ear flick or gentle squash within their existing footprint; rigid tiles/cards/rings/board pieces remain rigid. No new gameplay action, extra piece, refill, combo, victory or reward.\n\nVFX must speak the same visual language as the original. For flat artwork use short graphic strokes, opaque colored ticks and clean shape bursts. For shaded artwork use compact material-appropriate contact effects and existing-style highlights/soft particles. Do not introduce dimensional shadows, bloom or photoreal lighting to flat art. Do not flatten a shaded game. Localize accents to the actual touch, landing, merge or release; keep symbols legible and clear effects quickly. Keep the full screen and HUD visible. Board/puzzle cameras remain locked; an impact-heavy 3D game may have one extremely small recoil with immediate exact return, never a zoom, orbit or crop.\n\nAudio carries equal craft: a distinct input sound, short motion accent, crisp material-specific contact and brief rewarding resolution for each real event, with clear rhythmic spacing. Include the supplied concise mechanics narration, natural and intelligible, with original understated music ducked beneath it and no recognizable tune. Avoid a constant wall of sound or a victory fanfare for partial progress. Sync accents to visible contact frames. The result should feel substantially more responsive and satisfying while unmistakably remaining the same game.\n\nExecute only the following verified input/state sequence. Show each moved object continuously from its source to the correct destination. Preserve all unrelated pieces, slot counts, order, links, shadows and HUD values. Hold the exact specified partial result at the end. This is a look-and-feel proposal, not evidence of a Unity implementation.\n\nLocal deterministic motion mockup.\n0–2: Establish the exact seven-row, three-column shelf reference. Focus on row four: the left cell has two pink FRUIT cartons with its middle slot empty; the center cell has cups, a FRUIT carton, and a travel cup.\n2–6: Use the existing tutorial hand to pick the FRUIT carton from the middle slot of row-four center cell and drag it left into the empty middle slot of row-four left cell. Treat the translucent carton under the hand as a tutorial ghost for this one object, not an additional physical item.\n6–9: Snap the moved carton into place. The left cell now contains exactly three FRUIT cartons. Pulse the three together, squash and pop them out, then reveal the game's sold-out marker in that cell.\n9–12: Let the celebration particles fall away. Hold the single cleared left cell and the now-empty center slot of its source cell. Keep all other goods in their original cells; end without another match, a level win or reward.\nNarration: Drag a matching item into an open slot. Three identical goods clear the shelf.\nImplementation constraints:\nUses the saved polished screenshot and existing source-game SOLD OUT artwork; no AI model generation.\nThe baked tutorial hand/ghost is isolated and animated. Covered central shelf areas are reconstructed from matching visible polished products; this is a compositing approximation, not a new game render.\nOne fruit carton moves from row-four center middle to row-four left middle. Exactly three cartons clear; other goods remain fixed.\nCamera remains fixed; small localized particles and deterministic motion illustrate the planned interaction.\nExisting Samantha system voice reads the exact two plan sentences; original synthesized tones, swishes and music support the timing.",
+  "duration": 12,
+  "resolution": "1080x1920",
+  "aspect_ratio": "9:16",
+  "audio": "Locally synthesized stereo music and synchronized original SFX.",
+  "method": "local_animation",
+  "action_sequence": [
+    {
+      "seconds": "0–2",
+      "action": "Establish the exact seven-row, three-column shelf reference. Focus on row four: the left cell has two pink FRUIT cartons with its middle slot empty; the center cell has cups, a FRUIT carton, and a travel cup."
+    },
+    {
+      "seconds": "2–6",
+      "action": "Use the existing tutorial hand to pick the FRUIT carton from the middle slot of row-four center cell and drag it left into the empty middle slot of row-four left cell. Treat the translucent carton under the hand as a tutorial ghost for this one object, not an additional physical item."
+    },
+    {
+      "seconds": "6–9",
+      "action": "Snap the moved carton into place. The left cell now contains exactly three FRUIT cartons. Pulse the three together, squash and pop them out, then reveal the game's sold-out marker in that cell."
+    },
+    {
+      "seconds": "9–12",
+      "action": "Let the celebration particles fall away. Hold the single cleared left cell and the now-empty center slot of its source cell. Keep all other goods in their original cells; end without another match, a level win or reward."
+    }
+  ],
+  "implementation_constraints": [
+    "Uses the saved polished screenshot and existing source-game SOLD OUT artwork; no AI model generation.",
+    "The baked tutorial hand/ghost is isolated and animated. Covered central shelf areas are reconstructed from matching visible polished products; this is a compositing approximation, not a new game render.",
+    "One fruit carton moves from row-four center middle to row-four left middle. Exactly three cartons clear; other goods remain fixed.",
+    "Camera remains fixed; small localized particles and deterministic motion illustrate the planned interaction.",
+    "Existing Samantha system voice reads the exact two plan sentences; original synthesized tones, swishes and music support the timing."
+  ],
+  "narration": "Drag a matching item into an open slot. Three identical goods clear the shelf.",
+  "voice": "Samantha (installed macOS system voice)"
+}

@@ -1,0 +1,23 @@
+{
+  "slug": "royal-smash",
+  "attempt": "seedance-v1",
+  "status": "generated",
+  "model": "video-seedance-2-5",
+  "file": "faithful/video/clips/royal-smash-seedance-v1.mp4",
+  "width": 1078,
+  "height": 1920,
+  "duration": 12.041667,
+  "audio": true,
+  "input_image": "faithful/images/royal-smash-faithful-v1.png",
+  "prompt_file": "faithful/video/requests/royal-smash-seedance-v1.json",
+  "review": {
+    "status": "reviewed_concept_with_limitations",
+    "summary": "The original bright shaded 3D style is retained. One shot changes Balls20→19, breaks the upper stack and leaves a readable partial structure with the bottom beam and support intact.",
+    "game_feel": "Readable launch anticipation, energetic upward/outward can motion, short impact accents and a clear settled hold. The full portrait composition remains visible.",
+    "fidelity_limits": [
+      "The generated collision is illustrative rather than a replay of the game physics. Upper side pieces change shape/placement and some tumbling pieces differ from the exact verified inventory.",
+      "The lower side clusters, short bottom-center piece, bottom beam and pillar broadly remain in sampled final frames. No win or second shot is shown.",
+      "Six encoded samples inspected. Audio stream is present but its spoken content and sound quality were not independently auditioned."
+    ]
+  }
+}

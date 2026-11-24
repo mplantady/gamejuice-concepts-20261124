@@ -1,0 +1,62 @@
+{
+  "duration_seconds": 12,
+  "width": 1080,
+  "height": 1920,
+  "fps": 30,
+  "audio": "Two taps, pop, synthesized mew-like tone, confirmation chime and quiet plucked notes; narration at 2.35 and 5.35 seconds.",
+  "method": "local_animation",
+  "label": "Flat local motion mockup; deterministic still animation, not an engine recording or AI video.",
+  "timeline": [
+    {
+      "seconds": [
+        0,
+        2.5
+      ],
+      "action": "Hold approved flat reference exactly, including tutorial scrim and attribution."
+    },
+    {
+      "seconds": [
+        2.5,
+        4.05
+      ],
+      "action": "Subtle anticipation by the existing source glove; board stays fixed."
+    },
+    {
+      "seconds": [
+        4.05,
+        4.35
+      ],
+      "action": "Two distinct taps on singleton purple r1c6, with crisp flat input circles."
+    },
+    {
+      "seconds": [
+        4.42,
+        4.82
+      ],
+      "action": "Exactly one source-art cat pops into r1c6; counter 0/8 becomes 1/8 once. Three fish retained."
+    },
+    {
+      "seconds": [
+        4.42,
+        5.22
+      ],
+      "action": "Existing glove rests below/right; three tiny opaque paw ticks resolve. No glow or light effects."
+    },
+    {
+      "seconds": [
+        5.22,
+        12
+      ],
+      "action": "Hold one cat, 1/8, all original regions, three fish, rule cards, Download and © Oakever Games. No further state changes."
+    }
+  ],
+  "limitations": [
+    "Local motion study, not playable Unity or a captured game trace.",
+    "Only the board area hidden by the original glove is reconstructed using matching green cell art and a flat purple/cream target.",
+    "The single cat is extracted from the approved HUD icon; hand/cat alpha contours and the first counter digit are reconstructed locally.",
+    "Existing minor fill variance in the approved image remains. No new shadow, glow, bevel, rule glint, camera motion, extra cat, cross, life loss, reward or victory is added."
+  ],
+  "voiceover": "Double-tap to place a cat. One per row, column, and color. Keep cats apart.",
+  "voice": "Installed generic macOS Samantha",
+  "voiceover_rendered": true
+}
