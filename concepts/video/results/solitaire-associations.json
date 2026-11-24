@@ -1,14 +1,16 @@
 {
   "slug": "solitaire-associations",
-  "attempt": "minimax-h3",
-  "status": "failed",
-  "model": "video-minimax-h3",
+  "attempt": "gemini-omni",
+  "status": "generated",
+  "model": "video-gemini-omni-1-2-flash",
+  "file": "video/clips/solitaire-associations-gemini-omni-v1.mp4",
+  "width": 1080,
+  "height": 1920,
+  "duration": 12.032,
+  "audio": true,
   "input_image": "images/solitaire-associations-combined.png",
-  "prompt_file": "video/requests/solitaire-associations-minimax-h3.json",
-  "error": "ContentBlocked",
-  "details": [
-    "The prompt and image reference the proprietary mobile game Solitaire Associations Journey."
-  ],
+  "prompt_file": "video/requests/solitaire-associations-gemini-omni.json",
+  "review": "Generated concept; visual and audio review pending.",
   "prior_attempts": [
     {
       "slug": "solitaire-associations",
@@ -30,6 +32,18 @@
       "error": "ContentBlocked",
       "details": [
         "The user prompt references the trademarked game title Solitaire Associations Journey."
+      ]
+    },
+    {
+      "slug": "solitaire-associations",
+      "attempt": "minimax-h3",
+      "status": "failed",
+      "model": "video-minimax-h3",
+      "input_image": "images/solitaire-associations-combined.png",
+      "prompt_file": "video/requests/solitaire-associations-minimax-h3.json",
+      "error": "ContentBlocked",
+      "details": [
+        "The prompt and image reference the proprietary mobile game Solitaire Associations Journey."
       ]
     }
   ]

@@ -11,6 +11,7 @@
   "prompt_file": "video/requests/cat-merge.json",
   "review": {
     "status": "reviewed_with_material_fidelity_issue",
+    "summary": "Clear aim-and-drop setup and stable UI, but the merge invents a large full-body white cat instead of the existing head-only next tier. Useful motion/VFX concept; not an exact gameplay reference.",
     "method": "Visually inspected extracted frames at 0, 2, 4, 6, 8, 9, 10, 11 and 11.9 seconds against the combined image and verified plan. This is sampled-frame review, not continuous audiovisual playback.",
     "first_frame_layout": "Closely preserves the supplied composition, four-cat pile plus suspended cat, brick container, hand, 5000 counter and RECEIVE button. No pixel-exact equivalence is claimed.",
     "input_causality": "Readable sequence: hand reaches the suspended cat, aims it right, disappears on release, and the cat falls toward its matching brown-and-white target. Two brown-and-white inputs visibly squash together at 8 seconds.",

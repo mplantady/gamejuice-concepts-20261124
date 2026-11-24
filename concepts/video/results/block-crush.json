@@ -11,6 +11,7 @@
   "prompt_file": "video/requests/block-crush.json",
   "review": {
     "status": "reviewed_with_material_fidelity_issue",
+    "summary": "The three tray selections and warm visual style are readable, but all three placements break the verified grid geometry. Shapes shrink or lose cells and land in the wrong locations. This is an appearance/VFX concept, not a reliable gameplay demonstration.",
     "method": "Visually inspected frames at 0, 2, 4, 6, 8, 10 and 11.9 seconds against the combined reference and saved placement plan. Sampled-frame review, not continuous audiovisual playback.",
     "first_frame_layout": "Closely preserves the initial 8×8 board, three tray shapes, gold blocks, colored collectibles, foliage, settings icon and target values 18/26/10. No pixel-exact equivalence is claimed.",
     "placement_fidelity": [

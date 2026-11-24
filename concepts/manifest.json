@@ -1,7 +1,7 @@
 {
   "version": "v1",
   "created": "2026-11-24",
-  "updated": "24 Nov 2026, 10:14",
+  "updated": "24 Nov 2026, 10:19",
   "games": [
     {
       "slug": "bird-sort",
@@ -80,15 +80,46 @@
       },
       "reference_state": "Original opening/tutorial state",
       "reference_available": true,
-      "video": null,
-      "video_failure": {
-        "blocked": true,
-        "error": "ContentBlocked",
-        "models": "Seedance 2.5, Kling 4",
-        "reason": "The prompt references the specific game title Bird Sort 2 Color Puzzle Game.",
-        "result_file": "video/results/bird-sort.json",
-        "charged_points": null
-      }
+      "video": {
+        "slug": "bird-sort",
+        "attempt": "minimax-h3",
+        "status": "generated",
+        "model": "video-minimax-h3",
+        "file": "video/clips/bird-sort-minimax-h3-v1.mp4",
+        "width": 1440,
+        "height": 2560,
+        "duration": 12.25,
+        "audio": true,
+        "input_image": "images/bird-sort-combined.png",
+        "prompt_file": "video/requests/bird-sort-minimax-h3.json",
+        "review": "Generated concept; visual and audio review pending.",
+        "prior_attempts": [
+          {
+            "slug": "bird-sort",
+            "status": "failed",
+            "model": "video-seedance-2-5",
+            "input_image": "images/bird-sort-combined.png",
+            "error": "ContentBlocked",
+            "details": [
+              "The prompt references the specific game title Bird Sort 2 Color Puzzle Game."
+            ]
+          },
+          {
+            "slug": "bird-sort",
+            "attempt": "fallback",
+            "status": "failed",
+            "model": "video-kling-v4-i2v",
+            "input_image": "images/bird-sort-combined.png",
+            "prompt_file": "video/requests/bird-sort-kling-v4.json",
+            "error": "ContentBlocked",
+            "details": [
+              "The prompt references the specific game title Bird Sort 2 Color Puzzle Game."
+            ]
+          }
+        ],
+        "prompt_available": true
+      },
+      "video_failure": null
     },
     {
       "slug": "draft-showdown",
@@ -180,6 +211,7 @@
         "prompt_file": "video/requests/draft-showdown.json",
         "review": {
           "status": "reviewed_with_framing_issue",
+          "summary": "The +5 Geese selection resolves into exactly five recognizable geese with a readable deployment payoff and no invented battle result. The main deviation is an excessive mid-clip zoom that crops the HUD before returning to the full view.",
           "method": "Visually inspected extracted frames at 0, 2, 4, 5, 6, 7, 8, 10 and 11.9 seconds against the combined image and verified first-choice plan. Sampled-frame review, not continuous audiovisual playback.",
           "first_frame_layout": "Closely preserves the supplied arena, +3 Knights/+5 Geese options, tutorial hand, Player54399/WIZARD headers, three hearts each and 1/3 indicator. No pixel-exact equivalence is claimed.",
           "input_causality": "The hand taps the right +5 Geese card. The knights option disappears; the chosen card lifts to center, dissolves, and geese arrive with blue trails and landing rings. No unchosen knights are deployed.",
@@ -296,8 +328,8 @@
       "video_failure": {
         "blocked": true,
         "error": "ContentBlocked",
-        "models": "Seedance 2.5, Kling 4, MiniMax H3",
-        "reason": "The prompt references the trademarked mobile game title Goods Puzzle: Sort Challenge.",
+        "models": "Seedance 2.5, Kling 4, MiniMax H3, Gemini Omni 1.2 Flash, Kling 3 Pro",
+        "reason": "The request references the trademarked brand and game title Goods Puzzle: Sort Challenge.",
         "result_file": "video/results/goods-puzzle.json",
         "charged_points": null
       }
@@ -392,6 +424,7 @@
         "prompt_file": "video/requests/cat-merge.json",
         "review": {
           "status": "reviewed_with_material_fidelity_issue",
+          "summary": "Clear aim-and-drop setup and stable UI, but the merge invents a large full-body white cat instead of the existing head-only next tier. Useful motion/VFX concept; not an exact gameplay reference.",
           "method": "Visually inspected extracted frames at 0, 2, 4, 6, 8, 9, 10, 11 and 11.9 seconds against the combined image and verified plan. This is sampled-frame review, not continuous audiovisual playback.",
           "first_frame_layout": "Closely preserves the supplied composition, four-cat pile plus suspended cat, brick container, hand, 5000 counter and RECEIVE button. No pixel-exact equivalence is claimed.",
           "input_causality": "Readable sequence: hand reaches the suspended cat, aims it right, disappears on release, and the cat falls toward its matching brown-and-white target. Two brown-and-white inputs visibly squash together at 8 seconds.",
@@ -442,6 +475,7 @@
           "available": true,
           "result_status": "generated",
           "review": {
+            "summary": "Board and HUD state remain recognizable, with clear contact shadows and brighter lighting.",
             "layout": "The 6×6 board, color regions, 0/6 counter, three bones and hand placement are retained; proportions are close to the reference.",
             "text": "Rule copy and Double-click remain readable with minor typography/spacing changes.",
             "identity": "Dog, hand and decorative objects are redrawn; the bowl gains a star and extra grass appears at the bottom.",
@@ -458,6 +492,7 @@
           "available": true,
           "result_status": "generated",
           "review": {
+            "summary": "Richer tile surfaces and crisp redraws provide a visibly more polished board.",
             "layout": "The 6×6 grid, visible color arrangement, counters and main UI positions are retained.",
             "text": "0/6, Double-click and rule meanings remain readable; typography is redrawn.",
             "identity": "The dog becomes a more expressive smiling character; bowl motif and grass decoration differ from the original.",
@@ -474,6 +509,7 @@
           "available": true,
           "result_status": "generated",
           "review": {
+            "summary": "Cleaner high-contrast UI and legible instruction copy; the visible puzzle arrangement remains recognizable.",
             "layout": "Retains 6×6 board, color-region pattern, 0/6, three bones and tutorial hand over the yellow tile.",
             "text": "Rule copy and Double-click are readable; typography weight and treatment differ.",
             "identity": "Dog face, hand, board tile surfaces and bottom environment are redrawn; bowl gains a paw motif and extra grass appears.",
@@ -490,6 +526,7 @@
           "available": true,
           "result_status": "generated",
           "review": {
+            "summary": "Coherent glossy casual-game treatment with clearer highlights, contact depth and crisp interface text.",
             "layout": "Main screen regions and 6×6 color arrangement match closely; HUD values and tutorial position remain.",
             "text": "0/6 and all three rules remain readable; Double-click is retained.",
             "identity": "Dog stays recognizable but facial styling changes; background gains extra grass and the bowl gains a paw motif.",
@@ -568,6 +605,7 @@
           "available": true,
           "result_status": "generated",
           "review": {
+            "summary": "Soft shadows and purple tonal depth make cards more dimensional while keeping the recognizable arrangement.",
             "layout": "Five foundations, five columns, draw pile, move banner and bottom controls remain in their original regions; visible stack heights appear preserved.",
             "text": "Level 1, Moves 190, 0/8, Sister, Family, Aunt, Ketchup, Words and Download remain legible.",
             "identity": "Calico cat is redrawn in a different simplified style; card outlines and app icon artwork are changed.",
@@ -584,6 +622,7 @@
           "available": true,
           "result_status": "generated",
           "review": {
+            "summary": "Refined patterned cards and textured purple surfaces create a finished illustrated treatment.",
             "layout": "Five foundations and column arrangement remain; counters and bottom controls preserve their regions and values.",
             "text": "All main visible labels and values remain legible and consistent with the source.",
             "identity": "Calico cat remains recognizable but is redrawn. Floral corner motifs and leaf sprigs are added to formerly plain areas.",
@@ -600,6 +639,7 @@
           "available": true,
           "result_status": "generated",
           "review": {
+            "summary": "Stronger text hierarchy and polished controls retain the familiar card layout and visible labels.",
             "layout": "Five foundations, column positions, draw pile and move/level values remain recognizable; no extra control is introduced.",
             "text": "Level 1, Moves 190, 0/8, card words, Words and Download are readable.",
             "identity": "Cat and app icon are redrawn, and card/backdrop surfaces are changed even though gameplay art should remain fixed.",
@@ -616,6 +656,7 @@
           "available": true,
           "result_status": "generated",
           "review": {
+            "summary": "Cohesive dimensional card surfaces, warm highlights and readable UI give the reference a polished treatment.",
             "layout": "Five foundations and main stack layout remain close; the top-right draw pile gains several visibly layered card edges not shown in the reference.",
             "text": "Main text and counter values are preserved and readable.",
             "identity": "Cat remains calico but changes facial style and proportions; app icon is redrawn.",
@@ -626,15 +667,58 @@
       },
       "reference_state": "Original opening/tutorial state",
       "reference_available": true,
-      "video": null,
-      "video_failure": {
-        "blocked": true,
-        "error": "ContentBlocked",
-        "models": "Seedance 2.5, Kling 4, MiniMax H3",
-        "reason": "The prompt and image reference the proprietary mobile game Solitaire Associations Journey.",
-        "result_file": "video/results/solitaire-associations.json",
-        "charged_points": null
-      }
+      "video": {
+        "slug": "solitaire-associations",
+        "attempt": "gemini-omni",
+        "status": "generated",
+        "model": "video-gemini-omni-1-2-flash",
+        "file": "video/clips/solitaire-associations-gemini-omni-v1.mp4",
+        "width": 1080,
+        "height": 1920,
+        "duration": 12.032,
+        "audio": true,
+        "input_image": "images/solitaire-associations-combined.png",
+        "prompt_file": "video/requests/solitaire-associations-gemini-omni.json",
+        "review": "Generated concept; visual and audio review pending.",
+        "prior_attempts": [
+          {
+            "slug": "solitaire-associations",
+            "status": "failed",
+            "model": "video-seedance-2-5",
+            "input_image": "images/solitaire-associations-combined.png",
+            "error": "ContentBlocked",
+            "details": [
+              "The request explicitly references the specific game title Solitaire Associations Journey."
+            ]
+          },
+          {
+            "slug": "solitaire-associations",
+            "attempt": "fallback",
+            "status": "failed",
+            "model": "video-kling-v4-i2v",
+            "input_image": "images/solitaire-associations-combined.png",
+            "prompt_file": "video/requests/solitaire-associations-kling-v4.json",
+            "error": "ContentBlocked",
+            "details": [
+              "The user prompt references the trademarked game title Solitaire Associations Journey."
+            ]
+          },
+          {
+            "slug": "solitaire-associations",
+            "attempt": "minimax-h3",
+            "status": "failed",
+            "model": "video-minimax-h3",
+            "input_image": "images/solitaire-associations-combined.png",
+            "prompt_file": "video/requests/solitaire-associations-minimax-h3.json",
+            "error": "ContentBlocked",
+            "details": [
+              "The prompt and image reference the proprietary mobile game Solitaire Associations Journey."
+            ]
+          }
+        ],
+        "prompt_available": true
+      },
+      "video_failure": null
     },
     {
       "slug": "mahjong-rumble",
@@ -651,6 +735,7 @@
           "available": true,
           "result_status": "generated",
           "review": {
+            "summary": "Soft dimensional tiles and clearer highlights preserve the tutorial composition and visible matching targets.",
             "layout": "Four-column layout, visible symbol sequence, three highlighted bird tiles, hand position and HUD values remain recognizable.",
             "text": "Tutorial and HUD copy remain legible. Footer changes punctuation after 'only' to a comma, so exact copy is not fully preserved.",
             "identity": "Bird, flower, character and circle symbols remain recognizable but are substantially redrawn.",
@@ -667,6 +752,7 @@
           "available": true,
           "result_status": "generated",
           "review": {
+            "summary": "Detailed ceramic-like tile surfaces and crisp symbols provide a rich art treatment.",
             "layout": "Main four-column grid and highlighted bird positions remain close to the reference; HUD values retain Level 1, $0.00 and Match 0.",
             "text": "Main tutorial and footer text are readable and visually consistent with the source.",
             "identity": "Recognizable tile identities are retained; symbols gain relief and tile faces gain embossed patterns.",
@@ -683,6 +769,7 @@
           "available": true,
           "result_status": "generated",
           "review": {
+            "summary": "HUD and tutorial typography are clearer, with a more deliberate dark-green panel treatment.",
             "layout": "Grid arrangement, highlighted bird targets, hand location and HUD values are retained in recognizable positions.",
             "text": "HUD, tutorial and footer copy are readable and visually consistent with the source.",
             "identity": "Tile symbols stay recognizable but tile rendering and hand illustration are redrawn.",
@@ -699,6 +786,7 @@
           "available": true,
           "result_status": "generated",
           "review": {
+            "summary": "Polished tile relief, soft directional light and crisp UI form a coherent premium treatment.",
             "layout": "Four-column composition, demonstrated symbol layout, three highlighted birds and tutorial hand remain close to the original.",
             "text": "Level 1, $0.00, Match 0, tutorial copy and footer text remain readable.",
             "identity": "Symbols retain recognizable identities; tile/hand styling is more dimensional.",
@@ -776,6 +864,7 @@
           "available": true,
           "result_status": "generated",
           "review": {
+            "summary": "Directional highlights and contact shadows clearly separate the ring network from the warm background.",
             "layout": "Overall ring network, open/closed ring locations, central knot, connectors, hand/arrow and bottom ad bar remain close to the source composition.",
             "text": "Headline retains the source wording including 'th rings'; IQ = 90, FREE TO PLAY and Install remain readable.",
             "identity": "Copper open rings, darker closed rings and central knot remain recognizable; material texture and hand styling change.",
@@ -792,6 +881,7 @@
           "available": true,
           "result_status": "generated",
           "review": {
+            "summary": "More detailed metallic/wood-like surfaces and clean ring edges produce a richer graphic treatment.",
             "layout": "Main network arrangement and open-ring gaps appear preserved; the central knot is redrawn, so exact interweaving fidelity remains unverified.",
             "text": "Source wording including 'th rings', IQ = 90 and bottom CTA copy are retained; quote styling changes.",
             "identity": "Ring categories stay recognizable; collars gain decorative detail and the hand/app icon are redrawn.",
@@ -808,6 +898,7 @@
           "available": true,
           "result_status": "generated",
           "review": {
+            "summary": "Bold, legible headline and refined bottom CTA improve interface hierarchy.",
             "layout": "Ring network, hand/arrow, central knot and bottom control regions remain recognizable and close to the original.",
             "text": "Exact headline wording including 'th rings', IQ = 90, FREE TO PLAY and Install is retained; quotation styling changes.",
             "identity": "Ring art, surface textures and hand/app icon are redrawn, despite a UI-only request.",
@@ -824,6 +915,7 @@
           "available": true,
           "result_status": "generated",
           "review": {
+            "summary": "Coherent warm materials, stronger contact depth and clear UI give the game a visibly finished treatment.",
             "layout": "The same overall network, open/closed rings, connectors, knot and tutorial cue remain in close correspondence; exact knot interweaving is not proven.",
             "text": "Source wording, including 'th rings', and all principal bottom copy/values remain readable.",
             "identity": "Copper open rings stay recognizable; closed rings are reinterpreted with conspicuous wood grain, changing their original mottled material identity.",
@@ -996,6 +1088,7 @@
         "prompt_file": "video/requests/block-crush.json",
         "review": {
           "status": "reviewed_with_material_fidelity_issue",
+          "summary": "The three tray selections and warm visual style are readable, but all three placements break the verified grid geometry. Shapes shrink or lose cells and land in the wrong locations. This is an appearance/VFX concept, not a reliable gameplay demonstration.",
           "method": "Visually inspected frames at 0, 2, 4, 6, 8, 10 and 11.9 seconds against the combined reference and saved placement plan. Sampled-frame review, not continuous audiovisual playback.",
           "first_frame_layout": "Closely preserves the initial 8×8 board, three tray shapes, gold blocks, colored collectibles, foliage, settings icon and target values 18/26/10. No pixel-exact equivalence is claimed.",
           "placement_fidelity": [
@@ -1245,8 +1338,8 @@
       "video_failure": {
         "blocked": true,
         "error": "ContentBlocked",
-        "models": "Seedance 2.5, Kling 4, MiniMax H3",
-        "reason": "The prompt and image reference the specific game title Vita Mahjong.",
+        "models": "Seedance 2.5, Kling 4, MiniMax H3, Gemini Omni 1.2 Flash, Kling 3 Pro",
+        "reason": "The prompt references the specific brand and game title Vita Mahjong.",
         "result_file": "video/results/vita-mahjong.json",
         "charged_points": null
       }
@@ -1332,8 +1425,8 @@
       "video_failure": {
         "blocked": true,
         "error": "ContentBlocked",
-        "models": "Seedance 2.5, Kling 4, MiniMax H3",
-        "reason": "The user prompt and image reference the specific game brand 'Meowdoku'.",
+        "models": "Seedance 2.5, Kling 4, MiniMax H3, Gemini Omni 1.2 Flash, Kling 3 Pro",
+        "reason": "The prompt references the specific trademarked game title Meowdoku.",
         "result_file": "video/results/meowdoku.json",
         "charged_points": null
       }
@@ -1341,7 +1434,7 @@
   ],
   "ready": 48,
   "total": 48,
-  "video_ready": 7,
-  "video_blocked": 5,
+  "video_ready": 9,
+  "video_blocked": 3,
   "video_failed": 0
 }

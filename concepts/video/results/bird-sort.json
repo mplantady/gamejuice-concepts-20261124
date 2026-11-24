@@ -1,20 +1,34 @@
 {
   "slug": "bird-sort",
-  "attempt": "fallback",
-  "status": "failed",
-  "model": "video-kling-v4-i2v",
+  "attempt": "minimax-h3",
+  "status": "generated",
+  "model": "video-minimax-h3",
+  "file": "video/clips/bird-sort-minimax-h3-v1.mp4",
+  "width": 1440,
+  "height": 2560,
+  "duration": 12.25,
+  "audio": true,
   "input_image": "images/bird-sort-combined.png",
-  "prompt_file": "video/requests/bird-sort-kling-v4.json",
-  "error": "ContentBlocked",
-  "details": [
-    "The prompt references the specific game title Bird Sort 2 Color Puzzle Game."
-  ],
+  "prompt_file": "video/requests/bird-sort-minimax-h3.json",
+  "review": "Generated concept; visual and audio review pending.",
   "prior_attempts": [
     {
       "slug": "bird-sort",
       "status": "failed",
       "model": "video-seedance-2-5",
       "input_image": "images/bird-sort-combined.png",
+      "error": "ContentBlocked",
+      "details": [
+        "The prompt references the specific game title Bird Sort 2 Color Puzzle Game."
+      ]
+    },
+    {
+      "slug": "bird-sort",
+      "attempt": "fallback",
+      "status": "failed",
+      "model": "video-kling-v4-i2v",
+      "input_image": "images/bird-sort-combined.png",
+      "prompt_file": "video/requests/bird-sort-kling-v4.json",
       "error": "ContentBlocked",
       "details": [
         "The prompt references the specific game title Bird Sort 2 Color Puzzle Game."

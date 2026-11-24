@@ -1,13 +1,13 @@
 {
   "slug": "vita-mahjong",
-  "attempt": "minimax-h3",
+  "attempt": "kling-v3",
   "status": "failed",
-  "model": "video-minimax-h3",
+  "model": "video-kling-v3-i2v-pro",
   "input_image": "images/vita-mahjong-combined.png",
-  "prompt_file": "video/requests/vita-mahjong-minimax-h3.json",
+  "prompt_file": "video/requests/vita-mahjong-kling-v3.json",
   "error": "ContentBlocked",
   "details": [
-    "The prompt and image reference the specific game title Vita Mahjong."
+    "The prompt references the specific brand and game title Vita Mahjong."
   ],
   "prior_attempts": [
     {
@@ -30,6 +30,30 @@
       "error": "ContentBlocked",
       "details": [
         "The prompt references the specific brand name Vita Mahjong."
+      ]
+    },
+    {
+      "slug": "vita-mahjong",
+      "attempt": "minimax-h3",
+      "status": "failed",
+      "model": "video-minimax-h3",
+      "input_image": "images/vita-mahjong-combined.png",
+      "prompt_file": "video/requests/vita-mahjong-minimax-h3.json",
+      "error": "ContentBlocked",
+      "details": [
+        "The prompt and image reference the specific game title Vita Mahjong."
+      ]
+    },
+    {
+      "slug": "vita-mahjong",
+      "attempt": "gemini-omni",
+      "status": "failed",
+      "model": "video-gemini-omni-1-2-flash",
+      "input_image": "images/vita-mahjong-combined.png",
+      "prompt_file": "video/requests/vita-mahjong-gemini-omni.json",
+      "error": "ContentBlocked",
+      "details": [
+        "The prompt and image reference the branded game 'Vita Mahjong'."
       ]
     }
   ]

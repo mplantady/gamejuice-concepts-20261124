@@ -1,13 +1,13 @@
 {
   "slug": "goods-puzzle",
-  "attempt": "minimax-h3",
+  "attempt": "kling-v3",
   "status": "failed",
-  "model": "video-minimax-h3",
+  "model": "video-kling-v3-i2v-pro",
   "input_image": "images/goods-puzzle-combined.png",
-  "prompt_file": "video/requests/goods-puzzle-minimax-h3.json",
+  "prompt_file": "video/requests/goods-puzzle-kling-v3.json",
   "error": "ContentBlocked",
   "details": [
-    "The prompt references the trademarked mobile game title Goods Puzzle: Sort Challenge."
+    "The request references the trademarked brand and game title Goods Puzzle: Sort Challenge."
   ],
   "prior_attempts": [
     {
@@ -30,6 +30,30 @@
       "error": "ContentBlocked",
       "details": [
         "The prompt references the trademarked game title Goods Puzzle: Sort Challenge."
+      ]
+    },
+    {
+      "slug": "goods-puzzle",
+      "attempt": "minimax-h3",
+      "status": "failed",
+      "model": "video-minimax-h3",
+      "input_image": "images/goods-puzzle-combined.png",
+      "prompt_file": "video/requests/goods-puzzle-minimax-h3.json",
+      "error": "ContentBlocked",
+      "details": [
+        "The prompt references the trademarked mobile game title Goods Puzzle: Sort Challenge."
+      ]
+    },
+    {
+      "slug": "goods-puzzle",
+      "attempt": "gemini-omni",
+      "status": "failed",
+      "model": "video-gemini-omni-1-2-flash",
+      "input_image": "images/goods-puzzle-combined.png",
+      "prompt_file": "video/requests/goods-puzzle-gemini-omni.json",
+      "error": "ContentBlocked",
+      "details": [
+        "The prompt references the specific game title Goods Puzzle: Sort Challenge."
       ]
     }
   ]

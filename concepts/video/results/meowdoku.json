@@ -1,13 +1,13 @@
 {
   "slug": "meowdoku",
-  "attempt": "minimax-h3",
+  "attempt": "kling-v3",
   "status": "failed",
-  "model": "video-minimax-h3",
+  "model": "video-kling-v3-i2v-pro",
   "input_image": "images/meowdoku-combined.png",
-  "prompt_file": "video/requests/meowdoku-minimax-h3.json",
+  "prompt_file": "video/requests/meowdoku-kling-v3.json",
   "error": "ContentBlocked",
   "details": [
-    "The user prompt and image reference the specific game brand 'Meowdoku'."
+    "The prompt references the specific trademarked game title Meowdoku."
   ],
   "prior_attempts": [
     {
@@ -30,6 +30,30 @@
       "error": "ContentBlocked",
       "details": [
         "The prompt references the specific trademarked game title Meowdoku."
+      ]
+    },
+    {
+      "slug": "meowdoku",
+      "attempt": "minimax-h3",
+      "status": "failed",
+      "model": "video-minimax-h3",
+      "input_image": "images/meowdoku-combined.png",
+      "prompt_file": "video/requests/meowdoku-minimax-h3.json",
+      "error": "ContentBlocked",
+      "details": [
+        "The user prompt and image reference the specific game brand 'Meowdoku'."
+      ]
+    },
+    {
+      "slug": "meowdoku",
+      "attempt": "gemini-omni",
+      "status": "failed",
+      "model": "video-gemini-omni-1-2-flash",
+      "input_image": "images/meowdoku-combined.png",
+      "prompt_file": "video/requests/meowdoku-gemini-omni.json",
+      "error": "ContentBlocked",
+      "details": [
+        "The prompt references the specific game brand 'Meowdoku!', which is protected intellectual property."
       ]
     }
   ]
