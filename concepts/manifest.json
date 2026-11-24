@@ -1,7 +1,7 @@
 {
   "version": "v1",
   "created": "2026-11-24",
-  "updated": "24 Nov 2026, 16:30",
+  "updated": "24 Nov 2026, 18:06",
   "games": [
     {
       "slug": "bird-sort",
@@ -194,6 +194,7 @@
       },
       "video_failure": null,
       "enhanced_playable": "enhanced/bird-sort/index.html",
+      "anime_playable": "enhanced/bird-sort-anime/index.html",
       "comparison_video": "video/comparisons/bird-sort/index.html",
       "flat_video": {
         "slug": "bird-sort",
@@ -524,6 +525,7 @@
       },
       "video_failure": null,
       "enhanced_playable": null,
+      "anime_playable": null,
       "comparison_video": null,
       "flat_video": {
         "slug": "draft-showdown",
@@ -856,6 +858,7 @@
       },
       "video_failure": null,
       "enhanced_playable": null,
+      "anime_playable": null,
       "comparison_video": null,
       "flat_video": {
         "slug": "goods-puzzle",
@@ -1112,6 +1115,7 @@
       },
       "video_failure": null,
       "enhanced_playable": null,
+      "anime_playable": null,
       "comparison_video": null,
       "flat_video": null,
       "flat_video_failure": {
@@ -1338,6 +1342,7 @@
       },
       "video_failure": null,
       "enhanced_playable": null,
+      "anime_playable": null,
       "comparison_video": null,
       "flat_video": {
         "slug": "woofdoku",
@@ -1611,6 +1616,7 @@
       },
       "video_failure": null,
       "enhanced_playable": null,
+      "anime_playable": null,
       "comparison_video": null,
       "flat_video": {
         "slug": "solitaire-associations",
@@ -1919,6 +1925,7 @@
       },
       "video_failure": null,
       "enhanced_playable": null,
+      "anime_playable": null,
       "comparison_video": null,
       "flat_video": {
         "slug": "mahjong-rumble",
@@ -2277,6 +2284,7 @@
       },
       "video_failure": null,
       "enhanced_playable": null,
+      "anime_playable": null,
       "comparison_video": null,
       "flat_video": {
         "slug": "rotate-rings",
@@ -2594,6 +2602,7 @@
       },
       "video_failure": null,
       "enhanced_playable": null,
+      "anime_playable": null,
       "comparison_video": null,
       "flat_video": {
         "slug": "block-crush",
@@ -2887,6 +2896,7 @@
       },
       "video_failure": null,
       "enhanced_playable": null,
+      "anime_playable": null,
       "comparison_video": null,
       "flat_video": {
         "slug": "royal-smash",
@@ -3200,6 +3210,7 @@
       },
       "video_failure": null,
       "enhanced_playable": null,
+      "anime_playable": null,
       "comparison_video": null,
       "flat_video": {
         "slug": "vita-mahjong",
@@ -3597,6 +3608,7 @@
       },
       "video_failure": null,
       "enhanced_playable": null,
+      "anime_playable": null,
       "comparison_video": null,
       "flat_video": {
         "slug": "meowdoku",

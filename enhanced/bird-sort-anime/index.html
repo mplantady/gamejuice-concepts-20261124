@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#10182e">
+  <meta name="description" content="Play Anime vibe: expressive painted birds, a layered twilight forest, full flight animation and lively arcade effects.">
+  <title>Bird Sort · Anime vibe</title>
+  <style>
+    :root{color-scheme:dark;--night:#10182e;--ink:#f5f0df;--muted:#abb4c6;--mint:#f2cf8c;--gold:#f4d991;--line:#34394c}
+    *{box-sizing:border-box}body{margin:0;background:#10131e;color:var(--ink);font:15px/1.5 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}a{color:var(--mint);text-underline-offset:4px}button,a{-webkit-tap-highlight-color:transparent}button{font:inherit}button:focus-visible,a:focus-visible{outline:3px solid var(--gold);outline-offset:5px;border-radius:6px}[hidden]{display:none!important}
+    .topbar{max-width:1120px;margin:auto;padding:18px 24px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{text-decoration:none;color:var(--ink);font-size:20px;font-weight:800;letter-spacing:-.7px}.brand span{color:var(--mint)}.back{font-size:13px;text-decoration:none}.back:hover{text-decoration:underline}
+    main{max-width:1120px;margin:auto;padding:0 24px 28px}.heading{text-align:center;margin:0 0 12px}.eyebrow{margin:0 0 2px;color:var(--gold);font-size:10px;font-weight:750;letter-spacing:2px;text-transform:uppercase}h1{font-size:25px;line-height:1.1;letter-spacing:-.8px;margin:0}.tagline{font-size:13px;color:var(--muted);margin:6px 0 0}
+    .stage{position:relative;isolation:isolate;width:min(100%,max(260px,calc((100svh - 186px)*940/1973)));aspect-ratio:940/1973;margin:auto;overflow:hidden;background:var(--night);border:1px solid #444153;border-radius:20px;box-shadow:0 16px 70px #0005}.stage iframe{display:block;width:100%;height:100%;border:0;background:var(--night)}.poster{position:absolute;inset:0;background:var(--night);display:flex;align-items:center;justify-content:center}.poster img{position:absolute;top:0;left:0;width:100%;height:84.795%;object-fit:fill}.poster::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,#0b10200a 10%,#10131e55 40%,#10131ed9 85%)}.invitation{position:relative;z-index:1;text-align:center;width:85%;padding:22px 14px;background:#10182ee8;border:1px solid #f4d99166;border-radius:20px}.invitation h2{font-size:clamp(20px,3.4vw,28px);line-height:1.1;letter-spacing:-.7px;margin:0 0 10px}.invitation p{font-size:13px;color:#d0d6e2;margin:0 0 20px}.play{border:0;border-radius:14px;color:var(--night);background:var(--mint);padding:14px 26px;min-height:48px;font-weight:800;cursor:pointer}.play:hover{background:#ffe4b1}.play:active{transform:translateY(1px)}.note{display:block;color:var(--muted);font-size:11px;margin-top:11px}.poster-footer{position:absolute;bottom:3.4%;left:0;width:100%;z-index:1;text-align:center;font-size:11px;letter-spacing:1px;color:var(--gold)}
+    .toolbar{display:flex;justify-content:center;align-items:center;flex-wrap:wrap;gap:10px 20px;margin:12px auto 0;font-size:12px}.toolbar button{border:1px solid var(--line);border-radius:9px;padding:7px 12px;background:#1e2332;color:var(--ink);cursor:pointer;min-height:34px}.toolbar button:hover{border-color:var(--mint)}.toolbar a{text-decoration:none}.toolbar a:hover{text-decoration:underline}.status{min-height:18px;text-align:center;font-size:11px;color:var(--muted);margin:8px 0 0}.details{max-width:640px;margin:24px auto 0;border-top:1px solid var(--line);padding-top:20px;text-align:center}.details h2{font-size:15px;margin:0 0 8px}.details p{font-size:13px;color:var(--muted);margin:0 auto 16px;max-width:540px}.links{display:flex;justify-content:center;flex-wrap:wrap;gap:8px 22px;font-size:12px}.links a{text-decoration:none}.links a:hover{text-decoration:underline}
+    .stage:fullscreen{width:100vw;max-width:none;height:100dvh;aspect-ratio:auto;border:0;border-radius:0;box-shadow:none;background:#10131e}.stage:fullscreen iframe{width:100%;height:100%}.stage:fullscreen .poster{max-width:calc(100dvh*940/1973);margin:auto}.stage:fullscreen .invitation{max-width:360px}
+    @media(max-width:520px){.topbar{padding:14px 16px}.brand{font-size:18px}.back{font-size:11px}main{padding:0 12px 24px}.heading{margin-bottom:10px}h1{font-size:22px}.tagline{font-size:12px}.stage{border-radius:16px}.toolbar{gap:8px 16px}.details{margin-top:20px}.links{gap:12px 18px}}
+    @media(prefers-reduced-motion:reduce){.play:active{transform:none}}
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="../../concepts/index.html?round=faithful">Game<span>Juice</span></a>
+    <a class="back" href="../../concepts/index.html?round=faithful#bird-sort">← Concept gallery</a>
+  </header>
+  <main>
+    <div class="heading"><p class="eyebrow">Anime vibe · Preview</p><h1>Bird Sort · Anime vibe</h1><p class="tagline">Twilight skies. Bright personalities.</p></div>
+    <section class="stage" id="stage" aria-label="Bird Sort game">
+      <iframe id="game" src="about:blank" data-src="bento.html?v=anime400" title="Bird Sort playable game" allow="autoplay; fullscreen" allowfullscreen hidden></iframe>
+      <div class="poster" id="poster">
+        <img src="poster.jpg" alt="Artwork preview: fifty anime birds in a painted twilight forest." width="940" height="1673">
+        <div class="invitation"><h2>Bring the flock together.</h2><p>Match the birds at each branch’s tip.<br>Five friends, one happy flight.</p><button class="play" id="play" type="button">Play Anime vibe</button><span class="note" id="sound-note">Sound starts with your first tap in the game.</span><p id="compatibility" role="status" hidden>This browser cannot run this edition. <a href="../bird-sort/classic.html">Open the classic edition.</a></p></div>
+        <div class="poster-footer">50 BIRDS · 10 FLOCKS</div>
+      </div>
+    </section>
+    <nav class="toolbar" aria-label="Game display options">
+      <button id="fullscreen" type="button">Full screen</button>
+      <a href="bento.html?v=anime400" target="_blank" rel="noopener">Open game ↗</a>
+      <a href="../bird-sort/">Juicy forest ↗</a>
+    </nav>
+    <p class="status" id="status" role="status" aria-live="polite">Choose Play to open the forest.</p>
+    <section class="details" aria-labelledby="how-title">
+      <h2 id="how-title">A branch, a match, a little flight.</h2>
+      <p>Choose a branch, then an empty branch or one with the same bird at its tip. Matching birds travel together when there is room. Clear all ten flocks to finish. Use Tab or the arrow keys to navigate, and Enter to choose.</p>
+      <p>Initial preview. Browser playtesting is pending; the cover shows the installed artwork.</p>
+      <nav class="links" aria-label="Bird Sort variants">
+        <a href="../bird-sort/?v=bento361">Play Juicy forest ↗</a>
+        <a href="../../concepts/index.html?round=faithful#bird-sort">Back to the Concept gallery ↗</a>
+      </nav>
+    </section>
+    <noscript><p>This game needs JavaScript. <a href="bento.html?v=anime400">Open Bird Sort directly</a>.</p></noscript>
+  </main>
+  <script>
+    (() => {
+      const game = document.getElementById('game');
+      const poster = document.getElementById('poster');
+      const stage = document.getElementById('stage');
+      const status = document.getElementById('status');
+      const fullscreen = document.getElementById('fullscreen');
+      let started = false;
+      document.getElementById('play').addEventListener('click', () => {
+        if (started) return;
+        if (!navigator.gpu) {
+          document.getElementById('compatibility').hidden = false;
+          document.getElementById('sound-note').hidden = true;
+          status.textContent = '';
+          return;
+        }
+        started = true;
+        game.hidden = false;
+        game.src = game.dataset.src;
+        poster.hidden = true;
+        status.textContent = 'Opening the forest…';
+        game.focus();
+      });
+      game.addEventListener('load', () => {
+        if (!started || game.getAttribute('src') === 'about:blank') return;
+        status.textContent = 'Tap the forest to start sound. Controls are beneath the branches.';
+        game.focus();
+      });
+      if (!stage.requestFullscreen) fullscreen.hidden = true;
+      fullscreen.addEventListener('click', async () => {
+        try {
+          if (document.fullscreenElement) await document.exitFullscreen();
+          else await stage.requestFullscreen();
+          if (started) game.focus();
+        } catch {
+          status.textContent = 'Use Open game for a separate full view.';
+        }
+      });
+      document.addEventListener('fullscreenchange', () => {
+        fullscreen.textContent = document.fullscreenElement ? 'Exit full screen' : 'Full screen';
+      });
+      window.addEventListener('message', event => {
+        if (event.source === game.contentWindow && event.data === 'bento-lab:review-embed:release') {
+          fullscreen.focus();
+        }
+      });
+    })();
+  </script>
+</body>
+</html>
