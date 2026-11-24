@@ -1,0 +1,49 @@
+{
+  "slug": "mahjong-rumble",
+  "status": "generated",
+  "model": "video-seedance-2-5",
+  "file": "video/clips/mahjong-rumble-seedance-v1.mp4",
+  "width": 1078,
+  "height": 1920,
+  "duration": 12.064,
+  "audio": true,
+  "input_image": "images/mahjong-rumble-combined.png",
+  "prompt_file": "video/requests/mahjong-rumble.json",
+  "review": {
+    "status": "reviewed",
+    "verdict": "Useful match-feedback concept, but fails gameplay fidelity after the triple clears: the final tile arrangement differs materially from the observed original.",
+    "method": "Compared nine extracted frames with the combined first frame, source-checked plan and captured original first-triple outcome; no continuous playback or listening.",
+    "sample_times_seconds": [
+      0,
+      2,
+      3.25,
+      4,
+      4.5,
+      6,
+      8,
+      10,
+      11.5
+    ],
+    "frame_directory": "video/checks/mahjong-rumble",
+    "first_frame_layout": "Complete first-frame layout closely follows the combined reference: four columns, original highlighted birds, HUD, tutorial and full disclosure footer.",
+    "triple_selection": "Hand visits the correct bottom-left bird, then the two birds in columns 2 and 3 one row above. All three clear together around 4.5s; tutorial hand/text disappear. Selection happens slightly earlier than the planned beats.",
+    "board_state": "Incorrect after the drop. At 10–11.5s, bottom-left is green發 instead of the required red flower. Numerous other surviving positions differ; the untouched fourth column also changes. The upper area introduces altered dot-color patterns. This is not the prescribed six-row result or a faithful column-only fall.",
+    "counters_and_cta": "At 10–11.5s, Level 1, Winnings $21.00 and Match 1 are correctly readable, with a green centered Play Now button above the unchanged footer. A new gold star remains beside Match, absent from the reference outcome.",
+    "vfx_readability": "The three bright green clearance flashes correspond to the correct three cells. The flashes briefly hide those selected tiles but clear; they do not obstruct the footer or HUD. Empty gaps linger at 6s before the incorrect rearrangement.",
+    "camera_and_ui_continuity": "No major HUD or camera drift is visible in the sampled frames: HUD position, frame and footer stay stable. A stray desktop arrow cursor appears below the hand around 2s. The added Match star is a UI addition.",
+    "audio": {
+      "stream_present": true,
+      "codec": "aac",
+      "sample_rate_hz": 32000,
+      "channels": 2,
+      "content_reviewed": false,
+      "note": "AAC presence verified only; voiceover, sound effects and synchronization were not listened to."
+    },
+    "technical_note": "Actual video stream 1078×1920; container duration 12.064s.",
+    "recommended_adjustments": [
+      "Keep every surviving tile identity and column order; use the captured six-row final board exactly, including the unchanged fourth column.",
+      "Remove the stray desktop cursor and unsupported persistent Match star."
+    ],
+    "limitations": "Representative frame review establishes visible mismatches, not a frame-by-frame temporal or audio validation. No retry or paid call was made."
+  }
+}

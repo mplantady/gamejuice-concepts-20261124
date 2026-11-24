@@ -1,0 +1,50 @@
+{
+  "slug": "woofdoku",
+  "status": "generated",
+  "model": "video-seedance-2-5",
+  "file": "video/clips/woofdoku-seedance-v1.mp4",
+  "width": 1078,
+  "height": 1920,
+  "duration": 12.064,
+  "audio": true,
+  "input_image": "images/woofdoku-combined.png",
+  "prompt_file": "video/requests/woofdoku.json",
+  "review": {
+    "status": "reviewed",
+    "verdict": "Usable visual concept with minor feedback/readability issues; sampled final gameplay state matches the plan.",
+    "method": "Inspected ffmpeg-extracted frames against the combined first-frame image and source-checked plan; no continuous playback or listening.",
+    "sample_times_seconds": [
+      0,
+      2,
+      2.5,
+      3,
+      3.5,
+      4,
+      4.5,
+      5,
+      6,
+      8,
+      11
+    ],
+    "frame_directory": "video/checks/woofdoku",
+    "first_frame_layout": "Preserves the 6×6 grid, color regions, HUD/rule strip and lower decorations. Complete portrait composition remains visible.",
+    "gameplay_state": "One dog appears in the correct top-row second-column yellow cell around 4.5–5s. Counter becomes 1/6 and remains there through 11s; all 3 bones remain. No extra dogs or persistent exclusion marks are visible; no completion panel.",
+    "input_clarity": "Hand stays on the correct yellow cell with expanding touch pulses around 2.5–3.5s. These sampled frames do not establish two discrete contacts within the original double-tap window.",
+    "vfx_readability": "The paw halo at 5s is much larger than one cell and washes over adjacent tiles; it clears by 8s. The dog pop briefly rises above its tile at 4.5s. The accepted destination remains identifiable.",
+    "ui_continuity": "Grid geometry, colors and rule text remain readable and stable at the settled samples. The 1/6 digits briefly smear/ghost during the 5s counter pulse, then become clear; no new controls appear.",
+    "audio": {
+      "stream_present": true,
+      "codec": "aac",
+      "sample_rate_hz": 32000,
+      "channels": 2,
+      "content_reviewed": false,
+      "note": "AAC presence verified only; voiceover, sound design and synchronization were not listened to."
+    },
+    "technical_note": "Actual video stream is 1078×1920 rather than exact 1080×1920; container duration 12.064s.",
+    "recommended_adjustments": [
+      "Keep the paw halo closer to the accepted cell and reduce warm spill onto neighboring colors.",
+      "Keep counter glyphs sharp during the update and show two clearly separated quick tap contacts."
+    ],
+    "limitations": "Visual sampling supports the observed concept outcome, not executable gameplay correctness."
+  }
+}

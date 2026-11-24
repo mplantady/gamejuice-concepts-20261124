@@ -1,0 +1,69 @@
+{
+  "slug": "rotate-rings",
+  "status": "generated",
+  "model": "video-seedance-2-5",
+  "file": "video/clips/rotate-rings-seedance-v2.mp4",
+  "width": 1078,
+  "height": 1920,
+  "duration": 12.041667,
+  "audio": true,
+  "input_image": "images/rotate-rings-combined.png",
+  "prompt_file": "video/requests/rotate-rings-v2.json",
+  "review": {
+    "status": "reviewed",
+    "verdict": "The intended single-ring outcome is preserved, but the requested rotation direction and gap-to-connector alignment are not faithfully demonstrated.",
+    "method": "Compared ten extracted v2 frames with the combined reference, original source-checked plan and exact requests/rotate-rings-v2.json. No continuous playback or listening.",
+    "sample_times_seconds": [
+      0,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      10,
+      11.5
+    ],
+    "frame_directory": "video/checks/rotate-rings-v2",
+    "first_frame_layout": "Preserves the 12-ring network, materials, original headline and typo, IQ 90, tutorial pointer, app icon and Install footer.",
+    "ring_selection_and_result": "Only the intended far-left ring 6 is manipulated and disappears by 7s, with a lower-left release trail. The other 11 rings remain in the same arrangement through 11.5s; no extra ring vanishes or endcard appears.",
+    "rotation_fidelity": "The gap and hand move from the left toward upper-left and then upper-right, which reads as clockwise in the sampled 2–6s sequence instead of the requested 120° counterclockwise drag. Immediately before release, the gap is near the upper-right while the gold coupling is still at the lower-right, so a valid gap/connector alignment is not clearly shown. Exact source angle is not validated by these rendered frames.",
+    "counters_and_feedback": "IQ 90→95 is clear by 7s and stays 95. Orange Good appears at 7s and clears by 8s. The tutorial hand disappears after release.",
+    "vfx_readability": "Metal highlights and the lower-left release streak remain readable without concealing the remaining network. No stretching or cutting of the other rings is apparent in the samples.",
+    "camera_and_ui_continuity": "The network is stable after the early frames. Headline and footer shift slightly from the exact first-frame placement, so the requested screen-locked UI is not pixel-stable; wording and full footer remain readable.",
+    "audio": {
+      "stream_present": true,
+      "codec": "aac",
+      "sample_rate_hz": 32000,
+      "channels": 2,
+      "content_reviewed": false,
+      "note": "AAC presence verified only. The revised exact voiceover, dry mechanical effects, absence of music and synchronization were not listened to or verified."
+    },
+    "technical_note": "Actual video stream 1078×1920; container duration 12.041667s; audio stream 11.968s.",
+    "recommended_adjustments": [
+      "Show the specified counterclockwise rotation and a visible gap-to-connector alignment before releasing the same ring.",
+      "Keep headline/footer at the exact first-frame screen positions."
+    ],
+    "limitations": "Representative frame review supports the single-ring count and final UI state; it does not prove an executable legal drag or audio compliance. No paid call or retry was made."
+  },
+  "prior_attempts": [
+    {
+      "slug": "rotate-rings",
+      "status": "failed",
+      "model": "video-seedance-2-5",
+      "input_image": "images/rotate-rings-combined.png",
+      "error": {
+        "event": "error",
+        "code": "COMMAND_FAILURE",
+        "message": "Request failed: ContentBlocked.",
+        "remediation": [],
+        "error": "ContentBlocked",
+        "details": [
+          "The generated audio was blocked due to copyright concerns. Try adjusting your prompt to request different music, instruments, or a different style that doesn't trigger copyright detection."
+        ],
+        "httpStatus": 200
+      }
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "version": "v1",
+  "generation_tool": "built-in image_gen",
+  "experiment": "Four independent edits from the same original per game; not sequential edits.",
+  "shared_base": "Use case: style-transfer. Asset type: enhanced mobile-game screenshot concept for later image-to-video development.\nInput image 1 is the ORIGINAL GAME SCREENSHOT and the edit target. Produce one finished, full-bleed portrait gameplay image with the same aspect ratio as the reference (390:694). No device, mockup frame, comparison panels, labels, watermarks or added slogans.\nPreserve this exact game and visible state: same camera and composition, playfield shape, row/column structure, piece count and positions, recognizable character and item identities, functional colors, selection/tutorial cues, readable copy and counter values. Keep existing controls and HUD in their current regions and footprints. Do not add mechanics, objects, menus, rewards or moves. The viewer should immediately recognize the same playable game.\nRetain its cheerful stylized casual-game character. Make the chosen improvement visible and professionally crafted while keeping symbols legible at phone size. Preserve the reference's gameplay geometry; no camera tilt, zoom, scene expansion or re-layout. Exact text must remain verbatim. The output is a visual concept, not a new gameplay state.\nApply only this experiment:\n",
+  "profiles": {
+    "lighting": {
+      "label": "Lighting",
+      "short": "Lighting only",
+      "instruction": "LIGHTING ONLY. Upgrade illumination and depth while preserving the original artwork, materials, UI styling and layout. Add coherent soft key/fill lighting, gentle contact shadows and restrained edge highlights appropriate to the existing scene. Separate foreground pieces from the background with controlled value contrast. Keep the original palette and functional color identities. For a flat puzzle, use subtle surface/contact depth rather than turning it into a 3D perspective scene. Avoid bloom on text, haze over pieces, dark unreadable areas, lens flare and decorative particles. Do not redesign the pieces or interface.",
+      "focus": "Soft lighting, contact depth, readable contrast; original artwork and UI retained."
+    },
+    "graphics": {
+      "label": "Graphics",
+      "short": "Graphics only",
+      "instruction": "GRAPHICS ONLY. Upgrade existing game art: cleaner expressive silhouettes, polished stylized surfaces, refined edges, richer but uncluttered textures and coherent handcrafted detail. Keep each existing character/item recognizable, in the same pose, footprint, count and location. Refine the existing background's artwork without new props. Preserve the reference lighting direction and overall exposure; do not add cinematic lighting, effects or UI redesign. Retain the original HUD/button styling and all text. Avoid photorealism, excessive texture noise, generic icon replacements and changing functional colors.",
+      "focus": "More finished game art and materials; existing lighting and UI retained."
+    },
+    "ui": {
+      "label": "UI",
+      "short": "UI only",
+      "instruction": "UI ONLY. Refine only the existing interface elements: crisper typography, cleaner icon treatment, deliberate internal padding, consistent corner radii, premium readable button/panel surfaces and stronger hierarchy. Retain exact text, values, meaning, overall placement and footprint of every existing control, counter, instruction and tutorial indicator. Keep all gameplay artwork, board geometry, characters, environment and lighting unchanged. If this screen contains very little UI, improve only the UI that actually exists; never invent a top bar, score, currency, buttons or navigation. No extra labels, badges or decorative overlays.",
+      "focus": "Typography, panels, buttons and hierarchy; gameplay art and lighting retained."
+    },
+    "combined": {
+      "label": "Polished Image",
+      "short": "Lighting + graphics + UI",
+      "instruction": "COMBINED PASS. Improve lighting, game graphics and existing UI together as one coherent premium casual-game treatment. Use soft motivated light, gentle contact depth and controlled highlights; refine existing characters/items with clean expressive forms and high-quality stylized materials; upgrade the existing UI with crisp exact typography, clean icons, balanced internal spacing and consistent polished surfaces. Preserve the original state, composition, counts, identities, functional colors and control footprints. Make the improvement clearly visible without making it a different game. No extra objects, heavy bloom, cinematic camera changes, noisy particles, invented controls or hidden symbols.",
+      "focus": "The same lighting, graphics and UI directions applied together."
+    }
+  }
+}

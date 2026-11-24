@@ -1,0 +1,45 @@
+{
+  "slug": "cat-merge",
+  "status": "generated",
+  "model": "video-seedance-2-5",
+  "file": "video/clips/cat-merge-seedance-v1.mp4",
+  "width": 1078,
+  "height": 1920,
+  "duration": 12.041667,
+  "audio": true,
+  "input_image": "images/cat-merge-combined.png",
+  "prompt_file": "video/requests/cat-merge.json",
+  "review": {
+    "status": "reviewed_with_material_fidelity_issue",
+    "method": "Visually inspected extracted frames at 0, 2, 4, 6, 8, 9, 10, 11 and 11.9 seconds against the combined image and verified plan. This is sampled-frame review, not continuous audiovisual playback.",
+    "first_frame_layout": "Closely preserves the supplied composition, four-cat pile plus suspended cat, brick container, hand, 5000 counter and RECEIVE button. No pixel-exact equivalence is claimed.",
+    "input_causality": "Readable sequence: hand reaches the suspended cat, aims it right, disappears on release, and the cat falls toward its matching brown-and-white target. Two brown-and-white inputs visibly squash together at 8 seconds.",
+    "fusion_and_counts": "Material mismatch at 9–12 seconds: the replacement grows a torso, legs and tail and becomes much larger than the existing white-cat head tier. Three unrelated original heads remain visible, but the oversized replacement hides part of the pile; exact input removal and absence of hidden duplicates cannot be certified. No second drop or chain is visible in the sampled frames.",
+    "vfx_readability": "Fall trail and impact squash communicate the action. The gold fusion ring and white silhouette at 9 seconds wash out the contact area; the large final body obscures the pile. Effects settle by 11.9 seconds, but are broader than the requested compact local treatment.",
+    "counter_and_ui": "5000 and RECEIVE remain readable and unchanged in inspected frames. No new score, payout or victory screen appears. Existing bottom disclaimer remains partly cropped as in the input.",
+    "audio": {
+      "stream_present": true,
+      "codec": "aac",
+      "channels": 2,
+      "sample_rate_hz": 32000,
+      "listened": false,
+      "note": "Audio stream presence verified only; voiceover wording, mix and sound synchronization were not assessed."
+    },
+    "limitations": [
+      "Sampled frames cannot establish every intermediate frame or exact physics.",
+      "Do not present this clip as proof of implemented gameplay or exact tier/count fidelity."
+    ],
+    "frames_directory": "video/checks/cat-merge",
+    "reviewed_timestamps_seconds": [
+      0,
+      2,
+      4,
+      6,
+      8,
+      9,
+      10,
+      11,
+      11.9
+    ]
+  }
+}

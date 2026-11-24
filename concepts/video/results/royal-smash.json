@@ -1,0 +1,50 @@
+{
+  "slug": "royal-smash",
+  "status": "generated",
+  "model": "video-seedance-2-5",
+  "file": "video/clips/royal-smash-seedance-v1.mp4",
+  "width": 1078,
+  "height": 1920,
+  "duration": 12.064,
+  "audio": true,
+  "input_image": "images/royal-smash-combined.png",
+  "prompt_file": "video/requests/royal-smash.json",
+  "review": {
+    "status": "reviewed",
+    "verdict": "Strong launch/impact presentation, but fails the observed one-shot gameplay outcome because the tower reassembles incorrectly and surviving geometry changes.",
+    "method": "Inspected ten extracted frames against the combined first frame, source-checked plan and reference/checks/royal-smash-one-shot.jpg. No continuous playback or listening.",
+    "sample_times_seconds": [
+      0,
+      2,
+      3,
+      3.5,
+      4,
+      5,
+      6,
+      8,
+      10,
+      11.5
+    ],
+    "frame_directory": "video/checks/royal-smash",
+    "first_frame_layout": "Closely preserves the complete combined-reference composition, opaque blue can pieces, original intact stack, cannon, support, Balls 20 and Play Now.",
+    "shot_and_counter": "One visible projectile/launch occurs around 3.5s. Balls is still 20 in that launch sample and becomes 19 by 4s, remaining 19 through 11.5s. The tutorial hand disappears. No second shot or extra count decrement is visible.",
+    "structure_fidelity": "Major mismatch. At 5–8s, pieces on both side arms lift despite being retained in the reference outcome; the broad upper beam visibly bends. By 10–11.5s, the top cap, top three cans and broad upper beam have reassembled, although all should be gone. Conversely, the bottom short central can disappears and the bottom broad beam develops a central cutout, whereas both must remain intact. The final vertical gap is therefore the wrong geometry.",
+    "preserved_elements": "Lower side clusters, pillar/support and cannon largely remain in place. Balls 19 and the CTA are clear. No victory/endcard or unsupported water-impact splash is visible in the sampled frames.",
+    "vfx_readability": "Muzzle flash, a large brown puff and localized impact sparkle make the shot clear. The launch briefly washes/dims much of the scene, and the puff hides the lower support area; it clears later. The main failure is the floating/reassembly motion and shape deformation, not obscured UI.",
+    "camera_and_ui_continuity": "HUD and CTA placement remain stable in the samples. A straight glowing aiming line appears before launch at 2–3s, adding an aiming graphic not present in the reference or requested plan.",
+    "audio": {
+      "stream_present": true,
+      "codec": "aac",
+      "sample_rate_hz": 32000,
+      "channels": 2,
+      "content_reviewed": false,
+      "note": "AAC presence verified only; voiceover, effects and synchronization were not listened to."
+    },
+    "technical_note": "Actual video stream 1078×1920; container duration 12.064s.",
+    "recommended_adjustments": [
+      "Keep the observed upper cap/row/beam absent after impact; preserve the side arms, bottom short central can and continuous bottom broad beam exactly.",
+      "Use rigid piece motion without beam bending or tower reassembly; remove the added aiming line and decrement Balls at launch."
+    ],
+    "limitations": "Representative visual sampling reveals clear state/geometry mismatches but does not validate every intermediate frame or audio. No retry or paid call was made."
+  }
+}

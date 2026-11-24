@@ -1,0 +1,291 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A local reference and reusable enhancement brief for twelve playable games, from reference capture to image, video, and future Unity mockups.">
+  <title>Enhancement brief · 12 playable references</title>
+  <style>
+    :root { color-scheme: light; --paper:#f5f4ef; --white:#fffefa; --ink:#142d40; --muted:#536471; --line:#d6dedb; --teal:#08766d; --pale:#e4f0ea; --amber:#865214; --amber-bg:#fff0d5; }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body { margin:0; background:var(--paper); color:var(--ink); font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }
+    a { color:var(--teal); text-underline-offset:3px; }
+    a:hover { text-decoration-thickness:2px; }
+    a:focus-visible, summary:focus-visible { outline:3px solid var(--teal); outline-offset:5px; }
+    .wrap { width:min(1180px, calc(100% - 48px)); margin:auto; }
+    .top { border-bottom:1px solid var(--line); }
+    .top .wrap { display:flex; flex-wrap:wrap; gap:14px 25px; align-items:center; padding:19px 0; font-size:13px; }
+    .brand { font-weight:750; letter-spacing:.08em; margin-right:auto; }
+    .top a { text-decoration:none; }
+    header { padding:70px 0 44px; }
+    .eyebrow { color:var(--teal); text-transform:uppercase; font-weight:750; font-size:12px; letter-spacing:.14em; margin:0 0 14px; }
+    h1 { font-size:clamp(38px,6vw,66px); letter-spacing:-.055em; line-height:1.06; max-width:900px; margin:0 0 24px; }
+    .lead { font-size:21px; line-height:1.5; max-width:840px; color:var(--muted); margin:0 0 26px; }
+    .pills { display:flex; flex-wrap:wrap; gap:8px; }
+    .pill { padding:5px 12px; border:1px solid var(--line); border-radius:99px; background:var(--white); font-size:12px; font-weight:650; }
+    .pill.primary { color:var(--teal); background:var(--pale); border-color:transparent; }
+    .notice { background:var(--pale); padding:20px 24px; border-left:4px solid var(--teal); margin:25px 0 0; max-width:1020px; }
+    .notice p { margin:0; }
+    main > section { padding:44px 0; border-top:1px solid var(--line); scroll-margin-top:20px; }
+    .section-head { display:flex; gap:20px; align-items:baseline; margin-bottom:22px; }
+    .number { color:var(--teal); font-size:13px; font-weight:750; letter-spacing:.06em; }
+    h2 { font-size:30px; line-height:1.2; letter-spacing:-.035em; margin:0; }
+    h3 { font-size:19px; line-height:1.3; margin:0 0 10px; }
+    p { margin:0 0 15px; }
+    .measure { max-width:900px; }
+    .muted, .caption { color:var(--muted); }
+    .caption { font-size:13px; }
+    .grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:18px; }
+    .card { padding:25px; border:1px solid var(--line); background:var(--white); border-radius:12px; }
+    .card p:last-child { margin-bottom:0; }
+    .card .label { display:block; color:var(--teal); font-size:12px; text-transform:uppercase; letter-spacing:.1em; font-weight:750; margin-bottom:12px; }
+    .callout { border:1px solid #e3c995; background:var(--amber-bg); border-radius:10px; padding:22px 25px; margin:24px 0; }
+    .callout strong { color:var(--amber); }
+    .table-wrap { overflow-x:auto; border:1px solid var(--line); border-radius:10px; background:var(--white); margin:24px 0 16px; }
+    table { border-collapse:collapse; width:100%; font-size:14px; }
+    th { text-align:left; color:var(--muted); background:#edf0eb; font-size:11px; text-transform:uppercase; letter-spacing:.06em; line-height:1.5; padding:14px 17px; }
+    td { padding:16px 17px; border-top:1px solid var(--line); vertical-align:top; }
+    td:first-child { min-width:180px; font-weight:650; }
+    td.metric { font-variant-numeric:tabular-nums; white-space:nowrap; }
+    td.concern { min-width:350px; }
+    tr.flagged td { background:#fffaee; }
+    .score { font-size:19px; font-weight:750; }
+    .subvalue { display:block; color:var(--muted); font-size:11px; margin-top:3px; }
+    .below { color:var(--amber); }
+    .flow { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:12px; margin:24px 0; }
+    .flow div { padding:20px; background:var(--white); border:1px solid var(--line); border-top:3px solid var(--teal); border-radius:6px; }
+    .flow b { display:block; margin:5px 0 8px; }
+    .flow small { color:var(--muted); display:block; line-height:1.5; }
+    ul, ol { padding-left:22px; margin:12px 0 20px; }
+    li { padding-left:3px; margin:8px 0; }
+    .prompt { border:1px solid var(--line); border-radius:12px; overflow:hidden; margin:24px 0 30px; background:var(--white); }
+    .prompt-head { padding:20px 25px 16px; background:#eaf0eb; border-bottom:1px solid var(--line); }
+    .prompt-head p { margin:8px 0 0; font-size:14px; color:var(--muted); }
+    pre { margin:0; padding:25px; white-space:pre-wrap; overflow-wrap:anywhere; font:14px/1.8 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace; color:#19394a; tab-size:2; }
+    .rubric td:first-child { min-width:160px; }
+    .rubric td:nth-child(2) { min-width:300px; }
+    .rubric td:last-child { min-width:230px; }
+    .closing { display:grid; grid-template-columns:1fr 1fr; gap:24px; }
+    .checklist { list-style:none; padding-left:0; }
+    .checklist li { padding-left:24px; position:relative; }
+    .checklist li::before { content:"□"; position:absolute; left:0; color:var(--teal); }
+    footer { border-top:1px solid var(--line); padding:26px 0 40px; font-size:13px; color:var(--muted); }
+    footer .wrap { display:flex; flex-wrap:wrap; justify-content:space-between; gap:15px; }
+    @media(max-width:850px) { .grid,.flow { grid-template-columns:1fr 1fr; } .closing { grid-template-columns:1fr; } }
+    @media(max-width:560px) { .wrap { width:calc(100% - 30px); } header { padding:42px 0 30px; } h1 { font-size:42px; } .lead { font-size:18px; } h2 { font-size:25px; } .grid,.flow { grid-template-columns:1fr; } .card { padding:20px; } .section-head { gap:13px; } main > section { padding:30px 0; } pre { padding:18px; font-size:12px; } .prompt-head { padding:18px; } }
+    @media print { :root { --paper:#fff; --white:#fff; } body { font-size:10pt; line-height:1.45; } .wrap { width:100%; } .top { display:none; } header { padding:15pt 0; } h1 { font-size:30pt; max-width:none; } .lead { font-size:13pt; } h2 { font-size:20pt; } h3 { font-size:13pt; } main > section { padding:18pt 0; } .table-wrap { overflow:visible; border-radius:0; } table { font-size:9pt; } th,td { padding:7pt; } td:first-child,td.concern,.rubric td:first-child,.rubric td:nth-child(2),.rubric td:last-child { min-width:0; } .score { font-size:12pt; } pre { font-size:9pt; line-height:1.5; padding:13pt; } .prompt { break-inside:auto; } .prompt-head, .section-head, h3 { break-after:avoid; } tr,.card,.flow div,.notice,.callout { break-inside:avoid; } a { color:inherit; } .pills { gap:5pt; } .pill { font-size:9pt; } .caption { font-size:9pt; } footer { padding:15pt 0; } }
+  </style>
+</head>
+<body>
+  <nav class="top" aria-label="Reference navigation">
+    <div class="wrap">
+      <span class="brand">GAMEJUICE / REFERENCE</span>
+      <a href="https://playable-variants.app.tessen.unity.com/focus_bucket.html">All games</a>
+      <a href="https://playable-variants.app.tessen.unity.com/focus_bucket.html">Saved catalog</a>
+      <a href="#baseline">12 baselines</a>
+      <a href="#prompts">Reusable prompts</a>
+      <a href="#rubric">Quality rubric</a>
+    </div>
+  </nav>
+  <header class="wrap">
+    <p class="eyebrow">Direction brief · 24 November 2026</p>
+    <h1>Same game.<br>More considered craft.</h1>
+    <p class="lead">A shared enhancement process for all 12 playable references: stronger lighting, richer graphics, clearer UI and deliberate feedback, with gameplay kept close to the original.</p>
+    <div class="pills">
+      <span class="pill primary">Reference phase</span>
+      <span class="pill">12 games · 60 source builds</span>
+      <span class="pill">Image → video concept → Unity mockup</span>
+      <span class="pill">Candidate prompts · not yet validated</span>
+    </div>
+    <div class="notice"><p><strong>This document prepares future implementation.</strong> It contains source findings, proposed art direction and reusable prompts. It does not represent generated concepts, a completed Unity scene, or verified Seedance 2.5 capabilities. A video concept is a look-and-feel target; it cannot establish correct gameplay.</p></div>
+  </header>
+  <main class="wrap">
+    <section id="direction" aria-labelledby="direction-title">
+      <div class="section-head"><span class="number">01</span><h2 id="direction-title">One pipeline, twelve distinct games</h2></div>
+      <p class="measure">The linked page is a catalog containing 12 originals, 12 conversions and 36 themed variants. The future goal covers all 12 games. Each needs its own reference contract; a shared visual recipe must never erase the distinctions that make its pieces, controls and outcomes understandable.</p>
+      <div class="grid">
+        <article class="card"><span class="label">Keep</span><h3>The recognizable game</h3><p>Preserve demonstrated rules, input mapping, piece identity, board geometry, progression, HUD meaning and camera framing. Use the original as the behavioral baseline; use conversions and variants as supporting references.</p></article>
+        <article class="card"><span class="label">Improve</span><h3>Light, material, hierarchy</h3><p>Give pieces cleaner shapes, controlled highlights and grounded depth. Refine UI spacing and typography within its existing footprint. Keep the strongest contrast on interactive pieces, goals and useful feedback.</p></article>
+        <article class="card"><span class="label">Express</span><h3>Polish tied to events</h3><p>Use short, legible visual and sound responses at verified events. Camera movement is optional and restrained. Preserve the player’s view and target positions during every interaction.</p></article>
+      </div>
+      <div class="callout"><strong>Fidelity first for Royal Smash and Draft Showdown.</strong> Their source-reported conversion scores are below the catalog’s target of 92. Enhance the original’s demonstrated experience rather than inheriting unverified differences from those conversions.</div>
+      <p class="caption">Source: <a href="https://playable-variants.app.tessen.unity.com/focus_bucket.html">saved catalog</a> · <a href="https://playable-variants.app.tessen.unity.com/focus_bucket.html">unaltered source HTML</a>. The source describes converted projects as editable three.js builds. This archive is a reference collection, not a set of completed Unity projects.</p>
+    </section>
+
+    <section id="baseline" aria-labelledby="baseline-title">
+      <div class="section-head"><span class="number">02</span><h2 id="baseline-title">Baseline register</h2></div>
+      <p class="measure"><strong>All scores and reviewer findings below are reported by the source catalog, not independently reproduced.</strong> “Final” measures each conversion against its original. Audio measures sound timing correspondence; Views measures high-resolution phone and desktop similarity. These values are not ratings of fun, commercial performance or future Unity quality.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th scope="col">Reference game</th><th scope="col">Final / 100</th><th scope="col">Audio / Views</th><th scope="col">Baseline concern → proposed first enhancement check</th></tr></thead>
+          <tbody>
+            <tr><td>Bird Sort 2 Color Puzzle Game</td><td class="metric"><span class="score">99.2</span></td><td class="metric">1.00 / 0.99</td><td class="concern">Reviewer notes similar dark bird values, mist washing out the scene and accessories obscuring crests. Preserve species recognition while refining light and material; keep particles outside important silhouettes.</td></tr>
+            <tr class="flagged"><td>Draft Showdown</td><td class="metric"><span class="score below">89.7</span><span class="subvalue">Below source target</span></td><td class="metric">0.27 / 0.75</td><td class="concern">Establish audio and framing fidelity first. Reviewer notes low unit contrast, haze over cards and dense sprite detail. Improve readable team/unit separation before richer atmosphere.</td></tr>
+            <tr><td>Goods Puzzle: Sort Challenge™</td><td class="metric"><span class="score">100.0</span></td><td class="metric">1.00 / 1.00</td><td class="concern">The ambient variant receives reviewer 6/6 for theme/polish; other variants contain similar-looking items and busy decorations. Refine shelf depth and item separation without a haze layer over play.</td></tr>
+            <tr><td>Cat Merge:Pet Game</td><td class="metric"><span class="score">97.1</span></td><td class="metric">0.98 / 0.89</td><td class="concern">Reviewer reports flatter replacement art, pale pieces against snow and uneven desktop restyling. Improve material coherence and edge contrast, preserving every demonstrated piece tier and footprint.</td></tr>
+            <tr><td>Woofdoku: Cozy Logic Game</td><td class="metric"><span class="score">99.3</span></td><td class="metric">1.00 / 1.00</td><td class="concern">Reviewer notes soft cushion tiles, weak recoloring and no captured placed dog piece in the key-sprite review. Capture that state before art approval; preserve tile color identity.</td></tr>
+            <tr><td>Solitaire Associations Journey</td><td class="metric"><span class="score">99.3</span></td><td class="metric">1.00 / 0.93</td><td class="concern">Source review flags replay divergence and uncertainty around the wrong-move red flash. Verify those states; preserve category/word meaning and make feedback visible beneath atmosphere.</td></tr>
+            <tr><td>Mahjong Rumble: Win Real Cash</td><td class="metric"><span class="score">99.1</span></td><td class="metric">1.00 / 1.00</td><td class="concern">Source CPU reduction is 0.9×, indicating a heavier conversion in that benchmark. Reviewer notes garland overlapping tiles. Refine tile materials and UI with a clear play area and a measured effects budget.</td></tr>
+            <tr><td>Rotate Rings</td><td class="metric"><span class="score">94.3</span></td><td class="metric">1.00 / 0.50</td><td class="concern">Views is substantially weaker than the aggregate score. Reviewer notes ambience above the end-card dim layer and low-contrast wreaths. Verify responsive framing and overlay order before adding depth.</td></tr>
+            <tr><td>Block Crush!</td><td class="metric"><span class="score">99.5</span></td><td class="metric">1.00 / 1.00</td><td class="concern">Source file-size reduction is 0.5×. Reviewer flags green-on-green pieces, lost collectible backing and clipped desktop rays. Preserve functional distinctions and keep richer art/effects economical.</td></tr>
+            <tr class="flagged"><td>Royal Smash! – Physics Puzzle</td><td class="metric"><span class="score below">79.1</span><span class="subvalue">Below source target</span></td><td class="metric">0.58 / 0.72</td><td class="concern">Source conversion uses more CPU and memory, with optimization skipped. Variant input/event metrics are weak. Establish input, progression, failure/retry and physics correspondence before lighting, impacts or camera polish.</td></tr>
+            <tr><td>Vita Mahjong</td><td class="metric"><span class="score">99.1</span></td><td class="metric">1.00 / 0.94</td><td class="concern">The Christmas review reports a missing tutorial hand, similar icons and connectors obscuring tiles. Preserve onboarding and one-to-one icon identity while improving face readability and depth.</td></tr>
+            <tr><td>Meowdoku!</td><td class="metric"><span class="score">98.5</span></td><td class="metric">1.00 / 0.99</td><td class="concern">The key-sprite variant receives reviewer 5/6: timid recoloring, striped tile noise and weak cat/background contrast. Improve silhouette and surface quality without obscuring region colors or rule cues.</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="caption">Details and comparison links: <a href="https://playable-variants.app.tessen.unity.com/focus_bucket.html#all">conversion table</a> · <a href="https://playable-variants.app.tessen.unity.com/focus_bucket.html#variants">variant table and reviewer notes</a>. A reduction below 1× means greater resource use, not a reduction.</p>
+      <div class="grid">
+        <article class="card"><span class="label">Reported risk · Royal Smash</span><h3>Appearance is not parity</h3><p>The candy variant receives theme/polish 9/7, while the three variants report event timing 0.598–0.640 and real-tap reactions 0.374–0.597. The conversion reports CPU 791 → 979 ms/s and heap 34 → 46 MB.</p></article>
+        <article class="card"><span class="label">Reported risk · Draft Showdown</span><h3>Verify the active sequence</h3><p>Variants report event timing 0.489–0.710 and real-tap reactions 0.440–0.713. The source’s Christmas review did not capture the result screen or CTA. Those states remain an evidence gap.</p></article>
+        <article class="card"><span class="label">Evidence limits</span><h3>Keep measurements honest</h3><p>Timing compares sound starts within ±250 ms, not complete game logic. Reviewers saw contact sheets. CPU tests are noisy; Draft’s conversion CPU is 232 ms/s in one table and 126.7 in another. Do not combine those baselines.</p></article>
+      </div>
+    </section>
+
+    <section id="sequence" aria-labelledby="sequence-title">
+      <div class="section-head"><span class="number">03</span><h2 id="sequence-title">The repeatable sequence</h2></div>
+      <div class="flow" aria-label="Proposed production sequence">
+        <div><span class="number">A / OBSERVE</span><b>Reference contract</b><small>Capture real states and actions. Separate verified facts from missing evidence.</small></div>
+        <div><span class="number">B / DESIGN</span><b>Image concept</b><small>Show a higher-quality treatment of the same visible state and layout.</small></div>
+        <div><span class="number">C / DIRECT</span><b>Video concept</b><small>Explore event-bound feedback, sound direction and restrained motion.</small></div>
+        <div><span class="number">D / BUILD LATER</span><b>Unity mockup</b><small>Translate the target into an editable scene using available Unity AI and CLI tools.</small></div>
+      </div>
+      <p class="measure">Reuse the prompt structure, not a fixed art style. Fill each contract from that game’s original build, screenshots and observed interaction. At every stage, compare against the original first. A failed fidelity check sends the artifact back for revision before it becomes input to the next stage.</p>
+      <p class="measure">For calibration, a high-scoring reference can establish the shared process; Royal Smash and Draft Showdown should then test whether the process handles harder fidelity problems. This sequencing does not remove either game from the 12-game scope.</p>
+    </section>
+
+    <section id="prompts" aria-labelledby="prompts-title">
+      <div class="section-head"><span class="number">04</span><h2 id="prompts-title">Reusable prompt sequence</h2></div>
+      <p class="measure">These are candidate templates, ready to fill and evaluate. Replace bracketed fields with observed evidence. Do not supply invented rules or imply that an attached screenshot proves behavior. Each step produces an explicit handoff to the next.</p>
+
+      <article class="prompt" id="prompt-contract">
+        <div class="prompt-head"><h3>A. Build the gameplay and reference contract</h3><p>Input: original playable, conversion, reference captures and a recorded interaction sequence. Output: a factual contract and any missing evidence.</p></div>
+        <pre>Analyze [GAME_NAME] for a future Unity visual enhancement that stays close to the original gameplay.
+
+Evidence supplied:
+- Original playable: [LOCAL_ORIGINAL_PATH]
+- Converted playable: [LOCAL_CONVERTED_PATH]
+- Original screenshots with viewport and state labels: [CAPTURES]
+- Recorded inputs and resulting states, with timestamps: [INTERACTION_RECORD]
+- Source catalog notes: [SOURCE_NOTES]
+
+Treat the original as the behavioral reference. Treat catalog scores and reviewer notes as source-reported clues, not independently verified facts. Inspect the provided evidence before describing rules. If a rule, transition, camera behavior or outcome is not demonstrated, mark it UNKNOWN and identify the capture needed to resolve it.
+
+Produce a concise REFERENCE_CONTRACT containing:
+1. Game identity, source paths, evidence IDs and capture dimensions.
+2. The demonstrated objective, permitted inputs, valid/invalid action behavior, state transitions, progression, failure/retry and end states. Include only states that actually exist in the evidence.
+3. A screen inventory: exact board/playfield geometry, visible piece counts and positions for each anchor state, identity-to-visual mapping, HUD values and copy, tutorial cues, overlays, interaction targets and safe areas.
+4. Camera projection, framing and any demonstrated motion. Distinguish the rendering camera from the device viewport.
+5. A verified event timeline: input → visible response → sound cue → resulting state. Record uncertainty instead of filling gaps.
+6. IMMUTABLES: interaction rules, target geometry, piece identity, layout relationships, readable text and outcome conditions that the enhancement must preserve.
+7. ALLOWED VISUAL CHANGES: material quality, controlled lighting, refined edges, UI craftsmanship and event-bound feedback that do not alter those immutables.
+8. Baseline issues and separate enhancement opportunities. Label each as observed, source-reported, or proposed.
+9. Comparison captures and replay checks required for this game.
+
+Do not generate a new game or begin Unity implementation. Return the contract plus a short evidence-gap list. This contract will constrain the image, video and Unity stages.</pre>
+      </article>
+
+      <article class="prompt" id="prompt-image">
+        <div class="prompt-head"><h3>B. Create the enhanced image concept</h3><p>Input: a completed contract and exact original frame. Output: one reference-consistent visual target, plus a change list and fidelity review.</p></div>
+        <pre>Create an enhanced visual concept for [GAME_NAME] using the attached original frame [ANCHOR_FRAME_ID] and REFERENCE_CONTRACT below.
+
+[REFERENCE_CONTRACT]
+
+Target: [OUTPUT_DIMENSIONS_AND_ASPECT_RATIO]. Art direction: [GAME_SPECIFIC_MATERIAL_AND_LIGHTING_DIRECTION]. Preserve the recognizable character of the original while making its lighting, graphics and UI feel more finished.
+
+Treat the source frame as a precise composition and state reference. Preserve the same camera framing and projection; board/playfield outline; piece count, type, identity, position and orientation; active selection; HUD values; tutorial guidance; button positions; copy and state of play. Keep all pieces and controls within their original interaction footprints. Do not add or remove game objects, change a symbol's meaning, invent a new state, or introduce a new mechanic.
+
+Improve craftsmanship within those constraints:
+- Coherent materials, clean silhouettes and well-controlled highlights.
+- Soft contact depth and lighting that support separation without hiding symbols or changing functional colors.
+- Crisp icons and typography, consistent padding and refined surfaces within existing UI geometry.
+- A quieter background and a clear hierarchy: playfield first, goals and feedback second, decoration last.
+- An appearance that remains legible at actual phone size, including dimmed and selected states where relevant.
+
+Avoid bloom over text, heavy depth of field, excessive gloss, particles over targets, large shadows across symbols, decorative objects that look interactive, or a perspective change. Preserve exact text; if the generator cannot reproduce it, mark that as unresolved and supply a separate exact UI overlay specification instead of approving altered copy.
+
+Return the concept image, a concise list of intentional visual changes, and a fidelity checklist against the anchor frame. Flag any drift in geometry, count, identity, values or readability for revision. Label the result VISUAL CONCEPT — NOT A PLAYABLE BUILD.</pre>
+      </article>
+
+      <article class="prompt" id="prompt-video">
+        <div class="prompt-head"><h3>C. Direct the video concept</h3><p>Intended video stage: Seedance 2.5, subject to actual tool availability and supported inputs. This template makes no claim about access, duration limits, native audio or supported controls.</p></div>
+        <pre>Create a short look-and-feel video concept for [GAME_NAME] from:
+- The REFERENCE_CONTRACT: [CONTRACT]
+- The selected enhanced image: [IMAGE_CONCEPT]
+- The original reference sequence and matching anchor frames: [REFERENCE_VIDEO_OR_FRAMES]
+- The verified event timeline: [EVENT_TIMELINE]
+- Requested output: [ASPECT_RATIO, DURATION_AND_FRAMING]
+
+Use Seedance 2.5 if it is available through the selected workflow, after checking its actual supported inputs and controls. Do not claim unsupported duration, audio, camera or reference-lock capabilities. If a requested feature is unavailable, identify that limit and retain its direction in a companion cue sheet rather than pretending it was rendered.
+
+The visual concept defines materials, lighting and UI treatment. The original sequence defines gameplay and causality. Reproduce only demonstrated states and transitions in the same order. Preserve piece identity, board geometry, HUD meaning, tutorial cues, action targets and visible outcomes. Keep text stable. Do not hallucinate extra moves, rewards, clears, impacts, counters, menus, wins or physics behavior.
+
+Add polish only at events confirmed by the timeline:
+- Anticipation, contact highlights, short particles, trails or settling motion only where they clarify that specific event.
+- Keep effects away from essential text and targets; make them decay before the next interaction.
+- Use restrained ambient motion behind the playfield, with a stable, readable foreground.
+- Preserve the demonstrated camera by default. Any optional emphasis must be very small, occur in a safe interval, and return to the exact reference frame before the next input. Never orbit, zoom or shake in a way that changes apparent target geometry or hides pieces. If that cannot be guaranteed, keep the camera fixed.
+- Direct distinct, brief sound cues for the verified actions, with softer ambience and no masking of meaningful feedback. Retain the original event timing. Supply an audio cue sheet if synchronized audio is not supported; do not label silent or unverified audio as completed.
+
+If only a static reference is available, animate lighting/ambient detail only. Do not invent gameplay to fill the clip. Request a real interaction sequence before showing a move or outcome.
+
+Return the concept clip, an event-by-event VFX/audio/camera cue sheet, and a list of deviations or uncertain frames. Review start, event and end anchor frames against the contract. Label the video LOOK-AND-FEEL TARGET — NOT PROOF OF GAMEPLAY OR PHYSICS.</pre>
+      </article>
+
+      <article class="prompt" id="prompt-unity">
+        <div class="prompt-head"><h3>D. Hand off to a future Unity mockup</h3><p>Input: the verified contract and selected art direction. Output: an editable Unity mockup and captured comparison, once implementation is requested.</p></div>
+        <pre>Build an editable Unity mockup of [GAME_NAME] using the available, supported Unity AI and Unity CLI workflow in [UNITY_PROJECT]. Inspect the project and tool capabilities before choosing implementation steps. Follow its existing conventions.
+
+Inputs:
+- Original playable and source reference: [LOCAL_PATHS]
+- Verified REFERENCE_CONTRACT and replay record: [CONTRACT_AND_REPLAY]
+- Selected enhanced image concept: [IMAGE]
+- Video look-and-feel target and event cue sheet: [VIDEO_AND_CUES]
+- Target device/aspect ratios and performance budget: [TARGETS]
+
+Authority order: demonstrated original gameplay and the contract determine behavior; the selected image determines visual direction; the video suggests effects and timing only where consistent with the original. Resolve contradictions against the original. Do not reproduce a video-generation error as gameplay.
+
+Preserve input rules, interactive geometry, piece identity, state transitions, progression and outcomes. Keep rules separate from presentation so lighting, materials, UI, VFX, audio and optional camera emphasis can be tuned without changing behavior. For rules not yet established by evidence, stop that dependent portion and report the exact missing observation.
+
+Create an editable scene with clearly named objects, reusable prefabs where useful, tunable materials, lighting, UI components and event-driven effects. Keep art references and source provenance available. Avoid baking the generated concept video into the scene as a substitute for working interactions. Keep camera movement disabled by default unless the reference contract permits it and target readability is preserved.
+
+Implement the demonstrated interaction sequence. Hook visual and sound responses to real game events, not an unrelated decorative timeline. Make enhancements easy to toggle for baseline comparison. Preserve tutorial guidance and accurate HUD updates. Use the stated performance budget; do not infer mobile performance from source headless-browser numbers.
+
+Capture the mockup at the same viewports and anchor states as the original. Replay the same inputs and compare outcomes, target positions, UI values, readability, transitions and sound timing. Include invalid-input, failure/retry and end-state checks only when those states exist in the original. Check both portrait and landscape/desktop where supported by the reference.
+
+Return the editable scene and relevant assets, comparison captures, a completed shared quality rubric, measured performance on the stated test setup, and a concise list of remaining differences. State clearly which behaviors are implemented, which are mocked, and which remain unverified. Do not claim parity or completion based only on appearance.</pre>
+      </article>
+    </section>
+
+    <section id="rubric" aria-labelledby="rubric-title">
+      <div class="section-head"><span class="number">05</span><h2 id="rubric-title">One quality rubric for every game</h2></div>
+      <p class="measure">Proposed scoring: <strong>0 = fails or unverified; 1 = major gaps; 2 = meets the reference; 3 = clear improvement with fidelity preserved.</strong> Score only what a stage can demonstrate. Mark behavioral and performance rows “not yet testable” for image/video concepts; they cannot pass a Unity implementation gate.</p>
+      <div class="table-wrap">
+        <table class="rubric">
+          <thead><tr><th scope="col">Dimension</th><th scope="col">Evidence to compare</th><th scope="col">Proposed acceptance rule</th></tr></thead>
+          <tbody>
+            <tr><td>State and layout fidelity</td><td>Anchor frames: piece counts, identity, positions, board geometry, framing, HUD values and exact UI text.</td><td>At least 2. No missing or invented functional element.</td></tr>
+            <tr><td>Interaction and outcomes</td><td>Matched inputs produce the demonstrated transitions and results; targets remain in the correct positions.</td><td>At least 2 in the Unity mockup. Visual similarity cannot substitute.</td></tr>
+            <tr><td>Readability and guidance</td><td>Phone-size review, functional color/symbol distinction, selected/disabled states, tutorial cues, text and effect overlap.</td><td>At least 2. No loss of actionable information.</td></tr>
+            <tr><td>Lighting, materials and UI</td><td>Coherent surface treatment, controlled depth, clean silhouettes, accurate typography and visual hierarchy.</td><td>Aim for 3. Improvement must remain clear with effects paused.</td></tr>
+            <tr><td>VFX, audio and camera</td><td>Verified event cue sheet, onset/decay, audibility, recovery before input, stable target geometry and state visibility.</td><td>At least 2. Any unsafe camera effect is removed or disabled.</td></tr>
+            <tr><td>Responsive presentation</td><td>Matching supported viewports: framing, safe areas, UI scale, overlays and end states.</td><td>At least 2. No clipping or hidden interaction region.</td></tr>
+            <tr><td>Performance and editability</td><td>Measured target setup, stated frame/resource budget, editable scene objects and effects, clear behavior/presentation boundaries.</td><td>At least 2 in Unity. Report actual measurements and remaining gaps.</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="measure"><strong>Gate, not average:</strong> a strong art score cannot compensate for altered rules, missing guidance, broken input or unreadable targets. Resolve those failures first. The rubric and thresholds are proposed working criteria, not validated production standards.</p>
+    </section>
+
+    <section id="handoff" aria-labelledby="handoff-title">
+      <div class="section-head"><span class="number">06</span><h2 id="handoff-title">What each future mockup carries forward</h2></div>
+      <div class="closing">
+        <div class="card"><h3>Per-game reference packet</h3><ul class="checklist"><li>Original and supporting conversion/variant paths.</li><li>Verified contract, labeled captures and interaction record.</li><li>Selected image with the exact-state fidelity review.</li><li>Video concept and explicit VFX/audio/camera cue sheet.</li><li>Editable Unity scene, comparison captures and completed rubric.</li><li>Known gaps, proposed improvements and measured results kept distinct.</li></ul></div>
+        <div class="card"><h3>Current boundary</h3><p>This local brief is preparation for all 12 future mockups. The catalog analysis is source-based. The prompts still need to be exercised against actual per-game captures, then refined from the results.</p><p>No concept image, concept video or Unity implementation is claimed by this document. Before implementation, establish each game’s reference contract and select the visual direction that passes its fidelity checks.</p><p><a href="https://playable-variants.app.tessen.unity.com/focus_bucket.html">Return to the local game library →</a></p></div>
+      </div>
+    </section>
+  </main>
+  <footer><div class="wrap"><span>GameJuice · Local enhancement reference · 24 November 2026</span><span><a href="https://playable-variants.app.tessen.unity.com/focus_bucket.html">Saved catalog</a> · <a href="https://playable-variants.app.tessen.unity.com/focus_bucket.html">Source snapshot</a> · <a href="#">Back to top</a></span></div></footer>
+</body>
+</html>

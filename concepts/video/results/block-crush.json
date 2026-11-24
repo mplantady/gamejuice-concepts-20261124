@@ -1,0 +1,47 @@
+{
+  "slug": "block-crush",
+  "status": "generated",
+  "model": "video-seedance-2-5",
+  "file": "video/clips/block-crush-seedance-v1.mp4",
+  "width": 1078,
+  "height": 1920,
+  "duration": 12.064,
+  "audio": true,
+  "input_image": "images/block-crush-combined.png",
+  "prompt_file": "video/requests/block-crush.json",
+  "review": {
+    "status": "reviewed_with_material_fidelity_issue",
+    "method": "Visually inspected frames at 0, 2, 4, 6, 8, 10 and 11.9 seconds against the combined reference and saved placement plan. Sampled-frame review, not continuous audiovisual playback.",
+    "first_frame_layout": "Closely preserves the initial 8×8 board, three tray shapes, gold blocks, colored collectibles, foliage, settings icon and target values 18/26/10. No pixel-exact equivalence is claimed.",
+    "placement_fidelity": [
+      "First: the left nine-cell square should fill r6–8/c1–3. Instead, by 4s it is a small two-column cluster in the upper-center gap; the lower-left target remains empty. Its cell count/scale and heart position do not remain rigid.",
+      "Second: the right nine-cell square should fill r1–3/c6–8. By 6s only two new full-size cells appear at far-right r2c8/r3c8, with a heart in r2c8. The intended 3×3 footprint is not filled.",
+      "Third: the eight-cell green shape retains its general silhouette but lands as small sub-cell tiles around the center at 8–12s rather than filling the eight specified board cells. It straddles grid divisions instead of snapping at board scale."
+    ],
+    "input_causality": "The hand selects the intended left, right and middle tray pieces in order, and those tray pieces disappear. The resulting state changes are visibly inconsistent with the selected rigid shapes and legal destinations.",
+    "counter_material_and_ui": "Target values stay 18/26/10 in all inspected frames. Gold tile material, red hearts, green drops, blue diamonds and orange gems remain recognizable. Board and HUD stay in view, with a mild finishing zoom. No invented line clear, collectible flight, decrement, next tray, reward or victory screen is visible.",
+    "vfx_readability": "Small contact sparkles and warm glows remain readable and settle, but cannot compensate for the placement geometry errors. A faint unrelated green-drop ghost appears near the upper center during the first pickup.",
+    "audio": {
+      "stream_present": true,
+      "codec": "aac",
+      "channels": 2,
+      "sample_rate_hz": 32000,
+      "listened": false,
+      "note": "Audio stream presence verified only; voiceover wording, mix and synchronization were not assessed."
+    },
+    "limitations": [
+      "Intermediate frames were not exhaustively inspected.",
+      "Do not claim exact piece counts, legal placements or implemented game behavior from this clip."
+    ],
+    "frames_directory": "video/checks/block-crush",
+    "reviewed_timestamps_seconds": [
+      0,
+      2,
+      4,
+      6,
+      8,
+      10,
+      11.9
+    ]
+  }
+}

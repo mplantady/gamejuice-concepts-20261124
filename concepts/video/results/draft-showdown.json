@@ -1,0 +1,45 @@
+{
+  "slug": "draft-showdown",
+  "status": "generated",
+  "model": "video-seedance-2-5",
+  "file": "video/clips/draft-showdown-seedance-v1.mp4",
+  "width": 1078,
+  "height": 1920,
+  "duration": 12.064,
+  "audio": true,
+  "input_image": "images/draft-showdown-combined.png",
+  "prompt_file": "video/requests/draft-showdown.json",
+  "review": {
+    "status": "reviewed_with_framing_issue",
+    "method": "Visually inspected extracted frames at 0, 2, 4, 5, 6, 7, 8, 10 and 11.9 seconds against the combined image and verified first-choice plan. Sampled-frame review, not continuous audiovisual playback.",
+    "first_frame_layout": "Closely preserves the supplied arena, +3 Knights/+5 Geese options, tutorial hand, Player54399/WIZARD headers, three hearts each and 1/3 indicator. No pixel-exact equivalence is claimed.",
+    "input_causality": "The hand taps the right +5 Geese card. The knights option disappears; the chosen card lifts to center, dissolves, and geese arrive with blue trails and landing rings. No unchosen knights are deployed.",
+    "counts_and_character_identity": "Exactly five distinct geese are visible at 7, 8, 10 and 11.9 seconds; three are visible during the earlier staged arrival at 6 seconds. Their white/lavender bodies, dark outlines and orange beaks/feet match the card identity. No extra goose, character swap or battle is visible in sampled frames. Exact per-frame arrival continuity was not established.",
+    "ui_and_camera": "The zoom around 4–8 seconds crops player headers, outer hearts and the lower 1/3/control area, violating the plan to retain headers/hearts. Full reference framing returns by 10 seconds, with three hearts per side and 1/3 unchanged. Choose a card! remains above the deployed group. No new offer, reward, heart loss or victory screen appears.",
+    "vfx_readability": "Card lift/dissolve, distinct blue arrival trails and landing rings make the selection/deployment legible. Some trails pass over the choice banner, but the settled five-unit count is clear and effects have cleared at the end.",
+    "audio": {
+      "stream_present": true,
+      "codec": "aac",
+      "channels": 2,
+      "sample_rate_hz": 32000,
+      "listened": false,
+      "note": "Audio stream presence verified only; voiceover wording, mix and synchronization were not assessed."
+    },
+    "limitations": [
+      "Sampled frames cannot certify every transient count or motion artifact.",
+      "The enlarged central group is a presentation concept, not verification of original battlefield formation or unit scale."
+    ],
+    "frames_directory": "video/checks/draft-showdown",
+    "reviewed_timestamps_seconds": [
+      0,
+      2,
+      4,
+      5,
+      6,
+      7,
+      8,
+      10,
+      11.9
+    ]
+  }
+}
