@@ -4867,7 +4867,7 @@ function createPaintedEffects(api,state,ctx){
 function installDraftPolish(api) {
   const {Game,Unit,projectWorld,layout,layoutUI} = api;
   const media=matchMedia('(prefers-reduced-motion: reduce)');
-  const state=window.__draftPolish={version:'draft-painted-cinematic-20261125-v2',reducedMotion:media.matches,events:[],counts:{},effects:[],peakEffects:0};
+  const state=window.__draftPolish={version:'draft-painted-living-arena-20261125-v3',reducedMotion:media.matches,events:[],counts:{},effects:[],peakEffects:0};
   const canvas=document.createElement('canvas'); canvas.id='draft-fx'; canvas.setAttribute('aria-hidden','true');document.body.append(canvas);
   const ctx=canvas.getContext('2d');
   let uid=0,frame=0,lastTime=0,hover=-1,pointer=[-1,-1],footMarks=new WeakMap();
@@ -5255,11 +5255,11 @@ function installDraftArt(api, manifest) {
   });
 }
 
-/* A few independently performed spectators and projected, pose-driven shadows.
+/* Individual spectators, articulated environmental shade, and unit shadows.
  * World roots and gameplay remain authoritative. No game RNG is consumed here. */
 function installDraftAmbience(api, manifest) {
   const state=window.__draftAmbience={version:manifest.version,ready:false,errors:[],clock:0,render:()=>{},
-    frames:[0,0,0],shadowCasters:0,crowdDraws:0,shadowDraws:0,lastGameTime:null,
+    frames:manifest.spectators.map(()=>0),shadowCasters:0,crowdDraws:0,shadowDraws:0,lastGameTime:null,
     projection:'Animated sprite silhouettes projected from planted roots; fixed directional light',
     files:manifest.files.slice()};
   const images={};
@@ -5268,7 +5268,8 @@ function installDraftAmbience(api, manifest) {
     image.onerror=()=>{state.errors.push('Could not load '+path);reject(new Error('Could not load '+path))};
     image.src='assets/'+path;
   });
-  const paths=[manifest.pockets,...manifest.spectators.map(s=>s.frames)];
+  const environment=manifest.environmentShadow;
+  const paths=[...new Set([manifest.pockets,...manifest.spectators.map(s=>s.frames),environment?.mask,environment?.cleanPlate].filter(Boolean))];
   return Promise.all(paths.map(load)).then(()=>{
     const iso=window.__draftArt.isolatedVisualAllocation;
     const bounds=manifest.arenaBounds,worldW=bounds[2]-bounds[0],worldH=bounds[3]-bounds[1];
@@ -5276,7 +5277,7 @@ function installDraftAmbience(api, manifest) {
     const CW=640,CH=Math.round(CW*worldH/worldW);
     const makeCanvas=(w=W,h=H)=>{const c=document.createElement('canvas');c.width=w;c.height=h;return c};
     const crowdCanvas=makeCanvas(CW,CH),shadowCanvas=makeCanvas(),silhouetteCanvas=makeCanvas();
-    const crowd=crowdCanvas.getContext('2d'),shadow=shadowCanvas.getContext('2d',{willReadFrequently:true}),silhouette=silhouetteCanvas.getContext('2d',{willReadFrequently:true});
+    const crowd=crowdCanvas.getContext('2d',{willReadFrequently:true}),shadow=shadowCanvas.getContext('2d',{willReadFrequently:true}),silhouette=silhouetteCanvas.getContext('2d',{willReadFrequently:true});
     // CPU-backed shadow canvases avoid GPU-to-CPU readback before each WebGL
     // texture upload. This preserved 60 Hz in the sustained 30-unit benchmark.
     state.crowdCanvas=crowdCanvas;state.shadowCanvas=shadowCanvas;
@@ -5288,6 +5289,57 @@ function installDraftAmbience(api, manifest) {
     const imageToWorld=(x,y)=>[bounds[0]+x/imageW*worldW,bounds[3]-y/imageH*worldH];
     const color=manifest.light.shadowColor,lightX=manifest.light.direction[0],lightY=manifest.light.direction[1];
     let previousBattle=false,celebrationAt=-100,drawnFrames=[],shadowFrames=[];
+    let environmentCanvas,environmentContext,environmentTexture,cleanPlateTexture;
+    let environmentGroups=[],environmentLastClock=null;
+    state.environmentShadow={enabled:!!environment,draws:0,points:[],groups:[]};
+
+    if(environment){
+      environmentCanvas=makeCanvas();environmentContext=environmentCanvas.getContext('2d',{willReadFrequently:true});
+      state.environmentShadowCanvas=environmentCanvas;
+      state.canvasDimensions.environment=[W,H];
+      environmentTexture=iso(()=>api.createCanvasTexture(environmentCanvas));
+      // Paint the clean receiving surface once. It stays fixed while the
+      // extracted shadows above it articulate around off-screen branch roots.
+      const plate=makeCanvas(imageW,imageH),plateContext=plate.getContext('2d',{willReadFrequently:true});
+      const plateRect=environment.cleanRect||environment.rect||[0,0,imageW,imageH];
+      plateContext.drawImage(images[environment.cleanPlate],...plateRect);
+      cleanPlateTexture=iso(()=>api.createCanvasTexture(plate));
+      const mask=makeCanvas(),maskContext=mask.getContext('2d',{willReadFrequently:true});
+      const rect=environment.rect||[0,0,imageW,imageH];
+      maskContext.drawImage(images[environment.mask],rect[0]/imageW*W,rect[1]/imageH*H,rect[2]/imageW*W,rect[3]/imageH*H);
+      const pixels=maskContext.getImageData(0,0,W,H),configs=environment.groups||[
+        {name:'upper-left',anchor:[-150,300],center:[210,440],spread:[410,330],period:7.2,phase:.2,amplitudePixels:18},
+        {name:'upper-right',anchor:[1100,280],center:[750,410],spread:[350,300],period:8.8,phase:1.1,amplitudePixels:14},
+        {name:'middle-left',anchor:[-180,880],center:[200,960],spread:[410,370],period:6.4,phase:2.6,amplitudePixels:20},
+        {name:'lower-left',anchor:[-150,1500],center:[230,1460],spread:[430,350],period:9.2,phase:3.7,amplitudePixels:18}
+      ];
+      const layers=configs.map(config=>({config,pixels:new Uint8ClampedArray(W*H*4),bounds:[W,H,-1,-1]}));
+      for(let y=0;y<H;y++)for(let x=0;x<W;x++){
+        const index=(y*W+x)*4,alpha=pixels.data[index+3]/255;if(!alpha)continue;
+        const sourceX=x/W*imageW,sourceY=y/H*imageH;
+        const scores=configs.map(config=>{const center=config.center||config.anchor,spread=config.spread||[imageW*.45,imageH*.23];return -.5*((sourceX-center[0])**2/spread[0]**2+(sourceY-center[1])**2/spread[1]**2)});
+        // Each branch belongs primarily to one rig. Only a narrow seam blends
+        // neighbors; broad Gaussian ownership would move several faint copies
+        // of every leaf and smear its silhouette when the rigs separate.
+        const max=Math.max(...scores),sharpness=environment.partitionSharpness||64;
+        const weights=scores.map(score=>Math.exp((score-max)*sharpness));let total=0;for(let i=0;i<weights.length;i++){if(weights[i]<.025)weights[i]=0;total+=weights[i]}
+        for(let i=0;i<layers.length;i++){
+          if(!weights[i])continue;
+          // Source-over of these alpha partitions reconstructs the original
+          // opacity: product((1-alpha)^weight) = 1-alpha. This avoids light
+          // bands where independently moving branch groups overlap at rest.
+          const value=Math.round((1-Math.pow(1-alpha,weights[i]/total))*255);if(!value)continue;
+          const layer=layers[i];layer.pixels[index]=pixels.data[index];layer.pixels[index+1]=pixels.data[index+1];layer.pixels[index+2]=pixels.data[index+2];layer.pixels[index+3]=value;
+          layer.bounds[0]=Math.min(layer.bounds[0],x);layer.bounds[1]=Math.min(layer.bounds[1],y);layer.bounds[2]=Math.max(layer.bounds[2],x);layer.bounds[3]=Math.max(layer.bounds[3],y);
+        }
+      }
+      environmentGroups=layers.filter(layer=>layer.bounds[2]>=0).map(layer=>{
+        const full=makeCanvas(),fullContext=full.getContext('2d',{willReadFrequently:true});fullContext.putImageData(new ImageData(layer.pixels,W,H),0,0);
+        const [x,y,right,bottom]=layer.bounds,w=right-x+1,h=bottom-y+1,canvas=makeCanvas(w,h);
+        canvas.getContext('2d',{willReadFrequently:true}).drawImage(full,x,y,w,h,0,0,w,h);
+        return {...layer.config,canvas,rect:[x,y,w,h]};
+      });
+    }
 
     function makePlane(name,texture,layer){
       return iso(()=>{
@@ -5299,6 +5351,10 @@ function installDraftAmbience(api, manifest) {
     const sourceInit=api.Game.prototype.init;
     api.Game.prototype.init=function animatedAudienceInit(...args){
       const result=sourceInit.apply(this,args);
+      if(environment){
+        this.arena.add(makePlane('Painted Sand Cleanplate',cleanPlateTexture,-2.95));
+        this.arena.add(makePlane('Painted Environment Shadows',environmentTexture,-2.9));
+      }
       this.arena.add(makePlane('Painted Pose Shadows',shadowTexture,-2.7));
       this.arena.add(makePlane('Painted Animated Audience',crowdTexture,-2.4));
       state.ready=true;return result;
@@ -5308,18 +5364,45 @@ function installDraftAmbience(api, manifest) {
       ctx.beginPath();manifest.sandPolygonPixels.forEach(([x,y],i)=>{x=x/imageW*W;y=y/imageH*H;i?ctx.lineTo(x,y):ctx.moveTo(x,y)});ctx.closePath();ctx.clip();
     }
     function frameRect(s,frame){
-      const [w,h]=s.frameSize;return [(frame%s.columns)*w,Math.floor(frame/s.columns)*h,w,h];
+      const [w,h]=s.frameSize,index=frame+(s.frameOffset||0);return [(index%s.columns)*w,Math.floor(index/s.columns)*h,w,h];
     }
     function paintCrowd(frames){
       if(frames.every((v,i)=>v===drawnFrames[i]))return;
       drawnFrames=frames.slice();crowd.clearRect(0,0,CW,CH);
-      crowd.drawImage(images[manifest.pockets],0,0,CW,CH);
+      if(manifest.pockets)crowd.drawImage(images[manifest.pockets],0,0,CW,CH);
       manifest.spectators.forEach((s,i)=>{
         const [x,y,w,h]=s.rect,src=frameRect(s,frames[i]);
         crowd.save();crowd.translate((x+(s.flip?w:0))/imageW*CW,y/imageH*CH);
         crowd.scale(s.flip?-1:1,1);crowd.drawImage(images[s.frames],...src,0,0,w/imageW*CW,h/imageH*CH);crowd.restore();
       });
       crowdTexture.needsUpdate=true;state.crowdDraws++;
+    }
+
+    function paintEnvironment(){
+      if(!environment||environmentLastClock===state.clock)return;
+      environmentLastClock=state.clock;
+      const ctx=environmentContext;ctx.setTransform(1,0,0,1,0,0);ctx.clearRect(0,0,W,H);ctx.save();
+      const polygons=environment.clipPolygonsPixels||[manifest.sandPolygonPixels,[[0,1530],[imageW,1530],[imageW,imageH],[0,imageH]]];
+      ctx.beginPath();for(const polygon of polygons){polygon.forEach(([x,y],i)=>{x=x/imageW*W;y=y/imageH*H;i?ctx.lineTo(x,y):ctx.moveTo(x,y)});ctx.closePath()}ctx.clip();
+      ctx.globalAlpha=environment.opacity??1;
+      const points=[],groups=[];
+      for(const group of environmentGroups){
+        const period=group.period||environment.period||7.2,phase=group.phase||0,amplitude=group.amplitudePixels||environment.amplitudePixels||18;
+        const wave=state.clock*Math.PI*2/period;
+        const angle=(Math.sin(wave+phase)-Math.sin(phase))*amplitude/(2*imageW*.62);
+        const lean=(Math.sin(wave*.81+phase+.7)-Math.sin(phase+.7))*amplitude/(2*imageW*1.7);
+        const a=Math.cos(angle),b=Math.sin(angle),c=-Math.sin(angle)+lean,d=Math.cos(angle);
+        const [anchorX,anchorY]=group.anchor,ax=anchorX/imageW*W,ay=anchorY/imageH*H;
+        const tx=ax-a*ax-c*ay,ty=ay-b*ax-d*ay;
+        ctx.setTransform(a,b,c,d,tx,ty);ctx.drawImage(group.canvas,group.rect[0],group.rect[1]);
+        const transform=([x,y])=>{const gx=x/imageW*W,gy=y/imageH*H;return[(a*gx+c*gy+tx)/W*imageW,(b*gx+d*gy+ty)/H*imageH]};
+        points.push({id:group.name+'-root',source:group.anchor.slice(),target:transform(group.anchor),anchor:true});
+        const center=group.center||[imageW*.4,imageH*.5];
+        for(const [index,source]of [[center[0],center[1]],[center[0]+120,center[1]+90]].entries())points.push({id:group.name+'-tip-'+index,source,target:transform(source),anchor:false});
+        groups.push({name:group.name,anchor:group.anchor.slice(),angle,lean});
+      }
+      ctx.restore();environmentTexture.needsUpdate=true;
+      state.environmentShadow={enabled:true,draws:state.environmentShadow.draws+1,points,groups,canvas:[W,H],clipPolygonsPixels:polygons};
     }
 
     // Convert an animated world part to a ground silhouette. Local vertical
@@ -5381,15 +5464,19 @@ function installDraftAmbience(api, manifest) {
       const now=game.time,dt=state.lastGameTime===null?0:Math.max(0,Math.min(.1,now-state.lastGameTime));state.lastGameTime=now;
       const reduced=api.reducedMotion();state.reducedMotion=reduced;if(!reduced)state.clock+=dt;
       if(previousBattle&&!game.battle)celebrationAt=state.clock;previousBattle=game.battle;
+      // All portraits share a drawing cadence, while each person retains a
+      // separate phase, period and gesture. This avoids a full canvas upload
+      // on every display frame merely because many small loops are staggered.
+      const sampleRate=manifest.crowdSampleRate||12,crowdClock=Math.floor(state.clock*sampleRate+1e-7)/sampleRate;
       const frames=manifest.spectators.map((s,i)=>{
         if(reduced)return state.frames[i];
-        const since=state.clock-celebrationAt-i*.32;
+        const count=s.framesCount||64,since=crowdClock-celebrationAt-i*.08;
         // A real round ending cues a short audience response, then quiet.
-        if(since>=0&&since<3.1)return Math.min(63,Math.floor((since+2.25)*s.fps));
-        const phase=(state.clock+s.offset)%s.period;
-        return phase<64/s.fps?Math.floor(phase*s.fps):0;
+        if(since>=0&&since<Math.min(3.1,count/s.fps))return Math.min(count-1,(s.cheerStartFrame??0)+Math.floor(since*s.fps));
+        const phase=(crowdClock+s.offset)%s.period;
+        return phase<count/s.fps?Math.floor(phase*s.fps):0;
       });
-      state.frames=frames;paintCrowd(frames);
+      state.frames=frames;paintCrowd(frames);paintEnvironment();
       // During an empty, quiet draft the existing pixels are already exact.
       // Moving units always redraw every frame, including every planted root.
       const activeCasters=game.units.some(unit=>unit.visual.active&&unit.visual.alpha>=.005);
@@ -5397,7 +5484,7 @@ function installDraftAmbience(api, manifest) {
         paintShadows(game,frames);shadowFrames=frames.slice();
       }
     };
-    state.capture=()=>({clock:state.clock,frames:state.frames.slice(),canvasDimensions:state.canvasDimensions,shadowCasters:state.shadowCasters,shadowAnchors:state.shadowAnchors,reducedMotion:state.reducedMotion,crowdDraws:state.crowdDraws,shadowDraws:state.shadowDraws,errors:state.errors.slice()});
+    state.capture=()=>({clock:state.clock,frames:state.frames.slice(),spectators:manifest.spectators.map((s,i)=>({name:s.name,rect:s.rect.slice(),frame:state.frames[i],framesCount:s.framesCount||64,period:s.period,offset:s.offset})),environmentShadow:state.environmentShadow,canvasDimensions:state.canvasDimensions,shadowCasters:state.shadowCasters,shadowAnchors:state.shadowAnchors,reducedMotion:state.reducedMotion,crowdDraws:state.crowdDraws,shadowDraws:state.shadowDraws,errors:state.errors.slice()});
   });
 }
 
@@ -5411,6 +5498,6 @@ const draftApi={Game:wu,Unit:Su,audio:ou,context:nu,buffers:ru,loads:iu,volumes:
       reducedMotion:()=>window.__draftPolish?.reducedMotion??matchMedia('(prefers-reduced-motion: reduce)').matches};
     installDraftAnimation(draftApi);installDraftAudio(draftApi);installDraftPolish(draftApi);
     const draftArtReady=installDraftArt(draftApi,{"version":"painted-arena-v1","textures":{"paintedArena":"production/painted-arena.webp","paintedParts":"production/painted-parts.webp","paintedCard":"production/painted-card.webp","paintedTransparent":"production/transparent.png","paintedThumbnails":"production/painted-thumbnails.webp","paintedUI":"production/painted-ui.webp","paintedBlast":"production/cinematic/blast.webp"},"sprites":{"Sprite Knight Head":{"texture":"paintedParts","uv":[0.005208333333333333,0.81953125,0.13736979166666666,0.99375]},"Sprite Knight Body":{"texture":"paintedParts","uv":[0.171875,0.8203125,0.3125,0.99375]},"Sprite Knight Shield":{"texture":"paintedParts","uv":[0.3385416666666667,0.825,0.4759114583333333,0.99375]},"Sprite Knight Weapon Sword":{"texture":"paintedParts","uv":[0.5052083333333334,0.82265625,0.5826822916666666,0.99375]},"Sprite Knight Helmet Flag":{"texture":"paintedParts","uv":[0.671875,0.81875,0.8131510416666666,0.99375]},"Sprite Goose Body":{"texture":"paintedParts","uv":[0.8385416666666666,0.81171875,0.9694010416666666,0.99375]},"Sprite Goose Body Move":{"texture":"paintedParts","uv":[0.005208333333333333,0.61328125,0.14908854166666666,0.79375]},"Sprite Goose Body Attack":{"texture":"paintedParts","uv":[0.171875,0.6875,0.328125,0.79375]},"Sprite Goos Leg":{"texture":"paintedParts","uv":[0.3385416666666667,0.62109375,0.4166666666666667,0.79375]},"Sprite Goose Body Enemy":{"texture":"paintedParts","uv":[0.5052083333333334,0.6125,0.63671875,0.79375]},"Sprite Cupid Head":{"texture":"paintedParts","uv":[0.671875,0.63828125,0.828125,0.79375]},"Sprite Cupid Body":{"texture":"paintedParts","uv":[0.8385416666666666,0.6265625,0.9889322916666666,0.79375]},"Sprite Cupid Wing":{"texture":"paintedParts","uv":[0.005208333333333333,0.41171875,0.16145833333333334,0.59375]},"Sprite Cupid Bow":{"texture":"paintedParts","uv":[0.171875,0.50703125,0.3248697916666667,0.59375]},"Sprite Cupid Arrow":{"texture":"paintedParts","uv":[0.3385416666666667,0.41796875,0.4049479166666667,0.59375]},"Sprite TNT Body":{"texture":"paintedParts","uv":[0.5052083333333334,0.40859375,0.640625,0.59375]},"TNT Fuse":{"texture":"paintedParts","uv":[0.671875,0.41796875,0.7845052083333334,0.59375]},"TNT Shoe":{"texture":"paintedParts","uv":[0.8385416666666666,0.44999999999999996,0.98828125,0.59375]},"Sprite Knight Shield Enemy":{"texture":"paintedParts","uv":[0.005208333333333333,0.21484375,0.14713541666666666,0.39375000000000004]},"Sprite TNT Body Enemy":{"texture":"paintedParts","uv":[0.171875,0.20859375000000002,0.3072916666666667,0.39375000000000004]},"Sprite Goose Body Move Enemy":{"texture":"paintedParts","uv":[0.3385416666666667,0.21328124999999998,0.482421875,0.39375000000000004]},"Sprite Goose Body Attack Enemy":{"texture":"paintedParts","uv":[0.5052083333333334,0.2875,0.6614583333333334,0.39375000000000004]},"Sprite Cupid Body Enemy":{"texture":"paintedParts","uv":[0.671875,0.2265625,0.822265625,0.39375000000000004]},"Sprite Knight Helmet Flag Enemy":{"texture":"paintedParts","uv":[0.8385416666666666,0.21875,0.9798177083333334,0.39375000000000004]},"Sprite Cupid Arrow Enemy":{"texture":"paintedParts","uv":[0.005208333333333333,0.017968749999999978,0.07161458333333333,0.19374999999999998]},"Sprite TNT Body Flash":{"texture":"paintedParts","uv":[0.171875,0.008593749999999956,0.3072916666666667,0.19374999999999998]},"Sprite UI CardPanel Common":{"texture":"paintedCard","uv":[0,0,1,1],"size":[650,1024],"border":[0,0,0,0]},"Sprite UI CardTop Yellow":{"texture":"paintedTransparent","uv":[0,0,1,1]},"Sprite UnitThumbnail Knight":{"texture":"paintedThumbnails","uv":[0.0,0.5,0.5,1.0]},"Sprite UnitThumbnail Goose":{"texture":"paintedThumbnails","uv":[0.5,0.5,1.0,1.0]},"Sprite UnitThumbnail Cupid":{"texture":"paintedThumbnails","uv":[0.0,0.0,0.5,0.5]},"Sprite UnitThumbnail TNT":{"texture":"paintedThumbnails","uv":[0.5,0.0,1.0,0.5]},"Sprite UI BattleStatus Player":{"texture":"paintedUI","uv":[0.0078125,0.58984375,0.3779296875,0.9921875]},"Sprite UI BattleStatus Enemy":{"texture":"paintedUI","uv":[0.5078125,0.58984375,0.8974609375,0.9921875]},"Sprite UI Capsule Tutorial":{"texture":"paintedUI","uv":[0.0078125,0.1845703125,0.4443359375,0.4921875]},"Sprite UI CapsuleTail Tutorial":{"texture":"paintedUI","uv":[0.5078125,0.1513671875,0.9482421875,0.4921875]}},"arena":{"texture":"paintedArena","bounds":[-11.3,-21.144,11.3,23.225],"hideOriginal":true,"extendVertical":true}});
-    const draftAmbienceReady=Promise.all([sl,draftArtReady]).then(()=>installDraftAmbience(draftApi,{"version":"painted-audience-shadow-v1","files":["production/ambience/blue-cap-frames.webp","production/ambience/blue-cap-cheer.gif","production/ambience/blue-cap-poster.webp","production/ambience/red-cap-frames.webp","production/ambience/red-cap-cheer.gif","production/ambience/red-cap-poster.webp","production/ambience/grey-helmet-frames.webp","production/ambience/grey-helmet-cheer.gif","production/ambience/grey-helmet-poster.webp","production/ambience/crowd-pockets.webp"],"backgroundSize":[940,1673],"arenaBounds":[-11.3,-21.144,11.3,23.225],"sandPolygonPixels":[[98,335],[839,335],[870,365],[870,1482],[834,1512],[108,1512],[67,1478],[67,369]],"pockets":"production/ambience/crowd-pockets.webp","spectators":[{"name":"blue-cap","frames":"production/ambience/blue-cap-frames.webp","gif":"production/ambience/blue-cap-cheer.gif","poster":"production/ambience/blue-cap-poster.webp","frameSize":[96,144],"columns":8,"framesCount":64,"fps":12,"rect":[0,477,66,128],"flip":false,"period":8.7,"offset":3.4},{"name":"red-cap","frames":"production/ambience/red-cap-frames.webp","gif":"production/ambience/red-cap-cheer.gif","poster":"production/ambience/red-cap-poster.webp","frameSize":[96,144],"columns":8,"framesCount":64,"fps":12,"rect":[0,1127,66,128],"flip":false,"period":11.1,"offset":0.2},{"name":"grey-helmet","frames":"production/ambience/grey-helmet-frames.webp","gif":"production/ambience/grey-helmet-cheer.gif","poster":"production/ambience/grey-helmet-poster.webp","frameSize":[96,144],"columns":8,"framesCount":64,"fps":12,"rect":[874,806,66,128],"flip":true,"period":9.8,"offset":6.0}],"light":{"direction":[0.78,-0.42],"shadowColor":"#3c425b","shadowOpacity":0.24,"softnessPixels":2.2},"notes":["Three clapping rigs contain separate heads, torsos and two sleeves.","Long independently phased quiet intervals. Actual GIF previews and runtime frame atlases share identical poses.","Ground shadows derive from live articulated world transforms; caster roots remain anchored.","Static painted architectural shading retained."]}));
+    const draftAmbienceReady=Promise.all([sl,draftArtReady]).then(()=>installDraftAmbience(draftApi,{"version":"painted-audience-shadow-v3","files":["production/ambience-v3/left-01-frames.webp","production/ambience-v3/left-02-frames.webp","production/ambience-v3/left-03-frames.webp","production/ambience-v3/left-04-frames.webp","production/ambience-v3/left-05-frames.webp","production/ambience-v3/left-06-frames.webp","production/ambience-v3/left-07-frames.webp","production/ambience-v3/left-08-frames.webp","production/ambience-v3/left-09-frames.webp","production/ambience-v3/left-09-cheer.gif","production/ambience-v3/left-10-frames.webp","production/ambience-v3/left-11-frames.webp","production/ambience-v3/left-12-frames.webp","production/ambience-v3/left-13-frames.webp","production/ambience-v3/left-14-frames.webp","production/ambience-v3/left-14-cheer.gif","production/ambience-v3/right-01-frames.webp","production/ambience-v3/right-02-frames.webp","production/ambience-v3/right-03-frames.webp","production/ambience-v3/right-04-frames.webp","production/ambience-v3/right-05-frames.webp","production/ambience-v3/right-06-frames.webp","production/ambience-v3/right-07-frames.webp","production/ambience-v3/right-08-frames.webp","production/ambience-v3/right-08-cheer.gif","production/ambience-v3/right-09-frames.webp","production/ambience-v3/right-10-frames.webp","production/ambience-v3/right-11-frames.webp","production/ambience-v3/right-12-frames.webp","production/ambience-v3/right-13-frames.webp","production/ambience-v3/right-14-frames.webp","production/ambience-v3/right-15-frames.webp","production/ambience-v3/right-16-frames.webp","production/ambience-v3/right-17-frames.webp","production/ambience-v3/crowd-pockets-v3.webp","production/ambience-v3/sand-clean.webp","production/ambience-v3/tree-shadow.webp"],"backgroundSize":[940,1673],"arenaBounds":[-11.3,-21.144,11.3,23.225],"sandPolygonPixels":[[98,335],[839,335],[870,365],[870,1482],[834,1512],[108,1512],[67,1478],[67,369]],"pockets":"production/ambience-v3/crowd-pockets-v3.webp","spectators":[{"name":"left-01","frames":"production/ambience-v3/left-01-frames.webp","frameSize":[86,96],"columns":6,"framesCount":24,"fps":12,"rect":[-12,329,86,96],"sourceRect":[-12,329,86,96],"sourceHeadRect":[0,341,51,73],"nativeScale":1,"parts":["body","head"],"partialOcclusion":false,"flip":false,"period":7.1,"offset":0.0,"cheerStartFrame":3},{"name":"left-02","frames":"production/ambience-v3/left-02-frames.webp","frameSize":[82,109],"columns":6,"framesCount":24,"fps":12,"rect":[-12,394,82,109],"sourceRect":[-12,394,82,109],"sourceHeadRect":[0,406,55,70],"nativeScale":1,"parts":["body","head"],"partialOcclusion":false,"flip":false,"period":8.813,"offset":2.719,"cheerStartFrame":3},{"name":"left-03","frames":"production/ambience-v3/left-03-frames.webp","frameSize":[93,97],"columns":6,"framesCount":24,"fps":12,"rect":[-12,479,93,97],"sourceRect":[-12,479,93,97],"sourceHeadRect":[0,497,58,72],"nativeScale":1,"parts":["body","head"],"partialOcclusion":false,"flip":false,"period":10.526,"offset":5.438,"cheerStartFrame":3},{"name":"left-04","frames":"production/ambience-v3/left-04-frames.webp","frameSize":[93,117],"columns":6,"framesCount":24,"fps":12,"rect":[-12,542,93,117],"sourceRect":[-12,542,93,117],"sourceHeadRect":[0,554,48,68],"nativeScale":1,"parts":["body","head"],"partialOcclusion":false,"flip":false,"period":12.239,"offset":8.157,"cheerStartFrame":3},{"name":"left-05","frames":"production/ambience-v3/left-05-frames.webp","frameSize":[90,128],"columns":6,"framesCount":24,"fps":12,"rect":[-12,635,90,128],"sourceRect":[-12,635,90,128],"sourceHeadRect":[0,661,60,76],"nativeScale":1,"parts":["body","head"],"partialOcclusion":false,"flip":false,"period":13.952,"offset":10.876,"cheerStartFrame":3},{"name":"left-06","frames":"production/ambience-v3/left-06-frames.webp","frameSize":[74,100],"columns":6,"framesCount":24,"fps":12,"rect":[-12,739,74,100],"sourceRect":[-12,739,74,100],"sourceHeadRect":[0,754,55,81],"nativeScale":1,"parts":["body","head"],"partialOcclusion":false,"flip":false,"period":15.665,"offset":1.595,"cheerStartFrame":3},{"name":"left-07","frames":"production/ambience-v3/left-07-frames.webp","frameSize":[80,119],"columns":6,"framesCount":24,"fps":12,"rect":[-12,810,80,119],"sourceRect":[-12,810,80,119],"sourceHeadRect":[0,822,33,50],"nativeScale":1,"parts":["body","head"],"partialOcclusion":true,"flip":false,"period":17.378,"offset":4.314,"cheerStartFrame":3},{"name":"left-08","frames":"production/ambience-v3/left-08-frames.webp","frameSize":[72,128],"columns":6,"framesCount":24,"fps":12,"rect":[-12,905,72,128],"sourceRect":[-12,905,72,128],"sourceHeadRect":[0,942,58,78],"nativeScale":1,"parts":["body","head"],"partialOcclusion":false,"flip":false,"period":8.691,"offset":7.033,"cheerStartFrame":3},{"name":"left-09","frames":"production/ambience-v3/left-09-frames.webp","frameSize":[88,138],"columns":6,"framesCount":24,"fps":12,"rect":[-12,1006,88,138],"sourceRect":[-12,1006,88,138],"sourceHeadRect":[0,1018,58,83],"nativeScale":1,"parts":["body","head","arm"],"partialOcclusion":false,"flip":false,"period":10.404,"offset":9.752,"cheerStartFrame":3,"gif":"production/ambience-v3/left-09-cheer.gif"},{"name":"left-10","frames":"production/ambience-v3/left-10-frames.webp","frameSize":[70,77],"columns":6,"framesCount":24,"fps":12,"rect":[-12,1101,70,77],"sourceRect":[-12,1101,70,77],"sourceHeadRect":[0,1127,39,63],"nativeScale":1,"parts":["body","head"],"partialOcclusion":true,"flip":false,"period":12.117,"offset":0.471,"cheerStartFrame":3},{"name":"left-11","frames":"production/ambience-v3/left-11-frames.webp","frameSize":[78,103],"columns":6,"framesCount":24,"fps":12,"rect":[-12,1151,78,103],"sourceRect":[-12,1151,78,103],"sourceHeadRect":[0,1163,62,82],"nativeScale":1,"parts":["body","head"],"partialOcclusion":false,"flip":false,"period":13.83,"offset":3.19,"cheerStartFrame":3},{"name":"left-12","frames":"production/ambience-v3/left-12-frames.webp","frameSize":[77,114],"columns":6,"framesCount":24,"fps":12,"rect":[-12,1220,77,114],"sourceRect":[-12,1220,77,114],"sourceHeadRect":[0,1232,59,96],"nativeScale":1,"parts":["body","head"],"partialOcclusion":false,"flip":false,"period":15.543,"offset":5.909,"cheerStartFrame":3},{"name":"left-13","frames":"production/ambience-v3/left-13-frames.webp","frameSize":[57,54],"columns":6,"framesCount":24,"fps":12,"rect":[-12,1309,57,54],"sourceRect":[-12,1309,57,54],"sourceHeadRect":[0,1330,27,48],"nativeScale":1,"parts":["body","head"],"partialOcclusion":true,"flip":false,"period":17.256,"offset":8.628,"cheerStartFrame":3},{"name":"left-14","frames":"production/ambience-v3/left-14-frames.webp","frameSize":[104,154],"columns":6,"framesCount":24,"fps":12,"rect":[-12,1336,104,154],"sourceRect":[-12,1336,104,154],"sourceHeadRect":[0,1348,72,86],"nativeScale":1,"parts":["body","head"],"partialOcclusion":false,"flip":false,"period":8.569,"offset":11.347,"cheerStartFrame":3,"gif":"production/ambience-v3/left-14-cheer.gif"},{"name":"right-01","frames":"production/ambience-v3/right-01-frames.webp","frameSize":[38,62],"columns":6,"framesCount":24,"fps":12,"rect":[914,294,38,62],"sourceRect":[914,294,38,62],"sourceHeadRect":[920,302,20,44],"nativeScale":1,"parts":["body","head"],"partialOcclusion":true,"flip":false,"period":10.282,"offset":2.066,"cheerStartFrame":3},{"name":"right-02","frames":"production/ambience-v3/right-02-frames.webp","frameSize":[65,85],"columns":6,"framesCount":24,"fps":12,"rect":[887,331,65,85],"sourceRect":[887,331,65,85],"sourceHeadRect":[888,342,52,67],"nativeScale":1,"parts":["body","head"],"partialOcclusion":false,"flip":false,"period":11.995,"offset":4.785,"cheerStartFrame":3},{"name":"right-03","frames":"production/ambience-v3/right-03-frames.webp","frameSize":[72,105],"columns":6,"framesCount":24,"fps":12,"rect":[880,389,72,105],"sourceRect":[880,389,72,105],"sourceHeadRect":[878,401,62,74],"nativeScale":1,"parts":["body","head"],"partialOcclusion":false,"flip":false,"period":13.708,"offset":7.504,"cheerStartFrame":3},{"name":"right-04","frames":"production/ambience-v3/right-04-frames.webp","frameSize":[95,83],"columns":6,"framesCount":24,"fps":12,"rect":[857,470,95,83],"sourceRect":[857,470,95,83],"sourceHeadRect":[906,490,34,57],"nativeScale":1,"parts":["body","head"],"partialOcclusion":false,"flip":false,"period":15.421,"offset":10.223,"cheerStartFrame":3},{"name":"right-05","frames":"production/ambience-v3/right-05-frames.webp","frameSize":[101,82],"columns":6,"framesCount":24,"fps":12,"rect":[851,513,101,82],"sourceRect":[851,513,101,82],"sourceHeadRect":[872,525,68,64],"nativeScale":1,"parts":["body","head"],"partialOcclusion":false,"flip":false,"period":17.134,"offset":0.942,"cheerStartFrame":3},{"name":"right-06","frames":"production/ambience-v3/right-06-frames.webp","frameSize":[94,87],"columns":6,"framesCount":24,"fps":12,"rect":[858,558,94,87],"sourceRect":[858,558,94,87],"sourceHeadRect":[908,570,32,58],"nativeScale":1,"parts":["body","head"],"partialOcclusion":false,"flip":false,"period":8.447,"offset":3.661,"cheerStartFrame":3},{"name":"right-07","frames":"production/ambience-v3/right-07-frames.webp","frameSize":[92,90],"columns":6,"framesCount":24,"fps":12,"rect":[860,613,92,90],"sourceRect":[860,613,92,90],"sourceHeadRect":[868,625,72,79],"nativeScale":1,"parts":["body","head"],"partialOcclusion":false,"flip":false,"period":10.16,"offset":6.38,"cheerStartFrame":3},{"name":"right-08","frames":"production/ambience-v3/right-08-frames.webp","frameSize":[84,121],"columns":6,"framesCount":24,"fps":12,"rect":[868,668,84,121],"sourceRect":[868,668,84,121],"sourceHeadRect":[886,680,54,71],"nativeScale":1,"parts":["body","head","arm"],"partialOcclusion":false,"flip":false,"period":11.873,"offset":9.099,"cheerStartFrame":3,"gif":"production/ambience-v3/right-08-cheer.gif"},{"name":"right-09","frames":"production/ambience-v3/right-09-frames.webp","frameSize":[64,124],"columns":6,"framesCount":24,"fps":12,"rect":[888,765,64,124],"sourceRect":[888,765,64,124],"sourceHeadRect":[901,795,39,73],"nativeScale":1,"parts":["body","head"],"partialOcclusion":false,"flip":false,"period":13.586,"offset":11.818,"cheerStartFrame":3},{"name":"right-10","frames":"production/ambience-v3/right-10-frames.webp","frameSize":[73,123],"columns":6,"framesCount":24,"fps":12,"rect":[879,864,73,123],"sourceRect":[879,864,73,123],"sourceHeadRect":[886,876,54,77],"nativeScale":1,"parts":["body","head"],"partialOcclusion":false,"flip":false,"period":15.299,"offset":2.537,"cheerStartFrame":3},{"name":"right-11","frames":"production/ambience-v3/right-11-frames.webp","frameSize":[93,115],"columns":6,"framesCount":24,"fps":12,"rect":[859,963,93,115],"sourceRect":[859,963,93,115],"sourceHeadRect":[871,987,69,82],"nativeScale":1,"parts":["body","head"],"partialOcclusion":false,"flip":false,"period":17.012,"offset":5.256,"cheerStartFrame":3},{"name":"right-12","frames":"production/ambience-v3/right-12-frames.webp","frameSize":[79,91],"columns":6,"framesCount":24,"fps":12,"rect":[873,1044,79,91],"sourceRect":[873,1044,79,91],"sourceHeadRect":[895,1056,45,80],"nativeScale":1,"parts":["body","head"],"partialOcclusion":false,"flip":false,"period":8.325,"offset":7.975,"cheerStartFrame":3},{"name":"right-13","frames":"production/ambience-v3/right-13-frames.webp","frameSize":[55,92],"columns":6,"framesCount":24,"fps":12,"rect":[897,1095,55,92],"sourceRect":[897,1095,55,92],"sourceHeadRect":[908,1107,32,79],"nativeScale":1,"parts":["body","head"],"partialOcclusion":false,"flip":false,"period":10.038,"offset":10.694,"cheerStartFrame":3},{"name":"right-14","frames":"production/ambience-v3/right-14-frames.webp","frameSize":[52,57],"columns":6,"framesCount":24,"fps":12,"rect":[900,1153,52,57],"sourceRect":[900,1153,52,57],"sourceHeadRect":[920,1165,20,45],"nativeScale":1,"parts":["body","head"],"partialOcclusion":false,"flip":false,"period":11.751,"offset":1.413,"cheerStartFrame":3},{"name":"right-15","frames":"production/ambience-v3/right-15-frames.webp","frameSize":[99,104],"columns":6,"framesCount":24,"fps":12,"rect":[853,1183,99,104],"sourceRect":[853,1183,99,104],"sourceHeadRect":[867,1195,73,83],"nativeScale":1,"parts":["body","head"],"partialOcclusion":false,"flip":false,"period":13.464,"offset":4.132,"cheerStartFrame":3},{"name":"right-16","frames":"production/ambience-v3/right-16-frames.webp","frameSize":[99,88],"columns":6,"framesCount":24,"fps":12,"rect":[853,1254,99,88],"sourceRect":[853,1254,99,88],"sourceHeadRect":[891,1266,49,79],"nativeScale":1,"parts":["body","head"],"partialOcclusion":false,"flip":false,"period":15.177,"offset":6.851,"cheerStartFrame":3},{"name":"right-17","frames":"production/ambience-v3/right-17-frames.webp","frameSize":[84,177],"columns":6,"framesCount":24,"fps":12,"rect":[868,1314,84,177],"sourceRect":[868,1314,84,177],"sourceHeadRect":[861,1326,79,102],"nativeScale":1,"parts":["body","head"],"partialOcclusion":false,"flip":false,"period":16.89,"offset":9.57,"cheerStartFrame":3}],"light":{"direction":[0.78,-0.42],"shadowColor":"#3c425b","shadowOpacity":0.24,"softnessPixels":2.2},"notes":["All 31 audience actors derive from accepted painted arena original pixels.","Bodies remain fixed; every head and two clearly separated sleeves articulate.","Tightly overlapping hands stay on the stable body to preserve the existing painted anatomy.","No regenerated faces, costumes, or proportion changes.","Every record retains its native placement and scale."],"environmentShadow":{"mask":"production/ambience-v3/tree-shadow.webp","cleanPlate":"production/ambience-v3/sand-clean.webp","rect":[0,0,940,1673],"opacity":1,"clipPolygonsPixels":[[[98,335],[839,335],[870,365],[870,1482],[834,1512],[108,1512],[67,1478],[67,369]],[[0,1575],[940,1575],[940,1673],[0,1673]]],"groups":[{"name":"upper-left","anchor":[-150,300],"center":[210,440],"amplitudePixels":18,"period":7.2,"phase":0.4},{"name":"upper-right","anchor":[1100,280],"center":[750,410],"amplitudePixels":15,"period":8.6,"phase":1.7},{"name":"middle-left","anchor":[-180,880],"center":[200,960],"amplitudePixels":16,"period":6.7,"phase":2.4},{"name":"lower-left","anchor":[-150,1500],"center":[230,1460],"amplitudePixels":20,"period":8.1,"phase":0.8}]}}));
     var Du=new wu;window.__game=Du,Promise.all([sl,draftArtReady,draftAmbienceReady]).then(()=>Du.init()),addEventListener(`pointerdown`,e=>Du.pointerDown(e.clientX,e.clientY)),x({update:e=>Du.update(e),render:()=>{Tu!==`${innerWidth}x${innerHeight}@${rl()}`&&Eu(),eu()}}),S({round1_pick1:()=>Du.teleport(`round1_pick1`),round1_armies_ready:()=>Du.teleport(`round1_armies_ready`),round1_battle:()=>Du.teleport(`round1_battle`),between_rounds:()=>Du.teleport(`between_rounds`),round2_fight:()=>Du.teleport(`round2_fight`),round2_battle:()=>Du.teleport(`round2_battle`)});</script>
-</head><body><script>window.__draftBuild="draft-painted-cinematic-20261125-v2";</script></body></html>
+</head><body><script>window.__draftBuild="draft-painted-living-arena-20261125-v3";</script></body></html>

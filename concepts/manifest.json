@@ -1,7 +1,7 @@
 {
   "version": "v1",
   "created": "2026-11-24",
-  "updated": "25 Nov 2026, 17:18",
+  "updated": "25 Nov 2026, 18:32",
   "games": [
     {
       "slug": "bird-sort",
@@ -484,7 +484,7 @@
           "reference_image": "references/draft-showdown.jpg",
           "reference_available": true,
           "review": {
-            "visual_change": "The painted castle, character art and gold cards remain. The playable now adds articulated footwork and attack performances, material-specific effects and foley, three animated spectators, and grounded pose-driven shadows. Watch the actual recording for the implemented motion and sound.",
+            "visual_change": "The painted castle, character art and gold cards remain. Every side spectator is now an individual sprite extracted from the accepted painting at its original scale. Large environmental shadows sway over stationary sand, alongside articulated combat, material-specific effects and sound. Watch the actual recording for implemented motion.",
             "layout": "Original HUD, three hearts per side, two choices, +3 Knights, +5 Geese and 1/3 remain in the reference layout.",
             "drift": "Painted Edition intentionally changes the artwork. This is an art-direction concept; the playable uses separate production assets and retains the original closed knight visors. Earlier faithful images and Concept Videos remain available. The playable recording shows the actual implemented result."
           },
@@ -545,7 +545,7 @@
       "enhanced_playable": "enhanced/draft-showdown/index.html",
       "enhanced_playable_title": "Draft Showdown · Arena Polish",
       "painted_playable": "enhanced/draft-showdown-painted/index.html",
-      "painted_release_version": "draft-painted-cinematic-20261125-v2",
+      "painted_release_version": "draft-painted-living-arena-20261125-v3",
       "painted_runtime_recording": "painted/video/draft-showdown-runtime-v1.mp4",
       "painted_comparison_recording": "painted/video/draft-showdown-original-vs-painted-v2.mp4",
       "anime_playable": null,
