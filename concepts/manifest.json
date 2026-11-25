@@ -1,7 +1,7 @@
 {
   "version": "v1",
   "created": "2026-11-24",
-  "updated": "25 Nov 2026, 11:25",
+  "updated": "25 Nov 2026, 15:27",
   "games": [
     {
       "slug": "bird-sort",
@@ -525,7 +525,8 @@
         "prompt_available": true
       },
       "video_failure": null,
-      "enhanced_playable": null,
+      "enhanced_playable": "enhanced/draft-showdown/index.html",
+      "enhanced_playable_title": "Draft Showdown · Arena Polish",
       "anime_playable": null,
       "handpainting_playable": null,
       "comparison_video": null,

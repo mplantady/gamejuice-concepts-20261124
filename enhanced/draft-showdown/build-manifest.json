@@ -1,0 +1,29 @@
+{
+  "game": "Draft Showdown",
+  "variant": "Arena Polish",
+  "version": "draft-arena-polish-20261125-v1",
+  "direction": "Preserve and refine the original outlined, softly shaded cartoon battler",
+  "runtime_files": [
+    "index.html",
+    "polish.css",
+    "build-manifest.json"
+  ],
+  "base_sha256": "6fb3d5d4d460a8b52b36b48dc236345a8090b0cbf5497c738486a1b555c6c214",
+  "files": {
+    "index.html": "944d93e83504c31fa64808061267df6921b2225f1cb5a17e31f56a7e53afbaff",
+    "polish.css": "6897436b2dd29e16e1b9d8573281b25abf2acd0e9906a25f57222a3d25120489"
+  },
+  "preserved": [
+    "draft quantities and hit areas",
+    "combat stats and timing",
+    "team colors and original sprites",
+    "round and heart rules"
+  ],
+  "enhancements": [
+    "articulated character actions",
+    "card selection and arrival feedback",
+    "contact and explosion effects",
+    "controlled source audio mix",
+    "reduced motion and sound controls"
+  ]
+}
