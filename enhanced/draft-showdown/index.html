@@ -4985,7 +4985,6 @@ function installDraftPolish(api) {
         const node=card.node.find('Graphics'),m=node.m,u=layout.W/layout.cw;
         const sprite=api.sprite(card.def.thumb),im=api.textures[sprite.t].image,uv=sprite.uv;
         let alpha=1;for(let p=node;p;p=p.parent)alpha*=p.alpha*p.cg*(p.a?1:0);
-        alpha*=1-card.overlay.img.col[3];
         ctx.save();ctx.globalAlpha=alpha;
         ctx.transform(m[0]*u,-m[1]*u,m[2]*u,-m[3]*u,m[4]*u+layout.W/2,-m[5]*u+layout.H/2+layout.shift*layout.H/2);
         for(const [x,y,sign] of card.polishGeese){ctx.save();ctx.translate(x,y);ctx.scale(sign,-1);
