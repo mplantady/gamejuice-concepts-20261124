@@ -1,0 +1,27 @@
+{
+  "game": "Draft Showdown",
+  "version": "draft-painted-audio-lifecycle-20261126-v5-rc1",
+  "method": "Actual separate original/enhanced gameplay at normal speed; no timeline trimming, state forcing, pose interpolation or soundtrack substitution. Enhanced actual captured soundtrack only.",
+  "comparison_sha256": "3cf3e8c0caf35925f03405e27f9e89699c5b485cee13720cb8e01463995a2d29",
+  "duration_seconds": 45,
+  "native_panels": [
+    390,
+    844
+  ],
+  "video": [
+    804,
+    1018,
+    30
+  ],
+  "original_seed": 1719,
+  "original_audio": "Silent recording; retained report has one audio-decode error. No original audio pass.",
+  "enhanced_audio": {
+    "decoded_peak_dbfs": -6.131295921723786,
+    "four_times_peak_dbfs": -6.061174493879083,
+    "full_scale_samples": 0,
+    "subjectively_auditioned": false
+  },
+  "original_outcome": "Seven choices, one round won; no complete-match victory claim.",
+  "enhanced_outcome": "Seven choices, two rounds lost; no manufactured result.",
+  "public_verification": "pending"
+}

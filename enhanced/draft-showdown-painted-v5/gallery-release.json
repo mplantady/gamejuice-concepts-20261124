@@ -1,0 +1,56 @@
+{
+  "slug": "draft-showdown",
+  "reviewed": true,
+  "release_sequence": 5,
+  "release_label": "Painted Edition V5",
+  "enhanced_playable": "enhanced/draft-showdown-painted-v5/index.html",
+  "enhanced_playable_title": "Draft Showdown \u00b7 Painted Edition V5",
+  "runtime_release_version": "draft-painted-audio-lifecycle-20261126-v5-rc1",
+  "runtime_comparison_video": "runtime/draft-showdown-painted-v5/original-vs-enhanced.mp4",
+  "runtime_comparison_files": [
+    "runtime/draft-showdown-painted-v5/comparison-poster.png",
+    "runtime/draft-showdown-painted-v5/index.html",
+    "runtime/draft-showdown-painted-v5/original-vs-enhanced.mp4",
+    "runtime/draft-showdown-painted-v5/polished-image.png",
+    "runtime/draft-showdown-painted-v5/verification.json"
+  ],
+  "runtime_polished_image": {
+    "image": "runtime/draft-showdown-painted-v5/polished-image.png",
+    "source": "actual-playable-capture",
+    "version": "draft-painted-audio-lifecycle-20261126-v5-rc1",
+    "width": 390,
+    "height": 844,
+    "caption": "Actual Painted Edition V5 playable, captured after production art loaded.",
+    "sha256": "b23cf930d6b81e33bd378a7f4a847562f8fbd560e904055a9afe6ec0dd1baaaa"
+  },
+  "runtime_study_images": [],
+  "supersedes": [],
+  "runtime_release": {
+    "title": "Painted Edition V5",
+    "version": "draft-painted-audio-lifecycle-20261126-v5-rc1",
+    "poster": "runtime/draft-showdown-painted-v5/comparison-poster.png",
+    "polished_image": "runtime/draft-showdown-painted-v5/polished-image.png",
+    "description": "Painted characters, individual spectators, swaying sand shadows and a battle-reactive king, with sound that stops cleanly on mute and restart.",
+    "audio": "Enhanced captured soundtrack only. Retained original video is silent and its recording report contains an audio-decode error; no original-audio pass is claimed.",
+    "previous_editions": [
+      {
+        "title": "Painted Edition V4 \u00b7 Reactive King",
+        "version": "draft-painted-reactive-king-20261126-v4",
+        "playable": "enhanced/draft-showdown-painted/index.html",
+        "comparison_video": "painted/video/draft-showdown-original-vs-painted-v2.mp4",
+        "comparison_files": [
+          "painted/video/draft-showdown-runtime-v1.mp4"
+        ]
+      },
+      {
+        "title": "Arena Polish",
+        "version": "draft-arena-polish-20261125-v1",
+        "playable": "enhanced/draft-showdown/index.html"
+      }
+    ],
+    "supersedes": [],
+    "comparison_method": "Separate authentic playthroughs at normal speed; enhanced soundtrack only.",
+    "caption": "Actual original and Painted Edition V5 gameplay; independent outcomes."
+  },
+  "runtime_comparison_page": "runtime/draft-showdown-painted-v5/index.html"
+}
