@@ -1,0 +1,975 @@
+{
+  "version": "vita-inkstone-assets-20261126-v2",
+  "tiles": {
+    "None": {
+      "file": "inkstone-tiles-v2/tiles-3x/None.png",
+      "world_size": [
+        142,
+        157
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "density": 3
+    },
+    "bing1": {
+      "file": "inkstone-tiles-v2/tiles-3x/bing1.png",
+      "world_size": [
+        142,
+        157
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "density": 3
+    },
+    "bing2": {
+      "file": "inkstone-tiles-v2/tiles-3x/bing2.png",
+      "world_size": [
+        142,
+        157
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "density": 3
+    },
+    "bing5": {
+      "file": "inkstone-tiles-v2/tiles-3x/bing5.png",
+      "world_size": [
+        142,
+        157
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "density": 3
+    },
+    "bing7": {
+      "file": "inkstone-tiles-v2/tiles-3x/bing7.png",
+      "world_size": [
+        142,
+        157
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "density": 3
+    },
+    "hua1": {
+      "file": "inkstone-tiles-v2/tiles-3x/hua1.png",
+      "world_size": [
+        142,
+        157
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "density": 3
+    },
+    "hua2": {
+      "file": "inkstone-tiles-v2/tiles-3x/hua2.png",
+      "world_size": [
+        142,
+        157
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "density": 3
+    },
+    "hua3": {
+      "file": "inkstone-tiles-v2/tiles-3x/hua3.png",
+      "world_size": [
+        142,
+        157
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "density": 3
+    },
+    "hua4": {
+      "file": "inkstone-tiles-v2/tiles-3x/hua4.png",
+      "world_size": [
+        142,
+        157
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "density": 3
+    },
+    "ren1": {
+      "file": "inkstone-tiles-v2/tiles-3x/ren1.png",
+      "world_size": [
+        142,
+        157
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "density": 3
+    },
+    "ren2": {
+      "file": "inkstone-tiles-v2/tiles-3x/ren2.png",
+      "world_size": [
+        142,
+        157
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "density": 3
+    },
+    "ren3": {
+      "file": "inkstone-tiles-v2/tiles-3x/ren3.png",
+      "world_size": [
+        142,
+        157
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "density": 3
+    },
+    "ren4": {
+      "file": "inkstone-tiles-v2/tiles-3x/ren4.png",
+      "world_size": [
+        142,
+        157
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "density": 3
+    },
+    "tiao1": {
+      "file": "inkstone-tiles-v2/tiles-3x/tiao1.png",
+      "world_size": [
+        142,
+        157
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "density": 3
+    },
+    "tiao4": {
+      "file": "inkstone-tiles-v2/tiles-3x/tiao4.png",
+      "world_size": [
+        142,
+        157
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "density": 3
+    },
+    "tiao6": {
+      "file": "inkstone-tiles-v2/tiles-3x/tiao6.png",
+      "world_size": [
+        142,
+        157
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "density": 3
+    },
+    "wan1": {
+      "file": "inkstone-tiles-v2/tiles-3x/wan1.png",
+      "world_size": [
+        142,
+        157
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "density": 3
+    },
+    "wan3": {
+      "file": "inkstone-tiles-v2/tiles-3x/wan3.png",
+      "world_size": [
+        142,
+        157
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "density": 3
+    },
+    "wan8": {
+      "file": "inkstone-tiles-v2/tiles-3x/wan8.png",
+      "world_size": [
+        142,
+        157
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "density": 3
+    },
+    "wan9": {
+      "file": "inkstone-tiles-v2/tiles-3x/wan9.png",
+      "world_size": [
+        142,
+        157
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "density": 3
+    },
+    "zi_bei": {
+      "file": "inkstone-tiles-v2/tiles-3x/zi_bei.png",
+      "world_size": [
+        142,
+        157
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "density": 3
+    },
+    "zi_fa": {
+      "file": "inkstone-tiles-v2/tiles-3x/zi_fa.png",
+      "world_size": [
+        142,
+        157
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "density": 3
+    },
+    "zi_zhong": {
+      "file": "inkstone-tiles-v2/tiles-3x/zi_zhong.png",
+      "world_size": [
+        142,
+        157
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "density": 3
+    }
+  },
+  "palette": {
+    "face": "warm pale ceramic",
+    "edge": "deep celadon teal",
+    "red": "#b52f20",
+    "green": "#286e42",
+    "blue": "#254e78",
+    "lock": "purple"
+  },
+  "background": {
+    "file": "inkstone-surfaces-v2/board.webp",
+    "pixels": [
+      941,
+      1672
+    ],
+    "stationary": true,
+    "format": "lossless WebP"
+  },
+  "cta": {
+    "file": "inkstone-surfaces-v2/cta-2x.png",
+    "pixels": [
+      1024,
+      300
+    ],
+    "world_size": [
+      512,
+      150
+    ],
+    "label": "Play Free",
+    "label_baked": false,
+    "safe_text_box_world": [
+      53,
+      28,
+      459,
+      120
+    ],
+    "pivot": [
+      0.5,
+      0.5
+    ]
+  },
+  "lock": {
+    "file": "inkstone-surfaces-v2/clasp-3x.png",
+    "pixels": [
+      231,
+      453
+    ],
+    "logical_size": [
+      77,
+      151
+    ],
+    "world_size": [
+      89.46550666666667,
+      179.14765176811594
+    ],
+    "mesh_position": [
+      2.9505831515151577,
+      1.6332041449275456
+    ],
+    "visible_logical_bounds": [
+      6,
+      7,
+      72,
+      145
+    ],
+    "parts": [
+      {
+        "name": "top-fixed",
+        "file": "inkstone-surfaces-v2/clasp-top-fixed-3x.png",
+        "fixed": true,
+        "full_frame_pixels": [
+          231,
+          453
+        ],
+        "source_bounds_raw": [
+          105,
+          130,
+          750,
+          478
+        ],
+        "source_rect_3x": [
+          12,
+          15,
+          210,
+          108
+        ],
+        "logical_rect": [
+          4.0,
+          5.0,
+          70.0,
+          36.0
+        ],
+        "socket_indices": [
+          0
+        ],
+        "pivot_full_logical": [
+          39.15348837209302,
+          32.131561892417366
+        ],
+        "pivot_in_sprite_pixels": [
+          105.46046511627907,
+          81.3946856772521
+        ],
+        "sha256": "46256182df18c42b86cf0978d604825ab0642be420c57af7e608f61b26b51cd7"
+      },
+      {
+        "name": "ring-upper",
+        "file": "inkstone-surfaces-v2/clasp-ring-upper-3x.png",
+        "fixed": false,
+        "full_frame_pixels": [
+          231,
+          453
+        ],
+        "source_bounds_raw": [
+          290,
+          349,
+          566,
+          736
+        ],
+        "source_rect_3x": [
+          66,
+          71,
+          102,
+          121
+        ],
+        "logical_rect": [
+          22.0,
+          23.666666666666668,
+          34.0,
+          40.333333333333336
+        ],
+        "socket_indices": [
+          0,
+          1
+        ],
+        "pivot_full_logical": [
+          39.15348837209302,
+          32.131561892417366
+        ],
+        "pivot_in_sprite_pixels": [
+          51.46046511627907,
+          25.3946856772521
+        ],
+        "sha256": "4b75100502d4830c4ad0645fdd73e8e50112a29fa3314328c99735574732ac42"
+      },
+      {
+        "name": "connector-upper",
+        "file": "inkstone-surfaces-v2/clasp-connector-upper-3x.png",
+        "fixed": false,
+        "full_frame_pixels": [
+          231,
+          453
+        ],
+        "source_bounds_raw": [
+          370,
+          599,
+          487,
+          820
+        ],
+        "source_rect_3x": [
+          91,
+          138,
+          53,
+          77
+        ],
+        "logical_rect": [
+          30.333333333333332,
+          46.0,
+          17.666666666666668,
+          25.666666666666668
+        ],
+        "socket_indices": [
+          1,
+          2
+        ],
+        "pivot_full_logical": [
+          39.15348837209302,
+          53.506804925469865
+        ],
+        "pivot_in_sprite_pixels": [
+          26.460465116279067,
+          22.52041477640961
+        ],
+        "sha256": "a3b81af5dc95d30b0080fee611e1eaaab1c7878a4db7dd0b113a68a5fc4dfef3"
+      },
+      {
+        "name": "ring-middle",
+        "file": "inkstone-surfaces-v2/clasp-ring-middle-3x.png",
+        "fixed": false,
+        "full_frame_pixels": [
+          231,
+          453
+        ],
+        "source_bounds_raw": [
+          298,
+          720,
+          557,
+          1098
+        ],
+        "source_rect_3x": [
+          69,
+          171,
+          96,
+          118
+        ],
+        "logical_rect": [
+          23.0,
+          57.0,
+          32.0,
+          39.333333333333336
+        ],
+        "socket_indices": [
+          2,
+          3
+        ],
+        "pivot_full_logical": [
+          39.15348837209302,
+          63.79196370706416
+        ],
+        "pivot_in_sprite_pixels": [
+          48.46046511627907,
+          20.375891121192495
+        ],
+        "sha256": "51f71ebe6e3d7caac572c1f46c81b08efba138ee25f24bafb191bdb51b0de414"
+      },
+      {
+        "name": "connector-lower",
+        "file": "inkstone-surfaces-v2/clasp-connector-lower-3x.png",
+        "fixed": false,
+        "full_frame_pixels": [
+          231,
+          453
+        ],
+        "source_bounds_raw": [
+          370,
+          961,
+          486,
+          1190
+        ],
+        "source_rect_3x": [
+          91,
+          235,
+          53,
+          79
+        ],
+        "logical_rect": [
+          30.333333333333332,
+          78.33333333333333,
+          17.666666666666668,
+          26.333333333333332
+        ],
+        "socket_indices": [
+          3,
+          4
+        ],
+        "pivot_full_logical": [
+          39.15348837209302,
+          86.41931302657161
+        ],
+        "pivot_in_sprite_pixels": [
+          26.460465116279067,
+          24.257939079714845
+        ],
+        "sha256": "9ed1325f3bc0c72d963004aa5563fafcfe55392164dd7ab6df5b89b241b80ca1"
+      },
+      {
+        "name": "ring-lower",
+        "file": "inkstone-surfaces-v2/clasp-ring-lower-3x.png",
+        "fixed": false,
+        "full_frame_pixels": [
+          231,
+          453
+        ],
+        "source_bounds_raw": [
+          297,
+          1082,
+          557,
+          1444
+        ],
+        "source_rect_3x": [
+          69,
+          268,
+          96,
+          114
+        ],
+        "logical_rect": [
+          23.0,
+          89.33333333333333,
+          32.0,
+          38.0
+        ],
+        "socket_indices": [
+          4,
+          5
+        ],
+        "pivot_full_logical": [
+          39.15348837209302,
+          95.98898250162021
+        ],
+        "pivot_in_sprite_pixels": [
+          48.46046511627907,
+          19.966947504860627
+        ],
+        "sha256": "352188d37090a119c3ef32ede32c9e80f480d53cfb4925848f3a5d6f64b17f77"
+      },
+      {
+        "name": "bottom-fixed",
+        "file": "inkstone-surfaces-v2/clasp-bottom-fixed-3x.png",
+        "fixed": true,
+        "full_frame_pixels": [
+          231,
+          453
+        ],
+        "source_bounds_raw": [
+          106,
+          1323,
+          750,
+          1673
+        ],
+        "source_rect_3x": [
+          12,
+          332,
+          210,
+          109
+        ],
+        "logical_rect": [
+          4.0,
+          110.66666666666667,
+          70.0,
+          36.333333333333336
+        ],
+        "socket_indices": [
+          5
+        ],
+        "pivot_full_logical": [
+          39.15348837209302,
+          119.68956578094621
+        ],
+        "pivot_in_sprite_pixels": [
+          105.46046511627907,
+          27.068697342838618
+        ],
+        "sha256": "8df3e195f31315e39a8d20d4d950fd714d1c2317dcef2be9310e8708d5c746f5"
+      }
+    ],
+    "draw_order": [
+      "ring-upper",
+      "ring-middle",
+      "ring-lower",
+      "connector-upper",
+      "connector-lower",
+      "top-fixed",
+      "bottom-fixed"
+    ],
+    "sockets": [
+      {
+        "index": 0,
+        "raw_pixel": [
+          429,
+          411
+        ],
+        "logical": [
+          39.15348837209302,
+          32.131561892417366
+        ],
+        "normalized": [
+          0.5084868619752341,
+          0.21279180061203554
+        ],
+        "fixed": true
+      },
+      {
+        "index": 1,
+        "raw_pixel": [
+          429,
+          650
+        ],
+        "logical": [
+          39.15348837209302,
+          53.506804925469865
+        ],
+        "normalized": [
+          0.5084868619752341,
+          0.3543497014931779
+        ],
+        "fixed": false
+      },
+      {
+        "index": 2,
+        "raw_pixel": [
+          429,
+          765
+        ],
+        "logical": [
+          39.15348837209302,
+          63.79196370706416
+        ],
+        "normalized": [
+          0.5084868619752341,
+          0.4224633358083719
+        ],
+        "fixed": false
+      },
+      {
+        "index": 3,
+        "raw_pixel": [
+          429,
+          1018
+        ],
+        "logical": [
+          39.15348837209302,
+          86.41931302657161
+        ],
+        "normalized": [
+          0.5084868619752341,
+          0.5723133313017987
+        ],
+        "fixed": false
+      },
+      {
+        "index": 4,
+        "raw_pixel": [
+          429,
+          1125
+        ],
+        "logical": [
+          39.15348837209302,
+          95.98898250162021
+        ],
+        "normalized": [
+          0.5084868619752341,
+          0.6356886258385445
+        ],
+        "fixed": false
+      },
+      {
+        "index": 5,
+        "raw_pixel": [
+          429,
+          1390
+        ],
+        "logical": [
+          39.15348837209302,
+          119.68956578094621
+        ],
+        "normalized": [
+          0.5084868619752341,
+          0.7926461309996438
+        ],
+        "fixed": true
+      }
+    ],
+    "motion_contract": {
+      "neutral": "Place each cropped part using logical_rect in full77\u00d7151 coordinate space; all pivots reference that same space.",
+      "bound": "First/last sockets and end assemblies fixed. Displace internal4sockets; orient5middleparts between their adjacent sockets.",
+      "max_suggested_internal_displacement_world": 2.2,
+      "rest": "Zero displacement reproduces full clasp within recorded resampling tolerances.",
+      "release": "Only source-confirmed unlock may separate ends.",
+      "low_motion": "Use neutral assembly; event cue via brief restrained alpha/color signal."
+    }
+  },
+  "portraits": {
+    "ren1": {
+      "frames": {
+        "neutral": {
+          "file": "inkstone-portraits-v2/ren1-neutral-3x.png",
+          "pixels": [
+            354,
+            354
+          ]
+        },
+        "blink": {
+          "file": "inkstone-portraits-v2/ren1-blink-3x.png",
+          "pixels": [
+            354,
+            354
+          ]
+        },
+        "focus": {
+          "file": "inkstone-portraits-v2/ren1-focus-3x.png",
+          "pixels": [
+            354,
+            354
+          ]
+        },
+        "release": {
+          "file": "inkstone-portraits-v2/ren1-release-3x.png",
+          "pixels": [
+            354,
+            354
+          ]
+        }
+      },
+      "world_size": [
+        118,
+        118
+      ],
+      "center": [
+        0,
+        20
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "expression_roi_pixels": [
+        101,
+        199,
+        247,
+        287
+      ],
+      "registration": "Same per-character neutral center and uniformscale acrossall4poses; stablehattranslation aligned before resample.",
+      "blend_ms": 90,
+      "eyes_brows_roi_pixels": [
+        111,
+        198,
+        238,
+        251
+      ]
+    },
+    "ren2": {
+      "frames": {
+        "neutral": {
+          "file": "inkstone-portraits-v2/ren2-neutral-3x.png",
+          "pixels": [
+            354,
+            354
+          ]
+        },
+        "blink": {
+          "file": "inkstone-portraits-v2/ren2-blink-3x.png",
+          "pixels": [
+            354,
+            354
+          ]
+        },
+        "focus": {
+          "file": "inkstone-portraits-v2/ren2-focus-3x.png",
+          "pixels": [
+            354,
+            354
+          ]
+        },
+        "release": {
+          "file": "inkstone-portraits-v2/ren2-release-3x.png",
+          "pixels": [
+            354,
+            354
+          ]
+        }
+      },
+      "world_size": [
+        118,
+        118
+      ],
+      "center": [
+        0,
+        20
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "expression_roi_pixels": [
+        95,
+        178,
+        284,
+        308
+      ],
+      "registration": "Same per-character neutral center and uniformscale acrossall4poses; stablehattranslation aligned before resample.",
+      "blend_ms": 90,
+      "eyes_brows_roi_pixels": [
+        114,
+        179,
+        259,
+        252
+      ]
+    },
+    "ren3": {
+      "frames": {
+        "neutral": {
+          "file": "inkstone-portraits-v2/ren3-neutral-3x.png",
+          "pixels": [
+            354,
+            354
+          ]
+        },
+        "blink": {
+          "file": "inkstone-portraits-v2/ren3-blink-3x.png",
+          "pixels": [
+            354,
+            354
+          ]
+        },
+        "focus": {
+          "file": "inkstone-portraits-v2/ren3-focus-3x.png",
+          "pixels": [
+            354,
+            354
+          ]
+        },
+        "release": {
+          "file": "inkstone-portraits-v2/ren3-release-3x.png",
+          "pixels": [
+            354,
+            354
+          ]
+        }
+      },
+      "world_size": [
+        118,
+        118
+      ],
+      "center": [
+        0,
+        20
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "expression_roi_pixels": [
+        55,
+        155,
+        280,
+        303
+      ],
+      "registration": "Same per-character neutral center and uniformscale acrossall4poses; stablehattranslation aligned before resample.",
+      "blend_ms": 90,
+      "eyes_brows_roi_pixels": [
+        74,
+        155,
+        276,
+        257
+      ]
+    },
+    "ren4": {
+      "frames": {
+        "neutral": {
+          "file": "inkstone-portraits-v2/ren4-neutral-3x.png",
+          "pixels": [
+            354,
+            354
+          ]
+        },
+        "blink": {
+          "file": "inkstone-portraits-v2/ren4-blink-3x.png",
+          "pixels": [
+            354,
+            354
+          ]
+        },
+        "focus": {
+          "file": "inkstone-portraits-v2/ren4-focus-3x.png",
+          "pixels": [
+            354,
+            354
+          ]
+        },
+        "release": {
+          "file": "inkstone-portraits-v2/ren4-release-3x.png",
+          "pixels": [
+            354,
+            354
+          ]
+        }
+      },
+      "world_size": [
+        118,
+        118
+      ],
+      "center": [
+        0,
+        20
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "expression_roi_pixels": [
+        75,
+        170,
+        269,
+        298
+      ],
+      "registration": "Same per-character neutral center and uniformscale acrossall4poses; stablehattranslation aligned before resample.",
+      "blend_ms": 90,
+      "eyes_brows_roi_pixels": [
+        108,
+        175,
+        248,
+        245
+      ]
+    }
+  }
+}

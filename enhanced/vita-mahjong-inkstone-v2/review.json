@@ -1,0 +1,34 @@
+{
+  "version": "vita-inkstone-20261126-v2",
+  "status": "Tested playable and authentic comparisons",
+  "summary": "Inkstone v2 gives the full board a crafted celadon, painted wood and ink treatment with expressive tile portraits and articulated purple clasps. Painted Ceramic v1 is preserved.",
+  "changes": [
+    "23 rebuilt tile designs, 16 registered facial poses, seven joined clasp parts, painted woven playing surface and lacquer Play Free button.",
+    "Quiet staggered portrait blinks and anchored moving cast shadows over a stationary surface. Attached contact shadows stay with their pieces.",
+    "Distinct selection, rejection, matching, release and cascade feedback. The larger result treatment only runs on the original no-moves outcome.",
+    "Drier material sound mix using the original recordings; source music and result sound retained."
+  ],
+  "verified": [
+    "Original, Painted Ceramic v1 and Inkstone v2 have identical opening and five recorded state snapshots, including every hidden tile and lock. Counts are 75, 69, 66, 60 and 54; locks are 4, 3, 3, 3 and 2.",
+    "Converted/v1/v2 global random-call counts remain 2468 at recording start and 4908 at end.",
+    "Locked and vertical rejection, accepted nonmatching slide, gravity, source terminal state, normal asynchronous startup and deliberately missing asset fallback checked with actual input.",
+    "Real portrait textures change; seven-part clasp joints remain joined with fixed endpoints. Cast shadows change actual exposed board pixels while the background remains fixed.",
+    "Reduced-motion idle screenshots are identical; portrait and shadow clocks resume without catching up.",
+    "390px and 320px phone layouts, landscape, sound and motion buttons checked. Ordinary desktop Chromium software-WebGL play measured about 59fps; this is not a physical phone benchmark.",
+    "Actual runtime audio recorded; mixer has no missing cues or errors, and the sound reel has zero clipping samples."
+  ],
+  "limitations": [
+    "Human listening and physical-device performance are not verified.",
+    "Small portrait expressions occupy only a few pixels at 320px. Purple chain centers are quieter than the bright prior edition.",
+    "The references supplied painted color/material discipline and tactile tabletop hierarchy; this is not a claim of feature-film or AAA production equivalence. Reference images do not prove animation or audio quality."
+  ],
+  "comparison": {
+    "method": "Separate authentic playthroughs, matched 390x694 framing, identical verified pointer gestures, normal speed. Inkstone v2 soundtrack only.",
+    "primary": "Original versus Inkstone v2",
+    "secondary": "Painted Ceramic v1 versus Inkstone v2"
+  },
+  "source_fidelity": {
+    "preserved": "Gameplay, board, symbols, functional color families, hit areas, horizontal movement, gravity, unlock and no-moves result rules. No scores or wins invented.",
+    "preexisting_conversion_difference": "Original Luna auto-opens the store after its no-moves delay. The prior converted playable omits that automatic navigation; v2 preserves the converted behavior."
+  }
+}
