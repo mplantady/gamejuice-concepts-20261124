@@ -1,7 +1,7 @@
 {
   "version": "v1",
   "created": "2026-11-24",
-  "updated": "26 Nov 2026, 08:44",
+  "updated": "26 Nov 2026, 09:59",
   "games": [
     {
       "slug": "bird-sort",
@@ -199,6 +199,8 @@
       "painted_comparison_recording": null,
       "anime_playable": "enhanced/bird-sort-anime/index.html",
       "handpainting_playable": "enhanced/bird-sort-handpainting/index.html",
+      "handpainting_comparison_recording": "handpainting/video/bird-sort-original-vs-painted-v502.mp4",
+      "handpainting_comparison_version": "bird-painted-comparison-20261126-v1",
       "comparison_video": "video/comparisons/bird-sort/index.html",
       "flat_video": {
         "slug": "bird-sort",
