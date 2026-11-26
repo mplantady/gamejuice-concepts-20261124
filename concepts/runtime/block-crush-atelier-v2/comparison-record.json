@@ -1,0 +1,3657 @@
+{
+  "version": "block-crush-atelier-20261126-v2",
+  "method": "Authentic separate original and Atelier v2 playthroughs, same four physical moves, matched390\u00d7844 framing, normal speed. Atelier runtime soundtrack only. No generated gameplay, injected board state, or fabricated result. Gardenv1 same-state recording retained as the intermediate comparison baseline.",
+  "file": "block-crush-original-vs-atelier-v2.mp4",
+  "sha256": "9a8ed1321c93f9269961f14928405ce0ec6e13ee0ba0f4019f55b56f8fa8b56e",
+  "bytes": 1994338,
+  "probe": {
+    "streams": [
+      {
+        "index": 0,
+        "codec_name": "h264",
+        "codec_long_name": "H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10",
+        "profile": "High",
+        "codec_type": "video",
+        "codec_tag_string": "avc1",
+        "codec_tag": "0x31637661",
+        "mime_codec_string": "avc1.64001f",
+        "width": 816,
+        "height": 952,
+        "coded_width": 816,
+        "coded_height": 952,
+        "has_b_frames": 2,
+        "sample_aspect_ratio": "1:1",
+        "display_aspect_ratio": "6:7",
+        "pix_fmt": "yuvj420p",
+        "level": 31,
+        "color_range": "pc",
+        "color_space": "bt709",
+        "chroma_location": "left",
+        "field_order": "progressive",
+        "is_avc": "true",
+        "nal_length_size": "4",
+        "id": "0x1",
+        "r_frame_rate": "30/1",
+        "avg_frame_rate": "30/1",
+        "time_base": "1/15360",
+        "start_pts": 0,
+        "start_time": "0.000000",
+        "duration_ts": 181760,
+        "duration": "11.833333",
+        "bit_rate": "1302077",
+        "bits_per_raw_sample": "8",
+        "nb_frames": "355",
+        "extradata_size": 51,
+        "disposition": {
+          "default": 1,
+          "dub": 0,
+          "original": 0,
+          "comment": 0,
+          "lyrics": 0,
+          "karaoke": 0,
+          "forced": 0,
+          "hearing_impaired": 0,
+          "visual_impaired": 0,
+          "clean_effects": 0,
+          "attached_pic": 0,
+          "timed_thumbnails": 0,
+          "non_diegetic": 0,
+          "captions": 0,
+          "descriptions": 0,
+          "metadata": 0,
+          "dependent": 0,
+          "still_image": 0,
+          "multilayer": 0
+        },
+        "tags": {
+          "language": "und",
+          "handler_name": "VideoHandler",
+          "encoder": "Lavc62.28.100 libx264"
+        }
+      },
+      {
+        "index": 1,
+        "codec_name": "aac",
+        "codec_long_name": "AAC (Advanced Audio Coding)",
+        "profile": "LC",
+        "codec_type": "audio",
+        "codec_tag_string": "mp4a",
+        "codec_tag": "0x6134706d",
+        "mime_codec_string": "mp4a.40.2",
+        "sample_fmt": "fltp",
+        "sample_rate": "48000",
+        "channels": 2,
+        "channel_layout": "stereo",
+        "bits_per_sample": 0,
+        "initial_padding": 0,
+        "id": "0x2",
+        "r_frame_rate": "0/0",
+        "avg_frame_rate": "0/0",
+        "time_base": "1/48000",
+        "start_pts": 73008,
+        "start_time": "1.521000",
+        "duration_ts": 495472,
+        "duration": "10.322333",
+        "bit_rate": "41286",
+        "nb_frames": "484",
+        "extradata_size": 5,
+        "disposition": {
+          "default": 1,
+          "dub": 0,
+          "original": 0,
+          "comment": 0,
+          "lyrics": 0,
+          "karaoke": 0,
+          "forced": 0,
+          "hearing_impaired": 0,
+          "visual_impaired": 0,
+          "clean_effects": 0,
+          "attached_pic": 0,
+          "timed_thumbnails": 0,
+          "non_diegetic": 0,
+          "captions": 0,
+          "descriptions": 0,
+          "metadata": 0,
+          "dependent": 0,
+          "still_image": 0,
+          "multilayer": 0
+        },
+        "tags": {
+          "language": "eng",
+          "handler_name": "SoundHandler"
+        }
+      }
+    ],
+    "format": {
+      "filename": "block-crush-original-vs-atelier-v2.mp4",
+      "nb_streams": 2,
+      "nb_programs": 0,
+      "nb_stream_groups": 0,
+      "format_name": "mov,mp4,m4a,3gp,3g2,mj2",
+      "format_long_name": "QuickTime / MOV",
+      "start_time": "0.000000",
+      "duration": "11.843333",
+      "size": "1994338",
+      "bit_rate": "1347146",
+      "probe_score": 100,
+      "tags": {
+        "major_brand": "isom",
+        "minor_version": "512",
+        "compatible_brands": "isomiso2avc1mp41",
+        "encoder": "Lavf62.12.100"
+      }
+    }
+  },
+  "sources": {
+    "original": {
+      "sourceSha256": "fd641dcb7375b80cb3c5847b981f249da86cc2dcc0f5d49cfff9aed0b4460173",
+      "recordingSha256": "2d4c6503c4cf99d2294b63e4fe4ccc4c05764013e2900cf08bfdf8b9a753819c",
+      "opening": {
+        "score": 0,
+        "putCount": 0,
+        "combo": 0,
+        "level": 3,
+        "gameOver": false,
+        "board": [
+          [
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": true,
+              "color": 16
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            }
+          ],
+          [
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": true,
+              "color": 1
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            }
+          ],
+          [
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": true,
+              "color": 17
+            },
+            {
+              "occupied": true,
+              "color": 1
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            }
+          ],
+          [
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": true,
+              "color": 1
+            },
+            {
+              "occupied": true,
+              "color": 1
+            },
+            {
+              "occupied": true,
+              "color": 13
+            }
+          ],
+          [
+            {
+              "occupied": true,
+              "color": 13
+            },
+            {
+              "occupied": true,
+              "color": 1
+            },
+            {
+              "occupied": true,
+              "color": 1
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            }
+          ],
+          [
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": true,
+              "color": 1
+            },
+            {
+              "occupied": true,
+              "color": 17
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            }
+          ],
+          [
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": true,
+              "color": 1
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            }
+          ],
+          [
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": true,
+              "color": 16
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            }
+          ]
+        ],
+        "boolMap": [
+          [
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "targets": [
+          {
+            "color": 14,
+            "count": 18
+          },
+          {
+            "color": 13,
+            "count": 26
+          },
+          {
+            "color": 16,
+            "count": 10
+          }
+        ],
+        "tray": [
+          {
+            "slot": 0,
+            "shape": [
+              [
+                1,
+                1,
+                1,
+                0,
+                0
+              ],
+              [
+                1,
+                1,
+                1,
+                0,
+                0
+              ],
+              [
+                1,
+                1,
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            ],
+            "color": 4,
+            "colors": [],
+            "toyIndex": -2
+          },
+          {
+            "slot": 1,
+            "shape": [
+              [
+                0,
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                1,
+                1,
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                1,
+                1,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            ],
+            "color": 7,
+            "colors": [],
+            "toyIndex": -6
+          },
+          {
+            "slot": 2,
+            "shape": [
+              [
+                1,
+                1,
+                1,
+                0,
+                0
+              ],
+              [
+                1,
+                1,
+                1,
+                0,
+                0
+              ],
+              [
+                1,
+                1,
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            ],
+            "color": 3,
+            "colors": [],
+            "toyIndex": -4
+          }
+        ]
+      },
+      "final": {
+        "score": 248,
+        "putCount": 4,
+        "combo": 1,
+        "level": 3,
+        "gameOver": false,
+        "board": [
+          [
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            }
+          ],
+          [
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            }
+          ],
+          [
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": true,
+              "color": 17
+            },
+            {
+              "occupied": true,
+              "color": 1
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            }
+          ],
+          [
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": true,
+              "color": 14
+            },
+            {
+              "occupied": true,
+              "color": 14
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            }
+          ],
+          [
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            }
+          ],
+          [
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            }
+          ],
+          [
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            }
+          ],
+          [
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            }
+          ]
+        ],
+        "boolMap": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "targets": [
+          {
+            "color": 14,
+            "count": 8
+          },
+          {
+            "color": 13,
+            "count": 24
+          },
+          {
+            "color": 16,
+            "count": 6
+          }
+        ],
+        "tray": [
+          {
+            "slot": 0,
+            "shape": [
+              [
+                1,
+                1,
+                1,
+                1,
+                0
+              ],
+              [
+                1,
+                1,
+                1,
+                1,
+                0
+              ],
+              [
+                1,
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                1,
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            ],
+            "color": 1,
+            "colors": [],
+            "toyIndex": 41
+          },
+          {
+            "slot": 1,
+            "shape": [
+              [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                1,
+                1,
+                1
+              ],
+              [
+                0,
+                1,
+                1,
+                1,
+                1
+              ],
+              [
+                0,
+                1,
+                1,
+                1,
+                1
+              ],
+              [
+                0,
+                1,
+                1,
+                1,
+                1
+              ]
+            ],
+            "color": 4,
+            "colors": [],
+            "toyIndex": 45
+          }
+        ]
+      },
+      "inputSequence": [
+        {
+          "t_ms": 1500,
+          "type": "drag",
+          "x": 0.213,
+          "y": 0.719,
+          "x2": 0.231,
+          "y2": 0.668,
+          "duration_ms": 600
+        },
+        {
+          "t_ms": 3500,
+          "type": "drag",
+          "x": 0.787,
+          "y": 0.719,
+          "x2": 0.769,
+          "y2": 0.499,
+          "duration_ms": 600
+        },
+        {
+          "t_ms": 5500,
+          "type": "drag",
+          "x": 0.5,
+          "y": 0.719,
+          "x2": 0.5,
+          "y2": 0.584,
+          "duration_ms": 600
+        },
+        {
+          "t_ms": 7500,
+          "type": "drag",
+          "x": 0.787,
+          "y": 0.719,
+          "x2": 0.733,
+          "y2": 0.652,
+          "duration_ms": 600
+        }
+      ],
+      "eventTrace": [
+        {
+          "event": "checkBingo",
+          "timeMs": 2132.800000011921,
+          "lines": 0,
+          "cells": 0
+        },
+        {
+          "event": "putOn",
+          "timeMs": 2133.9000000059605,
+          "slot": 0,
+          "putBefore": 0,
+          "putAfter": 1
+        },
+        {
+          "event": "checkBingo",
+          "timeMs": 4129.300000011921,
+          "lines": 0,
+          "cells": 0
+        },
+        {
+          "event": "putOn",
+          "timeMs": 4129.9000000059605,
+          "slot": 2,
+          "putBefore": 1,
+          "putAfter": 2
+        },
+        {
+          "event": "checkBingo",
+          "timeMs": 6130.100000008941,
+          "lines": 0,
+          "cells": 0
+        },
+        {
+          "event": "putOn",
+          "timeMs": 6130.4000000059605,
+          "slot": 1,
+          "putBefore": 2,
+          "putAfter": 3
+        },
+        {
+          "event": "touchStart",
+          "timeMs": 7527.70000000298,
+          "slot": 2,
+          "clicking": true
+        },
+        {
+          "event": "checkBingo",
+          "timeMs": 8137,
+          "lines": 8,
+          "cells": 64
+        },
+        {
+          "event": "putOn",
+          "timeMs": 8139.4000000059605,
+          "slot": 2,
+          "putBefore": 3,
+          "putAfter": 4
+        },
+        {
+          "event": "playRecv",
+          "timeMs": 8943.10000000894,
+          "color": 13
+        },
+        {
+          "event": "playRecv",
+          "timeMs": 8943.20000000298,
+          "color": 14
+        },
+        {
+          "event": "playRecv",
+          "timeMs": 8943.20000000298,
+          "color": 14
+        },
+        {
+          "event": "playRecv",
+          "timeMs": 8943.20000000298,
+          "color": 14
+        },
+        {
+          "event": "playRecv",
+          "timeMs": 8943.20000000298,
+          "color": 14
+        },
+        {
+          "event": "playRecv",
+          "timeMs": 8943.20000000298,
+          "color": 14
+        },
+        {
+          "event": "playRecv",
+          "timeMs": 8943.20000000298,
+          "color": 16
+        },
+        {
+          "event": "playRecv",
+          "timeMs": 8943.20000000298,
+          "color": 16
+        },
+        {
+          "event": "playRecv",
+          "timeMs": 8943.20000000298,
+          "color": 16
+        },
+        {
+          "event": "playRecv",
+          "timeMs": 8943.20000000298,
+          "color": 14
+        },
+        {
+          "event": "playRecv",
+          "timeMs": 8943.300000011921,
+          "color": 14
+        },
+        {
+          "event": "playRecv",
+          "timeMs": 8943.300000011921,
+          "color": 14
+        },
+        {
+          "event": "playRecv",
+          "timeMs": 8943.300000011921,
+          "color": 16
+        },
+        {
+          "event": "playRecv",
+          "timeMs": 8943.300000011921,
+          "color": 14
+        },
+        {
+          "event": "playRecv",
+          "timeMs": 8943.300000011921,
+          "color": 14
+        },
+        {
+          "event": "playRecv",
+          "timeMs": 8943.300000011921,
+          "color": 13
+        }
+      ],
+      "cadence": {
+        "frames": 711,
+        "averageFps": 59.918140005907425,
+        "medianFrameMs": 16.69999999999891,
+        "p95FrameMs": 16.700000000000728,
+        "framesOver50Ms": 0
+      }
+    },
+    "garden": {
+      "sourceSha256": "1f5c1037591da8ad4c5617c0575f00cc5f62cee24c3e738c25c683c35252a378",
+      "recordingSha256": "6aa4252540f684a18f8b7eb72449bc8af1c9fde77482cdf00926afa01ebf760b",
+      "opening": {
+        "score": 0,
+        "putCount": 0,
+        "combo": 0,
+        "level": 3,
+        "gameOver": false,
+        "board": [
+          [
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": true,
+              "color": 16
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            }
+          ],
+          [
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": true,
+              "color": 1
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            }
+          ],
+          [
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": true,
+              "color": 17
+            },
+            {
+              "occupied": true,
+              "color": 1
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            }
+          ],
+          [
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": true,
+              "color": 1
+            },
+            {
+              "occupied": true,
+              "color": 1
+            },
+            {
+              "occupied": true,
+              "color": 13
+            }
+          ],
+          [
+            {
+              "occupied": true,
+              "color": 13
+            },
+            {
+              "occupied": true,
+              "color": 1
+            },
+            {
+              "occupied": true,
+              "color": 1
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            }
+          ],
+          [
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": true,
+              "color": 1
+            },
+            {
+              "occupied": true,
+              "color": 17
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            }
+          ],
+          [
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": true,
+              "color": 1
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            }
+          ],
+          [
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": true,
+              "color": 16
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            }
+          ]
+        ],
+        "boolMap": [
+          [
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "targets": [
+          {
+            "color": 14,
+            "count": 18
+          },
+          {
+            "color": 13,
+            "count": 26
+          },
+          {
+            "color": 16,
+            "count": 10
+          }
+        ],
+        "tray": [
+          {
+            "slot": 0,
+            "shape": [
+              [
+                1,
+                1,
+                1,
+                0,
+                0
+              ],
+              [
+                1,
+                1,
+                1,
+                0,
+                0
+              ],
+              [
+                1,
+                1,
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            ],
+            "color": 4,
+            "colors": [],
+            "toyIndex": -2
+          },
+          {
+            "slot": 1,
+            "shape": [
+              [
+                0,
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                1,
+                1,
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                1,
+                1,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            ],
+            "color": 7,
+            "colors": [],
+            "toyIndex": -6
+          },
+          {
+            "slot": 2,
+            "shape": [
+              [
+                1,
+                1,
+                1,
+                0,
+                0
+              ],
+              [
+                1,
+                1,
+                1,
+                0,
+                0
+              ],
+              [
+                1,
+                1,
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            ],
+            "color": 3,
+            "colors": [],
+            "toyIndex": -4
+          }
+        ]
+      },
+      "final": {
+        "score": 248,
+        "putCount": 4,
+        "combo": 1,
+        "level": 3,
+        "gameOver": false,
+        "board": [
+          [
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            }
+          ],
+          [
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            }
+          ],
+          [
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": true,
+              "color": 17
+            },
+            {
+              "occupied": true,
+              "color": 1
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            }
+          ],
+          [
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": true,
+              "color": 14
+            },
+            {
+              "occupied": true,
+              "color": 14
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            }
+          ],
+          [
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            }
+          ],
+          [
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            }
+          ],
+          [
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            }
+          ],
+          [
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            }
+          ]
+        ],
+        "boolMap": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "targets": [
+          {
+            "color": 14,
+            "count": 8
+          },
+          {
+            "color": 13,
+            "count": 24
+          },
+          {
+            "color": 16,
+            "count": 6
+          }
+        ],
+        "tray": [
+          {
+            "slot": 0,
+            "shape": [
+              [
+                1,
+                1,
+                1,
+                1,
+                0
+              ],
+              [
+                1,
+                1,
+                1,
+                1,
+                0
+              ],
+              [
+                1,
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                1,
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            ],
+            "color": 1,
+            "colors": [],
+            "toyIndex": 41
+          },
+          {
+            "slot": 1,
+            "shape": [
+              [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                1,
+                1,
+                1
+              ],
+              [
+                0,
+                1,
+                1,
+                1,
+                1
+              ],
+              [
+                0,
+                1,
+                1,
+                1,
+                1
+              ],
+              [
+                0,
+                1,
+                1,
+                1,
+                1
+              ]
+            ],
+            "color": 4,
+            "colors": [],
+            "toyIndex": 45
+          }
+        ]
+      },
+      "inputSequence": [
+        {
+          "t_ms": 1500,
+          "type": "drag",
+          "x": 0.213,
+          "y": 0.719,
+          "x2": 0.231,
+          "y2": 0.668,
+          "duration_ms": 600
+        },
+        {
+          "t_ms": 3500,
+          "type": "drag",
+          "x": 0.787,
+          "y": 0.719,
+          "x2": 0.769,
+          "y2": 0.499,
+          "duration_ms": 600
+        },
+        {
+          "t_ms": 5500,
+          "type": "drag",
+          "x": 0.5,
+          "y": 0.719,
+          "x2": 0.5,
+          "y2": 0.584,
+          "duration_ms": 600
+        },
+        {
+          "t_ms": 7500,
+          "type": "drag",
+          "x": 0.787,
+          "y": 0.719,
+          "x2": 0.733,
+          "y2": 0.652,
+          "duration_ms": 600
+        }
+      ],
+      "eventTrace": [
+        {
+          "event": "checkBingo",
+          "timeMs": 2121.4000000059605,
+          "lines": 0,
+          "cells": 0
+        },
+        {
+          "event": "putOn",
+          "timeMs": 2122.300000011921,
+          "slot": 0,
+          "putBefore": 0,
+          "putAfter": 1
+        },
+        {
+          "event": "checkBingo",
+          "timeMs": 4118.300000011921,
+          "lines": 0,
+          "cells": 0
+        },
+        {
+          "event": "putOn",
+          "timeMs": 4118.800000011921,
+          "slot": 2,
+          "putBefore": 1,
+          "putAfter": 2
+        },
+        {
+          "event": "checkBingo",
+          "timeMs": 6118.70000000298,
+          "lines": 0,
+          "cells": 0
+        },
+        {
+          "event": "putOn",
+          "timeMs": 6118.9000000059605,
+          "slot": 1,
+          "putBefore": 2,
+          "putAfter": 3
+        },
+        {
+          "event": "touchStart",
+          "timeMs": 7516.100000008941,
+          "slot": 2,
+          "clicking": true
+        },
+        {
+          "event": "checkBingo",
+          "timeMs": 8119.100000008941,
+          "lines": 8,
+          "cells": 64
+        },
+        {
+          "event": "putOn",
+          "timeMs": 8121.20000000298,
+          "slot": 2,
+          "putBefore": 3,
+          "putAfter": 4
+        },
+        {
+          "event": "playRecv",
+          "timeMs": 8948.60000000894,
+          "color": 13
+        },
+        {
+          "event": "playRecv",
+          "timeMs": 8948.70000000298,
+          "color": 14
+        },
+        {
+          "event": "playRecv",
+          "timeMs": 8948.70000000298,
+          "color": 14
+        },
+        {
+          "event": "playRecv",
+          "timeMs": 8948.70000000298,
+          "color": 14
+        },
+        {
+          "event": "playRecv",
+          "timeMs": 8948.70000000298,
+          "color": 14
+        },
+        {
+          "event": "playRecv",
+          "timeMs": 8948.70000000298,
+          "color": 14
+        },
+        {
+          "event": "playRecv",
+          "timeMs": 8948.70000000298,
+          "color": 16
+        },
+        {
+          "event": "playRecv",
+          "timeMs": 8948.70000000298,
+          "color": 16
+        },
+        {
+          "event": "playRecv",
+          "timeMs": 8948.70000000298,
+          "color": 16
+        },
+        {
+          "event": "playRecv",
+          "timeMs": 8948.70000000298,
+          "color": 14
+        },
+        {
+          "event": "playRecv",
+          "timeMs": 8948.70000000298,
+          "color": 14
+        },
+        {
+          "event": "playRecv",
+          "timeMs": 8948.70000000298,
+          "color": 14
+        },
+        {
+          "event": "playRecv",
+          "timeMs": 8948.70000000298,
+          "color": 16
+        },
+        {
+          "event": "playRecv",
+          "timeMs": 8948.70000000298,
+          "color": 14
+        },
+        {
+          "event": "playRecv",
+          "timeMs": 8948.70000000298,
+          "color": 14
+        },
+        {
+          "event": "playRecv",
+          "timeMs": 8948.70000000298,
+          "color": 13
+        }
+      ],
+      "cadence": {
+        "frames": 698,
+        "averageFps": 58.57388965922938,
+        "medianFrameMs": 16.69999999999891,
+        "p95FrameMs": 16.799999999999272,
+        "framesOver50Ms": 1
+      }
+    },
+    "atelier": {
+      "sourceSha256": "39b08383de68619a7b1c6901ad1add3c72fc00e2c68d8d884821e0a708dacdf8",
+      "recordingSha256": "693f660c4d51e6bd132120af824706759d84b6493b76cfeb8949ba177ce41cfd",
+      "opening": {
+        "score": 0,
+        "putCount": 0,
+        "combo": 0,
+        "level": 3,
+        "gameOver": false,
+        "board": [
+          [
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": true,
+              "color": 16
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            }
+          ],
+          [
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": true,
+              "color": 1
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            }
+          ],
+          [
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": true,
+              "color": 17
+            },
+            {
+              "occupied": true,
+              "color": 1
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            }
+          ],
+          [
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": true,
+              "color": 1
+            },
+            {
+              "occupied": true,
+              "color": 1
+            },
+            {
+              "occupied": true,
+              "color": 13
+            }
+          ],
+          [
+            {
+              "occupied": true,
+              "color": 13
+            },
+            {
+              "occupied": true,
+              "color": 1
+            },
+            {
+              "occupied": true,
+              "color": 1
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            }
+          ],
+          [
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": true,
+              "color": 1
+            },
+            {
+              "occupied": true,
+              "color": 17
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            }
+          ],
+          [
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": true,
+              "color": 1
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            }
+          ],
+          [
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": true,
+              "color": 16
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            }
+          ]
+        ],
+        "boolMap": [
+          [
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "targets": [
+          {
+            "color": 14,
+            "count": 18
+          },
+          {
+            "color": 13,
+            "count": 26
+          },
+          {
+            "color": 16,
+            "count": 10
+          }
+        ],
+        "tray": [
+          {
+            "slot": 0,
+            "shape": [
+              [
+                1,
+                1,
+                1,
+                0,
+                0
+              ],
+              [
+                1,
+                1,
+                1,
+                0,
+                0
+              ],
+              [
+                1,
+                1,
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            ],
+            "color": 4,
+            "colors": [],
+            "toyIndex": -2
+          },
+          {
+            "slot": 1,
+            "shape": [
+              [
+                0,
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                1,
+                1,
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                1,
+                1,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            ],
+            "color": 7,
+            "colors": [],
+            "toyIndex": -6
+          },
+          {
+            "slot": 2,
+            "shape": [
+              [
+                1,
+                1,
+                1,
+                0,
+                0
+              ],
+              [
+                1,
+                1,
+                1,
+                0,
+                0
+              ],
+              [
+                1,
+                1,
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            ],
+            "color": 3,
+            "colors": [],
+            "toyIndex": -4
+          }
+        ]
+      },
+      "final": {
+        "score": 248,
+        "putCount": 4,
+        "combo": 1,
+        "level": 3,
+        "gameOver": false,
+        "board": [
+          [
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            }
+          ],
+          [
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            }
+          ],
+          [
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": true,
+              "color": 17
+            },
+            {
+              "occupied": true,
+              "color": 1
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            }
+          ],
+          [
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": true,
+              "color": 14
+            },
+            {
+              "occupied": true,
+              "color": 14
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            }
+          ],
+          [
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            }
+          ],
+          [
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            }
+          ],
+          [
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            }
+          ],
+          [
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            },
+            {
+              "occupied": false,
+              "color": null
+            }
+          ]
+        ],
+        "boolMap": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "targets": [
+          {
+            "color": 14,
+            "count": 8
+          },
+          {
+            "color": 13,
+            "count": 24
+          },
+          {
+            "color": 16,
+            "count": 6
+          }
+        ],
+        "tray": [
+          {
+            "slot": 0,
+            "shape": [
+              [
+                1,
+                1,
+                1,
+                1,
+                0
+              ],
+              [
+                1,
+                1,
+                1,
+                1,
+                0
+              ],
+              [
+                1,
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                1,
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            ],
+            "color": 1,
+            "colors": [],
+            "toyIndex": 41
+          },
+          {
+            "slot": 1,
+            "shape": [
+              [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                1,
+                1,
+                1
+              ],
+              [
+                0,
+                1,
+                1,
+                1,
+                1
+              ],
+              [
+                0,
+                1,
+                1,
+                1,
+                1
+              ],
+              [
+                0,
+                1,
+                1,
+                1,
+                1
+              ]
+            ],
+            "color": 4,
+            "colors": [],
+            "toyIndex": 45
+          }
+        ]
+      },
+      "inputSequence": [
+        {
+          "t_ms": 1500,
+          "type": "drag",
+          "x": 0.213,
+          "y": 0.719,
+          "x2": 0.231,
+          "y2": 0.668,
+          "duration_ms": 600
+        },
+        {
+          "t_ms": 3500,
+          "type": "drag",
+          "x": 0.787,
+          "y": 0.719,
+          "x2": 0.769,
+          "y2": 0.499,
+          "duration_ms": 600
+        },
+        {
+          "t_ms": 5500,
+          "type": "drag",
+          "x": 0.5,
+          "y": 0.719,
+          "x2": 0.5,
+          "y2": 0.584,
+          "duration_ms": 600
+        },
+        {
+          "t_ms": 7500,
+          "type": "drag",
+          "x": 0.787,
+          "y": 0.719,
+          "x2": 0.733,
+          "y2": 0.652,
+          "duration_ms": 600
+        }
+      ],
+      "eventTrace": [
+        {
+          "event": "checkBingo",
+          "timeMs": 2122.0999999940395,
+          "lines": 0,
+          "cells": 0
+        },
+        {
+          "event": "putOn",
+          "timeMs": 2123,
+          "slot": 0,
+          "putBefore": 0,
+          "putAfter": 1
+        },
+        {
+          "event": "checkBingo",
+          "timeMs": 4119.399999991059,
+          "lines": 0,
+          "cells": 0
+        },
+        {
+          "event": "putOn",
+          "timeMs": 4119.899999991059,
+          "slot": 2,
+          "putBefore": 1,
+          "putAfter": 2
+        },
+        {
+          "event": "checkBingo",
+          "timeMs": 6118.79999999702,
+          "lines": 0,
+          "cells": 0
+        },
+        {
+          "event": "putOn",
+          "timeMs": 6119.0999999940395,
+          "slot": 1,
+          "putBefore": 2,
+          "putAfter": 3
+        },
+        {
+          "event": "touchStart",
+          "timeMs": 7517.899999991059,
+          "slot": 2,
+          "clicking": true
+        },
+        {
+          "event": "checkBingo",
+          "timeMs": 8120.79999999702,
+          "lines": 8,
+          "cells": 64
+        },
+        {
+          "event": "putOn",
+          "timeMs": 8123.29999999702,
+          "slot": 2,
+          "putBefore": 3,
+          "putAfter": 4
+        },
+        {
+          "event": "playRecv",
+          "timeMs": 8934.59999999404,
+          "color": 13
+        },
+        {
+          "event": "playRecv",
+          "timeMs": 8934.59999999404,
+          "color": 14
+        },
+        {
+          "event": "playRecv",
+          "timeMs": 8934.59999999404,
+          "color": 14
+        },
+        {
+          "event": "playRecv",
+          "timeMs": 8934.59999999404,
+          "color": 14
+        },
+        {
+          "event": "playRecv",
+          "timeMs": 8934.59999999404,
+          "color": 14
+        },
+        {
+          "event": "playRecv",
+          "timeMs": 8934.59999999404,
+          "color": 14
+        },
+        {
+          "event": "playRecv",
+          "timeMs": 8934.59999999404,
+          "color": 16
+        },
+        {
+          "event": "playRecv",
+          "timeMs": 8934.59999999404,
+          "color": 16
+        },
+        {
+          "event": "playRecv",
+          "timeMs": 8934.59999999404,
+          "color": 16
+        },
+        {
+          "event": "playRecv",
+          "timeMs": 8934.59999999404,
+          "color": 14
+        },
+        {
+          "event": "playRecv",
+          "timeMs": 8934.699999988079,
+          "color": 14
+        },
+        {
+          "event": "playRecv",
+          "timeMs": 8934.699999988079,
+          "color": 14
+        },
+        {
+          "event": "playRecv",
+          "timeMs": 8934.699999988079,
+          "color": 16
+        },
+        {
+          "event": "playRecv",
+          "timeMs": 8934.699999988079,
+          "color": 14
+        },
+        {
+          "event": "playRecv",
+          "timeMs": 8934.699999988079,
+          "color": 14
+        },
+        {
+          "event": "playRecv",
+          "timeMs": 8934.699999988079,
+          "color": 13
+        }
+      ],
+      "cadence": {
+        "frames": 686,
+        "averageFps": 57.48525104690293,
+        "medianFrameMs": 16.69999999999891,
+        "p95FrameMs": 16.799999999999272,
+        "framesOver50Ms": 2
+      }
+    }
+  },
+  "audioReview": {
+    "method": "Decoded final AAC soundtrack. Objective PCM checks; listening remains a separate review.",
+    "audition": "not performed; no perceptual listening claim",
+    "mono": {
+      "channels": 1,
+      "samples": 495616,
+      "peak": 0.2713254988193512,
+      "rms": 0.01321267503510784,
+      "samplesAtOrAboveFullScale": 0
+    },
+    "stereo": {
+      "channels": 2,
+      "samples": 991232,
+      "peak": 0.19185610115528107,
+      "rms": 0.009342772290917276,
+      "samplesAtOrAboveFullScale": 0
+    },
+    "timing": "Raw first audio packet 1.543s; final AAC starts 1.521s after codec priming. Original packet timestamps retained, no manual shift."
+  },
+  "randomization": {
+    "seed": 1719,
+    "method": "Same seeded gameplay random stream before ordinary async startup; original routines produce every board, tray, target and score."
+  },
+  "review": "Reviewed actual encoded pre-clear, clear and settled endpoint frames against authentic captures. Matched phone framing, normal-time four physical moves, first three placements without clears, actual fourth eight-line clear, score248 and targets8/24/6. No victory claim. H26430fps816x952 with AAC Atelier-only runtime soundtrack; exact source cadence is reported separately. Human listening and physical-device play remain unverified."
+}

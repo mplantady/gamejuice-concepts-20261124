@@ -1,0 +1,4823 @@
+{
+  "schema": "gamejuice.block-crush.atelier.assets.v2",
+  "version": "block-crush-atelier-v2-production-01",
+  "ready": true,
+  "nativeCanvas": [
+    1080,
+    1920
+  ],
+  "generationSource": "art/study-a-sunlit-jewel-atelier.png",
+  "generationSourceSha256": "7a689651765cf3c4f96f298e6722cf77366550ed369dd85b85d95391596b7c88",
+  "inputSources": [
+    {
+      "file": "art/study-a-sunlit-jewel-atelier.png",
+      "sha256": "7a689651765cf3c4f96f298e6722cf77366550ed369dd85b85d95391596b7c88"
+    },
+    {
+      "file": "art/core-atlas.png",
+      "sha256": "94eba3baa4b50a56a5d0a54fdc858814f9bb725b62abc32b14ed92cdcf8f2bbc"
+    },
+    {
+      "file": "art/cabinet-clean-plate.png",
+      "sha256": "483500077eaa15c9c2f06fdd8ff0b82aebe98ee414fbff51ae0c697764fa81d2"
+    },
+    {
+      "file": "art/ui-atlas.png",
+      "sha256": "6155c0bf33f666aa3d221c3d6d1fb9380b9775eb62fb883d064a70b62fd07d4e"
+    },
+    {
+      "file": "art/foliage-atlas.png",
+      "sha256": "568110cbed1d46db5bd1979f38dc82a79779125a103bc4f7944af7d4c107a67c"
+    },
+    {
+      "file": "art/result-atlas.png",
+      "sha256": "f7ada439b4fc201b834c5b7a895a679ea7d89f9441ce29f7883ea5517c014c9f"
+    }
+  ],
+  "runtime": {
+    "tile": "assets/tile.png",
+    "tile-bezel": "assets/tile-bezel.png",
+    "tile-face": "assets/tile-face.png",
+    "tile-shadow": "assets/tile-shadow.png",
+    "board-cell": "assets/board-cell.png",
+    "gem-13": "assets/gem-13.png",
+    "hud-13": "assets/hud-13.png",
+    "gem-14": "assets/gem-14.png",
+    "hud-14": "assets/hud-14.png",
+    "gem-16": "assets/gem-16.png",
+    "hud-16": "assets/hud-16.png",
+    "gem-11": "assets/gem-11.png",
+    "hud-11": "assets/hud-11.png",
+    "gem-15": "assets/gem-15.png",
+    "hud-15": "assets/hud-15.png",
+    "gem-17": "assets/gem-17.png",
+    "hud-17": "assets/hud-17.png",
+    "backdrop": "assets/backdrop.png",
+    "plaque": "assets/plaque.png",
+    "gear": "assets/gear.png",
+    "check": "assets/check.png",
+    "hand": "assets/hand.png",
+    "finger": "assets/finger.png",
+    "finger2": "assets/finger2.png",
+    "control-audio": "assets/control-audio.png",
+    "control-mute": "assets/control-mute.png",
+    "control-replay": "assets/control-replay.png",
+    "control-home": "assets/control-home.png",
+    "control-icon_back": "assets/control-icon_back.png",
+    "control-bgm": "assets/control-bgm.png",
+    "control-bgm_mute": "assets/control-bgm_mute.png",
+    "hint": "assets/hint.png",
+    "result-star": "assets/result-star.png",
+    "notification-dot": "assets/notification-dot.png",
+    "combo-label": "assets/combo-label.png",
+    "cta-free-to-play": "assets/cta-free-to-play.png",
+    "cta-button": "assets/cta-button.png",
+    "cta-play-now": "assets/cta-play-now.png",
+    "result-banner": "assets/result-banner.png",
+    "result-cream-panel": "assets/result-cream-panel.png",
+    "result-face-body": "assets/result-face-body.png",
+    "result-face-canonical": "assets/result-face-canonical.png",
+    "result-eye-open": "assets/result-eye-open.png",
+    "result-eye-left-open": "assets/result-eye-left-open.png",
+    "result-wink": "assets/result-wink.png",
+    "result-smile": "assets/result-smile.png",
+    "result-cheek-left": "assets/result-cheek-left.png",
+    "result-cheek-right": "assets/result-cheek-right.png",
+    "result-star-four": "assets/result-star-four.png",
+    "result-heart": "assets/result-heart.png"
+  },
+  "frameMeta": {
+    "tile": {
+      "logicalSize": [
+        113,
+        113
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "alphaBounds": [
+        0,
+        0,
+        226,
+        226
+      ],
+      "logicalAlphaBounds": [
+        0.0,
+        0.0,
+        113.0,
+        113.0
+      ],
+      "rasterScale": [
+        2.0,
+        2.0
+      ],
+      "layer": "tile",
+      "source": "art/core-atlas.png",
+      "note": "Complete static canonical ivory tile; no jewel or text."
+    },
+    "tile-bezel": {
+      "logicalSize": [
+        113,
+        113
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "alphaBounds": [
+        0,
+        0,
+        226,
+        226
+      ],
+      "logicalAlphaBounds": [
+        0.0,
+        0.0,
+        113.0,
+        113.0
+      ],
+      "rasterScale": [
+        2.0,
+        2.0
+      ],
+      "layer": "tile-bezel",
+      "source": "art/core-atlas.png",
+      "note": "Bevel/body bed under separate face; painted interior underneath prevents animation cracks."
+    },
+    "tile-face": {
+      "logicalSize": [
+        113,
+        113
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "alphaBounds": [
+        21,
+        21,
+        205,
+        205
+      ],
+      "logicalAlphaBounds": [
+        10.5,
+        10.5,
+        102.5,
+        102.5
+      ],
+      "rasterScale": [
+        2.0,
+        2.0
+      ],
+      "layer": "tile-face",
+      "source": "art/core-atlas.png",
+      "note": "Painted ivory face only, on full 113\u00d7113 canvas for independent small compression/settle."
+    },
+    "tile-shadow": {
+      "logicalSize": [
+        113,
+        113
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "alphaBounds": [
+        0,
+        0,
+        226,
+        226
+      ],
+      "logicalAlphaBounds": [
+        0.0,
+        0.0,
+        113.0,
+        113.0
+      ],
+      "rasterScale": [
+        2.0,
+        2.0
+      ],
+      "layer": "contact-shadow",
+      "source": "derived from registered alpha",
+      "note": "Alpha-derived contact shadow, same footprint and center; no displaced ground shadow."
+    },
+    "board-cell": {
+      "logicalSize": [
+        113,
+        113
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "alphaBounds": [
+        0,
+        0,
+        226,
+        226
+      ],
+      "logicalAlphaBounds": [
+        0.0,
+        0.0,
+        113.0,
+        113.0
+      ],
+      "rasterScale": [
+        2.0,
+        2.0
+      ],
+      "layer": "board",
+      "source": "art/core-atlas.png",
+      "note": "Canonical teal velvet recess. Composed into precise 8\u00d78 at 113 px pitch; no generated board state."
+    },
+    "gem-13": {
+      "logicalSize": [
+        113,
+        113
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "alphaBounds": [
+        28,
+        33,
+        198,
+        192
+      ],
+      "logicalAlphaBounds": [
+        14.0,
+        16.5,
+        99.0,
+        96.0
+      ],
+      "rasterScale": [
+        2.0,
+        2.0
+      ],
+      "layer": "jewel",
+      "source": "art/core-atlas.png",
+      "note": "Independent mounted jewel, centered inside full tile canvas; original functional color and silhouette."
+    },
+    "hud-13": {
+      "logicalSize": [
+        136,
+        136
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "alphaBounds": [
+        13,
+        21,
+        259,
+        251
+      ],
+      "logicalAlphaBounds": [
+        6.5,
+        10.5,
+        129.5,
+        125.5
+      ],
+      "rasterScale": [
+        2.0,
+        2.0
+      ],
+      "layer": "hud-jewel",
+      "source": "art/core-atlas.png",
+      "note": "HUD/collection master with native136 canvas and original shape-specific maximum visible bounds."
+    },
+    "gem-14": {
+      "logicalSize": [
+        113,
+        113
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "alphaBounds": [
+        52,
+        28,
+        173,
+        198
+      ],
+      "logicalAlphaBounds": [
+        26.0,
+        14.0,
+        86.5,
+        99.0
+      ],
+      "rasterScale": [
+        2.0,
+        2.0
+      ],
+      "layer": "jewel",
+      "source": "art/core-atlas.png",
+      "note": "Independent mounted jewel, centered inside full tile canvas; original functional color and silhouette."
+    },
+    "hud-14": {
+      "logicalSize": [
+        136,
+        136
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "alphaBounds": [
+        41,
+        3,
+        230,
+        269
+      ],
+      "logicalAlphaBounds": [
+        20.5,
+        1.5,
+        115.0,
+        134.5
+      ],
+      "rasterScale": [
+        2.0,
+        2.0
+      ],
+      "layer": "hud-jewel",
+      "source": "art/core-atlas.png",
+      "note": "HUD/collection master with native136 canvas and original shape-specific maximum visible bounds."
+    },
+    "gem-16": {
+      "logicalSize": [
+        113,
+        113
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "alphaBounds": [
+        28,
+        28,
+        197,
+        198
+      ],
+      "logicalAlphaBounds": [
+        14.0,
+        14.0,
+        98.5,
+        99.0
+      ],
+      "rasterScale": [
+        2.0,
+        2.0
+      ],
+      "layer": "jewel",
+      "source": "art/core-atlas.png",
+      "note": "Independent mounted jewel, centered inside full tile canvas; original functional color and silhouette."
+    },
+    "hud-16": {
+      "logicalSize": [
+        136,
+        136
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "alphaBounds": [
+        3,
+        2,
+        269,
+        270
+      ],
+      "logicalAlphaBounds": [
+        1.5,
+        1.0,
+        134.5,
+        135.0
+      ],
+      "rasterScale": [
+        2.0,
+        2.0
+      ],
+      "layer": "hud-jewel",
+      "source": "art/core-atlas.png",
+      "note": "HUD/collection master with native136 canvas and original shape-specific maximum visible bounds."
+    },
+    "gem-11": {
+      "logicalSize": [
+        113,
+        113
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "alphaBounds": [
+        28,
+        28,
+        197,
+        198
+      ],
+      "logicalAlphaBounds": [
+        14.0,
+        14.0,
+        98.5,
+        99.0
+      ],
+      "rasterScale": [
+        2.0,
+        2.0
+      ],
+      "layer": "jewel",
+      "source": "art/core-atlas.png",
+      "note": "Independent mounted jewel, centered inside full tile canvas; original functional color and silhouette."
+    },
+    "hud-11": {
+      "logicalSize": [
+        136,
+        136
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "alphaBounds": [
+        14,
+        13,
+        258,
+        259
+      ],
+      "logicalAlphaBounds": [
+        7.0,
+        6.5,
+        129.0,
+        129.5
+      ],
+      "rasterScale": [
+        2.0,
+        2.0
+      ],
+      "layer": "hud-jewel",
+      "source": "art/core-atlas.png",
+      "note": "HUD/collection master with native136 canvas and original shape-specific maximum visible bounds."
+    },
+    "gem-15": {
+      "logicalSize": [
+        113,
+        113
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "alphaBounds": [
+        28,
+        38,
+        198,
+        187
+      ],
+      "logicalAlphaBounds": [
+        14.0,
+        19.0,
+        99.0,
+        93.5
+      ],
+      "rasterScale": [
+        2.0,
+        2.0
+      ],
+      "layer": "jewel",
+      "source": "art/core-atlas.png",
+      "note": "Independent mounted jewel, centered inside full tile canvas; original functional color and silhouette."
+    },
+    "hud-15": {
+      "logicalSize": [
+        136,
+        136
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "alphaBounds": [
+        16,
+        30,
+        256,
+        241
+      ],
+      "logicalAlphaBounds": [
+        8.0,
+        15.0,
+        128.0,
+        120.5
+      ],
+      "rasterScale": [
+        2.0,
+        2.0
+      ],
+      "layer": "hud-jewel",
+      "source": "art/core-atlas.png",
+      "note": "HUD/collection master with native136 canvas and original shape-specific maximum visible bounds."
+    },
+    "gem-17": {
+      "logicalSize": [
+        113,
+        113
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "alphaBounds": [
+        28,
+        31,
+        198,
+        195
+      ],
+      "logicalAlphaBounds": [
+        14.0,
+        15.5,
+        99.0,
+        97.5
+      ],
+      "rasterScale": [
+        2.0,
+        2.0
+      ],
+      "layer": "jewel",
+      "source": "art/core-atlas.png",
+      "note": "Independent mounted jewel, centered inside full tile canvas; original functional color and silhouette."
+    },
+    "hud-17": {
+      "logicalSize": [
+        136,
+        136
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "alphaBounds": [
+        6,
+        11,
+        265,
+        261
+      ],
+      "logicalAlphaBounds": [
+        3.0,
+        5.5,
+        132.5,
+        130.5
+      ],
+      "rasterScale": [
+        2.0,
+        2.0
+      ],
+      "layer": "hud-jewel",
+      "source": "art/core-atlas.png",
+      "note": "HUD/collection master with native136 canvas and original shape-specific maximum visible bounds."
+    },
+    "backdrop": {
+      "logicalSize": [
+        1080,
+        1920
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "alphaBounds": [
+        0,
+        0,
+        1080,
+        1920
+      ],
+      "logicalAlphaBounds": [
+        0.0,
+        0.0,
+        1080.0,
+        1920.0
+      ],
+      "rasterScale": [
+        1.0,
+        1.0
+      ],
+      "layer": "background",
+      "source": "art/cabinet-clean-plate.png",
+      "note": "Clean generated cabinet and linen receiver plus exact113px 8\u00d78 grid. No gameplay pieces, HUD, foliage, or moving-shadow duplicates. Fixed sunlight remains stationary."
+    },
+    "plaque": {
+      "logicalSize": [
+        513,
+        167
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "alphaBounds": [
+        0,
+        0,
+        1026,
+        334
+      ],
+      "logicalAlphaBounds": [
+        0.0,
+        0.0,
+        513.0,
+        167.0
+      ],
+      "rasterScale": [
+        2.0,
+        2.0
+      ],
+      "layer": "hud",
+      "source": "art/ui-atlas.png",
+      "note": "Empty painted teal/brass target plaque. Five-piece horizontal resampling preserves crest and corner ornaments; actual game supplies glyphs/counts."
+    },
+    "gear": {
+      "logicalSize": [
+        96,
+        103
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "alphaBounds": [
+        4,
+        11,
+        188,
+        195
+      ],
+      "logicalAlphaBounds": [
+        2.0,
+        5.5,
+        94.0,
+        97.5
+      ],
+      "rasterScale": [
+        2.0,
+        2.0
+      ],
+      "layer": "control",
+      "source": "art/ui-atlas.png",
+      "note": "Original gear silhouette and button node, new ivory/brass material."
+    },
+    "check": {
+      "logicalSize": [
+        52,
+        41
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "alphaBounds": [
+        2,
+        1,
+        101,
+        80
+      ],
+      "logicalAlphaBounds": [
+        1.0,
+        0.5,
+        50.5,
+        40.0
+      ],
+      "rasterScale": [
+        2.0,
+        2.0
+      ],
+      "layer": "hud-status",
+      "source": "art/ui-atlas.png",
+      "note": "Original completion check symbol, generated ivory/brass material."
+    },
+    "hand": {
+      "logicalSize": [
+        150,
+        156
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "alphaBounds": [
+        38,
+        72,
+        261,
+        277
+      ],
+      "logicalAlphaBounds": [
+        19.0,
+        36.0,
+        130.5,
+        138.5
+      ],
+      "rasterScale": [
+        2.0,
+        2.0
+      ],
+      "layer": "guidance",
+      "source": "art/ui-atlas.png",
+      "note": "Existing guidance pointer restyled; rotated to native north-west pointing direction. Inspect fingertip registration against source at runtime."
+    },
+    "finger": {
+      "logicalSize": [
+        116,
+        118
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "alphaBounds": [
+        28,
+        53,
+        202,
+        212
+      ],
+      "logicalAlphaBounds": [
+        14.0,
+        26.5,
+        101.0,
+        106.0
+      ],
+      "rasterScale": [
+        2.0,
+        2.0
+      ],
+      "layer": "guidance",
+      "source": "art/ui-atlas.png",
+      "note": "Existing guidance pointer restyled; rotated to native north-west pointing direction. Inspect fingertip registration against source at runtime."
+    },
+    "finger2": {
+      "logicalSize": [
+        116,
+        118
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "alphaBounds": [
+        28,
+        53,
+        202,
+        212
+      ],
+      "logicalAlphaBounds": [
+        14.0,
+        26.5,
+        101.0,
+        106.0
+      ],
+      "rasterScale": [
+        2.0,
+        2.0
+      ],
+      "layer": "guidance",
+      "source": "art/ui-atlas.png",
+      "note": "Existing guidance pointer restyled; rotated to native north-west pointing direction. Inspect fingertip registration against source at runtime."
+    },
+    "control-audio": {
+      "logicalSize": [
+        98,
+        86
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "alphaBounds": [
+        13,
+        0,
+        183,
+        172
+      ],
+      "logicalAlphaBounds": [
+        6.5,
+        0.0,
+        91.5,
+        86.0
+      ],
+      "rasterScale": [
+        2.0,
+        2.0
+      ],
+      "layer": "control",
+      "source": "art/ui-atlas.png",
+      "note": "Generated teal/brass control surface with exact native audio glyph silhouette in ivory material; source action unchanged."
+    },
+    "control-mute": {
+      "logicalSize": [
+        90,
+        87
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "alphaBounds": [
+        4,
+        0,
+        176,
+        174
+      ],
+      "logicalAlphaBounds": [
+        2.0,
+        0.0,
+        88.0,
+        87.0
+      ],
+      "rasterScale": [
+        2.0,
+        2.0
+      ],
+      "layer": "control",
+      "source": "art/ui-atlas.png",
+      "note": "Generated teal/brass control surface with exact native mute glyph silhouette in ivory material; source action unchanged."
+    },
+    "control-replay": {
+      "logicalSize": [
+        96,
+        91
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "alphaBounds": [
+        6,
+        0,
+        186,
+        182
+      ],
+      "logicalAlphaBounds": [
+        3.0,
+        0.0,
+        93.0,
+        91.0
+      ],
+      "rasterScale": [
+        2.0,
+        2.0
+      ],
+      "layer": "control",
+      "source": "art/ui-atlas.png",
+      "note": "Generated teal/brass control surface with exact native replay glyph silhouette in ivory material; source action unchanged."
+    },
+    "control-home": {
+      "logicalSize": [
+        83,
+        89
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "alphaBounds": [
+        0,
+        5,
+        166,
+        173
+      ],
+      "logicalAlphaBounds": [
+        0.0,
+        2.5,
+        83.0,
+        86.5
+      ],
+      "rasterScale": [
+        2.0,
+        2.0
+      ],
+      "layer": "control",
+      "source": "art/ui-atlas.png",
+      "note": "Generated teal/brass control surface with exact native home glyph silhouette in ivory material; source action unchanged."
+    },
+    "control-icon_back": {
+      "logicalSize": [
+        69,
+        96
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "alphaBounds": [
+        0,
+        26,
+        138,
+        165
+      ],
+      "logicalAlphaBounds": [
+        0.0,
+        13.0,
+        69.0,
+        82.5
+      ],
+      "rasterScale": [
+        2.0,
+        2.0
+      ],
+      "layer": "control",
+      "source": "art/ui-atlas.png",
+      "note": "Generated teal/brass control surface with exact native icon_back glyph silhouette in ivory material; source action unchanged."
+    },
+    "control-bgm": {
+      "logicalSize": [
+        90,
+        85
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "alphaBounds": [
+        6,
+        0,
+        174,
+        170
+      ],
+      "logicalAlphaBounds": [
+        3.0,
+        0.0,
+        87.0,
+        85.0
+      ],
+      "rasterScale": [
+        2.0,
+        2.0
+      ],
+      "layer": "control",
+      "source": "art/ui-atlas.png",
+      "note": "Generated teal/brass control surface with exact native bgm glyph silhouette in ivory material; source action unchanged."
+    },
+    "control-bgm_mute": {
+      "logicalSize": [
+        93,
+        87
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "alphaBounds": [
+        7,
+        0,
+        179,
+        174
+      ],
+      "logicalAlphaBounds": [
+        3.5,
+        0.0,
+        89.5,
+        87.0
+      ],
+      "rasterScale": [
+        2.0,
+        2.0
+      ],
+      "layer": "control",
+      "source": "art/ui-atlas.png",
+      "note": "Generated teal/brass control surface with exact native bgm_mute glyph silhouette in ivory material; source action unchanged."
+    },
+    "hint": {
+      "logicalSize": [
+        67,
+        67
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "alphaBounds": [
+        0,
+        0,
+        134,
+        134
+      ],
+      "logicalAlphaBounds": [
+        0.0,
+        0.0,
+        67.0,
+        67.0
+      ],
+      "rasterScale": [
+        2.0,
+        2.0
+      ],
+      "layer": "status",
+      "source": "art/ui-atlas.png",
+      "note": "Exact native hint silhouette/words preserved, composited with generated material; shown only by original runtime event."
+    },
+    "result-star": {
+      "logicalSize": [
+        216,
+        216
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "alphaBounds": [
+        1,
+        1,
+        431,
+        432
+      ],
+      "logicalAlphaBounds": [
+        0.5,
+        0.5,
+        215.5,
+        216.0
+      ],
+      "rasterScale": [
+        2.0,
+        2.0
+      ],
+      "layer": "status",
+      "source": "art/ui-atlas.png",
+      "note": "Exact native icon_star silhouette/words preserved, composited with generated material; shown only by original runtime event."
+    },
+    "notification-dot": {
+      "logicalSize": [
+        38,
+        38
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "alphaBounds": [
+        0,
+        0,
+        76,
+        76
+      ],
+      "logicalAlphaBounds": [
+        0.0,
+        0.0,
+        38.0,
+        38.0
+      ],
+      "rasterScale": [
+        2.0,
+        2.0
+      ],
+      "layer": "status",
+      "source": "art/ui-atlas.png",
+      "note": "Exact native red_point silhouette/words preserved, composited with generated material; shown only by original runtime event."
+    },
+    "combo-label": {
+      "logicalSize": [
+        400,
+        135
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "alphaBounds": [
+        1,
+        29,
+        737,
+        251
+      ],
+      "logicalAlphaBounds": [
+        0.5,
+        14.5,
+        368.5,
+        125.5
+      ],
+      "rasterScale": [
+        2.0,
+        2.0
+      ],
+      "layer": "status",
+      "source": "art/ui-atlas.png",
+      "note": "Exact native Combo word and letter geometry: ivory face on native dark-teal outline/shadow silhouette."
+    },
+    "cta-free-to-play": {
+      "logicalSize": [
+        612,
+        147
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "alphaBounds": [
+        0,
+        0,
+        1224,
+        294
+      ],
+      "logicalAlphaBounds": [
+        0.0,
+        0.0,
+        612.0,
+        147.0
+      ],
+      "rasterScale": [
+        2.0,
+        2.0
+      ],
+      "layer": "cta",
+      "source": "art/ui-atlas.png",
+      "note": "Exact source words Free to Play, retained native glyphs on generated ivory/brass surface. No new action."
+    },
+    "cta-button": {
+      "logicalSize": [
+        700,
+        230
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "alphaBounds": [
+        0,
+        0,
+        1400,
+        460
+      ],
+      "logicalAlphaBounds": [
+        0.0,
+        0.0,
+        700.0,
+        230.0
+      ],
+      "rasterScale": [
+        2.0,
+        2.0
+      ],
+      "layer": "cta",
+      "source": "art/ui-atlas.png",
+      "note": "Empty green/brass endcard CTA surface, original700\u00d7230 rendered node; separate source Play Now label."
+    },
+    "cta-play-now": {
+      "logicalSize": [
+        405,
+        98
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "alphaBounds": [
+        0,
+        0,
+        810,
+        196
+      ],
+      "logicalAlphaBounds": [
+        0.0,
+        0.0,
+        405.0,
+        98.0
+      ],
+      "rasterScale": [
+        2.0,
+        2.0
+      ],
+      "layer": "cta",
+      "source": "art/ui-atlas.png",
+      "note": "Exact source Play Now words; original glyph shape with ivory fill/dark teal outline. Transparent label, no new text."
+    },
+    "result-banner": {
+      "logicalSize": [
+        900,
+        213
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "alphaBounds": [
+        0,
+        0,
+        1800,
+        426
+      ],
+      "logicalAlphaBounds": [
+        0.0,
+        0.0,
+        900.0,
+        213.0
+      ],
+      "rasterScale": [
+        2.0,
+        2.0
+      ],
+      "layer": "result",
+      "source": "art/ui-atlas.png",
+      "note": "Blank painted red/brass result banner. Source result text/outcome remains live."
+    },
+    "result-cream-panel": {
+      "logicalSize": [
+        700,
+        230
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "alphaBounds": [
+        0,
+        0,
+        1400,
+        460
+      ],
+      "logicalAlphaBounds": [
+        0.0,
+        0.0,
+        700.0,
+        230.0
+      ],
+      "rasterScale": [
+        2.0,
+        2.0
+      ],
+      "layer": "result",
+      "source": "art/ui-atlas.png",
+      "note": "Optional blank result surface, no invented result or reward."
+    },
+    "result-face-body": {
+      "logicalSize": [
+        137,
+        130
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "alphaBounds": [
+        0,
+        0,
+        274,
+        260
+      ],
+      "logicalAlphaBounds": [
+        0.0,
+        0.0,
+        137.0,
+        130.0
+      ],
+      "rasterScale": [
+        2.0,
+        2.0
+      ],
+      "layer": "result-face",
+      "source": "art/result-atlas.png",
+      "note": "Existing native result face body (ld_8): fixed137\u00d7130 footprint, no facial features baked; only source verified win reveals it."
+    },
+    "result-face-canonical": {
+      "logicalSize": [
+        137,
+        130
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "alphaBounds": [
+        0,
+        0,
+        274,
+        260
+      ],
+      "logicalAlphaBounds": [
+        0.0,
+        0.0,
+        137.0,
+        130.0
+      ],
+      "rasterScale": [
+        2.0,
+        2.0
+      ],
+      "layer": "result-face",
+      "source": "art/result-atlas.png",
+      "note": "Generated canonical expression reference/fallback, not evidence of source outcome."
+    },
+    "result-eye-open": {
+      "logicalSize": [
+        137,
+        130
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "alphaBounds": [
+        178,
+        105,
+        218,
+        151
+      ],
+      "logicalAlphaBounds": [
+        89.0,
+        52.5,
+        109.0,
+        75.5
+      ],
+      "rasterScale": [
+        2.0,
+        2.0
+      ],
+      "layer": "result-face-part",
+      "source": "art/result-atlas.png",
+      "note": "Registered full137\u00d7130 facial layer. Canvas center stays fixed; articulate only around facialJointLocal."
+    },
+    "result-eye-left-open": {
+      "logicalSize": [
+        137,
+        130
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "alphaBounds": [
+        58,
+        103,
+        98,
+        149
+      ],
+      "logicalAlphaBounds": [
+        29.0,
+        51.5,
+        49.0,
+        74.5
+      ],
+      "rasterScale": [
+        2.0,
+        2.0
+      ],
+      "layer": "result-face-part",
+      "source": "art/result-atlas.png",
+      "note": "Registered full137\u00d7130 facial layer. Canvas center stays fixed; articulate only around facialJointLocal."
+    },
+    "result-wink": {
+      "logicalSize": [
+        137,
+        130
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "alphaBounds": [
+        52,
+        106,
+        104,
+        138
+      ],
+      "logicalAlphaBounds": [
+        26.0,
+        53.0,
+        52.0,
+        69.0
+      ],
+      "rasterScale": [
+        2.0,
+        2.0
+      ],
+      "layer": "result-face-part",
+      "source": "art/result-atlas.png",
+      "note": "Registered full137\u00d7130 facial layer. Canvas center stays fixed; articulate only around facialJointLocal."
+    },
+    "result-smile": {
+      "logicalSize": [
+        137,
+        130
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "alphaBounds": [
+        114,
+        150,
+        162,
+        178
+      ],
+      "logicalAlphaBounds": [
+        57.0,
+        75.0,
+        81.0,
+        89.0
+      ],
+      "rasterScale": [
+        2.0,
+        2.0
+      ],
+      "layer": "result-face-part",
+      "source": "art/result-atlas.png",
+      "note": "Registered full137\u00d7130 facial layer. Canvas center stays fixed; articulate only around facialJointLocal."
+    },
+    "result-cheek-left": {
+      "logicalSize": [
+        137,
+        130
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "alphaBounds": [
+        41,
+        146,
+        87,
+        170
+      ],
+      "logicalAlphaBounds": [
+        20.5,
+        73.0,
+        43.5,
+        85.0
+      ],
+      "rasterScale": [
+        2.0,
+        2.0
+      ],
+      "layer": "result-face-part",
+      "source": "art/result-atlas.png",
+      "note": "Registered full137\u00d7130 facial layer. All three cheek ticks retained together. Canvas center stays fixed; articulate only around facialJointLocal."
+    },
+    "result-cheek-right": {
+      "logicalSize": [
+        137,
+        130
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "alphaBounds": [
+        187,
+        152,
+        233,
+        176
+      ],
+      "logicalAlphaBounds": [
+        93.5,
+        76.0,
+        116.5,
+        88.0
+      ],
+      "rasterScale": [
+        2.0,
+        2.0
+      ],
+      "layer": "result-face-part",
+      "source": "art/result-atlas.png",
+      "note": "Registered full137\u00d7130 facial layer. All three cheek ticks retained together. Canvas center stays fixed; articulate only around facialJointLocal."
+    },
+    "result-star-four": {
+      "logicalSize": [
+        40,
+        40
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "alphaBounds": [
+        0,
+        0,
+        80,
+        80
+      ],
+      "logicalAlphaBounds": [
+        0.0,
+        0.0,
+        40.0,
+        40.0
+      ],
+      "rasterScale": [
+        2.0,
+        2.0
+      ],
+      "layer": "result-decoration",
+      "source": "art/result-atlas.png",
+      "note": "Restyled existing source result decoration; runtime may use only in source verified result event, not as an invented collectible."
+    },
+    "result-heart": {
+      "logicalSize": [
+        44,
+        42
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "alphaBounds": [
+        0,
+        0,
+        88,
+        84
+      ],
+      "logicalAlphaBounds": [
+        0.0,
+        0.0,
+        44.0,
+        42.0
+      ],
+      "rasterScale": [
+        2.0,
+        2.0
+      ],
+      "layer": "result-decoration",
+      "source": "art/result-atlas.png",
+      "note": "Restyled existing source result decoration; runtime may use only in source verified result event, not as an invented collectible."
+    }
+  },
+  "resultFace": {
+    "container": "gameplay_icon_flower_ske",
+    "body": "result-face-body",
+    "fallback": "result-face-canonical",
+    "logicalSize": [
+      137,
+      130
+    ],
+    "sourceBodyBoneOffset": [
+      0.1433,
+      2.5642
+    ],
+    "sourceBodyBoneCoordinateSystem": "Cocos local; upward Y",
+    "parts": [
+      {
+        "id": "result-eye-open",
+        "offset": [
+          0,
+          0
+        ],
+        "size": [
+          137,
+          130
+        ],
+        "pivot": [
+          0.5,
+          0.5
+        ],
+        "role": "eye",
+        "facialJointLocal": [
+          30.5,
+          1
+        ],
+        "jointCoordinateSystem": "Cocos local; upward Y",
+        "visibleFeatureSize": [
+          20,
+          23
+        ]
+      },
+      {
+        "id": "result-eye-left-open",
+        "offset": [
+          0,
+          0
+        ],
+        "size": [
+          137,
+          130
+        ],
+        "pivot": [
+          0.5,
+          0.5
+        ],
+        "role": "eye-open",
+        "facialJointLocal": [
+          -29.5,
+          2
+        ],
+        "jointCoordinateSystem": "Cocos local; upward Y",
+        "visibleFeatureSize": [
+          20,
+          23
+        ]
+      },
+      {
+        "id": "result-wink",
+        "offset": [
+          0,
+          0
+        ],
+        "size": [
+          137,
+          130
+        ],
+        "pivot": [
+          0.5,
+          0.5
+        ],
+        "role": "wink",
+        "facialJointLocal": [
+          -29.5,
+          4
+        ],
+        "jointCoordinateSystem": "Cocos local; upward Y",
+        "visibleFeatureSize": [
+          26,
+          16
+        ]
+      },
+      {
+        "id": "result-smile",
+        "offset": [
+          0,
+          0
+        ],
+        "size": [
+          137,
+          130
+        ],
+        "pivot": [
+          0.5,
+          0.5
+        ],
+        "role": "smile",
+        "facialJointLocal": [
+          0.5,
+          -17
+        ],
+        "jointCoordinateSystem": "Cocos local; upward Y",
+        "visibleFeatureSize": [
+          24,
+          14
+        ]
+      },
+      {
+        "id": "result-cheek-left",
+        "offset": [
+          0,
+          0
+        ],
+        "size": [
+          137,
+          130
+        ],
+        "pivot": [
+          0.5,
+          0.5
+        ],
+        "role": "cheek",
+        "facialJointLocal": [
+          -36.5,
+          -14
+        ],
+        "jointCoordinateSystem": "Cocos local; upward Y",
+        "visibleFeatureSize": [
+          23,
+          12
+        ]
+      },
+      {
+        "id": "result-cheek-right",
+        "offset": [
+          0,
+          0
+        ],
+        "size": [
+          137,
+          130
+        ],
+        "pivot": [
+          0.5,
+          0.5
+        ],
+        "role": "cheek",
+        "facialJointLocal": [
+          36.5,
+          -17
+        ],
+        "jointCoordinateSystem": "Cocos local; upward Y",
+        "visibleFeatureSize": [
+          23,
+          12
+        ]
+      }
+    ],
+    "decorations": {
+      "star": "result-star-four",
+      "heart": "result-heart"
+    },
+    "showOnly": "C.view.is_game_over && C.view.is_win && existing source result ancestor active",
+    "sourceEvidence": "evidence/native-results/gameplay_icon_flower-skeleton.json",
+    "note": "Only left eye winks; fixed body, independent smile and each three-tick cheek group. Source confetti atlas is not a bag. No invented reward."
+  },
+  "spriteMap": {
+    "wood_3_big": "hud-13",
+    "wood_4_big": "hud-14",
+    "wood_6_big": "hud-16",
+    "wood_1_big": "hud-11",
+    "wood_5_big": "hud-15",
+    "wood_7_big": "hud-17",
+    "star_bg": "plaque",
+    "settings_crush": "gear",
+    "check": "check",
+    "ic_hand": "hand",
+    "finger": "finger",
+    "finger2": "finger2",
+    "audio": "control-audio",
+    "mute": "control-mute",
+    "replay": "control-replay",
+    "home": "control-home",
+    "icon_back": "control-icon_back",
+    "bgm": "control-bgm",
+    "bgm_mute": "control-bgm_mute",
+    "hint": "hint",
+    "icon_star": "result-star",
+    "red_point": "notification-dot",
+    "combo_crush": "combo-label",
+    "free_to_play": "cta-free-to-play",
+    "button_green_2": "cta-button",
+    "play_now_100": "cta-play-now",
+    "banner_red": "result-banner"
+  },
+  "foliage": [
+    {
+      "id": "foliage-nw",
+      "file": "assets/foliage-nw.png",
+      "x": -75,
+      "y": -90,
+      "pivot": [
+        391,
+        343
+      ],
+      "logicalSize": [
+        405,
+        350
+      ],
+      "mesh": "vertical",
+      "rate": 0.43,
+      "shadow": {
+        "offset": [
+          -5,
+          8
+        ],
+        "blur": 3,
+        "opacity": 0.2
+      }
+    },
+    {
+      "id": "foliage-ne",
+      "file": "assets/foliage-ne.png",
+      "x": 775,
+      "y": -85,
+      "pivot": [
+        22,
+        322
+      ],
+      "logicalSize": [
+        360,
+        330
+      ],
+      "mesh": "vertical",
+      "rate": 0.49,
+      "shadow": {
+        "offset": [
+          -5,
+          8
+        ],
+        "blur": 3,
+        "opacity": 0.2
+      }
+    },
+    {
+      "id": "foliage-sw",
+      "file": "assets/foliage-sw.png",
+      "x": -75,
+      "y": 1650,
+      "pivot": [
+        25,
+        274
+      ],
+      "logicalSize": [
+        420,
+        285
+      ],
+      "mesh": "vertical",
+      "rate": 0.54,
+      "shadow": {
+        "offset": [
+          -5,
+          8
+        ],
+        "blur": 3,
+        "opacity": 0.2
+      }
+    },
+    {
+      "id": "foliage-se",
+      "file": "assets/foliage-se.png",
+      "x": 790,
+      "y": 1598,
+      "pivot": [
+        352,
+        319
+      ],
+      "logicalSize": [
+        365,
+        327
+      ],
+      "mesh": "vertical",
+      "rate": 0.47,
+      "shadow": {
+        "offset": [
+          -5,
+          8
+        ],
+        "blur": 3,
+        "opacity": 0.2
+      }
+    },
+    {
+      "id": "foliage-west",
+      "file": "assets/foliage-west.png",
+      "x": -150,
+      "y": 590,
+      "pivot": [
+        12,
+        322
+      ],
+      "logicalSize": [
+        195,
+        330
+      ],
+      "mesh": "vertical",
+      "rate": 0.59,
+      "shadow": {
+        "offset": [
+          -5,
+          8
+        ],
+        "blur": 3,
+        "opacity": 0.2
+      }
+    },
+    {
+      "id": "foliage-east",
+      "file": "assets/foliage-east.png",
+      "x": 1030,
+      "y": 548,
+      "pivot": [
+        188,
+        317
+      ],
+      "logicalSize": [
+        195,
+        325
+      ],
+      "mesh": "vertical",
+      "rate": 0.51,
+      "shadow": {
+        "offset": [
+          -5,
+          8
+        ],
+        "blur": 3,
+        "opacity": 0.2
+      }
+    },
+    {
+      "id": "bottom-vine",
+      "file": "assets/bottom-vine.png",
+      "x": 130,
+      "y": 1665,
+      "pivot": [
+        6,
+        122
+      ],
+      "logicalSize": [
+        790,
+        218
+      ],
+      "mesh": "horizontal",
+      "rate": 0.46,
+      "shadow": {
+        "offset": [
+          -5,
+          8
+        ],
+        "blur": 3,
+        "opacity": 0.2
+      }
+    },
+    {
+      "id": "flower-nw",
+      "file": "assets/flower-nw.png",
+      "x": 46,
+      "y": 12,
+      "pivot": [
+        76,
+        120
+      ],
+      "logicalSize": [
+        147,
+        151
+      ],
+      "mesh": "vertical",
+      "rate": 0.35,
+      "shadow": {
+        "offset": [
+          -3,
+          6
+        ],
+        "blur": 2,
+        "opacity": 0.16
+      }
+    },
+    {
+      "id": "flower-se",
+      "file": "assets/flower-se.png",
+      "x": 919,
+      "y": 1698,
+      "pivot": [
+        106,
+        177
+      ],
+      "logicalSize": [
+        178,
+        222
+      ],
+      "mesh": "vertical",
+      "rate": 0.39,
+      "shadow": {
+        "offset": [
+          -3,
+          6
+        ],
+        "blur": 2,
+        "opacity": 0.16
+      }
+    }
+  ],
+  "assets": [
+    {
+      "id": "tile",
+      "file": "assets/tile.png",
+      "pixelSize": [
+        226,
+        226
+      ],
+      "logicalSize": [
+        113,
+        113
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "alphaBounds": [
+        0,
+        0,
+        226,
+        226
+      ],
+      "source": "art/core-atlas.png",
+      "sourceBox": [
+        0,
+        0,
+        444,
+        444
+      ],
+      "layer": "tile",
+      "note": "Complete static canonical ivory tile; no jewel or text.",
+      "sha256": "14f43ebc810639fe7e6d35f9fcefe9269331f0d06abdb3f829560b46e20bbc42",
+      "logicalAlphaBounds": [
+        0.0,
+        0.0,
+        113.0,
+        113.0
+      ],
+      "rasterScale": [
+        2.0,
+        2.0
+      ]
+    },
+    {
+      "id": "tile-bezel",
+      "file": "assets/tile-bezel.png",
+      "pixelSize": [
+        226,
+        226
+      ],
+      "logicalSize": [
+        113,
+        113
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "alphaBounds": [
+        0,
+        0,
+        226,
+        226
+      ],
+      "source": "art/core-atlas.png",
+      "sourceBox": [
+        0,
+        0,
+        444,
+        444
+      ],
+      "layer": "tile-bezel",
+      "note": "Bevel/body bed under separate face; painted interior underneath prevents animation cracks.",
+      "sha256": "14f43ebc810639fe7e6d35f9fcefe9269331f0d06abdb3f829560b46e20bbc42",
+      "logicalAlphaBounds": [
+        0.0,
+        0.0,
+        113.0,
+        113.0
+      ],
+      "rasterScale": [
+        2.0,
+        2.0
+      ]
+    },
+    {
+      "id": "tile-face",
+      "file": "assets/tile-face.png",
+      "pixelSize": [
+        226,
+        226
+      ],
+      "logicalSize": [
+        113,
+        113
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "alphaBounds": [
+        21,
+        21,
+        205,
+        205
+      ],
+      "source": "art/core-atlas.png",
+      "sourceBox": [
+        0,
+        0,
+        444,
+        444
+      ],
+      "layer": "tile-face",
+      "note": "Painted ivory face only, on full 113\u00d7113 canvas for independent small compression/settle.",
+      "sha256": "d0b8945ee231bfc4c5f1c5eb53dc4e0526416e955c055990aecac4fcb5944a22",
+      "logicalAlphaBounds": [
+        10.5,
+        10.5,
+        102.5,
+        102.5
+      ],
+      "rasterScale": [
+        2.0,
+        2.0
+      ]
+    },
+    {
+      "id": "tile-shadow",
+      "file": "assets/tile-shadow.png",
+      "pixelSize": [
+        226,
+        226
+      ],
+      "logicalSize": [
+        113,
+        113
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "alphaBounds": [
+        0,
+        0,
+        226,
+        226
+      ],
+      "source": "derived from registered alpha",
+      "sourceBox": null,
+      "layer": "contact-shadow",
+      "note": "Alpha-derived contact shadow, same footprint and center; no displaced ground shadow.",
+      "sha256": "adce36e750bc71843f950f3a161074788c3cf09e5e88e0def690e32e9aba4612",
+      "logicalAlphaBounds": [
+        0.0,
+        0.0,
+        113.0,
+        113.0
+      ],
+      "rasterScale": [
+        2.0,
+        2.0
+      ]
+    },
+    {
+      "id": "board-cell",
+      "file": "assets/board-cell.png",
+      "pixelSize": [
+        226,
+        226
+      ],
+      "logicalSize": [
+        113,
+        113
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "alphaBounds": [
+        0,
+        0,
+        226,
+        226
+      ],
+      "source": "art/core-atlas.png",
+      "sourceBox": [
+        1330,
+        444,
+        1774,
+        887
+      ],
+      "layer": "board",
+      "note": "Canonical teal velvet recess. Composed into precise 8\u00d78 at 113 px pitch; no generated board state.",
+      "sha256": "2b9b8b563f4795952981b8cc85acb0e2518578f7c8880e4b19ab3079530dd324",
+      "logicalAlphaBounds": [
+        0.0,
+        0.0,
+        113.0,
+        113.0
+      ],
+      "rasterScale": [
+        2.0,
+        2.0
+      ]
+    },
+    {
+      "id": "gem-13",
+      "file": "assets/gem-13.png",
+      "pixelSize": [
+        226,
+        226
+      ],
+      "logicalSize": [
+        113,
+        113
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "alphaBounds": [
+        28,
+        33,
+        198,
+        192
+      ],
+      "source": "art/core-atlas.png",
+      "sourceBox": [
+        444,
+        0,
+        887,
+        444
+      ],
+      "layer": "jewel",
+      "note": "Independent mounted jewel, centered inside full tile canvas; original functional color and silhouette.",
+      "sha256": "e9e9d25389847698d627bea576b55f30a52d5c72b134cd4909b874faef863560",
+      "logicalAlphaBounds": [
+        14.0,
+        16.5,
+        99.0,
+        96.0
+      ],
+      "rasterScale": [
+        2.0,
+        2.0
+      ]
+    },
+    {
+      "id": "hud-13",
+      "file": "assets/hud-13.png",
+      "pixelSize": [
+        272,
+        272
+      ],
+      "logicalSize": [
+        136,
+        136
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "alphaBounds": [
+        13,
+        21,
+        259,
+        251
+      ],
+      "source": "art/core-atlas.png",
+      "sourceBox": [
+        444,
+        0,
+        887,
+        444
+      ],
+      "layer": "hud-jewel",
+      "note": "HUD/collection master with native136 canvas and original shape-specific maximum visible bounds.",
+      "sha256": "6a0e9e91e39a9b4d4344afbeef259009d1e935ff18ef551f02b5ec1e4b9c1447",
+      "logicalAlphaBounds": [
+        6.5,
+        10.5,
+        129.5,
+        125.5
+      ],
+      "rasterScale": [
+        2.0,
+        2.0
+      ]
+    },
+    {
+      "id": "gem-14",
+      "file": "assets/gem-14.png",
+      "pixelSize": [
+        226,
+        226
+      ],
+      "logicalSize": [
+        113,
+        113
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "alphaBounds": [
+        52,
+        28,
+        173,
+        198
+      ],
+      "source": "art/core-atlas.png",
+      "sourceBox": [
+        887,
+        0,
+        1330,
+        444
+      ],
+      "layer": "jewel",
+      "note": "Independent mounted jewel, centered inside full tile canvas; original functional color and silhouette.",
+      "sha256": "35a79431e2bf21741a2bb6f9d953518f867f2ed985c64fac64bd6d047b7f742d",
+      "logicalAlphaBounds": [
+        26.0,
+        14.0,
+        86.5,
+        99.0
+      ],
+      "rasterScale": [
+        2.0,
+        2.0
+      ]
+    },
+    {
+      "id": "hud-14",
+      "file": "assets/hud-14.png",
+      "pixelSize": [
+        272,
+        272
+      ],
+      "logicalSize": [
+        136,
+        136
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "alphaBounds": [
+        41,
+        3,
+        230,
+        269
+      ],
+      "source": "art/core-atlas.png",
+      "sourceBox": [
+        887,
+        0,
+        1330,
+        444
+      ],
+      "layer": "hud-jewel",
+      "note": "HUD/collection master with native136 canvas and original shape-specific maximum visible bounds.",
+      "sha256": "264cb498bc53db0a12bc763ed79c5d465561dee1d1eb1378a587a0283b6f349b",
+      "logicalAlphaBounds": [
+        20.5,
+        1.5,
+        115.0,
+        134.5
+      ],
+      "rasterScale": [
+        2.0,
+        2.0
+      ]
+    },
+    {
+      "id": "gem-16",
+      "file": "assets/gem-16.png",
+      "pixelSize": [
+        226,
+        226
+      ],
+      "logicalSize": [
+        113,
+        113
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "alphaBounds": [
+        28,
+        28,
+        197,
+        198
+      ],
+      "source": "art/core-atlas.png",
+      "sourceBox": [
+        1330,
+        0,
+        1774,
+        444
+      ],
+      "layer": "jewel",
+      "note": "Independent mounted jewel, centered inside full tile canvas; original functional color and silhouette.",
+      "sha256": "ccd39d1a7cd92ef6688eba64db3a2ceb0d30761271f4b2d3330690615d8c883c",
+      "logicalAlphaBounds": [
+        14.0,
+        14.0,
+        98.5,
+        99.0
+      ],
+      "rasterScale": [
+        2.0,
+        2.0
+      ]
+    },
+    {
+      "id": "hud-16",
+      "file": "assets/hud-16.png",
+      "pixelSize": [
+        272,
+        272
+      ],
+      "logicalSize": [
+        136,
+        136
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "alphaBounds": [
+        3,
+        2,
+        269,
+        270
+      ],
+      "source": "art/core-atlas.png",
+      "sourceBox": [
+        1330,
+        0,
+        1774,
+        444
+      ],
+      "layer": "hud-jewel",
+      "note": "HUD/collection master with native136 canvas and original shape-specific maximum visible bounds.",
+      "sha256": "294b4eded4b27024f3e26d0fd5f7956697cdf60e07a4866081bc4825b868ad5a",
+      "logicalAlphaBounds": [
+        1.5,
+        1.0,
+        134.5,
+        135.0
+      ],
+      "rasterScale": [
+        2.0,
+        2.0
+      ]
+    },
+    {
+      "id": "gem-11",
+      "file": "assets/gem-11.png",
+      "pixelSize": [
+        226,
+        226
+      ],
+      "logicalSize": [
+        113,
+        113
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "alphaBounds": [
+        28,
+        28,
+        197,
+        198
+      ],
+      "source": "art/core-atlas.png",
+      "sourceBox": [
+        0,
+        444,
+        444,
+        887
+      ],
+      "layer": "jewel",
+      "note": "Independent mounted jewel, centered inside full tile canvas; original functional color and silhouette.",
+      "sha256": "66faa5290ba965a4f176c2924eaebbcd6dcc3668f3ace0144f14922f747e8a6c",
+      "logicalAlphaBounds": [
+        14.0,
+        14.0,
+        98.5,
+        99.0
+      ],
+      "rasterScale": [
+        2.0,
+        2.0
+      ]
+    },
+    {
+      "id": "hud-11",
+      "file": "assets/hud-11.png",
+      "pixelSize": [
+        272,
+        272
+      ],
+      "logicalSize": [
+        136,
+        136
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "alphaBounds": [
+        14,
+        13,
+        258,
+        259
+      ],
+      "source": "art/core-atlas.png",
+      "sourceBox": [
+        0,
+        444,
+        444,
+        887
+      ],
+      "layer": "hud-jewel",
+      "note": "HUD/collection master with native136 canvas and original shape-specific maximum visible bounds.",
+      "sha256": "cbbd0e3abf6196847cb1dbdba109a792ba3058059f64ac82d5ad8cc07bff462d",
+      "logicalAlphaBounds": [
+        7.0,
+        6.5,
+        129.0,
+        129.5
+      ],
+      "rasterScale": [
+        2.0,
+        2.0
+      ]
+    },
+    {
+      "id": "gem-15",
+      "file": "assets/gem-15.png",
+      "pixelSize": [
+        226,
+        226
+      ],
+      "logicalSize": [
+        113,
+        113
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "alphaBounds": [
+        28,
+        38,
+        198,
+        187
+      ],
+      "source": "art/core-atlas.png",
+      "sourceBox": [
+        444,
+        444,
+        887,
+        887
+      ],
+      "layer": "jewel",
+      "note": "Independent mounted jewel, centered inside full tile canvas; original functional color and silhouette.",
+      "sha256": "755799a10440e4c67a875e8e149b07edef2aaecf2594c3b1a0820e335ce57f3b",
+      "logicalAlphaBounds": [
+        14.0,
+        19.0,
+        99.0,
+        93.5
+      ],
+      "rasterScale": [
+        2.0,
+        2.0
+      ]
+    },
+    {
+      "id": "hud-15",
+      "file": "assets/hud-15.png",
+      "pixelSize": [
+        272,
+        272
+      ],
+      "logicalSize": [
+        136,
+        136
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "alphaBounds": [
+        16,
+        30,
+        256,
+        241
+      ],
+      "source": "art/core-atlas.png",
+      "sourceBox": [
+        444,
+        444,
+        887,
+        887
+      ],
+      "layer": "hud-jewel",
+      "note": "HUD/collection master with native136 canvas and original shape-specific maximum visible bounds.",
+      "sha256": "75444550ed603b271f1b2e5b8fb83ea4f5668601cc104e0865bce824a9feccc1",
+      "logicalAlphaBounds": [
+        8.0,
+        15.0,
+        128.0,
+        120.5
+      ],
+      "rasterScale": [
+        2.0,
+        2.0
+      ]
+    },
+    {
+      "id": "gem-17",
+      "file": "assets/gem-17.png",
+      "pixelSize": [
+        226,
+        226
+      ],
+      "logicalSize": [
+        113,
+        113
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "alphaBounds": [
+        28,
+        31,
+        198,
+        195
+      ],
+      "source": "art/core-atlas.png",
+      "sourceBox": [
+        887,
+        444,
+        1330,
+        887
+      ],
+      "layer": "jewel",
+      "note": "Independent mounted jewel, centered inside full tile canvas; original functional color and silhouette.",
+      "sha256": "04a8085d44d19b9e1c40dd91c4203d51841aaa51e20c8c7c8f6893d5a4a5b694",
+      "logicalAlphaBounds": [
+        14.0,
+        15.5,
+        99.0,
+        97.5
+      ],
+      "rasterScale": [
+        2.0,
+        2.0
+      ]
+    },
+    {
+      "id": "hud-17",
+      "file": "assets/hud-17.png",
+      "pixelSize": [
+        272,
+        272
+      ],
+      "logicalSize": [
+        136,
+        136
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "alphaBounds": [
+        6,
+        11,
+        265,
+        261
+      ],
+      "source": "art/core-atlas.png",
+      "sourceBox": [
+        887,
+        444,
+        1330,
+        887
+      ],
+      "layer": "hud-jewel",
+      "note": "HUD/collection master with native136 canvas and original shape-specific maximum visible bounds.",
+      "sha256": "e9d8ab4f2b4d39102c731320d76ab3e879b4cbff73c1d4b5155b8432357aa677",
+      "logicalAlphaBounds": [
+        3.0,
+        5.5,
+        132.5,
+        130.5
+      ],
+      "rasterScale": [
+        2.0,
+        2.0
+      ]
+    },
+    {
+      "id": "backdrop",
+      "file": "assets/backdrop.png",
+      "pixelSize": [
+        1080,
+        1920
+      ],
+      "logicalSize": [
+        1080,
+        1920
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "alphaBounds": [
+        0,
+        0,
+        1080,
+        1920
+      ],
+      "source": "art/cabinet-clean-plate.png",
+      "sourceBox": null,
+      "layer": "background",
+      "note": "Clean generated cabinet and linen receiver plus exact113px 8\u00d78 grid. No gameplay pieces, HUD, foliage, or moving-shadow duplicates. Fixed sunlight remains stationary.",
+      "sha256": "ed2312c70fd0cc5b00c9a5906b50f8aab8de42eea4e63812f18f6f77260a0bed",
+      "logicalAlphaBounds": [
+        0.0,
+        0.0,
+        1080.0,
+        1920.0
+      ],
+      "rasterScale": [
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "id": "plaque",
+      "file": "assets/plaque.png",
+      "pixelSize": [
+        1026,
+        334
+      ],
+      "logicalSize": [
+        513,
+        167
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "alphaBounds": [
+        0,
+        0,
+        1026,
+        334
+      ],
+      "source": "art/ui-atlas.png",
+      "sourceBox": [
+        0,
+        60,
+        625,
+        450
+      ],
+      "layer": "hud",
+      "note": "Empty painted teal/brass target plaque. Five-piece horizontal resampling preserves crest and corner ornaments; actual game supplies glyphs/counts.",
+      "sha256": "c348bd8e1a8e0ad21686ca8cff22856e4a95d22aa644c5b07a7aed8655c1fc44",
+      "logicalAlphaBounds": [
+        0.0,
+        0.0,
+        513.0,
+        167.0
+      ],
+      "rasterScale": [
+        2.0,
+        2.0
+      ]
+    },
+    {
+      "id": "gear",
+      "file": "assets/gear.png",
+      "pixelSize": [
+        192,
+        206
+      ],
+      "logicalSize": [
+        96,
+        103
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "alphaBounds": [
+        4,
+        11,
+        188,
+        195
+      ],
+      "source": "art/ui-atlas.png",
+      "sourceBox": [
+        625,
+        60,
+        980,
+        450
+      ],
+      "layer": "control",
+      "note": "Original gear silhouette and button node, new ivory/brass material.",
+      "sha256": "6ec1ca00ebbb5d64cd5cd69293bd86bab2c5c45e95ae49fcbdbb7ed562ce9d09",
+      "logicalAlphaBounds": [
+        2.0,
+        5.5,
+        94.0,
+        97.5
+      ],
+      "rasterScale": [
+        2.0,
+        2.0
+      ]
+    },
+    {
+      "id": "check",
+      "file": "assets/check.png",
+      "pixelSize": [
+        104,
+        82
+      ],
+      "logicalSize": [
+        52,
+        41
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "alphaBounds": [
+        2,
+        1,
+        101,
+        80
+      ],
+      "source": "art/ui-atlas.png",
+      "sourceBox": [
+        980,
+        80,
+        1340,
+        450
+      ],
+      "layer": "hud-status",
+      "note": "Original completion check symbol, generated ivory/brass material.",
+      "sha256": "f5392e3d5ff8a3975d9c969eab82a76f868e988da428a1166fa90a5e1830c5f5",
+      "logicalAlphaBounds": [
+        1.0,
+        0.5,
+        50.5,
+        40.0
+      ],
+      "rasterScale": [
+        2.0,
+        2.0
+      ]
+    },
+    {
+      "id": "hand",
+      "file": "assets/hand.png",
+      "pixelSize": [
+        300,
+        312
+      ],
+      "logicalSize": [
+        150,
+        156
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "alphaBounds": [
+        38,
+        72,
+        261,
+        277
+      ],
+      "source": "art/ui-atlas.png",
+      "sourceBox": [
+        1340,
+        40,
+        1720,
+        470
+      ],
+      "layer": "guidance",
+      "note": "Existing guidance pointer restyled; rotated to native north-west pointing direction. Inspect fingertip registration against source at runtime.",
+      "sha256": "68ac7876f90409739516a4a469c26d68f8bfcf9bbdd6b66f9f450e77337eaf08",
+      "logicalAlphaBounds": [
+        19.0,
+        36.0,
+        130.5,
+        138.5
+      ],
+      "rasterScale": [
+        2.0,
+        2.0
+      ]
+    },
+    {
+      "id": "finger",
+      "file": "assets/finger.png",
+      "pixelSize": [
+        232,
+        236
+      ],
+      "logicalSize": [
+        116,
+        118
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "alphaBounds": [
+        28,
+        53,
+        202,
+        212
+      ],
+      "source": "art/ui-atlas.png",
+      "sourceBox": [
+        1340,
+        40,
+        1720,
+        470
+      ],
+      "layer": "guidance",
+      "note": "Existing guidance pointer restyled; rotated to native north-west pointing direction. Inspect fingertip registration against source at runtime.",
+      "sha256": "e6555a5168e828c6941686ad4e55ab7818ef23daf784a08716da180412127e56",
+      "logicalAlphaBounds": [
+        14.0,
+        26.5,
+        101.0,
+        106.0
+      ],
+      "rasterScale": [
+        2.0,
+        2.0
+      ]
+    },
+    {
+      "id": "finger2",
+      "file": "assets/finger2.png",
+      "pixelSize": [
+        232,
+        236
+      ],
+      "logicalSize": [
+        116,
+        118
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "alphaBounds": [
+        28,
+        53,
+        202,
+        212
+      ],
+      "source": "art/ui-atlas.png",
+      "sourceBox": [
+        1340,
+        40,
+        1720,
+        470
+      ],
+      "layer": "guidance",
+      "note": "Existing guidance pointer restyled; rotated to native north-west pointing direction. Inspect fingertip registration against source at runtime.",
+      "sha256": "e6555a5168e828c6941686ad4e55ab7818ef23daf784a08716da180412127e56",
+      "logicalAlphaBounds": [
+        14.0,
+        26.5,
+        101.0,
+        106.0
+      ],
+      "rasterScale": [
+        2.0,
+        2.0
+      ]
+    },
+    {
+      "id": "control-audio",
+      "file": "assets/control-audio.png",
+      "pixelSize": [
+        196,
+        172
+      ],
+      "logicalSize": [
+        98,
+        86
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "alphaBounds": [
+        13,
+        0,
+        183,
+        172
+      ],
+      "source": "art/ui-atlas.png",
+      "sourceBox": null,
+      "layer": "control",
+      "note": "Generated teal/brass control surface with exact native audio glyph silhouette in ivory material; source action unchanged.",
+      "sha256": "23fcb079b558eb47779958f2ddaea8c66878ed8b003f72bb3b746daad3908e8a",
+      "logicalAlphaBounds": [
+        6.5,
+        0.0,
+        91.5,
+        86.0
+      ],
+      "rasterScale": [
+        2.0,
+        2.0
+      ]
+    },
+    {
+      "id": "control-mute",
+      "file": "assets/control-mute.png",
+      "pixelSize": [
+        180,
+        174
+      ],
+      "logicalSize": [
+        90,
+        87
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "alphaBounds": [
+        4,
+        0,
+        176,
+        174
+      ],
+      "source": "art/ui-atlas.png",
+      "sourceBox": null,
+      "layer": "control",
+      "note": "Generated teal/brass control surface with exact native mute glyph silhouette in ivory material; source action unchanged.",
+      "sha256": "10609d309c14bfcc002e4534b6a29f431a614f4f8f347c600930202aa443fb41",
+      "logicalAlphaBounds": [
+        2.0,
+        0.0,
+        88.0,
+        87.0
+      ],
+      "rasterScale": [
+        2.0,
+        2.0
+      ]
+    },
+    {
+      "id": "control-replay",
+      "file": "assets/control-replay.png",
+      "pixelSize": [
+        192,
+        182
+      ],
+      "logicalSize": [
+        96,
+        91
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "alphaBounds": [
+        6,
+        0,
+        186,
+        182
+      ],
+      "source": "art/ui-atlas.png",
+      "sourceBox": null,
+      "layer": "control",
+      "note": "Generated teal/brass control surface with exact native replay glyph silhouette in ivory material; source action unchanged.",
+      "sha256": "ff7d43f4e37bbea4d503560f38b17a77d0e7670cb1ce17f90c710c2f4bc378ab",
+      "logicalAlphaBounds": [
+        3.0,
+        0.0,
+        93.0,
+        91.0
+      ],
+      "rasterScale": [
+        2.0,
+        2.0
+      ]
+    },
+    {
+      "id": "control-home",
+      "file": "assets/control-home.png",
+      "pixelSize": [
+        166,
+        178
+      ],
+      "logicalSize": [
+        83,
+        89
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "alphaBounds": [
+        0,
+        5,
+        166,
+        173
+      ],
+      "source": "art/ui-atlas.png",
+      "sourceBox": null,
+      "layer": "control",
+      "note": "Generated teal/brass control surface with exact native home glyph silhouette in ivory material; source action unchanged.",
+      "sha256": "6750c85a17b31e240216467941e92c6c3a63c5469be12eadc7eded67f16efa5a",
+      "logicalAlphaBounds": [
+        0.0,
+        2.5,
+        83.0,
+        86.5
+      ],
+      "rasterScale": [
+        2.0,
+        2.0
+      ]
+    },
+    {
+      "id": "control-icon_back",
+      "file": "assets/control-icon_back.png",
+      "pixelSize": [
+        138,
+        192
+      ],
+      "logicalSize": [
+        69,
+        96
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "alphaBounds": [
+        0,
+        26,
+        138,
+        165
+      ],
+      "source": "art/ui-atlas.png",
+      "sourceBox": null,
+      "layer": "control",
+      "note": "Generated teal/brass control surface with exact native icon_back glyph silhouette in ivory material; source action unchanged.",
+      "sha256": "e8b4d8366ccf3951e610d06f0bce373397560659cab60344a7deef5c3c05a68d",
+      "logicalAlphaBounds": [
+        0.0,
+        13.0,
+        69.0,
+        82.5
+      ],
+      "rasterScale": [
+        2.0,
+        2.0
+      ]
+    },
+    {
+      "id": "control-bgm",
+      "file": "assets/control-bgm.png",
+      "pixelSize": [
+        180,
+        170
+      ],
+      "logicalSize": [
+        90,
+        85
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "alphaBounds": [
+        6,
+        0,
+        174,
+        170
+      ],
+      "source": "art/ui-atlas.png",
+      "sourceBox": null,
+      "layer": "control",
+      "note": "Generated teal/brass control surface with exact native bgm glyph silhouette in ivory material; source action unchanged.",
+      "sha256": "94c9ca60917d436ba2e8a894ddbe9fae01678be04ee89aabcc1170725dce5a8e",
+      "logicalAlphaBounds": [
+        3.0,
+        0.0,
+        87.0,
+        85.0
+      ],
+      "rasterScale": [
+        2.0,
+        2.0
+      ]
+    },
+    {
+      "id": "control-bgm_mute",
+      "file": "assets/control-bgm_mute.png",
+      "pixelSize": [
+        186,
+        174
+      ],
+      "logicalSize": [
+        93,
+        87
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "alphaBounds": [
+        7,
+        0,
+        179,
+        174
+      ],
+      "source": "art/ui-atlas.png",
+      "sourceBox": null,
+      "layer": "control",
+      "note": "Generated teal/brass control surface with exact native bgm_mute glyph silhouette in ivory material; source action unchanged.",
+      "sha256": "82b083730a8fd7855109ed5e0265086a422fad3b17e01b4df0926bfcc3c96504",
+      "logicalAlphaBounds": [
+        3.5,
+        0.0,
+        89.5,
+        87.0
+      ],
+      "rasterScale": [
+        2.0,
+        2.0
+      ]
+    },
+    {
+      "id": "hint",
+      "file": "assets/hint.png",
+      "pixelSize": [
+        134,
+        134
+      ],
+      "logicalSize": [
+        67,
+        67
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "alphaBounds": [
+        0,
+        0,
+        134,
+        134
+      ],
+      "source": "art/ui-atlas.png",
+      "sourceBox": null,
+      "layer": "status",
+      "note": "Exact native hint silhouette/words preserved, composited with generated material; shown only by original runtime event.",
+      "sha256": "aa73b783681a11c9c9ed6571c3569ff6cb2df963d19b70dd70c9e8fc4d87c248",
+      "logicalAlphaBounds": [
+        0.0,
+        0.0,
+        67.0,
+        67.0
+      ],
+      "rasterScale": [
+        2.0,
+        2.0
+      ]
+    },
+    {
+      "id": "result-star",
+      "file": "assets/result-star.png",
+      "pixelSize": [
+        432,
+        432
+      ],
+      "logicalSize": [
+        216,
+        216
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "alphaBounds": [
+        1,
+        1,
+        431,
+        432
+      ],
+      "source": "art/ui-atlas.png",
+      "sourceBox": null,
+      "layer": "status",
+      "note": "Exact native icon_star silhouette/words preserved, composited with generated material; shown only by original runtime event.",
+      "sha256": "2ed93668023b3a21535ecfece3ccc9d57efbe0b2b801f33d4a7d572c0cff701d",
+      "logicalAlphaBounds": [
+        0.5,
+        0.5,
+        215.5,
+        216.0
+      ],
+      "rasterScale": [
+        2.0,
+        2.0
+      ]
+    },
+    {
+      "id": "notification-dot",
+      "file": "assets/notification-dot.png",
+      "pixelSize": [
+        76,
+        76
+      ],
+      "logicalSize": [
+        38,
+        38
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "alphaBounds": [
+        0,
+        0,
+        76,
+        76
+      ],
+      "source": "art/ui-atlas.png",
+      "sourceBox": null,
+      "layer": "status",
+      "note": "Exact native red_point silhouette/words preserved, composited with generated material; shown only by original runtime event.",
+      "sha256": "6560d95b51454317dfbdd46d3ce3d885e3c4e285f50424ded0d3c987c8a4162d",
+      "logicalAlphaBounds": [
+        0.0,
+        0.0,
+        38.0,
+        38.0
+      ],
+      "rasterScale": [
+        2.0,
+        2.0
+      ]
+    },
+    {
+      "id": "combo-label",
+      "file": "assets/combo-label.png",
+      "pixelSize": [
+        800,
+        270
+      ],
+      "logicalSize": [
+        400,
+        135
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "alphaBounds": [
+        1,
+        29,
+        737,
+        251
+      ],
+      "source": "art/ui-atlas.png",
+      "sourceBox": null,
+      "layer": "status",
+      "note": "Exact native Combo word and letter geometry: ivory face on native dark-teal outline/shadow silhouette.",
+      "sha256": "20a054acbdef1eaadddc89801c6abf0cec59b03237f8cc0728deb9e05ddcb07c",
+      "logicalAlphaBounds": [
+        0.5,
+        14.5,
+        368.5,
+        125.5
+      ],
+      "rasterScale": [
+        2.0,
+        2.0
+      ]
+    },
+    {
+      "id": "cta-free-to-play",
+      "file": "assets/cta-free-to-play.png",
+      "pixelSize": [
+        1224,
+        294
+      ],
+      "logicalSize": [
+        612,
+        147
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "alphaBounds": [
+        0,
+        0,
+        1224,
+        294
+      ],
+      "source": "art/ui-atlas.png",
+      "sourceBox": null,
+      "layer": "cta",
+      "note": "Exact source words Free to Play, retained native glyphs on generated ivory/brass surface. No new action.",
+      "sha256": "62b55879d204bac9149f6f60383bd1b6155f45d93c0ced71886ae36f15e94e44",
+      "logicalAlphaBounds": [
+        0.0,
+        0.0,
+        612.0,
+        147.0
+      ],
+      "rasterScale": [
+        2.0,
+        2.0
+      ]
+    },
+    {
+      "id": "cta-button",
+      "file": "assets/cta-button.png",
+      "pixelSize": [
+        1400,
+        460
+      ],
+      "logicalSize": [
+        700,
+        230
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "alphaBounds": [
+        0,
+        0,
+        1400,
+        460
+      ],
+      "source": "art/ui-atlas.png",
+      "sourceBox": null,
+      "layer": "cta",
+      "note": "Empty green/brass endcard CTA surface, original700\u00d7230 rendered node; separate source Play Now label.",
+      "sha256": "464c9f830e9ac2cc43f4c60c10fe3893b7a4fd939f93ac048431212c66fdcece",
+      "logicalAlphaBounds": [
+        0.0,
+        0.0,
+        700.0,
+        230.0
+      ],
+      "rasterScale": [
+        2.0,
+        2.0
+      ]
+    },
+    {
+      "id": "cta-play-now",
+      "file": "assets/cta-play-now.png",
+      "pixelSize": [
+        810,
+        196
+      ],
+      "logicalSize": [
+        405,
+        98
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "alphaBounds": [
+        0,
+        0,
+        810,
+        196
+      ],
+      "source": "art/ui-atlas.png",
+      "sourceBox": null,
+      "layer": "cta",
+      "note": "Exact source Play Now words; original glyph shape with ivory fill/dark teal outline. Transparent label, no new text.",
+      "sha256": "60341ebf92f4ccbbfc461e0174449ffd5ba0b9d717280d9d8babb939b65593d8",
+      "logicalAlphaBounds": [
+        0.0,
+        0.0,
+        405.0,
+        98.0
+      ],
+      "rasterScale": [
+        2.0,
+        2.0
+      ]
+    },
+    {
+      "id": "result-banner",
+      "file": "assets/result-banner.png",
+      "pixelSize": [
+        1800,
+        426
+      ],
+      "logicalSize": [
+        900,
+        213
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "alphaBounds": [
+        0,
+        0,
+        1800,
+        426
+      ],
+      "source": "art/ui-atlas.png",
+      "sourceBox": null,
+      "layer": "result",
+      "note": "Blank painted red/brass result banner. Source result text/outcome remains live.",
+      "sha256": "11850d9f4813716cb429f1581ed01b6b4d3ec95bf28a94f3b4247d161f6ae1da",
+      "logicalAlphaBounds": [
+        0.0,
+        0.0,
+        900.0,
+        213.0
+      ],
+      "rasterScale": [
+        2.0,
+        2.0
+      ]
+    },
+    {
+      "id": "result-cream-panel",
+      "file": "assets/result-cream-panel.png",
+      "pixelSize": [
+        1400,
+        460
+      ],
+      "logicalSize": [
+        700,
+        230
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "alphaBounds": [
+        0,
+        0,
+        1400,
+        460
+      ],
+      "source": "art/ui-atlas.png",
+      "sourceBox": null,
+      "layer": "result",
+      "note": "Optional blank result surface, no invented result or reward.",
+      "sha256": "1fc002e65e41bd11b95274d36b417be1bcff754a99d73454cde5ee2717a929e8",
+      "logicalAlphaBounds": [
+        0.0,
+        0.0,
+        700.0,
+        230.0
+      ],
+      "rasterScale": [
+        2.0,
+        2.0
+      ]
+    },
+    {
+      "id": "result-face-body",
+      "file": "assets/result-face-body.png",
+      "pixelSize": [
+        274,
+        260
+      ],
+      "logicalSize": [
+        137,
+        130
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "alphaBounds": [
+        0,
+        0,
+        274,
+        260
+      ],
+      "source": "art/result-atlas.png",
+      "sourceBox": [
+        443,
+        0,
+        887,
+        485
+      ],
+      "layer": "result-face",
+      "note": "Existing native result face body (ld_8): fixed137\u00d7130 footprint, no facial features baked; only source verified win reveals it.",
+      "sha256": "feb9b46102d57f024c54818f56c3d1d71627b49fb9bec9784d6281e74f9fa0a4",
+      "logicalAlphaBounds": [
+        0.0,
+        0.0,
+        137.0,
+        130.0
+      ],
+      "rasterScale": [
+        2.0,
+        2.0
+      ]
+    },
+    {
+      "id": "result-face-canonical",
+      "file": "assets/result-face-canonical.png",
+      "pixelSize": [
+        274,
+        260
+      ],
+      "logicalSize": [
+        137,
+        130
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "alphaBounds": [
+        0,
+        0,
+        274,
+        260
+      ],
+      "source": "art/result-atlas.png",
+      "sourceBox": [
+        0,
+        0,
+        443,
+        485
+      ],
+      "layer": "result-face",
+      "note": "Generated canonical expression reference/fallback, not evidence of source outcome.",
+      "sha256": "911bcfda7bccfcc8478870fee87704ee55610559b76320c52e8d90f92ef020c9",
+      "logicalAlphaBounds": [
+        0.0,
+        0.0,
+        137.0,
+        130.0
+      ],
+      "rasterScale": [
+        2.0,
+        2.0
+      ]
+    },
+    {
+      "id": "result-eye-open",
+      "file": "assets/result-eye-open.png",
+      "pixelSize": [
+        274,
+        260
+      ],
+      "logicalSize": [
+        137,
+        130
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "alphaBounds": [
+        178,
+        105,
+        218,
+        151
+      ],
+      "source": "art/result-atlas.png",
+      "sourceBox": [
+        887,
+        0,
+        1330,
+        470
+      ],
+      "layer": "result-face-part",
+      "note": "Registered full137\u00d7130 facial layer. Canvas center stays fixed; articulate only around facialJointLocal.",
+      "sha256": "c7ed31c69efaba7e5077941be47e290ae15f9a8d74d2f8a097740a2caac3596b",
+      "logicalAlphaBounds": [
+        89.0,
+        52.5,
+        109.0,
+        75.5
+      ],
+      "rasterScale": [
+        2.0,
+        2.0
+      ]
+    },
+    {
+      "id": "result-eye-left-open",
+      "file": "assets/result-eye-left-open.png",
+      "pixelSize": [
+        274,
+        260
+      ],
+      "logicalSize": [
+        137,
+        130
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "alphaBounds": [
+        58,
+        103,
+        98,
+        149
+      ],
+      "source": "art/result-atlas.png",
+      "sourceBox": [
+        887,
+        0,
+        1330,
+        470
+      ],
+      "layer": "result-face-part",
+      "note": "Registered full137\u00d7130 facial layer. Canvas center stays fixed; articulate only around facialJointLocal.",
+      "sha256": "abb994828cbca08d278cde700246f4c3d08cb023c73979c391d9fbb48926411b",
+      "logicalAlphaBounds": [
+        29.0,
+        51.5,
+        49.0,
+        74.5
+      ],
+      "rasterScale": [
+        2.0,
+        2.0
+      ]
+    },
+    {
+      "id": "result-wink",
+      "file": "assets/result-wink.png",
+      "pixelSize": [
+        274,
+        260
+      ],
+      "logicalSize": [
+        137,
+        130
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "alphaBounds": [
+        52,
+        106,
+        104,
+        138
+      ],
+      "source": "art/result-atlas.png",
+      "sourceBox": [
+        1330,
+        0,
+        1774,
+        470
+      ],
+      "layer": "result-face-part",
+      "note": "Registered full137\u00d7130 facial layer. Canvas center stays fixed; articulate only around facialJointLocal.",
+      "sha256": "c300d224c6532a613feca00956f8548b098d3eb0376c349de6c31c7bcc9052bd",
+      "logicalAlphaBounds": [
+        26.0,
+        53.0,
+        52.0,
+        69.0
+      ],
+      "rasterScale": [
+        2.0,
+        2.0
+      ]
+    },
+    {
+      "id": "result-smile",
+      "file": "assets/result-smile.png",
+      "pixelSize": [
+        274,
+        260
+      ],
+      "logicalSize": [
+        137,
+        130
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "alphaBounds": [
+        114,
+        150,
+        162,
+        178
+      ],
+      "source": "art/result-atlas.png",
+      "sourceBox": [
+        0,
+        485,
+        443,
+        887
+      ],
+      "layer": "result-face-part",
+      "note": "Registered full137\u00d7130 facial layer. Canvas center stays fixed; articulate only around facialJointLocal.",
+      "sha256": "47d50afc239429ce24c0a52fd4655dc0af919c2f857e43c95c6fd211392bcc50",
+      "logicalAlphaBounds": [
+        57.0,
+        75.0,
+        81.0,
+        89.0
+      ],
+      "rasterScale": [
+        2.0,
+        2.0
+      ]
+    },
+    {
+      "id": "result-cheek-left",
+      "file": "assets/result-cheek-left.png",
+      "pixelSize": [
+        274,
+        260
+      ],
+      "logicalSize": [
+        137,
+        130
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "alphaBounds": [
+        41,
+        146,
+        87,
+        170
+      ],
+      "source": "art/result-atlas.png",
+      "sourceBox": [
+        443,
+        485,
+        887,
+        887
+      ],
+      "layer": "result-face-part",
+      "note": "Registered full137\u00d7130 facial layer. All three cheek ticks retained together. Canvas center stays fixed; articulate only around facialJointLocal.",
+      "sha256": "f4137facdf0ea2d5e8bf45152a8f2d17b9ff16c3a413f4a3d80bd8e0a1f222c3",
+      "logicalAlphaBounds": [
+        20.5,
+        73.0,
+        43.5,
+        85.0
+      ],
+      "rasterScale": [
+        2.0,
+        2.0
+      ]
+    },
+    {
+      "id": "result-cheek-right",
+      "file": "assets/result-cheek-right.png",
+      "pixelSize": [
+        274,
+        260
+      ],
+      "logicalSize": [
+        137,
+        130
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "alphaBounds": [
+        187,
+        152,
+        233,
+        176
+      ],
+      "source": "art/result-atlas.png",
+      "sourceBox": [
+        443,
+        485,
+        887,
+        887
+      ],
+      "layer": "result-face-part",
+      "note": "Registered full137\u00d7130 facial layer. All three cheek ticks retained together. Canvas center stays fixed; articulate only around facialJointLocal.",
+      "sha256": "c510572cba69f79456e49b54023db6e0c743760cd1789b57b1cc98e0d79bb09f",
+      "logicalAlphaBounds": [
+        93.5,
+        76.0,
+        116.5,
+        88.0
+      ],
+      "rasterScale": [
+        2.0,
+        2.0
+      ]
+    },
+    {
+      "id": "result-star-four",
+      "file": "assets/result-star-four.png",
+      "pixelSize": [
+        80,
+        80
+      ],
+      "logicalSize": [
+        40,
+        40
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "alphaBounds": [
+        0,
+        0,
+        80,
+        80
+      ],
+      "source": "art/result-atlas.png",
+      "sourceBox": [
+        887,
+        485,
+        1330,
+        887
+      ],
+      "layer": "result-decoration",
+      "note": "Restyled existing source result decoration; runtime may use only in source verified result event, not as an invented collectible.",
+      "sha256": "10bf72b31dcf1aa4b8f433a219861ca3ab4ecbb511fddc6f70c4dbc6a287e43e",
+      "logicalAlphaBounds": [
+        0.0,
+        0.0,
+        40.0,
+        40.0
+      ],
+      "rasterScale": [
+        2.0,
+        2.0
+      ]
+    },
+    {
+      "id": "result-heart",
+      "file": "assets/result-heart.png",
+      "pixelSize": [
+        88,
+        84
+      ],
+      "logicalSize": [
+        44,
+        42
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "alphaBounds": [
+        0,
+        0,
+        88,
+        84
+      ],
+      "source": "art/result-atlas.png",
+      "sourceBox": [
+        1330,
+        485,
+        1774,
+        887
+      ],
+      "layer": "result-decoration",
+      "note": "Restyled existing source result decoration; runtime may use only in source verified result event, not as an invented collectible.",
+      "sha256": "9d7eb6322d765e5fd24eabb89dbc476acd21fb00d75bf23f7a611b1a07c27821",
+      "logicalAlphaBounds": [
+        0.0,
+        0.0,
+        44.0,
+        42.0
+      ],
+      "rasterScale": [
+        2.0,
+        2.0
+      ]
+    },
+    {
+      "id": "foliage-nw",
+      "file": "assets/foliage-nw.png",
+      "pixelSize": [
+        405,
+        350
+      ],
+      "logicalSize": [
+        405,
+        350
+      ],
+      "pivot": [
+        0.9654320987654321,
+        0.98
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "alphaBounds": [
+        0,
+        0,
+        405,
+        350
+      ],
+      "source": "art/foliage-atlas.png",
+      "sourceBox": [
+        0,
+        0,
+        768,
+        512
+      ],
+      "layer": "foliage",
+      "note": "Independent painted living botanical; fixed root and articulated branch deformation. Native1080-space export; no receiver or baked shadow.",
+      "sha256": "1f67b63f554287860e6f9806bdcb4906655450a7dc68940116c052479f4a4f92",
+      "logicalAlphaBounds": [
+        0.0,
+        0.0,
+        405.0,
+        350.0
+      ],
+      "rasterScale": [
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "id": "foliage-ne",
+      "file": "assets/foliage-ne.png",
+      "pixelSize": [
+        360,
+        330
+      ],
+      "logicalSize": [
+        360,
+        330
+      ],
+      "pivot": [
+        0.06111111111111111,
+        0.9757575757575757
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "alphaBounds": [
+        0,
+        0,
+        360,
+        330
+      ],
+      "source": "art/foliage-atlas.png",
+      "sourceBox": [
+        768,
+        0,
+        1536,
+        512
+      ],
+      "layer": "foliage",
+      "note": "Independent painted living botanical; fixed root and articulated branch deformation. Native1080-space export; no receiver or baked shadow.",
+      "sha256": "2426a6c6b7507760370825cb285d785e2679b91aab1c8618a7fddf687f3e6084",
+      "logicalAlphaBounds": [
+        0.0,
+        0.0,
+        360.0,
+        330.0
+      ],
+      "rasterScale": [
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "id": "foliage-sw",
+      "file": "assets/foliage-sw.png",
+      "pixelSize": [
+        420,
+        285
+      ],
+      "logicalSize": [
+        420,
+        285
+      ],
+      "pivot": [
+        0.05952380952380952,
+        0.9614035087719298
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "alphaBounds": [
+        0,
+        0,
+        420,
+        285
+      ],
+      "source": "art/foliage-atlas.png",
+      "sourceBox": [
+        0,
+        512,
+        768,
+        1024
+      ],
+      "layer": "foliage",
+      "note": "Independent painted living botanical; fixed root and articulated branch deformation. Native1080-space export; no receiver or baked shadow.",
+      "sha256": "005c2178d962e30198021c0740b7ecabbebb62ea123ee6099005adac88f732e7",
+      "logicalAlphaBounds": [
+        0.0,
+        0.0,
+        420.0,
+        285.0
+      ],
+      "rasterScale": [
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "id": "foliage-se",
+      "file": "assets/foliage-se.png",
+      "pixelSize": [
+        365,
+        327
+      ],
+      "logicalSize": [
+        365,
+        327
+      ],
+      "pivot": [
+        0.9643835616438357,
+        0.9755351681957186
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "alphaBounds": [
+        0,
+        0,
+        365,
+        327
+      ],
+      "source": "art/foliage-atlas.png",
+      "sourceBox": [
+        0,
+        0,
+        768,
+        512
+      ],
+      "layer": "foliage",
+      "note": "Independent painted living botanical; fixed root and articulated branch deformation. Native1080-space export; no receiver or baked shadow.",
+      "sha256": "c29303c7691dce1306f178d055f55e5ffe9f3f70b5a9129606ac50c171b85646",
+      "logicalAlphaBounds": [
+        0.0,
+        0.0,
+        365.0,
+        327.0
+      ],
+      "rasterScale": [
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "id": "foliage-west",
+      "file": "assets/foliage-west.png",
+      "pixelSize": [
+        195,
+        330
+      ],
+      "logicalSize": [
+        195,
+        330
+      ],
+      "pivot": [
+        0.06153846153846154,
+        0.9757575757575757
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "alphaBounds": [
+        0,
+        0,
+        195,
+        330
+      ],
+      "source": "art/foliage-atlas.png",
+      "sourceBox": [
+        768,
+        0,
+        1536,
+        512
+      ],
+      "layer": "foliage",
+      "note": "Independent painted living botanical; fixed root and articulated branch deformation. Native1080-space export; no receiver or baked shadow.",
+      "sha256": "9a20ea1bf7964919bbc1f1d01cd8a1d85671ccd1f5e357b9204af7319bcd7df2",
+      "logicalAlphaBounds": [
+        0.0,
+        0.0,
+        195.0,
+        330.0
+      ],
+      "rasterScale": [
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "id": "foliage-east",
+      "file": "assets/foliage-east.png",
+      "pixelSize": [
+        195,
+        325
+      ],
+      "logicalSize": [
+        195,
+        325
+      ],
+      "pivot": [
+        0.9641025641025641,
+        0.9753846153846154
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "alphaBounds": [
+        0,
+        0,
+        195,
+        325
+      ],
+      "source": "art/foliage-atlas.png",
+      "sourceBox": [
+        0,
+        0,
+        768,
+        512
+      ],
+      "layer": "foliage",
+      "note": "Independent painted living botanical; fixed root and articulated branch deformation. Native1080-space export; no receiver or baked shadow.",
+      "sha256": "61ce27b6a3df07d7a4530bb119e76eb390de50eadc9fbd2fe7d569a81751fe5e",
+      "logicalAlphaBounds": [
+        0.0,
+        0.0,
+        195.0,
+        325.0
+      ],
+      "rasterScale": [
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "id": "bottom-vine",
+      "file": "assets/bottom-vine.png",
+      "pixelSize": [
+        790,
+        218
+      ],
+      "logicalSize": [
+        790,
+        218
+      ],
+      "pivot": [
+        0.007594936708860759,
+        0.5596330275229358
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "alphaBounds": [
+        0,
+        0,
+        790,
+        218
+      ],
+      "source": "art/foliage-atlas.png",
+      "sourceBox": [
+        768,
+        512,
+        1536,
+        1024
+      ],
+      "layer": "foliage",
+      "note": "Independent painted living botanical; fixed root and articulated branch deformation. Native1080-space export; no receiver or baked shadow.",
+      "sha256": "5bb29bf3e93141fe4e807593392614ecdb9279a1c936df392a4390e2bfb1e1af",
+      "logicalAlphaBounds": [
+        0.0,
+        0.0,
+        790.0,
+        218.0
+      ],
+      "rasterScale": [
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "id": "flower-nw",
+      "file": "assets/flower-nw.png",
+      "pixelSize": [
+        147,
+        151
+      ],
+      "logicalSize": [
+        147,
+        151
+      ],
+      "pivot": [
+        0.5170068027210885,
+        0.7947019867549668
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "alphaBounds": [
+        0,
+        2,
+        147,
+        149
+      ],
+      "source": "art/study-a-sunlit-jewel-atelier.png",
+      "sourceBox": [
+        42,
+        9,
+        168,
+        138
+      ],
+      "layer": "foliage",
+      "note": "Prominent blossom extracted from selected painted concept, separate from leaves; petal deformation shares fixed stem socket.",
+      "sha256": "94c66cf5c1018d7b0f872fbaa13fa3ec32686720266398ee9e6f140897a7b988",
+      "logicalAlphaBounds": [
+        0.0,
+        2.0,
+        147.0,
+        149.0
+      ],
+      "rasterScale": [
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "id": "flower-se",
+      "file": "assets/flower-se.png",
+      "pixelSize": [
+        178,
+        222
+      ],
+      "logicalSize": [
+        178,
+        222
+      ],
+      "pivot": [
+        0.5955056179775281,
+        0.7972972972972973
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "alphaBounds": [
+        0,
+        5,
+        178,
+        222
+      ],
+      "source": "art/study-a-sunlit-jewel-atelier.png",
+      "sourceBox": [
+        796,
+        1470,
+        940,
+        1650
+      ],
+      "layer": "foliage",
+      "note": "Prominent blossom extracted from selected painted concept, separate from leaves; petal deformation shares fixed stem socket.",
+      "sha256": "fd3f4cdebcf9e82bd5faa3fd6d95a802c3c6acc123d15347a4559063a4081350",
+      "logicalAlphaBounds": [
+        0.0,
+        5.0,
+        178.0,
+        222.0
+      ],
+      "rasterScale": [
+        1.0,
+        1.0
+      ]
+    }
+  ],
+  "coverage": {
+    "complete": [
+      "tile body",
+      "tile bezel",
+      "tile face",
+      "contact shadow",
+      "teal cell",
+      "aligned clean backdrop and exact grid",
+      "six mounted jewels",
+      "six HUD gems",
+      "empty HUD panel",
+      "gear",
+      "nine independent botanical layers",
+      "guidance hand/hint/check",
+      "controls",
+      "CTA/result surfaces",
+      "exact source CTA text",
+      "source result face with registered facial joints"
+    ],
+    "pending": []
+  },
+  "textPolicy": "Source words and live numbers remain source-driven. Blank generated surfaces do not replace text sprites. Raster text only from an inspected approved asset with exact source words.",
+  "lighting": {
+    "key": "upper-right fixed sunlight",
+    "plantShadowOffset": [
+      -5,
+      8
+    ],
+    "receiverMotion": "none"
+  },
+  "notes": [
+    "All tile and board gem layers use 113\u00d7113 logical canvas, with separate physical pivots.",
+    "HUD gems require 136\u00d7136 logical canvas and original trimmed shape bounds; do not stretch tight crops to square.",
+    "No browser/runtime verification is implied by an extraction manifest.",
+    "No original or v1 file is modified."
+  ]
+}
