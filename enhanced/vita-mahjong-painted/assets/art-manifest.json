@@ -1,0 +1,77 @@
+{
+  "version": "vita-separated-art-v1",
+  "tiles": {
+    "None": {
+      "file": "tiles-polished/None.png"
+    },
+    "bing1": {
+      "file": "tiles-polished/bing1.png"
+    },
+    "bing2": {
+      "file": "tiles-polished/bing2.png"
+    },
+    "bing5": {
+      "file": "tiles-polished/bing5.png"
+    },
+    "bing7": {
+      "file": "tiles-polished/bing7.png"
+    },
+    "hua1": {
+      "file": "tiles-polished/hua1.png"
+    },
+    "hua2": {
+      "file": "tiles-polished/hua2.png"
+    },
+    "hua3": {
+      "file": "tiles-polished/hua3.png"
+    },
+    "hua4": {
+      "file": "tiles-polished/hua4.png"
+    },
+    "ren1": {
+      "file": "tiles-polished/ren1.png"
+    },
+    "ren2": {
+      "file": "tiles-polished/ren2.png"
+    },
+    "ren3": {
+      "file": "tiles-polished/ren3.png"
+    },
+    "ren4": {
+      "file": "tiles-polished/ren4.png"
+    },
+    "tiao1": {
+      "file": "tiles-polished/tiao1.png"
+    },
+    "tiao4": {
+      "file": "tiles-polished/tiao4.png"
+    },
+    "tiao6": {
+      "file": "tiles-polished/tiao6.png"
+    },
+    "wan1": {
+      "file": "tiles-polished/wan1.png"
+    },
+    "wan3": {
+      "file": "tiles-polished/wan3.png"
+    },
+    "wan8": {
+      "file": "tiles-polished/wan8.png"
+    },
+    "wan9": {
+      "file": "tiles-polished/wan9.png"
+    },
+    "zi_bei": {
+      "file": "tiles-polished/zi_bei.png"
+    },
+    "zi_fa": {
+      "file": "tiles-polished/zi_fa.png"
+    },
+    "zi_zhong": {
+      "file": "tiles-polished/zi_zhong.png"
+    }
+  },
+  "lock": {
+    "file": "lock-polished.png"
+  }
+}

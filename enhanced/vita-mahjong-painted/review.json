@@ -1,0 +1,68 @@
+{
+  "version": "vita-painted-ceramic-20261126-v1",
+  "status": "Reviewed playable and authentic comparison; listening review remains unverified",
+  "summary": "Painted ceramic tile finish with registered selection, lock tension and release, clear and cascade feedback on the original slide-match board.",
+  "changes": [
+    "23 separate ceramic tile faces retain original symbols and functional colors.",
+    "Purple lock deforms at anchored contacts and breaks only on actual lock release.",
+    "Real selection, slide, snap, fall, match and cascade events drive visual and sound feedback.",
+    "Sound and reduced-motion controls sit outside the original game input area."
+  ],
+  "verified": {
+    "state_parity": "Initial layout, blocked attempt and all four slide outcomes match original tiles and locks exactly, including hidden side columns.",
+    "remaining_tiles": [
+      75,
+      69,
+      66,
+      60,
+      54
+    ],
+    "remaining_locks": [
+      4,
+      3,
+      3,
+      3,
+      2
+    ],
+    "semantics": [
+      "Locked drag rejected",
+      "Vertical-only drag unchanged",
+      "Nonmatching horizontal slide accepted, then gravity",
+      "Natural no-moves end observed with48tiles remaining"
+    ],
+    "startup": "Normal asynchronous artwork loading retains source tiles until replacements load. OS reduced motion honored.",
+    "responsive": "390x694 and320x568 phone viewports, plus original landscape layout.",
+    "reduced_motion": "Idle screenshots700ms apart are identical. Gameplay remains functional.",
+    "performance": {
+      "browser": "Chromium software WebGL on Mac",
+      "ordinary_play_average_fps": 57.108,
+      "p95_frame_ms": 16.8,
+      "frames_over_50ms": 2,
+      "measurement_seconds": 10.366
+    },
+    "audio": "Actual runtime soundtrack captured; all expected cue types observed; zero missing sample errors and zero clipped samples.",
+    "browser_errors": 0
+  },
+  "comparison": {
+    "duration_seconds": 23.483,
+    "resolution": [
+      828,
+      806
+    ],
+    "fps": 30,
+    "separate_playthroughs": true,
+    "same_four_slides": true,
+    "speed": "normal",
+    "soundtrack": "Improved live gameplay audio only",
+    "fabricated_outcomes": false,
+    "video_sha256": "a69a065fb4c5c0294dc3fe1a54f42d09422da2829cdc985b19c5d96c6287b4df"
+  },
+  "source_fidelity": "Preserves converted game mechanics, controls, timing, tile identities, layout, functional colors, CTA and terminal semantics. No added crowds, mascots, rewards or victory rules.",
+  "limitations": [
+    "Audio input is unavailable in this session; sound signal and event synchronization were checked, but human listening quality remains unverified.",
+    "Physical phones and other browsers were not tested.",
+    "Original landscape side-column layout is retained and is small in wide viewports.",
+    "The existing converted playable omits the original Luna automatic store opening3seconds after no-moves; this pre-existing difference remains.",
+    "Painted artwork reuses approved concepts; fine illustration details are interpreted while tile identities remain preserved."
+  ]
+}
