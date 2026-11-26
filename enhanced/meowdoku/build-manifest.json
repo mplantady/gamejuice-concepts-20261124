@@ -1,0 +1,43 @@
+{
+  "version": "meowdoku-expressive-20261126-v5",
+  "game": "Meowdoku!",
+  "variant": "Expressive Edition",
+  "runtime_files": [
+    "assets/cat-canonical.png",
+    "assets/cat-closed.png",
+    "assets/cat-look-left.png",
+    "assets/cat-look-right.png",
+    "assets/cat-wink.png",
+    "build-manifest.json",
+    "index.html",
+    "meowdoku-polish.js",
+    "version.json"
+  ],
+  "files": {
+    "assets/cat-canonical.png": "8e73b371762f63223c1b620e2c4ebae547f86faa62a31ab61ff69057aed7510a",
+    "assets/cat-closed.png": "e0d649edebb5bd54d38b8dd4e5958b65132f910091ae18d8c44f22f41861e6f3",
+    "assets/cat-look-left.png": "171d9eee6c1ecf8c8227392b6e7025b9c2784c2ff2b0aabc0b561c4a28ee109e",
+    "assets/cat-look-right.png": "7c27f9b5cfd37f285d87f6563d27a61bf6b7ac3c5004b1c4a0ed0961fd0d91b2",
+    "assets/cat-wink.png": "1bb2368f61b901d11b0ff5031a8c8667ecb135f8aea237ec0272c5b5bcca089e",
+    "index.html": "e7e9d84a27cc9c849b15c490cf164539e864357dc15572fce55f03ed3dd1853f",
+    "meowdoku-polish.js": "7a2d2f9a69b679f9648b9acb8f76df4822b89440633ef4d02b2e3dfadd51cd06",
+    "version.json": "bcf9073a226aca192019bc330d96a7c0ad44ef3f3626ed32aa2cb37b6443b6b8"
+  },
+  "preserved": [
+    "original tutorial and input semantics",
+    "region identities and board geometry",
+    "fish penalties and retained error marks",
+    "four-cat promotional cap"
+  ],
+  "enhancements": [
+    "articulated native cat expressions",
+    "event-specific local feedback",
+    "synchronized original samples and gentle accents",
+    "reduced-motion preference"
+  ],
+  "limitations": [
+    "Browser verification; no physical-device performance claim.",
+    "Promotional interaction cap preserved; no eight-cat victory recorded.",
+    "Actual soundtrack recorded and clipping checked. Perceptual listening review remains open because this session cannot hear audio."
+  ]
+}

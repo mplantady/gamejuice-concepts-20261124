@@ -2946,7 +2946,7 @@
         "prompt_available": true
       },
       "video_failure": null,
-      "enhanced_playable": null,
+      "enhanced_playable": "enhanced/meowdoku/index.html",
       "painted_playable": null,
       "painted_runtime_recording": null,
       "painted_comparison_recording": null,
@@ -3103,7 +3103,16 @@
         "prompt_available": true
       },
       "faithful_video_failure": null,
-      "faithful_comparison_video": null
+      "faithful_comparison_video": null,
+      "enhanced_playable_title": "Meowdoku! · Expressive Edition",
+      "runtime_comparison_video": "meowdoku/meowdoku-original-vs-expressive-v1.mp4",
+      "runtime_comparison_files": [
+        "meowdoku/index.html",
+        "meowdoku/comparison-poster.jpg",
+        "meowdoku/meowdoku-original-vs-expressive-v1.mp4"
+      ],
+      "runtime_comparison_page": "meowdoku/index.html",
+      "runtime_release_version": "meowdoku-expressive-20261126-v5"
     }
   ],
   "ready": 48,

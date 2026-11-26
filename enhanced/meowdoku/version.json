@@ -1,0 +1,34 @@
+{
+  "version": "meowdoku-expressive-20261126-v5",
+  "baseline_sha256": "aae0b226e7dd715af3334ee061322561560c337375b1bb13b5aa3884d7539773",
+  "files": {
+    "assets/cat-canonical.png": {
+      "sha256": "8e73b371762f63223c1b620e2c4ebae547f86faa62a31ab61ff69057aed7510a",
+      "bytes": 7298
+    },
+    "assets/cat-closed.png": {
+      "sha256": "e0d649edebb5bd54d38b8dd4e5958b65132f910091ae18d8c44f22f41861e6f3",
+      "bytes": 3523
+    },
+    "assets/cat-look-left.png": {
+      "sha256": "171d9eee6c1ecf8c8227392b6e7025b9c2784c2ff2b0aabc0b561c4a28ee109e",
+      "bytes": 3687
+    },
+    "assets/cat-look-right.png": {
+      "sha256": "7c27f9b5cfd37f285d87f6563d27a61bf6b7ac3c5004b1c4a0ed0961fd0d91b2",
+      "bytes": 3592
+    },
+    "assets/cat-wink.png": {
+      "sha256": "1bb2368f61b901d11b0ff5031a8c8667ecb135f8aea237ec0272c5b5bcca089e",
+      "bytes": 7075
+    },
+    "index.html": {
+      "sha256": "e7e9d84a27cc9c849b15c490cf164539e864357dc15572fce55f03ed3dd1853f",
+      "bytes": 2779681
+    },
+    "meowdoku-polish.js": {
+      "sha256": "7a2d2f9a69b679f9648b9acb8f76df4822b89440633ef4d02b2e3dfadd51cd06",
+      "bytes": 16643
+    }
+  }
+}
