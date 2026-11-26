@@ -1,0 +1,377 @@
+{
+  "game": "Cat Merge:Pet Game",
+  "version": "cat-painted-20261126-v1",
+  "checked": "2026-11-26T15:09:37.581Z",
+  "checks": [
+    {
+      "name": "Converted baseline and enhancement preserve deterministic gameplay, physics and RNG",
+      "passed": true
+    },
+    {
+      "name": "Legal two-drop sequence reaches original targets and coin totals",
+      "passed": true
+    },
+    {
+      "name": "Verified events drive presentation",
+      "passed": true
+    },
+    {
+      "name": "Deterministic runs have no browser errors",
+      "passed": true
+    },
+    {
+      "name": "Normal RAF startup remains playable while cat art loads",
+      "passed": true
+    },
+    {
+      "name": "Idle ear articulation changes independently at phone scale",
+      "passed": true
+    },
+    {
+      "name": "Aiming boundaries and release over controls preserve input behavior",
+      "passed": true
+    },
+    {
+      "name": "Reduced motion freezes cat articulation and decorative transforms",
+      "passed": true
+    },
+    {
+      "name": "Resuming motion does not catch up paused ambient time",
+      "passed": true
+    },
+    {
+      "name": "Natural RAF play reaches both map outcomes",
+      "passed": true
+    },
+    {
+      "name": "Loaded audio samples and event accents are available",
+      "passed": true
+    },
+    {
+      "name": "Natural startup, controls and gameplay have no errors",
+      "passed": true
+    },
+    {
+      "name": "Landscape startup respects system reduced-motion preference",
+      "passed": true
+    }
+  ],
+  "recordings": [
+    {
+      "kind": "original",
+      "actions": [
+        {
+          "x": 0.38,
+          "releaseMs": 2398
+        },
+        {
+          "x": 0.55,
+          "releaseMs": 8430
+        }
+      ],
+      "sourceSha256": "96d43a90f4c8759e3c9057aa4f09794ec88c1e2be7cef432454defddd1b0674a",
+      "final": {
+        "ready": true,
+        "map": 1,
+        "canOperate": false,
+        "launch": {
+          "tier": 11,
+          "merged": false,
+          "x": 0,
+          "y": 2.723846435546875,
+          "active": true
+        },
+        "cats": [
+          {
+            "map": 0,
+            "tier": 3,
+            "merged": false,
+            "x": -0.04124101996421814,
+            "y": -9.46764850616455,
+            "active": false
+          },
+          {
+            "map": 1,
+            "tier": 15,
+            "merged": false,
+            "x": -0.02571009285748005,
+            "y": -8.891477584838867,
+            "active": true
+          }
+        ],
+        "coins": 15000,
+        "targetCoins": 15000
+      },
+      "events": [
+        {
+          "t": 0.1,
+          "type": "observer-ready"
+        },
+        {
+          "t": 2462.3,
+          "type": "drop",
+          "tier": 1,
+          "x": -1.3015384674072266,
+          "y": 2.723846673965454,
+          "map": 0
+        },
+        {
+          "t": 3296.8,
+          "type": "merge",
+          "from": 1,
+          "to": 2,
+          "map": 0
+        },
+        {
+          "t": 3682.9,
+          "type": "map-complete",
+          "map": 0,
+          "tier": 3
+        },
+        {
+          "t": 3682.9,
+          "type": "merge",
+          "from": 2,
+          "to": 3,
+          "map": 0
+        },
+        {
+          "t": 8494,
+          "type": "drop",
+          "tier": 11,
+          "x": 0.5261538624763489,
+          "y": 2.723846435546875,
+          "map": 1
+        },
+        {
+          "t": 9162.2,
+          "type": "merge",
+          "from": 11,
+          "to": 12,
+          "map": 1
+        },
+        {
+          "t": 9470.9,
+          "type": "merge",
+          "from": 12,
+          "to": 13,
+          "map": 1
+        },
+        {
+          "t": 10495.3,
+          "type": "merge",
+          "from": 13,
+          "to": 14,
+          "map": 1
+        },
+        {
+          "t": 10645.9,
+          "type": "map-complete",
+          "map": 1,
+          "tier": 15
+        },
+        {
+          "t": 10645.9,
+          "type": "merge",
+          "from": 14,
+          "to": 15,
+          "map": 1
+        }
+      ],
+      "cadence": {
+        "averageFps": 58.61339052074249,
+        "p95ms": 16.799999999999272
+      }
+    },
+    {
+      "kind": "painted",
+      "actions": [
+        {
+          "x": 0.38,
+          "releaseMs": 2372
+        },
+        {
+          "x": 0.55,
+          "releaseMs": 8373
+        }
+      ],
+      "sourceSha256": "95374d2e7c7f3e008177a6902443bdd2aef16cf8d50a445f0e0c9cf3762cb0c6",
+      "final": {
+        "time": 21.633333333333386,
+        "map": 1,
+        "canOperate": false,
+        "coins": 15000,
+        "finish": true,
+        "launch": 11,
+        "bodies": [
+          {
+            "tier": 15,
+            "x": 0.06471786070643563,
+            "y": -7.235958934868198,
+            "a": 0,
+            "type": "dynamic"
+          }
+        ]
+      },
+      "events": [
+        {
+          "kind": "aim",
+          "tier": 1,
+          "t": 5.749999999999985,
+          "p": [
+            -0.10799983097956732,
+            2.7238463827279933
+          ]
+        },
+        {
+          "kind": "launch",
+          "tier": 1,
+          "t": 6.099999999999984,
+          "p": [
+            -1.2960000845102164,
+            2.7238463827279933
+          ]
+        },
+        {
+          "kind": "merge",
+          "tier": 2,
+          "t": 6.966666666666647,
+          "p": [
+            -1.2392021670270468,
+            -9.957229369882834
+          ]
+        },
+        {
+          "kind": "complete",
+          "tier": 3,
+          "t": 7.266666666666646,
+          "p": [
+            -0.29360641770110624,
+            -10.396326749837128
+          ]
+        },
+        {
+          "kind": "merge",
+          "tier": 3,
+          "t": 7.266666666666646,
+          "p": [
+            -0.29360641770110624,
+            -10.39632674983713
+          ]
+        },
+        {
+          "kind": "aim",
+          "tier": 11,
+          "t": 11.666666666666826,
+          "p": [
+            0.045000000000000005,
+            2.7238463827279933
+          ]
+        },
+        {
+          "kind": "launch",
+          "tier": 11,
+          "t": 12.016666666666843,
+          "p": [
+            0.54,
+            2.7238463827279933
+          ]
+        },
+        {
+          "kind": "merge",
+          "tier": 12,
+          "t": 12.683333333333543,
+          "p": [
+            0.8018119193774191,
+            -6.6499992827903744
+          ]
+        },
+        {
+          "kind": "merge",
+          "tier": 13,
+          "t": 12.883333333333553,
+          "p": [
+            -0.13459403029771044,
+            -7.2984866018740275
+          ]
+        },
+        {
+          "kind": "contact",
+          "tier": 14,
+          "t": 13.066666666666896,
+          "p": [
+            0.6707192988648331,
+            -8.472959184827873
+          ]
+        },
+        {
+          "kind": "merge",
+          "tier": 14,
+          "t": 13.933333333333605,
+          "p": [
+            -1.266746860278481,
+            -8.801842426398018
+          ]
+        },
+        {
+          "kind": "complete",
+          "tier": 15,
+          "t": 14.083333333333613,
+          "p": [
+            0.04647116608650603,
+            -9.285631258978402
+          ]
+        },
+        {
+          "kind": "merge",
+          "tier": 15,
+          "t": 14.083333333333613,
+          "p": [
+            0.04647116608650603,
+            -9.285631258978402
+          ]
+        }
+      ],
+      "cadence": {
+        "averageFps": 55.108520967374204,
+        "p95ms": 16.799999999999272
+      }
+    }
+  ],
+  "video": {
+    "file": "cat-merge-original-vs-painted-v1.mp4",
+    "sha256": "8dd53f5d78ee51e37d85e01d0da3b806894659cce9d80cb5047b49f02c5799c5",
+    "bytes": 9675923,
+    "method": "Authentic original and enhanced playables at natural speed. Identical two pointer drops; separate real-time playthroughs. Improved runtime audio.",
+    "duration": "18.013333",
+    "streams": [
+      {
+        "codec_type": "video",
+        "codec_name": "h264",
+        "width": 812,
+        "height": 936,
+        "avg_frame_rate": "30/1"
+      },
+      {
+        "codec_type": "audio",
+        "codec_name": "aac",
+        "avg_frame_rate": "0/0",
+        "sample_rate": "48000",
+        "channels": 2
+      }
+    ]
+  },
+  "limitations": [
+    "Headless Chromium with software WebGL; not a physical device performance test.",
+    "Deterministic parity harness holds RAF only for the parity check. Separate normal-startup checks use natural RAF.",
+    "Existing converted physics is approximate relative to original Unity/Luna; the same tier chains and results are verified.",
+    "Small playback-preference buttons are outside the canvas recording; game HUD and real effects are recorded."
+  ],
+  "audioReview": {
+    "capturedRuntimeAudio": true,
+    "peakDbFS": -2.3,
+    "meanDbFS": -18.1,
+    "clippingDetected": false,
+    "subjectiveListening": "Not independently confirmed; audio input and local playback unavailable in this environment."
+  }
+}

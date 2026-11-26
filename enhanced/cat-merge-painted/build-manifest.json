@@ -1,0 +1,53 @@
+{
+  "version": "cat-painted-20261126-v1",
+  "game": "Cat Merge:Pet Game",
+  "variant": "Painted Edition",
+  "runtime_files": [
+    "index.html",
+    "polish.css",
+    "assets/cat-2.png",
+    "assets/cat-13.png",
+    "assets/cat-1.png",
+    "assets/cat-3.png",
+    "assets/cat-12.png",
+    "assets/cat-11.png",
+    "assets/cat-15.png",
+    "assets/cat-14.png",
+    "assets/wall-painted.png",
+    "assets/brick-painted.png",
+    "build-manifest.json"
+  ],
+  "base_sha256": "32830ec0dd5494319d08d264b2f047273a1081bc702e4fb9d65bce56791fe805",
+  "files": {
+    "index.html": "95374d2e7c7f3e008177a6902443bdd2aef16cf8d50a445f0e0c9cf3762cb0c6",
+    "polish.css": "7b038598fde8e8658cc9a84a68f4ce8ea064e3fe665712ffb2068276f20a6e6b",
+    "assets/cat-2.png": "59f6fc274db4341fa672eefefb46421b79fe8859a3a090688003c3bafc98d0d8",
+    "assets/cat-13.png": "b3ec52bb53db9be5ec4f014f20de1a96105fce6ed76c026c979daccab55a2261",
+    "assets/cat-1.png": "698daad33048ce849df38633a6fba91c0f8c8a05d8f9ced8a4d65286b2c15a6e",
+    "assets/cat-3.png": "4921eef8ad9f88e7b72b6a776d30de2d36d1e0ff6b7ec9bdb6635081dcdb0af7",
+    "assets/cat-12.png": "23dba09fea34dd880968b36d18296faae571d21e733e21434e26e7d4edfc9627",
+    "assets/cat-11.png": "28fcda9345a187900ddacadf68e7afbe55ab0a265c55c6758e79f52abe002ea0",
+    "assets/cat-15.png": "b4b9a83146663049f7c52adf50574a162cedf7d6357605d65f21817c3f9a5bcb",
+    "assets/cat-14.png": "23cce6d63988290dae06cab42fa59a5e791488082171a95a6d8140aaff007755",
+    "assets/wall-painted.png": "c4950208adbcb944f785780d686b9e8b58a8224bdc7752d77aac54969bca3e5c",
+    "assets/brick-painted.png": "2cb0eecde4be7e94fe35814f9da68debe63c46200303172024d66e5de5ab47a0"
+  },
+  "preserved": [
+    "original converted physics and timestep",
+    "role tiers and merge conditions",
+    "input and launch cooldown",
+    "map targets and coin values",
+    "HUD and store behavior"
+  ],
+  "enhancements": [
+    "eight painted cat sprites",
+    "independent ear and face mesh articulation",
+    "real-event pile reactions",
+    "aim, drop, contact, merge and completion feedback",
+    "original sampled audio with event accents",
+    "mute and reduced motion preferences"
+  ],
+  "limitations": [
+    "Browser conversion uses an existing approximate physics solver; it is not identical to original Luna physics."
+  ]
+}
