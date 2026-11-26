@@ -1,7 +1,7 @@
 {
   "game": "Draft Showdown",
   "variant": "Painted Edition",
-  "version": "draft-painted-living-arena-20261125-v3",
+  "version": "draft-painted-reactive-king-20261126-v4",
   "direction": "Approved warm painted animation-film restyle, with existing playable rules and articulated animation",
   "runtime_files": [
     "index.html",
@@ -50,11 +50,13 @@
     "assets/production/ambience-v3/crowd-pockets-v3.webp",
     "assets/production/ambience-v3/sand-clean.webp",
     "assets/production/ambience-v3/tree-shadow.webp",
+    "assets/production/king-v4/king-parts.webp",
+    "assets/production/king-v4/king-throne-clean.webp",
     "build-manifest.json"
   ],
   "base_sha256": "6fb3d5d4d460a8b52b36b48dc236345a8090b0cbf5497c738486a1b555c6c214",
   "files": {
-    "index.html": "e350900c1f8fde04c69a037851f351d736a3bf10ba28654a1c437247ed86a6bd",
+    "index.html": "7137a39099b74e7ab4f39a6a16af7dd4b0eb4c115f1a89ebd2c83d79fd80010a",
     "polish.css": "00d19aefc21daea4825adba038e923fbc463e27d245cf9c6acac426d69a326e8",
     "assets/production/painted-arena.webp": "3c8a45f1b7302c58830ac0856684d0c27b7977547165f841f0802af0b1664f45",
     "assets/production/painted-parts.webp": "c7690c2baa8b96fd4c4dc97bcff63383236c363f2a35334abfd01d9339d1c96c",
@@ -99,7 +101,9 @@
     "assets/production/ambience-v3/right-17-frames.webp": "4274a01a2d326bfa9c82dab22c8ee7b6fec3e2fd83717dd42d91c4acb6a10b08",
     "assets/production/ambience-v3/crowd-pockets-v3.webp": "8ef9850b3f20e9fbc704924197cd40ba314127c7424826b8cd6ad97960d78442",
     "assets/production/ambience-v3/sand-clean.webp": "2628e09e45ae31c828a17cdf557e574b57a7c6a6f9200aa8f69fc5720ff25a8b",
-    "assets/production/ambience-v3/tree-shadow.webp": "6dfff4d7d120c3107632f38bdbf5436bcc1ce92d3622127bd62b368f5f2b4011"
+    "assets/production/ambience-v3/tree-shadow.webp": "6dfff4d7d120c3107632f38bdbf5436bcc1ce92d3622127bd62b368f5f2b4011",
+    "assets/production/king-v4/king-parts.webp": "50251c4792410d00ab0b0b969289577f7ac2f6a0f4a59c6080192bb3b4ca2004",
+    "assets/production/king-v4/king-throne-clean.webp": "a03eb42262dd67180cce1348774a06df5e4d72ca22fe90e9dcd29df6fdfe2b53"
   },
   "preserved": [
     "draft quantities and hit areas",
@@ -116,6 +120,7 @@
     "individual audience sprites extracted at their original painted scale",
     "independently swaying environmental shadows over stationary sand",
     "pose-driven directional unit shadows",
+    "articulated king reacting to battle starts, explosions and real round and match results",
     "reduced motion and sound controls"
   ],
   "art": {
@@ -202,6 +207,14 @@
       "production/ambience-v3/crowd-pockets-v3.webp",
       "production/ambience-v3/sand-clean.webp",
       "production/ambience-v3/tree-shadow.webp"
+    ]
+  },
+  "king": {
+    "version": "painted-king-v4",
+    "parts": 5,
+    "files": [
+      "production/king-v4/king-parts.webp",
+      "production/king-v4/king-throne-clean.webp"
     ]
   }
 }
