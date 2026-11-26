@@ -884,7 +884,7 @@
         "prompt_available": true
       },
       "video_failure": null,
-      "enhanced_playable": null,
+      "enhanced_playable": "enhanced/goods-puzzle-atelier/index.html",
       "painted_playable": null,
       "painted_runtime_recording": null,
       "painted_comparison_recording": null,
@@ -981,7 +981,82 @@
         "prompt_available": true
       },
       "faithful_video_failure": null,
-      "faithful_comparison_video": null
+      "faithful_comparison_video": null,
+      "enhanced_playable_title": "Goods Puzzle — Miniature Atelier",
+      "playable_release": {
+        "slug": "goods-puzzle",
+        "version": "goods-atelier-2.0.0",
+        "title": "Goods Puzzle — Miniature Atelier",
+        "playable": "enhanced/goods-puzzle-atelier/index.html",
+        "comparison": "atelier/goods-puzzle/index.html",
+        "video": "atelier/goods-puzzle/original-vs-atelier.mp4",
+        "poster": "atelier/goods-puzzle/poster.jpg",
+        "runtime_image": "atelier/goods-puzzle/atelier-playable.png",
+        "concept_studies": [
+          "atelier/goods-puzzle/concept-study-a.png",
+          "atelier/goods-puzzle/concept-study-b.png"
+        ],
+        "method": "Separate authentic playthroughs, same 17 legal drags, normal speed",
+        "limitations": [
+          "Desktop Chromium verification; physical-device performance has not been measured.",
+          "The sound mix was captured and measured without clipping; subjective listening and perceptual audiovisual synchronization remain unreviewed.",
+          "Articulated heads and arms are implemented; separate facial expression, blink and independent ear tracks are not implemented. The film/AAA references are craft benchmarks, not a parity claim."
+        ],
+        "sound_review": {
+          "subjectiveAuditionCompleted": false,
+          "avSynchronizationApproved": false
+        },
+        "gallery_runtime_release": {
+          "version": "goods-atelier-2.0.0",
+          "label": "Goods Puzzle — Miniature Atelier",
+          "playable": "enhanced/goods-puzzle-atelier/index.html",
+          "video": {
+            "file": "atelier/goods-puzzle/original-vs-atelier.mp4",
+            "poster": "atelier/goods-puzzle/poster.jpg",
+            "duration": 40,
+            "audio": "Improved playable’s captured soundtrack",
+            "method": "Separate authentic playthroughs, same 17 legal drags, normal speed",
+            "review": "Eight encoded frames at1,2.7,3.1,27.3,27.7,29.5,32 and36.5s reviewed. Both authentic390×694playables preserve the full40s timeline, same17legal drags and ten source-equivalent matches. Original left, Miniature Atelier right. Native-size merchandise, selected articulated poses, shadows, legible shutters and actual local event effects remain readable; no missing startup interval or invented result. Timing and normal-speed cadence verified from captured frames/inputs and encoded stream metadata.",
+            "width": 808,
+            "height": 790
+          },
+          "supersedes": [
+            "goods-painted-1.0.0"
+          ],
+          "previous_editions": []
+        }
+      },
+      "runtime_release": {
+        "version": "goods-atelier-2.0.0",
+        "label": "Goods Puzzle — Miniature Atelier",
+        "playable": "enhanced/goods-puzzle-atelier/index.html",
+        "video": {
+          "file": "atelier/goods-puzzle/original-vs-atelier.mp4",
+          "poster": "atelier/goods-puzzle/poster.jpg",
+          "duration": 40,
+          "audio": "Improved playable’s captured soundtrack",
+          "method": "Separate authentic playthroughs, same 17 legal drags, normal speed",
+          "review": "Eight encoded frames at1,2.7,3.1,27.3,27.7,29.5,32 and36.5s reviewed. Both authentic390×694playables preserve the full40s timeline, same17legal drags and ten source-equivalent matches. Original left, Miniature Atelier right. Native-size merchandise, selected articulated poses, shadows, legible shutters and actual local event effects remain readable; no missing startup interval or invented result. Timing and normal-speed cadence verified from captured frames/inputs and encoded stream metadata.",
+          "width": 808,
+          "height": 790
+        },
+        "supersedes": [
+          "goods-painted-1.0.0"
+        ],
+        "previous_editions": []
+      },
+      "runtime_release_version": "goods-atelier-2.0.0",
+      "runtime_comparison_video": "atelier/goods-puzzle/original-vs-atelier.mp4",
+      "runtime_comparison_page": "atelier/goods-puzzle/index.html",
+      "runtime_comparison_files": [
+        "atelier/goods-puzzle/atelier-playable.png",
+        "atelier/goods-puzzle/concept-study-a.png",
+        "atelier/goods-puzzle/concept-study-b.png",
+        "atelier/goods-puzzle/index.html",
+        "atelier/goods-puzzle/original-vs-atelier.mp4",
+        "atelier/goods-puzzle/poster.jpg",
+        "atelier/goods-puzzle/release.json"
+      ]
     },
     {
       "slug": "cat-merge",
