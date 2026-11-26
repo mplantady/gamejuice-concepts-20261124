@@ -1,7 +1,7 @@
 {
   "game": "Cat Merge:Pet Game",
-  "version": "cat-painted-20261126-v1",
-  "checked": "2026-11-26T15:09:37.581Z",
+  "version": "cat-painted-20261126-v2",
+  "checked": "2026-11-26T16:46:58.791Z",
   "checks": [
     {
       "name": "Converted baseline and enhancement preserve deterministic gameplay, physics and RNG",
@@ -24,7 +24,15 @@
       "passed": true
     },
     {
-      "name": "Idle ear articulation changes independently at phone scale",
+      "name": "All redesigned cat poses and painted environment surfaces load and reach the renderer",
+      "passed": true
+    },
+    {
+      "name": "Idle performance visibly articulates ears and face with stable lower contact",
+      "passed": true
+    },
+    {
+      "name": "Joy poses are reserved for real merge or completion events",
       "passed": true
     },
     {
@@ -40,7 +48,19 @@
       "passed": true
     },
     {
+      "name": "A real merge switches to authored joy textures in the actual renderer",
+      "passed": true
+    },
+    {
+      "name": "Painted chest and animated coins bind to actual result materials",
+      "passed": true
+    },
+    {
       "name": "Natural RAF play reaches both map outcomes",
+      "passed": true
+    },
+    {
+      "name": "Final tier keeps its authored joy pose after verified completion",
       "passed": true
     },
     {
@@ -49,6 +69,10 @@
     },
     {
       "name": "Natural startup, controls and gameplay have no errors",
+      "passed": true
+    },
+    {
+      "name": "Reduced motion suppresses decorative result fireworks while retaining outcome",
       "passed": true
     },
     {
@@ -188,16 +212,16 @@
       "actions": [
         {
           "x": 0.38,
-          "releaseMs": 2372
+          "releaseMs": 2376
         },
         {
           "x": 0.55,
-          "releaseMs": 8373
+          "releaseMs": 8376
         }
       ],
-      "sourceSha256": "95374d2e7c7f3e008177a6902443bdd2aef16cf8d50a445f0e0c9cf3762cb0c6",
+      "sourceSha256": "fab4d4118f22e8720857ab0b34ebf784df2a79788e3f49d2778e28fcaf315005",
       "final": {
-        "time": 21.633333333333386,
+        "time": 21.81666666666671,
         "map": 1,
         "canOperate": false,
         "coins": 15000,
@@ -217,7 +241,7 @@
         {
           "kind": "aim",
           "tier": 1,
-          "t": 5.749999999999985,
+          "t": 5.916666666666651,
           "p": [
             -0.10799983097956732,
             2.7238463827279933
@@ -226,7 +250,7 @@
         {
           "kind": "launch",
           "tier": 1,
-          "t": 6.099999999999984,
+          "t": 6.26666666666665,
           "p": [
             -1.2960000845102164,
             2.7238463827279933
@@ -235,34 +259,34 @@
         {
           "kind": "merge",
           "tier": 2,
-          "t": 6.966666666666647,
+          "t": 7.133333333333313,
           "p": [
-            -1.2392021670270468,
-            -9.957229369882834
+            -1.2316885705685512,
+            -9.874420310345158
           ]
         },
         {
           "kind": "complete",
           "tier": 3,
-          "t": 7.266666666666646,
+          "t": 7.449999999999979,
           "p": [
-            -0.29360641770110624,
-            -10.396326749837128
+            -0.2969621596487416,
+            -10.419086225840216
           ]
         },
         {
           "kind": "merge",
           "tier": 3,
-          "t": 7.266666666666646,
+          "t": 7.449999999999979,
           "p": [
-            -0.29360641770110624,
-            -10.39632674983713
+            -0.2969621596487416,
+            -10.419086225840216
           ]
         },
         {
           "kind": "aim",
           "tier": 11,
-          "t": 11.666666666666826,
+          "t": 11.850000000000168,
           "p": [
             0.045000000000000005,
             2.7238463827279933
@@ -271,7 +295,7 @@
         {
           "kind": "launch",
           "tier": 11,
-          "t": 12.016666666666843,
+          "t": 12.200000000000186,
           "p": [
             0.54,
             2.7238463827279933
@@ -280,7 +304,7 @@
         {
           "kind": "merge",
           "tier": 12,
-          "t": 12.683333333333543,
+          "t": 12.883333333333553,
           "p": [
             0.8018119193774191,
             -6.6499992827903744
@@ -289,7 +313,7 @@
         {
           "kind": "merge",
           "tier": 13,
-          "t": 12.883333333333553,
+          "t": 13.083333333333563,
           "p": [
             -0.13459403029771044,
             -7.2984866018740275
@@ -298,7 +322,7 @@
         {
           "kind": "contact",
           "tier": 14,
-          "t": 13.066666666666896,
+          "t": 13.266666666666906,
           "p": [
             0.6707192988648331,
             -8.472959184827873
@@ -307,7 +331,7 @@
         {
           "kind": "merge",
           "tier": 14,
-          "t": 13.933333333333605,
+          "t": 14.133333333333615,
           "p": [
             -1.266746860278481,
             -8.801842426398018
@@ -316,7 +340,7 @@
         {
           "kind": "complete",
           "tier": 15,
-          "t": 14.083333333333613,
+          "t": 14.283333333333623,
           "p": [
             0.04647116608650603,
             -9.285631258978402
@@ -325,7 +349,7 @@
         {
           "kind": "merge",
           "tier": 15,
-          "t": 14.083333333333613,
+          "t": 14.283333333333623,
           "p": [
             0.04647116608650603,
             -9.285631258978402
@@ -333,17 +357,24 @@
         }
       ],
       "cadence": {
-        "averageFps": 55.108520967374204,
-        "p95ms": 16.799999999999272
+        "averageFps": 55.553701911848115,
+        "p95ms": 16.800000000000182
       }
     }
   ],
   "video": {
-    "file": "cat-merge-original-vs-painted-v1.mp4",
-    "sha256": "8dd53f5d78ee51e37d85e01d0da3b806894659cce9d80cb5047b49f02c5799c5",
-    "bytes": 9675923,
+    "version": "cat-painted-20261126-v2",
+    "file": "cat-merge-original-vs-painted-v2.mp4",
+    "sourceBuildSha256": "fab4d4118f22e8720857ab0b34ebf784df2a79788e3f49d2778e28fcaf315005",
+    "sha256": "cf326b8a62e4b41778dc0a060b408da12173cd3818e82e89e7ffafcf7f6c5a41",
+    "bytes": 9848429,
     "method": "Authentic original and enhanced playables at natural speed. Identical two pointer drops; separate real-time playthroughs. Improved runtime audio.",
-    "duration": "18.013333",
+    "duration": "18.010333",
+    "audioMeasurements": {
+      "peakDbFS": -2.1,
+      "meanDbFS": -18.0,
+      "subjectiveListening": "Not independently auditioned: this environment does not support audio input. Existing sound design was retained; recorded levels and sample availability checked."
+    },
     "streams": [
       {
         "codec_type": "video",
@@ -361,6 +392,16 @@
       }
     ]
   },
+  "visualReview": {
+    "accepted": true,
+    "phoneSize": "390x844",
+    "art": "Substantially redesigned feline faces, coat-preserving painted shading, fur silhouettes, six painted surface/reward assets; source layout remains intact.",
+    "animation": "Independent ears, gaze, squint, whisker follow-through, stable chin anchor, authored joy textures on real merge/completion; final joyful face persists. Runtime opaque-geometry movement reaches 6.95 display pixels.",
+    "recordedReview": "Reviewed actual encoded initial, falling, merge, map2 chain and end frames. New joy poses are visible on real merge events. Both clips show authentic HUD and outcomes. No blank GPU canvas or wallpaper seams.",
+    "independentReview": "Asset agent reviewed final phone, map2, merge, end and landscape screenshots; no concrete visual blocker.",
+    "occlusion": "Ending reward panel covers the final cat\u2019s upper ears/forehead; its happy eyes and mouth remain visible.",
+    "fixes": "Replaced source repeating wallpaper UVs with one full painting on the existing plane; verified startup and reset after correction."
+  },
   "limitations": [
     "Headless Chromium with software WebGL; not a physical device performance test.",
     "Deterministic parity harness holds RAF only for the parity check. Separate normal-startup checks use natural RAF.",
@@ -368,10 +409,11 @@
     "Small playback-preference buttons are outside the canvas recording; game HUD and real effects are recorded."
   ],
   "audioReview": {
+    "peakDbFS": -2.1,
+    "meanDbFS": -18.0,
+    "subjectiveListening": "Not independently auditioned: this environment does not support audio input. Existing sound design was retained; recorded levels and sample availability checked.",
+    "retainedAcceptedV1Sound": true,
     "capturedRuntimeAudio": true,
-    "peakDbFS": -2.3,
-    "meanDbFS": -18.1,
-    "clippingDetected": false,
-    "subjectiveListening": "Not independently confirmed; audio input and local playback unavailable in this environment."
+    "clippingDetected": false
   }
 }
