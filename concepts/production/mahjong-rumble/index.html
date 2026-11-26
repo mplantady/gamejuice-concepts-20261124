@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <meta name="description" content="Mahjong Rumble: real original-versus-improved gameplay, with painted tiles, articulated symbol reactions and synchronized ceramic sound.">
+  <title>Mahjong Rumble — Real gameplay comparison</title>
+  <style>
+    :root{color-scheme:dark;--bg:#081c17;--panel:#102a22;--line:#315044;--ink:#f1eddf;--muted:#b3c5b8;--gold:#e4c577;--mint:#a5d6b5}
+    *{box-sizing:border-box}
+    body{margin:0;background:radial-gradient(ellipse at 10% 0,#183a2d 0,transparent 52%),var(--bg);color:var(--ink);font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.55}
+    a{color:inherit;text-decoration-thickness:1px;text-underline-offset:4px}
+    a:focus-visible,button:focus-visible,video:focus-visible,summary:focus-visible{outline:3px solid var(--gold);outline-offset:5px}
+    .wrap{max-width:1240px;margin:auto;padding:28px 28px 48px}
+    nav{display:flex;justify-content:space-between;align-items:center;gap:20px;margin-bottom:40px;font-size:.85rem;color:var(--muted)}
+    .brand{text-decoration:none;letter-spacing:.13em;text-transform:uppercase;color:var(--gold);font-weight:700;font-size:.76rem}
+    .eyebrow{margin:0 0 10px;font-size:.72rem;letter-spacing:.15em;font-weight:700;text-transform:uppercase;color:var(--mint)}
+    h1{font-size:clamp(2rem,4vw,3.15rem);line-height:1.08;font-weight:650;letter-spacing:-.045em;margin:0 0 16px}
+    .intro{max-width:730px;margin:0;color:var(--muted);font-size:1.05rem}
+    .title-row{display:flex;gap:28px;align-items:flex-end;justify-content:space-between;margin-bottom:30px}
+    .button{display:inline-flex;align-items:center;justify-content:center;min-height:46px;padding:10px 19px;border:1px solid #8bb198;border-radius:8px;background:#b4d9b9;color:#122d21;text-decoration:none;font-size:.88rem;font-weight:700;white-space:nowrap}
+    .button:hover{background:#c6e5c7}
+    .comparison{display:grid;grid-template-columns:minmax(0,3fr) minmax(190px,1fr);gap:24px;align-items:start}
+    figure{margin:0}
+    .video-shell{overflow:hidden;border:1px solid var(--line);border-radius:12px;background:#06130f}
+    .media-label{display:flex;justify-content:space-between;gap:10px;align-items:center;padding:12px 17px;border-bottom:1px solid var(--line);font-size:.77rem;color:var(--muted)}
+    .media-label strong{color:var(--ink);font-weight:650}
+    .live-dot{display:inline-block;width:6px;height:6px;margin-right:7px;border-radius:50%;background:var(--mint)}
+    video{display:block;width:100%;aspect-ratio:808/980;background:#06130f;object-fit:contain}
+    .video-caption{padding:15px 17px 17px;border-top:1px solid var(--line);color:var(--muted);font-size:.84rem}
+    .video-caption p{margin:0}.video-caption p+p{margin-top:5px}
+    .reference{border:1px solid var(--line);border-radius:12px;overflow:hidden;background:var(--panel)}
+    .reference h2{font-size:.84rem;font-weight:650;margin:0;padding:12px 15px;border-bottom:1px solid var(--line)}
+    .reference img{display:block;width:100%;height:auto}
+    .reference figcaption{padding:12px 15px;color:var(--muted);font-size:.78rem}
+    .reference a{display:block}
+    .features{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;margin:30px 0;padding:25px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+    .feature h2{font-size:.9rem;line-height:1.35;font-weight:650;margin:0 0 8px;color:var(--gold)}
+    .feature p{font-size:.84rem;color:var(--muted);margin:0}
+    .notes{display:flex;align-items:start;gap:22px;justify-content:space-between;font-size:.84rem;color:var(--muted)}
+    .notes p{max-width:700px;margin:0}
+    .notes a{white-space:nowrap}
+    details{margin-top:18px;color:var(--muted);font-size:.78rem}
+    summary{cursor:pointer;padding:8px 0}
+    .improved-still{margin-top:8px;border:1px solid var(--line);border-radius:10px;overflow:hidden;background:var(--panel)}
+    .improved-still img{display:block;width:100%;height:auto}
+    .improved-still figcaption{padding:10px 12px}
+    footer{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-top:36px;color:#8ca899;font-size:.74rem}
+    @media(max-width:760px){.wrap{padding:22px 18px 32px}nav{margin-bottom:28px}.title-row{display:block}.title-row .button{margin-top:22px}.comparison{grid-template-columns:1fr;gap:22px}.reference-column{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:16px;align-items:start}.reference h2{font-size:.8rem}.reference figcaption{font-size:.73rem}details{margin:0}.features{gap:16px;grid-template-columns:1fr}.notes{display:block}.notes a{display:inline-block;margin-top:16px}.media-label{padding:10px 12px;font-size:.7rem}.video-caption{padding:12px;font-size:.8rem}}
+    @media(max-width:440px){.reference-column{grid-template-columns:1fr}.reference{max-width:290px;margin:0 auto}details{max-width:290px;width:100%;margin:0 auto}nav{font-size:.78rem;gap:12px}}
+    @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto}}
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <nav aria-label="Gallery navigation">
+      <a class="brand" href="../../index.html#mahjong-rumble">GameJuice</a>
+      <a href="../../index.html#mahjong-rumble">Back to concepts &amp; studies</a>
+    </nav>
+    <header class="title-row">
+      <div>
+        <p class="eyebrow">Real gameplay comparison</p>
+        <h1>Mahjong Rumble</h1>
+        <p class="intro">Painted ceramic tiles, expressive symbol reactions and tactile sound—shown through the same actions in both playables.</p>
+      </div>
+      <a class="button" href="../../../enhanced/mahjong-rumble-painted/index.html?v=mahjong-painted-20261126-v1">Play the improved version <span aria-hidden="true">&nbsp;↗</span></a>
+    </header>
+
+    <section class="comparison" aria-label="Recorded gameplay and original reference">
+      <figure class="video-shell">
+        <div class="media-label"><strong><span class="live-dot" aria-hidden="true"></span>Actual playable recordings</strong><span>Original / Improved</span></div>
+        <video controls playsinline preload="metadata" poster="comparison-poster.jpg" aria-label="Original versus improved Mahjong Rumble, real gameplay at normal speed" aria-describedby="video-caption">
+          <source src="mahjong-rumble-original-vs-improved.mp4" type="video/mp4">
+          Your browser cannot play this video. <a href="mahjong-rumble-original-vs-improved.mp4">Download the gameplay comparison.</a>
+        </video>
+        <figcaption class="video-caption" id="video-caption">
+          <p>Separate playthroughs use the same legal tile selections at normal speed. The comparison uses the improved soundtrack.</p>
+          <p>The original illustrative amounts may vary between playthroughs.</p>
+        </figcaption>
+      </figure>
+      <aside class="reference-column" aria-label="Reference images">
+        <figure class="reference">
+          <h2>Original reference</h2>
+          <a href="original.jpg" aria-label="Open the original Mahjong Rumble screenshot"><img src="original.jpg" width="390" height="844" alt="Original Mahjong Rumble tutorial with ivory tiles on a dark green board and three highlighted bird tiles."></a>
+          <figcaption>The source image stays alongside the recorded comparison.</figcaption>
+        </figure>
+        <details>
+          <summary>View the improved gameplay still</summary>
+          <figure class="improved-still">
+            <a href="improved.jpg" aria-label="Open the improved Mahjong Rumble gameplay still"><img src="improved.jpg" width="390" height="844" loading="lazy" alt="Improved Mahjong Rumble playable with painted ceramic tiles and the original game layout."></a>
+            <figcaption>Captured from the improved playable.</figcaption>
+          </figure>
+        </details>
+      </aside>
+    </section>
+
+    <section class="features" aria-label="What changed">
+      <article class="feature"><h2>Painted ceramic tiles</h2><p>Warm ivory, a shallow jade edge, and richer pigment preserve the original symbols and functional colors.</p></article>
+      <article class="feature"><h2>Local symbol reactions</h2><p>Separate bird wings and crests respond within their tiles, with clear selection and matching reactions.</p></article>
+      <article class="feature"><h2>Ceramic chimes &amp; clear feedback</h2><p>Tactile taps, mismatch cues and compact match accents follow actual actions and results.</p></article>
+    </section>
+    <div class="notes">
+      <p>Four matching triples lead into the existing ad ending. This sequence preserves that flow; it does not clear the whole board. The source footer remains visible in the recordings.</p>
+      <a href="mahjong-rumble-original-vs-improved.mp4" download>Download comparison video</a>
+    </div>
+    <footer><span>Mahjong Rumble: Win Real Cash · GameJuice</span><span>Playable release: mahjong-painted-20261126-v1</span></footer>
+  </main>
+</body>
+</html>

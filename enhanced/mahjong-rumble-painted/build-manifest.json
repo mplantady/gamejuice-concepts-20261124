@@ -1,0 +1,67 @@
+{
+  "version": "mahjong-painted-20261126-v1",
+  "game": "Mahjong Rumble: Win Real Cash",
+  "variant": "Painted Edition",
+  "runtime_files": [
+    "assets/bamboo.png",
+    "assets/bird-body.png",
+    "assets/bird-crest.png",
+    "assets/bird-wing.png",
+    "assets/dots.png",
+    "assets/fa.png",
+    "assets/flower.png",
+    "assets/header-labels.png",
+    "assets/tile.png",
+    "audio.js",
+    "index.html",
+    "runtime.js",
+    "build-manifest.json"
+  ],
+  "files": {
+    "assets/bamboo.png": "6d6323f25078aa66930aeaf27330d4e8371408c871576d80ea18bea88cc61a2a",
+    "assets/bird-body.png": "95c6f1d5c213f62dd1ba59e936d6c2ae9bf95921a99bc8416cd8cb5e26f5a932",
+    "assets/bird-crest.png": "538ea72cfe22608098b25f7fe5684e1fa21be4ed51f10db42818c545bc7baf60",
+    "assets/bird-wing.png": "8540690495b5f910d5373eb22f0571ce3b52160eeacdc3af904d49d877a16b78",
+    "assets/dots.png": "0792a43daddec84b90b5121b085cc6958172324e85ad195dc668ff8a9eb53c8b",
+    "assets/fa.png": "7d443b62e457a7d7de161a7a59c5de294c44a704b325b48a96e969a72643c7f7",
+    "assets/flower.png": "800a963f3297e50045c6faaed9436b847338ba423d19d0fb24aa2bb89e85758d",
+    "assets/header-labels.png": "11cf79ce594c251c8811d8ad50a69795a3b8899b729eb01612a3229cd9c8f355",
+    "assets/tile.png": "8063e783c621950994e8386aa1a1381b2d522738bfcc268b9eac719b3a64f4f4",
+    "audio.js": "7e018e3f879bc2573dcd195c6129d115b8ebc6af19907a174e4ce16998c1a57e",
+    "index.html": "883e02d0f625738b9c4c18d07e0e67dc57b12b7879d2d04b2e2639ab36ff5319",
+    "runtime.js": "6c945aeec950ce1559d4b5789734dcfb71ad249568058d45c43d6b3e285bf350"
+  },
+  "base_sha256": "801154d9e62b682fa302f7343444bde238d8518a313ea3fd7bc924023b98ce4a",
+  "preserved": [
+    "tile identities, geometry and hit areas",
+    "same-symbol triple selection and mismatch behavior",
+    "source scoring and illustrative money rules",
+    "fourth-match ad ending",
+    "source disclosure"
+  ],
+  "enhancements": [
+    "painted ceramic tiles and symbols",
+    "separate bird wing and crest reactions",
+    "event-specific ceramic audio and compact feedback",
+    "reduced decorative motion and mute settings"
+  ],
+  "verification": {
+    "actualBrowserGameplay": true,
+    "sameLegalActionSequence": true,
+    "sourceStateParity": true,
+    "normalSpeedComparison": true,
+    "lowMotionPixelsFrozen": true,
+    "startupWhileAssetsLoad": true,
+    "visualReview": true,
+    "audioAudition": false,
+    "audioReviewUnavailable": true,
+    "objectiveAudioChecks": true,
+    "physicalDeviceTest": false
+  },
+  "limitations": [
+    "Verified in desktop Chromium at phone and landscape sizes; no physical-phone test.",
+    "Subjective listening is unavailable in this session because native audio input is unsupported; sound-event timing, mute, recorded output and clipping checks passed.",
+    "The original external store-opening adapter was contained only during recording. The converted playable retains its existing CTA-based store-opening behavior.",
+    "Illustrative random monetary amounts are not compared or normalized. Four matches lead to the existing ad ending with 24 tiles remaining."
+  ]
+}
