@@ -318,12 +318,13 @@ function filter(){
     section.querySelector('.feature-description').textContent=runtimeScreenshot?'Captured from the reviewed playable.':DATA.profiles[featured].focus;
     section.querySelector('.thumbnail-label').textContent=singleRound?'Original, earlier rounds and individual treatments':passFilter==='all'?'Compare the original and individual treatments':'Compare with the original';
     const review=game.concepts[featured].review;
-    section.querySelector('.feature-change').textContent=review&&typeof review==='object'&&(review.visual_change||review.summary)?(review.visual_change||review.summary):'Open the comparison to inspect the generated treatment.';
+    section.querySelector('.feature-change').textContent=runtimeScreenshot?'The current playable combines the restyled artwork with action-timed animation, effects and sound.':review&&typeof review==='object'&&(review.visual_change||review.summary)?(review.visual_change||review.summary):'Open the comparison to inspect the generated treatment.';
+    section.querySelector('.feature-drift').previousElementSibling.textContent=runtimeScreenshot?'Playable review':'Check before building';
     section.querySelector('.feature-drift').textContent=review&&typeof review==='object'&&(review.drift||review.scope_drift||review.verdict)?(review.drift||review.scope_drift||review.verdict):(typeof review==='string'?review:'Compare gameplay details, text and layout with the original.');
     const ready=singleRound?game.concepts[featured].available:polishedProfiles.filter(profile=>game.concepts[profile].available).length;
     section.querySelector('.game-ready').textContent=runtimeScreenshot?'Actual playable screenshot ready':(singleRound?(ready?config.image_label+' ready':config.image_label+' pending'):ready+'/4 concepts ready')+(edition?' · Painted Edition':game[config.video_key]?' · Concept Video ready':'');
   });
-  document.querySelectorAll('[data-round-content]').forEach(element=>element.hidden=element.dataset.roundContent!==roundFilter);
+  document.querySelectorAll('[data-round-content]').forEach(element=>{const game=gameMap.get(element.closest('.game-section')?.dataset.game);element.hidden=element.dataset.roundContent!==roundFilter||!!(game&&isRuntimeScreenshot(game.concepts[featuredProfile(game)]));});
   document.querySelectorAll('[data-round]').forEach(button=>button.setAttribute('aria-pressed',String(button.dataset.round===roundFilter)));
   document.querySelectorAll('[data-filter-profile]').forEach(button=>button.setAttribute('aria-pressed',String(button.dataset.filterProfile===passFilter)));
   document.getElementById('pass-filter').hidden=singleRound;
