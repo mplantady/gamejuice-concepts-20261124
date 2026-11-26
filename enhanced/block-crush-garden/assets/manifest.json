@@ -1,0 +1,685 @@
+{
+  "version": "block-crush-assets-v1",
+  "source": "reference/concepts/faithful/images/block-crush-faithful-v1.png",
+  "source_sha256": "49df20dc89144c5fcc16a287aeb6f0af245d3857b2033ec932901afc3a69d908",
+  "native_canvas": [
+    940,
+    1673
+  ],
+  "provenance": "Retained faithful generated concept, existing accepted still. Cropped/separated for production; no generation spend. Concepts do not establish game rules.",
+  "light_direction": "upper left",
+  "alpha_policy": "Transparent PNG, 12px tile padding; flora color masks retain source highlights, inspect native scale.",
+  "runtime_contract": "Object art only. Place cells, jewels, HUD, tray shapes and outcomes from real game state. Render stationary brown-receiver, alpha-derived foliage shadows, articulated foliage, board cells, border, pieces, jewels, HUD and feedback in that order.",
+  "assets": [
+    {
+      "id": "brown-receiver",
+      "file": "brown-receiver.png",
+      "size": [
+        940,
+        1673
+      ],
+      "source_box": [
+        410,
+        25,
+        630,
+        105
+      ],
+      "pivot_px": [
+        0,
+        0
+      ],
+      "layer": "background",
+      "note": "Unillustrated quiet brown material sampled from source and expanded; receiver never moves.",
+      "sha256": "67215c64c27c0ec385d53e80916f5524ec37e040d571b7e5d2b5eb9ae9761b6e"
+    },
+    {
+      "id": "wood-tile",
+      "file": "wood-tile.png",
+      "size": [
+        120,
+        120
+      ],
+      "source_box": [
+        473,
+        414,
+        568,
+        509
+      ],
+      "pivot_px": [
+        60,
+        60
+      ],
+      "layer": "object",
+      "note": "Golden beveled tile; logical content 96\u00d796 centered, 12px padding.",
+      "sha256": "3feb2e6955f6663d9c78b890416a231d76aacaf73bfb1e35cc9c0fcfdf9808b0",
+      "content_bounds": [
+        12,
+        12,
+        108,
+        108
+      ],
+      "logical_size": [
+        96,
+        96
+      ]
+    },
+    {
+      "id": "wood-tile-b",
+      "file": "wood-tile-b.png",
+      "size": [
+        120,
+        120
+      ],
+      "source_box": [
+        374,
+        513,
+        470,
+        608
+      ],
+      "pivot_px": [
+        60,
+        60
+      ],
+      "layer": "object",
+      "note": "Golden beveled tile; logical content 96\u00d796 centered, 12px padding.",
+      "sha256": "d87e746daa026622fd4291bb7ccc6e3f46ae076ac07795194ed7357f6a662b24",
+      "content_bounds": [
+        12,
+        12,
+        108,
+        108
+      ],
+      "logical_size": [
+        96,
+        96
+      ]
+    },
+    {
+      "id": "wood-tile-c",
+      "file": "wood-tile-c.png",
+      "size": [
+        120,
+        120
+      ],
+      "source_box": [
+        176,
+        711,
+        273,
+        805
+      ],
+      "pivot_px": [
+        60,
+        60
+      ],
+      "layer": "object",
+      "note": "Golden beveled tile; logical content 96\u00d796 centered, 12px padding.",
+      "sha256": "cacb1c5884d87594d6d20e063483b0e4ebe8e3c8e8c786fefd56015d813e6a6e",
+      "content_bounds": [
+        12,
+        12,
+        108,
+        108
+      ],
+      "logical_size": [
+        96,
+        96
+      ]
+    },
+    {
+      "id": "board-cell",
+      "file": "board-cell.png",
+      "size": [
+        96,
+        96
+      ],
+      "source_box": [
+        78,
+        315,
+        174,
+        411
+      ],
+      "pivot_px": [
+        48,
+        48
+      ],
+      "layer": "board",
+      "note": "Empty brown inset cell; preserve 8\u00d78 geometry.",
+      "sha256": "1ecce05e33e2e6d7f6e31897ccdfbde9c2b3b4f1e0fed11057b3d9e70d3b1661"
+    },
+    {
+      "id": "board-frame",
+      "file": "board-frame.png",
+      "size": [
+        833,
+        835
+      ],
+      "source_box": [
+        55,
+        292,
+        888,
+        1127
+      ],
+      "pivot_px": [
+        416.5,
+        417.5
+      ],
+      "layer": "frame",
+      "note": "Frame-only ring, empty transparent board aperture.",
+      "sha256": "b300bf86c6789f73554580ed6bd1bfb908d7b856fb507001927b60c1f0ba9f23",
+      "aperture": [
+        22,
+        22,
+        811,
+        812
+      ]
+    },
+    {
+      "id": "gem-green",
+      "file": "gem-green.png",
+      "size": [
+        67,
+        80
+      ],
+      "source_box": [
+        307,
+        133,
+        374,
+        213
+      ],
+      "pivot_px": [
+        33.5,
+        40.0
+      ],
+      "layer": "jewel",
+      "note": "Color-separated jewel; retained dimensional highlights. Transparent border, runtime contact shadow.",
+      "sha256": "39dfd8b8657cc62a637d55761bf6f03a168a7eea2fe88dd8a873c13002588e0d"
+    },
+    {
+      "id": "gem-red",
+      "file": "gem-red.png",
+      "size": [
+        84,
+        76
+      ],
+      "source_box": [
+        428,
+        137,
+        512,
+        213
+      ],
+      "pivot_px": [
+        42.0,
+        38.0
+      ],
+      "layer": "jewel",
+      "note": "Color-separated jewel; retained dimensional highlights. Transparent border, runtime contact shadow.",
+      "sha256": "1044c2e8f033caa23e9c53fb8db2d4bee44034c786de7100c229b1a370ff90ac"
+    },
+    {
+      "id": "gem-blue",
+      "file": "gem-blue.png",
+      "size": [
+        82,
+        80
+      ],
+      "source_box": [
+        561,
+        133,
+        643,
+        213
+      ],
+      "pivot_px": [
+        41.0,
+        40.0
+      ],
+      "layer": "jewel",
+      "note": "Color-separated jewel; retained dimensional highlights. Transparent border, runtime contact shadow.",
+      "sha256": "71aa6f1b8fa2b56c3d4886cd19b4cb9c1d73ad670f97f327f2e9415664b99718"
+    },
+    {
+      "id": "gem-orange",
+      "file": "gem-orange.png",
+      "size": [
+        76,
+        78
+      ],
+      "source_box": [
+        285,
+        520,
+        361,
+        598
+      ],
+      "pivot_px": [
+        38.0,
+        39.0
+      ],
+      "layer": "jewel",
+      "note": "Color-separated jewel; retained dimensional highlights. Transparent border, runtime contact shadow.",
+      "sha256": "baaa24301551e5a972248f789061ae699648dd3ba48fbc1e8c5b886420f2551b"
+    },
+    {
+      "id": "foliage-nw",
+      "file": "foliage-nw.png",
+      "size": [
+        397,
+        295
+      ],
+      "source_box": [
+        0,
+        0,
+        397,
+        295
+      ],
+      "pivot_px": [
+        20,
+        18
+      ],
+      "layer": "foliage",
+      "note": "Extracted source foliage. Mask removes brown receiver; original leaf shading retained.",
+      "sha256": "a8f0da40e3dffafce0d68e16337be2380a2acf707af63abfa87f4972a918f608",
+      "native_position": [
+        0,
+        0
+      ],
+      "shadow_policy": "Derive moving shadow from this alpha; never shift receiver."
+    },
+    {
+      "id": "foliage-ne",
+      "file": "foliage-ne.png",
+      "size": [
+        240,
+        290
+      ],
+      "source_box": [
+        700,
+        0,
+        940,
+        290
+      ],
+      "pivot_px": [
+        219,
+        15
+      ],
+      "layer": "foliage",
+      "note": "Extracted source foliage. Mask removes brown receiver; original leaf shading retained.",
+      "sha256": "2604baf26b3304b6b3ad1f8a673d5bf0beb2a991cc16dd9f83e21dca2b76085f",
+      "native_position": [
+        700,
+        0
+      ],
+      "shadow_policy": "Derive moving shadow from this alpha; never shift receiver."
+    },
+    {
+      "id": "foliage-west",
+      "file": "foliage-west.png",
+      "size": [
+        57,
+        179
+      ],
+      "source_box": [
+        0,
+        510,
+        57,
+        689
+      ],
+      "pivot_px": [
+        0,
+        128
+      ],
+      "layer": "foliage",
+      "note": "Extracted source foliage. Mask removes brown receiver; original leaf shading retained.",
+      "sha256": "f0b56c6fe9958998bd5cae4eaa921899b3d0a97da0932ac45ab9d27988227df9",
+      "native_position": [
+        0,
+        510
+      ],
+      "shadow_policy": "Derive moving shadow from this alpha; never shift receiver."
+    },
+    {
+      "id": "foliage-east",
+      "file": "foliage-east.png",
+      "size": [
+        64,
+        260
+      ],
+      "source_box": [
+        876,
+        334,
+        940,
+        594
+      ],
+      "pivot_px": [
+        63,
+        124
+      ],
+      "layer": "foliage",
+      "note": "Extracted source foliage. Mask removes brown receiver; original leaf shading retained.",
+      "sha256": "736325977a794cce15f7a24a5018e5efa1f9ed7824342bfdab5c482691d7b44c",
+      "native_position": [
+        876,
+        334
+      ],
+      "shadow_policy": "Derive moving shadow from this alpha; never shift receiver."
+    },
+    {
+      "id": "foliage-sw",
+      "file": "foliage-sw.png",
+      "size": [
+        302,
+        327
+      ],
+      "source_box": [
+        0,
+        1346,
+        302,
+        1673
+      ],
+      "pivot_px": [
+        12,
+        312
+      ],
+      "layer": "foliage",
+      "note": "Extracted source foliage. Mask removes brown receiver; original leaf shading retained. Vine-owned pixels removed so animated layers do not double.",
+      "sha256": "9b836bf533e8aab6bdf6ea05c6c37bf3fbb3702a4af02e35e5d8c2c3c8b8cc44",
+      "native_position": [
+        0,
+        1346
+      ],
+      "shadow_policy": "Derive moving shadow from this alpha; never shift receiver."
+    },
+    {
+      "id": "foliage-se",
+      "file": "foliage-se.png",
+      "size": [
+        345,
+        403
+      ],
+      "source_box": [
+        595,
+        1270,
+        940,
+        1673
+      ],
+      "pivot_px": [
+        338,
+        389
+      ],
+      "layer": "foliage",
+      "note": "Extracted source foliage. Mask removes brown receiver; original leaf shading retained. Vine-owned pixels removed so animated layers do not double.",
+      "sha256": "7cead02bf315c60c0474e608e7e314ccb8585edecc70e17f95995157052df52c",
+      "native_position": [
+        595,
+        1270
+      ],
+      "shadow_policy": "Derive moving shadow from this alpha; never shift receiver."
+    },
+    {
+      "id": "bottom-vine",
+      "file": "bottom-vine.png",
+      "size": [
+        701,
+        256
+      ],
+      "source_box": [
+        105,
+        1417,
+        806,
+        1673
+      ],
+      "pivot_px": [
+        0,
+        116
+      ],
+      "layer": "foliage",
+      "note": "Extracted source foliage. Mask removes brown receiver; original leaf shading retained. Isolated vine silhouette only; corner leaf clusters excluded.",
+      "sha256": "b2db1254c65870efd92b6ab3b457a6848b9ab455d68c36f6b482fc6bfc02d133",
+      "native_position": [
+        105,
+        1417
+      ],
+      "shadow_policy": "Derive moving shadow from this alpha; never shift receiver.",
+      "mesh_segments": 12,
+      "mesh_root_px": [
+        0,
+        116
+      ],
+      "mesh_note": "Piecewise affine strip deformation with pinned endpoints; not rigid whole-sprite bob."
+    },
+    {
+      "id": "flower-yellow",
+      "file": "flower-yellow.png",
+      "size": [
+        130,
+        121
+      ],
+      "source_box": [
+        38,
+        8,
+        168,
+        129
+      ],
+      "pivot_px": [
+        65,
+        60
+      ],
+      "layer": "foliage",
+      "note": "Extracted source foliage. Mask removes brown receiver; original leaf shading retained.",
+      "sha256": "d9c7a237ad9884300d5a515a542bc93c0d5dbfefe611060f3552a5039c4e9be4",
+      "native_position": [
+        38,
+        8
+      ],
+      "shadow_policy": "Derive moving shadow from this alpha; never shift receiver."
+    },
+    {
+      "id": "flower-white",
+      "file": "flower-white.png",
+      "size": [
+        103,
+        109
+      ],
+      "source_box": [
+        14,
+        1545,
+        117,
+        1654
+      ],
+      "pivot_px": [
+        48,
+        61
+      ],
+      "layer": "foliage",
+      "note": "Extracted source foliage. Mask removes brown receiver; original leaf shading retained.",
+      "sha256": "d6d8f17d94bc3bdd50c81a1848246b826dfb1292a825ff6d2aed1bedbaf504f7",
+      "native_position": [
+        14,
+        1545
+      ],
+      "shadow_policy": "Derive moving shadow from this alpha; never shift receiver."
+    },
+    {
+      "id": "sprig-nw",
+      "file": "sprig-nw.png",
+      "size": [
+        150,
+        118
+      ],
+      "source_box": [
+        246,
+        5,
+        396,
+        123
+      ],
+      "pivot_px": [
+        17,
+        100
+      ],
+      "layer": "foliage",
+      "note": "Extracted source foliage. Mask removes brown receiver; original leaf shading retained.",
+      "sha256": "224bed5d226ca1355ae0c2704aec5d3d772e7f30ce72eb9d3c947bfe1006f928",
+      "native_position": [
+        246,
+        5
+      ],
+      "shadow_policy": "Derive moving shadow from this alpha; never shift receiver."
+    },
+    {
+      "id": "targets-plaque",
+      "file": "targets-plaque.png",
+      "size": [
+        448,
+        150
+      ],
+      "source_box": [
+        247,
+        117,
+        695,
+        267
+      ],
+      "pivot_px": [
+        224,
+        75
+      ],
+      "layer": "ui",
+      "note": "Empty panel assembled from clean source side caps/center strip; real HUD supplies all symbols and counts.",
+      "sha256": "957cab019c80233f38678b9e2b133a05128981ab66992ee7156f7126f1cf9317"
+    },
+    {
+      "id": "empty-board-backdrop",
+      "file": "empty-board-backdrop.png",
+      "size": [
+        1080,
+        1920
+      ],
+      "source_box": null,
+      "pivot_px": [
+        540,
+        960
+      ],
+      "layer": "background",
+      "note": "Original calibrated backdrop replacement: stationary clean brown surface and EMPTY 8\u00d78 board only. No foliage, old shadow, HUD, piece, or tray. Render foliage separately.",
+      "sha256": "a8b78db57ff12843970f6b10392b2d0ca01d9eecb1d69ec0a1bfcd96a4f3503a",
+      "runtime_size": [
+        1080,
+        1920
+      ],
+      "board_grid": [
+        87,
+        358,
+        995,
+        1266
+      ],
+      "cell_pitch": 113.5
+    }
+  ],
+  "runtime": {
+    "backdrop": "assets/empty-board-backdrop.png",
+    "tile": "assets/runtime-tile.png",
+    "plaque": "assets/targets-plaque.png",
+    "tile-13": "assets/runtime-tile-13.png",
+    "gem-13": "assets/runtime-gem-13.png",
+    "hud-13": "assets/runtime-hud-13.png",
+    "tile-14": "assets/runtime-tile-14.png",
+    "gem-14": "assets/runtime-gem-14.png",
+    "hud-14": "assets/runtime-hud-14.png",
+    "tile-16": "assets/runtime-tile-16.png",
+    "gem-16": "assets/runtime-gem-16.png",
+    "hud-16": "assets/runtime-hud-16.png",
+    "tile-17": "assets/runtime-tile-17.png",
+    "gem-17": "assets/runtime-gem-17.png",
+    "hud-17": "assets/runtime-hud-17.png"
+  },
+  "foliage": [
+    {
+      "id": "foliage-nw",
+      "file": "assets/foliage-nw.png",
+      "x": 0,
+      "y": 0,
+      "pivot": [
+        20,
+        18
+      ],
+      "rate": 0.45,
+      "mesh": "vertical"
+    },
+    {
+      "id": "foliage-ne",
+      "file": "assets/foliage-ne.png",
+      "x": 700,
+      "y": 0,
+      "pivot": [
+        219,
+        15
+      ],
+      "rate": 0.487,
+      "mesh": "vertical"
+    },
+    {
+      "id": "foliage-west",
+      "file": "assets/foliage-west.png",
+      "x": 0,
+      "y": 510,
+      "pivot": [
+        0,
+        128
+      ],
+      "rate": 0.524,
+      "mesh": "vertical"
+    },
+    {
+      "id": "foliage-east",
+      "file": "assets/foliage-east.png",
+      "x": 876,
+      "y": 334,
+      "pivot": [
+        63,
+        124
+      ],
+      "rate": 0.5609999999999999,
+      "mesh": "vertical"
+    },
+    {
+      "id": "foliage-sw",
+      "file": "assets/foliage-sw.png",
+      "x": 0,
+      "y": 1346,
+      "pivot": [
+        12,
+        312
+      ],
+      "rate": 0.598,
+      "mesh": "vertical"
+    },
+    {
+      "id": "foliage-se",
+      "file": "assets/foliage-se.png",
+      "x": 595,
+      "y": 1270,
+      "pivot": [
+        338,
+        389
+      ],
+      "rate": 0.635,
+      "mesh": "vertical"
+    },
+    {
+      "id": "bottom-vine",
+      "file": "assets/bottom-vine.png",
+      "x": 105,
+      "y": 1417,
+      "pivot": [
+        0,
+        116
+      ],
+      "rate": 0.6719999999999999,
+      "mesh": "horizontal"
+    }
+  ],
+  "spriteMap": {
+    "wood_3_big": "hud-13",
+    "wood_4_big": "hud-14",
+    "wood_6_big": "hud-16",
+    "wood_7_big": "hud-17"
+  },
+  "runtimeNote": "Original source wood grain retained inside refined tile bevel, cropped to original logical106 bounds. HUD glyphs have their own full-size assets and retain the original panel. Separate gems composited into correct tile skins. Unknown gem colors retain original sprites. Decorative mesh pins branch root and vine endpoints, with no state/RNG mutation."
+}
