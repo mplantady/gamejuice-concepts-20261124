@@ -1,0 +1,120 @@
+{
+  "game": "Royal Smash! - Physics Puzzle",
+  "edition": "Painted Tides",
+  "version": "royal-smash-painted-v1",
+  "artVersion": "royal-smash-painted-art-v2",
+  "reviewedOn": "2026-11-26",
+  "runtimeChanges": [
+    "Painted tropical background and original UV-aligned can/cannon materials",
+    "Two rooted palms with separate gust rhythms and moving ground shadows",
+    "Render-only articulated cannon recoil, painted plume and warm source flash",
+    "Actual-shot, can-contact and water-contact effects; engine-confirmed level-clear response",
+    "Original sampled sounds with pitch variation, quiet cannon tail, controlled output levels and mute",
+    "Calm motion follows system preference and can be toggled"
+  ],
+  "protectedGameplay": {
+    "originalConvertedEngineRetained": true,
+    "originalLevelInventory": 81,
+    "initialBalls": 20,
+    "originalVariantsPreserved": 3,
+    "sameControlsAndFeatures": true,
+    "firstShotVectorMaximumDifference": 1.8286527847521938e-10,
+    "controlledComparison": {
+      "passed": true,
+      "frames": 180,
+      "numbersCompared": 210303,
+      "maximumDifference": 0,
+      "method": "Separate disclosed test: source level reload under common fixed time/random seed after normal startup; no body positions or outcomes assigned. Never used in video."
+    }
+  },
+  "actualGameplay": {
+    "matchedAcceptedShots": 3,
+    "firstLevelClearedNaturallyInBothRuns": true,
+    "bothFinishOnLevel": 2,
+    "bothFinishWithBalls": 19,
+    "legalEmptyWaterShotConsumesOneBall": true,
+    "zeroAmmoRejectionFixture": {
+      "acceptedShots": 0,
+      "disclosure": "Separately set ammunition to zero solely to verify rejection; no footage from this fixture."
+    },
+    "originalHandoffInputIgnoredWithoutBallConsumption": true
+  },
+  "controlsAndStartup": {
+    "muteChecks": {
+      "primeShotAccepted": true,
+      "muteButtonDoesNotShoot": true,
+      "muteFlagAndButton": true,
+      "busSilent": true,
+      "mutedShotAccepted": true,
+      "noPolishedAudioWhileMuted": true,
+      "unmuteButtonDoesNotShoot": true,
+      "unmuteFlagAndButton": true,
+      "busRestored": true,
+      "unmutedShotAccepted": true,
+      "unmutedCannonSound": true,
+      "audioContextRunning": true
+    },
+    "calmMotionIdlePixelsChanged": 0,
+    "calmMotionClockFrozen": true,
+    "normalAsynchronousStartupAnd600msAssetDelayTested": true,
+    "touchAt320x568": true,
+    "landscapeAt844x390": true,
+    "hudAndCta": "Original locations retained; converted-only bottom reservation neutralized."
+  },
+  "animationAndRendering": {
+    "actualRuntimeEvents": {
+      "art-ready": 1,
+      "shot": 3,
+      "impact": 6,
+      "water": 33,
+      "level-clear": 1,
+      "load": 1,
+      "table": 1
+    },
+    "renderOnlyJointSamples": 80,
+    "palmsAndShadows": "Fixed roots and stationary islands; independent canopy deformation and grounded shadow projection. Native screenshot visually reviewed.",
+    "artifactReview": "16 production asset checks passed; actual390×694 poster inspected."
+  },
+  "performance": {
+    "renderer": {
+      "renderer": "ANGLE (Apple, ANGLE Metal Renderer: Apple M4 Max, Unspecified Version)",
+      "vendor": "Google Inc. (Apple)"
+    },
+    "viewport": {
+      "width": 390,
+      "height": 694
+    },
+    "originalAverageFps": 60.00220191566663,
+    "improvedAverageFps": 60.00220191566663,
+    "improvedP95FrameMs": 16.799999999999272,
+    "physicalPhoneBenchmark": false,
+    "note": "Desktop Chromium with Apple Metal graphics. Original adaptive resolution remains active, including brief startup reductions. Software-renderer checks also completed."
+  },
+  "comparisonVideo": {
+    "file": "comparison.mp4",
+    "seconds": 16,
+    "dimensions": [
+      800,
+      760
+    ],
+    "source": "Separate genuine original and improved page recordings, same verified pointer plan, real HUD, normal wall-clock speed.25fps page capture encoded at30fps; no generated gameplay frames.",
+    "soundtrack": "Improved runtime WebAudio output with output protection; no added music.",
+    "hudShotAlignmentSeconds": 0.0,
+    "audioOnsetMinusHudSeconds": 0.0033333333333334103,
+    "rawStereoClippedSamples": 0,
+    "finalStereoClippedSamples": 0,
+    "finalStereoPeak": 0.8929501175880432,
+    "sha256": "ed44b76ccbe21487d06a7e3dcc0dff8d60b41cbd422f6b88078f0ac2aaa68cf3"
+  },
+  "limits": [
+    "Perceptual listening was unavailable in this session; recorded sound was checked for event timing, waveform levels, clipping and mute, and an audition excerpt was provided.",
+    "Natural play covered level1 completion and entry into level2; the full ten-level campaign and final-win screen were not replayed.",
+    "Native audio fallback mute was tested with a focused offline check; browser recordings use WebAudio.",
+    "Performance is desktop browser evidence, not a physical-phone benchmark."
+  ],
+  "links": {
+    "playable": "index.html",
+    "review": "review.html",
+    "gallery": "../../concepts/index.html#royal-smash"
+  }
+}

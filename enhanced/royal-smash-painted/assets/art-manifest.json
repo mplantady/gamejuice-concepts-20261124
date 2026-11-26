@@ -1,0 +1,191 @@
+{
+  "version": "royal-smash-painted-art-v2",
+  "background": "lagoon-cleanplate.webp",
+  "palms": "palms-fullframe.png",
+  "textures": {
+    "Can_1x1": "can_1x1-painted.webp",
+    "Can_1x2": "can_1x2-painted.webp",
+    "Can_1x3": "can_1x3-painted.webp",
+    "Can_Conical": "can_conical-painted.webp",
+    "Can_Square_1x1": "can_square_1x1-painted.webp",
+    "Can_Square_1x2": "can_square_1x2-painted.webp",
+    "Can_Square_1x3": "can_square_1x3-painted.webp",
+    "Cannon": "cannon-painted.webp",
+    "can_square_1x4": "can_square_1x4-painted.webp",
+    "can_square_1x5": "can_square_1x5-painted.webp"
+  },
+  "size": [
+    1254,
+    1254
+  ],
+  "palm_placements": [
+    {
+      "id": "left",
+      "root": [
+        0.27,
+        0.3252
+      ],
+      "box_pixels": [
+        318,
+        286,
+        103,
+        123
+      ],
+      "crown_joint_y": 0.29106858054226475,
+      "source_crop": [
+        85,
+        175,
+        599,
+        1126
+      ],
+      "root_px": [
+        339,
+        408
+      ]
+    },
+    {
+      "id": "right",
+      "root": [
+        0.6938,
+        0.3252
+      ],
+      "box_pixels": [
+        793,
+        286,
+        100,
+        123
+      ],
+      "crown_joint_y": 0.2878787878787879,
+      "source_crop": [
+        653,
+        175,
+        1178,
+        1126
+      ],
+      "root_px": [
+        870,
+        408
+      ]
+    }
+  ],
+  "light": "upper-right warm daylight",
+  "packing": "Original normalized roots. Crown aspect preserved; quiet lower trunk shortened to source footprint. Low-alpha dust removed outside cropped tree cells.",
+  "texture_processing": [
+    {
+      "key": "Can_1x1",
+      "original": "js-003-f343d6d47f2d.webp",
+      "packed": "can_1x1-painted.webp",
+      "size": [
+        1024,
+        1024
+      ],
+      "processing": "90% full generated atlas at exact original dimensions plus 10% original material; original cylinder UV voids and two-texel island boundaries retained. Rings, waves and cannon crown/bolts visually checked in normalized atlas comparison."
+    },
+    {
+      "key": "Can_1x2",
+      "original": "js-004-4731ae2cb834.webp",
+      "packed": "can_1x2-painted.webp",
+      "size": [
+        512,
+        512
+      ],
+      "processing": "90% full generated atlas at exact original dimensions plus 10% original material; original cylinder UV voids and two-texel island boundaries retained. Rings, waves and cannon crown/bolts visually checked in normalized atlas comparison."
+    },
+    {
+      "key": "Can_1x3",
+      "original": "js-005-4731ae2cb834.webp",
+      "packed": "can_1x3-painted.webp",
+      "size": [
+        512,
+        512
+      ],
+      "processing": "90% full generated atlas at exact original dimensions plus 10% original material; original cylinder UV voids and two-texel island boundaries retained. Rings, waves and cannon crown/bolts visually checked in normalized atlas comparison."
+    },
+    {
+      "key": "Can_Conical",
+      "original": "js-006-f67e026d5588.webp",
+      "packed": "can_conical-painted.webp",
+      "size": [
+        512,
+        512
+      ],
+      "processing": "Broad generated ceramic pigment luminance variation (-30% to +34%) applied over exact source UV pixels, with white-wave response reduced 65%; original pattern placement and mesh lighting retained."
+    },
+    {
+      "key": "Can_Square_1x1",
+      "original": "js-007-85e3ca6e5d46.webp",
+      "packed": "can_square_1x1-painted.webp",
+      "size": [
+        1024,
+        1024
+      ],
+      "processing": "Broad generated ceramic pigment luminance variation (-30% to +34%) applied over exact source UV pixels, with white-wave response reduced 65%; original pattern placement and mesh lighting retained."
+    },
+    {
+      "key": "Can_Square_1x2",
+      "original": "js-008-85e3ca6e5d46.webp",
+      "packed": "can_square_1x2-painted.webp",
+      "size": [
+        1024,
+        1024
+      ],
+      "processing": "Broad generated ceramic pigment luminance variation (-30% to +34%) applied over exact source UV pixels, with white-wave response reduced 65%; original pattern placement and mesh lighting retained."
+    },
+    {
+      "key": "Can_Square_1x3",
+      "original": "js-009-85e3ca6e5d46.webp",
+      "packed": "can_square_1x3-painted.webp",
+      "size": [
+        1024,
+        1024
+      ],
+      "processing": "Broad generated ceramic pigment luminance variation (-30% to +34%) applied over exact source UV pixels, with white-wave response reduced 65%; original pattern placement and mesh lighting retained."
+    },
+    {
+      "key": "Cannon",
+      "original": "js-010-2dd9c3fec88c.webp",
+      "packed": "cannon-painted.webp",
+      "size": [
+        512,
+        512
+      ],
+      "processing": "90% full generated atlas at exact original dimensions plus 10% original material; original cylinder UV voids and two-texel island boundaries retained. Rings, waves and cannon crown/bolts visually checked in normalized atlas comparison."
+    },
+    {
+      "key": "can_square_1x4",
+      "original": "js-052-889eb064fa0c.webp",
+      "packed": "can_square_1x4-painted.webp",
+      "size": [
+        512,
+        512
+      ],
+      "processing": "Broad generated ceramic pigment luminance variation (-30% to +34%) applied over exact source UV pixels, with white-wave response reduced 65%; original pattern placement and mesh lighting retained."
+    },
+    {
+      "key": "can_square_1x5",
+      "original": "js-053-889eb064fa0c.webp",
+      "packed": "can_square_1x5-painted.webp",
+      "size": [
+        512,
+        512
+      ],
+      "processing": "Broad generated ceramic pigment luminance variation (-30% to +34%) applied over exact source UV pixels, with white-wave response reduced 65%; original pattern placement and mesh lighting retained."
+    }
+  ],
+  "provenance": "Built-in image_gen outputs with original textures retained as coordinate/motif authority. v2 adopts full reviewed cylinder/cannon atlases and broader pigment on remaining shapes after v1 detail was judged too subtle. No additional generation. No Unity AI jobs submitted; catalog failed before generation.",
+  "plume": "muzzle-plume.png",
+  "plume_contract": {
+    "size": [
+      256,
+      256
+    ],
+    "pivot": [
+      0.5,
+      0.5
+    ],
+    "display_size": "40\u201380px at phone scale",
+    "event": "actual cannon shot only",
+    "alpha": "genuine RGBA, premultiplied filtering during packing",
+    "safe_margin": "transparent on all edges"
+  }
+}
