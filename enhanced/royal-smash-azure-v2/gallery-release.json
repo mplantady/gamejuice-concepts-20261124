@@ -1,0 +1,62 @@
+{
+  "slug": "royal-smash",
+  "reviewed": true,
+  "enhanced_playable": "enhanced/royal-smash-azure-v2/index.html",
+  "enhanced_playable_title": "Royal Smash · Azure FX3",
+  "runtime_release_version": "royal-smash-azure-v2.1-fx3",
+  "supersedes": [
+    "royal-smash-painted-v1"
+  ],
+  "runtime_comparison_video": "royal-smash-azure-v2/comparison.mp4",
+  "runtime_comparison_page": "royal-smash-azure-v2/index.html",
+  "runtime_comparison_files": [
+    "royal-smash-azure-v2/comparison.mp4",
+    "royal-smash-azure-v2/index.html",
+    "royal-smash-azure-v2/poster.png",
+    "royal-smash-azure-v2/verification.json"
+  ],
+  "review_binding": {
+    "sha256": "d112e6cc7226e82495a84199165ce9892c05d248a1c46c145761eebdea329dd9",
+    "scope": "root-approved-runtime-and-comparison-private-integration-only",
+    "staged_and_public_verification": "pending"
+  },
+  "runtime_release": {
+    "version": "royal-smash-azure-v2.1-fx3",
+    "label": "Royal Smash · Azure FX3",
+    "playable": "enhanced/royal-smash-azure-v2/index.html",
+    "supersedes": [
+      "royal-smash-painted-v1"
+    ],
+    "previous_editions": [
+      {
+        "title": "Royal Smash · Painted Tides",
+        "version": "royal-smash-painted-v1",
+        "playable": "enhanced/royal-smash-painted/index.html",
+        "comparison_video": "royal-smash-painted/comparison.mp4",
+        "comparison_page": "royal-smash-painted/review.html",
+        "comparison_files": [
+          "royal-smash-painted/review.html",
+          "royal-smash-painted/comparison.mp4",
+          "royal-smash-painted/comparison-poster.jpg",
+          "royal-smash-painted/original.jpg",
+          "royal-smash-painted/poster.png",
+          "royal-smash-painted/verification.json",
+          "video/comparisons/royal-smash/index.html",
+          "faithful/video/comparisons/royal-smash/index.html"
+        ]
+      }
+    ],
+    "review_status": "Root approved exact runtime and authentic comparison; staged/public gallery review remains pending.",
+    "subjective_audio_review": "Unavailable; no audition claimed.",
+    "video": {
+      "file": "royal-smash-azure-v2/comparison.mp4",
+      "poster": "royal-smash-azure-v2/poster.png",
+      "width": 800,
+      "height": 760,
+      "duration": 16,
+      "audio": "Enhanced actual runtime soundtrack",
+      "method": "Separate authentic3-shot runs at normal speed; startup aligned from observed HUD frames within±20ms. Actual enhanced WebAudio soundtrack only.",
+      "review": "Three ordinary shots show attached recoil/contact, water feedback and the real level transition. Source music is disabled; the soundtrack contains the game effects and Azure accents actually recorded. Technical audio checks passed; subjective listening unavailable."
+    }
+  }
+}

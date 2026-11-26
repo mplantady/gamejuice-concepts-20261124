@@ -1,0 +1,12 @@
+/* Only the surface finish changes. Source placement, sizing, font metrics,
+ * safe areas, pointer behavior and result transitions remain authoritative. */
+.azure-finish #movesLabel{color:#fff3d9;-webkit-text-stroke-color:#234454;text-shadow:0 .106em .02em #234454}
+.azure-finish #movesValue{color:#254e60;-webkit-text-stroke-color:#f5e5c6}
+.azure-finish #movesUnder{color:#14394d;-webkit-text-stroke-color:#14394d}
+.azure-finish #movesFace{-webkit-text-stroke-color:#f9edcf;background-image:linear-gradient(#183b50 6%,#426d7b 88%)}
+.azure-finish #playNowCta.azure-cta-surface,.azure-finish #failRetry.azure-cta-surface,.azure-finish #endCard .ecPlay.azure-cta-surface{background-image:var(--azure-cta-surface)}
+.azure-finish .azure-cta-label{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;pointer-events:none;font-family:Remissis,Arial Black,system-ui,sans-serif;font-weight:700;font-size:calc(var(--game-w) * .062);line-height:1;letter-spacing:-.04em;color:#fff5db;-webkit-text-stroke:.025em #154d47;paint-order:stroke fill;text-shadow:0 .065em .025em #174b45}
+.azure-finish #failRetry .azure-cta-label{font-size:calc(var(--game-w) * .079)}
+.azure-finish #endCard .ecPlay .azure-cta-label{font-size:calc(var(--game-w) * .077)}
+.azure-finish #royal-options button{color:#eaf4dc;background:#204c59e8;border-color:#c5d6bc9c;box-shadow:0 2px 5px #163e4a30}
+.azure-finish #royal-options button[aria-pressed=true]{color:#214b53;background:#eadbb8;border-color:#f7e7bd}

@@ -1,0 +1,12 @@
+{
+  "version": "block-crush-atelier-20261126-v3",
+  "actualGameplay": "The first three placements keep the board intact; the fourth produces the original eight-line clear. Painted pieces, registered contact, jewel collection and readable score feedback retain the original final score of 248.",
+  "recordingMethod": "Authentic separate original and Atelier V3 playthroughs with seed 1719 and the same four physical drags at normal speed. Native 390 × 844 panels and actual enhanced runtime soundtrack.",
+  "audio": "Actual enhanced runtime soundtrack. Technical decode/clipping checks passed; subjective listening was unavailable.",
+  "limitations": [
+    "The comparison shows four moves and the actual eight-line clear, not a completed level.",
+    "The separate natural result check used 42 legal placements to reach the source collect_star win and score 663; that ending is not claimed to appear in this comparison. Original target counters can become negative.",
+    "Seed 1719 initializes the ordinary original random stream; no board or result state is injected.",
+    "The retained Polished Image remains labeled as the earlier Atelier v2 playable capture."
+  ]
+}

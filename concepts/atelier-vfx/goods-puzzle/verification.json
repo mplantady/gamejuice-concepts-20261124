@@ -1,0 +1,9 @@
+{
+  "version": "goods-atelier-2.1.0",
+  "actualGameplay": "Seventeen ordinary drags reach ten verified matches and the retained internal ending. The final closure response is tied to the real tenth match; no extra victory screen is invented.",
+  "recordingMethod": "Separate authentic normal-speed playthroughs, same17 drags, enhanced actual soundtrack.",
+  "audio": "Actual enhanced runtime soundtrack. Technical decode/clipping checks passed; subjective listening was unavailable.",
+  "limitations": [
+    "Original retained probe does not expose the additional internal end fields; shared countMatch10/maxMatch10/isGameEnd true match."
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "version": "royal-smash-azure-v2.1-fx3",
+  "actualGameplay": "Three ordinary shots show attached recoil/contact, water feedback and the real level transition. Source music is disabled; the soundtrack contains the game effects and Azure accents actually recorded.",
+  "recordingMethod": "Separate authentic3-shot runs at normal speed; startup aligned from observed HUD frames within±20ms. Actual enhanced WebAudio soundtrack only.",
+  "audio": "Actual enhanced runtime soundtrack. Technical decode/clipping checks passed; subjective listening was unavailable.",
+  "limitations": [
+    "25fps source provides40ms adjacent-frame brackets; startup alignment uncertainty±20ms. No exact sample synchronization is claimed.",
+    "Exact retained original alone has optional mraid.js404/ERR_ABORTED; errors/action violations empty and3shots intact. Current runtime requests/errors are clean.",
+    "Source disables music; only the audited unused zero-byte native-media track is omitted. Actual WebAudio bus is retained at1.0850998535s plus first-packet timing.",
+    "Deterministic parity and level1/3/8/10 material checks are explicitly synthetic technical fixtures, not campaign footage.",
+    "Encoded true peak is-0.1dBFS rounded; little peak headroom, zero full-scale samples, no normalization."
+  ]
+}

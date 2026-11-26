@@ -1,0 +1,12 @@
+{
+  "version": "2.1.2-atelier-vfx",
+  "actualGameplay": "Paper contact, golden progress and the stronger Sauces category closure preserve readable card words and the source gameplay. The 56-action comparison ends with 134 moves remaining; it does not claim a completed level.",
+  "recordingMethod": "Separate authentic original and Atelier 2.1.2 playthroughs with the same 56 inputs at normal speed. Native 390 × 694 panels, common actual source duration without an appended hold, enhanced recorded soundtrack with its actual timing.",
+  "audio": "Actual enhanced runtime soundtrack. Technical decode/clipping checks passed; subjective listening was unavailable.",
+  "limitations": [
+    "The comparison shows a real category closure, not a full-level victory.",
+    "Separate natural-failure verification used 187 ordinary inputs to reach native Defeat at five moves remaining in both converted and current games. That failure is not presented as comparison movie content.",
+    "The recorder retains its existing autoplay policy and explicit AudioContext resume; it does not establish first-gesture audio unlocking.",
+    "Original and current are separate normal-speed runs; exact transient synchronization is not claimed."
+  ]
+}

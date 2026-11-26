@@ -1,0 +1,12 @@
+{
+  "version": "vita-inkstone-vfx-20261126-v3",
+  "actualGameplay": "A blocked action and four valid moves preserve the original tile and lock states. Ceramic contact and clear effects remain attached to the affected tiles, followed by the quiet no-moves ending with 54 tiles still present.",
+  "recordingMethod": "Separate authentic normal-speed playthroughs with the same five inputs. Native 390 × 694 panels and actual enhanced soundtrack with its recorded 29 ms starting offset.",
+  "audio": "Actual enhanced runtime soundtrack. Technical decode/clipping checks passed; subjective listening was unavailable.",
+  "limitations": [
+    "The no-moves ending retains 54 tiles; it is not a cleared-board victory.",
+    "Earlier recordings exhibited intermittent capture hitches. They remain preserved, their cause is unresolved, and no runtime performance fix is claimed. The fresh native recording and separate no-record control passed the original strict checks.",
+    "The retained Polished Image and material study remain explicitly labeled as their earlier Inkstone v2 reference.",
+    "The source canvas recorder omits wrapper preference controls; those controls were checked separately."
+  ]
+}

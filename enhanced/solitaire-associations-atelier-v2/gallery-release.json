@@ -1,0 +1,56 @@
+{
+  "slug": "solitaire-associations",
+  "reviewed": true,
+  "enhanced_playable": "enhanced/solitaire-associations-atelier-v2/index.html",
+  "enhanced_playable_title": "Solitaire Associations · Atelier VFX 2.1.2",
+  "runtime_release_version": "2.1.2-atelier-vfx",
+  "supersedes": [
+    "1.0.0-painted-cards-0996367d92e6"
+  ],
+  "runtime_comparison_video": "runtime/solitaire-associations-atelier/original-vs-atelier-vfx-2.1.2.mp4",
+  "runtime_comparison_page": "runtime/solitaire-associations-atelier/index.html",
+  "runtime_comparison_files": [
+    "runtime/solitaire-associations-atelier/original-vs-atelier-vfx-2.1.2.mp4",
+    "runtime/solitaire-associations-atelier/index.html",
+    "runtime/solitaire-associations-atelier/poster.png",
+    "runtime/solitaire-associations-atelier/verification.json"
+  ],
+  "review_binding": {
+    "sha256": "53a4a7cbc6d4c70b41d8d246a0d0fd94f36d40ec5d33bd451a139ff8fe91e0d4",
+    "scope": "root-approved-runtime-and-comparison-private-integration-only",
+    "staged_and_public_verification": "pending"
+  },
+  "runtime_release": {
+    "version": "2.1.2-atelier-vfx",
+    "label": "Solitaire Associations · Atelier VFX 2.1.2",
+    "playable": "enhanced/solitaire-associations-atelier-v2/index.html",
+    "supersedes": [
+      "1.0.0-painted-cards-0996367d92e6"
+    ],
+    "previous_editions": [
+      {
+        "title": "Solitaire Associations Journey · Painted Cards",
+        "version": "1.0.0-painted-cards-0996367d92e6",
+        "playable": "enhanced/solitaire-associations/index.html",
+        "comparison_video": "runtime/solitaire-associations/original-vs-painted-v1.mp4",
+        "comparison_page": "../enhanced/solitaire-associations/comparison/index.html",
+        "comparison_files": [
+          "runtime/solitaire-associations/original-vs-painted-v1.mp4",
+          "runtime/solitaire-associations/poster.jpg"
+        ]
+      }
+    ],
+    "review_status": "Root approved exact runtime and authentic comparison; staged/public gallery review remains pending.",
+    "subjective_audio_review": "Unavailable; no audition claimed.",
+    "video": {
+      "file": "runtime/solitaire-associations-atelier/original-vs-atelier-vfx-2.1.2.mp4",
+      "poster": "runtime/solitaire-associations-atelier/poster.png",
+      "width": 852,
+      "height": 820,
+      "duration": 72.438667,
+      "audio": "Enhanced actual runtime soundtrack",
+      "method": "Separate authentic original and Atelier 2.1.2 playthroughs with the same 56 inputs at normal speed. Native 390 × 694 panels, common actual source duration without an appended hold, enhanced recorded soundtrack with its actual timing.",
+      "review": "Paper contact, golden progress and the stronger Sauces category closure preserve readable card words and the source gameplay. The 56-action comparison ends with 134 moves remaining; it does not claim a completed level. Technical audio checks passed; subjective listening unavailable."
+    }
+  }
+}

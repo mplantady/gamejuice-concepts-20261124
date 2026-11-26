@@ -1,0 +1,315 @@
+{
+  "source": "assets/generated/meowdoku-journal-kit.png",
+  "source_sha256": "6c52d0f657e725d5bcbf5b71fbb64b0fa3d54f9bf6c80bf51097a245bf9df58f",
+  "operations": [
+    "3x3 cell crop",
+    "alpha<=1 removed",
+    "main alpha>8 bounds with4px padding",
+    "neutral value extraction for native-tinted tile/error ink",
+    "aspect-preserving registration",
+    "source-alpha masked heart pieces",
+    "mechanical index-finger segmentation"
+  ],
+  "assets": {
+    "panel": {
+      "file": "panel.png",
+      "size": [
+        511,
+        163
+      ],
+      "sha256": "19eb938a4c8400bf9b453acfa0229a2628c2f0b2d2d0741421afc8f843ee8630",
+      "atlas_cell": [
+        724,
+        0,
+        1448,
+        241
+      ],
+      "local_alpha_crop": [
+        106,
+        45,
+        617,
+        208
+      ]
+    },
+    "button": {
+      "file": "button.png",
+      "size": [
+        540,
+        150
+      ],
+      "sha256": "007eaac180414b1870ea582009e6e0bd7eba0b00dd56c5a765f4c90211b575e3",
+      "atlas_cell": [
+        1448,
+        0,
+        2172,
+        241
+      ],
+      "local_alpha_crop": [
+        72,
+        53,
+        612,
+        203
+      ]
+    },
+    "white-plus": {
+      "file": "white-plus.png",
+      "size": [
+        229,
+        220
+      ],
+      "sha256": "c66cfe2118a1263773345d85c0e19e96f2f9f308e4056ef8e578c413e84b2c60",
+      "art_scale": 0.8,
+      "reason": "Readable functional color surrounds the X; native node/hit geometry unchanged"
+    },
+    "support-card": {
+      "file": "support-card.png",
+      "size": [
+        235,
+        225
+      ],
+      "sha256": "78ac4e783833cb3104676ec848cfb1a33a95452fa15d7faeff511145432070a1",
+      "atlas_cell": [
+        1448,
+        482,
+        2172,
+        724
+      ],
+      "local_alpha_crop": [
+        208,
+        7,
+        443,
+        232
+      ]
+    },
+    "tile-neutral": {
+      "file": "tile-neutral.png",
+      "size": [
+        225,
+        212
+      ],
+      "sha256": "1f0cf429fea86a612977a345d0624506d526d278b88e3babe1d000d4c76c50d1"
+    },
+    "error-ink-neutral": {
+      "file": "error-ink-neutral.png",
+      "size": [
+        229,
+        221
+      ],
+      "sha256": "a78fdc18aa53e2138bf56352aefb12b888bfc0416f9a5453f6d311c2902b4943",
+      "art_scale": 0.8
+    },
+    "fish-registered": {
+      "file": "fish-registered.png",
+      "size": [
+        160,
+        144
+      ],
+      "sha256": "f17bd299de6f680e1bbddf7077d6296831e3dfd3292c4b30d901d099d8ac6f41"
+    },
+    "heart-registered": {
+      "file": "heart-registered.png",
+      "size": [
+        208,
+        176
+      ],
+      "sha256": "7ef7c4b430bec2bea3520453453d5a9a21b2c4852b709beb5be696045b0ef03e"
+    },
+    "heart-left": {
+      "file": "heart-left.png",
+      "size": [
+        60,
+        88
+      ],
+      "sha256": "908b2b76b429630df19453be7be7b70ad0024ba5a2b285bfcd5a651460eb2e0b",
+      "source_alpha_mask": "0020_html-datauri_e57ffc56ff3f.png",
+      "heart_crop": [
+        0,
+        0,
+        60,
+        88
+      ]
+    },
+    "heart-right": {
+      "file": "heart-right.png",
+      "size": [
+        60,
+        88
+      ],
+      "sha256": "85fb314065674ba17c0ccf304d27aa1d384195f558b25773306dcffcacaf8d28",
+      "source_alpha_mask": "0023_html-datauri_9b58b73497ec.png",
+      "heart_crop": [
+        44,
+        0,
+        104,
+        88
+      ]
+    },
+    "glove-registered": {
+      "file": "glove-registered.png",
+      "size": [
+        272,
+        277
+      ],
+      "sha256": "fc784062a76a88ee399decffac53e590070a9aa8c01a60b49413ac837b11636d"
+    },
+    "glove-finger": {
+      "file": "glove-finger.png",
+      "size": [
+        272,
+        277
+      ],
+      "sha256": "42e33db91c39eff1fda4cd366eeaf4bef618dd2b17c0758b698943a0f02e282d"
+    },
+    "glove-palm": {
+      "file": "glove-palm.png",
+      "size": [
+        272,
+        277
+      ],
+      "sha256": "6b8afbd961b948acb1bdd24a277f639fcafc972e3ed5677b3b1503ed6f2f0103"
+    },
+    "logo": {
+      "file": "logo.png",
+      "size": [
+        512,
+        320
+      ],
+      "sha256": "5e37f82fb23806114b6c055ac2504c2fb38e305b944f006a0ad50e1135713e12",
+      "source": "assets/generated/meowdoku-journal-logo.png",
+      "alpha_crop": [
+        49,
+        231,
+        1265,
+        1043
+      ]
+    },
+    "paper": {
+      "file": "paper.webp",
+      "size": [
+        940,
+        1673
+      ],
+      "sha256": "4c6f9e543906c0a509fe6a7cd4a25e695b6383b28dc69e8ecb98c17124e262ff",
+      "source": "assets/generated/meowdoku-journal-paper.png",
+      "encoding": "WebP quality90; original generated PNG preserved"
+    }
+  },
+  "glove_rig": {
+    "canvas": [
+      272,
+      277
+    ],
+    "finger_pivot": [
+      112,
+      92
+    ],
+    "maximum_rotation_radians": 0.075,
+    "source_segmentation": "mechanical polygon; palm remains stationary; contact pinned with compensated finger translation",
+    "registration_contact": [
+      27.2,
+      27.7
+    ]
+  },
+  "extraction_only": {
+    "tile": {
+      "file": "tile.png",
+      "size": [
+        225,
+        212
+      ],
+      "sha256": "61c3c897a45933b835c512bd1e795e5724a3397777d44acec62d87daf38882ee",
+      "atlas_cell": [
+        0,
+        0,
+        724,
+        241
+      ],
+      "local_alpha_crop": [
+        291,
+        21,
+        516,
+        233
+      ]
+    },
+    "fish": {
+      "file": "fish.png",
+      "size": [
+        264,
+        207
+      ],
+      "sha256": "ccbc18e386b522bc4fcf069e4bed7bb125fe2e203934cc0f916c65829351bd61",
+      "atlas_cell": [
+        0,
+        241,
+        724,
+        482
+      ],
+      "local_alpha_crop": [
+        273,
+        21,
+        537,
+        228
+      ]
+    },
+    "glove": {
+      "file": "glove.png",
+      "size": [
+        241,
+        222
+      ],
+      "sha256": "1bdd3660c828a347e9477168fa28b7998ef1d6bd63c36b909202c4d0b6a083b8",
+      "atlas_cell": [
+        724,
+        241,
+        1448,
+        482
+      ],
+      "local_alpha_crop": [
+        237,
+        7,
+        478,
+        229
+      ]
+    },
+    "red-plus": {
+      "file": "red-plus.png",
+      "size": [
+        229,
+        221
+      ],
+      "sha256": "ea6003271286c8b232b53d42dfaa8042e7d98b5163fc9d733ad52ced225d57ba",
+      "atlas_cell": [
+        0,
+        482,
+        724,
+        724
+      ],
+      "local_alpha_crop": [
+        290,
+        9,
+        519,
+        230
+      ]
+    },
+    "heart": {
+      "file": "heart.png",
+      "size": [
+        260,
+        213
+      ],
+      "sha256": "45a4f88a577b67f3bc951c0aa04f15d6c5fae4b320916fc6b9650037b7761522",
+      "atlas_cell": [
+        724,
+        482,
+        1448,
+        724
+      ],
+      "local_alpha_crop": [
+        231,
+        20,
+        491,
+        233
+      ]
+    }
+  }
+}

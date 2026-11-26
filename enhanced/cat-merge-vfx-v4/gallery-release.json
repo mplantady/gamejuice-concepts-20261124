@@ -1,0 +1,59 @@
+{
+  "slug": "cat-merge",
+  "reviewed": true,
+  "enhanced_playable": "enhanced/cat-merge-vfx-v4/index.html",
+  "enhanced_playable_title": "Cat Merge · Film VFX",
+  "runtime_release_version": "cat-vfx-20261126-v4",
+  "supersedes": [
+    "cat-painted-20261126-v2"
+  ],
+  "runtime_comparison_video": "film-vfx/video/cat-merge-original-vs-vfx-v4.mp4",
+  "runtime_comparison_page": "film-vfx/cat-merge/index.html",
+  "runtime_comparison_files": [
+    "film-vfx/video/cat-merge-original-vs-vfx-v4.mp4",
+    "film-vfx/cat-merge/index.html",
+    "film-vfx/cat-merge/poster.jpg",
+    "film-vfx/cat-merge/verification.json"
+  ],
+  "review_binding": {
+    "schema": "root-final-private-package-review-v1",
+    "sha256": "9bf6fff04c58689112d091094f0575e68102520f9438c4d7d90393bb43eb3df7",
+    "scope": "root-approved-runtime-and-comparison-private-integration-only",
+    "staged_and_public_verification": "pending"
+  },
+  "runtime_release": {
+    "version": "cat-vfx-20261126-v4",
+    "label": "Cat Merge · Film VFX",
+    "playable": "enhanced/cat-merge-vfx-v4/index.html",
+    "supersedes": [
+      "cat-painted-20261126-v2"
+    ],
+    "previous_editions": [
+      {
+        "title": "Cat Merge · Painted Edition",
+        "version": "cat-painted-20261126-v2",
+        "playable": "enhanced/cat-merge-painted/index.html",
+        "comparison_video": "painted/video/cat-merge-original-vs-painted-v2.mp4",
+        "comparison_page": "painted/cat-merge/index.html",
+        "comparison_files": [
+          "painted/cat-merge/index.html",
+          "painted/cat-merge/poster.jpg",
+          "painted/cat-merge/verification.json",
+          "painted/video/cat-merge-original-vs-painted-v2.mp4"
+        ]
+      }
+    ],
+    "review_status": "Root approved the exact runtime and actual gameplay comparison; gallery integration remains under review.",
+    "subjective_audio_review": "Unavailable; no subjective audition claimed.",
+    "video": {
+      "file": "film-vfx/video/cat-merge-original-vs-vfx-v4.mp4",
+      "poster": "film-vfx/cat-merge/poster.jpg",
+      "width": 812,
+      "height": 936,
+      "duration": 17.999,
+      "audio": "Enhanced actual runtime soundtrack",
+      "method": "Same two ordinary drops; separate natural-speed playthroughs",
+      "review": "Live input, articulated event poses, encoded framing and payoff reviewed. Decode and clipping checks passed. Subjective listening unavailable."
+    }
+  }
+}

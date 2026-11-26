@@ -1,0 +1,57 @@
+{
+  "slug": "woofdoku",
+  "reviewed": true,
+  "enhanced_playable": "enhanced/woofdoku-storybook/index.html",
+  "enhanced_playable_title": "Woofdoku · Storybook 2.1.2",
+  "runtime_release_version": "woofdoku-storybook-2.1.2",
+  "supersedes": [
+    "woofdoku-living-pups-1.1.0"
+  ],
+  "runtime_comparison_video": "gameplay/woofdoku-storybook/original-vs-improved-v2.mp4",
+  "runtime_comparison_page": "gameplay/woofdoku-storybook/index.html",
+  "runtime_comparison_files": [
+    "gameplay/woofdoku-storybook/original-vs-improved-v2.mp4",
+    "gameplay/woofdoku-storybook/index.html",
+    "gameplay/woofdoku-storybook/poster.png",
+    "gameplay/woofdoku-storybook/verification.json"
+  ],
+  "review_binding": {
+    "sha256": "47af445fafe99612dd47845bdeac9e256ba89144726d2e36584ec376dbd9698b",
+    "scope": "root-approved-runtime-and-comparison-private-integration-only",
+    "staged_and_public_verification": "pending"
+  },
+  "runtime_release": {
+    "version": "woofdoku-storybook-2.1.2",
+    "label": "Woofdoku · Storybook 2.1.2",
+    "playable": "enhanced/woofdoku-storybook/index.html",
+    "supersedes": [
+      "woofdoku-living-pups-1.1.0"
+    ],
+    "previous_editions": [
+      {
+        "title": "Woofdoku · Living Pups",
+        "version": "woofdoku-living-pups-1.1.0",
+        "playable": "enhanced/woofdoku/index.html",
+        "comparison_video": "gameplay/woofdoku/original-vs-improved-v1.mp4",
+        "comparison_page": "gameplay/woofdoku/index.html",
+        "comparison_files": [
+          "gameplay/woofdoku/index.html",
+          "gameplay/woofdoku/poster.jpg",
+          "gameplay/woofdoku/original-vs-improved-v1.mp4"
+        ]
+      }
+    ],
+    "review_status": "Root approved exact runtime and authentic comparison; staged/public gallery review remains pending.",
+    "subjective_audio_review": "Unavailable; no audition claimed.",
+    "video": {
+      "file": "gameplay/woofdoku-storybook/original-vs-improved-v2.mp4",
+      "poster": "gameplay/woofdoku-storybook/poster.png",
+      "width": 860,
+      "height": 820,
+      "duration": 20.018667,
+      "audio": "Enhanced actual runtime soundtrack",
+      "method": "Separate actual normal-speed runs with the same9 legal pointer actions; unchanged enhanced recorded soundtrack.",
+      "review": "The genuine wrong-cell response and life loss are followed by six correct dogs and the verified6/6 result. Readable combo feedback and articulated result poses stay tied to the source game events. Technical audio checks passed; subjective listening unavailable."
+    }
+  }
+}

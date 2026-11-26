@@ -1,0 +1,194 @@
+{
+  "version": "woofdoku-storybook-2.1.2",
+  "runtime": "Original Luna scripts with presentation-only assets, articulation, surfaces and native sound resources",
+  "originalSha256": "15166ac73ba396249753bd6c4fbe0434d650870d5c2e1936a2db4cdabc693b0b",
+  "originalInlineScriptsUnchanged": true,
+  "originalInlineScriptCount": 26,
+  "nativeSupportImages": [
+    {
+      "nativeImageId": "9450",
+      "asset": "assets/generated/tiles/9450-pink.png",
+      "sha256": "f3ec3dbaa45cae20bb8b9bd7efe61b1000de03b6b64ffcc3ba21b33d7d9c1097"
+    },
+    {
+      "nativeImageId": "9620",
+      "asset": "assets/generated/tiles/9620-rose.png",
+      "sha256": "8bec9cfd15d3f14dd71a64841d699ab1eb1317f77faa065e6a618ff35ce144ac"
+    },
+    {
+      "nativeImageId": "9624",
+      "asset": "assets/generated/tiles/9624-sky.png",
+      "sha256": "648584587e34a9ed06e0ab6c5733f4ccdbd748d798ec012dca59ec66fa177258"
+    },
+    {
+      "nativeImageId": "9510",
+      "asset": "assets/generated/tiles/9510-yellow.png",
+      "sha256": "a34bd5f3cdb4e16563ce9b14f6c95562205a124d8449e4a2160b02aac6f9f604"
+    },
+    {
+      "nativeImageId": "9644",
+      "asset": "assets/generated/tiles/9644-mint.png",
+      "sha256": "5ed7fdfe88b7a9083bada6b4603ce358790630e27efd5ad5e8a3258b64815db4"
+    },
+    {
+      "nativeImageId": "9592",
+      "asset": "assets/generated/tiles/9592-slate.png",
+      "sha256": "027293969ba500879cb9f31108ed6112ca4f276486dea3c4486e2153f7ba59d2"
+    },
+    {
+      "nativeImageId": "9398",
+      "asset": "assets/generated/ui/9398-board-frame.png",
+      "sha256": "8e5077fdc39888a5b7329750d126b5dab3252b4572eca4079447082f6c915530"
+    },
+    {
+      "nativeImageId": "25216",
+      "asset": "assets/generated/ui/25216-status-pill.png",
+      "sha256": "419df37e4df524e8561a2a9c3c6abd69b81c5169e0ee05a4afd0a14366e6c7b2"
+    },
+    {
+      "nativeImageId": "25224",
+      "asset": "assets/generated/ui/25224-rules-plaque.png",
+      "sha256": "38f9e35238c461b4d0b1f42d1d587554c11414db82a38092d4e2253ee83b795f"
+    },
+    {
+      "nativeImageId": "9404",
+      "asset": "assets/generated/ui/9404-play-now.png",
+      "sha256": "2da0a6474c0df06c58b5c5973ff4fa39a4893cbeeb0d3304477cbf33cd3e1291"
+    },
+    {
+      "nativeImageId": "9372",
+      "asset": "assets/generated/ui/9372-bone.png",
+      "sha256": "c4148313797c5e59c15b1e6b0af6644a335ac2012f20cc6f6a8b6c3a50f301e6"
+    },
+    {
+      "nativeImageId": "9648",
+      "asset": "assets/generated/ui/9648-paw-white.png",
+      "sha256": "ff6473aea02417cb6a8d9cfcffa257df400f674e80f968084c5eb21b5af9656c"
+    },
+    {
+      "nativeImageId": "9604",
+      "asset": "assets/generated/ui/9604-paw-error.png",
+      "sha256": "3a360de4131b7dc0df4b84af314779bb865b37fb35e6cd263c63a8e5236221cf"
+    },
+    {
+      "nativeImageId": "9568",
+      "asset": "assets/generated/ui/9568-glove.png",
+      "sha256": "e4eb9701fc288eeea575f8fc77b4df9bf6732e5247f1e6a093186dc5f6b6ac27"
+    },
+    {
+      "nativeImageId": "9596",
+      "asset": "assets/generated/ui/9596-result-badge-complete.png",
+      "sha256": "54ac1cc036cebe812b0bdc8699f8b9598aa99e5a754eaf66869514d1d9659f61"
+    },
+    {
+      "nativeImageId": "25218",
+      "asset": "assets/generated/ui/25218-rule-diagram.png",
+      "sha256": "922564ee409429ff1fe05dc15966378cbd9854eff5a5709f32128f897fc18d9c"
+    },
+    {
+      "nativeImageId": "25214",
+      "asset": "assets/generated/ui/25214-rule-diagram.png",
+      "sha256": "3212ba9b1e240e5e5643538f4eff7b1b3b0bd0fe99aa8bcac9d611ab911fb172"
+    },
+    {
+      "nativeImageId": "25212",
+      "asset": "assets/generated/ui/25212-rule-diagram.png",
+      "sha256": "18801a3084ac8cadced0262f40e8d34486960f011df615c4d565c80ce9e7646c"
+    },
+    {
+      "nativeImageId": "9608",
+      "asset": "assets/generated/characters/native-dog.png",
+      "sha256": "b9ac24e5e7edf10a87880ffffb7f1986def2daac950214f732af460f65d2f644"
+    },
+    {
+      "nativeImageId": "25222",
+      "asset": "assets/generated/environment/native-footer.png",
+      "sha256": "f094ccdbfda39a89fa5b87754b6703cb22284ab0a0da701793cd56d578ee9b82"
+    }
+  ],
+  "soundResourceIds": [
+    "9576",
+    "9628",
+    "9502",
+    "9556",
+    "9540",
+    "9548",
+    "9396",
+    "9614",
+    "9612",
+    "9436",
+    "9474",
+    "9458"
+  ],
+  "files": {
+    "LICENSE-Kenney.txt": "b49aa9c56b04528b95913de13e506a0f7c5e807b9925db9bfef86af1f91120db",
+    "assets/ball.png": "9a98a6660f2a6849a3731ccf0ab81c6a6d60a4c45a1f087ed51dc1b2b9d28f2f",
+    "assets/blue-cloth.jpg": "5507108a51c387b30aadac5639200f6f49ff71de9a28375fac6bb47baad943b0",
+    "assets/bone.png": "f95e205293fa7f2638ff9d8efa91efdda58f3276a134ceeefab2cade0950edbe",
+    "assets/bowl.png": "024aff685280f422e9e6f1583fce193adfa545a3daf594682b22bab5dcf537c9",
+    "assets/dog-anticipate.png": "3d5fe0db1dce1db90cb0a57d36ada8cea5e316b6a5cec1a6c27eee59dc2746dc",
+    "assets/dog-blink.png": "1b7cea48cd84df94ca58065dd37102de289e1e39bf79fc2fd500b2b30e840b46",
+    "assets/dog-concern.png": "051dc24ac8e87b5d5af371e42a3369024a69baf07ab47c74bd5d573caffe3c72",
+    "assets/dog-content.png": "eee9f14de624041af8330f2a6521e115e2b937855e719a742f5f43df38b4d3d5",
+    "assets/dog-delight.png": "f09f8a38f7191cae7a862a506c0f7fdfa9107b1d6e7d7a64fc70a2d84612775d",
+    "assets/dog-rest.png": "104e45692e63afa0bc273e271b316ee08e664e5a721e668c9c93d1f443e9439c",
+    "assets/dog-settle.png": "f0825934e2a86cb4da3666e4df71b17c8625d3ab9c48cffdf8f2d01e1d780813",
+    "assets/dog-wave.png": "5684cfb35d9c0da302394b83167e55a907bb6ef085bfad3bf4815f69071c5270",
+    "assets/grass0.png": "4b444ad315de9ab9c42c2da83bcaf914a20c7accb4bd7930e3657bab0521a699",
+    "assets/grass1.png": "63ec1675db14b35c76405b4b8c9b41138f8da39fd8fa40f21f37de013ac3829c",
+    "assets/grass2.png": "4cc2e1b03681d4705cc287653cf5d36f8124105b5fdf95e0234d348af47e8b8a",
+    "assets/grass3.png": "67ceccfd58f3a202da5560c602e1d3b553b8d0c2b6a421c83028d18435b05b1d",
+    "assets/layout.json": "fb78649e3cd0775c01f7c8883ca25ef2f530e2359206903abb6ab56ea6ed02ac",
+    "assets/result-badge-base.png": "c00f70c9517bd65d5ebb8085a8ed8e70d8354307b38f099f1e80c86cf8fb7489",
+    "assets/toy-footer.png": "252b8c959793723b3460c4753b5e7359f5f4c36405bbe594387c5dfe73e9ff02",
+    "audio.js": "c5b7b394a307803b30c35a42491f398c9f9eb8b8cb650f9f606fdd3ba56c8460",
+    "enhance.js": "383edecbe2eef79ca1cf7129dec8d50237e345d653f1743e0e1e6580aba136c0",
+    "environment.js": "6acfe2e3831cf61d1c4209a4e96c009f919bbc401e38782dc48f454726a08bc2",
+    "feedback.js": "5dba6d677994f94590765df7f34dc66b560bc3f9dcab28717dc42c9507e51a63",
+    "index.html": "772313353d1539150b66c2dfbb6720aff35de054c440d554f5f555fe7c187ba1",
+    "native-audio-resources.js": "4c34593eebff29e5ffade63a33a2047ace53cc2587b0ac3e587a49ae4a308fc1",
+    "native-combo.js": "a69a7fe45115a863ce61b46473557ca4069fe693c680e63dc5ab1cc2e79b6cdb",
+    "native-motion.js": "25e57fdd38889f56b7e3ebf76953e9ad6df4f262fc16fe8e2de2c1b06f56c62f",
+    "native-surfaces.js": "c7dfbe76549c309ab6a1517bd5d1e2feac93a5e2421d4387261e8936d38f81bf",
+    "native-visuals.js": "f3c470b9ed90b6dea184021bd893aabaeacea0eb7852e1ded698460ce8403c66",
+    "original-bridge.js": "5eb46452e8cdefe62ed7a96c499ab1446b8f65835813ebaf5674ef3413190598",
+    "sound-data.js": "9e39005b254ab900afb24523fcac087b3e7a62481d45b93f85c12f2e7b1b1e8e",
+    "style.css": "0e8de504354a3664658c368573ed3d8e8d58b1d51b80dd9ecbe84997e08d8916"
+  },
+  "runtime_files": [
+    "LICENSE-Kenney.txt",
+    "assets/ball.png",
+    "assets/blue-cloth.jpg",
+    "assets/bone.png",
+    "assets/bowl.png",
+    "assets/dog-anticipate.png",
+    "assets/dog-blink.png",
+    "assets/dog-concern.png",
+    "assets/dog-content.png",
+    "assets/dog-delight.png",
+    "assets/dog-rest.png",
+    "assets/dog-settle.png",
+    "assets/dog-wave.png",
+    "assets/grass0.png",
+    "assets/grass1.png",
+    "assets/grass2.png",
+    "assets/grass3.png",
+    "assets/layout.json",
+    "assets/result-badge-base.png",
+    "assets/toy-footer.png",
+    "audio.js",
+    "build-manifest.json",
+    "enhance.js",
+    "environment.js",
+    "feedback.js",
+    "index.html",
+    "native-audio-resources.js",
+    "native-combo.js",
+    "native-motion.js",
+    "native-surfaces.js",
+    "native-visuals.js",
+    "original-bridge.js",
+    "sound-data.js",
+    "style.css"
+  ]
+}

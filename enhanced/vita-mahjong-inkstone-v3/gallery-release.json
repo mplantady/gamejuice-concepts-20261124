@@ -1,0 +1,83 @@
+{
+  "slug": "vita-mahjong",
+  "reviewed": true,
+  "enhanced_playable": "enhanced/vita-mahjong-inkstone-v3/index.html",
+  "enhanced_playable_title": "Vita Mahjong · Inkstone Motion V3",
+  "runtime_release_version": "vita-inkstone-vfx-20261126-v3",
+  "supersedes": [
+    "vita-inkstone-20261126-v2"
+  ],
+  "runtime_comparison_video": "runtime/vita-mahjong/original-vs-inkstone-motion-v3.mp4",
+  "runtime_comparison_page": "runtime/vita-mahjong/index.html",
+  "runtime_comparison_files": [
+    "runtime/vita-mahjong/original-vs-inkstone-motion-v3.mp4",
+    "runtime/vita-mahjong/index.html",
+    "runtime/vita-mahjong/poster.png",
+    "runtime/vita-mahjong/verification.json"
+  ],
+  "review_binding": {
+    "sha256": "8ef185afb8375e7796e77f2cc305e945ed9cb27873b1b9bcca22108b0618f9ba",
+    "scope": "root-approved-runtime-and-comparison-private-integration-only",
+    "staged_and_public_verification": "pending"
+  },
+  "runtime_release": {
+    "version": "vita-inkstone-vfx-20261126-v3",
+    "label": "Vita Mahjong · Inkstone Motion V3",
+    "playable": "enhanced/vita-mahjong-inkstone-v3/index.html",
+    "supersedes": [
+      "vita-inkstone-20261126-v2"
+    ],
+    "previous_editions": [
+      {
+        "title": "Vita Mahjong · Inkstone Edition",
+        "version": "vita-inkstone-20261126-v2",
+        "playable": "enhanced/vita-mahjong-inkstone-v2/index.html",
+        "comparison_video": "painted/video/vita-mahjong-original-vs-inkstone-v2.mp4",
+        "comparison_page": "painted/video/vita-mahjong-original-vs-inkstone-v2.mp4",
+        "comparison_files": [
+          "painted/video/vita-mahjong-original-vs-inkstone-v2.mp4",
+          "painted/video/vita-mahjong-painted-v1-vs-inkstone-v2.mp4"
+        ]
+      },
+      {
+        "title": "Painted Ceramic v1",
+        "version": "vita-painted-ceramic-20261126-v1",
+        "playable": "enhanced/vita-mahjong-painted/index.html",
+        "comparison_video": "painted/video/vita-mahjong-original-vs-painted-v1.mp4"
+      }
+    ],
+    "review_status": "Root approved exact runtime and authentic comparison; staged/public gallery review remains pending.",
+    "subjective_audio_review": "Unavailable; no audition claimed.",
+    "video": {
+      "file": "runtime/vita-mahjong/original-vs-inkstone-motion-v3.mp4",
+      "poster": "runtime/vita-mahjong/poster.png",
+      "width": 804,
+      "height": 800,
+      "duration": 23.497,
+      "audio": "Enhanced actual runtime soundtrack",
+      "method": "Separate authentic normal-speed playthroughs with the same five inputs. Native 390 × 694 panels and actual enhanced soundtrack with its recorded 29 ms starting offset.",
+      "review": "A blocked action and four valid moves preserve the original tile and lock states. Ceramic contact and clear effects remain attached to the affected tiles, followed by the quiet no-moves ending with 54 tiles still present. Technical audio checks passed; subjective listening unavailable."
+    }
+  },
+  "runtime_polished_image": {
+    "image": "inkstone/images/vita-mahjong-polished-v2.png",
+    "label": "Polished Image",
+    "kind": "verified-playable-opening",
+    "caption": "Actual verified Inkstone v2 opening — captured from the playable.",
+    "version": "vita-inkstone-20261126-v2",
+    "width": 390,
+    "height": 694,
+    "sha256": "66893ad7c31d3edfe19bf709e1d029b1368b630d406a21ea0ff2de25e96e6bcb"
+  },
+  "runtime_study_images": [
+    {
+      "image": "inkstone/images/vita-mahjong-material-study-v2-1.png",
+      "label": "Material Study · A/B",
+      "caption": "Earlier art-direction study; not gameplay evidence.",
+      "kind": "material-study",
+      "width": 1774,
+      "height": 887,
+      "sha256": "ce1b41ac1acabfd147f6290176ea26529de19075fc1cfc45b16bc8d5746767bd"
+    }
+  ]
+}

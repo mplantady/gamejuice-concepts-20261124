@@ -1,0 +1,59 @@
+{
+  "slug": "mahjong-rumble",
+  "reviewed": true,
+  "enhanced_playable": "enhanced/mahjong-rumble-atelier-vfx/index.html",
+  "enhanced_playable_title": "Mahjong Rumble · Atelier VFX",
+  "runtime_release_version": "mahjong-atelier-vfx-20261126-v3",
+  "supersedes": [
+    "mahjong-painted-20261126-v1"
+  ],
+  "runtime_comparison_video": "production/mahjong-rumble-atelier-vfx/mahjong-rumble-original-vs-improved.mp4",
+  "runtime_comparison_page": "production/mahjong-rumble-atelier-vfx/index.html",
+  "runtime_comparison_files": [
+    "production/mahjong-rumble-atelier-vfx/mahjong-rumble-original-vs-improved.mp4",
+    "production/mahjong-rumble-atelier-vfx/index.html",
+    "production/mahjong-rumble-atelier-vfx/poster.png",
+    "production/mahjong-rumble-atelier-vfx/verification.json"
+  ],
+  "review_binding": {
+    "sha256": "2473d57a8609712fc8fc211501997357c6df69f62338f80b725a70a3407fdf72",
+    "scope": "root-approved-runtime-and-comparison-private-integration-only",
+    "staged_and_public_verification": "pending"
+  },
+  "runtime_release": {
+    "version": "mahjong-atelier-vfx-20261126-v3",
+    "label": "Mahjong Rumble · Atelier VFX",
+    "playable": "enhanced/mahjong-rumble-atelier-vfx/index.html",
+    "supersedes": [
+      "mahjong-painted-20261126-v1"
+    ],
+    "previous_editions": [
+      {
+        "title": "Mahjong Rumble · Painted Edition",
+        "version": "mahjong-painted-20261126-v1",
+        "playable": "enhanced/mahjong-rumble-painted/index.html",
+        "comparison_video": "production/mahjong-rumble/mahjong-rumble-original-vs-improved.mp4",
+        "comparison_page": "production/mahjong-rumble/index.html",
+        "comparison_files": [
+          "production/mahjong-rumble/index.html",
+          "production/mahjong-rumble/mahjong-rumble-original-vs-improved.mp4",
+          "production/mahjong-rumble/original.jpg",
+          "production/mahjong-rumble/improved.jpg",
+          "production/mahjong-rumble/comparison-poster.jpg"
+        ]
+      }
+    ],
+    "review_status": "Root approved exact runtime and authentic comparison; staged/public gallery review remains pending.",
+    "subjective_audio_review": "Unavailable; no audition claimed.",
+    "video": {
+      "file": "production/mahjong-rumble-atelier-vfx/mahjong-rumble-original-vs-improved.mp4",
+      "poster": "production/mahjong-rumble-atelier-vfx/poster.png",
+      "width": 808,
+      "height": 980,
+      "duration": 21.9,
+      "audio": "Enhanced actual runtime soundtrack",
+      "method": "Separate authentic normal-speed playthroughs with the same14 tile clicks. Equal100ms startup trim before input; actual enhanced soundtrack only.",
+      "review": "Four verified matches reach the retained ranking screen with score40 and24tiles remaining. The corrected first-place row fits, while the articulated mascots and original reward celebration remain readable. Technical audio checks passed; subjective listening unavailable."
+    }
+  }
+}

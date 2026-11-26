@@ -1,0 +1,260 @@
+{
+  "version": "royal-smash-azure-v2-art-1",
+  "status": "complete",
+  "artReadyFinal": true,
+  "checks": {
+    "all_packed_dimensions_match_source": true,
+    "source_alpha_matches_exactly": true,
+    "uv_guard_pixels_match_exactly": true,
+    "palms_match_accepted_v1_bytes": true,
+    "raw_art_unchanged": true,
+    "required_texture_keys_present": true,
+    "all_14_generations_recorded": true
+  },
+  "files": [
+    {
+      "file": "azure-coast-cleanplate.webp",
+      "bytes": 199234,
+      "sha256": "cc8db2f5d779044443b12005c919c3acc90960f8c20f695b411ce4774ae8152c",
+      "size": [
+        1254,
+        1254
+      ],
+      "mode": "RGB",
+      "alpha_range": null,
+      "transparent_pixels": 0
+    },
+    {
+      "file": "can_1x1-azure.webp",
+      "bytes": 790690,
+      "sha256": "18438195022a62a0e136fea20a21a0c84a34ce45facffe246878127005b6feb6",
+      "size": [
+        1024,
+        1024
+      ],
+      "mode": "RGB",
+      "alpha_range": null,
+      "transparent_pixels": 0
+    },
+    {
+      "file": "can_1x2-azure.webp",
+      "bytes": 210728,
+      "sha256": "973dd4d185a4b867cc068948b6a6160ac57bb7dc4bb6e9c464916f35bde8a0b4",
+      "size": [
+        512,
+        512
+      ],
+      "mode": "RGB",
+      "alpha_range": null,
+      "transparent_pixels": 0
+    },
+    {
+      "file": "can_conical-azure.webp",
+      "bytes": 215724,
+      "sha256": "acd5e64fa6eacc7a8f9101840dbef641ce80e656989fe6f974a52b670e33831b",
+      "size": [
+        512,
+        512
+      ],
+      "mode": "RGBA",
+      "alpha_range": [
+        230,
+        255
+      ],
+      "transparent_pixels": 0
+    },
+    {
+      "file": "can_square_1x1-azure.webp",
+      "bytes": 764736,
+      "sha256": "bb76e47ffa517391525ccbf728d07578893a86f9a94b9bfe55a4f25cd16357d4",
+      "size": [
+        1024,
+        1024
+      ],
+      "mode": "RGB",
+      "alpha_range": null,
+      "transparent_pixels": 0
+    },
+    {
+      "file": "can_square_1x4-azure.webp",
+      "bytes": 199032,
+      "sha256": "0c7a9809197e2b45e65c6d5068f401aeb36712d7871ebb5f106e1122df798863",
+      "size": [
+        512,
+        512
+      ],
+      "mode": "RGB",
+      "alpha_range": null,
+      "transparent_pixels": 0
+    },
+    {
+      "file": "cannon-azure.webp",
+      "bytes": 205680,
+      "sha256": "6d227abd23904e9dd7db9de51f302a54c85e4d51316c6881681d26b643d67e7e",
+      "size": [
+        512,
+        512
+      ],
+      "mode": "RGB",
+      "alpha_range": null,
+      "transparent_pixels": 0
+    },
+    {
+      "file": "cannonball-azure.webp",
+      "bytes": 154832,
+      "sha256": "5c06e440a56a7213a3a6adae2e3add7a6032cabb03152e9c350139fec55698b3",
+      "size": [
+        512,
+        512
+      ],
+      "mode": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ],
+      "transparent_pixels": 155393
+    },
+    {
+      "file": "hardcannonfloor-azure.webp",
+      "bytes": 89102,
+      "sha256": "2316b3c305ec683ce3815bcd41604c69cdc0647455bb672f73254e8a8c15260c",
+      "size": [
+        512,
+        193
+      ],
+      "mode": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ],
+      "transparent_pixels": 22244
+    },
+    {
+      "file": "hardtable-azure.webp",
+      "bytes": 220910,
+      "sha256": "a1bec7f02206e727440b52e09e731514aa6a247967430a59fd83247049d93112",
+      "size": [
+        512,
+        512
+      ],
+      "mode": "RGB",
+      "alpha_range": null,
+      "transparent_pixels": 0
+    },
+    {
+      "file": "hardtablepole-azure.webp",
+      "bytes": 126648,
+      "sha256": "6e56b9c8b06f9bdfb09c3d6f1dab8fa92ebfb950f519373fd44a7eea788f509d",
+      "size": [
+        512,
+        512
+      ],
+      "mode": "RGB",
+      "alpha_range": null,
+      "transparent_pixels": 0
+    },
+    {
+      "file": "muzzle-phase-01.png",
+      "bytes": 14986,
+      "sha256": "585bfd54a4b69b4b999ef6eea810ac2e0878ef373996a2e2cdbb826df7856694",
+      "size": [
+        256,
+        256
+      ],
+      "mode": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ],
+      "transparent_pixels": 59491
+    },
+    {
+      "file": "muzzle-phase-02.png",
+      "bytes": 40747,
+      "sha256": "1a63af116c46a2ade48452555a9fed9542d000a6a492b1e9b84f57e85ecade5d",
+      "size": [
+        256,
+        256
+      ],
+      "mode": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ],
+      "transparent_pixels": 41662
+    },
+    {
+      "file": "muzzle-phase-03.png",
+      "bytes": 31540,
+      "sha256": "ab3c90c4a94bd94cb19621e9c9f61f2713ba43d66acb881744bcdc7829bdd1e9",
+      "size": [
+        256,
+        256
+      ],
+      "mode": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ],
+      "transparent_pixels": 51268
+    },
+    {
+      "file": "palms-fullframe.png",
+      "bytes": 48989,
+      "sha256": "99eeeb54e2a56e8f8a57f41d5a914007a2c22b438c092fb8a2c9951d46179294",
+      "size": [
+        1254,
+        1254
+      ],
+      "mode": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ],
+      "transparent_pixels": 1560906
+    },
+    {
+      "file": "ui-badge-azure.png",
+      "bytes": 311051,
+      "sha256": "dc3b3682bf3eb9f8885f77cd521504b70be81f156342d92ef88ad2ab6766516f",
+      "size": [
+        512,
+        503
+      ],
+      "mode": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ],
+      "transparent_pixels": 21466
+    },
+    {
+      "file": "ui-jade-cta.png",
+      "bytes": 143457,
+      "sha256": "1357885f0cada73f34270ee060c2b1be459d5fbbc7bc77079ffa6a31e5e2ea29",
+      "size": [
+        563,
+        201
+      ],
+      "mode": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ],
+      "transparent_pixels": 7047
+    }
+  ],
+  "manifest_sha256": "2e7114b3b5f703009184b6f150f79cd7bc69b64495d76d91d1bb1e92eaedc4a5",
+  "limitations": [
+    "Actual 3D seam/readability review is required after runtime integration",
+    "Plume motion timing and changed audio require actual playable review"
+  ],
+  "visual_review": {
+    "date": "2026-11-26",
+    "plume_64px": "Inspected all three packed frames composited over blue at 64x64: compact emission, larger rounded expansion and separated curls remain distinct, with transparent margins and no visible matte. Relative sizes and common origin retained. Timing not yet reviewed.",
+    "palms_on_new_coast": "Composited 1254-square layers inspected: roots remain on both island greenery clusters; painted light and foliage style are compatible.",
+    "rail_and_projectile_alpha": "Inspected RGBA composites over a solid blue receiver. Clean silhouettes; hidden RGB exposed by raw WebP previews is not visible through actual alpha.",
+    "ui_surfaces": "Inspected 512x503 badge and 563x201 CTA. Blank areas remain available for native text; no baked letters or numbers.",
+    "runtime_required": "3D seams, phone-size HUD text, startup and event synchronization still require the parent native playable QA."
+  }
+}

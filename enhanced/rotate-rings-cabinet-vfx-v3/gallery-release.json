@@ -1,0 +1,110 @@
+{
+  "slug": "rotate-rings",
+  "reviewed": true,
+  "enhanced_playable": "enhanced/rotate-rings-cabinet-vfx-v3/index.html",
+  "enhanced_playable_title": "Rotate Rings · Cabinet VFX",
+  "runtime_release_version": "2026-11-26-cabinet-vfx-v3",
+  "supersedes": [
+    "2026-11-26-cabinet-v2"
+  ],
+  "runtime_comparison_video": "runtime/rotate-rings/comparison-v3.mp4",
+  "runtime_comparison_page": "runtime/rotate-rings/index.html",
+  "runtime_comparison_files": [
+    "runtime/rotate-rings/comparison-v3.mp4",
+    "runtime/rotate-rings/index.html",
+    "runtime/rotate-rings/poster.png",
+    "runtime/rotate-rings/verification.json"
+  ],
+  "review_binding": {
+    "sha256": "5b855492c5def30a9d26e6284c5b8893e07498e0bc1027b8d2bdb47752b4fd14",
+    "scope": "root-approved-runtime-and-comparison-private-integration-only",
+    "staged_and_public_verification": "pending"
+  },
+  "runtime_release": {
+    "version": "2026-11-26-cabinet-vfx-v3",
+    "label": "Rotate Rings · Cabinet VFX",
+    "playable": "enhanced/rotate-rings-cabinet-vfx-v3/index.html",
+    "supersedes": [
+      "2026-11-26-cabinet-v2"
+    ],
+    "previous_editions": [
+      {
+        "title": "Rotate Rings · Astral Cabinet",
+        "version": "2026-11-26-cabinet-v2",
+        "playable": "enhanced/rotate-rings-cabinet-v2/index.html",
+        "comparison_video": "runtime/rotate-rings/comparison-v2.mp4",
+        "comparison_page": "runtime/rotate-rings/comparison-v2.mp4",
+        "comparison_files": [
+          "runtime/rotate-rings/comparison-v2.mp4",
+          "runtime/rotate-rings/poster-v2.jpg",
+          "runtime/rotate-rings/release-v1.json",
+          "runtime/rotate-rings/release.json",
+          "runtime/rotate-rings/runtime-v2.png"
+        ],
+        "combined_image_descriptor": {
+          "status": "captured",
+          "image": "runtime/rotate-rings/runtime-v2.png",
+          "prompt": "Actual native-size screenshot of the tested Rotate Rings · Astral Cabinet. Captured after production art loaded; no gameplay pixels were generated or reconstructed for this image.",
+          "width": 390,
+          "height": 844,
+          "available": true,
+          "result_status": "captured",
+          "review": {
+            "summary": "Actual390×844 final build: coherent painted lavender cabinet, copper inlay, bronze rings, carved walnut knot, articulated brass latches and rebuilt interface. Header fits after correction.",
+            "drift": "Same protected layout, pointer controls, IQ rules, ring network and two-ring trial ending. Source parity and original-versus-enhanced traces passed. Reduced motion, touch and responsive controls passed."
+          },
+          "previous_image": "images/rotate-rings-combined.png",
+          "previous_metadata": {
+            "image": "images/rotate-rings-combined.png",
+            "status": "generated",
+            "result_status": "generated",
+            "width": 940,
+            "height": 1673,
+            "prompt": "Use case: style-transfer. Asset type: enhanced mobile-game screenshot concept for later image-to-video development.\nInput image 1 is the ORIGINAL GAME SCREENSHOT and the edit target. Produce one finished, full-bleed portrait gameplay image with the same aspect ratio as the reference (390:694). No device, mockup frame, comparison panels, labels, watermarks or added slogans.\nPreserve this exact game and visible state: same camera and composition, playfield shape, row/column structure, piece count and positions, recognizable character and item identities, functional colors, selection/tutorial cues, readable copy and counter values. Keep existing controls and HUD in their current regions and footprints. Do not add mechanics, objects, menus, rewards or moves. The viewer should immediately recognize the same playable game.\nRetain its cheerful stylized casual-game character. Make the chosen improvement visible and professionally crafted while keeping symbols legible at phone size. Preserve the reference's gameplay geometry; no camera tilt, zoom, scene expansion or re-layout. Exact text must remain verbatim. The output is a visual concept, not a new gameplay state.\nApply only this experiment:\nCOMBINED PASS. Improve lighting, game graphics and existing UI together as one coherent premium casual-game treatment. Use soft motivated light, gentle contact depth and controlled highlights; refine existing characters/items with clean expressive forms and high-quality stylized materials; upgrade the existing UI with crisp exact typography, clean icons, balanced internal spacing and consistent polished surfaces. Preserve the original state, composition, counts, identities, functional colors and control footprints. Make the improvement clearly visible without making it a different game. No extra objects, heavy bloom, cinematic camera changes, noisy particles, invented controls or hidden symbols.",
+            "review": {
+              "summary": "Coherent warm materials, stronger contact depth and clear UI give the game a visibly finished treatment.",
+              "layout": "The same overall network, open/closed rings, connectors, knot and tutorial cue remain in close correspondence; exact knot interweaving is not proven.",
+              "text": "Source wording, including 'th rings', and all principal bottom copy/values remain readable.",
+              "identity": "Copper open rings stay recognizable; closed rings are reinterpreted with conspicuous wood grain, changing their original mottled material identity.",
+              "scope_drift": "Combined treatment is in scope overall, with material reinterpretation on closed rings and slight bottom-panel styling/footprint changes.",
+              "verdict": "Promising combined visual target; verify ring material intent and topology before implementation."
+            }
+          },
+          "artifact_kind": "runtime-screenshot",
+          "prompt_file": null,
+          "image_source": "actual-playable-capture",
+          "image_caption": "Actual Astral Cabinet gameplay at its native 390 × 844 capture size, after production art loaded.",
+          "image_version": "2026-11-26-cabinet-v2"
+        },
+        "combined_image_descriptor_provenance": {
+          "file": "concepts/manifest.json",
+          "sha256": "a7e177709e833c6febed5fbedece02243fbdfdc7518e14362b1c43b9d2c54113",
+          "scope": "Complete exact prior public descriptor retained as earlier-edition metadata; not a new capture or new visual approval."
+        }
+      },
+      {
+        "version": "2026-11-26-copper-v1",
+        "title": "Rotate Rings · Copper Atelier",
+        "playable": "enhanced/rotate-rings/index.html",
+        "comparison_page": "runtime/rotate-rings/comparison-v1.mp4",
+        "comparison_files": [
+          "runtime/rotate-rings/comparison-v1.mp4",
+          "runtime/rotate-rings/poster.jpg",
+          "runtime/rotate-rings/release-v1.json"
+        ]
+      }
+    ],
+    "review_status": "Root approved exact runtime and authentic comparison; staged/public gallery review remains pending.",
+    "subjective_audio_review": "Unavailable; no audition claimed.",
+    "video": {
+      "file": "runtime/rotate-rings/comparison-v3.mp4",
+      "poster": "runtime/rotate-rings/poster.png",
+      "width": 804,
+      "height": 950,
+      "duration": 19.044,
+      "audio": "Enhanced actual runtime soundtrack",
+      "method": "Separate authentic normal-speed playthroughs; same8 input sequence with independent timing, no retiming or exact synchronization claim.",
+      "review": "Eight real gestures reach the same settledIQ95 and both trial endcards. The enhanced endcard appears0.606seconds later in this independent run and remains visible for at least2.378seconds; neither playthrough was retimed. Technical audio checks passed; subjective listening unavailable."
+    }
+  }
+}

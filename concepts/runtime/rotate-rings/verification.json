@@ -1,0 +1,12 @@
+{
+  "version": "2026-11-26-cabinet-vfx-v3",
+  "actualGameplay": "Eight real gestures reach the same settledIQ95 and both trial endcards. The enhanced endcard appears0.606seconds later in this independent run and remains visible for at least2.378seconds; neither playthrough was retimed.",
+  "recordingMethod": "Separate authentic normal-speed playthroughs; same8 input sequence with independent timing, no retiming or exact synchronization claim.",
+  "audio": "Actual enhanced runtime soundtrack. Technical decode/clipping checks passed; subjective listening was unavailable.",
+  "limitations": [
+    "Original endcard first visible16.060s; enhanced16.666s. These are separate natural-speed runs, not exactly synchronized.",
+    "After-state snapshots drift233–665ms; individual actual pointer starts were not logged, so exact scheduling versus display latency is not isolated.",
+    "Both finalIQ95/endcards and shared gameplay states match. Source displayIQ uses a transient tween.",
+    "A final exact outer-canvas crop corrects an FFmpeg overlay height anomaly; all native gameplay pixels/positions are preserved."
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "slug": "meowdoku",
+  "reviewed": true,
+  "enhanced_playable": "enhanced/meowdoku-journal/index.html",
+  "enhanced_playable_title": "Meowdoku · Journal VFX",
+  "runtime_release_version": "meowdoku-journal-20261126-v2",
+  "supersedes": [
+    "meowdoku-expressive-20261126-v5"
+  ],
+  "runtime_comparison_video": "meowdoku-journal/meowdoku-original-vs-journal-v2.mp4",
+  "runtime_comparison_page": "meowdoku-journal/index.html",
+  "runtime_comparison_files": [
+    "meowdoku-journal/meowdoku-original-vs-journal-v2.mp4",
+    "meowdoku-journal/index.html",
+    "meowdoku-journal/poster.png",
+    "meowdoku-journal/verification.json"
+  ],
+  "review_binding": {
+    "schema": "root-final-private-package-review-v1",
+    "sha256": "fadb328970a3ff7c75d32f94acf9d88d94f08ba9dd1344153f559171ea63d576",
+    "scope": "root-approved-runtime-and-comparison-private-integration-only",
+    "staged_and_public_verification": "pending"
+  },
+  "runtime_release": {
+    "version": "meowdoku-journal-20261126-v2",
+    "label": "Meowdoku · Journal VFX",
+    "playable": "enhanced/meowdoku-journal/index.html",
+    "supersedes": [
+      "meowdoku-expressive-20261126-v5"
+    ],
+    "previous_editions": [
+      {
+        "title": "Meowdoku! · Expressive Edition",
+        "version": "meowdoku-expressive-20261126-v5",
+        "playable": "enhanced/meowdoku/index.html",
+        "comparison_video": "meowdoku/meowdoku-original-vs-expressive-v1.mp4",
+        "comparison_page": "meowdoku/index.html",
+        "comparison_files": [
+          "meowdoku/index.html",
+          "meowdoku/comparison-poster.jpg",
+          "meowdoku/meowdoku-original-vs-expressive-v1.mp4"
+        ]
+      }
+    ],
+    "review_status": "Root approved exact runtime and authentic comparison; gallery integration remains under review.",
+    "subjective_audio_review": "Unavailable; no audition claimed.",
+    "video": {
+      "file": "meowdoku-journal/meowdoku-original-vs-journal-v2.mp4",
+      "poster": "meowdoku-journal/poster.png",
+      "width": 804,
+      "height": 800,
+      "duration": 35.983,
+      "audio": "Enhanced actual runtime soundtrack",
+      "method": "Actual separate playthroughs · same verified inputs · normal speed",
+      "review": "Root reviewed runtime, expressive event feedback and encoded comparison. Technical decode/audio checks passed. Subjective listening unavailable."
+    }
+  }
+}

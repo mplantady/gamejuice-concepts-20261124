@@ -1,0 +1,11 @@
+{
+  "version": "mahjong-atelier-vfx-20261126-v3",
+  "actualGameplay": "Four verified matches reach the retained ranking screen with score40 and24tiles remaining. The corrected first-place row fits, while the articulated mascots and original reward celebration remain readable.",
+  "recordingMethod": "Separate authentic normal-speed playthroughs with the same14 tile clicks. Equal100ms startup trim before input; actual enhanced soundtrack only.",
+  "audio": "Actual enhanced runtime soundtrack. Technical decode/clipping checks passed; subjective listening was unavailable.",
+  "limitations": [
+    "This is the actual ranking ending after four matches, not a cleared24-tile board.",
+    "Equal100ms startup trim removes the original blank GPU frame before any input; no substituted frame, retiming or invented result.",
+    "Rejected r1 leaderboard-fit footage remains preserved as before evidence and is not the final release."
+  ]
+}

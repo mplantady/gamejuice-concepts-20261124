@@ -1,0 +1,14 @@
+{
+  "version": "cat-vfx-20261126-v4",
+  "recording": "Authentic original versus enhanced gameplay; separate normal-speed playthroughs with two ordinary drops.",
+  "observedResult": {
+    "merges": 6,
+    "completions": 2,
+    "coins": 15000
+  },
+  "review": "Root reviewed the live playable, articulated event poses and the encoded comparison.",
+  "audio": "Actual enhanced runtime soundtrack. Technical decode and clipping checks passed. Subjective listening was unavailable.",
+  "limitations": [
+    "Browser conversion uses an existing approximate physics solver; it is not identical to original Luna physics."
+  ]
+}

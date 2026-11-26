@@ -1,0 +1,61 @@
+{
+  "slug": "goods-puzzle",
+  "reviewed": true,
+  "enhanced_playable": "enhanced/goods-puzzle-atelier-vfx/index.html",
+  "enhanced_playable_title": "Goods Puzzle · Miniature Atelier VFX",
+  "runtime_release_version": "goods-atelier-2.1.0",
+  "supersedes": [
+    "goods-atelier-2.0.0"
+  ],
+  "runtime_comparison_video": "atelier-vfx/goods-puzzle/original-vs-atelier.mp4",
+  "runtime_comparison_page": "atelier-vfx/goods-puzzle/index.html",
+  "runtime_comparison_files": [
+    "atelier-vfx/goods-puzzle/original-vs-atelier.mp4",
+    "atelier-vfx/goods-puzzle/index.html",
+    "atelier-vfx/goods-puzzle/poster.png",
+    "atelier-vfx/goods-puzzle/verification.json"
+  ],
+  "review_binding": {
+    "sha256": "8faf758967a70fb509affe5a2413c75968b22fdffebd41596a161abb38f31e2e",
+    "scope": "root-approved-runtime-and-comparison-private-integration-only",
+    "staged_and_public_verification": "pending"
+  },
+  "runtime_release": {
+    "version": "goods-atelier-2.1.0",
+    "label": "Goods Puzzle · Miniature Atelier VFX",
+    "playable": "enhanced/goods-puzzle-atelier-vfx/index.html",
+    "supersedes": [
+      "goods-atelier-2.0.0"
+    ],
+    "previous_editions": [
+      {
+        "title": "Goods Puzzle — Miniature Atelier",
+        "version": "goods-atelier-2.0.0",
+        "playable": "enhanced/goods-puzzle-atelier/index.html",
+        "comparison_video": "atelier/goods-puzzle/original-vs-atelier.mp4",
+        "comparison_page": "atelier/goods-puzzle/index.html",
+        "comparison_files": [
+          "atelier/goods-puzzle/atelier-playable.png",
+          "atelier/goods-puzzle/concept-study-a.png",
+          "atelier/goods-puzzle/concept-study-b.png",
+          "atelier/goods-puzzle/index.html",
+          "atelier/goods-puzzle/original-vs-atelier.mp4",
+          "atelier/goods-puzzle/poster.jpg",
+          "atelier/goods-puzzle/release.json"
+        ]
+      }
+    ],
+    "review_status": "Root approved exact runtime and authentic comparison; staged/public gallery review remains pending.",
+    "subjective_audio_review": "Unavailable; no audition claimed.",
+    "video": {
+      "file": "atelier-vfx/goods-puzzle/original-vs-atelier.mp4",
+      "poster": "atelier-vfx/goods-puzzle/poster.png",
+      "width": 808,
+      "height": 790,
+      "duration": 40,
+      "audio": "Enhanced actual runtime soundtrack",
+      "method": "Separate authentic normal-speed playthroughs, same17 drags, enhanced actual soundtrack.",
+      "review": "Seventeen ordinary drags reach ten verified matches and the retained internal ending. The final closure response is tied to the real tenth match; no extra victory screen is invented. Technical audio checks passed; subjective listening unavailable."
+    }
+  }
+}

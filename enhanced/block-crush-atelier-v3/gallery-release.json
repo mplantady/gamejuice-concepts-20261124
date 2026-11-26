@@ -1,0 +1,107 @@
+{
+  "slug": "block-crush",
+  "reviewed": true,
+  "enhanced_playable": "enhanced/block-crush-atelier-v3/index.html",
+  "enhanced_playable_title": "Block Crush · Atelier VFX V3",
+  "runtime_release_version": "block-crush-atelier-20261126-v3",
+  "supersedes": [
+    "block-crush-atelier-20261126-v2"
+  ],
+  "runtime_comparison_video": "runtime/block-crush-atelier-v3/block-crush-original-vs-atelier-v3.mp4",
+  "runtime_comparison_page": "runtime/block-crush-atelier-v3/index.html",
+  "runtime_comparison_files": [
+    "runtime/block-crush-atelier-v3/block-crush-original-vs-atelier-v3.mp4",
+    "runtime/block-crush-atelier-v3/index.html",
+    "runtime/block-crush-atelier-v3/poster.png",
+    "runtime/block-crush-atelier-v3/verification.json"
+  ],
+  "review_binding": {
+    "sha256": "16e8450c75f949223fac2eecb75dc862b490b7fcb9ba1e4476078dadc4ba18d2",
+    "scope": "root-approved-runtime-and-comparison-private-integration-only",
+    "staged_and_public_verification": "pending"
+  },
+  "runtime_release": {
+    "version": "block-crush-atelier-20261126-v3",
+    "label": "Block Crush · Atelier VFX V3",
+    "playable": "enhanced/block-crush-atelier-v3/index.html",
+    "supersedes": [
+      "block-crush-atelier-20261126-v2"
+    ],
+    "previous_editions": [
+      {
+        "title": "Block Crush · Atelier v2",
+        "version": "block-crush-atelier-20261126-v2",
+        "playable": "enhanced/block-crush-atelier-v2/index.html",
+        "comparison_video": "runtime/block-crush-atelier-v2/block-crush-original-vs-atelier-v2.mp4",
+        "comparison_page": "runtime/block-crush-atelier-v2/index.html",
+        "comparison_files": [
+          "faithful/block-crush-atelier-v2/polished.png",
+          "runtime/block-crush-atelier-v2/block-crush-original-vs-atelier-v2.mp4",
+          "runtime/block-crush-atelier-v2/comparison-poster.jpg",
+          "runtime/block-crush-atelier-v2/comparison-record.json",
+          "runtime/block-crush-atelier-v2/index.html"
+        ],
+        "combined_image_descriptor": {
+          "status": "generated",
+          "image": "faithful/block-crush-atelier-v2/polished.png",
+          "prompt": "Use case: style-transfer. Asset type: enhanced mobile-game screenshot concept for later image-to-video development.\nInput image 1 is the ORIGINAL GAME SCREENSHOT and the edit target. Produce one finished, full-bleed portrait gameplay image with the same aspect ratio as the reference (390:694). No device, mockup frame, comparison panels, labels, watermarks or added slogans.\nPreserve this exact game and visible state: same camera and composition, playfield shape, row/column structure, piece count and positions, recognizable character and item identities, functional colors, selection/tutorial cues, readable copy and counter values. Keep existing controls and HUD in their current regions and footprints. Do not add mechanics, objects, menus, rewards or moves. The viewer should immediately recognize the same playable game.\nRetain its cheerful stylized casual-game character. Make the chosen improvement visible and professionally crafted while keeping symbols legible at phone size. Preserve the reference's gameplay geometry; no camera tilt, zoom, scene expansion or re-layout. Exact text must remain verbatim. The output is a visual concept, not a new gameplay state.\nApply only this experiment:\nCOMBINED PASS. Improve lighting, game graphics and existing UI together as one coherent premium casual-game treatment. Use soft motivated light, gentle contact depth and controlled highlights; refine existing characters/items with clean expressive forms and high-quality stylized materials; upgrade the existing UI with crisp exact typography, clean icons, balanced internal spacing and consistent polished surfaces. Preserve the original state, composition, counts, identities, functional colors and control footprints. Make the improvement clearly visible without making it a different game. No extra objects, heavy bloom, cinematic camera changes, noisy particles, invented controls or hidden symbols.",
+          "width": 390,
+          "height": 693,
+          "available": true,
+          "result_status": "generated",
+          "review": "Actual phone-size playable reviewed against original and Garden v1: painted walnut cabinet, cool teal recesses, porcelain/brass tiles, six readable glass jewel colors, coordinated HUD/CTA/result surfaces and anchored botanical shadows. Source layout and physical moves are retained. Independent eye movement keeps the result body fixed; reduced mode holds the complete result canvas still. Fine material detail is softened at phone scale to avoid aliasing.",
+          "previous_image": "images/block-crush-combined.png",
+          "previous_review": {
+            "reviewed": true,
+            "recognizable_game": true,
+            "layout": "The 8×8 board, occupied cell pattern and three tray pieces appear consistent with the original at visual inspection.",
+            "visual_change": "Warm dappled lighting, dimensional golden tile edges, glossy gems and refined foliage produce a coherent higher-finish presentation.",
+            "drift": "Botanical details and subtle board decorations are redrawn and some proportions are approximate. The appearance is substantially more glossy than the source.",
+            "text": "Target values 18, 26 and 10 are retained, along with the gear icon."
+          },
+          "artifact_kind": "runtime-screenshot",
+          "image_source": "actual-playable-capture",
+          "image_caption": "Block Crush · Atelier v2 — actual playable screenshot",
+          "image_version": "block-crush-atelier-20261126-v2"
+        },
+        "combined_image_descriptor_provenance": {
+          "file": "concepts/manifest.json",
+          "sha256": "a7e177709e833c6febed5fbedece02243fbdfdc7518e14362b1c43b9d2c54113",
+          "scope": "Complete prior public combined-image descriptor preserved as earlier-edition history, not relabeled as a v3 capture."
+        }
+      },
+      {
+        "title": "Previous version: Garden Edition",
+        "playable": "enhanced/block-crush-garden/index.html",
+        "version": "block-crush-garden-20261126-v1",
+        "comparison_page": "runtime/block-crush/index.html",
+        "comparison_files": [
+          "runtime/block-crush/block-crush-original-vs-garden-v1.mp4",
+          "runtime/block-crush/comparison-poster.jpg",
+          "runtime/block-crush/comparison-record.json",
+          "runtime/block-crush/index.html"
+        ]
+      }
+    ],
+    "review_status": "Root approved exact runtime and authentic comparison; staged/public gallery review remains pending.",
+    "subjective_audio_review": "Unavailable; no audition claimed.",
+    "video": {
+      "file": "runtime/block-crush-atelier-v3/block-crush-original-vs-atelier-v3.mp4",
+      "poster": "runtime/block-crush-atelier-v3/poster.png",
+      "width": 816,
+      "height": 952,
+      "duration": 11.855333,
+      "audio": "Enhanced actual runtime soundtrack",
+      "method": "Authentic separate original and Atelier V3 playthroughs with seed 1719 and the same four physical drags at normal speed. Native 390 × 844 panels and actual enhanced runtime soundtrack.",
+      "review": "The first three placements keep the board intact; the fourth produces the original eight-line clear. Painted pieces, registered contact, jewel collection and readable score feedback retain the original final score of 248. Technical audio checks passed; subjective listening unavailable."
+    }
+  },
+  "runtime_polished_image": {
+    "image": "faithful/block-crush-atelier-v2/polished.png",
+    "source": "actual-playable-capture",
+    "version": "block-crush-atelier-20261126-v2",
+    "width": 390,
+    "height": 693,
+    "caption": "Block Crush · Atelier v2 — actual playable screenshot"
+  }
+}

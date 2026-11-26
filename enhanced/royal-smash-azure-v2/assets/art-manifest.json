@@ -1,0 +1,952 @@
+{
+  "version": "royal-smash-azure-v2-art-1",
+  "status": "complete",
+  "artReadyFinal": true,
+  "textures": {
+    "Can_1x1": "can_1x1-azure.webp",
+    "Can_1x2": "can_1x2-azure.webp",
+    "Can_1x3": "can_1x2-azure.webp",
+    "Can_Square_1x1": "can_square_1x1-azure.webp",
+    "Can_Square_1x2": "can_square_1x1-azure.webp",
+    "Can_Square_1x3": "can_square_1x1-azure.webp",
+    "can_square_1x4": "can_square_1x4-azure.webp",
+    "can_square_1x5": "can_square_1x4-azure.webp",
+    "Can_Conical": "can_conical-azure.webp",
+    "Cannon": "cannon-azure.webp",
+    "HardTable": "hardtable-azure.webp",
+    "HardTablePole": "hardtablepole-azure.webp",
+    "HardCannonFloor": "hardcannonfloor-azure.webp",
+    "CannonBall": "cannonball-azure.webp"
+  },
+  "ui": {
+    "badgeSkin": "ui-badge-azure.png",
+    "playNowSurface": "ui-jade-cta.png"
+  },
+  "texture_processing": [
+    {
+      "key": "Can_1x1",
+      "original": "js-003-f343d6d47f2d.webp",
+      "original_sha256": "f343d6d47f2dd4644267c21381fd493b1048cb389b26bd72bae23d832f70ecfd",
+      "raw": "../generated/target-cylinder-atlas.png",
+      "raw_sha256": "b90e0576064fa4d36864674405bfaef5f26399a518e1c85cabed019c6d977e17",
+      "prompt": "../generated/target-cylinder-atlas-prompt.txt",
+      "prompt_sha256": "567022b472b81dc9734b4c25fe81f2844cc06d1c9da76757055f65210088c15a",
+      "packed": "can_1x1-azure.webp",
+      "deduplicated_alias": false,
+      "size": [
+        1024,
+        1024
+      ],
+      "full_generated_art": true,
+      "visible_source_blend": false,
+      "guard_pixels": 157045,
+      "silhouette_edge_fill_pixels": 0,
+      "guard_contract": "Source near-black UV void plus two-texel boundary copied exactly",
+      "alpha_contract": "Opaque RGB",
+      "output": {
+        "file": "can_1x1-azure.webp",
+        "bytes": 790690,
+        "sha256": "18438195022a62a0e136fea20a21a0c84a34ce45facffe246878127005b6feb6",
+        "size": [
+          1024,
+          1024
+        ],
+        "mode": "RGB",
+        "alpha_range": null,
+        "transparent_pixels": 0
+      }
+    },
+    {
+      "key": "Can_1x2",
+      "original": "js-004-4731ae2cb834.webp",
+      "original_sha256": "4731ae2cb8349c0f84e3d973465939937ad7fae83c385bc7f0902c072ded5b61",
+      "raw": "../generated/target-cylinder-atlas.png",
+      "raw_sha256": "b90e0576064fa4d36864674405bfaef5f26399a518e1c85cabed019c6d977e17",
+      "prompt": "../generated/target-cylinder-atlas-prompt.txt",
+      "prompt_sha256": "567022b472b81dc9734b4c25fe81f2844cc06d1c9da76757055f65210088c15a",
+      "packed": "can_1x2-azure.webp",
+      "deduplicated_alias": false,
+      "size": [
+        512,
+        512
+      ],
+      "full_generated_art": true,
+      "visible_source_blend": false,
+      "guard_pixels": 39549,
+      "silhouette_edge_fill_pixels": 0,
+      "guard_contract": "Source near-black UV void plus two-texel boundary copied exactly",
+      "alpha_contract": "Opaque RGB",
+      "output": {
+        "file": "can_1x2-azure.webp",
+        "bytes": 210728,
+        "sha256": "973dd4d185a4b867cc068948b6a6160ac57bb7dc4bb6e9c464916f35bde8a0b4",
+        "size": [
+          512,
+          512
+        ],
+        "mode": "RGB",
+        "alpha_range": null,
+        "transparent_pixels": 0
+      }
+    },
+    {
+      "key": "Can_1x3",
+      "original": "js-005-4731ae2cb834.webp",
+      "original_sha256": "4731ae2cb8349c0f84e3d973465939937ad7fae83c385bc7f0902c072ded5b61",
+      "raw": "../generated/target-cylinder-atlas.png",
+      "raw_sha256": "b90e0576064fa4d36864674405bfaef5f26399a518e1c85cabed019c6d977e17",
+      "prompt": "../generated/target-cylinder-atlas-prompt.txt",
+      "prompt_sha256": "567022b472b81dc9734b4c25fe81f2844cc06d1c9da76757055f65210088c15a",
+      "packed": "can_1x2-azure.webp",
+      "deduplicated_alias": true,
+      "size": [
+        512,
+        512
+      ],
+      "full_generated_art": true,
+      "visible_source_blend": false,
+      "guard_pixels": 39549,
+      "silhouette_edge_fill_pixels": 0,
+      "guard_contract": "Source near-black UV void plus two-texel boundary copied exactly",
+      "alpha_contract": "Opaque RGB",
+      "output": {
+        "file": "can_1x2-azure.webp",
+        "bytes": 210728,
+        "sha256": "973dd4d185a4b867cc068948b6a6160ac57bb7dc4bb6e9c464916f35bde8a0b4",
+        "size": [
+          512,
+          512
+        ],
+        "mode": "RGB",
+        "alpha_range": null,
+        "transparent_pixels": 0
+      }
+    },
+    {
+      "key": "Can_Square_1x1",
+      "original": "js-007-85e3ca6e5d46.webp",
+      "original_sha256": "85e3ca6e5d46b1682b0a4db60fb595173cda5ce71465da4819097351839ac327",
+      "raw": "../generated/target-square-atlas.png",
+      "raw_sha256": "ca07a0f988051a17e55ea8d8142c5df3c232418d5b6f16964394bf1787b10ef7",
+      "prompt": "../generated/target-square-atlas-prompt.txt",
+      "prompt_sha256": "19b1e35dc392c0fae5727071f6f9714e78b5c7a18b804a54653b7cdc014bfeca",
+      "packed": "can_square_1x1-azure.webp",
+      "deduplicated_alias": false,
+      "size": [
+        1024,
+        1024
+      ],
+      "full_generated_art": true,
+      "visible_source_blend": false,
+      "guard_pixels": 181690,
+      "silhouette_edge_fill_pixels": 0,
+      "guard_contract": "Source near-black UV void plus two-texel boundary copied exactly",
+      "alpha_contract": "Opaque RGB",
+      "output": {
+        "file": "can_square_1x1-azure.webp",
+        "bytes": 764736,
+        "sha256": "bb76e47ffa517391525ccbf728d07578893a86f9a94b9bfe55a4f25cd16357d4",
+        "size": [
+          1024,
+          1024
+        ],
+        "mode": "RGB",
+        "alpha_range": null,
+        "transparent_pixels": 0
+      }
+    },
+    {
+      "key": "Can_Square_1x2",
+      "original": "js-008-85e3ca6e5d46.webp",
+      "original_sha256": "85e3ca6e5d46b1682b0a4db60fb595173cda5ce71465da4819097351839ac327",
+      "raw": "../generated/target-square-atlas.png",
+      "raw_sha256": "ca07a0f988051a17e55ea8d8142c5df3c232418d5b6f16964394bf1787b10ef7",
+      "prompt": "../generated/target-square-atlas-prompt.txt",
+      "prompt_sha256": "19b1e35dc392c0fae5727071f6f9714e78b5c7a18b804a54653b7cdc014bfeca",
+      "packed": "can_square_1x1-azure.webp",
+      "deduplicated_alias": true,
+      "size": [
+        1024,
+        1024
+      ],
+      "full_generated_art": true,
+      "visible_source_blend": false,
+      "guard_pixels": 181690,
+      "silhouette_edge_fill_pixels": 0,
+      "guard_contract": "Source near-black UV void plus two-texel boundary copied exactly",
+      "alpha_contract": "Opaque RGB",
+      "output": {
+        "file": "can_square_1x1-azure.webp",
+        "bytes": 764736,
+        "sha256": "bb76e47ffa517391525ccbf728d07578893a86f9a94b9bfe55a4f25cd16357d4",
+        "size": [
+          1024,
+          1024
+        ],
+        "mode": "RGB",
+        "alpha_range": null,
+        "transparent_pixels": 0
+      }
+    },
+    {
+      "key": "Can_Square_1x3",
+      "original": "js-009-85e3ca6e5d46.webp",
+      "original_sha256": "85e3ca6e5d46b1682b0a4db60fb595173cda5ce71465da4819097351839ac327",
+      "raw": "../generated/target-square-atlas.png",
+      "raw_sha256": "ca07a0f988051a17e55ea8d8142c5df3c232418d5b6f16964394bf1787b10ef7",
+      "prompt": "../generated/target-square-atlas-prompt.txt",
+      "prompt_sha256": "19b1e35dc392c0fae5727071f6f9714e78b5c7a18b804a54653b7cdc014bfeca",
+      "packed": "can_square_1x1-azure.webp",
+      "deduplicated_alias": true,
+      "size": [
+        1024,
+        1024
+      ],
+      "full_generated_art": true,
+      "visible_source_blend": false,
+      "guard_pixels": 181690,
+      "silhouette_edge_fill_pixels": 0,
+      "guard_contract": "Source near-black UV void plus two-texel boundary copied exactly",
+      "alpha_contract": "Opaque RGB",
+      "output": {
+        "file": "can_square_1x1-azure.webp",
+        "bytes": 764736,
+        "sha256": "bb76e47ffa517391525ccbf728d07578893a86f9a94b9bfe55a4f25cd16357d4",
+        "size": [
+          1024,
+          1024
+        ],
+        "mode": "RGB",
+        "alpha_range": null,
+        "transparent_pixels": 0
+      }
+    },
+    {
+      "key": "can_square_1x4",
+      "original": "js-052-889eb064fa0c.webp",
+      "original_sha256": "889eb064fa0ccce68dc5453f17dca7afce6d5d004d13533b6653f0739c9948b6",
+      "raw": "../generated/target-square-atlas.png",
+      "raw_sha256": "ca07a0f988051a17e55ea8d8142c5df3c232418d5b6f16964394bf1787b10ef7",
+      "prompt": "../generated/target-square-atlas-prompt.txt",
+      "prompt_sha256": "19b1e35dc392c0fae5727071f6f9714e78b5c7a18b804a54653b7cdc014bfeca",
+      "packed": "can_square_1x4-azure.webp",
+      "deduplicated_alias": false,
+      "size": [
+        512,
+        512
+      ],
+      "full_generated_art": true,
+      "visible_source_blend": false,
+      "guard_pixels": 47114,
+      "silhouette_edge_fill_pixels": 0,
+      "guard_contract": "Source near-black UV void plus two-texel boundary copied exactly",
+      "alpha_contract": "Opaque RGB",
+      "output": {
+        "file": "can_square_1x4-azure.webp",
+        "bytes": 199032,
+        "sha256": "0c7a9809197e2b45e65c6d5068f401aeb36712d7871ebb5f106e1122df798863",
+        "size": [
+          512,
+          512
+        ],
+        "mode": "RGB",
+        "alpha_range": null,
+        "transparent_pixels": 0
+      }
+    },
+    {
+      "key": "can_square_1x5",
+      "original": "js-053-889eb064fa0c.webp",
+      "original_sha256": "889eb064fa0ccce68dc5453f17dca7afce6d5d004d13533b6653f0739c9948b6",
+      "raw": "../generated/target-square-atlas.png",
+      "raw_sha256": "ca07a0f988051a17e55ea8d8142c5df3c232418d5b6f16964394bf1787b10ef7",
+      "prompt": "../generated/target-square-atlas-prompt.txt",
+      "prompt_sha256": "19b1e35dc392c0fae5727071f6f9714e78b5c7a18b804a54653b7cdc014bfeca",
+      "packed": "can_square_1x4-azure.webp",
+      "deduplicated_alias": true,
+      "size": [
+        512,
+        512
+      ],
+      "full_generated_art": true,
+      "visible_source_blend": false,
+      "guard_pixels": 47114,
+      "silhouette_edge_fill_pixels": 0,
+      "guard_contract": "Source near-black UV void plus two-texel boundary copied exactly",
+      "alpha_contract": "Opaque RGB",
+      "output": {
+        "file": "can_square_1x4-azure.webp",
+        "bytes": 199032,
+        "sha256": "0c7a9809197e2b45e65c6d5068f401aeb36712d7871ebb5f106e1122df798863",
+        "size": [
+          512,
+          512
+        ],
+        "mode": "RGB",
+        "alpha_range": null,
+        "transparent_pixels": 0
+      }
+    },
+    {
+      "key": "Can_Conical",
+      "original": "js-006-f67e026d5588.webp",
+      "original_sha256": "f67e026d5588c8ea1581f04651e30689bfb9ec7e2bc76dde7a158efdce34c896",
+      "raw": "../generated/target-cone-atlas.png",
+      "raw_sha256": "625b8a0674fa0d32a658b2054b3ee6d22da0d404dc4875c12436cbfbbdd685ca",
+      "prompt": "../generated/target-cone-atlas-prompt.txt",
+      "prompt_sha256": "d1c080844a5f096d48e8f20e97953ad06659a47777d5d07545ae67b74f20ec78",
+      "packed": "can_conical-azure.webp",
+      "deduplicated_alias": false,
+      "size": [
+        512,
+        512
+      ],
+      "full_generated_art": true,
+      "visible_source_blend": false,
+      "guard_pixels": 0,
+      "silhouette_edge_fill_pixels": 0,
+      "guard_contract": null,
+      "alpha_contract": "Exact original alpha channel",
+      "output": {
+        "file": "can_conical-azure.webp",
+        "bytes": 215724,
+        "sha256": "acd5e64fa6eacc7a8f9101840dbef641ce80e656989fe6f974a52b670e33831b",
+        "size": [
+          512,
+          512
+        ],
+        "mode": "RGBA",
+        "alpha_range": [
+          230,
+          255
+        ],
+        "transparent_pixels": 0
+      }
+    },
+    {
+      "key": "Cannon",
+      "original": "js-010-2dd9c3fec88c.webp",
+      "original_sha256": "2dd9c3fec88c98b8ceeb17d7fdb90b0c7b0f0750edef28b64a08e54b417d62f7",
+      "raw": "../generated/cannon-atlas.png",
+      "raw_sha256": "65b017025ce8b242815f1f77a8bb58d9e91114a31ccd25b88249cf34f110ec44",
+      "prompt": "../generated/cannon-atlas-prompt.txt",
+      "prompt_sha256": "27ad4052ec7f2f71a34b58679017420fa18386fde48d77f56bc1d766d754cd03",
+      "packed": "cannon-azure.webp",
+      "deduplicated_alias": false,
+      "size": [
+        512,
+        512
+      ],
+      "full_generated_art": true,
+      "visible_source_blend": false,
+      "guard_pixels": 0,
+      "silhouette_edge_fill_pixels": 0,
+      "guard_contract": null,
+      "alpha_contract": "Opaque RGB",
+      "output": {
+        "file": "cannon-azure.webp",
+        "bytes": 205680,
+        "sha256": "6d227abd23904e9dd7db9de51f302a54c85e4d51316c6881681d26b643d67e7e",
+        "size": [
+          512,
+          512
+        ],
+        "mode": "RGB",
+        "alpha_range": null,
+        "transparent_pixels": 0
+      }
+    },
+    {
+      "key": "HardTable",
+      "original": "js-026-6a53bbd7140f.webp",
+      "original_sha256": "6a53bbd7140f955bc3b7a5e10550b461cd183590d82a3af4ee78ae966b06e638",
+      "raw": "../generated/hard-table-atlas.png",
+      "raw_sha256": "c439049c02592fd2b0ceadf6100d1cbf1972184e83d2ebf46a37f04b12a2af6d",
+      "prompt": "../generated/hard-table-atlas-prompt.txt",
+      "prompt_sha256": "f463239ccb9fe4cce009f8fd246588d44f88f9fc0762a0d860cf97c655d40158",
+      "packed": "hardtable-azure.webp",
+      "deduplicated_alias": false,
+      "size": [
+        512,
+        512
+      ],
+      "full_generated_art": true,
+      "visible_source_blend": false,
+      "guard_pixels": 71234,
+      "silhouette_edge_fill_pixels": 0,
+      "guard_contract": "Source near-black UV void plus two-texel boundary copied exactly",
+      "alpha_contract": "Opaque RGB",
+      "output": {
+        "file": "hardtable-azure.webp",
+        "bytes": 220910,
+        "sha256": "a1bec7f02206e727440b52e09e731514aa6a247967430a59fd83247049d93112",
+        "size": [
+          512,
+          512
+        ],
+        "mode": "RGB",
+        "alpha_range": null,
+        "transparent_pixels": 0
+      }
+    },
+    {
+      "key": "HardTablePole",
+      "original": "js-027-15bdc1504314.webp",
+      "original_sha256": "15bdc1504314041050291451482b8f90810e441797bb5735a02b84728587edc4",
+      "raw": "../generated/hard-pole-atlas.png",
+      "raw_sha256": "a3415ff4ec136f73d902954581a8b469be2eb1eabb3ba267b32c17e36e865559",
+      "prompt": "../generated/hard-pole-atlas-prompt.txt",
+      "prompt_sha256": "f3ad18036dbbb0f245f0e28f20471ead76359b85f43db72785036ee6317b19c5",
+      "packed": "hardtablepole-azure.webp",
+      "deduplicated_alias": false,
+      "size": [
+        512,
+        512
+      ],
+      "full_generated_art": true,
+      "visible_source_blend": false,
+      "guard_pixels": 154215,
+      "silhouette_edge_fill_pixels": 0,
+      "guard_contract": "Source near-black UV void plus two-texel boundary copied exactly",
+      "alpha_contract": "Opaque RGB",
+      "output": {
+        "file": "hardtablepole-azure.webp",
+        "bytes": 126648,
+        "sha256": "6e56b9c8b06f9bdfb09c3d6f1dab8fa92ebfb950f519373fd44a7eea788f509d",
+        "size": [
+          512,
+          512
+        ],
+        "mode": "RGB",
+        "alpha_range": null,
+        "transparent_pixels": 0
+      }
+    },
+    {
+      "key": "HardCannonFloor",
+      "original": "js-025-3f4d8a50c4ef.webp",
+      "original_sha256": "3f4d8a50c4efa527e0a2f0edd42c6094ed9ba425f5f11e4ee15c21aba845656b",
+      "raw": "../generated/foreground-rail-plate.png",
+      "raw_sha256": "b59fd8cc2dce85928316cb027acd2362328e7f331c71f4da50b4957e9a4f8036",
+      "prompt": "../generated/foreground-rail-plate-prompt.txt",
+      "prompt_sha256": "43e326e2229e4af73bcf3c8ca3174e7fa25e67b91d2d26b3a812e346c1c84dc6",
+      "packed": "hardcannonfloor-azure.webp",
+      "deduplicated_alias": false,
+      "size": [
+        512,
+        193
+      ],
+      "full_generated_art": true,
+      "visible_source_blend": false,
+      "guard_pixels": 0,
+      "silhouette_edge_fill_pixels": 96,
+      "guard_contract": null,
+      "alpha_contract": "Exact original alpha channel",
+      "output": {
+        "file": "hardcannonfloor-azure.webp",
+        "bytes": 89102,
+        "sha256": "2316b3c305ec683ce3815bcd41604c69cdc0647455bb672f73254e8a8c15260c",
+        "size": [
+          512,
+          193
+        ],
+        "mode": "RGBA",
+        "alpha_range": [
+          0,
+          255
+        ],
+        "transparent_pixels": 22244
+      }
+    },
+    {
+      "key": "CannonBall",
+      "original": "js-011-2a9364700c3d.webp",
+      "original_sha256": "2a9364700c3d8c7b12f128fb1b48b5e0f854a0a5426ba83d2754e12a2012b7ef",
+      "raw": "../generated/projectile-atlas.png",
+      "raw_sha256": "94a42766c3be13134ae5607e75acd82adeb9ed97fa45a1c56ecf711e792f6a6f",
+      "prompt": "../generated/projectile-atlas-prompt.txt",
+      "prompt_sha256": "2ec1d0775c008ab8252cd7f0b7ec031b96a7de5f678b46c39b2354d1a89c8dcb",
+      "packed": "cannonball-azure.webp",
+      "deduplicated_alias": false,
+      "size": [
+        512,
+        512
+      ],
+      "full_generated_art": true,
+      "visible_source_blend": false,
+      "guard_pixels": 0,
+      "silhouette_edge_fill_pixels": 331,
+      "guard_contract": null,
+      "alpha_contract": "Exact original alpha channel",
+      "output": {
+        "file": "cannonball-azure.webp",
+        "bytes": 154832,
+        "sha256": "5c06e440a56a7213a3a6adae2e3add7a6032cabb03152e9c350139fec55698b3",
+        "size": [
+          512,
+          512
+        ],
+        "mode": "RGBA",
+        "alpha_range": [
+          0,
+          255
+        ],
+        "transparent_pixels": 155393
+      }
+    }
+  ],
+  "provenance": {
+    "route": "Built-in image_gen, edited/generated against inspected source atlases and selected Azure Coast study",
+    "generation_status": "New raw art supplied by root; raw images and prompt records unchanged",
+    "packing": "Full generated artwork, exact normalized resize, source UV void/seam guards where necessary, original alpha where specified. No visible material blend or programmatic illustration."
+  },
+  "palms": "palms-fullframe.png",
+  "palm_placements": [
+    {
+      "id": "left",
+      "root": [
+        0.27,
+        0.3252
+      ],
+      "box_pixels": [
+        318,
+        286,
+        103,
+        123
+      ],
+      "crown_joint_y": 0.29106858054226475,
+      "source_crop": [
+        85,
+        175,
+        599,
+        1126
+      ],
+      "root_px": [
+        339,
+        408
+      ]
+    },
+    {
+      "id": "right",
+      "root": [
+        0.6938,
+        0.3252
+      ],
+      "box_pixels": [
+        793,
+        286,
+        100,
+        123
+      ],
+      "crown_joint_y": 0.2878787878787879,
+      "source_crop": [
+        653,
+        175,
+        1178,
+        1126
+      ],
+      "root_px": [
+        870,
+        408
+      ]
+    }
+  ],
+  "palms_contract": {
+    "reuse": "Accepted painted v1 pair; exact bytes and source anchors retained",
+    "source": "../../../royal-smash-painted/assets/runtime/palms-fullframe.png",
+    "source_sha256": "99eeeb54e2a56e8f8a57f41d5a914007a2c22b438c092fb8a2c9951d46179294",
+    "output": {
+      "file": "palms-fullframe.png",
+      "bytes": 48989,
+      "sha256": "99eeeb54e2a56e8f8a57f41d5a914007a2c22b438c092fb8a2c9951d46179294",
+      "size": [
+        1254,
+        1254
+      ],
+      "mode": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ],
+      "transparent_pixels": 1560906
+    },
+    "root_normalized": [
+      [
+        0.27,
+        0.3252
+      ],
+      [
+        0.6938,
+        0.3252
+      ]
+    ],
+    "fullframe_size": [
+      1254,
+      1254
+    ],
+    "runtime_requirement": "Background plane must share this normalized UV frame. Ground stays fixed; canopy/fronds deform about attached roots."
+  },
+  "pending": [],
+  "asset_processing": {
+    "background": {
+      "raw": "../generated/azure-coast-cleanplate.png",
+      "raw_sha256": "63d52828d0cda5e9b55fe32a42212abeaf0025e40abcb1bdaaf819c559987bdd",
+      "prompt": "../generated/azure-coast-cleanplate-prompt.txt",
+      "prompt_sha256": "59ce79c51ae5ab7830d3684ef97e8d81c05d5568a602647aad5d4ec8e2f1bbb7",
+      "packed": "azure-coast-cleanplate.webp",
+      "processing": "Exact 1254-square source-normalized layout; WebP encoding only, no repaint or geometry changes",
+      "output": {
+        "file": "azure-coast-cleanplate.webp",
+        "bytes": 199234,
+        "sha256": "cc8db2f5d779044443b12005c919c3acc90960f8c20f695b411ce4774ae8152c",
+        "size": [
+          1254,
+          1254
+        ],
+        "mode": "RGB",
+        "alpha_range": null,
+        "transparent_pixels": 0
+      }
+    },
+    "badgeSkin": {
+      "raw": "../generated/ui-badge-azure.png",
+      "raw_sha256": "0474b17ee018ba05e3ba42cbbfc978366a44d86257fa91aeaba5ee0918a48e81",
+      "prompt": "../generated/ui-badge-azure-prompt.txt",
+      "prompt_sha256": "a8ce96fbfd0f3d8ada79ada3089491101279467d52f8050743fad73e8f7cce5e",
+      "packed": "ui-badge-azure.png",
+      "processing": "Crop genuine alpha bounds with 2px padding; remove alpha below 8; premultiplied resize to protected UI canvas. Blank generated surface only; native runtime text remains.",
+      "output": {
+        "file": "ui-badge-azure.png",
+        "bytes": 311051,
+        "sha256": "dc3b3682bf3eb9f8885f77cd521504b70be81f156342d92ef88ad2ab6766516f",
+        "size": [
+          512,
+          503
+        ],
+        "mode": "RGBA",
+        "alpha_range": [
+          0,
+          255
+        ],
+        "transparent_pixels": 21466
+      },
+      "crop_pixels": [
+        67,
+        38,
+        1188,
+        1199
+      ],
+      "ui_canvas": [
+        512,
+        503
+      ],
+      "text_baked": false
+    },
+    "playNowSurface": {
+      "raw": "../generated/ui-jade-cta.png",
+      "raw_sha256": "fcd5da957f691010276b0e99499781421992b2a01e2e157daad39535806de012",
+      "prompt": "../generated/ui-jade-cta-prompt.txt",
+      "prompt_sha256": "8983e1e2fb9fe021534430b63418c3a42552cc29bcbb197470180d9f1b8ac17c",
+      "packed": "ui-jade-cta.png",
+      "processing": "Crop genuine alpha bounds with 2px padding; remove alpha below 8; premultiplied resize to protected UI canvas. Blank generated surface only; native runtime text remains.",
+      "output": {
+        "file": "ui-jade-cta.png",
+        "bytes": 143457,
+        "sha256": "1357885f0cada73f34270ee060c2b1be459d5fbbc7bc77079ffa6a31e5e2ea29",
+        "size": [
+          563,
+          201
+        ],
+        "mode": "RGBA",
+        "alpha_range": [
+          0,
+          255
+        ],
+        "transparent_pixels": 7047
+      },
+      "crop_pixels": [
+        21,
+        46,
+        2068,
+        715
+      ],
+      "ui_canvas": [
+        563,
+        201
+      ],
+      "text_baked": false
+    },
+    "plume-phase-1": {
+      "raw": "../generated/muzzle-three-phase.png",
+      "raw_sha256": "99e0d7e9d3259d2cc258399e2482a9ef4076f51afe065008bdf870d517259e75",
+      "prompt": "../generated/muzzle-three-phase-prompt.txt",
+      "prompt_sha256": "7d6d8a7d82714f0d8f0370ba66cf01f5627c497b31febeb2e843bed57d34296a",
+      "packed": "muzzle-phase-01.png",
+      "processing": "Equal square cell extraction; shared cell origin and relative pose size preserved. Low-alpha dust below 8 removed; premultiplied resize to 256-square. No per-frame tight crop.",
+      "output": {
+        "file": "muzzle-phase-01.png",
+        "bytes": 14986,
+        "sha256": "585bfd54a4b69b4b999ef6eea810ac2e0878ef373996a2e2cdbb826df7856694",
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA",
+        "alpha_range": [
+          0,
+          255
+        ],
+        "transparent_pixels": 59491
+      },
+      "source_cell": [
+        0,
+        0,
+        724,
+        724
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ]
+    },
+    "plume-phase-2": {
+      "raw": "../generated/muzzle-three-phase.png",
+      "raw_sha256": "99e0d7e9d3259d2cc258399e2482a9ef4076f51afe065008bdf870d517259e75",
+      "prompt": "../generated/muzzle-three-phase-prompt.txt",
+      "prompt_sha256": "7d6d8a7d82714f0d8f0370ba66cf01f5627c497b31febeb2e843bed57d34296a",
+      "packed": "muzzle-phase-02.png",
+      "processing": "Equal square cell extraction; shared cell origin and relative pose size preserved. Low-alpha dust below 8 removed; premultiplied resize to 256-square. No per-frame tight crop.",
+      "output": {
+        "file": "muzzle-phase-02.png",
+        "bytes": 40747,
+        "sha256": "1a63af116c46a2ade48452555a9fed9542d000a6a492b1e9b84f57e85ecade5d",
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA",
+        "alpha_range": [
+          0,
+          255
+        ],
+        "transparent_pixels": 41662
+      },
+      "source_cell": [
+        724,
+        0,
+        1448,
+        724
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ]
+    },
+    "plume-phase-3": {
+      "raw": "../generated/muzzle-three-phase.png",
+      "raw_sha256": "99e0d7e9d3259d2cc258399e2482a9ef4076f51afe065008bdf870d517259e75",
+      "prompt": "../generated/muzzle-three-phase-prompt.txt",
+      "prompt_sha256": "7d6d8a7d82714f0d8f0370ba66cf01f5627c497b31febeb2e843bed57d34296a",
+      "packed": "muzzle-phase-03.png",
+      "processing": "Equal square cell extraction; shared cell origin and relative pose size preserved. Low-alpha dust below 8 removed; premultiplied resize to 256-square. No per-frame tight crop.",
+      "output": {
+        "file": "muzzle-phase-03.png",
+        "bytes": 31540,
+        "sha256": "ab3c90c4a94bd94cb19621e9c9f61f2713ba43d66acb881744bcdc7829bdd1e9",
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA",
+        "alpha_range": [
+          0,
+          255
+        ],
+        "transparent_pixels": 51268
+      },
+      "source_cell": [
+        1448,
+        0,
+        2172,
+        724
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ]
+    }
+  },
+  "background": "azure-coast-cleanplate.webp",
+  "size": [
+    1254,
+    1254
+  ],
+  "plumeFrames": [
+    "muzzle-phase-01.png",
+    "muzzle-phase-02.png",
+    "muzzle-phase-03.png"
+  ],
+  "plume": "muzzle-phase-02.png",
+  "plume_contract": {
+    "size": [
+      256,
+      256
+    ],
+    "pivot": [
+      0.5,
+      0.5
+    ],
+    "source_cell_size": [
+      724,
+      724
+    ],
+    "frames": [
+      {
+        "frame": 1,
+        "source_cell": [
+          0,
+          0,
+          724,
+          724
+        ],
+        "alpha_bbox": [
+          84,
+          74,
+          193,
+          178
+        ]
+      },
+      {
+        "frame": 2,
+        "source_cell": [
+          724,
+          0,
+          1448,
+          724
+        ],
+        "alpha_bbox": [
+          28,
+          35,
+          226,
+          215
+        ]
+      },
+      {
+        "frame": 3,
+        "source_cell": [
+          1448,
+          0,
+          2172,
+          724
+        ],
+        "alpha_bbox": [
+          37,
+          34,
+          220,
+          201
+        ]
+      }
+    ],
+    "sequence": [
+      "compact emission",
+      "rounded expansion",
+      "separated dissipating curls"
+    ],
+    "event": "Verified actual cannon shot only",
+    "display_review": "Inspect all frames at 64px; motion timing requires actual playable review",
+    "alpha": "Genuine RGBA, premultiplied resizing, common transparent canvas"
+  },
+  "generation_inventory": {
+    "new_output_count": 14,
+    "study_count": 2,
+    "production_count": 12,
+    "expected_total": 14,
+    "reused_palms": true,
+    "outputs": [
+      {
+        "file": "../generated/target-cylinder-atlas.png",
+        "sha256": "b90e0576064fa4d36864674405bfaef5f26399a518e1c85cabed019c6d977e17",
+        "kind": "production"
+      },
+      {
+        "file": "../generated/target-square-atlas.png",
+        "sha256": "ca07a0f988051a17e55ea8d8142c5df3c232418d5b6f16964394bf1787b10ef7",
+        "kind": "production"
+      },
+      {
+        "file": "../generated/target-cone-atlas.png",
+        "sha256": "625b8a0674fa0d32a658b2054b3ee6d22da0d404dc4875c12436cbfbbdd685ca",
+        "kind": "production"
+      },
+      {
+        "file": "../generated/cannon-atlas.png",
+        "sha256": "65b017025ce8b242815f1f77a8bb58d9e91114a31ccd25b88249cf34f110ec44",
+        "kind": "production"
+      },
+      {
+        "file": "../generated/azure-coast-cleanplate.png",
+        "sha256": "63d52828d0cda5e9b55fe32a42212abeaf0025e40abcb1bdaaf819c559987bdd",
+        "kind": "production"
+      },
+      {
+        "file": "../generated/hard-table-atlas.png",
+        "sha256": "c439049c02592fd2b0ceadf6100d1cbf1972184e83d2ebf46a37f04b12a2af6d",
+        "kind": "production"
+      },
+      {
+        "file": "../generated/hard-pole-atlas.png",
+        "sha256": "a3415ff4ec136f73d902954581a8b469be2eb1eabb3ba267b32c17e36e865559",
+        "kind": "production"
+      },
+      {
+        "file": "../generated/foreground-rail-plate.png",
+        "sha256": "b59fd8cc2dce85928316cb027acd2362328e7f331c71f4da50b4957e9a4f8036",
+        "kind": "production"
+      },
+      {
+        "file": "../generated/ui-badge-azure.png",
+        "sha256": "0474b17ee018ba05e3ba42cbbfc978366a44d86257fa91aeaba5ee0918a48e81",
+        "kind": "production"
+      },
+      {
+        "file": "../generated/ui-jade-cta.png",
+        "sha256": "fcd5da957f691010276b0e99499781421992b2a01e2e157daad39535806de012",
+        "kind": "production"
+      },
+      {
+        "file": "../generated/projectile-atlas.png",
+        "sha256": "94a42766c3be13134ae5607e75acd82adeb9ed97fa45a1c56ecf711e792f6a6f",
+        "kind": "production"
+      },
+      {
+        "file": "../generated/muzzle-three-phase.png",
+        "sha256": "99e0d7e9d3259d2cc258399e2482a9ef4076f51afe065008bdf870d517259e75",
+        "kind": "production"
+      },
+      {
+        "file": "../generated/study-a-azure-coast.png",
+        "sha256": "fdf438a99ac5a178e63349b6db4e6cb6ebad1774db71032efe0b2ec82df582a3",
+        "kind": "study"
+      },
+      {
+        "file": "../generated/study-b-ink-coast.png",
+        "sha256": "38d6adfe6545786711c50464e336b05f359eacae4f4936dade7e764059e7f485",
+        "kind": "study"
+      }
+    ]
+  },
+  "inherited_v1_copies_removed": [
+    "can_1x1-painted.webp",
+    "can_1x2-painted.webp",
+    "can_1x3-painted.webp",
+    "can_conical-painted.webp",
+    "can_square_1x1-painted.webp",
+    "can_square_1x2-painted.webp",
+    "can_square_1x3-painted.webp",
+    "can_square_1x4-painted.webp",
+    "can_square_1x5-painted.webp",
+    "cannon-painted.webp",
+    "lagoon-cleanplate.webp",
+    "muzzle-plume.png"
+  ]
+}

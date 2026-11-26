@@ -1,0 +1,24 @@
+/* Painted Tides presentation. Hit regions and HUD positions remain the source's. */
+/* The converted export added an 11vh/16vh ad reservation absent from the
+ * authoritative original. Remove only that reservation; retain safe-area sizing. */
+html:root{--reserved-bottom:0px}
+#royal-fx{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;z-index:3}
+#royal-options{position:fixed;right:9px;top:9px;display:flex;gap:6px;z-index:100}
+#royal-options button{font:600 11px/1.2 system-ui,sans-serif;color:#fff8e8;border:1px solid #fff3b366;background:#183e53b8;border-radius:16px;padding:7px 10px;backdrop-filter:blur(8px);box-shadow:0 2px 8px #102f4033;cursor:pointer}
+#royal-options button[aria-pressed=true]{background:#f9e6ad;color:#29404a}
+#movesPanel{filter:drop-shadow(0 3px 5px #213b6859)}
+#movesPanel.royal-shot{animation:royal-count .22s ease-out}
+#movesPanel.royal-empty{animation:royal-reject .24s ease-out}
+#movesPanel.royal-clear{animation:royal-clear .62s ease-out}
+@keyframes royal-count{0%{filter:brightness(1.24) drop-shadow(0 3px 5px #213b6859)}100%{filter:brightness(1) drop-shadow(0 3px 5px #213b6859)}}
+@keyframes royal-reject{15%{filter:brightness(1.15) drop-shadow(0 0 4px #d68b47)}100%{filter:brightness(1) drop-shadow(0 3px 5px #213b6859)}}
+@keyframes royal-clear{12%,30%{filter:brightness(1.16) drop-shadow(0 0 7px #ffe8a3aa)}100%{filter:brightness(1) drop-shadow(0 3px 5px #213b6859)}}
+@media(prefers-reduced-motion:reduce){#movesPanel{animation:none!important}}
+body.royal-low-motion #movesPanel{animation:none!important}
+
+body.royal-low-motion #tutorialHand,body.royal-low-motion #playNowCta,body.royal-low-motion .pulse{animation-play-state:paused!important}
+
+/* Stop only settled/result decoration. Keep the source end-card entry sequence
+ * and its voice cues, visibility, tap readiness and outcome timing intact. */
+body.royal-low-motion #endCard.settled .ecShot,body.royal-low-motion #endCard.settled .ecPlay{animation:none!important}
+body.royal-low-motion #failRetry.inCard{animation:.34s cubic-bezier(.2,1.5,.4,1) .48s both endCardArtPop!important}

@@ -1,0 +1,80 @@
+{
+  "version": "rotate-rings-cabinet-audio-v2",
+  "sampleRate": 48000,
+  "cues": {
+    "contact": {
+      "files": [
+        "audio/contact-copper-1.wav",
+        "audio/contact-copper-2.wav"
+      ],
+      "gain": 0.45,
+      "loop": false
+    },
+    "motion_contact": {
+      "files": [
+        "audio/motion-contact-1.wav",
+        "audio/motion-contact-2.wav"
+      ],
+      "gain": 0.22,
+      "loop": false
+    },
+    "motion_friction": {
+      "files": [
+        "audio/motion-friction-loop.wav"
+      ],
+      "gain": 0.18,
+      "loop": true
+    },
+    "fixed_rejection": {
+      "files": [
+        "audio/blocked-resistance.wav"
+      ],
+      "gain": 0.6,
+      "loop": false
+    },
+    "misaligned_release": {
+      "files": [
+        "audio/misaligned-stop.wav"
+      ],
+      "gain": 0.5,
+      "loop": false
+    },
+    "latch_release": {
+      "files": [
+        "audio/latch-release-1.wav",
+        "audio/latch-release-2.wav"
+      ],
+      "gain": 0.63,
+      "loop": false
+    },
+    "latch_settle": {
+      "files": [
+        "audio/latch-settle-1.wav",
+        "audio/latch-settle-2.wav"
+      ],
+      "gain": 0.42,
+      "loop": false
+    },
+    "ring_escape": {
+      "files": [
+        "audio/ring-departure.wav"
+      ],
+      "gain": 0.48,
+      "loop": false
+    },
+    "trial_success": {
+      "files": [
+        "audio/trial-resolve.wav"
+      ],
+      "gain": 0.62,
+      "loop": false
+    },
+    "trial_limit": {
+      "files": [
+        "audio/trial-limit.wav"
+      ],
+      "gain": 0.45,
+      "loop": false
+    }
+  }
+}
