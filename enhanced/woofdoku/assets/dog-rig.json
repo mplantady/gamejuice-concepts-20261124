@@ -1,0 +1,121 @@
+{
+  "provider": "built-in image_gen",
+  "source": "dog-expressions-clean-raw.png",
+  "logicalSize": [
+    512,
+    512
+  ],
+  "poses": [
+    {
+      "pose": "rest",
+      "sourceCell": 0,
+      "offset": [
+        -19,
+        3
+      ],
+      "pivot": [
+        256,
+        461
+      ],
+      "alphaBBox": [
+        60,
+        24,
+        453,
+        461
+      ]
+    },
+    {
+      "pose": "anticipate",
+      "sourceCell": 1,
+      "offset": [
+        1,
+        2
+      ],
+      "pivot": [
+        256,
+        461
+      ],
+      "alphaBBox": [
+        17,
+        102,
+        496,
+        462
+      ]
+    },
+    {
+      "pose": "delight",
+      "sourceCell": 2,
+      "offset": [
+        22,
+        2
+      ],
+      "pivot": [
+        256,
+        461
+      ],
+      "alphaBBox": [
+        63,
+        20,
+        450,
+        461
+      ]
+    },
+    {
+      "pose": "content",
+      "sourceCell": 3,
+      "offset": [
+        -17,
+        18
+      ],
+      "pivot": [
+        256,
+        461
+      ],
+      "alphaBBox": [
+        58,
+        23,
+        454,
+        462
+      ]
+    },
+    {
+      "pose": "concern",
+      "sourceCell": 4,
+      "offset": [
+        5,
+        15
+      ],
+      "pivot": [
+        256,
+        461
+      ],
+      "alphaBBox": [
+        19,
+        112,
+        494,
+        462
+      ]
+    },
+    {
+      "pose": "blink",
+      "sourceCell": 5,
+      "offset": [
+        21,
+        14
+      ],
+      "pivot": [
+        256,
+        461
+      ],
+      "alphaBBox": [
+        54,
+        19,
+        457,
+        461
+      ]
+    }
+  ],
+  "exportMatte": "Near-transparent alpha <=24 removed, feather normalized; RGB unchanged",
+  "contact": "chin anchored at (256,461), facial icon has no ground foot",
+  "layer": "same original dog UI transform, original cell unaffected"
+}

@@ -1,0 +1,63 @@
+{
+  "version": "woofdoku-living-pups-1.1.0",
+  "runtime": "Original Luna scripts with presentation-only extension and three native panel image replacements",
+  "originalSha256": "15166ac73ba396249753bd6c4fbe0434d650870d5c2e1936a2db4cdabc693b0b",
+  "originalInlineScriptsUnchanged": true,
+  "nativeSupportImages": [
+    {
+      "nativeImageId": "9398",
+      "asset": "panel-board.png",
+      "sha256": "8082a33c4268b8a3e61e821d53e4d702ff830a2b1fba0a5c1292f2baa3bc6d1b"
+    },
+    {
+      "nativeImageId": "25216",
+      "asset": "panel-pill.png",
+      "sha256": "dc136979d240c1bc454311da54394359bdbf026410c9f2447e82065bb7e3a08d"
+    },
+    {
+      "nativeImageId": "25224",
+      "asset": "panel-rules.png",
+      "sha256": "17a6614e16c3ff029da13d20754ca6172cfcdd96305443944b26cc4b05f754c4"
+    }
+  ],
+  "files": {
+    "assets/blue-wash.jpg": "a3f8b639f908d23ee4eebf306376b6afbd0719966d3dca9211cc5fe70f52b242",
+    "assets/dog-anticipate.png": "ed6dcd9b09fea3b5c14a33316bc9d4be99f3b79ae970c3114882f6764db97438",
+    "assets/dog-blink.png": "4303fcadc8f642fbdeed69cc8d41c24d09d7f167f29787eb6f8a823149bcf19b",
+    "assets/dog-concern.png": "4155369db6e8969b54331d8c3be817bababaacaff8ef32c5e3d7e240e4f42d55",
+    "assets/dog-content.png": "35b18dc1fff7a57a9b0b20e7feff209790a572e076a2e95307a134f3a6c77de0",
+    "assets/dog-delight.png": "b652ae3ffa7a82a6866a811a0aacb7a7e5aea8cebf5364b1e657f90f82733d4e",
+    "assets/dog-rest.png": "21c570360e1c1583aede02bbf3d2c557fd2c1abdaad2ed0d4d8c14bb1b36e082",
+    "assets/dog-rig.json": "6e4464142010109430efc57e86b1a8f7e0c6eac9da58f8e4bb6145c4a069c712",
+    "assets/toy-footer.png": "9a2d9d5b152db32506d21a507b529b5b3faf06a1cf1d0d37c9bd515a42496552",
+    "audio.js": "f42300efc9877d37c26a737d61cf009a0b4ad4160cb719d590a9272ff6f8f549",
+    "enhance.js": "bebf32461c6ed3504d4143aa5718d20483ef58652bcdfed63c6448829d3b81c2",
+    "index.html": "11945e35e98616ea32b3e76decedecc4a34e2c92106adf7fb7e8ef6289505df8",
+    "native-motion.js": "ec5e6138f3c51e8ceee0a154a0fec678e8a308e154d05ef0a64f1cfdaff62b91",
+    "native-surfaces.js": "d9eec2b05b804a8023c8bae622841f179cda3eb32e41f0e4a8801e68ebf30a2b",
+    "native-visuals.js": "9ba28351e5f0eac9772f559da102e2b330bcdb00a4f62dd773d19d889b7ae59b",
+    "original-bridge.js": "56528f6f0b4beda6c66dd669905098d5d891e00238e7a810a9576a1ca7892823",
+    "style.css": "2795dae04eae5b81e581b9ab07eb0a9dcebb14bd9e05d0e52972eda3481c72ed"
+  },
+  "runtime_files": [
+    "assets/blue-wash.jpg",
+    "assets/dog-anticipate.png",
+    "assets/dog-blink.png",
+    "assets/dog-concern.png",
+    "assets/dog-content.png",
+    "assets/dog-delight.png",
+    "assets/dog-rest.png",
+    "assets/dog-rig.json",
+    "assets/toy-footer.png",
+    "audio.js",
+    "build-manifest.json",
+    "enhance.js",
+    "index.html",
+    "native-motion.js",
+    "native-surfaces.js",
+    "native-visuals.js",
+    "original-bridge.js",
+    "style.css"
+  ],
+  "recordedBuildManifestSha256": "839204c9dbd0cb5c3906eb3b7d5373a88300f690eb4a339bc77b89d444422deb"
+}
